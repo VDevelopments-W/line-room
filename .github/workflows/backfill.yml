@@ -1,0 +1,23 @@
+# One-off: DraftKings splits for past games from Internet Archive snapshots (see backfill_dk.py).
+name: DraftKings backfill
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["backfill_dk.py", ".github/workflows/backfill.yml"]
+permissions:
+  contents: write
+concurrency:
+  group: "splits"
+  cancel-in-progress: false
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests beautifulsoup4
+      - run: python backfill_dk.py
+      - run: bash commit.sh "DraftKings backfill from archived snapshots" data/splits_history research/dk_backfill.txt
