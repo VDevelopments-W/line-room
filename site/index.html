@@ -116,9 +116,12 @@ p.lede { color: var(--muted); max-width: 66ch; margin: 0 0 22px; font-size: 15.5
 .plays-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline }
 .plays-head h2 { font-size: 30px; margin: 0 }
 .playlist { display: grid; gap: 8px }
-.play { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 12px; border-radius: var(--r-sm); background: var(--flag-soft); cursor: pointer; border: 0; text-align: left; font: inherit; color: inherit; width: 100% }
+.play { display: grid; grid-template-columns: 92px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 12px; border-radius: var(--r-sm); background: var(--flag-soft); cursor: pointer; border: 0; text-align: left; font: inherit; color: inherit; width: 100% }
 .play:hover { outline: 1px solid var(--flag) }
 .play .pk { font-family: var(--font-display); font-weight: 800; font-size: 22px; line-height: 1 }
+.pchips { display: grid; gap: 4px; align-self: center }
+.pchips .chip { text-align: center; display: block }
+@media (max-width: 520px) { .play { grid-template-columns: 76px minmax(0, 1fr) auto; gap: 10px; padding: 10px } .play .pk { font-size: 20px } }
 .play .bs { font-size: 13px; color: var(--muted) }
 .play.trend { background: var(--panel-2) }
 .play.trend:hover { outline-color: var(--line) }
@@ -634,11 +637,11 @@ function teaserBox(fades) {
     const dog = u.pick.split(" ")[0], side = g.home === dog ? "home" : "away";
     const clash = fades.find(f => f.g.game_id === g.game_id && f.f.market === "spread" && f.f.side !== side);
     const orig = side === "home" ? -g.spread_line : g.spread_line;
-    return `<button class="play trend" data-open="${g.game_id}"><span class="chip strong">${Math.round(t.all.pct * 100)}%</span>
+    return `<button class="play trend" data-open="${g.game_id}"><span class="pchips"><span class="chip strong">${Math.round(t.all.pct * 100)}% leg</span></span>
       <span style="min-width:0"><span class="pk">${esc(u.pick.replace(" (teased)", ""))}</span> <span class="bs">from ${fmtLine(orig)}</span><br>
       <span class="bs">${esc(g.away)} @ ${esc(g.home)}, ${esc(kickoff(g))}. ${t.all.w}-${t.all.l} since 1999, ${t.current.w}-${t.current.l} this season${g.total_line < 49 ? `, total ${g.total_line}` : ""}.</span>
       ${clash ? `<br><span class="bs" style="color:var(--loss)">Conflicts with the fade on ${esc(clash.f.pick)}: pick one.</span>` : ""}</span>
-      <span class="bs">leg</span></button>`;
+      <span class="bs"></span></button>`;
   }).join("");
   const p = legs.length ? legs.reduce((a, l) => a + l.p, 0) / legs.length : 0;
   const two = p * p, three = p * p * p;
@@ -715,7 +718,7 @@ function renderWeek() {
     </article>`;
   }).join("");
   const playRow = ({ g, f }, cls) => `<button class="play ${cls}" data-open="${g.game_id}">
-      <span class="chip ${cls === "trend" ? "strong" : "fade"}">${cls === "trend" ? "Strong trend" : "Fade " + f.units + "u"}</span>${f.both ? '<span class="chip both" style="margin-top:4px;display:block;text-align:center">2 sources</span>' : ""}
+      <span class="pchips"><span class="chip ${cls === "trend" ? "strong" : "fade"}">${cls === "trend" ? "Strong trend" : "Fade " + f.units + "u"}</span>${f.both ? '<span class="chip both">2 sources</span>' : ""}</span>
       <span style="min-width:0"><span class="pk">${esc(f.pick)}</span><br><span class="bs">${esc(g.away)} @ ${esc(g.home)}, ${esc(kickoff(g))}. ${esc(f.type === "fade" ? f.basis : f.name)}</span></span>
       <span class="bs">${f.type === "fade" ? "$" + f.units * UNIT : pct(f.pctAll)}</span></button>`;
   const first = games[0];
