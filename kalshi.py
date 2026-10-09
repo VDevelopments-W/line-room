@@ -95,6 +95,12 @@ def volume(m):
 
 
 def discover_series():
+    """Only the plain per-game "X or more" series. Kalshi also runs longest-reception, head-to-head,
+    ladder, escalator and season markets that look similar but are different bets."""
+    return {k: v for k, v in SERIES.items() if v != "anytime_td"}
+
+
+def discover_series_all():  # kept for exploring new Kalshi series by hand
     found = dict(SERIES)
     data = get("/series", category="Sports") or {}
     for s in data.get("series", []):
