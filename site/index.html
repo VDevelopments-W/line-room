@@ -169,6 +169,7 @@ p.lede { color: var(--muted); max-width: 66ch; margin: 0 0 22px; font-size: 15.5
 .sig { display: flex; gap: 8px; align-items: baseline; font-size: 13.5px }
 .chip { font-size: 11.5px; font-weight: 700; font-stretch: 90%; padding: 2px 7px; border-radius: 4px; white-space: nowrap; letter-spacing: .01em }
 .chip.fade { background: var(--flag); color: var(--flag-ink) }
+.chip.both { background: var(--ink); color: var(--flag) }
 .chip.trend { background: var(--accent-soft); color: var(--accent) }
 .chip.warn { color: var(--loss); box-shadow: inset 0 0 0 1px var(--loss) }
 .chip.strong { background: var(--win); color: var(--panel) }
@@ -396,7 +397,7 @@ function renderTicker() {
     items.push(`<button class="tk" data-tk="${g.game_id}" aria-label="${esc(g.away)} at ${esc(g.home)}: open game details"><span class="tag">${shortTime(g)}</span>
       <span>${g.away}</span><span class="dim">@</span><span>${g.home}</span>
       <span class="amber">${esc(lt.spread)}</span><span class="dim">O/U</span><span class="amber">${g.total_line}</span>
-      ${fades.map(f => `<span class="tag live">Fade ${esc(f.pick)}</span>`).join("")}</button>`);
+      ${fades.map(f => `<span class="tag live">Fade ${esc(f.pick)}${f.both ? " ×2" : ""}</span>`).join("")}</button>`);
   });
   const fr = fadeRecord();
   items.push(`<div class="tk"><span class="tag live">Fade the public</span><span>${fr.w}-${fr.l}${fr.p ? "-" + fr.p : ""}</span><span class="${fr.units >= 0 ? "ok" : "no"}">${fr.units >= 0 ? "+" : "−"}${Math.abs(fr.units).toFixed(1)}u</span><span class="dim">season</span></div>`);
@@ -494,7 +495,11 @@ function fadeSignal(game, market) {
   const team = market === "total" ? (opp === "over" ? "Over" : "Under") : game[opp];
   const pick = market === "total" ? `${team} ${line}` : `${team} ${fmtLine(line)}`;
   const heavy = pub.money > pub.bets;
-  return { type: "fade", market, side: opp, pick, units, basis, heavy };
+  // both sources 80%+ on the same public side
+  const dkB = dk.find(r => r.side === pub.side)?.bets ?? 0, saoB = sao.find(r => r.side === pub.side)?.bets ?? 0;
+  const both = dkB >= 80 && saoB >= 80;
+  if (both) basis = `DK ${dkB}% and Scores and Odds ${saoB}% of bets`;
+  return { type: "fade", market, side: opp, pick, units, basis, heavy, both };
 }
 function trendSignals(game) {
   // One chip per pick: when several trends point at the same bet, keep the strongest and count the rest.
@@ -669,7 +674,7 @@ function splitsBlock(g) {
         <div class="side mono">${esc(name)}</div>
         <div class="bar ${b >= 80 ? "over80" : ""}" title="DraftKings % of bets"><i style="width:${b ?? 0}%"></i><span>${b ?? "–"}%</span></div>
         <div class="bar m" title="DraftKings % of money"><i style="width:${m ?? 0}%"></i><span>${m ?? "–"}%</span></div>
-        <div class="sao" title="Scores and Odds consensus % of bets">${sao ? sao.bets + "%" : "–"}</div>
+        <div class="sao" title="Scores and Odds consensus % of bets">${sao ? (sao.bets >= 80 ? `<b class="pubp hot">${sao.bets}%</b>` : sao.bets + "%") : "–"}</div>
       </div>`);
     }
     return out.join("");
@@ -691,7 +696,7 @@ function renderWeek() {
     const fades = sig.filter(s => s.type === "fade"); nFade += fades.length; nTrend += sig.filter(s => s.type === "trend").length;
     fades.forEach(f => nUnits += f.units);
     const sigHtml = sig.map(s => s.type === "fade"
-      ? `<div class="sig"><span class="chip fade">Fade ${s.units}u</span><span><span class="pick">${esc(s.pick)}</span> <span class="why">${esc(s.basis)}${s.heavy ? ", big money is with the public" : ""}</span></span></div>`
+      ? `<div class="sig"><span class="chip fade">Fade ${s.units}u</span>${s.both ? ` <span class="chip both" title="DraftKings and Scores and Odds both have 80%+ of bets on the other side">2 sources</span>` : ""}<span><span class="pick">${esc(s.pick)}</span> <span class="why">${esc(s.basis)}${s.heavy ? ", big money is with the public" : ""}</span></span></div>`
       : `<div class="sig"><span class="chip trend">${esc(s.verdict)}</span><span><span class="pick">${esc(s.pick)}</span> <span class="why">${esc(s.name)}, ${pct(s.pctAll)} since 1999${s.also ? ` (+${s.also} more)` : ""}</span></span></div>`).join("")
       + [...conflicts].map(m => `<div class="sig"><span class="chip warn">Conflict</span><span class="why">Signals disagree on the ${m}. Skip or size down.</span></div>`).join("")
       + ["spread", "total"].map(mk => { const m = movement(g.game_id, mk); if (!m?.rlm) return ""; const who = mk === "total" ? (m.pub === "over" ? "Over" : "Under") : g[m.pub];
@@ -700,7 +705,7 @@ function renderWeek() {
     allPlays.push(...fades2.map(f => ({ g, f })));
     sig.filter(s => s.type === "trend" && s.verdict === "Strong").forEach(f => allTrends.push({ g, f }));
     return `<article class="ticket clickable ${fades2.length ? "hot" : ""}" data-card="${g.game_id}" tabindex="0" aria-label="${esc(g.away)} at ${esc(g.home)}: open game details">
-      ${fades2.length ? `<div class="t-flag"><span>Fade ${fades2.map(f => esc(f.pick)).join(" and ")}</span><span>${fades2.reduce((a, f) => a + f.units, 0)}u</span></div>` : ""}
+      ${fades2.length ? `<div class="t-flag"><span>Fade ${fades2.map(f => esc(f.pick) + (f.both ? " · 2 sources 80%+" : "")).join(" and ")}</span><span>${fades2.reduce((a, f) => a + f.units, 0)}u</span></div>` : ""}
       <div class="t-meta"><span><b>${esc(kickoff(g))}</b>${g.div_game ? ", division game" : ""}</span><span>Total <b>${g.total_line}</b></span></div>
       <div class="slabs">${slab(g, "away")}${slab(g, "home")}</div>
       ${injuryBlock(g)}
@@ -710,7 +715,7 @@ function renderWeek() {
     </article>`;
   }).join("");
   const playRow = ({ g, f }, cls) => `<button class="play ${cls}" data-open="${g.game_id}">
-      <span class="chip ${cls === "trend" ? "strong" : "fade"}">${cls === "trend" ? "Strong trend" : "Fade " + f.units + "u"}</span>
+      <span class="chip ${cls === "trend" ? "strong" : "fade"}">${cls === "trend" ? "Strong trend" : "Fade " + f.units + "u"}</span>${f.both ? '<span class="chip both" style="margin-top:4px;display:block;text-align:center">2 sources</span>' : ""}
       <span style="min-width:0"><span class="pk">${esc(f.pick)}</span><br><span class="bs">${esc(g.away)} @ ${esc(g.home)}, ${esc(kickoff(g))}. ${esc(f.type === "fade" ? f.basis : f.name)}</span></span>
       <span class="bs">${f.type === "fade" ? "$" + f.units * UNIT : pct(f.pctAll)}</span></button>`;
   const first = games[0];
@@ -798,7 +803,7 @@ function renderGame() {
   const lt = lineText(g);
   const { sig, conflicts } = signalsFor(g);
   const sigHtml = sig.map(s => s.type === "fade"
-      ? `<div class="sig"><span class="chip fade">Fade ${s.units}u</span><span><span class="pick">${esc(s.pick)}</span> <span class="why">· ${esc(s.basis)}</span></span></div>`
+      ? `<div class="sig"><span class="chip fade">Fade ${s.units}u</span>${s.both ? ` <span class="chip both" title="DraftKings and Scores and Odds both have 80%+ of bets on the other side">2 sources</span>` : ""}<span><span class="pick">${esc(s.pick)}</span> <span class="why">· ${esc(s.basis)}</span></span></div>`
       : `<div class="sig"><span class="chip trend">${esc(s.verdict)}</span><span><span class="pick">${esc(s.pick)}</span> <span class="why">· ${esc(s.name)}, ${pct(s.pctAll)} since 1999</span></span></div>`).join("")
     + [...conflicts].map(m => `<div class="sig"><span class="chip warn">Conflict</span><span class="why">Signals disagree on the ${m}.</span></div>`).join("");
   // all trend matches incl. no-edge, for context
@@ -1314,6 +1319,7 @@ function gameLegs(gid) {
       if (agree) { p += 0.01; why.push("model agrees") }
     }
     const mv = movement(gid, market); if (mv?.rlm) { p += 0.01; why.push("line moving against the public") }
+    if (f.both) why.unshift("2 sources 80%+");
     out.push({ kind: market, gid, g, label: f.pick, sub: `${g.away} @ ${g.home} · ${why.join(", ")}`, p, price: BE110, edge: p - BE110, key: `${gid}|${market}` });
   }
   return out;
