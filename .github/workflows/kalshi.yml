@@ -1,0 +1,26 @@
+# Pulls Kalshi NFL player prop prices every 30 minutes, Thursday through Monday,
+# and commits site/data/kalshi.json. Runs on GitHub's servers, so your computer can stay off.
+name: Kalshi prop prices
+on:
+  schedule:
+    - cron: "*/30 * * * 0,1,4,5,6"   # every 30 min, Thu-Mon (UTC)
+    - cron: "0 */6 * * 2,3"          # every 6 hours Tue-Wed
+  workflow_dispatch: {}               # "Run workflow" button
+permissions:
+  contents: write
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests
+      - run: python kalshi.py --print
+      - name: Commit if prices changed
+        run: |
+          git config user.name "line-room-bot"
+          git config user.email "line-room-bot@users.noreply.github.com"
+          git add site/data/kalshi.json
+          git diff --cached --quiet || (git commit -m "Kalshi prices $(date -u +%FT%H:%MZ)" && git push)
