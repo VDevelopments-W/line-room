@@ -246,6 +246,10 @@ details.model summary { cursor: pointer; display: flex; flex-wrap: wrap; gap: 4p
 .inj.o { background: var(--loss-soft); color: var(--loss) }
 .inj.q { color: var(--muted) }
 .inj small { opacity: .85 }
+.t-wx { padding: 0 14px 6px; margin-top: -4px }
+.wx { font-size: 12px; color: var(--muted) }
+.wx.rough { color: var(--loss); font-weight: 600 }
+.usage { font-size: 12px; line-height: 1.4 }
 .qbflag { font-size: 13px; font-weight: 700; color: var(--loss) }
 
 /* ---------- game drawer */
@@ -535,9 +539,22 @@ function injStatus(team, name) {
   const side = gi.away.team === team ? gi.away : gi.home;
   return side.players.find(p => p.name === name || name.startsWith(p.name) || p.name.startsWith(name))?.status || null;
 }
+function wxChip(g) {
+  const w = S.wx?.[g.game_id]; if (!w || !w.label) return "";
+  const rough = (w.wind ?? 0) >= 15 || (w.snow ?? 0) > 0.05 || (w.precip_prob ?? 0) >= 60 || (w.temp ?? 60) <= 25;
+  return `<span class="wx${rough ? " rough" : ""}" title="${rough ? "Rough weather: the prop model lowers passing and catching numbers for wind and cold. " : ""}Forecast for kickoff">${esc(w.label)}</span>`;
+}
+function usageLine(g) {
+  const gc = S.pm?.ctx?.games?.[g.game_id]; if (!gc) return "";
+  const bits = Object.entries(gc.teams || {}).filter(([, t]) => (t.out || []).length).map(([team, t]) => {
+    const share = [t.vt >= 0.05 ? `${Math.round(t.vt * 100)}% of targets` : "", t.vc >= 0.05 ? `${Math.round(t.vc * 100)}% of carries` : ""].filter(Boolean).join(" and ");
+    return `<b>${esc(team)}</b>: ${t.out.map(esc).join(", ")} out${share ? `, ${share} to hand out` : ""}`;
+  });
+  return bits.length ? `<div class="usage why">Props adjusted for teammates out. ${bits.join(". ")}.</div>` : "";
+}
 function injuryBlock(g) {
   const gi = S.inj?.games?.[g.game_id];
-  if (!gi) return "";
+  if (!gi) return usageLine(g) ? `<div class="injuries">${usageLine(g)}</div>` : "";
   const parts = [];
   for (const side of [gi.away, gi.home]) {
     const q = side.qb;
@@ -548,7 +565,8 @@ function injuryBlock(g) {
     const qbLine = q && q.qb1_out ? `<div class="qbflag">QB change: ${esc(q.qb1)} out, ${esc(q.name)} expected to start</div>` : "";
     parts.push(`<div class="injside"><span class="label">${esc(side.team)}</span>${qbLine}<div class="injlist">${items}${more}</div></div>`);
   }
-  return parts.length ? `<div class="injuries">${parts.join("")}</div>` : "";
+  const ul = usageLine(g);
+  return parts.length || ul ? `<div class="injuries">${parts.join("")}${ul}</div>` : "";
 }
 
 // ---------- MODEL on game cards
@@ -575,6 +593,7 @@ function modelBlock(g) {
     ${Math.abs(diffS) >= 4 ? "A gap this big often means news the model can't fully price (injuries beyond the QB). Check before betting." : ""}
     ${coach ? `Coaches: ${esc(coach.away_coach)} vs ${esc(coach.home_coach)}.` : ""}</p>
     ${m.a_qb || m.h_qb ? `<p class="note" style="margin:4px 0 0">Starting QBs: ${esc(m.a_qb || "?")} vs ${esc(m.h_qb || "?")}.${Math.abs(m.qb_adj) >= 1 ? ` QB adjustment moves the spread ${Math.abs(m.qb_adj).toFixed(1)} pts toward ${m.qb_adj > 0 ? esc(g.home) : esc(g.away)}.` : ""}</p>` : ""}
+    ${Math.abs(m.wx_adj ?? 0) >= 0.5 ? `<p class="note" style="margin:4px 0 0">Weather: the total includes ${m.wx_adj > 0 ? "+" : "−"}${Math.abs(m.wx_adj).toFixed(1)} pts for the forecast${S.wx?.[g.game_id]?.label ? ` (${esc(S.wx[g.game_id].label)})` : ""}.</p>` : ""}
   </details>`;
 }
 
@@ -709,7 +728,7 @@ function renderWeek() {
     sig.filter(s => s.type === "trend" && s.verdict === "Strong").forEach(f => allTrends.push({ g, f }));
     return `<article class="ticket clickable ${fades2.length ? "hot" : ""}" data-card="${g.game_id}" tabindex="0" aria-label="${esc(g.away)} at ${esc(g.home)}: open game details">
       ${fades2.length ? `<div class="t-flag"><span>Fade ${fades2.map(f => esc(f.pick) + (f.both ? " · 2 sources 80%+" : "")).join(" and ")}</span><span>${fades2.reduce((a, f) => a + f.units, 0)}u</span></div>` : ""}
-      <div class="t-meta"><span><b>${esc(kickoff(g))}</b>${g.div_game ? ", division game" : ""}</span><span>Total <b>${g.total_line}</b></span></div>
+      <div class="t-meta"><span><b>${esc(kickoff(g))}</b>${g.div_game ? ", division game" : ""}</span><span>Total <b>${g.total_line}</b></span></div>${wxChip(g) ? `<div class="t-wx">${wxChip(g)}</div>` : ""}
       <div class="slabs">${slab(g, "away")}${slab(g, "home")}</div>
       ${injuryBlock(g)}
       ${modelBlock(g)}
@@ -952,6 +971,24 @@ function pubCell(r) {
   return `<span class="pubp ${b >= 80 ? "hot" : ""}">${b}% ${side.toLowerCase()} ${x.line}</span>${m != null ? `<div class="why" style="font-size:12px">${m}% of money</div>` : ""}`;
 }
 // Player prop model (prop_model.py): logistic on recent production, opponent, game script. Twin of prop_model.design()
+const PM_SHARE = { receptions: "tsh", receiving_yards: "tsh", carries: "csh", rushing_yards: "csh" };
+// usage trend, snap trend, teammates out, weather and the completions x yds/completion x target share formula (same as prop_model.py extras())
+function pmExtras(pl, stat, gid, team, opp, z, sd, line) {
+  const PM = S.pm, u = pl.u || {}, c = PM.ctx || {}, gc = c.games?.[gid] || {}, tc = gc.teams?.[team] || {};
+  const sh = PM_SHARE[stat], vk = sh === "csh" ? "vc" : "vt";
+  const nz = v => v == null || Number.isNaN(v) ? 0 : v, lt = (a, b) => Math.log((nz(a) + 0.03) / (nz(b) + 0.03));
+  const trend = sh ? lt(u[sh + "_s"], u[sh + "_l"]) : 0, snap = lt(u.snap_s, u.snap_l);
+  const boost = Math.log(1 / (1 - Math.min(0.7, Math.max(0, nz(tc[vk])))));
+  const vsame = sh ? nz(tc[vk + "_g"]?.[pl.grp]) : 0;
+  const wind = gc.wind ?? (PM.wind_mean ?? 9) / 10, cold = gc.cold ?? 0;
+  let zf = 0;
+  if (stat === "receiving_yards" || stat === "receptions") {
+    let proj = nz(tc.cmp) * nz(u.tsh_l);
+    if (stat === "receiving_yards") proj *= c.dypc?.[opp] ?? 11;
+    zf = (proj - line) / sd;
+  }
+  return [trend, trend * z, snap, boost, vsame, wind, cold, zf];
+}
 function modelProb(player, stat, line, gid) {
   const PM = S.pm; if (!PM) return null;
   const st = PM.stats[stat], pl = PM.players[player]; if (!st || !pl || !pl[stat]) return null;
@@ -960,6 +997,7 @@ function modelProb(player, stat, line, gid) {
   const [mu, sd, n] = pl[stat], f = PM.defense?.[stat]?.[`${opp}|${pl.grp}`] ?? 1, imp = PM.implied?.[gid]?.[team] ?? 22.5;
   const ma = mu * f, z = (ma - line) / sd, li = Math.log(Math.min(45, Math.max(8, imp)) / 22.5), ln1 = Math.log1p(n);
   const x = [z, z * Math.abs(z), Math.log(f), ln1, z * ln1, home, Math.log1p(line) - Math.log1p(Math.max(ma, 0)), li, li * z];
+  if (st.coef.length > x.length) x.push(...pmExtras(pl, stat, gid, team, opp, z, sd, line));
   const t = st.intercept + st.coef.reduce((a, c, i) => a + c * x[i], 0);
   return 1 / (1 + Math.exp(-t));
 }
@@ -1438,8 +1476,9 @@ function renderAll() {
     renderAll();
     fetch("data/props.json").then(r => r.json()).then(p => { S.props = p; renderProps(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/signals.json").then(r => r.json()).then(x => { S.signals = x; renderFade() }).catch(() => {});
-    fetch("data/propmodel.json").then(r => r.json()).then(x => { S.pm = x; renderProps(); renderParlays(); if (S.gameView) renderGame() }).catch(() => {});
+    fetch("data/propmodel.json").then(r => r.json()).then(x => { S.pm = x; renderWeek(); renderProps(); renderParlays(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/model.json").then(r => r.json()).then(m => { S.model = m; renderRatings(); renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
+    fetch("data/weather.json").then(r => r.json()).then(x => { S.wx = x.games || {}; renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/injuries.json").then(r => r.json()).then(x => { S.inj = x; renderWeek(); renderProps(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/people.json").then(r => r.json()).then(p => { S.people = p; renderPeople(); renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
   } catch (e) {

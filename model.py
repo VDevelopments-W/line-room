@@ -34,6 +34,7 @@ from trends import _clean
 from qb import QBRatings
 
 USE_QB = True
+USE_WX = True        # wind and cold in the projected total (outdoor games)
 
 HERE = Path(__file__).resolve().parent
 DB_PATH = HERE / "nfl.db"
@@ -53,7 +54,7 @@ def load():
     con = sqlite3.connect(DB_PATH)
     g = pd.read_sql("SELECT game_id, season, week, game_type, gameday, away_team, home_team, "
                     "away_score, home_score, result, total, spread_line, total_line, location, "
-                    "away_qb_id, home_qb_id "
+                    "away_qb_id, home_qb_id, roof, temp, wind "
                     "FROM games", con)
     con.close()
     frames = [pd.read_csv(f, low_memory=False) for f in sorted(glob.glob(str(HERE / "data" / "team" / "t*.csv.gz")))]
@@ -142,8 +143,22 @@ def project(r, team, opp, home):
 
 # ----------------------------------------------------------------- backtest
 
-def build_rows(g, tg, QB, seasons, min_week=1, starters=None):
-    """starters: optional {game_id: {"home": qb_id, "away": qb_id}} for games not played yet."""
+def weather_inputs(x, wx):
+    """(wind/10, degrees below 40/10) for outdoor games; game-time history from nflverse, forecast for upcoming."""
+    if x.roof in ("dome", "closed"):
+        return 0.0, 0.0
+    f = (wx or {}).get(x.game_id, {})
+    wind = x.wind if pd.notna(x.wind) else f.get("wind")
+    temp = x.temp if pd.notna(x.temp) else f.get("temp")
+    return (WIND_MEAN if wind is None else wind) / 10, (0 if temp is None else max(0, 40 - temp)) / 10
+
+
+WIND_MEAN = 9.0
+
+
+def build_rows(g, tg, QB, seasons, min_week=1, starters=None, wx=None):
+    """starters: optional {game_id: {"home": qb_id, "away": qb_id}} for games not played yet.
+    wx: optional weather.json games, for forecasts."""
     rows = []
     for season in seasons:
         sg = g[g.season == season]
@@ -173,7 +188,8 @@ def build_rows(g, tg, QB, seasons, min_week=1, starters=None):
                              "h_to": ph["turnovers"], "a_to": pa["turnovers"],
                              "h_qb": hq, "a_qb": aq, "h_qbr": hqr, "a_qbr": aqr, "dq_h": dq_h, "dq_a": dq_a,
                              "result": x.result, "total": x.total,
-                             "spread_line": x.spread_line, "total_line": x.total_line})
+                             "spread_line": x.spread_line, "total_line": x.total_line,
+                             **dict(zip(("wind_f", "cold_f"), weather_inputs(x, wx)))})
     return pd.DataFrame(rows)
 
 
@@ -186,7 +202,7 @@ def fit_blend(df):
     bm = np.linalg.lstsq(Xm, d.result, rcond=None)[0]
     Xt = np.column_stack([np.ones(len(d)), d.h_pts_raw + d.a_pts_raw,
                           (d.h_epa + d.a_epa) * (d.h_plays + d.a_plays) / 2, d.h_plays + d.a_plays,
-                          (d.dq_h + d.dq_a) * USE_QB])
+                          (d.dq_h + d.dq_a) * USE_QB, d.wind_f * USE_WX, d.cold_f * USE_WX])
     bt = np.linalg.lstsq(Xt, d.total, rcond=None)[0]
     return bm, bt
 
@@ -200,6 +216,8 @@ def apply_blend(df, bm, bt):
     df["total_proj"] = bt[0] + bt[1] * (df.h_pts_raw + df.a_pts_raw) \
         + bt[2] * (df.h_epa + df.a_epa) * (df.h_plays + df.a_plays) / 2 + bt[3] * (df.h_plays + df.a_plays) \
         + bt[4] * (df.dq_h + df.dq_a) * USE_QB
+    df["wx_adj"] = (bt[5] * df.wind_f + bt[6] * df.cold_f) * USE_WX
+    df["total_proj"] = df.total_proj + df.wx_adj
     df["h_pts"] = (df.total_proj + df.margin) / 2
     df["a_pts"] = (df.total_proj - df.margin) / 2
     return df
@@ -252,7 +270,11 @@ def main():
     cur_season = int(g.season.max())
     hist_seasons = list(range(FIRST, cur_season))
     starters = expected_starters(g, tg, QB)
-    df = build_rows(g, tg, QB, hist_seasons + [cur_season], min_week=1, starters=starters)
+    global WIND_MEAN
+    WIND_MEAN = float(g.loc[~g.roof.isin(["dome", "closed"]), "wind"].mean())
+    wf = HERE / "site" / "data" / "weather.json"
+    wx = json.loads(wf.read_text()).get("games", {}) if wf.exists() else {}
+    df = build_rows(g, tg, QB, hist_seasons + [cur_season], min_week=1, starters=starters, wx=wx)
     train = df[(df.season <= FIT_END) & (df.week >= 3)]
     bm, bt = fit_blend(train)
     df = apply_blend(df, bm, bt)
@@ -279,7 +301,7 @@ def main():
         games[-1]["h_epa"] = round(float(x.h_epa), 3); games[-1]["a_epa"] = round(float(x.a_epa), 3)
         games[-1].update({"h_qb": QB.name(x.h_qb) or None, "a_qb": QB.name(x.a_qb) or None,
                           "h_qbr": round(float(x.h_qbr), 3), "a_qbr": round(float(x.a_qbr), 3),
-                          "qb_adj": round(float(x.qb_adj_margin), 1)})
+                          "qb_adj": round(float(x.qb_adj_margin), 1), "wx_adj": round(float(x.wx_adj), 1)})
 
     # power ratings table (as of now): points-based net rating per team vs average opponent, neutral field
     r = ratings_before(tg, cur_season, wk)

@@ -4,6 +4,7 @@ Download the nflverse files the pipeline needs (free, from GitHub releases).
 
   data/players/w{year}.csv.gz   weekly player stats, 2001 to now
   data/team/t{year}.csv.gz      weekly team stats, 1999 to now
+  data/snaps/s{year}.csv.gz     snap counts (offense %), 2013 to now
   data/injuries/*.csv           this season's injury reports and depth charts (injuries.py --refresh)
 
 Past seasons are only downloaded once; the current season is always refreshed.
@@ -22,6 +23,7 @@ SEASON = NOW.year if NOW.month >= 8 else NOW.year - 1
 JOBS = [
     ("players", "w", 2001, f"{BASE}/stats_player/stats_player_week_{{y}}.csv.gz"),
     ("team", "t", 1999, f"{BASE}/stats_team/stats_team_week_{{y}}.csv.gz"),
+    ("snaps", "s", 2013, f"{BASE}/snap_counts/snap_counts_{{y}}.csv.gz"),
 ]
 
 

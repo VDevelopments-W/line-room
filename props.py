@@ -243,7 +243,7 @@ def main():
         model = json.loads(pmp.read_text())
         for r in rows:
             imp = model.get("implied", {}).get(r["game_id"], {}).get(r["team"], 22.5)
-            p = pm.prob(model, r["player"], r["stat"], r["line"], r["opp"], r["ha"] == "vs", imp)
+            p = pm.prob(model, r["player"], r["stat"], r["line"], r["opp"], r["ha"] == "vs", imp, r["game_id"])
             r["p_model"] = None if p is None else round(float(p), 4)
             r["fair_model"] = american(r["p_model"])
     table = [{"stat": k[0], "type": k[1], "bucket": k[2], "hit": v[0], "n": v[1]}

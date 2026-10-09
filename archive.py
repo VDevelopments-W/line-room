@@ -76,7 +76,7 @@ def main():
                     continue
                 team = pl["team"]
                 opp = g["home"] if team == g["away"] else g["away"]
-                p = pm.prob(model_p, r["player"], r["stat"], r["line"], opp, team == g["home"], imp.get(team, 22.5))
+                p = pm.prob(model_p, r["player"], r["stat"], r["line"], opp, team == g["home"], imp.get(team, 22.5), gid)
                 if p is None:
                     continue
                 pp.setdefault(gid, []).append({"player": r["player"], "stat": r["stat"], "line": r["line"], "p": round(float(p), 4),

@@ -10,6 +10,6 @@
 ## Data files (daily only)
 Publish site/index.html with these files (Artifact `publish`, `url` = the site, `file_path` = site/index.html,
 `files` = {"data/<name>": "site/data/<name>"} for trends.json, props.json, model.json, injuries.json,
-people.json, signals.json, propmodel.json). Do NOT pass `capabilities` (keeps the database rules) or `icon`.
+people.json, signals.json, propmodel.json, weather.json). Do NOT pass `capabilities` (keeps the database rules) or `icon`.
 If the publish is refused because a published file wasn't read in this session, Artifact `read` that
 path (out_dir in the scratchpad), then publish again.

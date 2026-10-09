@@ -2,9 +2,6 @@
 name: DraftKings backfill
 on:
   workflow_dispatch: {}
-  push:
-    branches: [main]
-    paths: ["backfill_dk.py", ".github/workflows/backfill.yml"]
 permissions:
   contents: write
 concurrency:
