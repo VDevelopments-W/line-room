@@ -1,0 +1,24 @@
+# Research only: actual game-time weather (incl. rain) for past outdoor games. Not used by the models.
+name: Research (rain archive)
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["research/rain_fetch.py", ".github/workflows/research.yml"]
+permissions:
+  contents: write
+concurrency:
+  group: "${{ github.workflow }}"
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests pandas
+      - run: python ingest.py
+      - run: python research/rain_fetch.py
+      - run: bash commit.sh "Research: archive weather for past outdoor games" research/rain_games.csv
