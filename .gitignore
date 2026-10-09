@@ -1,8 +1,8 @@
 nfl.db
 splits.db
-data/players/
-data/team/
-data/injuries/
+data/players
+data/team
+data/injuries
 __pycache__/
 kalshi_docs.json
 kalshi_docs/
