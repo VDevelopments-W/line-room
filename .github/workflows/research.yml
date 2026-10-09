@@ -21,4 +21,4 @@ jobs:
       - run: pip install requests pandas
       - run: python ingest.py
       - run: python research/rain_fetch.py
-      - run: bash commit.sh "Research: archive weather for past outdoor games" research/rain_games.csv
+      - run: bash commit.sh "Research - archive weather for past outdoor games" research/rain_games.csv
