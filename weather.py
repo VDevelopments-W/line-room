@@ -113,8 +113,10 @@ def main():
         w["label"] = label(w)
         out[gid] = w
     old = json.loads(OUT.read_text()).get("games", {}) if OUT.exists() else {}
+    now = datetime.now(timezone.utc)
     for gid, w in old.items():  # keep the last forecast for games already started
-        if gid in out and out[gid].get("wind") is None and w.get("wind") is not None:
+        if gid in out and kickoff_utc(games[gid]) <= now and out[gid].get("roof") not in INDOOR \
+                and out[gid].get("wind") is None and w.get("wind") is not None:
             out[gid] = w
     OUT.write_text(json.dumps({"generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "games": out}))
     print(f"Weather: {sum(1 for w in out.values() if w.get('wind') is not None)} outdoor forecasts, "
