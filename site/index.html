@@ -153,7 +153,7 @@ p.lede { color: var(--muted); max-width: 66ch; margin: 0 0 22px; font-size: 15.5
 .slab.fav .ln { color: var(--ink) }
 .slab .score { font-family: var(--font-led); font-weight: 900; font-size: 28px; color: var(--ink) }
 .splits { padding: 10px 14px 12px; display: grid; gap: 7px; border-top: 1px solid var(--line) }
-.srow { display: grid; grid-template-columns: minmax(78px, 1fr) 1.3fr 1.3fr 36px 44px; gap: 8px; align-items: center; font-size: 13px }
+.srow { display: grid; grid-template-columns: minmax(78px, 1fr) 1.3fr 1.3fr 40px; gap: 8px; align-items: center; font-size: 13px }
 .srow.head { font-size: 11.5px; font-weight: 600; font-stretch: 85%; color: var(--muted) }
 .srow .side { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
 .bar { position: relative; height: 18px; background: var(--panel-2); border-radius: 3px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--line) }
@@ -283,7 +283,7 @@ body.drawer-open { overflow: hidden }
 .gboard .meta { font-size: 13px; color: rgba(241,239,230,.65); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; border-top: 1px solid rgba(255,255,255,.08); padding-top: 10px }
 
 footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--line); padding-top: 14px; max-width: 84ch }
-@media (max-width: 520px) { .slab .ab { font-size: 28px } .srow { grid-template-columns: 66px 1fr 1fr 32px 40px; gap: 5px } h2 { font-size: 34px } .weekno .n { font-size: 84px } }
+@media (max-width: 520px) { .slab .ab { font-size: 28px } .srow { grid-template-columns: 66px 1fr 1fr 36px; gap: 5px } h2 { font-size: 34px } .weekno .n { font-size: 84px } }
 @media (prefers-reduced-motion: no-preference) { .bar i { transition: width .5s cubic-bezier(.2,.8,.2,1) } }
 </style>
 
@@ -306,23 +306,28 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
 
   <nav class="tabs" role="tablist" aria-label="Sections">
     <button role="tab" id="tab-week" aria-controls="p-week" aria-selected="true">This week</button>
-    <button role="tab" id="tab-trends" aria-controls="p-trends" aria-selected="false">Trends</button>
-    <button role="tab" id="tab-props" aria-controls="p-props" aria-selected="false">Player props</button>
     <button role="tab" id="tab-parlays" aria-controls="p-parlays" aria-selected="false">Parlays</button>
-    <button role="tab" id="tab-ratings" aria-controls="p-ratings" aria-selected="false">Power ratings</button>
-    <button role="tab" id="tab-people" aria-controls="p-people" aria-selected="false">Refs and coaches</button>
+    <button role="tab" id="tab-props" aria-controls="p-props" aria-selected="false">Player props</button>
     <button role="tab" id="tab-fade" aria-controls="p-fade" aria-selected="false">Results</button>
     <button role="tab" id="tab-bets" aria-controls="p-bets" aria-selected="false">Bet log</button>
+    <button role="tab" id="tab-research" aria-controls="p-research" aria-selected="false">Research</button>
   </nav>
 
   <section id="p-week" role="tabpanel" aria-labelledby="tab-week"></section>
-  <section id="p-trends" role="tabpanel" aria-labelledby="tab-trends" hidden></section>
-  <section id="p-props" role="tabpanel" aria-labelledby="tab-props" hidden></section>
   <section id="p-parlays" role="tabpanel" aria-labelledby="tab-parlays" hidden></section>
-  <section id="p-ratings" role="tabpanel" aria-labelledby="tab-ratings" hidden></section>
-  <section id="p-people" role="tabpanel" aria-labelledby="tab-people" hidden></section>
+  <section id="p-props" role="tabpanel" aria-labelledby="tab-props" hidden></section>
   <section id="p-fade" role="tabpanel" aria-labelledby="tab-fade" hidden></section>
   <section id="p-bets" role="tabpanel" aria-labelledby="tab-bets" hidden></section>
+  <section id="p-research" role="tabpanel" aria-labelledby="tab-research" hidden>
+    <h2>Research</h2>
+    <p class="lede">The background numbers. None of these has beaten the betting line on its own, so they're here for context, not picks. The power-rating model still shows up on each game card and as a tiebreaker in the parlays.</p>
+    <div class="filters" role="group" aria-label="Research section">
+      <button data-rt="ratings" aria-pressed="true">Power ratings</button><button data-rt="trends" aria-pressed="false">Trends</button><button data-rt="people" aria-pressed="false">Refs and coaches</button>
+    </div>
+    <div id="p-ratings"></div>
+    <div id="p-trends" hidden></div>
+    <div id="p-people" hidden></div>
+  </section>
 
   <footer>
     Lines and results from nflverse (closing lines, 1999 to now). Public splits from DraftKings (all states) and the Scores and Odds consensus,
@@ -417,8 +422,16 @@ function renderHeader() {
 }
 
 // ---------- tabs
-const TABS = ["week", "trends", "props", "parlays", "ratings", "people", "fade", "bets"];
+const TABS = ["week", "parlays", "props", "fade", "bets", "research"];
+const RESEARCH = ["ratings", "trends", "people"];
+function showResearch(sub) {
+  RESEARCH.forEach(r => { $("#p-" + r).hidden = r !== sub; document.querySelector(`[data-rt="${r}"]`).setAttribute("aria-pressed", String(r === sub)) });
+  try { localStorage.setItem("lr-rt", sub) } catch (e) {}
+}
+document.querySelectorAll("[data-rt]").forEach(b => b.addEventListener("click", () => showResearch(b.dataset.rt)));
+try { const r = localStorage.getItem("lr-rt"); if (RESEARCH.includes(r)) showResearch(r) } catch (e) {}
 function showTab(name) {
+  if (RESEARCH.includes(name)) { showResearch(name); name = "research" }
   TABS.forEach(t => {
     $("#tab-" + t).setAttribute("aria-selected", String(t === name));
     $("#p-" + t).hidden = t !== name;
@@ -428,8 +441,8 @@ function showTab(name) {
 TABS.forEach(t => $("#tab-" + t).addEventListener("click", () => showTab(t)));
 {
   let start = (location.hash || "").slice(1);
-  if (!TABS.includes(start)) { try { start = localStorage.getItem("lr-tab") || "week" } catch (e) { start = "week" } }
-  if (TABS.includes(start)) showTab(start);
+  if (!TABS.includes(start) && !RESEARCH.includes(start)) { try { start = localStorage.getItem("lr-tab") || "week" } catch (e) { start = "week" } }
+  if (TABS.includes(start) || RESEARCH.includes(start)) showTab(start);
 }
 
 // ---------- time: nflverse times are US Eastern
@@ -501,7 +514,7 @@ function trendSignals(game) {
 function signalsFor(game) {
   const sig = [];
   ["spread", "total"].forEach(m => { const f = fadeSignal(game, m); if (f) sig.push(f) });
-  sig.push(...trendSignals(game));
+  // trends showed no edge, so they stay in Research and the game panel, not on the cards
   const conflicts = new Set();
   for (const a of sig) for (const b of sig) if (a !== b && a.market === b.market && a.side !== b.side) conflicts.add(a.market);
   return { sig, conflicts };
@@ -621,14 +634,13 @@ function splitsBlock(g) {
         <div class="bar ${b >= 80 ? "over80" : ""}" title="DraftKings % of bets"><i style="width:${b ?? 0}%"></i><span>${b ?? "–"}%</span></div>
         <div class="bar m" title="DraftKings % of money"><i style="width:${m ?? 0}%"></i><span>${m ?? "–"}%</span></div>
         <div class="sao" title="Scores and Odds consensus % of bets">${sao ? sao.bets + "%" : "–"}</div>
-        <div class="sao" title="Covers contest picks %">${cov ? cov.bets + "%" : "–"}</div>
       </div>`);
     }
     return out.join("");
   };
   const when = doc.updated ? new Date(doc.updated).toLocaleString("en-US", { weekday: "short", hour: "numeric", minute: "2-digit" }) : "";
   return `<div class="splits">
-    <div class="srow head"><div>Side</div><div>DK bets</div><div>DK money</div><div style="text-align:right" title="Scores and Odds consensus, % of bets">S&amp;O</div><div style="text-align:right" title="Covers contest picks">Covers</div></div>
+    <div class="srow head"><div>Side</div><div>DK bets</div><div>DK money</div><div style="text-align:right" title="Scores and Odds consensus, % of bets">S&amp;O</div></div>
     ${block("spread", ["away", "home"])}${block("total", ["over", "under"])}
     <div class="label" style="font-size:11px">Splits as of ${esc(when)}</div>
   </div>`;
