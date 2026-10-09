@@ -336,7 +336,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
 
 <script>
 const UNIT = 20;
-const S = { par: { mode: "sgp", game: null, picks: [] }, hist: {}, signals: null, pm: null, kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
+const S = { par: { mode: "sgp", game: null, picks: [], style: "value" }, hist: {}, signals: null, pm: null, kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const pct = x => x == null ? "–" : (x * 100).toFixed(1) + "%";
@@ -1321,25 +1321,37 @@ function renderParlays() {
   const el = $("#p-parlays"); if (!S.data) return;
   const games = S.data.week_games;
   if (!S.pm || !Object.keys(S.kalshi).length) { el.innerHTML = '<h2>This week\'s parlays</h2><div class="empty">Loading Kalshi prices and the prop model.</div>'; return }
-  const props = games.flatMap(g => propLegs(g.game_id)).filter(l => l.p >= COMMON && l.edge > 0).sort((a, b) => b.edge - a.edge);
-  const lines = games.flatMap(g => gameLegs(g.game_id)).filter(l => l.edge > 0).sort((a, b) => b.edge - a.edge);
+  const likely = S.par.style === "likely";
+  // value: our chance beats the price. likely: highest chance (65-85%, so it still pays), not badly overpriced
+  const keepProp = l => likely ? l.p >= 0.65 && l.p <= 0.85 && l.edge >= -0.10 : l.p >= COMMON && l.edge > 0;
+  const order = likely ? (a, b) => b.p - a.p || b.edge - a.edge : (a, b) => b.edge - a.edge;
+  const props = games.flatMap(g => propLegs(g.game_id)).filter(keepProp).sort(order);
+  const lines = games.flatMap(g => gameLegs(g.game_id)).filter(l => l.edge > 0).sort(order);
   const cards = [];
   cards.push(pickCard(oneGameEach(lines), "Game-line parlay",
     "The strongest fades on the board: the sides the public is piling onto, flipped. Our most tested signal, biggest payout.", 10));
-  cards.push(pickCard(oneGameEach(props), "Player prop parlay",
-    "The most valuable props that are also likely to hit (60%+), each from a different game so one bad game can't sink it.", 10));
+  cards.push(pickCard(oneGameEach(props), "Player prop parlay", likely
+    ? "The props most likely to hit, each from a different game. Priced about fair, so the payout is smaller but it hits more often."
+    : "The most valuable props that are also likely to hit (60%+), each from a different game so one bad game can't sink it.", 10));
   const mix = lines.length ? oneGameEach([lines[0], ...props.filter(l => l.gid !== lines[0].gid)]) : [];
   cards.push(pickCard(mix, "My favorite mix",
     "The best fade on the board plus the two best likely props from other games: one leg from each of our signals.", 10));
   let best = null;
-  for (const g of games) { const legs = sgpLegs(g.game_id); if (legs.length >= 2) { const v = legs.reduce((a, l) => a + l.edge, 0); if (!best || v > best.v) best = { g, legs, v } } }
+  for (const g of games) {
+    const used = new Set(), legs = [];
+    for (const l of props.filter(x => x.gid === g.game_id)) { if (used.has(l.player)) continue; used.add(l.player); legs.push(l); if (legs.length === 3) break }
+    if (legs.length >= 2) { const v = legs.reduce((a, l) => a + (likely ? l.p : l.edge), 0); if (!best || v > best.v) best = { g, legs, v } }
+  }
   if (best) cards.push(pickCard(best.legs, `Same-game stack: ${best.g.away} @ ${best.g.home}`,
     "The game with the most value in its likely props. Same-game legs tend to hit or miss together, so DraftKings will pay less than the fair odds; take it only if the price is close.", 10));
   el.innerHTML = `<h2>This week's parlays</h2>
+    <div class="filters" role="group" aria-label="Build parlays for"><button data-style="value" aria-pressed="${!likely}">Value</button><button data-style="likely" aria-pressed="${likely}">Most likely</button>
+      <span class="why" style="font-size:13px;align-self:center;margin-left:6px">${likely ? "Legs most likely to hit (65-85%), even if the price is about fair." : "Legs where our chance beats the price."}</span></div>
     <p class="lede">Built automatically from the board and refreshed as prices move. Prop chances are our player model averaged with Kalshi's price; game legs are fade signals (54.5% with one source at 80%+, 57% with both, a point more when the model agrees or the line moves against the public). Injured players and thinly traded props are left out.</p>
     ${cards.filter(Boolean).join("") || '<div class="empty">No parlays yet: nothing on the board has value right now.</div>'}
-    <h3>Every likely prop with value</h3>${legTable(props.slice(0, 30))}
+    <h3>${likely ? "Most likely props" : "Every likely prop with value"}</h3>${legTable(props.slice(0, 30))}
     <p class="note">Chances multiply as if legs were independent. Check the final injury news and the price in your app before betting.</p>`;
+  el.querySelectorAll("[data-style]").forEach(b => b.onclick = () => { S.par.style = b.dataset.style; renderParlays() });
 }
 
 function renderAll() {
