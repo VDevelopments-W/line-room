@@ -918,7 +918,7 @@ function kalshiCell(r) {
   if (!k) return `<span class="why" title="${S.kalshi[r.game_id] ? "No Kalshi market for this player and stat" : "Kalshi prices not loaded for this game yet"}">–</span>`;
   const price = `${Math.round(k.p * 100)}¢ <span class="why">(${fmtAm(toAmerican(k.p))})</span>`;
   if (!k.exact) return `<span class="why" title="Kalshi has no ${r.line}+ market; nearest is ${k.line}+">${k.line}+ ${Math.round(k.p * 100)}¢</span>`;
-  const tag = k.edge == null ? "" : k.edge >= 0.05 ? `<span class="chip strong" title="Model ${pct(pOf(r))}, Kalshi charges ${Math.round(k.p * 100)}¢">Value +${Math.round(k.edge * 100)}</span>`
+  const tag = k.edge == null ? "" : k.edge > 0.15 ? `<span class="chip warn" title="A gap this big usually means news the model can't see: an injury, a role change or a benching.">Check news</span>` : k.edge >= 0.05 ? `<span class="chip strong" title="Model ${pct(pOf(r))}, Kalshi charges ${Math.round(k.p * 100)}¢">Value +${Math.round(k.edge * 100)}</span>`
     : k.edge <= -0.05 ? `<span class="chip noedge" title="Kalshi charges more than history says it's worth">Pricey</span>` : "";
   return `<div style="white-space:nowrap">${price}</div>${tag}${k.thin ? ' <span class="why" style="font-size:11px" title="Wide gap between buy and sell price">thin</span>' : ""}`;
 }
@@ -943,9 +943,9 @@ function kalshiBoard() {
       <td class="line">${o.x.line}+ ${esc(STAT_SHORT[o.x.stat] || o.x.stat)}</td>
       <td class="num r"><span class="hitbar"><i style="width:${Math.round(o.p * 100)}%"></i></span>${pct(o.p)}</td>
       <td class="num r">${Math.round(o.x.ask * 100)}¢ <span class="why">(${fmtAm(toAmerican(o.x.ask))})</span></td>
-      <td class="num r">${o.edge >= 0.05 && !o.thin ? `<span class="chip strong">+${Math.round(o.edge * 100)}</span>` : `<span class="${o.edge > 0 ? "pos" : "neg"}">${o.edge > 0 ? "+" : "−"}${Math.abs(Math.round(o.edge * 100))}</span>`}</td>
+      <td class="num r">${o.edge > 0.15 && !o.thin ? `<span class="chip warn" title="A gap this big usually means news the model can't see: an injury, a role change or a benching. Check before betting.">+${Math.round(o.edge * 100)} check news</span>` : o.edge >= 0.05 && !o.thin ? `<span class="chip strong">+${Math.round(o.edge * 100)}</span>` : `<span class="${o.edge > 0 ? "pos" : "neg"}">${o.edge > 0 ? "+" : "−"}${Math.abs(Math.round(o.edge * 100))}</span>`}</td>
       <td class="num r why">${Math.round(o.x.volume ?? 0)}${o.thin ? " thin" : ""}</td></tr>`).join("");
-  return `<p class="note">Every Kalshi player prop this week, priced by the model. Edge = model chance minus Kalshi's buy price, in points. Faded rows trade too little to trust the price. ${out.length > 250 ? `Showing the top 250 of ${out.length}.` : ""}</p>
+  return `<p class="note">Every Kalshi player prop this week, priced by the model. Edge = model chance minus Kalshi's buy price, in points. 5 to 15 points is the value zone. Bigger gaps almost always mean news the model can't see (injury, role change), so check before betting. Faded rows trade too little to trust the price. ${out.length > 250 ? `Showing the top 250 of ${out.length}.` : ""}</p>
     <div class="tablewrap"><table class="ptable"><thead><tr><th>Player</th><th>Line</th><th class="r">Model chance</th><th class="r">Kalshi price</th><th class="r">Edge</th><th class="r">Volume</th></tr></thead><tbody>${body}</tbody></table></div>`;
 }
 function stackCell(r) {
@@ -984,7 +984,7 @@ function renderProps() {
     $("#pf-view").onchange = e => { S.pview = e.target.value; renderProps() };
     $("#pf-q").oninput = e => { S.pf.q = e.target.value.toLowerCase(); renderProps() };
   }
-  let rows = P.rows.filter(r => (f.stat === "All" || r.label === f.stat) && (f.type === "All" || r.type === f.type || (f.type === "stack3" && r.stack === "stack3") || (f.type === "nomiss" && r.type === "last" && r.stack !== "missed") || (f.type === "kvalue" && (kalshiFor(r)?.edge ?? -1) >= 0.05))
+  let rows = P.rows.filter(r => (f.stat === "All" || r.label === f.stat) && (f.type === "All" || r.type === f.type || (f.type === "stack3" && r.stack === "stack3") || (f.type === "nomiss" && r.type === "last" && r.stack !== "missed") || (f.type === "kvalue" && (kalshiFor(r)?.edge ?? -1) >= 0.05 && (kalshiFor(r)?.edge ?? 1) <= 0.15))
     && (S.pgame === "All" || r.game_id === S.pgame) && (!f.q || r.player.toLowerCase().includes(f.q)));
   const outRank = r => { const st = injStatus(r.team, r.player); return st === "Out" || st === "Doubtful" ? 1 : 0 };
   rows.sort((a, b) => outRank(a) - outRank(b) || (f.type === "kvalue" ? (kalshiFor(b)?.edge ?? 0) - (kalshiFor(a)?.edge ?? 0) : 0) || (pOf(b) ?? 0) - (pOf(a) ?? 0) || b.streak - a.streak);

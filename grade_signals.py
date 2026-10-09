@@ -33,7 +33,7 @@ LABELS = {
     "fade_sao": ("Fade: Scores and Odds 80%+", "80%+ at Scores and Odds only, DraftKings under 80%."),
     "fade_70": ("Fade watch: 70-79%", "70-79% at either source. Tracked, not bet."),
     "model_side": ("Model: 3+ points off the line", "Power ratings disagree with the spread or total by 3+ points."),
-    "prop_model": ("Props: model beats Kalshi by 5+", "Player prop model's chance is 5+ points above Kalshi's closing price."),
+    "prop_model": ("Props: model beats Kalshi by 5+", "Player prop model's chance is 5 to 15 points above Kalshi's closing price (bigger gaps usually mean news)."),
     "prop_streak": ("Props: streak history beats Kalshi by 3+", "The streak board's pooled history beats Kalshi's closing price by 3+ points."),
 }
 
@@ -187,7 +187,7 @@ def props(G):
                 base = {"week": int(g.week), "game": f"{g.away_team} @ {g.home_team}",
                         "pick": f"{r['player']} {r['line']}+ {r['stat'].replace('_', ' ')}", "res": "W" if hit else "L",
                         "price": ask, "actual": float(val)}
-                if r["p"] - ask >= 0.05:
+                if 0.05 <= r["p"] - ask <= 0.15:
                     items.append({**base, "key": "prop_model", "note": f"model {r['p']*100:.0f}% vs {ask*100:.0f}¢"})
                 hh = hist.get((r["player"], r["stat"], r["line"]))
                 if hh is not None and hh - ask >= 0.03:

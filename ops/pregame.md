@@ -17,7 +17,7 @@ Input: the game ids named in the task prompt.
 4. Injuries: WebSearch the inactives/injury news for each team in a play (inactives post ~90 min before
    kickoff). Call out a starting QB change or key starter out, and whether it changes the play.
 5. Props: from site/data/kalshi.json and site/data/propmodel.json, list up to 3 props in these games where
-   the model's chance beats Kalshi's ask by 5+ points, ask-bid spread <= 6 cents and volume >= 50.
+   the model's chance beats Kalshi's ask by 5 to 15 points (a bigger gap almost always means injury or role news the model can't see; skip those unless the news checks out), ask-bid spread <= 6 cents and volume >= 50.
    (Model chance = prop_model.prob(model, player, stat, line, opp, home, implied) in python.)
    Also WebSearch "dknetwork player prop bet splits <team> <team>" and list any prop with 80%+ of bets on one side.
 6. Send Jake (SendUserMessage + PushNotification): each play with line, % bets / % money at each source,
