@@ -248,6 +248,7 @@ details.model summary { cursor: pointer; display: flex; flex-wrap: wrap; gap: 4p
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r-card); padding: 14px 16px; display: grid; gap: 8px }
 .panel .splits, .panel .nosplits { border-top: 0; padding: 0 }
 #p-game .mgrid { max-width: 560px }
+.mv { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 14px }
 .twocol { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 18px }
 .injul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14px }
 .kv { display: grid; gap: 2px; font-size: 14px }
@@ -300,7 +301,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
     <button role="tab" id="tab-props" aria-controls="p-props" aria-selected="false">Player props</button>
     <button role="tab" id="tab-ratings" aria-controls="p-ratings" aria-selected="false">Power ratings</button>
     <button role="tab" id="tab-people" aria-controls="p-people" aria-selected="false">Refs and coaches</button>
-    <button role="tab" id="tab-fade" aria-controls="p-fade" aria-selected="false">Fade test</button>
+    <button role="tab" id="tab-fade" aria-controls="p-fade" aria-selected="false">Results</button>
     <button role="tab" id="tab-bets" aria-controls="p-bets" aria-selected="false">Bet log</button>
   </nav>
 
@@ -324,7 +325,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
 
 <script>
 const UNIT = 20;
-const S = { kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
+const S = { hist: {}, signals: null, pm: null, kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const pct = x => x == null ? "–" : (x * 100).toFixed(1) + "%";
@@ -545,6 +546,42 @@ function modelBlock(g) {
   </details>`;
 }
 
+// ---------- LINE MOVEMENT (splits history, a snapshot every 30 minutes from the GitHub job)
+function movement(gid, market) {
+  const snaps = S.hist[gid]; if (!snaps || snaps.length < 2) return null;
+  const pick = (snap, src, side) => snap.rows.find(r => r.source === src && r.market === market && r.side === side);
+  const sides = market === "total" ? ["over", "under"] : ["away", "home"];
+  const last = snaps[snaps.length - 1];
+  const src = last.rows.some(r => r.source === "dk" && r.market === market) ? "dk" : "sao";
+  const pub = sides.slice().sort((a, b) => (pick(last, src, b)?.bets ?? 0) - (pick(last, src, a)?.bets ?? 0))[0];
+  const first = snaps.find(s => pick(s, src, pub)?.line != null) || snaps[0];
+  const l0 = pick(first, src, pub)?.line, l1 = pick(last, src, pub)?.line;
+  const b0 = pick(first, src, pub)?.bets, b1 = pick(last, src, pub)?.bets;
+  if (l0 == null || l1 == null) return { pub, src, b0, b1, series: snaps.map(s => pick(s, src, pub)?.bets ?? null) };
+  // the line got better for the public side = books moving against the public (reverse line movement)
+  const better = market === "total" ? (pub === "over" ? l0 - l1 : l1 - l0) : l1 - l0;
+  return { pub, src, l0, l1, b0, b1, better, rlm: better >= 0.5 && (b1 ?? 0) >= 60,
+    series: snaps.map(s => pick(s, src, pub)?.bets ?? null) };
+}
+function spark(vals, w = 120, h = 26) {
+  const v = vals.map((x, i) => [i, x]).filter(p => p[1] != null); if (v.length < 2) return "";
+  const lo = Math.min(...v.map(p => p[1])), hi = Math.max(...v.map(p => p[1])), sp = hi - lo || 1;
+  const pts = v.map(([i, x]) => `${(i / (vals.length - 1) * (w - 4) + 2).toFixed(1)},${(h - 3 - (x - lo) / sp * (h - 6)).toFixed(1)}`).join(" ");
+  const [lx, ly] = pts.split(" ").pop().split(",");
+  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true" style="vertical-align:middle"><polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="1.6"/><circle cx="${lx}" cy="${ly}" r="2.4" fill="var(--accent)"/></svg>`;
+}
+function movementBlock(g) {
+  const out = [];
+  for (const market of ["spread", "total"]) {
+    const m = movement(g.game_id, market); if (!m) continue;
+    const who = market === "total" ? (m.pub === "over" ? "Over" : "Under") : g[m.pub];
+    const lineTxt = m.l0 != null ? (m.l0 === m.l1 ? `line steady at ${market === "total" ? m.l1 : fmtLine(m.l1)}` : `line ${market === "total" ? m.l0 : fmtLine(m.l0)} → ${market === "total" ? m.l1 : fmtLine(m.l1)}`) : "";
+    out.push(`<div class="mv"><div><b>${esc(who)}</b> <span class="why">${market}, ${m.src === "dk" ? "DraftKings" : "Scores and Odds"} bets ${m.b0 ?? "–"}% → ${m.b1 ?? "–"}%, ${lineTxt}</span>
+      ${m.rlm ? ` <span class="chip warn" title="Most bets are on ${esc(who)} but the line moved to give them a better number: books are taking bigger money on the other side">Line moving against the public</span>` : ""}</div>${spark(m.series)}</div>`);
+  }
+  const n = S.hist[g.game_id]?.length || 0;
+  return out.length ? `<div class="panel">${out.join("")}<p class="note" style="margin:0">${n} snapshots since ${new Date(S.hist[g.game_id][0].ts).toLocaleString("en-US", { weekday: "short", hour: "numeric", minute: "2-digit" })}. The sparkline is the public side's % of bets.</p></div>` : '<div class="empty">Line movement shows up once a few snapshots are in (every 30 minutes on game days).</div>';
+}
 // ---------- THIS WEEK
 function slab(g, side) {
   const t = g[side], sl = g.spread_line;
@@ -597,7 +634,9 @@ function renderWeek() {
     const sigHtml = sig.map(s => s.type === "fade"
       ? `<div class="sig"><span class="chip fade">Fade ${s.units}u</span><span><span class="pick">${esc(s.pick)}</span> <span class="why">${esc(s.basis)}${s.heavy ? ", big money is with the public" : ""}</span></span></div>`
       : `<div class="sig"><span class="chip trend">${esc(s.verdict)}</span><span><span class="pick">${esc(s.pick)}</span> <span class="why">${esc(s.name)}, ${pct(s.pctAll)} since 1999${s.also ? ` (+${s.also} more)` : ""}</span></span></div>`).join("")
-      + [...conflicts].map(m => `<div class="sig"><span class="chip warn">Conflict</span><span class="why">Signals disagree on the ${m}. Skip or size down.</span></div>`).join("");
+      + [...conflicts].map(m => `<div class="sig"><span class="chip warn">Conflict</span><span class="why">Signals disagree on the ${m}. Skip or size down.</span></div>`).join("")
+      + ["spread", "total"].map(mk => { const m = movement(g.game_id, mk); if (!m?.rlm) return ""; const who = mk === "total" ? (m.pub === "over" ? "Over" : "Under") : g[m.pub];
+          return `<div class="sig"><span class="chip warn">Line move</span><span class="why">${m.b1}% on ${esc(who)}, yet the line moved ${m.better.toFixed(1)} in their favor: bigger money is on the other side.</span></div>` }).join("");
     const fades2 = sig.filter(s => s.type === "fade");
     allPlays.push(...fades2.map(f => ({ g, f })));
     sig.filter(s => s.type === "trend" && s.verdict === "Strong").forEach(f => allTrends.push({ g, f }));
@@ -659,14 +698,14 @@ function propTable(rows) {
   if (!rows.length) return '<div class="empty">No streak lines for this team this week.</div>';
   const body = rows.map(r => {
     const streak = r.type === "vs" ? `${r.streak}/${r.streak} vs ${r.opp}` : `${r.streak}/${r.streak} games`;
-    const fair = r.fair == null ? "–" : (r.fair > 0 ? "+" + r.fair : r.fair);
+    const fa = r.fair_model ?? toAmerican(pOf(r)) ?? r.fair, fair = fa == null ? "–" : (fa > 0 ? "+" + fa : fa);
     const st = injStatus(r.team, r.player);
     return `<tr><td><div class="pl">${esc(r.player)} <small>${esc(r.pos)}</small>${st ? ` <span class="chip ${st === "Questionable" ? "noedge" : "fadeit"}">${esc(st)}</span>` : ""}</div></td>
       <td class="line">${r.line}+ ${esc(r.label)}</td><td><span class="streak">${esc(streak)}</span></td><td>${stackCell(r)}</td>
       <td class="recent">${r.recent.join(" · ")}</td><td>${pubCell(r)}</td>
-      <td class="num r"><span class="hitbar"><i style="width:${Math.round((r.hit_hist ?? 0) * 100)}%"></i></span>${pct(r.hit_hist)}</td><td class="fair r">${fair}</td><td>${kalshiCell(r)}</td></tr>`;
+      <td class="num r"><span class="hitbar"><i style="width:${Math.round((pOf(r) ?? 0) * 100)}%"></i></span>${pct(pOf(r))}<div class="why" style="font-size:11.5px" title="How often this kind of streak hit the next game, all players pooled">streaks ${pct(r.hit_hist)}</div></td><td class="fair r">${fair}</td><td>${kalshiCell(r)}</td></tr>`;
   }).join("");
-  return `<div class="tablewrap"><table class="ptable"><thead><tr><th>Player</th><th>Line</th><th>Streak</th><th>Vs opp</th><th>Last 5</th><th>Public</th><th class="r">Hit rate</th><th class="r">Break-even</th><th>Kalshi</th></tr></thead><tbody>${body}</tbody></table></div>`;
+  return `<div class="tablewrap"><table class="ptable"><thead><tr><th>Player</th><th>Line</th><th>Streak</th><th>Vs opp</th><th>Last 5</th><th>Public</th><th class="r">Model chance</th><th class="r">Fair odds</th><th>Kalshi</th></tr></thead><tbody>${body}</tbody></table></div>`;
 }
 const STAT_LABEL = { passing_yards: "Pass yds", passing_tds: "Pass TDs", completions: "Completions", attempts: "Pass att", interceptions: "INTs",
   carries: "Rush att", rushing_yards: "Rush yds", receptions: "Receptions", receiving_yards: "Rec yds", pass_rush_yards: "Pass + rush yds", rush_rec_yards: "Rush + rec yds" };
@@ -739,6 +778,7 @@ function renderGame() {
     <h3>Injuries and quarterbacks</h3><div class="panel twocol">${injCol(gi?.away)}${injCol(gi?.home)}</div>
     <h3>Model projection</h3>${(modelBlock(g) || '<div class="empty">No projection for this game.</div>').replace('<details class="model">', '<details class="model" open>')}
     <h3>Public money</h3><div class="panel">${splitsBlock(g)}</div>
+    <h3>Line movement</h3>${movementBlock(g)}
     <h3>Team ratings</h3>
     <div class="tablewrap"><table><thead><tr><th>vs average team</th><th class="r">${esc(g.away)} (#${pa?.rank ?? "–"})</th><th class="r">${esc(g.home)} (#${ph?.rank ?? "–"})</th><th>Edge</th></tr></thead><tbody>
       ${pRow("Net points", "net")}${pRow("Offense points", "off_pts")}${pRow("Defense points allowed", "def_pts", 1, true)}
@@ -841,6 +881,19 @@ function pubCell(r) {
   const m = x.money_over == null ? null : (side === "Over" ? x.money_over : 100 - x.money_over);
   return `<span class="pubp ${b >= 80 ? "hot" : ""}">${b}% ${side.toLowerCase()} ${x.line}</span>${m != null ? `<div class="why" style="font-size:12px">${m}% of money</div>` : ""}`;
 }
+// Player prop model (prop_model.py): logistic on recent production, opponent, game script. Twin of prop_model.design()
+function modelProb(player, stat, line, gid) {
+  const PM = S.pm; if (!PM) return null;
+  const st = PM.stats[stat], pl = PM.players[player]; if (!st || !pl || !pl[stat]) return null;
+  const g = (S.data?.week_games || []).find(x => x.game_id === gid); if (!g) return null;
+  const team = pl.team, opp = team === g.away ? g.home : g.away, home = team === g.home ? 1 : 0;
+  const [mu, sd, n] = pl[stat], f = PM.defense?.[stat]?.[`${opp}|${pl.grp}`] ?? 1, imp = PM.implied?.[gid]?.[team] ?? 22.5;
+  const ma = mu * f, z = (ma - line) / sd, li = Math.log(Math.min(45, Math.max(8, imp)) / 22.5), ln1 = Math.log1p(n);
+  const x = [z, z * Math.abs(z), Math.log(f), ln1, z * ln1, home, Math.log1p(line) - Math.log1p(Math.max(ma, 0)), li, li * z];
+  const t = st.intercept + st.coef.reduce((a, c, i) => a + c * x[i], 0);
+  return 1 / (1 + Math.exp(-t));
+}
+const pOf = r => r.p_model ?? modelProb(r.player, r.stat, r.line, r.game_id) ?? r.hit_hist;
 // Kalshi: "X or more" contracts, price = win probability. Rows per game: {player, stat, line, bid, ask, last, volume}
 const toAmerican = p => p == null || p <= 0 || p >= 1 ? null : (p >= 0.5 ? -Math.round(100 * p / (1 - p)) : Math.round(100 * (1 - p) / p));
 const fmtAm = a => a == null ? "" : (a > 0 ? "+" + a : "−" + Math.abs(a));
@@ -852,7 +905,7 @@ function kalshiFor(r) {
   const price = x => x.ask ?? x.last ?? null;
   const exact = mine.find(x => x.line === r.line);
   if (exact && price(exact) != null) {
-    const p = price(exact), edge = r.hit_hist != null ? r.hit_hist - p : null;
+    const p = price(exact), mine = pOf(r), edge = mine != null ? mine - p : null;
     return { exact: true, line: exact.line, p, edge, vol: exact.volume, thin: exact.bid != null && exact.ask != null && exact.ask - exact.bid > 0.08 };
   }
   const up = mine.filter(x => x.line > r.line && price(x) != null).sort((a, b) => a.line - b.line)[0];
@@ -865,9 +918,35 @@ function kalshiCell(r) {
   if (!k) return `<span class="why" title="${S.kalshi[r.game_id] ? "No Kalshi market for this player and stat" : "Kalshi prices not loaded for this game yet"}">–</span>`;
   const price = `${Math.round(k.p * 100)}¢ <span class="why">(${fmtAm(toAmerican(k.p))})</span>`;
   if (!k.exact) return `<span class="why" title="Kalshi has no ${r.line}+ market; nearest is ${k.line}+">${k.line}+ ${Math.round(k.p * 100)}¢</span>`;
-  const tag = k.edge == null ? "" : k.edge >= 0.03 ? `<span class="chip strong" title="History hits ${pct(r.hit_hist)}, Kalshi charges ${Math.round(k.p * 100)}¢">Value +${Math.round(k.edge * 100)}</span>`
+  const tag = k.edge == null ? "" : k.edge >= 0.05 ? `<span class="chip strong" title="Model ${pct(pOf(r))}, Kalshi charges ${Math.round(k.p * 100)}¢">Value +${Math.round(k.edge * 100)}</span>`
     : k.edge <= -0.05 ? `<span class="chip noedge" title="Kalshi charges more than history says it's worth">Pricey</span>` : "";
   return `<div style="white-space:nowrap">${price}</div>${tag}${k.thin ? ' <span class="why" style="font-size:11px" title="Wide gap between buy and sell price">thin</span>' : ""}`;
+}
+const STAT_SHORT = { rushing_yards: "Rush Yds", receiving_yards: "Rec Yds", receptions: "Rec", passing_yards: "Pass Yds", passing_tds: "Pass TDs", carries: "Rush Att" };
+function kalshiBoard() {
+  if (!S.pm) return '<div class="empty">The prop model is loading.</div>';
+  const f = S.pf, out = [];
+  for (const g of S.data.week_games) {
+    if (S.pgame !== "All" && g.game_id !== S.pgame) continue;
+    for (const x of S.kalshi[g.game_id] || []) {
+      if (x.ask == null || x.bid == null || x.ask <= 0.02 || x.ask >= 0.98) continue;
+      if (f.q && !x.player.toLowerCase().includes(f.q)) continue;
+      if (f.stat !== "All" && STAT_SHORT[x.stat] !== f.stat && S.props?.labels?.[x.stat] !== f.stat) continue;
+      const p = modelProb(x.player, x.stat, x.line, g.game_id); if (p == null) continue;
+      const st = injStatus(S.pm.players[x.player]?.team, x.player);
+      out.push({ g, x, p, edge: p - x.ask, thin: x.ask - x.bid > 0.06 || (x.volume ?? 0) < 50, st });
+    }
+  }
+  if (!out.length) return `<div class="empty">${Object.keys(S.kalshi).length ? "No Kalshi lines match these filters." : "Kalshi prices have not loaded yet."}</div>`;
+  out.sort((a, b) => (a.thin - b.thin) || b.edge - a.edge);
+  const body = out.slice(0, 250).map(o => `<tr${o.thin ? ' style="opacity:.6"' : ""}><td><div class="pl">${esc(o.x.player)} <small>${esc(S.pm.players[o.x.player]?.team || "")} · ${esc(o.g.away)} @ ${esc(o.g.home)}</small>${o.st ? ` <span class="chip ${o.st === "Questionable" ? "noedge" : "fadeit"}">${esc(o.st)}</span>` : ""}</div></td>
+      <td class="line">${o.x.line}+ ${esc(STAT_SHORT[o.x.stat] || o.x.stat)}</td>
+      <td class="num r"><span class="hitbar"><i style="width:${Math.round(o.p * 100)}%"></i></span>${pct(o.p)}</td>
+      <td class="num r">${Math.round(o.x.ask * 100)}¢ <span class="why">(${fmtAm(toAmerican(o.x.ask))})</span></td>
+      <td class="num r">${o.edge >= 0.05 && !o.thin ? `<span class="chip strong">+${Math.round(o.edge * 100)}</span>` : `<span class="${o.edge > 0 ? "pos" : "neg"}">${o.edge > 0 ? "+" : "−"}${Math.abs(Math.round(o.edge * 100))}</span>`}</td>
+      <td class="num r why">${Math.round(o.x.volume ?? 0)}${o.thin ? " thin" : ""}</td></tr>`).join("");
+  return `<p class="note">Every Kalshi player prop this week, priced by the model. Edge = model chance minus Kalshi's buy price, in points. Faded rows trade too little to trust the price. ${out.length > 250 ? `Showing the top 250 of ${out.length}.` : ""}</p>
+    <div class="tablewrap"><table class="ptable"><thead><tr><th>Player</th><th>Line</th><th class="r">Model chance</th><th class="r">Kalshi price</th><th class="r">Edge</th><th class="r">Volume</th></tr></thead><tbody>${body}</tbody></table></div>`;
 }
 function stackCell(r) {
   if (r.type !== "last" || !r.stack) return '<span class="why">–</span>';
@@ -896,7 +975,7 @@ function renderProps() {
         <label class="label" for="pf-stat">Market</label><select id="pf-stat">${stats.map(x => `<option>${esc(x)}</option>`).join("")}</select>
         <label class="label" for="pf-type">Streak</label><select id="pf-type"><option value="All">All</option><option value="last">Last games</option><option value="stack3">Stacked: last games + 3 straight vs opp</option><option value="nomiss">Last games, no misses vs opp</option><option value="vs">Vs opponent only</option><option value="kvalue">Value on Kalshi</option></select>
         <label class="label" for="pf-game">Game</label><select id="pf-game"><option value="All">All games</option>${propGames().map(g => `<option value="${g.game_id}">${esc(g.away)} @ ${esc(g.home)}</option>`).join("")}</select>
-        <label class="label" for="pf-view">View</label><select id="pf-view"><option value="list">Best first</option><option value="game">Group by game</option></select>
+        <label class="label" for="pf-view">View</label><select id="pf-view"><option value="list">Best first</option><option value="game">Group by game</option><option value="kboard">Kalshi board: every line</option></select>
         <input id="pf-q" type="search" placeholder="Search player" aria-label="Search player">
       </div>
       <div id="props-list"></div>`;
@@ -905,13 +984,13 @@ function renderProps() {
     $("#pf-view").onchange = e => { S.pview = e.target.value; renderProps() };
     $("#pf-q").oninput = e => { S.pf.q = e.target.value.toLowerCase(); renderProps() };
   }
-  let rows = P.rows.filter(r => (f.stat === "All" || r.label === f.stat) && (f.type === "All" || r.type === f.type || (f.type === "stack3" && r.stack === "stack3") || (f.type === "nomiss" && r.type === "last" && r.stack !== "missed") || (f.type === "kvalue" && (kalshiFor(r)?.edge ?? -1) >= 0.03))
+  let rows = P.rows.filter(r => (f.stat === "All" || r.label === f.stat) && (f.type === "All" || r.type === f.type || (f.type === "stack3" && r.stack === "stack3") || (f.type === "nomiss" && r.type === "last" && r.stack !== "missed") || (f.type === "kvalue" && (kalshiFor(r)?.edge ?? -1) >= 0.05))
     && (S.pgame === "All" || r.game_id === S.pgame) && (!f.q || r.player.toLowerCase().includes(f.q)));
   const outRank = r => { const st = injStatus(r.team, r.player); return st === "Out" || st === "Doubtful" ? 1 : 0 };
-  rows.sort((a, b) => outRank(a) - outRank(b) || (f.type === "kvalue" ? (kalshiFor(b)?.edge ?? 0) - (kalshiFor(a)?.edge ?? 0) : 0) || (b.hit_hist ?? 0) - (a.hit_hist ?? 0) || b.streak - a.streak);
+  rows.sort((a, b) => outRank(a) - outRank(b) || (f.type === "kvalue" ? (kalshiFor(b)?.edge ?? 0) - (kalshiFor(a)?.edge ?? 0) : 0) || (pOf(b) ?? 0) - (pOf(a) ?? 0) || b.streak - a.streak);
   const rowHtml = r => {
     const streak = r.type === "vs" ? `${r.streak}/${r.streak} vs ${r.opp}` : `${r.streak}/${r.streak} games`;
-    const fair = r.fair == null ? "–" : (r.fair > 0 ? "+" + r.fair : r.fair);
+    const fa = r.fair_model ?? toAmerican(pOf(r)) ?? r.fair, fair = fa == null ? "–" : (fa > 0 ? "+" + fa : fa);
     const st = injStatus(r.team, r.player);
     return `<tr>
       <td><div class="pl">${esc(r.player)} <small>${esc(r.pos)} · ${esc(r.team)}${S.pview === "list" ? ` ${r.ha} ${esc(r.opp)}` : ""}</small>${st ? ` <span class="chip ${st === "Questionable" ? "noedge" : "fadeit"}">${esc(st)}</span>` : ""}</div></td>
@@ -920,10 +999,11 @@ function renderProps() {
       <td>${stackCell(r)}</td>
       <td class="recent" title="Last 5 games, oldest to newest">${r.recent.join(" · ")}</td>
       <td>${pubCell(r)}</td>
-      <td class="num r"><span class="hitbar"><i style="width:${Math.round((r.hit_hist ?? 0) * 100)}%"></i></span>${pct(r.hit_hist)}</td>
+      <td class="num r"><span class="hitbar"><i style="width:${Math.round((pOf(r) ?? 0) * 100)}%"></i></span>${pct(pOf(r))}<div class="why" style="font-size:11.5px" title="How often this kind of streak hit the next game, all players pooled">streaks ${pct(r.hit_hist)}</div></td>
       <td class="fair r">${fair}</td><td>${kalshiCell(r)}</td></tr>`;
   };
-  const head = `<thead><tr><th>Player</th><th>Line</th><th>Streak</th><th>Vs opp</th><th>Last 5</th><th title="DraftKings % of bets on this prop, at the DraftKings line">Public</th><th class="r">Next-game hit rate</th><th class="r">Break-even odds</th><th title="Kalshi price for the same X+ line (what you pay). Value = history beats the price by 3+ points">Kalshi</th></tr></thead>`;
+  const head = `<thead><tr><th>Player</th><th>Line</th><th>Streak</th><th>Vs opp</th><th>Last 5</th><th title="DraftKings % of bets on this prop, at the DraftKings line">Public</th><th class="r" title="Player prop model built from recent production, the opponent and the game script, calibrated on past seasons">Model chance</th><th class="r">Fair odds</th><th title="Kalshi price for the same X+ line (what you pay). Value = history beats the price by 3+ points">Kalshi</th></tr></thead>`;
+  if (S.pview === "kboard") { $("#props-list").innerHTML = kalshiBoard(); return }
   if (S.pview === "list") {
     const total = rows.length, shown = rows.slice(0, 200);
     $("#props-list").innerHTML = total ? `<div class="tablewrap"><table class="ptable">${head}<tbody>${shown.map(rowHtml).join("")}</tbody></table></div>${total > 200 ? `<p class="note">Showing 200 of ${total}. Pick a game or market to see the rest.</p>` : ""}`
@@ -1009,8 +1089,25 @@ function renderFade() {
       <td class="num r">${p.bets_pct ?? "–"}%</td><td class="num r">${p.money_pct ?? "–"}${p.money_pct != null ? "%" : ""}</td><td>${esc(p.source)}</td>
       <td class="mono">${esc(fade)}</td><td class="num">${p.away_score}-${p.home_score}</td><td class="${p.result}">${p.result ?? ""}</td><td class="why">${p.live_bet ? "Bet" : ""}${p.note && !p.live_bet ? esc(p.note) : ""}</td></tr>`;
   }).join("");
-  $("#p-fade").innerHTML = `
-    <h2>Fade the public</h2>
+  const sig = S.signals?.groups || [];
+  const sigRows = sig.map(g => {
+    const n = g.w + g.l, open = S.sigOpen === g.key;
+    const perf = g.key.startsWith("prop") ? (g.roi == null ? "–" : signed(g.roi * 100) + "% ROI") : (g.units == null || !n ? "–" : signed(g.units) + "u");
+    const main = `<tr class="trow" data-sig="${g.key}" aria-expanded="${open}"><td><div class="tname">${esc(g.label)}</div><div class="tcat">${esc(g.desc)}</div></td>
+      <td class="num r">${n ? `${g.w}-${g.l}${g.p ? "-" + g.p : ""}` : "–"}</td><td class="num r">${pct(g.pct)}</td><td class="num r">${perf}</td>
+      <td class="num r">${g.clv == null ? "–" : fmtClv(g.clv)}</td><td class="num r">${g.beat_close == null ? "–" : Math.round(g.beat_close * 100) + "%"}</td></tr>`;
+    if (!open) return main;
+    const items = g.items.map(i => `<tr><td class="num">${i.week}</td><td>${esc(i.game)}</td><td>${esc(i.pick)}</td><td class="${i.res}">${i.res}</td><td class="why">${esc(i.note || "")}${i.actual != null ? `, actual ${i.actual}` : ""}</td><td class="num r">${i.clv == null ? "" : fmtClv(i.clv)}</td></tr>`).join("");
+    return main + `<tr class="detail"><td colspan="6">${items ? `<div class="tablewrap"><table><thead><tr><th>Wk</th><th>Game</th><th>Pick</th><th></th><th>Why</th><th class="r">CLV</th></tr></thead><tbody>${items}</tbody></table></div>` : '<div class="why">Nothing graded yet. Results show up after the games finish.</div>'}</td></tr>`;
+  }).join("");
+  const scoreboard = sig.length ? `
+    <h2>Which signals are real</h2>
+    <p class="lede">Every signal the site produces, graded automatically after the games. Spreads and totals are scored at −110. Props are scored at Kalshi's closing price (pay the price, collect $1 if it hits). <b>CLV</b> is how many points better our number was than the closing line; consistently beating the close is the earliest proof of a real edge. Tap a row for the individual picks.</p>
+    <div class="tablewrap"><table><thead><tr><th>Signal</th><th class="r">Record</th><th class="r">Win %</th><th class="r">Units / ROI</th><th class="r">Avg CLV</th><th class="r">Beat close</th></tr></thead><tbody>${sigRows}</tbody></table></div>
+    <p class="note">Weeks 1-4 fades use Scores and Odds closing numbers plus the DraftKings numbers we logged. From Week 5 on, splits come from snapshots every 30 minutes and the last one before kickoff counts. Model and prop signals start in Week 5. Updated ${S.signals?.generated ? new Date(S.signals.generated).toLocaleString("en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) : ""}.</p>
+    <h3>Fade log</h3>` : "";
+  $("#p-fade").innerHTML = scoreboard + `
+    <h2${sig.length ? ' style="display:none"' : ""}>Fade the public</h2>
     <p class="lede">The rule: when 80% or more of bets land on one side of a spread or total, bet the other side. 1 unit when DraftKings money is no heavier than its bets; half a unit when the big money is with the public too, or when only the consensus number clears 80%.</p>
     <div class="strip">
       <div class="stat"><b class="num">${rec(all)}</b><small>All plays, ${pct(all.pct)} · ${signed(all.units)}u</small></div>
@@ -1022,14 +1119,26 @@ function renderFade() {
     <div class="tablewrap"><table>
       <thead><tr><th>Wk</th><th>Game</th><th>Public side</th><th class="r">Bets</th><th class="r">Money</th><th>Src</th><th>Fade</th><th>Final</th><th></th><th></th></tr></thead>
       <tbody>${rows}</tbody></table></div>`;
+  $("#p-fade").querySelectorAll("[data-sig]").forEach(r => r.onclick = () => { S.sigOpen = S.sigOpen === r.dataset.sig ? null : r.dataset.sig; renderFade() });
 }
 
+// ---------- CLOSING LINE VALUE: the number you got minus the closing number for that side (positive = beat the close)
+function closeFor(g, market, side) {
+  if (!g || g.home_score == null) return null;   // nflverse lines become the closing line once the game is final
+  if (market === "total") return g.total_line;
+  return side === "home" ? -g.spread_line : g.spread_line;
+}
+function clvOf(g, market, side, line) {
+  const c = closeFor(g, market, side); if (c == null || line == null || isNaN(line)) return null;
+  return market === "total" ? (side === "over" ? c - line : line - c) : line - c;
+}
+const fmtClv = v => v == null ? "–" : `<span class="${v > 0 ? "pos" : v < 0 ? "neg" : ""}">${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.abs(v).toFixed(1)}</span>`;
 // ---------- BET LOG
 function gameById(id) { return S.data.season_games.find(g => g.game_id === id) || S.data.week_games.find(g => g.game_id === id) }
 function renderBets() {
   const el = $("#p-bets");
   const bets = S.bets.slice().sort((a, b) => (b.placed || "").localeCompare(a.placed || ""));
-  let w = 0, l = 0, p = 0, pl = 0, open = 0;
+  let w = 0, l = 0, p = 0, pl = 0, open = 0; const clvs = [];
   const rows = bets.map(b => {
     const g = gameById(b.game_id);
     const res = g ? gradeSide(g, b.market, b.side, Number(b.line)) : null;
@@ -1037,14 +1146,15 @@ function renderBets() {
     const win = odds > 0 ? stake * odds / 100 : stake * 100 / Math.abs(odds);
     if (res === "W") { w++; pl += win } else if (res === "L") { l++; pl -= stake } else if (res === "P") p++; else open++;
     const name = b.market === "total" ? `${b.side === "over" ? "Over" : "Under"} ${b.line}` : `${g ? g[b.side] : b.side} ${fmtLine(Number(b.line))}`;
+    const cv = clvOf(g, b.market, b.side, Number(b.line)); if (cv != null) clvs.push(cv);
     return `<tr><td class="num">${g ? g.week : ""}</td><td>${g ? esc(g.away) + " @ " + esc(g.home) : esc(b.game_id)}</td><td class="mono">${esc(name)}</td>
       <td class="num r">${b.units}u</td><td class="num r">${odds > 0 ? "+" + odds : odds}</td><td>${esc(b.why || "")}</td><td class="why" data-by="${esc(b.by || "")}">${b.by ? (b.by === S.me ? "You" : "…") : ""}</td>
-      <td class="${res || ""}">${res || "Open"}</td><td class="num r">${res === "W" ? money(win) : res === "L" ? money(-stake) : ""}</td>
+      <td class="${res || ""}">${res || "Open"}</td><td class="num r">${res === "W" ? money(win) : res === "L" ? money(-stake) : ""}</td><td class="num r" title="Your line minus the closing line">${fmtClv(cv)}</td>
       <td>${S.owner && (!b.by || b.by === S.me || S.isOwnerReal) ? `<button class="btn ghost" data-del="${esc(b.id)}" aria-label="Delete bet">Delete</button>` : ""}</td></tr>`;
   }).join("");
   const form = S.owner ? betForm() : "";
   const body = !S.db ? `<div class="empty">Sign in to claude.ai to see the bet log.</div>`
-    : bets.length ? `<div class="tablewrap"><table><thead><tr><th>Wk</th><th>Game</th><th>Bet</th><th class="r">Size</th><th class="r">Odds</th><th>Why</th><th>By</th><th>Result</th><th class="r">P/L</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>`
+    : bets.length ? `<div class="tablewrap"><table><thead><tr><th>Wk</th><th>Game</th><th>Bet</th><th class="r">Size</th><th class="r">Odds</th><th>Why</th><th>By</th><th>Result</th><th class="r">P/L</th><th class="r" title="Closing line value: your number minus the closing number. Positive means you beat the close.">CLV</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>`
     : `<div class="empty">No bets logged yet. ${S.owner ? "Add your first one above." : "Bets show up here once they're logged."}</div>`;
   const key = S.owner ? "owner" : "viewer";
   if (el.dataset.shell !== key) {
@@ -1056,7 +1166,9 @@ function renderBets() {
   }
   $("#bets-strip").innerHTML = `<div class="strip">
       <div class="stat"><b class="num">${w}-${l}${p ? "-" + p : ""}</b><small>Graded bets${open ? `, ${open} open` : ""}</small></div>
-      <div class="stat"><b class="num">${money(pl)}</b><small>Profit and loss</small></div></div>`;
+      <div class="stat"><b class="num">${money(pl)}</b><small>Profit and loss</small></div>
+      <div class="stat"><b class="num">${clvs.length ? fmtClv(clvs.reduce((a, b) => a + b, 0) / clvs.length) : "–"}</b><small>Avg closing line value${clvs.length ? `, beat the close ${clvs.filter(v => v > 0).length} of ${clvs.length}` : ""}</small></div></div>
+    <p class="note">Closing line value is the best early sign of an edge: if you keep getting better numbers than the market closes at, wins follow over time even through bad weeks.</p>`;
   $("#bets-list").innerHTML = body;
   const ids = [...new Set(bets.map(b => b.by).filter(x => x && x !== S.me))];
   if (ids.length && S.user?.profiles) S.user.profiles(ids).then(ps => el.querySelectorAll("[data-by]").forEach(td => { const id = td.dataset.by; if (id && id !== S.me) td.textContent = ps?.[id]?.name || "Someone" })).catch(() => {});
@@ -1119,6 +1231,8 @@ function renderAll() {
     { const h = (location.hash || "").slice(1); if (h.startsWith("g-")) { S.gameView = h.slice(2); openGame(S.gameView) } }
     renderAll();
     fetch("data/props.json").then(r => r.json()).then(p => { S.props = p; renderProps(); if (S.gameView) renderGame() }).catch(() => {});
+    fetch("data/signals.json").then(r => r.json()).then(x => { S.signals = x; renderFade() }).catch(() => {});
+    fetch("data/propmodel.json").then(r => r.json()).then(x => { S.pm = x; renderProps(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/model.json").then(r => r.json()).then(m => { S.model = m; renderRatings(); renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/injuries.json").then(r => r.json()).then(x => { S.inj = x; renderWeek(); renderProps(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/people.json").then(r => r.json()).then(p => { S.people = p; renderPeople(); renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
@@ -1136,6 +1250,9 @@ function renderAll() {
   if (!db) { renderAll(); return }
   db.collection("splits").onSnapshot(snap => {
     S.splits = {}; snap.docs.forEach(d => S.splits[d.id] = d.data()); renderWeek(); renderTicker(); if (S.gameView) renderGame();
+  }, () => {});
+  db.collection("splitshist").onSnapshot(snap => {
+    S.hist = {}; snap.docs.forEach(d => { S.hist[d.id] = d.data().snaps || [] }); renderWeek(); if (S.gameView) renderGame();
   }, () => {});
   db.collection("kalshi").onSnapshot(snap => {
     if (!snap.docs.length) return;

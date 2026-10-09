@@ -7,3 +7,4 @@ __pycache__/
 kalshi_docs.json
 kalshi_docs/
 logs.txt
+sync_out/
