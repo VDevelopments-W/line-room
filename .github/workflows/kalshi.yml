@@ -11,7 +11,9 @@ on:
     paths: ["kalshi.py", ".github/workflows/kalshi.yml"]
 permissions:
   contents: write
-concurrency: { group: ${{ github.workflow }}, cancel-in-progress: false }
+concurrency:
+  group: "${{ github.workflow }}"
+  cancel-in-progress: false
 jobs:
   pull:
     runs-on: ubuntu-latest
