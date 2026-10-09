@@ -48,4 +48,4 @@ jobs:
           run python archive.py
           run python grade_signals.py
           echo "::notice::Rebuilt $(python -c "import json;d=json.load(open('site/data/trends.json'));print(d['season'],'week',d['next_week'])")"
-      - run: bash commit.sh "Daily rebuild $(date -u +%F)" site/data data/archive research/prop_model_test.txt
+      - run: bash commit.sh "Daily rebuild $(date -u +%F)" site/data/trends.json site/data/props.json site/data/model.json site/data/injuries.json site/data/people.json site/data/signals.json site/data/propmodel.json data/archive research/prop_model_test.txt
