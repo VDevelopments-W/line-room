@@ -71,8 +71,20 @@ def main():
     try:
         sao_html = ns.fetch(ns.SAO_URL)
         if dump:
+            DEBUG.mkdir(exist_ok=True)
             (DEBUG / "sao.html").write_text(sao_html, encoding="utf-8")
-        sao_n = ns.merge_sao(dk, ns.parse_sao(sao_html))
+        sao = ns.parse_sao(sao_html)
+        sao_n = ns.merge_sao(dk, sao)
+        # games Scores and Odds has but DraftKings' page doesn't: keep their consensus numbers too
+        have = {frozenset((ns.team_abbr(g["away"]), ns.team_abbr(g["home"]))) for g in dk}
+        for sg in sao:
+            if frozenset(sg["pair"]) in have:
+                continue
+            a, h = sg["pair"]
+            stub = {"event_id": f"sao-{a}-{h}", "away": f"{a} x", "home": f"{h} x", "kickoff": "", "sides": []}
+            ns.merge_sao([stub], [sg])
+            if stub["sides"]:
+                dk.append(stub)
     except Exception as e:  # noqa: BLE001
         print(f"Scores and Odds skipped: {e}", file=sys.stderr)
 

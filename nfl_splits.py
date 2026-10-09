@@ -105,7 +105,14 @@ def parse_dk(page_html: str) -> list[dict]:
         if " @ " in txt and "outcomes=" not in a["href"]:
             titles[txt] = EVENT_RE.search(a["href"]).group(1)
 
-    lines = [ln.strip() for ln in soup.get_text("\n").splitlines() if ln.strip()]
+    raw = [ln.strip() for ln in soup.get_text("\n").splitlines() if ln.strip()]
+    lines = []  # team logos split "PHI Eagles @" / "JAX Jaguars" onto two lines: join them back
+    for ln in raw:
+        if lines and lines[-1].endswith("@"):
+            lines[-1] = f"{lines[-1]} {ln}"
+        else:
+            lines.append(ln)
+    titles = {re.sub(r"\s+", " ", k): v for k, v in titles.items()}
     games, game, market, i = [], None, None, 0
     while i < len(lines):
         ln = lines[i]
@@ -168,50 +175,50 @@ MARKET_WORDS = {"moneyline": "Moneyline", "ml": "Moneyline", "spread": "Spread",
 
 
 def parse_sao(page_html: str) -> list[dict]:
-    """Best-effort parser for the Scores and Odds consensus page. Each market
-    block reads as: <side A> '% of Bets' <side B> betsA% betsB% moneyA% moneyB%
-    '% of Money'. Blocks with percentages that don't add to ~100 are skipped."""
+    """Parser for the Scores and Odds consensus page. Each market block reads:
+       <labelA> [(lineA)] '% of Bets' <labelB> [(lineB)] betsA% betsB% moneyA% moneyB% '% of Money'
+    labelA is a team abbreviation (moneyline / spread) or 'Over' (total). A spread block
+    has a line in parentheses after each team. Blocks without four percentages are skipped."""
     soup = BeautifulSoup(page_html, "html.parser")
-    lines = [ln.strip() for ln in soup.get_text("\n").splitlines() if ln.strip()]
-    blocks = []
-    for i, ln in enumerate(lines):
-        if ln.lower() != "% of bets" or i == 0 or i + 1 >= len(lines):
+    L = [ln.strip() for ln in soup.get_text("\n").splitlines() if ln.strip()]
+    paren = re.compile(r"^\(([ou]?)([+\-−]?\d+(?:\.\d+)?)\)$", re.I)
+    games, cur = [], None
+    for i, ln in enumerate(L):
+        if ln.lower() != "% of bets" or i < 1 or i + 2 >= len(L):
             continue
-        a, b = lines[i - 1], lines[i + 1]
+        j, line_a = i - 1, None
+        m = paren.match(L[j])
+        if m:
+            line_a, j = float(m.group(2).replace("−", "-")), j - 1
+        label_a = L[j]
+        k = i + 1
+        label_b = L[k]
+        k += 1
+        line_b = None
+        m = paren.match(L[k]) if k < len(L) else None
+        if m:
+            line_b, k = float(m.group(2).replace("−", "-")), k + 1
         pcts = []
-        for ln2 in lines[i + 2:i + 14]:
-            if ln2.lower() == "% of bets":
-                break
-            m = PCT_RE.match(ln2)
-            if m:
-                pcts.append(int(m.group(1)))
-            if len(pcts) == 4:
-                break
+        while k < len(L) and L[k].lower() != "% of money" and len(pcts) < 4 and k < i + 12:
+            mm = PCT_RE.match(L[k])
+            if mm:
+                pcts.append(int(mm.group(1)))
+            k += 1
         if len(pcts) < 4 or not 97 <= pcts[0] + pcts[1] <= 103:
             continue
-        ctx = " ".join(lines[max(0, i - 8):i - 1]).lower()
-        label = next((v for k, v in MARKET_WORDS.items() if re.search(rf"\b{re.escape(k)}\b", ctx)), None)
-        blocks.append({"a": a, "b": b, "pcts": pcts, "label": label,
-                       "has_line": bool(SPREAD_TOKEN_RE.search(f"{a} {b}"))})
-
-    games, cur = [], None
-    for blk in blocks:
-        if SIDE_TOTAL_RE.match(blk["a"]) or blk["label"] == "Total":
+        if label_a.lower() in ("over", "o", "under", "u"):
             if cur:
-                cur["blocks"].append(("Total", blk))
+                cur["blocks"].append(("Total", {"a": label_a, "b": label_b, "pcts": pcts, "line": line_a}))
             continue
-        ma, mb = SIDE_TEAM_RE.match(blk["a"]), SIDE_TEAM_RE.match(blk["b"])
-        if not (ma and mb):
+        ta, tb = SIDE_TEAM_RE.match(label_a), SIDE_TEAM_RE.match(label_b)
+        if not (ta and tb):
             continue
-        pair = (ABBR_ALIAS.get(ma.group(1), ma.group(1)),
-                ABBR_ALIAS.get(mb.group(1), mb.group(1)))
+        pair = (ABBR_ALIAS.get(ta.group(1), ta.group(1)), ABBR_ALIAS.get(tb.group(1), tb.group(1)))
         if not cur or cur["pair"] != pair:
             cur = {"pair": pair, "blocks": []}
             games.append(cur)
-        team_blocks = sum(1 for m, _ in cur["blocks"] if m != "Total")
-        market = blk["label"] or ("Spread" if blk["has_line"] else
-                                  ("Moneyline" if team_blocks == 0 else "Spread"))
-        cur["blocks"].append((market, blk))
+        market = "Spread" if line_a is not None else "Moneyline"
+        cur["blocks"].append((market, {"a": label_a, "b": label_b, "pcts": pcts, "line": line_a, "line_b": line_b}))
     return games
 
 
@@ -229,16 +236,17 @@ def merge_sao(dk_games: list[dict], sao_games: list[dict]) -> int:
         name_for = {pa: g["away"], ph: g["home"]}
         for market, blk in sg["blocks"]:
             p = blk["pcts"]
+            ln = blk.get("line")
             if market == "Total":
-                sides = [("Over", p[0], p[2]), ("Under", p[1], p[3])]
-                if SIDE_TOTAL_RE.match(blk["a"]) and blk["a"].lower().startswith("u"):
-                    sides = [("Under", p[0], p[2]), ("Over", p[1], p[3])]
+                sides = [("Over", p[0], p[2], ln), ("Under", p[1], p[3], ln)]
+                if blk["a"].lower().startswith("u"):
+                    sides = [("Under", p[0], p[2], ln), ("Over", p[1], p[3], ln)]
             else:
-                sides = [(name_for[sg["pair"][0]], p[0], p[2]),
-                         (name_for[sg["pair"][1]], p[1], p[3])]
-            for sel, bets, money in sides:
+                sides = [(name_for[sg["pair"][0]], p[0], p[2], ln),
+                         (name_for[sg["pair"][1]], p[1], p[3], blk.get("line_b"))]
+            for sel, bets, money, line in sides:
                 g["sides"].append({"source": "sao", "market": market, "selection": sel,
-                                   "line": None, "odds": None,
+                                   "line": line if market != "Moneyline" else None, "odds": None,
                                    "handle_pct": money, "bets_pct": bets})
     return matched
 
