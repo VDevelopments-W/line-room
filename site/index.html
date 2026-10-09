@@ -248,6 +248,15 @@ details.model summary { cursor: pointer; display: flex; flex-wrap: wrap; gap: 4p
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r-card); padding: 14px 16px; display: grid; gap: 8px }
 .panel .splits, .panel .nosplits { border-top: 0; padding: 0 }
 #p-game .mgrid { max-width: 560px }
+.pcard { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r-card); padding: 16px 18px; display: grid; gap: 10px; margin-bottom: 8px }
+.leg { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line) }
+.legn { width: 26px; height: 26px; border-radius: 50%; background: var(--board); color: var(--led); display: grid; place-items: center; font-family: var(--font-led); font-weight: 900 }
+.legnums { display: grid; justify-items: end; gap: 1px; font-size: 13px; white-space: nowrap }
+.legnums b { font-family: var(--font-display); font-size: 22px; line-height: 1 }
+.pfoot { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; background: var(--panel-2); border-radius: var(--r-sm); padding: 12px 14px }
+.pfoot b { display: block; font-family: var(--font-display); font-size: 26px; line-height: 1.05 }
+.pfoot span { font-size: 12px; color: var(--muted) }
+.pctl select { max-width: 100% }
 .mv { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 14px }
 .twocol { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 18px }
 .injul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14px }
@@ -299,6 +308,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
     <button role="tab" id="tab-week" aria-controls="p-week" aria-selected="true">This week</button>
     <button role="tab" id="tab-trends" aria-controls="p-trends" aria-selected="false">Trends</button>
     <button role="tab" id="tab-props" aria-controls="p-props" aria-selected="false">Player props</button>
+    <button role="tab" id="tab-parlays" aria-controls="p-parlays" aria-selected="false">Parlays</button>
     <button role="tab" id="tab-ratings" aria-controls="p-ratings" aria-selected="false">Power ratings</button>
     <button role="tab" id="tab-people" aria-controls="p-people" aria-selected="false">Refs and coaches</button>
     <button role="tab" id="tab-fade" aria-controls="p-fade" aria-selected="false">Results</button>
@@ -308,6 +318,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
   <section id="p-week" role="tabpanel" aria-labelledby="tab-week"></section>
   <section id="p-trends" role="tabpanel" aria-labelledby="tab-trends" hidden></section>
   <section id="p-props" role="tabpanel" aria-labelledby="tab-props" hidden></section>
+  <section id="p-parlays" role="tabpanel" aria-labelledby="tab-parlays" hidden></section>
   <section id="p-ratings" role="tabpanel" aria-labelledby="tab-ratings" hidden></section>
   <section id="p-people" role="tabpanel" aria-labelledby="tab-people" hidden></section>
   <section id="p-fade" role="tabpanel" aria-labelledby="tab-fade" hidden></section>
@@ -325,7 +336,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
 
 <script>
 const UNIT = 20;
-const S = { hist: {}, signals: null, pm: null, kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
+const S = { par: { mode: "sgp", game: null, picks: [] }, hist: {}, signals: null, pm: null, kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const pct = x => x == null ? "–" : (x * 100).toFixed(1) + "%";
@@ -406,7 +417,7 @@ function renderHeader() {
 }
 
 // ---------- tabs
-const TABS = ["week", "trends", "props", "ratings", "people", "fade", "bets"];
+const TABS = ["week", "trends", "props", "parlays", "ratings", "people", "fade", "bets"];
 function showTab(name) {
   TABS.forEach(t => {
     $("#tab-" + t).setAttribute("aria-selected", String(t === name));
@@ -1214,10 +1225,127 @@ function wireForm() {
   };
 }
 
+// ---------- PARLAYS
+// Leg candidates. Props: model chance vs Kalshi's buy price (liquid markets only, injured players out,
+// gaps over 15 points skipped as likely news). Game lines: fade signals only, with conservative win
+// chances (the model alone has not beaten the line, so it only nudges a fade it agrees with).
+const COMMON = 0.60;      // "common": the model gives it 60%+
+const P_FADE = { both: 0.57, one: 0.545 };
+const BE110 = 110 / 210;
+function propLegs(gid) {
+  const g = S.data.week_games.find(x => x.game_id === gid); if (!g || !S.pm) return [];
+  const out = [];
+  for (const x of S.kalshi[gid] || []) {
+    if (x.ask == null || x.bid == null || x.ask - x.bid > 0.06 || (x.volume ?? 0) < 50 || x.ask >= 0.95) continue;
+    const pm = modelProb(x.player, x.stat, x.line, gid); if (pm == null) continue;
+    if (pm - x.ask > 0.15) continue;                         // likely news the model can't see
+    const p = (pm + (x.bid + x.ask) / 2) / 2, edge = p - x.ask; // blend the model with the market's own price
+    const team = S.pm.players[x.player]?.team, st = injStatus(team, x.player);
+    if (st) continue;
+    out.push({ kind: "prop", gid, g, team, player: x.player, label: `${x.player} ${x.line}+ ${STAT_SHORT[x.stat] || x.stat}`,
+      sub: `${team} · ${g.away} @ ${g.home}`, p, price: x.ask, edge, key: `${x.player}|${x.stat}` });
+  }
+  return out;
+}
+function gameLegs(gid) {
+  const g = S.data.week_games.find(x => x.game_id === gid); if (!g) return [];
+  const out = [];
+  for (const market of ["spread", "total"]) {
+    const f = fadeSignal(g, market); if (!f) continue;
+    const rows = (S.splits[gid]?.rows || []).filter(r => r.market === market);
+    const pubSide = { home: "away", away: "home", over: "under", under: "over" }[f.side];
+    const dk = rows.find(r => r.source === "dk" && r.side === pubSide)?.bets ?? 0, sao = rows.find(r => r.source === "sao" && r.side === pubSide)?.bets ?? 0;
+    let p = dk >= 80 && sao >= 80 ? P_FADE.both : P_FADE.one;
+    const m = S.model?.games?.find(x => x.game_id === gid); const why = [f.basis];
+    if (m) {
+      const agree = market === "total" ? (f.side === "under" ? m.total_proj < g.total_line : m.total_proj > g.total_line)
+        : (f.side === "home" ? m.margin > g.spread_line : m.margin < g.spread_line);
+      if (agree) { p += 0.01; why.push("model agrees") }
+    }
+    const mv = movement(gid, market); if (mv?.rlm) { p += 0.01; why.push("line moving against the public") }
+    out.push({ kind: market, gid, g, label: f.pick, sub: `${g.away} @ ${g.home} · ${why.join(", ")}`, p, price: BE110, edge: p - BE110, key: `${gid}|${market}` });
+  }
+  return out;
+}
+const legScore = l => l.edge;   // value first
+function parlayCard(legs, title, note) {
+  if (!legs.length) return `<div class="empty">Not enough legs yet. Props need Kalshi prices and the prop model; game legs need an 80%+ public side.</div>`;
+  const pc = legs.reduce((a, l) => a * l.p, 1), price = legs.reduce((a, l) => a * l.price, 1);
+  const fair = toAmerican(pc), mkt = toAmerican(price), ev = pc / price - 1;
+  const rows = legs.map((l, i) => `<div class="leg"><span class="legn">${i + 1}</span><div style="min-width:0"><div class="pk" style="font-size:19px">${esc(l.label)}</div><div class="bs">${esc(l.sub)}</div></div>
+    <div class="legnums"><b>${Math.round(l.p * 100)}%</b><span class="why">${l.kind === "prop" ? Math.round(l.price * 100) + "¢ on Kalshi" : "−110"}</span><span class="${l.edge >= 0 ? "pos" : "neg"}">${l.edge >= 0 ? "+" : "−"}${Math.abs(Math.round(l.edge * 100))} pts</span></div></div>`).join("");
+  return `<div class="pcard"><div class="plays-head"><h3 style="margin:0">${esc(title)}</h3><span class="label">${legs.length} legs</span></div>${rows}
+    <div class="pfoot"><div><b>${Math.round(pc * 100)}%</b><span>chance all hit</span></div><div><b>${fmtAm(fair)}</b><span>fair odds</span></div><div><b>${fmtAm(mkt)}</b><span>about what it pays</span></div><div><b class="${ev >= 0 ? "pos" : "neg"}">${ev >= 0 ? "+" : "−"}${Math.abs(Math.round(ev * 100))}%</b><span>expected return</span></div></div>
+    <p class="note" style="margin:0">Take it at <b>${fmtAm(fair)} or better</b>. ${note || ""}</p></div>`;
+}
+function legTable(legs) {
+  if (!legs.length) return '<div class="empty">No legs match yet.</div>';
+  return `<div class="tablewrap"><table><thead><tr><th>Leg</th><th class="r">Chance</th><th class="r">Price</th><th class="r">Value</th></tr></thead><tbody>${legs.map(l => `<tr><td><div class="pl">${esc(l.label)}</div><div class="tcat">${esc(l.sub)}</div></td>
+    <td class="num r">${Math.round(l.p * 100)}%</td><td class="num r">${l.kind === "prop" ? `${Math.round(l.price * 100)}¢ <span class="why">(${fmtAm(toAmerican(l.price))})</span>` : "−110"}</td>
+    <td class="num r"><span class="${l.edge >= 0.05 ? "chip strong" : l.edge >= 0 ? "pos" : "neg"}">${l.edge >= 0 ? "+" : "−"}${Math.abs(Math.round(l.edge * 100))}</span></td></tr>`).join("")}</tbody></table></div>`;
+}
+function bestPerGame(gid, { props = true, lines = true } = {}) {
+  const c = [...(props ? propLegs(gid).filter(l => l.p >= COMMON) : []), ...(lines ? gameLegs(gid) : [])].filter(l => l.edge > 0);
+  return c.sort((a, b) => legScore(b) - legScore(a))[0] || null;
+}
+function sgpLegs(gid, n = 3) {
+  const used = new Set(), out = [];
+  for (const l of propLegs(gid).filter(l => l.p >= COMMON && l.edge > 0).sort((a, b) => legScore(b) - legScore(a))) {
+    if (used.has(l.player)) continue; used.add(l.player); out.push(l); if (out.length === n) break;
+  }
+  return out;
+}
+function renderParlays() {
+  const el = $("#p-parlays"); if (!S.data) return;
+  const games = S.data.week_games.slice().sort((a, b) => (a.gameday + a.gametime).localeCompare(b.gameday + b.gametime));
+  const P = S.par;
+  if (!P.game || !games.some(g => g.game_id === P.game)) P.game = games[0]?.game_id;
+  const modes = [["sgp", "Same game"], ["all", "All games"], ["three", "Pick 3 games"], ["best", "Best 3 overall"]];
+  const gsel = (id, val) => `<select id="${id}">${games.map(g => `<option value="${g.game_id}"${g.game_id === val ? " selected" : ""}>${esc(g.away)} @ ${esc(g.home)}, ${esc(kickoff(g))}</option>`).join("")}</select>`;
+  let body = "";
+  if (!S.pm || !Object.keys(S.kalshi).length) body = '<div class="empty">Loading Kalshi prices and the prop model.</div>';
+  else if (P.mode === "sgp") {
+    const legs = sgpLegs(P.game), all = propLegs(P.game).filter(l => l.p >= COMMON && l.edge > 0).sort((a, b) => legScore(b) - legScore(a)).slice(0, 15);
+    body = `<div class="pctl"><label class="label" for="pp-game">Game</label>${gsel("pp-game", P.game)}</div>
+      ${parlayCard(legs, "Same-game parlay", "Legs from one game tend to win or lose together, and books price that in, so their same-game price is usually lower than these legs multiplied out.")}
+      <h3>Most valuable likely props in this game</h3>${legTable(all)}`;
+  } else if (P.mode === "all") {
+    const all = games.flatMap(g => propLegs(g.game_id)).filter(l => l.p >= COMMON && l.edge > 0).sort((a, b) => legScore(b) - legScore(a));
+    const seen = new Set(), legs = [];
+    for (const l of all) { if (seen.has(l.gid)) continue; seen.add(l.gid); legs.push(l); if (legs.length === 3) break }
+    body = `${parlayCard(legs, "Best likely props, 3 different games", "One leg per game, so one bad game script can't sink the whole thing.")}
+      <h3>Most valuable likely props this week</h3>${legTable(all.slice(0, 25))}`;
+  } else if (P.mode === "three") {
+    if (P.picks.length !== 3) {
+      const ranked = games.map(g => ({ g, l: bestPerGame(g.game_id) })).filter(x => x.l).sort((a, b) => legScore(b.l) - legScore(a.l));
+      P.picks = ranked.slice(0, 3).map(x => x.g.game_id);
+      while (P.picks.length < 3 && games[P.picks.length]) P.picks.push(games.find(g => !P.picks.includes(g.game_id)).game_id);
+    }
+    const legs = P.picks.map(gid => bestPerGame(gid)).filter(Boolean);
+    body = `<div class="pctl">${[0, 1, 2].map(i => `<label class="label" for="pp-g${i}">Game ${i + 1}</label>${gsel("pp-g" + i, P.picks[i])}`).join("")}</div>
+      ${parlayCard(legs, "Your 3 games", "The best leg in each game you picked: a likely prop or a fade, whichever has more value.")}
+      ${legs.length < 3 ? '<p class="note">A game with no leg above break-even is left out.</p>' : ""}`;
+  } else {
+    const all = games.flatMap(g => [...propLegs(g.game_id).filter(l => l.p >= COMMON), ...gameLegs(g.game_id)]).filter(l => l.edge > 0).sort((a, b) => legScore(b) - legScore(a));
+    const seen = new Set(), legs = [];
+    for (const l of all) { if (seen.has(l.gid)) continue; seen.add(l.gid); legs.push(l); if (legs.length === 3) break }
+    body = `${parlayCard(legs, "The 3 most valuable legs", "Spreads, totals and props together, one per game.")}
+      <h3>Top legs of every kind</h3>${legTable(all.slice(0, 25))}`;
+  }
+  el.innerHTML = `<h2>Parlay builder</h2>
+    <p class="lede">Legs ranked by <b>value</b>: our chance minus the price's chance, in points. For props, the chance is our player model averaged with Kalshi's own price (the market knows things the model doesn't), compared with what Kalshi charges, and a prop only counts if that chance is 60%+ ("likely"). Spreads and totals use fade signals at −110: 54.5% when one source is 80%+, 57% when both are, plus a point each if the model agrees or the line is moving against the public. Injured players and gaps over 15 points (usually news) are left out.</p>
+    <div class="filters" role="group" aria-label="Parlay type">${modes.map(([k, t]) => `<button data-pm="${k}" aria-pressed="${P.mode === k}">${t}</button>`).join("")}</div>
+    ${body}
+    <p class="note">Chances multiply as if legs were independent. Book prices differ from Kalshi's, so compare the fair odds with what your app offers before betting.</p>`;
+  el.querySelectorAll("[data-pm]").forEach(b => b.onclick = () => { P.mode = b.dataset.pm; renderParlays() });
+  const gs = $("#pp-game"); if (gs) gs.onchange = e => { P.game = e.target.value; renderParlays() };
+  [0, 1, 2].forEach(i => { const s = $("#pp-g" + i); if (s) s.onchange = e => { P.picks[i] = e.target.value; renderParlays() } });
+}
+
 function renderAll() {
   if (!S.data) return;
   if (S.gameView) renderGame();
-  renderHeader(); renderTicker();
+  renderHeader(); renderTicker(); renderParlays();
   renderWeek(); renderTrends(); renderProps(); renderRatings(); renderPeople(); renderFade(); renderBets();
 }
 
@@ -1232,7 +1360,7 @@ function renderAll() {
     renderAll();
     fetch("data/props.json").then(r => r.json()).then(p => { S.props = p; renderProps(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/signals.json").then(r => r.json()).then(x => { S.signals = x; renderFade() }).catch(() => {});
-    fetch("data/propmodel.json").then(r => r.json()).then(x => { S.pm = x; renderProps(); if (S.gameView) renderGame() }).catch(() => {});
+    fetch("data/propmodel.json").then(r => r.json()).then(x => { S.pm = x; renderProps(); renderParlays(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/model.json").then(r => r.json()).then(m => { S.model = m; renderRatings(); renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/injuries.json").then(r => r.json()).then(x => { S.inj = x; renderWeek(); renderProps(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/people.json").then(r => r.json()).then(p => { S.people = p; renderPeople(); renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
@@ -1240,7 +1368,7 @@ function renderAll() {
     $("#p-week").innerHTML = '<div class="empty">The trend data didn\'t load. Refresh the page to try again.</div>';
   }
   // Self-hosted copy: splits come from a JSON file written by splits.py
-  try { const r = await fetch("data/kalshi.json"); if (r.ok) { const k = await r.json(); S.kalshi = k.games || {}; S.kalshiAt = k.generated; renderProps(); if (S.gameView) renderGame() } } catch (e) {}
+  try { const r = await fetch("data/kalshi.json"); if (r.ok) { const k = await r.json(); S.kalshi = k.games || {}; S.kalshiAt = k.generated; renderProps(); renderParlays(); if (S.gameView) renderGame() } } catch (e) {}
   try { const r = await fetch("data/propsplits.json"); if (r.ok) { S.propsplits = await r.json(); renderProps() } } catch (e) {}
   try { const r = await fetch("data/splits.json"); if (r.ok) { S.splits = await r.json(); renderWeek(); renderTicker() } } catch (e) {}
   if (!window.claude?.use) return;
@@ -1249,14 +1377,14 @@ function renderAll() {
   S.me = user ? await user.id() : null; S.isOwnerReal = user ? await user.isOwner() : false;
   if (!db) { renderAll(); return }
   db.collection("splits").onSnapshot(snap => {
-    S.splits = {}; snap.docs.forEach(d => S.splits[d.id] = d.data()); renderWeek(); renderTicker(); if (S.gameView) renderGame();
+    S.splits = {}; snap.docs.forEach(d => S.splits[d.id] = d.data()); renderWeek(); renderTicker(); renderParlays(); if (S.gameView) renderGame();
   }, () => {});
   db.collection("splitshist").onSnapshot(snap => {
     S.hist = {}; snap.docs.forEach(d => { S.hist[d.id] = d.data().snaps || [] }); renderWeek(); if (S.gameView) renderGame();
   }, () => {});
   db.collection("kalshi").onSnapshot(snap => {
     if (!snap.docs.length) return;
-    S.kalshi = {}; snap.docs.forEach(d => { const x = d.data(); S.kalshi[d.id] = x.rows || []; S.kalshiAt = x.updated || S.kalshiAt });
+    S.kalshi = {}; snap.docs.forEach(d => { const x = d.data(); S.kalshi[d.id] = x.rows || []; S.kalshiAt = x.updated || S.kalshiAt }); renderParlays();
     renderProps(); if (S.gameView) renderGame();
   }, () => {});
   db.collection("propsplits").onSnapshot(snap => {
