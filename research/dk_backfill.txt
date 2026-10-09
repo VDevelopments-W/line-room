@@ -1,0 +1,68 @@
+DraftKings backfill from Internet Archive snapshots, run 2026-10-09 22:03Z
+11 of 65 games found (11 snapshots fetched)
+
+2026_01_ARI_LAC: not archived
+2026_01_ATL_PIT: not archived
+2026_01_BAL_IND: not archived
+2026_01_BUF_HOU: not archived
+2026_01_CHI_CAR: not archived
+2026_01_CLE_JAX: not archived
+2026_01_DAL_NYG: not archived
+2026_01_DEN_KC: not archived
+2026_01_GB_MIN: not archived
+2026_01_MIA_LV: not archived
+2026_01_NE_SEA: not archived
+2026_01_NO_DET: not archived
+2026_01_NYJ_TEN: not archived
+2026_01_SF_LA: not archived
+2026_01_TB_CIN: not archived
+2026_01_WAS_PHI: not archived
+2026_02_CAR_ATL: not archived
+2026_02_CIN_HOU: not archived
+2026_02_CLE_TB: not archived
+2026_02_DET_BUF: not archived
+2026_02_GB_NYJ: not archived
+2026_02_IND_KC: not archived
+2026_02_JAX_DEN: not archived
+2026_02_LV_LAC: not archived
+2026_02_MIA_SF: not archived
+2026_02_MIN_CHI: not archived
+2026_02_NO_BAL: not archived
+2026_02_NYG_LA: not archived
+2026_02_PHI_TEN: not archived
+2026_02_PIT_NE: not archived
+2026_02_SEA_ARI: not archived
+2026_02_WAS_DAL: not archived
+2026_03_ARI_SF: snapshot 20260927162343 (4h before kickoff); 70%+: spread home 74%
+2026_03_ATL_GB: snapshot 20260924205807 (3h before kickoff); 70%+: spread home 70%
+2026_03_BAL_DAL: not archived
+2026_03_CAR_CLE: snapshot 20260927162343 (1h before kickoff); 70%+: spread away 85%
+2026_03_CIN_PIT: snapshot 20260927162343 (1h before kickoff); 70%+: spread away 78%
+2026_03_HOU_IND: snapshot 20260927162343 (1h before kickoff)
+2026_03_KC_MIA: snapshot 20260927162343 (1h before kickoff); 70%+: spread away 86%
+2026_03_LAC_BUF: snapshot 20260927162343 (1h before kickoff); 70%+: spread home 79%
+2026_03_LA_DEN: not archived
+2026_03_LV_NO: not archived
+2026_03_MIN_TB: not archived
+2026_03_NE_JAX: snapshot 20260927162343 (1h before kickoff); 70%+: spread away 73%
+2026_03_NYJ_DET: snapshot 20260927162343 (1h before kickoff); 70%+: spread home 73%
+2026_03_PHI_CHI: not archived
+2026_03_SEA_WAS: snapshot 20260927162343 (1h before kickoff); 70%+: spread away 78%
+2026_03_TEN_NYG: snapshot 20260927162343 (1h before kickoff)
+2026_04_ARI_NYG: not archived
+2026_04_ATL_NO: not archived
+2026_04_DAL_HOU: not archived
+2026_04_DEN_SF: not archived
+2026_04_DET_CAR: not archived
+2026_04_GB_TB: not archived
+2026_04_IND_WAS: not archived
+2026_04_JAX_CIN: not archived
+2026_04_KC_LV: not archived
+2026_04_LAC_SEA: not archived
+2026_04_LA_PHI: not archived
+2026_04_MIA_MIN: not archived
+2026_04_NE_BUF: not archived
+2026_04_NYJ_CHI: not archived
+2026_04_PIT_CLE: not archived
+2026_04_TEN_BAL: not archived
+2026_05_TB_DAL: not archived
