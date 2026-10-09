@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 12 * * *"
   workflow_dispatch: {}
+  push:                      # rebuild when pipeline code changes
+    branches: [main]
+    paths: ["*.py", ".github/workflows/daily.yml"]
 permissions:
   contents: write
 concurrency: { group: repo-write, cancel-in-progress: false }
