@@ -26,11 +26,13 @@ jobs:
           echo "$out"
           echo "::notice::$(echo "$out" | head -1)"
       - name: Commit if prices changed
+        shell: bash {0}
         run: |
           git config user.name "line-room-bot"
           git config user.email "line-room-bot@users.noreply.github.com"
-          git add site/data/kalshi.json
+          r=$(git add -f site/data/kalshi.json 2>&1) || { echo "::error::git add: $r"; exit 1; }
           if git diff --cached --quiet; then echo "::notice::No price changes"; exit 0; fi
-          git commit -qm "Kalshi prices $(date -u +%FT%H:%MZ)"
-          git pull --rebase -q origin main || true
-          out=$(git push 2>&1) || { echo "::error::push failed: $(echo "$out" | tr '\n' ' ')"; exit 1; }
+          r=$(git commit -qm "Kalshi prices $(date -u +%FT%H:%MZ)" 2>&1) || { echo "::error::git commit: $r"; exit 1; }
+          git pull --rebase -q origin main >/dev/null 2>&1
+          r=$(git push 2>&1) || { echo "::error::git push: $(echo "$r" | tr '\n' ' ')"; exit 1; }
+          echo "::notice::Prices committed"
