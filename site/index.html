@@ -1365,11 +1365,13 @@ function pickCard(legs, title, why, stake) {
   const pc = legs.reduce((a, l) => a * l.p, 1), price = legs.reduce((a, l) => a * l.price, 1);
   const fair = toAmerican(pc), pays = toAmerican(price);
   const rows = legs.map((l, i) => `<div class="leg"><span class="legn">${i + 1}</span><div style="min-width:0"><div class="pk" style="font-size:19px">${esc(l.label)}</div><div class="bs">${esc(legWhy(l))}</div></div>
-    <div class="legnums"><b>${Math.round(l.p * 100)}%</b><span class="why">${l.kind === "prop" ? Math.round(l.price * 100) + "¢ Kalshi" : "−110"}</span></div></div>`).join("");
+    <div class="legnums"><b>${Math.round(l.p * 100)}%</b><span class="why">${l.kind === "prop" ? Math.round(l.price * 100) + "¢ Kalshi" : "−110"}</span>
+      <span class="${l.edge >= 0 ? "pos" : "neg"}" title="Our chance minus the price's chance">${l.edge >= 0 ? "+" : "−"}${Math.abs(Math.round(l.edge * 100))} pts value</span></div></div>`).join("");
   const win = stake * (fair > 0 ? fair / 100 : 100 / Math.abs(fair));
+  const ev = pc / price - 1;   // expected return per $1 if it pays about what books pay
   return `<div class="pcard"><div class="plays-head"><h3 style="margin:0">${esc(title)}</h3><span class="label">${legs.length} legs · $${stake}</span></div>
     <p class="note" style="margin:0">${why}</p>${rows}
-    <div class="pfoot"><div><b>${Math.round(pc * 100)}%</b><span>chance all hit</span></div><div><b>${fmtAm(fair)}</b><span>fair odds</span></div><div><b>${fmtAm(pays)}</b><span>about what books pay</span></div><div><b>$${Math.round(win)}</b><span>to win at fair odds on $${stake}</span></div></div>
+    <div class="pfoot"><div><b>${Math.round(pc * 100)}%</b><span>chance all hit</span></div><div><b>${fmtAm(fair)}</b><span>fair odds</span></div><div><b>${fmtAm(pays)}</b><span>about what books pay</span></div><div><b class="${ev >= 0 ? "pos" : "neg"}">${ev >= 0 ? "+" : "−"}${Math.abs(Math.round(ev * 100))}%</b><span>expected return</span></div><div><b>$${Math.round(win)}</b><span>to win at fair odds on $${stake}</span></div></div>
     <p class="note" style="margin:0">Take it at <b>${fmtAm(fair)} or better</b>. Worse than that, skip it or drop the weakest leg.</p></div>`;
 }
 function oneGameEach(list, n = 3) {
