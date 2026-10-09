@@ -1300,7 +1300,7 @@ function renderParlays() {
   const games = S.data.week_games.slice().sort((a, b) => (a.gameday + a.gametime).localeCompare(b.gameday + b.gametime));
   const P = S.par;
   if (!P.game || !games.some(g => g.game_id === P.game)) P.game = games[0]?.game_id;
-  const modes = [["sgp", "Same game"], ["all", "All games"], ["three", "Pick 3 games"], ["best", "Best 3 overall"]];
+  const modes = [["sgp", "Same game"], ["all", "All games"], ["three", "3 games: likeliest"], ["best", "Best 3 overall"]];
   const gsel = (id, val) => `<select id="${id}">${games.map(g => `<option value="${g.game_id}"${g.game_id === val ? " selected" : ""}>${esc(g.away)} @ ${esc(g.home)}, ${esc(kickoff(g))}</option>`).join("")}</select>`;
   let body = "";
   if (!S.pm || !Object.keys(S.kalshi).length) body = '<div class="empty">Loading Kalshi prices and the prop model.</div>';
@@ -1316,15 +1316,11 @@ function renderParlays() {
     body = `${parlayCard(legs, "Best likely props, 3 different games", "One leg per game, so one bad game script can't sink the whole thing.")}
       <h3>Most valuable likely props this week</h3>${legTable(all.slice(0, 25))}`;
   } else if (P.mode === "three") {
-    if (P.picks.length !== 3) {
-      const ranked = games.map(g => ({ g, l: bestPerGame(g.game_id) })).filter(x => x.l).sort((a, b) => legScore(b.l) - legScore(a.l));
-      P.picks = ranked.slice(0, 3).map(x => x.g.game_id);
-      while (P.picks.length < 3 && games[P.picks.length]) P.picks.push(games.find(g => !P.picks.includes(g.game_id)).game_id);
-    }
-    const legs = P.picks.map(gid => bestPerGame(gid)).filter(Boolean);
-    body = `<div class="pctl">${[0, 1, 2].map(i => `<label class="label" for="pp-g${i}">Game ${i + 1}</label>${gsel("pp-g" + i, P.picks[i])}`).join("")}</div>
-      ${parlayCard(legs, "Your 3 games", "The best leg in each game you picked: a likely prop or a fade, whichever has more value.")}
-      ${legs.length < 3 ? '<p class="note">A game with no leg above break-even is left out.</p>' : ""}`;
+    // Claude picks: in every game, the likeliest leg that is still priced in our favor; then the 3 surest games
+    const perGame = games.map(g => [...propLegs(g.game_id).filter(l => l.p >= COMMON), ...gameLegs(g.game_id)]
+      .filter(l => l.edge >= 0.02 && l.p <= 0.85).sort((a, b) => b.p - a.p || b.edge - a.edge)[0]).filter(Boolean).sort((a, b) => b.p - a.p);
+    body = `${parlayCard(perGame.slice(0, 3), "3-game parlay: likeliest legs", "Each game's surest leg with at least 2 points of value (capped at 85% so it still pays), from the 3 games where that leg is most likely to hit.")}
+      <h3>Surest good-price leg in every game</h3>${legTable(perGame)}`;
   } else {
     const all = games.flatMap(g => [...propLegs(g.game_id).filter(l => l.p >= COMMON), ...gameLegs(g.game_id)]).filter(l => l.edge > 0).sort((a, b) => legScore(b) - legScore(a));
     const seen = new Set(), legs = [];
@@ -1339,7 +1335,6 @@ function renderParlays() {
     <p class="note">Chances multiply as if legs were independent. Book prices differ from Kalshi's, so compare the fair odds with what your app offers before betting.</p>`;
   el.querySelectorAll("[data-pm]").forEach(b => b.onclick = () => { P.mode = b.dataset.pm; renderParlays() });
   const gs = $("#pp-game"); if (gs) gs.onchange = e => { P.game = e.target.value; renderParlays() };
-  [0, 1, 2].forEach(i => { const s = $("#pp-g" + i); if (s) s.onchange = e => { P.picks[i] = e.target.value; renderParlays() } });
 }
 
 function renderAll() {
