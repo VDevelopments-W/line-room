@@ -145,9 +145,9 @@ def project(r, team, opp, home):
 
 def weather_inputs(x, wx):
     """(wind/10, degrees below 40/10) for outdoor games; game-time history from nflverse, forecast for upcoming."""
-    if x.roof in ("dome", "closed"):
-        return 0.0, 0.0
     f = (wx or {}).get(x.game_id, {})
+    if x.roof in ("dome", "closed") or f.get("roof") in ("dome", "closed"):
+        return 0.0, 0.0
     wind = x.wind if pd.notna(x.wind) else f.get("wind")
     temp = x.temp if pd.notna(x.temp) else f.get("temp")
     return (WIND_MEAN if wind is None else wind) / 10, (0 if temp is None else max(0, 40 - temp)) / 10

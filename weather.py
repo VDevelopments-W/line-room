@@ -51,9 +51,13 @@ def week_games():
     db = HERE / "nfl.db"
     if db.exists():
         con = sqlite3.connect(db)
-        for gid, roof, stadium, loc in con.execute("SELECT game_id, roof, stadium, location FROM games WHERE game_id IN (%s)"
-                                                   % ",".join("?" * len(games)), list(games)):
-            meta[gid] = (roof, stadium or "", loc)
+        # retractable roofs: nflverse leaves the roof blank until the game is played; use what that
+        # stadium usually does (almost always closed)
+        usual = dict(con.execute("SELECT home_team, roof FROM games WHERE roof IS NOT NULL AND season >= 2022 "
+                                 "GROUP BY home_team, roof ORDER BY COUNT(*)"))
+        for gid, roof, stadium, loc, home in con.execute("SELECT game_id, roof, stadium, location, home_team FROM games WHERE game_id IN (%s)"
+                                                         % ",".join("?" * len(games)), list(games)):
+            meta[gid] = (roof or (usual.get(home) if loc != "Neutral" else None), stadium or "", loc)
         con.close()
     return games, meta
 
