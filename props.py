@@ -236,6 +236,16 @@ def main():
     df = load_players(refresh_current=False)
     calib = calibrate(df)
     season, week, rows, logs = board(df, calib)
+    # player-specific probability from prop_model.py (run it first); falls back to the pooled streak rate
+    pmp = HERE / "site" / "data" / "propmodel.json"
+    if pmp.exists():
+        import prop_model as pm
+        model = json.loads(pmp.read_text())
+        for r in rows:
+            imp = model.get("implied", {}).get(r["game_id"], {}).get(r["team"], 22.5)
+            p = pm.prob(model, r["player"], r["stat"], r["line"], r["opp"], r["ha"] == "vs", imp)
+            r["p_model"] = None if p is None else round(float(p), 4)
+            r["fair_model"] = american(r["p_model"])
     table = [{"stat": k[0], "type": k[1], "bucket": k[2], "hit": v[0], "n": v[1]}
              for k, v in sorted(calib.items())]
     OUT.write_text(json.dumps({

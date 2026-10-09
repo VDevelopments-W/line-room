@@ -29,7 +29,7 @@ jobs:
           path: data/team
           key: team-${{ github.run_id }}
           restore-keys: team-
-      - run: pip install requests pandas numpy beautifulsoup4 scipy
+      - run: pip install requests pandas numpy beautifulsoup4 scipy scikit-learn
       - name: Rebuild
         run: |
           set -o pipefail
@@ -39,9 +39,11 @@ jobs:
           run python seed_fades.py
           run python trends.py
           run python injuries.py --refresh
+          run python prop_model.py
           run python props.py
           run python model.py
           run python people.py
-          [ -f grade_signals.py ] && run python grade_signals.py
+          run python archive.py
+          run python grade_signals.py
           echo "::notice::Rebuilt $(python -c "import json;d=json.load(open('site/data/trends.json'));print(d['season'],'week',d['next_week'])")"
-      - run: bash commit.sh "Daily rebuild $(date -u +%F)" site/data data/archive
+      - run: bash commit.sh "Daily rebuild $(date -u +%F)" site/data data/archive research/prop_model_test.txt

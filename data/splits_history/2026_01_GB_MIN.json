@@ -1,0 +1,1 @@
+{"game_id": "2026_01_GB_MIN", "kickoff": null, "backfill": true, "snaps": [{"ts": "backfill", "rows": [{"source": "sao", "market": "spread", "side": "away", "line": 2.5, "odds": null, "bets": 57.0, "money": 48.0}, {"source": "sao", "market": "spread", "side": "home", "line": -2.5, "odds": null, "bets": 43.0, "money": 52.0}]}]}
