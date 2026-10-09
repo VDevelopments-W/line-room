@@ -120,8 +120,16 @@ NFL = {"ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE","DAL","DEN","DET","GB","H
        "LA","LAC","LV","MIA","MIN","NE","NO","NYG","NYJ","PHI","PIT","SEA","SF","TB","TEN","WAS"}
 
 
+TRENDS = HERE / "site" / "data" / "trends.json"
+CLOSE = HERE / "data" / "kalshi_close"
+
+
 def week_games():
-    """(away, home) -> nflverse game_id when nfl.db is around (self-host); else keys fall back to AWAY_HOME."""
+    """(away, home) -> nflverse game_id, from trends.json (GitHub job) or nfl.db (self-host)."""
+    if TRENDS.exists():
+        tr = json.loads(TRENDS.read_text())
+        gs = [g for g in tr["season_games"] if g.get("week") == tr["next_week"]] + tr["week_games"]
+        return {(g["away"], g["home"]): g["game_id"] for g in gs}
     if not DB_PATH.exists():
         return {}
     con = sqlite3.connect(DB_PATH)
@@ -196,8 +204,27 @@ def fetch():
     return out, series
 
 
+def kickoffs():
+    if not TRENDS.exists():
+        return {}
+    from zoneinfo import ZoneInfo
+    tr = json.loads(TRENDS.read_text())
+    out = {}
+    for g in tr["season_games"] + tr["week_games"]:
+        h, m = map(int, (g.get("gametime") or "13:00").split(":"))
+        out[g["game_id"]] = datetime.fromisoformat(g["gameday"]).replace(hour=h, minute=m, tzinfo=ZoneInfo("America/New_York"))
+    return out
+
+
 def main():
     games, series = fetch()
+    # Freeze each game's prices until kickoff: data/kalshi_close/<game_id>.json is the closing board for grading.
+    ko, now = kickoffs(), datetime.now(timezone.utc)
+    CLOSE.mkdir(parents=True, exist_ok=True)
+    stamp = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    for gid, rows in games.items():
+        if gid in ko and ko[gid] > now:
+            (CLOSE / f"{gid}.json").write_text(json.dumps({"ts": stamp, "rows": rows}, separators=(",", ":")))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({"generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                                "series": series, "games": games}, indent=0))

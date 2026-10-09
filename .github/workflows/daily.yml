@@ -1,0 +1,44 @@
+# Daily rebuild at 5 AM Pacific: scores, closing lines, injuries, QB changes, power ratings,
+# projections, prop board, trends, refs/coaches, and grading of every signal.
+name: Daily rebuild
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency: { group: repo-write, cancel-in-progress: false }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/cache@v4
+        with:
+          path: data/players
+          key: players-${{ github.run_id }}
+          restore-keys: players-
+      - uses: actions/cache@v4
+        with:
+          path: data/team
+          key: team-${{ github.run_id }}
+          restore-keys: team-
+      - run: pip install requests pandas numpy beautifulsoup4 scipy
+      - name: Rebuild
+        run: |
+          set -o pipefail
+          run() { echo "== $*"; out=$("$@" 2>&1); c=$?; echo "$out"; if [ $c -ne 0 ]; then echo "::error::$*: $(echo "$out" | tail -4 | tr '\n' ' ')"; exit 1; fi; }
+          run python fetch_data.py
+          run python ingest.py
+          run python seed_fades.py
+          run python trends.py
+          run python injuries.py --refresh
+          run python props.py
+          run python model.py
+          run python people.py
+          [ -f grade_signals.py ] && run python grade_signals.py
+          echo "::notice::Rebuilt $(python -c "import json;d=json.load(open('site/data/trends.json'));print(d['season'],'week',d['next_week'])")"
+      - run: bash commit.sh "Daily rebuild $(date -u +%F)" site/data data/archive

@@ -1,7 +1,9 @@
 nfl.db
-data/
+splits.db
+data/players/
+data/team/
+data/injuries/
 __pycache__/
 kalshi_docs.json
+kalshi_docs/
 logs.txt
-site/data/*
-!site/data/kalshi.json

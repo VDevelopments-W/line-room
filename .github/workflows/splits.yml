@@ -1,0 +1,29 @@
+# Public betting splits (DraftKings + Scores and Odds) every 30 minutes Thu-Tue, every 2 hours Wed.
+# Each change is appended to data/splits_history/<game_id>.json; site/data/splits.json is the latest.
+name: Public splits
+on:
+  schedule:
+    - cron: "10,40 * * * 0,1,2,4,5,6"
+    - cron: "10 */2 * * 3"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["collect_splits.py", "nfl_splits.py", ".github/workflows/splits.yml"]
+permissions:
+  contents: write
+concurrency: { group: repo-write, cancel-in-progress: false }
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests beautifulsoup4
+      - name: Collect splits
+        run: |
+          out=$(python collect_splits.py --dump 2>&1); code=$?
+          echo "$out"
+          if [ $code -ne 0 ]; then echo "::error::collect_splits failed: $(echo "$out" | tail -5 | tr '\n' ' ')"; else echo "::notice::$(echo "$out" | tail -1)"; fi
+      - run: bash commit.sh "Splits $(date -u +%FT%H:%MZ)" site/data/splits.json data/splits_history debug

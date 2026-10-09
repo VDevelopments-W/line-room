@@ -1038,13 +1038,13 @@ function renderBets() {
     if (res === "W") { w++; pl += win } else if (res === "L") { l++; pl -= stake } else if (res === "P") p++; else open++;
     const name = b.market === "total" ? `${b.side === "over" ? "Over" : "Under"} ${b.line}` : `${g ? g[b.side] : b.side} ${fmtLine(Number(b.line))}`;
     return `<tr><td class="num">${g ? g.week : ""}</td><td>${g ? esc(g.away) + " @ " + esc(g.home) : esc(b.game_id)}</td><td class="mono">${esc(name)}</td>
-      <td class="num r">${b.units}u</td><td class="num r">${odds > 0 ? "+" + odds : odds}</td><td>${esc(b.why || "")}</td>
+      <td class="num r">${b.units}u</td><td class="num r">${odds > 0 ? "+" + odds : odds}</td><td>${esc(b.why || "")}</td><td class="why" data-by="${esc(b.by || "")}">${b.by ? (b.by === S.me ? "You" : "…") : ""}</td>
       <td class="${res || ""}">${res || "Open"}</td><td class="num r">${res === "W" ? money(win) : res === "L" ? money(-stake) : ""}</td>
-      <td>${S.owner ? `<button class="btn ghost" data-del="${esc(b.id)}" aria-label="Delete bet">Delete</button>` : ""}</td></tr>`;
+      <td>${S.owner && (!b.by || b.by === S.me || S.isOwnerReal) ? `<button class="btn ghost" data-del="${esc(b.id)}" aria-label="Delete bet">Delete</button>` : ""}</td></tr>`;
   }).join("");
   const form = S.owner ? betForm() : "";
   const body = !S.db ? `<div class="empty">Sign in to claude.ai to see the bet log.</div>`
-    : bets.length ? `<div class="tablewrap"><table><thead><tr><th>Wk</th><th>Game</th><th>Bet</th><th class="r">Size</th><th class="r">Odds</th><th>Why</th><th>Result</th><th class="r">P/L</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>`
+    : bets.length ? `<div class="tablewrap"><table><thead><tr><th>Wk</th><th>Game</th><th>Bet</th><th class="r">Size</th><th class="r">Odds</th><th>Why</th><th>By</th><th>Result</th><th class="r">P/L</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>`
     : `<div class="empty">No bets logged yet. ${S.owner ? "Add your first one above." : "Bets show up here once they're logged."}</div>`;
   const key = S.owner ? "owner" : "viewer";
   if (el.dataset.shell !== key) {
@@ -1058,6 +1058,8 @@ function renderBets() {
       <div class="stat"><b class="num">${w}-${l}${p ? "-" + p : ""}</b><small>Graded bets${open ? `, ${open} open` : ""}</small></div>
       <div class="stat"><b class="num">${money(pl)}</b><small>Profit and loss</small></div></div>`;
   $("#bets-list").innerHTML = body;
+  const ids = [...new Set(bets.map(b => b.by).filter(x => x && x !== S.me))];
+  if (ids.length && S.user?.profiles) S.user.profiles(ids).then(ps => el.querySelectorAll("[data-by]").forEach(td => { const id = td.dataset.by; if (id && id !== S.me) td.textContent = ps?.[id]?.name || "Someone" })).catch(() => {});
   el.querySelectorAll("[data-del]").forEach(b => b.onclick = async () => {
     if (b.dataset.confirm !== "1") { b.dataset.confirm = "1"; b.textContent = "Confirm"; return }
     try { await S.db.doc("bets/" + b.dataset.del).delete() } catch (e) { b.textContent = "Failed" }
@@ -1094,9 +1096,9 @@ function wireForm() {
     const side = $("#bf-side").value, line = parseFloat($("#bf-line").value), odds = parseInt($("#bf-odds").value, 10);
     if (Number.isNaN(line) || Number.isNaN(odds)) { $("#bf-msg").textContent = "Enter the line and odds as numbers, like -3.5 and -110."; return }
     const doc = { game_id: $("#bf-game").value, market: side === "over" || side === "under" ? "total" : "spread", side, line, odds,
-      units: parseFloat($("#bf-units").value), why: $("#bf-why").value, placed: new Date().toISOString() };
+      units: parseFloat($("#bf-units").value), why: $("#bf-why").value, by: S.me || null, placed: new Date().toISOString() };
     try { await S.db.collection("bets").add(doc); $("#bf-msg").textContent = "Logged." }
-    catch (err) { $("#bf-msg").textContent = "Couldn't save the bet. Only the owner can log bets." }
+    catch (err) { $("#bf-msg").textContent = "Couldn't save the bet. You need edit access to log bets." }
   };
 }
 
@@ -1129,7 +1131,8 @@ function renderAll() {
   try { const r = await fetch("data/splits.json"); if (r.ok) { S.splits = await r.json(); renderWeek(); renderTicker() } } catch (e) {}
   if (!window.claude?.use) return;
   const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
-  S.db = db; S.user = user; S.owner = user ? await user.isOwner() : false;
+  S.db = db; S.user = user; S.owner = user ? await user.canEdit() : false;
+  S.me = user ? await user.id() : null; S.isOwnerReal = user ? await user.isOwner() : false;
   if (!db) { renderAll(); return }
   db.collection("splits").onSnapshot(snap => {
     S.splits = {}; snap.docs.forEach(d => S.splits[d.id] = d.data()); renderWeek(); renderTicker(); if (S.gameView) renderGame();
