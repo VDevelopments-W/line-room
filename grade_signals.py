@@ -30,7 +30,7 @@ OUT = HERE / "site" / "data" / "signals.json"
 LABELS = {
     "fade_both": ("Fade: both sources 80%+", "DraftKings and Scores and Odds both had 80%+ of bets on the side we fade."),
     "fade_dk": ("Fade: DraftKings 80%+", "80%+ of DraftKings bets, Scores and Odds under 80%."),
-    "fade_sao": ("Fade: Scores and Odds 80%+", "80%+ at Scores and Odds only, DraftKings under 80%."),
+    "fade_sao": ("Fade: Scores and Odds 80%+", "80%+ at Scores and Odds, DraftKings under 80% (or not recorded, Weeks 1-4)."),
     "fade_70": ("Fade watch: 70-79%", "70-79% at either source. Tracked, not bet."),
     "model_side": ("Model: 3+ points off the line", "Power ratings disagree with the spread or total by 3+ points."),
     "prop_model": ("Props: model beats Kalshi by 5+", "Player prop model's chance is 5 to 15 points above Kalshi's closing price (bigger gaps usually mean news)."),
