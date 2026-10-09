@@ -6,6 +6,9 @@ on:
     - cron: "*/30 * * * 0,1,4,5,6"   # every 30 min, Thu-Mon (UTC)
     - cron: "0 */6 * * 2,3"          # every 6 hours Tue-Wed
   workflow_dispatch: {}               # "Run workflow" button
+  push:                               # also run when the script or this file changes
+    branches: [main]
+    paths: ["kalshi.py", ".github/workflows/kalshi.yml"]
 permissions:
   contents: write
 jobs:
@@ -20,6 +23,7 @@ jobs:
       - run: python kalshi.py --print
       - name: Commit if prices changed
         run: |
+          git pull --rebase -q origin main || true
           git config user.name "line-room-bot"
           git config user.email "line-room-bot@users.noreply.github.com"
           git add site/data/kalshi.json
