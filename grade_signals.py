@@ -224,8 +224,30 @@ def summarize(items):
     return groups
 
 
+BOX_STATS = ("passing_yards", "passing_tds", "carries", "rushing_yards", "receptions", "receiving_yards")
+
+
+def boxscores(G):
+    """Player stat lines for the last few weeks' finished games, so saved slips on the site grade themselves."""
+    tr = json.loads((HERE / "site" / "data" / "trends.json").read_text())
+    season, wk = tr["season"], tr["next_week"]
+    ps = player_stats(season)
+    out = {}
+    for (gid, name), r in ps.items():
+        g = G.get(gid)
+        if g is None or int(g.week) < wk - 3 or pd.isna(g.home_score):
+            continue
+        vals = {k: float(getattr(r, k)) for k in BOX_STATS if pd.notna(getattr(r, k, None))}
+        if vals:
+            out.setdefault(gid, {})[name] = vals
+    (HERE / "site" / "data" / "boxscores.json").write_text(json.dumps(
+        {"generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "games": out}, separators=(",", ":")))
+    return len(out)
+
+
 def main():
     G = games()
+    print(f"Box scores: {boxscores(G)} games")
     items = fades(G) + model_sides(G) + props(G)
     OUT.write_text(json.dumps({"generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                                "groups": summarize(items)}, separators=(",", ":"), allow_nan=False))

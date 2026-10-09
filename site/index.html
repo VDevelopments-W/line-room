@@ -246,6 +246,18 @@ details.model summary { cursor: pointer; display: flex; flex-wrap: wrap; gap: 4p
 .inj.o { background: var(--loss-soft); color: var(--loss) }
 .inj.q { color: var(--muted) }
 .inj small { opacity: .85 }
+.addleg { border: 1px solid var(--line); background: var(--panel); color: var(--accent); border-radius: 50%; width: 24px; height: 24px; line-height: 20px; padding: 0; font-weight: 700; cursor: pointer; vertical-align: middle; margin-left: 4px }
+.addleg.on { background: var(--accent); color: var(--panel); border-color: var(--accent) }
+.btn-mini { font: inherit; font-size: 12px; padding: 4px 10px; border-radius: var(--r-sm); border: 1px solid var(--line); background: var(--panel); color: var(--ink); cursor: pointer }
+.btn-mini[aria-pressed="true"] { background: var(--win-soft); color: var(--win); border-color: var(--win) }
+.btn-mini.ghost { color: var(--muted) }
+.slips { display: grid; gap: 10px; margin-bottom: 8px }
+.pcard.slip.active { box-shadow: 0 0 0 2px var(--accent) }
+.slipname { font: inherit; font-weight: 700; font-size: 17px; border: 1px solid transparent; border-radius: var(--r-sm); background: transparent; color: var(--ink); padding: 2px 6px; min-width: 0; max-width: 100% }
+.slipname:hover, .slipname:focus { border-color: var(--line); background: var(--panel-2) }
+.slipctl { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; font-size: 13px }
+.oddsin { font: inherit; width: 76px; padding: 4px 6px; margin-left: 4px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--panel); color: var(--ink) }
+.slipbtns { display: flex; flex-wrap: wrap; gap: 6px }
 .t-wx { padding: 0 14px 6px; margin-top: -4px }
 .wx { font-size: 12px; color: var(--muted) }
 .wx.rough { color: var(--loss); font-weight: 600 }
@@ -349,7 +361,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
 
 <script>
 const UNIT = 20;
-const S = { par: { mode: "sgp", game: null, picks: [], style: "value" }, hist: {}, signals: null, pm: null, kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
+const S = { par: { mode: "sgp", game: null, picks: [], style: "value" }, mySlips: [], groupSlips: [], active: null, legPool: {}, cardLegs: [], box: null, hist: {}, signals: null, pm: null, kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const pct = x => x == null ? "–" : (x * 100).toFixed(1) + "%";
@@ -506,7 +518,7 @@ function fadeSignal(game, market) {
   const dkB = dk.find(r => r.side === pub.side)?.bets ?? 0, saoB = sao.find(r => r.side === pub.side)?.bets ?? 0;
   const both = dkB >= 80 && saoB >= 80;
   if (both) basis = `DK ${dkB}% and Scores and Odds ${saoB}% of bets`;
-  return { type: "fade", market, side: opp, pick, units, basis, heavy, both };
+  return { type: "fade", market, side: opp, pick, units, basis, heavy, both, line };
 }
 function trendSignals(game) {
   // One chip per pick: when several trends point at the same bet, keep the strongest and count the rest.
@@ -1046,12 +1058,15 @@ function kalshiBoard() {
       const pm = modelProb(x.player, x.stat, x.line, g.game_id); if (pm == null) continue;
       const p = (pm + (x.bid + x.ask) / 2) / 2;
       const st = injStatus(S.pm.players[x.player]?.team, x.player);
-      out.push({ g, x, p, edge: p - x.ask, rawEdge: pm - x.ask, thin: x.ask - x.bid > 0.06 || (x.volume ?? 0) < 50, st });
+      const team = S.pm.players[x.player]?.team;
+      const leg = { kind: "prop", gid: g.game_id, g, team, player: x.player, stat: x.stat, line: x.line, label: `${x.player} ${x.line}+ ${STAT_SHORT[x.stat] || x.stat}`,
+        sub: `${team} · ${g.away} @ ${g.home}`, p, price: x.ask, edge: p - x.ask };
+      out.push({ g, x, p, edge: p - x.ask, rawEdge: pm - x.ask, thin: x.ask - x.bid > 0.06 || (x.volume ?? 0) < 50, st, leg });
     }
   }
   if (!out.length) return `<div class="empty">${Object.keys(S.kalshi).length ? "No Kalshi lines match these filters." : "Kalshi prices have not loaded yet."}</div>`;
   out.sort((a, b) => (a.thin - b.thin) || b.edge - a.edge);
-  const body = out.slice(0, 250).map(o => `<tr${o.thin ? ' style="opacity:.6"' : ""}><td><div class="pl">${esc(o.x.player)} <small>${esc(S.pm.players[o.x.player]?.team || "")} · ${esc(o.g.away)} @ ${esc(o.g.home)}</small>${o.st ? ` <span class="chip ${o.st === "Questionable" ? "noedge" : "fadeit"}">${esc(o.st)}</span>` : ""}</div></td>
+  const body = out.slice(0, 250).map(o => `<tr${o.thin ? ' style="opacity:.6"' : ""}><td><div class="pl">${esc(o.x.player)} <small>${esc(S.pm.players[o.x.player]?.team || "")} · ${esc(o.g.away)} @ ${esc(o.g.home)}</small>${o.st ? ` <span class="chip ${o.st === "Questionable" ? "noedge" : "fadeit"}">${esc(o.st)}</span>` : ""} ${addBtn(o.leg)}</div></td>
       <td class="line">${o.x.line}+ ${esc(STAT_SHORT[o.x.stat] || o.x.stat)}</td>
       <td class="num r"><span class="hitbar"><i style="width:${Math.round(o.p * 100)}%"></i></span>${pct(o.p)}</td>
       <td class="num r">${Math.round(o.x.ask * 100)}¢ <span class="why">(${fmtAm(toAmerican(o.x.ask))})</span></td>
@@ -1343,7 +1358,7 @@ function propLegs(gid) {
     const p = (pm + (x.bid + x.ask) / 2) / 2, edge = p - x.ask; // blend the model with the market's own price
     const team = S.pm.players[x.player]?.team, st = injStatus(team, x.player);
     if (st) continue;
-    out.push({ kind: "prop", gid, g, team, player: x.player, label: `${x.player} ${x.line}+ ${STAT_SHORT[x.stat] || x.stat}`,
+    out.push({ kind: "prop", gid, g, team, player: x.player, stat: x.stat, line: x.line, label: `${x.player} ${x.line}+ ${STAT_SHORT[x.stat] || x.stat}`,
       sub: `${team} · ${g.away} @ ${g.home}`, p, price: x.ask, edge, key: `${x.player}|${x.stat}` });
   }
   return out;
@@ -1365,7 +1380,7 @@ function gameLegs(gid) {
     }
     const mv = movement(gid, market); if (mv?.rlm) { p += 0.01; why.push("line moving against the public") }
     if (f.both) why.unshift("2 sources 80%+");
-    out.push({ kind: market, gid, g, label: f.pick, sub: `${g.away} @ ${g.home} · ${why.join(", ")}`, p, price: BE110, edge: p - BE110, key: `${gid}|${market}` });
+    out.push({ kind: market, gid, g, side: f.side, line: f.line, label: f.pick, sub: `${g.away} @ ${g.home} · ${why.join(", ")}`, p, price: BE110, edge: p - BE110, key: `${gid}|${market}` });
   }
   return out;
 }
@@ -1382,7 +1397,7 @@ function parlayCard(legs, title, note) {
 }
 function legTable(legs) {
   if (!legs.length) return '<div class="empty">No legs match yet.</div>';
-  return `<div class="tablewrap"><table><thead><tr><th>Leg</th><th class="r">Chance</th><th class="r">Price</th><th class="r">Value</th></tr></thead><tbody>${legs.map(l => `<tr><td><div class="pl">${esc(l.label)}</div><div class="tcat">${esc(l.sub)}</div></td>
+  return `<div class="tablewrap"><table><thead><tr><th>Leg</th><th class="r">Chance</th><th class="r">Price</th><th class="r">Value</th></tr></thead><tbody>${legs.map(l => `<tr><td><div class="pl">${esc(l.label)} ${addBtn(l)}</div><div class="tcat">${esc(l.sub)}</div></td>
     <td class="num r">${Math.round(l.p * 100)}%</td><td class="num r">${l.kind === "prop" ? `${Math.round(l.price * 100)}¢ <span class="why">(${fmtAm(toAmerican(l.price))})</span>` : "−110"}</td>
     <td class="num r"><span class="${l.edge >= 0.05 ? "chip strong" : l.edge >= 0 ? "pos" : "neg"}">${l.edge >= 0 ? "+" : "−"}${Math.abs(Math.round(l.edge * 100))}</span></td></tr>`).join("")}</tbody></table></div>`;
 }
@@ -1406,12 +1421,13 @@ function pickCard(legs, title, why, stake) {
   if (legs.length < 2) return "";
   const pc = legs.reduce((a, l) => a * l.p, 1), price = legs.reduce((a, l) => a * l.price, 1);
   const fair = toAmerican(pc), pays = toAmerican(price);
-  const rows = legs.map((l, i) => `<div class="leg"><span class="legn">${i + 1}</span><div style="min-width:0"><div class="pk" style="font-size:19px">${esc(l.label)}</div><div class="bs">${esc(legWhy(l))}</div></div>
+  const rows = legs.map((l, i) => `<div class="leg"><span class="legn">${i + 1}</span><div style="min-width:0"><div class="pk" style="font-size:19px">${esc(l.label)} ${addBtn(l)}</div><div class="bs">${esc(legWhy(l))}</div></div>
     <div class="legnums"><b>${Math.round(l.p * 100)}%</b><span class="why">${l.kind === "prop" ? Math.round(l.price * 100) + "¢ Kalshi" : "−110"}</span>
       <span class="${l.edge >= 0 ? "pos" : "neg"}" title="Our chance minus the price's chance">${l.edge >= 0 ? "+" : "−"}${Math.abs(Math.round(l.edge * 100))} pts value</span></div></div>`).join("");
   const win = stake * (fair > 0 ? fair / 100 : 100 / Math.abs(fair));
   const ev = pc / price - 1;   // expected return per $1 if it pays about what books pay
-  return `<div class="pcard"><div class="plays-head"><h3 style="margin:0">${esc(title)}</h3><span class="label">${legs.length} legs · $${stake}</span></div>
+  const ci = S.cardLegs.push({ title, legs }) - 1;
+  return `<div class="pcard"><div class="plays-head"><h3 style="margin:0">${esc(title)}</h3><span class="label">${legs.length} legs · $${stake}${S.db && S.me ? ` <button class="btn-mini" data-savecard="${ci}">Save as my slip</button>` : ""}</span></div>
     <p class="note" style="margin:0">${why}</p>${rows}
     <div class="pfoot"><div><b>${Math.round(pc * 100)}%</b><span>chance all hit</span></div><div><b>${fmtAm(fair)}</b><span>fair odds</span></div><div><b>${fmtAm(pays)}</b><span>about what books pay</span></div><div><b class="${ev >= 0 ? "pos" : "neg"}">${ev >= 0 ? "+" : "−"}${Math.abs(Math.round(ev * 100))}%</b><span>expected return</span></div><div><b>$${Math.round(win)}</b><span>to win at fair odds on $${stake}</span></div></div>
     <p class="note" style="margin:0">Take it at <b>${fmtAm(fair)} or better</b>. Worse than that, skip it or drop the weakest leg.</p></div>`;
@@ -1421,10 +1437,169 @@ function oneGameEach(list, n = 3) {
   for (const l of list) { if (seen.has(l.gid)) continue; seen.add(l.gid); out.push(l); if (out.length === n) break }
   return out;
 }
+
+// ---------- SAVED SLIPS: frozen legs, live prices. Personal drafts in data/users/<me>/, shared board in slips/
+const legId = l => l.kind === "prop" ? `p|${l.gid}|${l.player}|${l.stat}|${l.line}` : `g|${l.gid}|${l.kind}|${l.side}`;
+function addBtn(l) {
+  if (!S.db || !S.me || !l || (l.kind === "prop" && l.stat == null)) return "";
+  const id = legId(l); S.legPool[id] = l;
+  const act = activeSlip(), inIt = act?.legs.some(x => legId(x) === id);
+  return `<button class="addleg${inIt ? " on" : ""}" data-add="${esc(id)}" title="${inIt ? "In your open slip" : act ? `Add to "${esc(act.name)}"` : "Start a new slip with this leg"}" aria-label="Add to slip">${inIt ? "✓" : "+"}</button>`;
+}
+function freezeLeg(l) {
+  const base = { kind: l.kind, gid: l.gid, label: l.label, p0: Math.round(l.p * 1e4) / 1e4, price0: Math.round(l.price * 1e4) / 1e4, at: new Date().toISOString() };
+  return l.kind === "prop" ? { ...base, player: l.player, team: l.team || null, stat: l.stat, line: l.line } : { ...base, side: l.side, line: l.line };
+}
+const gameOf = gid => (S.data?.season_games || []).find(x => x.game_id === gid) || (S.data?.week_games || []).find(x => x.game_id === gid);
+function kickMs(g) {   // nflverse times are US Eastern
+  const [y, mo, d] = g.gameday.split("-").map(Number), [h, m] = (g.gametime || "13:00").split(":").map(Number);
+  const guess = Date.UTC(y, mo - 1, d, h + 4, m);
+  const et = new Date(guess).toLocaleString("en-US", { timeZone: "America/New_York", hour: "numeric", hour12: false });
+  return guess + (Number(et) % 24 !== h ? 3600e3 : 0);   // standard time: one hour later in UTC
+}
+function legResult(leg) {
+  const g = gameOf(leg.gid); if (!g || g.home_score == null) return null;
+  if (leg.kind === "prop") {
+    const box = S.box?.[leg.gid]; if (!box) return null;
+    const v = box[leg.player]?.[leg.stat];
+    return v == null ? "DNP" : v >= leg.line ? "W" : "L";
+  }
+  let d = leg.kind === "total" ? g.home_score + g.away_score - leg.line : (leg.side === "home" ? g.home_score - g.away_score : g.away_score - g.home_score) + leg.line;
+  if (leg.kind === "total" && leg.side === "under") d = -d;
+  return d > 0 ? "W" : d < 0 ? "L" : "P";
+}
+function liveLeg(leg) {
+  const out = { ...leg, res: legResult(leg), p: null, price: null, edge: null, flags: [] };
+  if (out.res) return out;
+  const g = gameOf(leg.gid);
+  if (g && Date.now() > kickMs(g)) { out.started = true; out.flags.push(["", "Game started: result after the final"]); return out }
+  if (leg.kind === "prop") {
+    const x = (S.kalshi[leg.gid] || []).find(r => r.player === leg.player && r.stat === leg.stat && r.line === leg.line);
+    const pm = modelProb(leg.player, leg.stat, leg.line, leg.gid);
+    if (x && x.ask != null) {
+      const mid = x.bid != null ? (x.bid + x.ask) / 2 : x.ask;
+      out.p = pm != null ? (pm + mid) / 2 : mid; out.price = x.ask; out.edge = out.p - x.ask;
+      if (pm != null && pm - x.ask > 0.15) out.flags.push(["warn", "Model 15+ pts above Kalshi: check news"]);
+      if (x.bid != null && x.ask - x.bid > 0.06) out.flags.push(["", "Thin market"]);
+    } else { out.p = pm; out.flags.push(["", "No Kalshi price right now"]) }
+    const st = injStatus(leg.team, leg.player);
+    if (st) out.flags.push([st === "Questionable" ? "" : "warn", st]);
+  } else {
+    const f = g && fadeSignal(g, leg.kind), gl = f && f.side === leg.side ? gameLegs(leg.gid).find(l => l.kind === leg.kind) : null;
+    out.price = BE110; out.p = gl ? gl.p : BE110; out.edge = out.p - BE110;
+    if (!gl) out.flags.push(["", "Fade signal gone (under 80% now)"]);
+    const cur = (S.splits[leg.gid]?.rows || []).find(r => r.source === "dk" && r.market === leg.kind && r.side === leg.side)?.line;
+    if (cur != null && leg.line != null && cur !== leg.line) {
+      const better = leg.kind === "total" ? (leg.side === "over" ? cur < leg.line : cur > leg.line) : cur > leg.line;
+      out.flags.push([better ? "" : "warn", `Line now ${leg.kind === "total" ? cur : fmtLine(cur)} (saved at ${leg.kind === "total" ? leg.line : fmtLine(leg.line)}): ${better ? "better" : "worse"} number`]);
+    }
+  }
+  return out;
+}
+const decOdds = a => a > 0 ? 1 + a / 100 : 1 + 100 / Math.abs(a);
+function slipCard(sl, scope) {
+  const legs = sl.legs.map(liveLeg), canEdit = scope === "me" || S.owner;
+  const lost = legs.some(l => l.res === "L"), done = legs.every(l => l.res);
+  const pc = lost ? 0 : legs.reduce((a, l) => a * (l.res ? (l.res === "DNP" ? 1 : 1) : (l.p ?? l.p0)), 1);
+  const pc0 = sl.legs.reduce((a, l) => a * l.p0, 1);
+  const status = done ? (lost ? ["fadeit", "Lost"] : ["strong", "Won"]) : lost ? ["fadeit", "Lost"] : legs.some(l => l.started || l.res) ? ["lean", "Live"] : sl.placed ? ["lean", "Placed"] : ["noedge", "Draft"];
+  const isActive = S.active && S.active.id === sl.id && S.active.scope === scope;
+  const resChip = r => r === "W" ? '<span class="chip strong">Hit</span>' : r === "L" ? '<span class="chip fadeit">Miss</span>' : r === "P" ? '<span class="chip noedge">Push</span>' : r === "DNP" ? '<span class="chip noedge">Did not play</span>' : "";
+  const rows = legs.map((l, i) => {
+    const d = l.p != null && !l.res ? l.p - l.p0 : null;
+    return `<div class="leg"><span class="legn">${i + 1}</span><div style="min-width:0"><div class="pk" style="font-size:18px">${esc(l.label)} ${resChip(l.res)}</div>
+      <div class="bs">${esc(gameOf(l.gid) ? `${gameOf(l.gid).away} @ ${gameOf(l.gid).home}` : "")}${l.flags.map(([c, t]) => ` <span class="chip ${c === "warn" ? "warn" : "noedge"}">${esc(t)}</span>`).join("")}</div></div>
+      <div class="legnums">${l.res ? "" : `<b>${l.p != null ? Math.round(l.p * 100) + "%" : "–"}</b><span class="why">${l.kind === "prop" ? (l.price != null ? Math.round(l.price * 100) + "¢ now" : "") : "−110"}${d != null && Math.abs(d) >= 0.01 ? ` · ${d > 0 ? "▲" : "▼"}${Math.abs(Math.round(d * 100))} since saved` : ""}</span>
+        ${l.edge != null ? `<span class="${l.edge >= 0 ? "pos" : "neg"}">${l.edge >= 0 ? "+" : "−"}${Math.abs(Math.round(l.edge * 100))} pts value</span>` : ""}`}
+        ${canEdit && !l.res && !l.started ? `<button class="btn-mini ghost" data-rmleg="${i}" aria-label="Remove leg">Remove</button>` : ""}</div></div>`;
+  }).join("");
+  const odds = sl.odds ?? null, stake = sl.stake ?? 10, fair = pc > 0 && pc < 1 ? toAmerican(pc) : null;
+  const ev = odds != null && !done && pc > 0 ? pc * decOdds(odds) - 1 : null;
+  const verdict = odds == null ? "" : fair == null ? "" : odds >= fair ? `<b class="pos">Your odds beat fair</b>` : `<b class="neg">Your odds are worse than fair</b>`;
+  const who = scope === "group" && sl.by ? `<span class="why" data-slipby="${esc(sl.by)}">${sl.by === S.me ? "by you" : "…"}</span>` : "";
+  return `<div class="pcard slip${isActive ? " active" : ""}" data-slip="${esc(sl.id)}" data-scope="${scope}">
+    <div class="plays-head"><div style="display:flex;gap:8px;align-items:center;min-width:0;flex-wrap:wrap">${canEdit ? `<input class="slipname" value="${esc(sl.name || "My parlay")}" aria-label="Slip name" data-rename>` : `<h3 style="margin:0">${esc(sl.name)}</h3>`}
+      <span class="chip ${status[0]}">${status[1]}</span>${who}</div>
+      <span class="label">${legs.length} legs${isActive ? " · adding legs here" : ""}</span></div>
+    ${rows || '<div class="why">No legs yet. Tap + next to any leg below or on the Player props tab.</div>'}
+    <div class="pfoot"><div><b>${done ? (lost ? "Lost" : "Won") : Math.round(pc * 100) + "%"}</b><span>${done ? "final" : "chance all hit now"}</span></div>
+      <div><b>${Math.round(pc0 * 100)}%</b><span>when saved</span></div>
+      <div><b>${fair != null ? fmtAm(fair) : "–"}</b><span>fair odds now</span></div>
+      <div><b class="${ev == null ? "" : ev >= 0 ? "pos" : "neg"}">${ev == null ? "–" : (ev >= 0 ? "+" : "−") + Math.abs(Math.round(ev * 100)) + "%"}</b><span>expected return at your odds</span></div></div>
+    <div class="slipctl">
+      <label>Book odds <input class="oddsin" inputmode="numeric" placeholder="+450" value="${odds != null ? fmtAm(odds).replace("−", "-") : ""}" data-odds ${canEdit ? "" : "disabled"}></label>
+      <label>Stake $<input class="oddsin" inputmode="decimal" value="${stake}" data-stake ${canEdit ? "" : "disabled"}></label>
+      ${verdict}${odds != null && !done ? `<span class="why">To win $${Math.round(stake * (decOdds(odds) - 1))}</span>` : ""}
+    </div>
+    ${canEdit ? `<div class="slipbtns">
+      <button class="btn-mini" data-act="edit">${isActive ? "Done adding" : "Add legs to this"}</button>
+      <button class="btn-mini" data-act="placed" aria-pressed="${!!sl.placed}">${sl.placed ? "Placed ✓" : "Mark placed"}</button>
+      ${scope === "me" && S.owner ? '<button class="btn-mini" data-act="share">Share to group</button>' : ""}
+      ${scope === "group" ? '<button class="btn-mini" data-act="copy">Copy to my slips</button>' : ""}
+      <button class="btn-mini ghost" data-act="delete">${scope === "group" ? "Remove from group" : "Delete"}</button></div>` : ""}
+  </div>`;
+}
+function activeSlip() {
+  if (!S.active) return null;
+  return (S.active.scope === "me" ? S.mySlips : S.groupSlips).find(x => x.id === S.active.id) || null;
+}
+const slipRef = (scope, id) => S.db.doc(scope === "me" ? `data/users/${S.me}/${id}` : `slips/${id}`);
+const newId = () => "s" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+async function saveSlip(name, legs) {
+  const id = newId();
+  await slipRef("me", id).set({ type: "slip", name, legs: legs.map(freezeLeg), created: new Date().toISOString(), by: S.me, stake: 10, odds: null, placed: false });
+  S.active = { scope: "me", id };
+  return id;
+}
+async function slipAct(scope, id, act) {
+  const sl = (scope === "me" ? S.mySlips : S.groupSlips).find(x => x.id === id); if (!sl) return;
+  const { id: _, ...data } = sl;
+  if (act === "edit") { S.active = S.active?.id === id ? null : { scope, id }; renderParlays(); renderProps(); return }
+  if (act === "placed") return slipRef(scope, id).update({ placed: !sl.placed, placed_at: sl.placed ? null : new Date().toISOString() });
+  if (act === "share") { await slipRef("group", id).set({ ...data, by: sl.by || S.me, shared: new Date().toISOString() }); await slipRef("me", id).delete(); if (S.active?.id === id) S.active = { scope: "group", id }; return }
+  if (act === "copy") { const nid = newId(); await slipRef("me", nid).set({ ...data, by: S.me, name: `${sl.name} (copy)`, created: new Date().toISOString() }); S.active = { scope: "me", id: nid }; return }
+  if (act === "delete") { if (S.active?.id === id) S.active = null; return slipRef(scope, id).delete() }
+}
+async function addLeg(lid) {
+  const l = S.legPool[lid]; if (!l) return;
+  const act = activeSlip();
+  if (!act) { await saveSlip("My parlay", [l]); return }
+  if (act.legs.some(x => legId(x) === lid)) return;
+  await slipRef(S.active.scope, act.id).update({ legs: [...act.legs, freezeLeg(l)] });
+}
+function slipsSection() {
+  if (!S.db || !S.me) return "";
+  const mine = S.mySlips, group = S.groupSlips;
+  const sorted = a => a.slice().sort((x, y) => (y.created || "").localeCompare(x.created || ""));
+  return `<section class="slips">
+    <div class="plays-head"><h3 style="margin:0">My slips</h3><span class="label">Private to you</span></div>
+    ${mine.length ? sorted(mine).map(x => slipCard(x, "me")).join("") : '<div class="empty" style="padding:14px">Save any parlay below, or tap <b>+</b> next to a leg to start your own. Saved slips keep their legs; the prices, value and injury flags keep updating.</div>'}
+    <div class="plays-head" style="margin-top:14px"><h3 style="margin:0">Group slips</h3><span class="label">Everyone with the link sees these${S.owner ? "; editors can change them" : ""}</span></div>
+    ${group.length ? sorted(group).map(x => slipCard(x, "group")).join("") : '<div class="empty" style="padding:14px">Nothing shared yet. Use "Share to group" on one of your slips.</div>'}
+  </section>`;
+}
+function wireSlips(root) {
+  root.querySelectorAll("[data-savecard]").forEach(b => b.onclick = async () => { const c = S.cardLegs[+b.dataset.savecard]; b.disabled = true; try { await saveSlip(c.title, c.legs); b.textContent = "Saved" } catch (e) { b.textContent = "Couldn't save" } });
+  root.querySelectorAll(".slip").forEach(card => {
+    const scope = card.dataset.scope, id = card.dataset.slip;
+    const sl = () => (scope === "me" ? S.mySlips : S.groupSlips).find(x => x.id === id);
+    card.querySelectorAll("[data-act]").forEach(b => b.onclick = () => slipAct(scope, id, b.dataset.act).catch(() => { b.textContent = "Failed" }));
+    card.querySelectorAll("[data-rmleg]").forEach(b => b.onclick = () => { const s = sl(); if (!s) return; const legs = s.legs.filter((_, i) => i !== +b.dataset.rmleg); slipRef(scope, id).update({ legs }).catch(() => { b.textContent = "Failed" }) });
+    const nm = card.querySelector("[data-rename]"); if (nm) nm.onchange = () => slipRef(scope, id).update({ name: nm.value.trim().slice(0, 60) || "My parlay" }).catch(() => {});
+    const od = card.querySelector("[data-odds]"); if (od) od.onchange = () => { const v = parseInt(od.value.replace(/[^\d+-]/g, ""), 10); slipRef(scope, id).update({ odds: Number.isFinite(v) && Math.abs(v) >= 100 ? v : null }).catch(() => {}) };
+    const sk = card.querySelector("[data-stake]"); if (sk) sk.onchange = () => { const v = parseFloat(sk.value); slipRef(scope, id).update({ stake: v > 0 ? Math.round(v * 100) / 100 : 10 }).catch(() => {}) };
+  });
+  const ids = [...new Set([...root.querySelectorAll("[data-slipby]")].map(e => e.dataset.slipby).filter(x => x && x !== S.me))];
+  if (ids.length && S.user?.profiles) S.user.profiles(ids).then(ps => root.querySelectorAll("[data-slipby]").forEach(e => { const id = e.dataset.slipby; if (id !== S.me) e.textContent = "by " + (ps?.[id]?.name || "Someone") })).catch(() => {});
+}
+document.addEventListener("click", e => { const b = e.target.closest("[data-add]"); if (!b) return; e.preventDefault(); e.stopPropagation(); b.disabled = true; addLeg(b.dataset.add).catch(() => { b.textContent = "!" }) }, true);
 function renderParlays() {
   const el = $("#p-parlays"); if (!S.data) return;
+  S.cardLegs = [];
+  const focus = document.activeElement && el.contains(document.activeElement) && document.activeElement.matches("input") ? document.activeElement : null;
+  if (focus) return;   // don't redraw under someone typing
   const games = S.data.week_games;
-  if (!S.pm || !Object.keys(S.kalshi).length) { el.innerHTML = '<h2>This week\'s parlays</h2><div class="empty">Loading Kalshi prices and the prop model.</div>'; return }
+  if (!S.pm || !Object.keys(S.kalshi).length) { el.innerHTML = '<h2>This week\'s parlays</h2>' + slipsSection() + '<div class="empty">Loading Kalshi prices and the prop model.</div>'; wireSlips(el); return }
   const likely = S.par.style === "likely";
   // value: our chance beats the price. likely: highest chance (65-85%, so it still pays), not badly overpriced
   const keepProp = l => likely ? l.p >= 0.65 && l.p <= 0.85 && l.edge >= -0.10 : l.p >= COMMON && l.edge > 0;
@@ -1448,7 +1623,8 @@ function renderParlays() {
   }
   if (best) cards.push(pickCard(best.legs, `Same-game stack: ${best.g.away} @ ${best.g.home}`,
     "The game with the most value in its likely props. Same-game legs tend to hit or miss together, so DraftKings will pay less than the fair odds; take it only if the price is close.", 10));
-  el.innerHTML = `<h2>This week's parlays</h2>
+  el.innerHTML = `<h2>This week's parlays</h2>${slipsSection()}
+    <h3 style="margin-top:22px">Suggested parlays</h3>
     <div class="filters" role="group" aria-label="Build parlays for"><button data-style="value" aria-pressed="${!likely}">Value</button><button data-style="likely" aria-pressed="${likely}">Most likely</button>
       <span class="why" style="font-size:13px;align-self:center;margin-left:6px">${likely ? "Legs most likely to hit (65-85%), even if the price is about fair." : "Legs where our chance beats the price."}</span></div>
     <p class="lede">Built automatically from the board and refreshed as prices move. Prop chances are our player model averaged with Kalshi's price; game legs are fade signals (54.5% with one source at 80%+, 57% with both, a point more when the model agrees or the line moves against the public). Injured players and thinly traded props are left out.</p>
@@ -1456,6 +1632,7 @@ function renderParlays() {
     <h3>${likely ? "Most likely props" : "Every likely prop with value"}</h3>${legTable(props.slice(0, 30))}
     <p class="note">Chances multiply as if legs were independent. Check the final injury news and the price in your app before betting.</p>`;
   el.querySelectorAll("[data-style]").forEach(b => b.onclick = () => { S.par.style = b.dataset.style; renderParlays() });
+  wireSlips(el);
 }
 
 function renderAll() {
@@ -1478,6 +1655,7 @@ function renderAll() {
     fetch("data/signals.json").then(r => r.json()).then(x => { S.signals = x; renderFade() }).catch(() => {});
     fetch("data/propmodel.json").then(r => r.json()).then(x => { S.pm = x; renderWeek(); renderProps(); renderParlays(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/model.json").then(r => r.json()).then(m => { S.model = m; renderRatings(); renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
+    fetch("data/boxscores.json").then(r => r.json()).then(x => { S.box = x.games || {}; renderParlays() }).catch(() => {});
     fetch("data/weather.json").then(r => r.json()).then(x => { S.wx = x.games || {}; renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/injuries.json").then(r => r.json()).then(x => { S.inj = x; renderWeek(); renderProps(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/people.json").then(r => r.json()).then(p => { S.people = p; renderPeople(); renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
@@ -1506,6 +1684,12 @@ function renderAll() {
   }, () => {});
   db.collection("propsplits").onSnapshot(snap => {
     S.propsplits = {}; snap.docs.forEach(d => S.propsplits[d.id] = d.data()); renderProps(); if (S.gameView) renderGame();
+  }, () => {});
+  db.collection("slips").onSnapshot(snap => {
+    S.groupSlips = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(x => Array.isArray(x.legs)); renderParlays(); renderProps();
+  }, () => {});
+  if (S.me) db.collection("data/users/" + S.me).onSnapshot(snap => {
+    S.mySlips = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(x => x.type === "slip" && Array.isArray(x.legs)); renderParlays(); renderProps();
   }, () => {});
   db.collection("bets").onSnapshot(snap => {
     S.bets = snap.docs.map(d => ({ id: d.id, ...d.data() })); renderBets();
