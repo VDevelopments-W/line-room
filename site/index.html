@@ -606,6 +606,42 @@ function movementBlock(g) {
   const n = S.hist[g.game_id]?.length || 0;
   return out.length ? `<div class="panel">${out.join("")}<p class="note" style="margin:0">${n} snapshots since ${new Date(S.hist[g.game_id][0].ts).toLocaleString("en-US", { weekday: "short", hour: "numeric", minute: "2-digit" })}. The sparkline is the public side's % of bets.</p></div>` : '<div class="empty">Line movement shows up once a few snapshots are in (every 30 minutes on game days).</div>';
 }
+// ---------- WONG TEASERS (6-point teasers through 3 and 7; a leg needs 73.9% at -120 for 2 teams)
+function teaserLegs() {
+  const d = S.data, wk = d.next_week;
+  const best = d.trends.find(t => t.id === "wong_dog_lowtotal"), base = d.trends.find(t => t.id === "wong_dog");
+  const out = [], seen = new Set();
+  for (const t of [best, base]) {
+    if (!t) continue;
+    for (const u of t.upcoming.filter(u => u.week === wk)) {
+      if (seen.has(u.game_id)) continue;
+      const g = d.week_games.find(x => x.game_id === u.game_id); if (!g) continue;
+      seen.add(u.game_id);
+      out.push({ t, u, g, p: t.all.pct });
+    }
+  }
+  return out.sort((a, b) => b.p - a.p);
+}
+function teaserBox(fades) {
+  const legs = teaserLegs();
+  if (!legs.length) return '<p class="empty-plays">No Wong teaser legs this week. They need an underdog of +1.5 to +2.5 (teased up 6 through 3 and 7).</p>';
+  const rows = legs.map(({ t, u, g }) => {
+    const dog = u.pick.split(" ")[0], side = g.home === dog ? "home" : "away";
+    const clash = fades.find(f => f.g.game_id === g.game_id && f.f.market === "spread" && f.f.side !== side);
+    const orig = side === "home" ? -g.spread_line : g.spread_line;
+    return `<button class="play trend" data-open="${g.game_id}"><span class="chip strong">${Math.round(t.all.pct * 100)}%</span>
+      <span style="min-width:0"><span class="pk">${esc(u.pick.replace(" (teased)", ""))}</span> <span class="bs">from ${fmtLine(orig)}</span><br>
+      <span class="bs">${esc(g.away)} @ ${esc(g.home)}, ${esc(kickoff(g))}. ${t.all.w}-${t.all.l} since 1999, ${t.current.w}-${t.current.l} this season${g.total_line < 49 ? `, total ${g.total_line}` : ""}.</span>
+      ${clash ? `<br><span class="bs" style="color:var(--loss)">Conflicts with the fade on ${esc(clash.f.pick)}: pick one.</span>` : ""}</span>
+      <span class="bs">leg</span></button>`;
+  }).join("");
+  const p = legs.length ? legs.reduce((a, l) => a + l.p, 0) / legs.length : 0;
+  const two = p * p, three = p * p * p;
+  return `<div class="playlist">${rows}</div>
+    <p class="note" style="margin:0">Pair any two in a <b>2-team, 6-point teaser at −120</b>: both legs hit about ${Math.round(two * 100)}% of the time vs ${Math.round(120 / 220 * 100)}% needed to break even.
+    ${legs.length >= 3 ? `All three as a <b>3-team teaser at +160</b>: about ${Math.round(three * 100)}% vs ${Math.round(1 / 2.6 * 100)}% needed.` : ""}
+    Only play it if your book's line is still +1.5 to +2.5 before the tease.</p>`;
+}
 // ---------- THIS WEEK
 function slab(g, side) {
   const t = g[side], sl = g.spread_line;
@@ -682,15 +718,18 @@ function renderWeek() {
     <div class="hero">
       <div class="weekno"><span class="k">${d.season} SEASON</span><span class="n">${wk}</span><span class="s">Week ${wk}, ${games.length} games left</span></div>
       <div class="plays">
-        <div class="plays-head"><h2>This week's plays</h2><span class="label">${nFade} fade ${nFade === 1 ? "play" : "plays"}, ${nUnits}u ($${nUnits * UNIT})</span></div>
-        ${allPlays.length || allTrends.length
+        <div class="plays-head"><h2>This week's plays</h2>
+          <div class="filters" role="group" aria-label="Play type" style="margin:0"><button data-hero="fades" aria-pressed="${S.hero !== "teasers"}">Fades (${nFade})</button><button data-hero="teasers" aria-pressed="${S.hero === "teasers"}">Wong teasers (${teaserLegs().length})</button></div></div>
+        ${S.hero === "teasers" ? teaserBox(allPlays) : `<span class="label">${nFade} fade ${nFade === 1 ? "play" : "plays"}, ${nUnits}u ($${nUnits * UNIT})</span>`}
+        ${S.hero === "teasers" ? "" : allPlays.length || allTrends.length
           ? `<div class="playlist">${allPlays.map(p => playRow(p, "fade")).join("")}${allTrends.map(p => playRow(p, "trend")).join("")}</div>`
           : `<p class="empty-plays">No side is at 80% of bets yet. Splits get checked 15 minutes before each kickoff${first ? `, starting with ${esc(first.away)} @ ${esc(first.home)} on ${esc(kickoff(first))}` : ""}, and any fade shows up here.</p>`}
-        <div class="legend"><span><i style="background:var(--bar-bets)"></i>% of bets (DraftKings)</span><span><i style="background:var(--bar-money)"></i>% of money</span><span><i style="background:var(--flag)"></i>80%+ of bets, fade it</span></div>
+        ${S.hero === "teasers" ? "" : `<div class="legend"><span><i style="background:var(--bar-bets)"></i>% of bets (DraftKings)</span><span><i style="background:var(--bar-money)"></i>% of money</span><span><i style="background:var(--flag)"></i>80%+ of bets, fade it</span></div>`}
       </div>
     </div>
     <div class="games">${cards}</div>`;
   $("#p-week").querySelectorAll("[data-open]").forEach(b => b.onclick = () => openGame(b.dataset.open));
+  $("#p-week").querySelectorAll("[data-hero]").forEach(b => b.onclick = () => { S.hero = b.dataset.hero; renderWeek() });
   $("#p-week").querySelectorAll("[data-card]").forEach(card => {
     card.onclick = e => { if (e.target.closest("summary, details, a, button, input, select")) return; openGame(card.dataset.card) };
     card.onkeydown = e => { if ((e.key === "Enter" || e.key === " ") && e.target === card) { e.preventDefault(); openGame(card.dataset.card) } };
