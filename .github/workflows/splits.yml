@@ -1,9 +1,9 @@
-# Public betting splits (DraftKings + Scores and Odds) every 30 minutes Thu-Tue, every 2 hours Wed.
+# Public betting splits (DraftKings + Scores and Odds) every 15 minutes Thu-Tue, every 2 hours Wed.
 # Each change is appended to data/splits_history/<game_id>.json; site/data/splits.json is the latest.
 name: Public splits
 on:
   schedule:
-    - cron: "10,40 * * * 0,1,2,4,5,6"
+    - cron: "*/15 * * * 0,1,2,4,5,6"
     - cron: "10 */2 * * 3"
   workflow_dispatch: {}
   push:
@@ -11,7 +11,7 @@ on:
     paths: ["collect_splits.py", "nfl_splits.py", ".github/workflows/splits.yml"]
 permissions:
   contents: write
-concurrency: { group: repo-write, cancel-in-progress: false }
+concurrency: { group: ${{ github.workflow }}, cancel-in-progress: false }
 jobs:
   pull:
     runs-on: ubuntu-latest

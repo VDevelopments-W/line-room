@@ -10,7 +10,7 @@ on:
     paths: ["*.py", ".github/workflows/daily.yml"]
 permissions:
   contents: write
-concurrency: { group: repo-write, cancel-in-progress: false }
+concurrency: { group: ${{ github.workflow }}, cancel-in-progress: false }
 jobs:
   build:
     runs-on: ubuntu-latest
