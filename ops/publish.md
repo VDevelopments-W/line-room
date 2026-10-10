@@ -1,7 +1,7 @@
 # Publishing to the site (shared by daily.md and pregame.md)
 
 ## Database (splits, line movement, Kalshi prices)
-1. ArtifactData `list` on the site url for collections `splits`, `splitshist`, `kalshi` (query.limit 200).
+1. ArtifactData `list` on the site url for collections `splits`, `splitshist`, `kalshi`, `ilani` (query.limit 200).
    Build a JSON file mapping "collection/doc_id" -> version for every doc returned.
 2. `python3 sync_site.py <that file>` prints one JSON list of writes per line (max 50 each).
 3. ArtifactData `batch` with each list as `writes`. If a batch is refused for a version

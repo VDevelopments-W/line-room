@@ -5,6 +5,7 @@ Prepare the Claude-hosted site's database writes from the repo's latest data.
   splits/<game_id>      latest public splits (DraftKings + Scores and Odds)
   splitshist/<game_id>  every snapshot this week, for line movement
   kalshi/<game_id>      Kalshi prop prices
+  ilani/<game_id>       ilani sportsbook odds (spreads, totals, player props)
 
 Usage: python3 sync_site.py [versions.json]
   versions.json (optional) maps "collection/doc_id" -> current version, from an ArtifactData list.
@@ -43,6 +44,10 @@ def main():
         if gid in ids:
             docs[("kalshi", gid)] = {"updated": k.get("generated"),
                                      "rows": [{x: r.get(x) for x in ("player", "stat", "line", "bid", "ask", "last", "volume")} for r in rows]}
+    il = json.loads((D / "ilani.json").read_text()) if (D / "ilani.json").exists() else {"games": {}}
+    for gid, g in il.get("games", {}).items():
+        if gid in ids:
+            docs[("ilani", gid)] = {"updated": il.get("generated"), **g}
     writes = []
     for (coll, gid), data in sorted(docs.items()):
         if coll == "splitshist" and not data["snaps"]:

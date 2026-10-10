@@ -1,4 +1,4 @@
-# Kalshi NFL player prop prices every 30 minutes Thu-Mon (every 6 hours Tue-Wed).
+# Kalshi NFL player prop prices (and ilani sportsbook odds, ilani.py) every 30 minutes Thu-Mon (every 6 hours Tue-Wed).
 # Saves site/data/kalshi.json, plus data/kalshi_close/<game_id>.json frozen at kickoff for grading.
 name: Kalshi prop prices
 on:
@@ -8,7 +8,7 @@ on:
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths: ["kalshi.py", ".github/workflows/kalshi.yml"]
+    paths: ["kalshi.py", "ilani.py", ".github/workflows/kalshi.yml"]
 permissions:
   contents: write
 concurrency:
@@ -27,4 +27,9 @@ jobs:
         run: |
           out=$(python kalshi.py --print 2>&1) || { echo "::error::kalshi.py failed: $(echo "$out" | tail -5 | tr '\n' ' ')"; exit 1; }
           echo "$out"; echo "::notice::$(echo "$out" | head -1)"
-      - run: bash commit.sh "Kalshi prices $(date -u +%FT%H:%MZ)" site/data/kalshi.json data/kalshi_close
+      - name: Pull ilani (Kambi) odds
+        continue-on-error: true
+        run: |
+          out=$(python ilani.py --print 2>&1) || { echo "::warning::ilani.py failed: $(echo "$out" | tail -3 | tr '\n' ' ')"; exit 1; }
+          echo "$out"; echo "::notice::$(echo "$out" | head -1)"
+      - run: bash commit.sh "Kalshi + ilani prices $(date -u +%FT%H:%MZ)" site/data/kalshi.json site/data/ilani.json data/kalshi_close
