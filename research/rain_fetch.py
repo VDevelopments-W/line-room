@@ -61,23 +61,28 @@ def main():
     g = g[g.ll.notna()].copy()
     ny = ZoneInfo("America/New_York")
     g["ko"] = [datetime.fromisoformat(f"{d}T{t or '13:00'}").replace(tzinfo=ny).astimezone(timezone.utc) for d, t in zip(g.gameday, g.gametime)]
-    rows = []
-    for (ll, season), grp in g.groupby(["ll", "season"]):
-        start = (grp.ko.min() - timedelta(days=1)).date().isoformat()
-        end = (grp.ko.max() + timedelta(days=1)).date().isoformat()
-        for attempt in range(4):
+    rows, fails = [], 0
+    # one small request per stadium per game day (whole-season requests get rate-limited)
+    for (ll, day), grp in g.groupby(["ll", g.ko.dt.date]):
+        h = None
+        for attempt in range(3):
             try:
-                r = requests.get(API, params={"latitude": ll[0], "longitude": ll[1], "start_date": start, "end_date": end,
+                r = requests.get(API, params={"latitude": ll[0], "longitude": ll[1], "start_date": day.isoformat(),
+                                              "end_date": (day + timedelta(days=1)).isoformat(),
                                               "hourly": "precipitation,rain,snowfall,wind_speed_10m,temperature_2m",
                                               "timezone": "UTC", "temperature_unit": "fahrenheit", "wind_speed_unit": "mph",
-                                              "precipitation_unit": "inch"}, timeout=60)
+                                              "precipitation_unit": "inch"}, timeout=30)
+                if r.status_code == 429:
+                    time.sleep(20)
+                    continue
                 r.raise_for_status()
                 h = r.json()["hourly"]
                 break
             except Exception as e:  # noqa: BLE001
-                print(f"retry {ll} {season}: {e}", file=sys.stderr)
-                time.sleep(10 * (attempt + 1))
-        else:
+                print(f"retry {ll} {day}: {e}", file=sys.stderr)
+                time.sleep(3)
+        if h is None:
+            fails += 1
             continue
         idx = {t: i for i, t in enumerate(h["time"])}
         for x in grp.itertuples():
@@ -86,11 +91,13 @@ def main():
             ii = [i for i in ii if i is not None]
             if not ii:
                 continue
-            s = lambda key: sum(h[key][i] or 0 for i in ii)  # noqa: E731
-            rows.append({"game_id": x.game_id, "precip_in": round(s("precipitation"), 3), "rain_in": round(s("rain"), 3),
-                         "snow_in": round(s("snowfall"), 3), "wet_hours": sum((h["precipitation"][i] or 0) >= 0.01 for i in ii),
-                         "wind_mph": round(s("wind_speed_10m") / len(ii), 1), "temp_f": round(s("temperature_2m") / len(ii), 1)})
-        time.sleep(0.3)
+            s_ = lambda key: sum(h[key][i] or 0 for i in ii)  # noqa: E731
+            rows.append({"game_id": x.game_id, "precip_in": round(s_("precipitation"), 3), "rain_in": round(s_("rain"), 3),
+                         "snow_in": round(s_("snowfall"), 3), "wet_hours": sum((h["precipitation"][i] or 0) >= 0.01 for i in ii),
+                         "wind_mph": round(s_("wind_speed_10m") / len(ii), 1), "temp_f": round(s_("temperature_2m") / len(ii), 1)})
+        if len(rows) % 200 == 0:
+            print(f"  {len(rows)} games", flush=True)
+    print(f"{fails} game days failed", file=sys.stderr)
     pd.DataFrame(rows).to_csv(OUT, index=False)
     print(f"{len(rows)} outdoor games with archive weather -> {OUT}")
 
