@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install requests
+      - run: pip install requests beautifulsoup4
       - name: Pull Kalshi prices
         run: |
           out=$(python kalshi.py --print 2>&1) || { echo "::error::kalshi.py failed: $(echo "$out" | tail -5 | tr '\n' ' ')"; exit 1; }

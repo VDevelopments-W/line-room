@@ -6,7 +6,10 @@ msg="$1"; shift
 git config user.name "line-room-bot"
 git config user.email "line-room-bot@users.noreply.github.com"
 tmp=$(mktemp -d)
-for p in "$@"; do [ -e "$p" ] && cp -r --parents "$p" "$tmp/"; done
+have=()
+for p in "$@"; do [ -e "$p" ] && { cp -r --parents "$p" "$tmp/"; have+=("$p"); }; done
+[ ${#have[@]} -eq 0 ] && { echo "::notice::Nothing to save"; exit 0; }
+set -- "${have[@]}"
 for i in 1 2 3 4; do
   git fetch -q origin main && git reset -q --hard origin/main
   cp -r "$tmp/." .
