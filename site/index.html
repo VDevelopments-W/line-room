@@ -361,7 +361,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
 
 <script>
 const UNIT = 20;
-const S = { par: { mode: "sgp", game: null, picks: [], style: "value" }, mySlips: [], groupSlips: [], active: null, legPool: {}, cardLegs: [], box: null, hist: {}, signals: null, pm: null, kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
+const S = { skip: new Set(), par: { mode: "sgp", game: null, picks: [], style: "value" }, mySlips: [], groupSlips: [], active: null, legPool: {}, cardLegs: [], box: null, hist: {}, signals: null, pm: null, kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const pct = x => x == null ? "–" : (x * 100).toFixed(1) + "%";
@@ -1355,6 +1355,7 @@ function propLegs(gid) {
     if (x.ask == null || x.bid == null || x.ask - x.bid > 0.06 || (x.volume ?? 0) < 50 || x.ask >= 0.95) continue;
     const pm = modelProb(x.player, x.stat, x.line, gid); if (pm == null) continue;
     if (pm - x.ask > 0.15) continue;                         // likely news the model can't see
+    if (S.skip.has(x.player)) continue;                      // skipped by hand on the Parlays tab
     const p = (pm + (x.bid + x.ask) / 2) / 2, edge = p - x.ask; // blend the model with the market's own price
     const team = S.pm.players[x.player]?.team, st = injStatus(team, x.player);
     if (st) continue;
@@ -1367,7 +1368,7 @@ function gameLegs(gid) {
   const g = S.data.week_games.find(x => x.game_id === gid); if (!g) return [];
   const out = [];
   for (const market of ["spread", "total"]) {
-    const f = fadeSignal(g, market); if (!f) continue;
+    const f = fadeSignal(g, market); if (!f || S.skip.has(`${gid}|${market}`)) continue;
     const rows = (S.splits[gid]?.rows || []).filter(r => r.market === market);
     const pubSide = { home: "away", away: "home", over: "under", under: "over" }[f.side];
     const dk = rows.find(r => r.source === "dk" && r.side === pubSide)?.bets ?? 0, sao = rows.find(r => r.source === "sao" && r.side === pubSide)?.bets ?? 0;
@@ -1421,7 +1422,7 @@ function pickCard(legs, title, why, stake) {
   if (legs.length < 2) return "";
   const pc = legs.reduce((a, l) => a * l.p, 1), price = legs.reduce((a, l) => a * l.price, 1);
   const fair = toAmerican(pc), pays = toAmerican(price);
-  const rows = legs.map((l, i) => `<div class="leg"><span class="legn">${i + 1}</span><div style="min-width:0"><div class="pk" style="font-size:19px">${esc(l.label)} ${addBtn(l)}</div><div class="bs">${esc(legWhy(l))}</div></div>
+  const rows = legs.map((l, i) => `<div class="leg"><span class="legn">${i + 1}</span><div style="min-width:0"><div class="pk" style="font-size:19px">${esc(l.label)} ${addBtn(l)}${S.db && S.isOwnerReal ? ` <button class="btn-mini ghost" data-skip="${esc(l.kind === "prop" ? l.player : `${l.gid}|${l.kind}`)}" title="Leave this out of the suggested parlays">Skip</button>` : ""}</div><div class="bs">${esc(legWhy(l))}</div></div>
     <div class="legnums"><b>${Math.round(l.p * 100)}%</b><span class="why">${l.kind === "prop" ? Math.round(l.price * 100) + "¢ Kalshi" : "−110"}</span>
       <span class="${l.edge >= 0 ? "pos" : "neg"}" title="Our chance minus the price's chance">${l.edge >= 0 ? "+" : "−"}${Math.abs(Math.round(l.edge * 100))} pts value</span></div></div>`).join("");
   const win = stake * (fair > 0 ? fair / 100 : 100 / Math.abs(fair));
@@ -1625,6 +1626,7 @@ function renderParlays() {
     "The game with the most value in its likely props. Same-game legs tend to hit or miss together, so DraftKings will pay less than the fair odds; take it only if the price is close.", 10));
   el.innerHTML = `<h2>This week's parlays</h2>${slipsSection()}
     <h3 style="margin-top:22px">Suggested parlays</h3>
+    ${S.skip.size ? `<p class="note">Left out by hand: ${[...S.skip].map(k => `<b>${esc(k.includes("|") ? k.replace("|", " ") : k)}</b>${S.isOwnerReal ? ` <button class="btn-mini ghost" data-unskip="${esc(k)}">bring back</button>` : ""}`).join(", ")}</p>` : ""}
     <div class="filters" role="group" aria-label="Build parlays for"><button data-style="value" aria-pressed="${!likely}">Value</button><button data-style="likely" aria-pressed="${likely}">Most likely</button>
       <span class="why" style="font-size:13px;align-self:center;margin-left:6px">${likely ? "Legs most likely to hit (65-85%), even if the price is about fair." : "Legs where our chance beats the price."}</span></div>
     <p class="lede">Built automatically from the board and refreshed as prices move. Prop chances are our player model averaged with Kalshi's price; game legs are fade signals (54.5% with one source at 80%+, 57% with both, a point more when the model agrees or the line moves against the public). Injured players and thinly traded props are left out.</p>
@@ -1632,6 +1634,9 @@ function renderParlays() {
     <h3>${likely ? "Most likely props" : "Every likely prop with value"}</h3>${legTable(props.slice(0, 30))}
     <p class="note">Chances multiply as if legs were independent. Check the final injury news and the price in your app before betting.</p>`;
   el.querySelectorAll("[data-style]").forEach(b => b.onclick = () => { S.par.style = b.dataset.style; renderParlays() });
+  const saveSkip = next => S.db.doc("settings/parlays").set({ skip: [...next] }).catch(() => {});
+  el.querySelectorAll("[data-skip]").forEach(b => b.onclick = () => { b.disabled = true; saveSkip(new Set([...S.skip, b.dataset.skip])) });
+  el.querySelectorAll("[data-unskip]").forEach(b => b.onclick = () => { b.disabled = true; const n = new Set(S.skip); n.delete(b.dataset.unskip); saveSkip(n) });
   wireSlips(el);
 }
 
@@ -1684,6 +1689,9 @@ function renderAll() {
   }, () => {});
   db.collection("propsplits").onSnapshot(snap => {
     S.propsplits = {}; snap.docs.forEach(d => S.propsplits[d.id] = d.data()); renderProps(); if (S.gameView) renderGame();
+  }, () => {});
+  db.collection("settings").onSnapshot(snap => {
+    const d = snap.docs.find(x => x.id === "parlays"); S.skip = new Set(d ? d.data().skip || [] : []); renderParlays();
   }, () => {});
   db.collection("slips").onSnapshot(snap => {
     S.groupSlips = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(x => Array.isArray(x.legs)); renderParlays(); renderProps();
