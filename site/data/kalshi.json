@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-10T03:33:37Z",
+"generated": "2026-10-10T05:03:06Z",
 "series": {
 "KXNFLRSHYDS": "rushing_yards",
 "KXNFLRECYDS": "receiving_yards",
@@ -55,7 +55,7 @@
 "stat": "receiving_yards",
 "line": 80,
 "bid": 0.5,
-"ask": 0.51,
+"ask": 0.52,
 "last": 0.51,
 "volume": 5098.57,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-DETASTBROWN14-80"
@@ -84,7 +84,7 @@
 "player": "Amon-Ra St. Brown",
 "stat": "receiving_yards",
 "line": 110,
-"bid": 0.24,
+"bid": 0.23,
 "ask": 0.25,
 "last": 0.26,
 "volume": 85.72,
@@ -164,7 +164,7 @@
 "player": "Amon-Ra St. Brown",
 "stat": "receptions",
 "line": 6,
-"bid": 0.7,
+"bid": 0.71,
 "ask": 0.74,
 "last": 0.0,
 "volume": 0.0,
@@ -195,7 +195,7 @@
 "stat": "receptions",
 "line": 9,
 "bid": 0.29,
-"ask": 0.32,
+"ask": 0.31,
 "last": 0.33,
 "volume": 40.51,
 "ticker": "KXNFLREC-26OCT11DETARI-DETASTBROWN14-9"
@@ -214,7 +214,7 @@
 "player": "Amon-Ra St. Brown",
 "stat": "receptions",
 "line": 11,
-"bid": 0.05,
+"bid": 0.03,
 "ask": 0.16,
 "last": 0.0,
 "volume": 0.0,
@@ -255,7 +255,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.66,
-"ask": 0.69,
+"ask": 0.7,
 "last": 0.7,
 "volume": 2.92,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-DETITESLAA18-15"
@@ -294,8 +294,8 @@
 "player": "Isaac TeSlaa",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.12,
-"ask": 0.14,
+"bid": 0.13,
+"ask": 0.15,
 "last": 0.15,
 "volume": 899.77,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-DETITESLAA18-60"
@@ -345,7 +345,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.17,
-"ask": 0.22,
+"ask": 0.23,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11DETARI-DETITESLAA18-4"
@@ -385,9 +385,9 @@
 "stat": "passing_tds",
 "line": 1,
 "bid": 0.84,
-"ask": 0.87,
-"last": 0.87,
-"volume": 65.67,
+"ask": 0.88,
+"last": 0.88,
+"volume": 69.67,
 "ticker": "KXNFLPASSTDS-26OCT11DETARI-ARIJBRISSETT7-1"
 },
 {
@@ -397,7 +397,7 @@
 "bid": 0.54,
 "ask": 0.55,
 "last": 0.55,
-"volume": 2213.63,
+"volume": 2224.22,
 "ticker": "KXNFLPASSTDS-26OCT11DETARI-ARIJBRISSETT7-2"
 },
 {
@@ -435,9 +435,9 @@
 "stat": "passing_yards",
 "line": 200,
 "bid": 0.82,
-"ask": 0.84,
+"ask": 0.86,
 "last": 0.82,
-"volume": 57.56,
+"volume": 578.0,
 "ticker": "KXNFLPASSYDS-26OCT11DETARI-ARIJBRISSETT7-200"
 },
 {
@@ -466,8 +466,8 @@
 "line": 275,
 "bid": 0.44,
 "ask": 0.47,
-"last": 0.44,
-"volume": 2052.12,
+"last": 0.47,
+"volume": 2186.14,
 "ticker": "KXNFLPASSYDS-26OCT11DETARI-ARIJBRISSETT7-275"
 },
 {
@@ -484,7 +484,7 @@
 "player": "Jacoby Brissett",
 "stat": "passing_yards",
 "line": 325,
-"bid": 0.2,
+"bid": 0.19,
 "ask": 0.22,
 "last": 0.22,
 "volume": 234.06,
@@ -595,7 +595,7 @@
 "stat": "carries",
 "line": 23,
 "bid": 0.28,
-"ask": 0.33,
+"ask": 0.32,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11DETARI-DETJGIBBS0-23"
@@ -607,7 +607,7 @@
 "bid": 0.85,
 "ask": 0.88,
 "last": 0.88,
-"volume": 15.6,
+"volume": 35.6,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-DETJGIBBS0-15"
 },
 {
@@ -695,7 +695,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.67,
-"ask": 0.72,
+"ask": 0.71,
 "last": 0.71,
 "volume": 23.07,
 "ticker": "KXNFLREC-26OCT11DETARI-DETJGIBBS0-4"
@@ -715,7 +715,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.32,
-"ask": 0.37,
+"ask": 0.38,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11DETARI-DETJGIBBS0-6"
@@ -725,7 +725,7 @@
 "stat": "receptions",
 "line": 7,
 "bid": 0.2,
-"ask": 0.23,
+"ask": 0.25,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11DETARI-DETJGIBBS0-7"
@@ -776,8 +776,8 @@
 "line": 50,
 "bid": 0.85,
 "ask": 0.88,
-"last": 0.87,
-"volume": 337.12,
+"last": 0.88,
+"volume": 358.24,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-DETJGIBBS0-50"
 },
 {
@@ -795,7 +795,7 @@
 "stat": "rushing_yards",
 "line": 70,
 "bid": 0.68,
-"ask": 0.71,
+"ask": 0.72,
 "last": 0.71,
 "volume": 14.21,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-DETJGIBBS0-70"
@@ -805,7 +805,7 @@
 "stat": "rushing_yards",
 "line": 80,
 "bid": 0.58,
-"ask": 0.61,
+"ask": 0.62,
 "last": 0.63,
 "volume": 71.68,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-DETJGIBBS0-80"
@@ -866,8 +866,8 @@
 "line": 140,
 "bid": 0.13,
 "ask": 0.14,
-"last": 0.18,
-"volume": 180.89,
+"last": 0.14,
+"volume": 366.89,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-DETJGIBBS0-140"
 },
 {
@@ -885,7 +885,7 @@
 "stat": "rushing_yards",
 "line": 160,
 "bid": 0.03,
-"ask": 0.08,
+"ask": 0.09,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-DETJGIBBS0-160"
@@ -914,8 +914,8 @@
 "player": "Jameson Williams",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.8,
-"ask": 0.82,
+"bid": 0.79,
+"ask": 0.83,
 "last": 0.82,
 "volume": 65.02,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-DETJWILLIAMS1-25"
@@ -925,7 +925,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.63,
-"ask": 0.67,
+"ask": 0.66,
 "last": 0.66,
 "volume": 168.42,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-DETJWILLIAMS1-40"
@@ -985,7 +985,7 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.12,
-"ask": 0.14,
+"ask": 0.15,
 "last": 0.14,
 "volume": 235.39,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-DETJWILLIAMS1-100"
@@ -995,7 +995,7 @@
 "stat": "receiving_yards",
 "line": 110,
 "bid": 0.06,
-"ask": 0.11,
+"ask": 0.1,
 "last": 0.11,
 "volume": 42.72,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-DETJWILLIAMS1-110"
@@ -1024,7 +1024,7 @@
 "player": "Jameson Williams",
 "stat": "receptions",
 "line": 2,
-"bid": 0.86,
+"bid": 0.87,
 "ask": 0.9,
 "last": 0.92,
 "volume": 20.61,
@@ -1054,7 +1054,7 @@
 "player": "Jameson Williams",
 "stat": "receptions",
 "line": 5,
-"bid": 0.31,
+"bid": 0.32,
 "ask": 0.35,
 "last": 0.36,
 "volume": 32.77,
@@ -1224,7 +1224,7 @@
 "player": "Jared Goff",
 "stat": "passing_yards",
 "line": 375,
-"bid": 0.07,
+"bid": 0.08,
 "ask": 0.11,
 "last": 0.13,
 "volume": 25.22,
@@ -1247,7 +1247,7 @@
 "bid": 0.18,
 "ask": 0.19,
 "last": 0.18,
-"volume": 339.7,
+"volume": 347.2,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-DETJGOFF16-10"
 },
 {
@@ -1295,7 +1295,7 @@
 "stat": "carries",
 "line": 16,
 "bid": 0.04,
-"ask": 0.46,
+"ask": 0.42,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11DETARI-ARIJLOVE4-16"
@@ -1314,7 +1314,7 @@
 "player": "Jeremiyah Love",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.17,
+"bid": 0.09,
 "ask": 0.25,
 "last": 0.0,
 "volume": 0.0,
@@ -1354,8 +1354,8 @@
 "player": "Jeremiyah Love",
 "stat": "receptions",
 "line": 2,
-"bid": 0.59,
-"ask": 0.69,
+"bid": 0.64,
+"ask": 0.7,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11DETARI-ARIJLOVE4-2"
@@ -1375,7 +1375,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.22,
-"ask": 0.26,
+"ask": 0.27,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11DETARI-ARIJLOVE4-4"
@@ -1424,8 +1424,8 @@
 "player": "Jeremiyah Love",
 "stat": "rushing_yards",
 "line": 25,
-"bid": 0.66,
-"ask": 0.79,
+"bid": 0.7,
+"ask": 0.78,
 "last": 0.79,
 "volume": 22.21,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-ARIJLOVE4-25"
@@ -1456,18 +1456,18 @@
 "line": 45,
 "bid": 0.47,
 "ask": 0.5,
-"last": 0.51,
-"volume": 87.19,
+"last": 0.5,
+"volume": 208.33,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-ARIJLOVE4-45"
 },
 {
 "player": "Jeremiyah Love",
 "stat": "rushing_yards",
 "line": 50,
-"bid": 0.42,
+"bid": 0.41,
 "ask": 0.45,
-"last": 0.46,
-"volume": 144.45,
+"last": 0.41,
+"volume": 189.45,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-ARIJLOVE4-50"
 },
 {
@@ -1476,8 +1476,8 @@
 "line": 60,
 "bid": 0.3,
 "ask": 0.34,
-"last": 0.35,
-"volume": 136.51,
+"last": 0.34,
+"volume": 156.51,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-ARIJLOVE4-60"
 },
 {
@@ -1485,7 +1485,7 @@
 "stat": "rushing_yards",
 "line": 70,
 "bid": 0.17,
-"ask": 0.25,
+"ask": 0.24,
 "last": 0.26,
 "volume": 3.65,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-ARIJLOVE4-70"
@@ -1504,8 +1504,8 @@
 "player": "Jeremiyah Love",
 "stat": "rushing_yards",
 "line": 90,
-"bid": 0.1,
-"ask": 0.12,
+"bid": 0.09,
+"ask": 0.13,
 "last": 0.18,
 "volume": 4258.65,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-ARIJLOVE4-90"
@@ -1515,7 +1515,7 @@
 "stat": "rushing_yards",
 "line": 100,
 "bid": 0.04,
-"ask": 0.09,
+"ask": 0.08,
 "last": 0.1,
 "volume": 150.0,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-ARIJLOVE4-100"
@@ -1556,8 +1556,8 @@
 "line": 25,
 "bid": 0.48,
 "ask": 0.49,
-"last": 0.5,
-"volume": 489.65,
+"last": 0.49,
+"volume": 502.5,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-ARIKBOURNE17-25"
 },
 {
@@ -1644,7 +1644,7 @@
 "player": "Kendrick Bourne",
 "stat": "receptions",
 "line": 5,
-"bid": 0.08,
+"bid": 0.1,
 "ask": 0.14,
 "last": 0.13,
 "volume": 181.26,
@@ -1685,7 +1685,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.62,
-"ask": 0.65,
+"ask": 0.66,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-ARIMHARRISON18-25"
@@ -1696,8 +1696,8 @@
 "line": 35,
 "bid": 0.48,
 "ask": 0.5,
-"last": 0.51,
-"volume": 755.71,
+"last": 0.5,
+"volume": 781.67,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-ARIMHARRISON18-35"
 },
 {
@@ -1724,7 +1724,7 @@
 "player": "Marvin Harrison Jr.",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.21,
+"bid": 0.2,
 "ask": 0.23,
 "last": 0.24,
 "volume": 493.94,
@@ -1805,7 +1805,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.29,
-"ask": 0.32,
+"ask": 0.34,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11DETARI-ARIMHARRISON18-4"
@@ -1875,9 +1875,9 @@
 "stat": "receiving_yards",
 "line": 60,
 "bid": 0.64,
-"ask": 0.66,
-"last": 0.64,
-"volume": 1481.08,
+"ask": 0.67,
+"last": 0.67,
+"volume": 1488.41,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-ARIMWILSON14-60"
 },
 {
@@ -1887,7 +1887,7 @@
 "bid": 0.57,
 "ask": 0.58,
 "last": 0.58,
-"volume": 10519.7,
+"volume": 10526.38,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-ARIMWILSON14-70"
 },
 {
@@ -1895,9 +1895,9 @@
 "stat": "receiving_yards",
 "line": 80,
 "bid": 0.45,
-"ask": 0.46,
+"ask": 0.47,
 "last": 0.47,
-"volume": 5532.77,
+"volume": 5630.27,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-ARIMWILSON14-80"
 },
 {
@@ -1916,8 +1916,8 @@
 "line": 100,
 "bid": 0.28,
 "ask": 0.3,
-"last": 0.29,
-"volume": 8022.02,
+"last": 0.3,
+"volume": 8081.9,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-ARIMWILSON14-100"
 },
 {
@@ -2016,8 +2016,8 @@
 "line": 6,
 "bid": 0.57,
 "ask": 0.58,
-"last": 0.59,
-"volume": 1467.77,
+"last": 0.58,
+"volume": 1492.76,
 "ticker": "KXNFLREC-26OCT11DETARI-ARIMWILSON14-6"
 },
 {
@@ -2057,7 +2057,7 @@
 "bid": 0.13,
 "ask": 0.14,
 "last": 0.14,
-"volume": 878.53,
+"volume": 885.26,
 "ticker": "KXNFLREC-26OCT11DETARI-ARIMWILSON14-10"
 },
 {
@@ -2284,7 +2284,7 @@
 "player": "Sione Vaki",
 "stat": "rushing_yards",
 "line": 10,
-"bid": 0.43,
+"bid": 0.41,
 "ask": 0.45,
 "last": 0.46,
 "volume": 1.87,
@@ -2295,7 +2295,7 @@
 "stat": "rushing_yards",
 "line": 15,
 "bid": 0.29,
-"ask": 0.33,
+"ask": 0.37,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-DETSVAKI33-15"
@@ -2304,7 +2304,7 @@
 "player": "Sione Vaki",
 "stat": "rushing_yards",
 "line": 20,
-"bid": 0.22,
+"bid": 0.03,
 "ask": 0.23,
 "last": 0.0,
 "volume": 0.0,
@@ -2315,7 +2315,7 @@
 "stat": "rushing_yards",
 "line": 25,
 "bid": 0.15,
-"ask": 0.18,
+"ask": 0.22,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-DETSVAKI33-25"
@@ -2324,8 +2324,8 @@
 "player": "Sione Vaki",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.11,
-"ask": 0.13,
+"bid": 0.02,
+"ask": 0.12,
 "last": 0.13,
 "volume": 35.0,
 "ticker": "KXNFLRSHYDS-26OCT11DETARI-DETSVAKI33-30"
@@ -2347,7 +2347,7 @@
 "bid": 0.85,
 "ask": 0.89,
 "last": 0.89,
-"volume": 1.11,
+"volume": 7.05,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-ARITMCBRIDE85-40"
 },
 {
@@ -2395,7 +2395,7 @@
 "stat": "receiving_yards",
 "line": 90,
 "bid": 0.39,
-"ask": 0.42,
+"ask": 0.41,
 "last": 0.42,
 "volume": 56.94,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-ARITMCBRIDE85-90"
@@ -2435,7 +2435,7 @@
 "stat": "receiving_yards",
 "line": 130,
 "bid": 0.11,
-"ask": 0.16,
+"ask": 0.15,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-ARITMCBRIDE85-130"
@@ -2484,10 +2484,10 @@
 "player": "Trey McBride",
 "stat": "receptions",
 "line": 5,
-"bid": 0.85,
+"bid": 0.86,
 "ask": 0.9,
 "last": 0.89,
-"volume": 76.02,
+"volume": 81.59,
 "ticker": "KXNFLREC-26OCT11DETARI-ARITMCBRIDE85-5"
 },
 {
@@ -2495,9 +2495,9 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.76,
-"ask": 0.8,
-"last": 0.8,
-"volume": 25.0,
+"ask": 0.81,
+"last": 0.81,
+"volume": 31.09,
 "ticker": "KXNFLREC-26OCT11DETARI-ARITMCBRIDE85-6"
 },
 {
@@ -2517,7 +2517,7 @@
 "bid": 0.52,
 "ask": 0.53,
 "last": 0.53,
-"volume": 1336.52,
+"volume": 1564.85,
 "ticker": "KXNFLREC-26OCT11DETARI-ARITMCBRIDE85-8"
 },
 {
@@ -2535,7 +2535,7 @@
 "stat": "receptions",
 "line": 10,
 "bid": 0.26,
-"ask": 0.3,
+"ask": 0.31,
 "last": 0.31,
 "volume": 76.92,
 "ticker": "KXNFLREC-26OCT11DETARI-ARITMCBRIDE85-10"
@@ -2545,7 +2545,7 @@
 "stat": "receptions",
 "line": 11,
 "bid": 0.16,
-"ask": 0.2,
+"ask": 0.21,
 "last": 0.21,
 "volume": 23.98,
 "ticker": "KXNFLREC-26OCT11DETARI-ARITMCBRIDE85-11"
@@ -2554,8 +2554,8 @@
 "player": "Trey McBride",
 "stat": "receptions",
 "line": 12,
-"bid": 0.07,
-"ask": 0.14,
+"bid": 0.06,
+"ask": 0.13,
 "last": 0.14,
 "volume": 75.86,
 "ticker": "KXNFLREC-26OCT11DETARI-ARITMCBRIDE85-12"
@@ -2564,7 +2564,7 @@
 "player": "Trey McBride",
 "stat": "receptions",
 "line": 13,
-"bid": 0.04,
+"bid": 0.03,
 "ask": 0.09,
 "last": 0.11,
 "volume": 10.69,
@@ -2647,7 +2647,7 @@
 "bid": 0.16,
 "ask": 0.17,
 "last": 0.17,
-"volume": 551.34,
+"volume": 890.45,
 "ticker": "KXNFLRECYDS-26OCT11DETARI-ARITALLGEIER22-25"
 },
 {
@@ -2714,7 +2714,7 @@
 "player": "Tyler Allgeier",
 "stat": "receptions",
 "line": 5,
-"bid": 0.06,
+"bid": 0.04,
 "ask": 0.09,
 "last": 0.06,
 "volume": 6.0,
@@ -2888,8 +2888,8 @@
 "line": 16,
 "bid": 0.47,
 "ask": 0.49,
-"last": 0.51,
-"volume": 48.11,
+"last": 0.49,
+"volume": 77.66,
 "ticker": "KXNFLRSHATT-26OCT11NYGWAS-NYGCSKATTEBO44-16"
 },
 {
@@ -2906,8 +2906,8 @@
 "player": "Cam Skattebo",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.44,
-"ask": 0.47,
+"bid": 0.43,
+"ask": 0.46,
 "last": 0.46,
 "volume": 25.18,
 "ticker": "KXNFLRECYDS-26OCT11NYGWAS-NYGCSKATTEBO44-15"
@@ -2976,7 +2976,7 @@
 "player": "Cam Skattebo",
 "stat": "receptions",
 "line": 4,
-"bid": 0.09,
+"bid": 0.19,
 "ask": 0.21,
 "last": 0.0,
 "volume": 0.0,
@@ -3038,8 +3038,8 @@
 "line": 50,
 "bid": 0.57,
 "ask": 0.59,
-"last": 0.57,
-"volume": 191.88,
+"last": 0.59,
+"volume": 208.35,
 "ticker": "KXNFLRSHYDS-26OCT11NYGWAS-NYGCSKATTEBO44-50"
 },
 {
@@ -3077,7 +3077,7 @@
 "stat": "rushing_yards",
 "line": 90,
 "bid": 0.15,
-"ask": 0.19,
+"ask": 0.18,
 "last": 0.15,
 "volume": 3.88,
 "ticker": "KXNFLRSHYDS-26OCT11NYGWAS-NYGCSKATTEBO44-90"
@@ -3216,7 +3216,7 @@
 "player": "Darnell Mooney",
 "stat": "receptions",
 "line": 4,
-"bid": 0.08,
+"bid": 0.07,
 "ask": 0.11,
 "last": 0.08,
 "volume": 13.0,
@@ -3259,7 +3259,7 @@
 "bid": 0.52,
 "ask": 0.54,
 "last": 0.54,
-"volume": 1342.82,
+"volume": 1440.52,
 "ticker": "KXNFLRECYDS-26OCT11NYGWAS-NYGILIKELY9-40"
 },
 {
@@ -3317,7 +3317,7 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.04,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11NYGWAS-NYGILIKELY9-100"
@@ -3336,7 +3336,7 @@
 "player": "Isaiah Likely",
 "stat": "receptions",
 "line": 2,
-"bid": 0.8,
+"bid": 0.91,
 "ask": 0.94,
 "last": 0.0,
 "volume": 0.0,
@@ -3356,7 +3356,7 @@
 "player": "Isaiah Likely",
 "stat": "receptions",
 "line": 4,
-"bid": 0.58,
+"bid": 0.63,
 "ask": 0.68,
 "last": 0.0,
 "volume": 0.0,
@@ -3537,7 +3537,7 @@
 "stat": "rushing_yards",
 "line": 90,
 "bid": 0.13,
-"ask": 0.16,
+"ask": 0.15,
 "last": 0.19,
 "volume": 49.8,
 "ticker": "KXNFLRSHYDS-26OCT11NYGWAS-WASJCROSKEYMERRITT22-90"
@@ -3557,7 +3557,7 @@
 "stat": "rushing_yards",
 "line": 110,
 "bid": 0.05,
-"ask": 0.08,
+"ask": 0.09,
 "last": 0.1,
 "volume": 94.07,
 "ticker": "KXNFLRSHYDS-26OCT11NYGWAS-WASJCROSKEYMERRITT22-110"
@@ -3636,10 +3636,10 @@
 "player": "Jameis Winston",
 "stat": "passing_yards",
 "line": 125,
-"bid": 0.84,
-"ask": 0.88,
-"last": 0.87,
-"volume": 58.0,
+"bid": 0.85,
+"ask": 0.89,
+"last": 0.88,
+"volume": 102.0,
 "ticker": "KXNFLPASSYDS-26OCT11NYGWAS-NYGJWINSTON19-125"
 },
 {
@@ -3669,7 +3669,7 @@
 "bid": 0.48,
 "ask": 0.49,
 "last": 0.49,
-"volume": 590.59,
+"volume": 604.38,
 "ticker": "KXNFLPASSYDS-26OCT11NYGWAS-NYGJWINSTON19-200"
 },
 {
@@ -3687,7 +3687,7 @@
 "stat": "passing_yards",
 "line": 250,
 "bid": 0.21,
-"ask": 0.24,
+"ask": 0.23,
 "last": 0.24,
 "volume": 124.36,
 "ticker": "KXNFLPASSYDS-26OCT11NYGWAS-NYGJWINSTON19-250"
@@ -3767,7 +3767,7 @@
 "stat": "carries",
 "line": 4,
 "bid": 0.84,
-"ask": 0.87,
+"ask": 0.86,
 "last": 0.84,
 "volume": 825.01,
 "ticker": "KXNFLRSHATT-26OCT11NYGWAS-WASJDANIELS5-4"
@@ -3808,8 +3808,8 @@
 "line": 2,
 "bid": 0.41,
 "ask": 0.43,
-"last": 0.41,
-"volume": 267.22,
+"last": 0.43,
+"volume": 269.45,
 "ticker": "KXNFLPASSTDS-26OCT11NYGWAS-WASJDANIELS5-2"
 },
 {
@@ -3869,7 +3869,7 @@
 "bid": 0.47,
 "ask": 0.49,
 "last": 0.49,
-"volume": 302.53,
+"volume": 304.5,
 "ticker": "KXNFLPASSYDS-26OCT11NYGWAS-WASJDANIELS5-200"
 },
 {
@@ -3926,8 +3926,8 @@
 "player": "Jayden Daniels",
 "stat": "rushing_yards",
 "line": 15,
-"bid": 0.72,
-"ask": 0.79,
+"bid": 0.75,
+"ask": 0.8,
 "last": 0.77,
 "volume": 5.0,
 "ticker": "KXNFLRSHYDS-26OCT11NYGWAS-WASJDANIELS5-15"
@@ -3937,7 +3937,7 @@
 "stat": "rushing_yards",
 "line": 20,
 "bid": 0.65,
-"ask": 0.7,
+"ask": 0.71,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11NYGWAS-WASJDANIELS5-20"
@@ -3946,7 +3946,7 @@
 "player": "Jayden Daniels",
 "stat": "rushing_yards",
 "line": 25,
-"bid": 0.49,
+"bid": 0.51,
 "ask": 0.62,
 "last": 0.0,
 "volume": 0.0,
@@ -3959,7 +3959,7 @@
 "bid": 0.48,
 "ask": 0.49,
 "last": 0.49,
-"volume": 1972.87,
+"volume": 1992.57,
 "ticker": "KXNFLRSHYDS-26OCT11NYGWAS-WASJDANIELS5-30"
 },
 {
@@ -3967,9 +3967,9 @@
 "stat": "rushing_yards",
 "line": 40,
 "bid": 0.29,
-"ask": 0.31,
-"last": 0.34,
-"volume": 1280.08,
+"ask": 0.32,
+"last": 0.32,
+"volume": 1286.58,
 "ticker": "KXNFLRSHYDS-26OCT11NYGWAS-WASJDANIELS5-40"
 },
 {
@@ -3987,7 +3987,7 @@
 "stat": "rushing_yards",
 "line": 60,
 "bid": 0.08,
-"ask": 0.14,
+"ask": 0.13,
 "last": 0.13,
 "volume": 1260.0,
 "ticker": "KXNFLRSHYDS-26OCT11NYGWAS-WASJDANIELS5-60"
@@ -3996,7 +3996,7 @@
 "player": "Jayden Daniels",
 "stat": "rushing_yards",
 "line": 70,
-"bid": 0.05,
+"bid": 0.04,
 "ask": 0.07,
 "last": 0.09,
 "volume": 1960.0,
@@ -4036,7 +4036,7 @@
 "player": "Malachi Fields",
 "stat": "receiving_yards",
 "line": 40,
-"bid": 0.28,
+"bid": 0.29,
 "ask": 0.32,
 "last": 0.0,
 "volume": 0.0,
@@ -4107,7 +4107,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.37,
-"ask": 0.41,
+"ask": 0.4,
 "last": 0.39,
 "volume": 48.77,
 "ticker": "KXNFLREC-26OCT11NYGWAS-NYGMFIELDS88-3"
@@ -4137,7 +4137,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.03,
-"ask": 0.07,
+"ask": 0.06,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11NYGWAS-NYGMFIELDS88-6"
@@ -4156,8 +4156,8 @@
 "player": "Malik Nabers",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.78,
-"ask": 0.85,
+"bid": 0.8,
+"ask": 0.84,
 "last": 0.87,
 "volume": 16.11,
 "ticker": "KXNFLRECYDS-26OCT11NYGWAS-NYGMNABERS1-25"
@@ -4176,10 +4176,10 @@
 "player": "Malik Nabers",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.53,
+"bid": 0.54,
 "ask": 0.6,
 "last": 0.6,
-"volume": 15.24,
+"volume": 137.05,
 "ticker": "KXNFLRECYDS-26OCT11NYGWAS-NYGMNABERS1-50"
 },
 {
@@ -4189,7 +4189,7 @@
 "bid": 0.46,
 "ask": 0.47,
 "last": 0.47,
-"volume": 903.4,
+"volume": 944.43,
 "ticker": "KXNFLRECYDS-26OCT11NYGWAS-NYGMNABERS1-60"
 },
 {
@@ -4226,8 +4226,8 @@
 "player": "Malik Nabers",
 "stat": "receiving_yards",
 "line": 100,
-"bid": 0.12,
-"ask": 0.16,
+"bid": 0.13,
+"ask": 0.15,
 "last": 0.16,
 "volume": 124.54,
 "ticker": "KXNFLRECYDS-26OCT11NYGWAS-NYGMNABERS1-100"
@@ -4236,7 +4236,7 @@
 "player": "Malik Nabers",
 "stat": "receiving_yards",
 "line": 110,
-"bid": 0.04,
+"bid": 0.09,
 "ask": 0.12,
 "last": 0.0,
 "volume": 0.0,
@@ -4276,7 +4276,7 @@
 "player": "Malik Nabers",
 "stat": "receptions",
 "line": 3,
-"bid": 0.77,
+"bid": 0.78,
 "ask": 0.89,
 "last": 0.74,
 "volume": 3.73,
@@ -4297,7 +4297,7 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.53,
-"ask": 0.58,
+"ask": 0.59,
 "last": 0.58,
 "volume": 15.0,
 "ticker": "KXNFLREC-26OCT11NYGWAS-NYGMNABERS1-5"
@@ -4317,7 +4317,7 @@
 "stat": "receptions",
 "line": 7,
 "bid": 0.25,
-"ask": 0.29,
+"ask": 0.3,
 "last": 0.3,
 "volume": 312.9,
 "ticker": "KXNFLREC-26OCT11NYGWAS-NYGMNABERS1-7"
@@ -4327,7 +4327,7 @@
 "stat": "receptions",
 "line": 8,
 "bid": 0.14,
-"ask": 0.2,
+"ask": 0.19,
 "last": 0.19,
 "volume": 477.52,
 "ticker": "KXNFLREC-26OCT11NYGWAS-NYGMNABERS1-8"
@@ -4337,7 +4337,7 @@
 "stat": "receptions",
 "line": 9,
 "bid": 0.04,
-"ask": 0.12,
+"ask": 0.11,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11NYGWAS-NYGMNABERS1-9"
@@ -4367,7 +4367,7 @@
 "stat": "receptions",
 "line": 12,
 "bid": 0.02,
-"ask": 0.06,
+"ask": 0.08,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11NYGWAS-NYGMNABERS1-12"
@@ -4537,7 +4537,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.07,
-"ask": 0.18,
+"ask": 0.17,
 "last": 0.19,
 "volume": 3.0,
 "ticker": "KXNFLREC-26OCT11NYGWAS-WASRWHITE1-4"
@@ -4547,7 +4547,7 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.05,
-"ask": 0.1,
+"ask": 0.09,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11NYGWAS-WASRWHITE1-5"
@@ -4587,7 +4587,7 @@
 "stat": "rushing_yards",
 "line": 20,
 "bid": 0.54,
-"ask": 0.6,
+"ask": 0.61,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11NYGWAS-WASRWHITE1-20"
@@ -4606,7 +4606,7 @@
 "player": "Rachaad White",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.34,
+"bid": 0.35,
 "ask": 0.38,
 "last": 0.36,
 "volume": 22.0,
@@ -4657,7 +4657,7 @@
 "stat": "rushing_yards",
 "line": 80,
 "bid": 0.02,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11NYGWAS-WASRWHITE1-80"
@@ -4679,7 +4679,7 @@
 "stat": "carries",
 "line": 16,
 "bid": 0.71,
-"ask": 0.76,
+"ask": 0.75,
 "last": 0.74,
 "volume": 28.63,
 "ticker": "KXNFLRSHATT-26OCT11BALATL-ATLBROBINSON7-16"
@@ -4688,7 +4688,7 @@
 "player": "Bijan Robinson",
 "stat": "carries",
 "line": 19,
-"bid": 0.51,
+"bid": 0.5,
 "ask": 0.53,
 "last": 0.56,
 "volume": 320.87,
@@ -4819,7 +4819,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.18,
-"ask": 0.22,
+"ask": 0.23,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11BALATL-ATLBROBINSON7-6"
@@ -4879,9 +4879,9 @@
 "stat": "rushing_yards",
 "line": 70,
 "bid": 0.67,
-"ask": 0.69,
-"last": 0.7,
-"volume": 54.69,
+"ask": 0.68,
+"last": 0.69,
+"volume": 63.91,
 "ticker": "KXNFLRSHYDS-26OCT11BALATL-ATLBROBINSON7-70"
 },
 {
@@ -4900,8 +4900,8 @@
 "line": 90,
 "bid": 0.48,
 "ask": 0.49,
-"last": 0.5,
-"volume": 4725.13,
+"last": 0.49,
+"volume": 4754.79,
 "ticker": "KXNFLRSHYDS-26OCT11BALATL-ATLBROBINSON7-90"
 },
 {
@@ -4911,7 +4911,7 @@
 "bid": 0.38,
 "ask": 0.4,
 "last": 0.4,
-"volume": 548.02,
+"volume": 564.81,
 "ticker": "KXNFLRSHYDS-26OCT11BALATL-ATLBROBINSON7-100"
 },
 {
@@ -4930,8 +4930,8 @@
 "line": 120,
 "bid": 0.23,
 "ask": 0.25,
-"last": 0.24,
-"volume": 2008.44,
+"last": 0.25,
+"volume": 2046.44,
 "ticker": "KXNFLRSHYDS-26OCT11BALATL-ATLBROBINSON7-120"
 },
 {
@@ -4940,8 +4940,8 @@
 "line": 130,
 "bid": 0.17,
 "ask": 0.18,
-"last": 0.21,
-"volume": 395.06,
+"last": 0.18,
+"volume": 495.06,
 "ticker": "KXNFLRSHYDS-26OCT11BALATL-ATLBROBINSON7-130"
 },
 {
@@ -5151,14 +5151,14 @@
 "bid": 0.2,
 "ask": 0.21,
 "last": 0.21,
-"volume": 468.55,
+"volume": 635.5,
 "ticker": "KXNFLRECYDS-26OCT11BALATL-BALDHENRY22-15"
 },
 {
 "player": "Derrick Henry",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.06,
+"bid": 0.07,
 "ask": 0.1,
 "last": 0.1,
 "volume": 337.38,
@@ -5168,7 +5168,7 @@
 "player": "Derrick Henry",
 "stat": "receptions",
 "line": 2,
-"bid": 0.34,
+"bid": 0.33,
 "ask": 0.35,
 "last": 0.35,
 "volume": 349.49,
@@ -5178,7 +5178,7 @@
 "player": "Derrick Henry",
 "stat": "receptions",
 "line": 3,
-"bid": 0.12,
+"bid": 0.11,
 "ask": 0.15,
 "last": 0.0,
 "volume": 0.0,
@@ -5211,7 +5211,7 @@
 "bid": 0.72,
 "ask": 0.73,
 "last": 0.73,
-"volume": 122.09,
+"volume": 194.09,
 "ticker": "KXNFLRSHYDS-26OCT11BALATL-BALDHENRY22-60"
 },
 {
@@ -5230,8 +5230,8 @@
 "line": 80,
 "bid": 0.49,
 "ask": 0.5,
-"last": 0.5,
-"volume": 1696.72,
+"last": 0.49,
+"volume": 1715.67,
 "ticker": "KXNFLRSHYDS-26OCT11BALATL-BALDHENRY22-80"
 },
 {
@@ -5378,18 +5378,18 @@
 "player": "Devontez Walker",
 "stat": "receptions",
 "line": 1,
-"bid": 0.62,
-"ask": 0.64,
-"last": 0.0,
-"volume": 0.0,
+"bid": 0.64,
+"ask": 0.65,
+"last": 0.64,
+"volume": 1031.93,
 "ticker": "KXNFLREC-26OCT11BALATL-BALDWALKER81-1"
 },
 {
 "player": "Devontez Walker",
 "stat": "receptions",
 "line": 2,
-"bid": 0.26,
-"ask": 0.29,
+"bid": 0.19,
+"ask": 0.3,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11BALATL-BALDWALKER81-2"
@@ -5409,7 +5409,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.02,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11BALATL-BALDWALKER81-4"
@@ -5460,8 +5460,8 @@
 "line": 80,
 "bid": 0.5,
 "ask": 0.51,
-"last": 0.52,
-"volume": 1005.67,
+"last": 0.51,
+"volume": 1195.24,
 "ticker": "KXNFLRECYDS-26OCT11BALATL-ATLDLONDON5-80"
 },
 {
@@ -5489,7 +5489,7 @@
 "stat": "receiving_yards",
 "line": 110,
 "bid": 0.23,
-"ask": 0.27,
+"ask": 0.28,
 "last": 0.28,
 "volume": 17.0,
 "ticker": "KXNFLRECYDS-26OCT11BALATL-ATLDLONDON5-110"
@@ -5628,7 +5628,7 @@
 "player": "Drake London",
 "stat": "receptions",
 "line": 10,
-"bid": 0.09,
+"bid": 0.07,
 "ask": 0.12,
 "last": 0.08,
 "volume": 18.0,
@@ -5779,7 +5779,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.27,
-"ask": 0.33,
+"ask": 0.34,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11BALATL-BALJHILL43-15"
@@ -5788,8 +5788,8 @@
 "player": "Justice Hill",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.04,
-"ask": 0.18,
+"bid": 0.05,
+"ask": 0.19,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11BALATL-BALJHILL43-25"
@@ -5809,7 +5809,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.45,
-"ask": 0.48,
+"ask": 0.47,
 "last": 0.45,
 "volume": 22.9,
 "ticker": "KXNFLREC-26OCT11BALATL-BALJHILL43-2"
@@ -5819,7 +5819,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.2,
-"ask": 0.24,
+"ask": 0.25,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11BALATL-BALJHILL43-3"
@@ -5849,7 +5849,7 @@
 "stat": "rushing_yards",
 "line": 10,
 "bid": 0.53,
-"ask": 0.56,
+"ask": 0.55,
 "last": 0.54,
 "volume": 47.87,
 "ticker": "KXNFLRSHYDS-26OCT11BALATL-BALJHILL43-10"
@@ -6009,7 +6009,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.22,
-"ask": 0.25,
+"ask": 0.27,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11BALATL-ATLKPITTS8-4"
@@ -6109,7 +6109,7 @@
 "stat": "receiving_yards",
 "line": 80,
 "bid": 0.04,
-"ask": 0.07,
+"ask": 0.08,
 "last": 0.08,
 "volume": 27.0,
 "ticker": "KXNFLRECYDS-26OCT11BALATL-BALMANDREWS89-80"
@@ -6119,7 +6119,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.81,
-"ask": 0.89,
+"ask": 0.88,
 "last": 0.91,
 "volume": 7.73,
 "ticker": "KXNFLREC-26OCT11BALATL-BALMANDREWS89-2"
@@ -6128,8 +6128,8 @@
 "player": "Mark Andrews",
 "stat": "receptions",
 "line": 3,
-"bid": 0.69,
-"ask": 0.75,
+"bid": 0.64,
+"ask": 0.76,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11BALATL-BALMANDREWS89-3"
@@ -6148,10 +6148,10 @@
 "player": "Mark Andrews",
 "stat": "receptions",
 "line": 5,
-"bid": 0.32,
-"ask": 0.38,
-"last": 0.0,
-"volume": 0.0,
+"bid": 0.37,
+"ask": 0.39,
+"last": 0.37,
+"volume": 5.0,
 "ticker": "KXNFLREC-26OCT11BALATL-BALMANDREWS89-5"
 },
 {
@@ -6159,7 +6159,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.17,
-"ask": 0.23,
+"ask": 0.24,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11BALATL-BALMANDREWS89-6"
@@ -6168,7 +6168,7 @@
 "player": "Mark Andrews",
 "stat": "receptions",
 "line": 7,
-"bid": 0.05,
+"bid": 0.04,
 "ask": 0.15,
 "last": 0.0,
 "volume": 0.0,
@@ -6268,7 +6268,7 @@
 "player": "Michael Penix Jr.",
 "stat": "passing_yards",
 "line": 225,
-"bid": 0.46,
+"bid": 0.45,
 "ask": 0.48,
 "last": 0.48,
 "volume": 399.04,
@@ -6299,7 +6299,7 @@
 "stat": "passing_yards",
 "line": 300,
 "bid": 0.12,
-"ask": 0.14,
+"ask": 0.13,
 "last": 0.15,
 "volume": 325.73,
 "ticker": "KXNFLPASSYDS-26OCT11BALATL-ATLMPENIX9-300"
@@ -6308,7 +6308,7 @@
 "player": "Michael Penix Jr.",
 "stat": "passing_yards",
 "line": 325,
-"bid": 0.06,
+"bid": 0.05,
 "ask": 0.08,
 "last": 0.11,
 "volume": 85.57,
@@ -6359,7 +6359,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.14,
-"ask": 0.2,
+"ask": 0.19,
 "last": 0.19,
 "volume": 32.0,
 "ticker": "KXNFLRECYDS-26OCT11BALATL-ATLOZACCHEAUS14-25"
@@ -6388,10 +6388,10 @@
 "player": "Olamide Zaccheaus",
 "stat": "receptions",
 "line": 1,
-"bid": 0.63,
-"ask": 0.64,
-"last": 0.68,
-"volume": 1.0,
+"bid": 0.66,
+"ask": 0.67,
+"last": 0.66,
+"volume": 2216.0,
 "ticker": "KXNFLREC-26OCT11BALATL-ATLOZACCHEAUS14-1"
 },
 {
@@ -6408,7 +6408,7 @@
 "player": "Olamide Zaccheaus",
 "stat": "receptions",
 "line": 3,
-"bid": 0.09,
+"bid": 0.04,
 "ask": 0.13,
 "last": 0.0,
 "volume": 0.0,
@@ -6440,8 +6440,8 @@
 "line": 20,
 "bid": 0.45,
 "ask": 0.47,
-"last": 0.48,
-"volume": 51.13,
+"last": 0.47,
+"volume": 148.13,
 "ticker": "KXNFLRECYDS-26OCT11BALATL-BALRBATEMAN7-20"
 },
 {
@@ -6459,7 +6459,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.15,
-"ask": 0.19,
+"ask": 0.21,
 "last": 0.22,
 "volume": 63.29,
 "ticker": "KXNFLRECYDS-26OCT11BALATL-BALRBATEMAN7-40"
@@ -6468,7 +6468,7 @@
 "player": "Rashod Bateman",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.09,
+"bid": 0.08,
 "ask": 0.12,
 "last": 0.13,
 "volume": 133.26,
@@ -6511,15 +6511,15 @@
 "bid": 0.53,
 "ask": 0.54,
 "last": 0.54,
-"volume": 99.0,
+"volume": 122.32,
 "ticker": "KXNFLREC-26OCT11BALATL-BALRBATEMAN7-2"
 },
 {
 "player": "Rashod Bateman",
 "stat": "receptions",
 "line": 3,
-"bid": 0.21,
-"ask": 0.27,
+"bid": 0.2,
+"ask": 0.32,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11BALATL-BALRBATEMAN7-3"
@@ -6538,7 +6538,7 @@
 "player": "Rashod Bateman",
 "stat": "receptions",
 "line": 5,
-"bid": 0.04,
+"bid": 0.03,
 "ask": 0.09,
 "last": 0.0,
 "volume": 0.0,
@@ -6579,7 +6579,7 @@
 "stat": "carries",
 "line": 9,
 "bid": 0.03,
-"ask": 0.26,
+"ask": 0.29,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11BALATL-BALTHUNTLEY5-9"
@@ -6590,8 +6590,8 @@
 "line": 1,
 "bid": 0.69,
 "ask": 0.72,
-"last": 0.73,
-"volume": 3.81,
+"last": 0.69,
+"volume": 173.05,
 "ticker": "KXNFLPASSTDS-26OCT11BALATL-BALTHUNTLEY5-1"
 },
 {
@@ -6648,7 +6648,7 @@
 "player": "Tyler Huntley",
 "stat": "passing_yards",
 "line": 175,
-"bid": 0.48,
+"bid": 0.49,
 "ask": 0.5,
 "last": 0.49,
 "volume": 3612.13,
@@ -6699,9 +6699,9 @@
 "stat": "passing_yards",
 "line": 300,
 "bid": 0.02,
-"ask": 0.04,
-"last": 0.02,
-"volume": 55.09,
+"ask": 0.03,
+"last": 0.04,
+"volume": 205.09,
 "ticker": "KXNFLPASSYDS-26OCT11BALATL-BALTHUNTLEY5-300"
 },
 {
@@ -6798,7 +6798,7 @@
 "player": "Zay Flowers",
 "stat": "receiving_yards",
 "line": 40,
-"bid": 0.74,
+"bid": 0.7,
 "ask": 0.78,
 "last": 0.8,
 "volume": 24.41,
@@ -6809,7 +6809,7 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.65,
-"ask": 0.71,
+"ask": 0.72,
 "last": 0.71,
 "volume": 9.62,
 "ticker": "KXNFLRECYDS-26OCT11BALATL-BALZFLOWERS4-50"
@@ -6818,7 +6818,7 @@
 "player": "Zay Flowers",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.56,
+"bid": 0.55,
 "ask": 0.6,
 "last": 0.57,
 "volume": 39.93,
@@ -6838,7 +6838,7 @@
 "player": "Zay Flowers",
 "stat": "receiving_yards",
 "line": 80,
-"bid": 0.34,
+"bid": 0.35,
 "ask": 0.4,
 "last": 0.41,
 "volume": 46.3,
@@ -6848,7 +6848,7 @@
 "player": "Zay Flowers",
 "stat": "receiving_yards",
 "line": 90,
-"bid": 0.26,
+"bid": 0.23,
 "ask": 0.31,
 "last": 0.33,
 "volume": 14.47,
@@ -6859,7 +6859,7 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.19,
-"ask": 0.25,
+"ask": 0.24,
 "last": 0.26,
 "volume": 18.26,
 "ticker": "KXNFLRECYDS-26OCT11BALATL-BALZFLOWERS4-100"
@@ -6878,7 +6878,7 @@
 "player": "Zay Flowers",
 "stat": "receiving_yards",
 "line": 120,
-"bid": 0.08,
+"bid": 0.05,
 "ask": 0.15,
 "last": 0.0,
 "volume": 0.0,
@@ -6920,10 +6920,10 @@
 "player": "Ashton Jeanty",
 "stat": "carries",
 "line": 15,
-"bid": 0.1,
+"bid": 0.51,
 "ask": 0.64,
-"last": 0.57,
-"volume": 34.5,
+"last": 0.64,
+"volume": 57.38,
 "ticker": "KXNFLRSHATT-26OCT11LVNE-LVAJEANTY2-15"
 },
 {
@@ -6933,7 +6933,7 @@
 "bid": 0.39,
 "ask": 0.4,
 "last": 0.4,
-"volume": 2155.33,
+"volume": 2159.2,
 "ticker": "KXNFLRSHATT-26OCT11LVNE-LVAJEANTY2-18"
 },
 {
@@ -6950,8 +6950,8 @@
 "player": "Ashton Jeanty",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.6,
-"ask": 0.77,
+"bid": 0.69,
+"ask": 0.87,
 "last": 0.85,
 "volume": 156.73,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-LVAJEANTY2-15"
@@ -6960,10 +6960,10 @@
 "player": "Ashton Jeanty",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.5,
-"ask": 0.51,
-"last": 0.51,
-"volume": 11839.22,
+"bid": 0.51,
+"ask": 0.52,
+"last": 0.52,
+"volume": 12083.23,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-LVAJEANTY2-25"
 },
 {
@@ -6980,8 +6980,8 @@
 "player": "Ashton Jeanty",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.12,
-"ask": 0.17,
+"bid": 0.14,
+"ask": 0.18,
 "last": 0.14,
 "volume": 165.9,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-LVAJEANTY2-50"
@@ -6990,7 +6990,7 @@
 "player": "Ashton Jeanty",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.05,
+"bid": 0.04,
 "ask": 0.16,
 "last": 0.0,
 "volume": 0.0,
@@ -7010,8 +7010,8 @@
 "player": "Ashton Jeanty",
 "stat": "receptions",
 "line": 2,
-"bid": 0.66,
-"ask": 0.93,
+"bid": 0.67,
+"ask": 0.94,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11LVNE-LVAJEANTY2-2"
@@ -7020,8 +7020,8 @@
 "player": "Ashton Jeanty",
 "stat": "receptions",
 "line": 3,
-"bid": 0.7,
-"ask": 0.76,
+"bid": 0.71,
+"ask": 0.75,
 "last": 0.76,
 "volume": 134.83,
 "ticker": "KXNFLREC-26OCT11LVNE-LVAJEANTY2-3"
@@ -7030,8 +7030,8 @@
 "player": "Ashton Jeanty",
 "stat": "receptions",
 "line": 4,
-"bid": 0.55,
-"ask": 0.56,
+"bid": 0.52,
+"ask": 0.54,
 "last": 0.56,
 "volume": 3933.26,
 "ticker": "KXNFLREC-26OCT11LVNE-LVAJEANTY2-4"
@@ -7050,8 +7050,8 @@
 "player": "Ashton Jeanty",
 "stat": "receptions",
 "line": 6,
-"bid": 0.1,
-"ask": 0.2,
+"bid": 0.06,
+"ask": 0.24,
 "last": 0.17,
 "volume": 772.0,
 "ticker": "KXNFLREC-26OCT11LVNE-LVAJEANTY2-6"
@@ -7060,7 +7060,7 @@
 "player": "Ashton Jeanty",
 "stat": "receptions",
 "line": 7,
-"bid": 0.11,
+"bid": 0.08,
 "ask": 0.15,
 "last": 0.08,
 "volume": 11.0,
@@ -7070,7 +7070,7 @@
 "player": "Ashton Jeanty",
 "stat": "receptions",
 "line": 8,
-"bid": 0.03,
+"bid": 0.06,
 "ask": 0.13,
 "last": 0.0,
 "volume": 0.0,
@@ -7090,7 +7090,7 @@
 "player": "Ashton Jeanty",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.78,
+"bid": 0.79,
 "ask": 0.84,
 "last": 0.85,
 "volume": 41.85,
@@ -7100,20 +7100,20 @@
 "player": "Ashton Jeanty",
 "stat": "rushing_yards",
 "line": 40,
-"bid": 0.73,
-"ask": 0.77,
-"last": 0.84,
-"volume": 415.77,
+"bid": 0.72,
+"ask": 0.78,
+"last": 0.8,
+"volume": 427.02,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVAJEANTY2-40"
 },
 {
 "player": "Ashton Jeanty",
 "stat": "rushing_yards",
 "line": 50,
-"bid": 0.61,
-"ask": 0.66,
-"last": 0.68,
-"volume": 485.65,
+"bid": 0.6,
+"ask": 0.64,
+"last": 0.64,
+"volume": 626.68,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVAJEANTY2-50"
 },
 {
@@ -7121,29 +7121,29 @@
 "stat": "rushing_yards",
 "line": 60,
 "bid": 0.49,
-"ask": 0.51,
+"ask": 0.53,
 "last": 0.53,
-"volume": 1783.44,
+"volume": 1971.12,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVAJEANTY2-60"
 },
 {
 "player": "Ashton Jeanty",
 "stat": "rushing_yards",
 "line": 70,
-"bid": 0.36,
+"bid": 0.37,
 "ask": 0.39,
-"last": 0.36,
-"volume": 236.55,
+"last": 0.39,
+"volume": 247.52,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVAJEANTY2-70"
 },
 {
 "player": "Ashton Jeanty",
 "stat": "rushing_yards",
 "line": 80,
-"bid": 0.27,
-"ask": 0.33,
+"bid": 0.28,
+"ask": 0.3,
 "last": 0.32,
-"volume": 266.35,
+"volume": 279.9,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVAJEANTY2-80"
 },
 {
@@ -7170,8 +7170,8 @@
 "player": "Ashton Jeanty",
 "stat": "rushing_yards",
 "line": 110,
-"bid": 0.06,
-"ask": 0.12,
+"bid": 0.03,
+"ask": 0.11,
 "last": 0.12,
 "volume": 117.73,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVAJEANTY2-110"
@@ -7231,9 +7231,9 @@
 "stat": "receiving_yards",
 "line": 70,
 "bid": 0.54,
-"ask": 0.55,
-"last": 0.54,
-"volume": 3625.73,
+"ask": 0.56,
+"last": 0.57,
+"volume": 3639.35,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-LVBBOWERS89-70"
 },
 {
@@ -7243,7 +7243,7 @@
 "bid": 0.43,
 "ask": 0.45,
 "last": 0.45,
-"volume": 903.15,
+"volume": 945.94,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-LVBBOWERS89-80"
 },
 {
@@ -7330,7 +7330,7 @@
 "player": "Brock Bowers",
 "stat": "receptions",
 "line": 5,
-"bid": 0.75,
+"bid": 0.73,
 "ask": 0.8,
 "last": 0.75,
 "volume": 13.46,
@@ -7353,7 +7353,7 @@
 "bid": 0.5,
 "ask": 0.51,
 "last": 0.51,
-"volume": 1064.28,
+"volume": 1246.26,
 "ticker": "KXNFLREC-26OCT11LVNE-LVBBOWERS89-7"
 },
 {
@@ -7380,7 +7380,7 @@
 "player": "Brock Bowers",
 "stat": "receptions",
 "line": 10,
-"bid": 0.15,
+"bid": 0.14,
 "ask": 0.18,
 "last": 0.12,
 "volume": 95.31,
@@ -7390,8 +7390,8 @@
 "player": "Brock Bowers",
 "stat": "receptions",
 "line": 11,
-"bid": 0.07,
-"ask": 0.12,
+"bid": 0.03,
+"ask": 0.11,
 "last": 0.07,
 "volume": 22.0,
 "ticker": "KXNFLREC-26OCT11LVNE-LVBBOWERS89-11"
@@ -7401,7 +7401,7 @@
 "stat": "receptions",
 "line": 12,
 "bid": 0.03,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.08,
 "volume": 29.25,
 "ticker": "KXNFLREC-26OCT11LVNE-LVBBOWERS89-12"
@@ -7500,8 +7500,8 @@
 "player": "Cody White",
 "stat": "receptions",
 "line": 3,
-"bid": 0.21,
-"ask": 0.31,
+"bid": 0.2,
+"ask": 0.32,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11LVNE-LVCWHITE82-3"
@@ -7511,7 +7511,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.04,
-"ask": 0.15,
+"ask": 0.16,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11LVNE-LVCWHITE82-4"
@@ -7541,7 +7541,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.63,
-"ask": 0.68,
+"ask": 0.69,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-NEDDOUGLAS3-15"
@@ -7551,7 +7551,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.45,
-"ask": 0.51,
+"ask": 0.52,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-NEDDOUGLAS3-25"
@@ -7623,7 +7623,7 @@
 "bid": 0.49,
 "ask": 0.5,
 "last": 0.5,
-"volume": 1227.83,
+"volume": 1272.27,
 "ticker": "KXNFLREC-26OCT11LVNE-NEDDOUGLAS3-3"
 },
 {
@@ -7641,7 +7641,7 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.1,
-"ask": 0.15,
+"ask": 0.14,
 "last": 0.18,
 "volume": 25.0,
 "ticker": "KXNFLREC-26OCT11LVNE-NEDDOUGLAS3-5"
@@ -7710,10 +7710,10 @@
 "player": "Drake Maye",
 "stat": "passing_tds",
 "line": 2,
-"bid": 0.49,
-"ask": 0.5,
-"last": 0.51,
-"volume": 301.81,
+"bid": 0.5,
+"ask": 0.51,
+"last": 0.5,
+"volume": 303.74,
 "ticker": "KXNFLPASSTDS-26OCT11LVNE-NEDMAYE10-2"
 },
 {
@@ -7760,10 +7760,10 @@
 "player": "Drake Maye",
 "stat": "passing_yards",
 "line": 200,
-"bid": 0.65,
+"bid": 0.64,
 "ask": 0.68,
 "last": 0.64,
-"volume": 270.14,
+"volume": 283.56,
 "ticker": "KXNFLPASSYDS-26OCT11LVNE-NEDMAYE10-200"
 },
 {
@@ -7801,7 +7801,7 @@
 "stat": "passing_yards",
 "line": 300,
 "bid": 0.14,
-"ask": 0.16,
+"ask": 0.15,
 "last": 0.17,
 "volume": 354.47,
 "ticker": "KXNFLPASSYDS-26OCT11LVNE-NEDMAYE10-300"
@@ -7833,7 +7833,7 @@
 "bid": 0.8,
 "ask": 0.83,
 "last": 0.83,
-"volume": 11.0,
+"volume": 16.29,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-NEDMAYE10-15"
 },
 {
@@ -7841,7 +7841,7 @@
 "stat": "rushing_yards",
 "line": 20,
 "bid": 0.71,
-"ask": 0.72,
+"ask": 0.73,
 "last": 0.71,
 "volume": 958.87,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-NEDMAYE10-20"
@@ -7872,8 +7872,8 @@
 "line": 40,
 "bid": 0.34,
 "ask": 0.36,
-"last": 0.37,
-"volume": 74.1,
+"last": 0.36,
+"volume": 99.1,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-NEDMAYE10-40"
 },
 {
@@ -7920,8 +7920,8 @@
 "player": "Efton Chism III",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.68,
-"ask": 0.7,
+"bid": 0.67,
+"ask": 0.69,
 "last": 0.7,
 "volume": 988.37,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-NEECHISM86-15"
@@ -7930,8 +7930,8 @@
 "player": "Efton Chism III",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.5,
-"ask": 0.51,
+"bid": 0.49,
+"ask": 0.52,
 "last": 0.52,
 "volume": 1675.77,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-NEECHISM86-25"
@@ -7950,7 +7950,7 @@
 "player": "Efton Chism III",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.2,
+"bid": 0.19,
 "ask": 0.23,
 "last": 0.22,
 "volume": 1516.44,
@@ -7980,10 +7980,10 @@
 "player": "Efton Chism III",
 "stat": "receptions",
 "line": 2,
-"bid": 0.6,
+"bid": 0.59,
 "ask": 0.62,
 "last": 0.6,
-"volume": 15989.4,
+"volume": 16221.97,
 "ticker": "KXNFLREC-26OCT11LVNE-NEECHISM86-2"
 },
 {
@@ -7991,7 +7991,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.35,
-"ask": 0.37,
+"ask": 0.36,
 "last": 0.37,
 "volume": 4467.4,
 "ticker": "KXNFLREC-26OCT11LVNE-NEECHISM86-3"
@@ -8000,7 +8000,7 @@
 "player": "Efton Chism III",
 "stat": "receptions",
 "line": 4,
-"bid": 0.13,
+"bid": 0.14,
 "ask": 0.18,
 "last": 0.23,
 "volume": 2349.13,
@@ -8020,7 +8020,7 @@
 "player": "Eli Raridon",
 "stat": "receiving_yards",
 "line": 10,
-"bid": 0.49,
+"bid": 0.48,
 "ask": 0.5,
 "last": 0.51,
 "volume": 112.56,
@@ -8030,7 +8030,7 @@
 "player": "Eli Raridon",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.26,
+"bid": 0.27,
 "ask": 0.41,
 "last": 0.0,
 "volume": 0.0,
@@ -8041,7 +8041,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.17,
-"ask": 0.22,
+"ask": 0.21,
 "last": 0.24,
 "volume": 39.56,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-NEERARIDON82-25"
@@ -8070,7 +8070,7 @@
 "player": "Eli Raridon",
 "stat": "receptions",
 "line": 2,
-"bid": 0.36,
+"bid": 0.35,
 "ask": 0.4,
 "last": 0.0,
 "volume": 0.0,
@@ -8121,7 +8121,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.43,
-"ask": 0.47,
+"ask": 0.49,
 "last": 0.48,
 "volume": 49.98,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-NEHHENRY85-40"
@@ -8141,7 +8141,7 @@
 "stat": "receiving_yards",
 "line": 60,
 "bid": 0.21,
-"ask": 0.24,
+"ask": 0.26,
 "last": 0.24,
 "volume": 9.4,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-NEHHENRY85-60"
@@ -8191,7 +8191,7 @@
 "stat": "receiving_yards",
 "line": 110,
 "bid": 0.02,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-NEHHENRY85-110"
@@ -8210,8 +8210,8 @@
 "player": "Hunter Henry",
 "stat": "receptions",
 "line": 3,
-"bid": 0.66,
-"ask": 0.72,
+"bid": 0.63,
+"ask": 0.73,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11LVNE-NEHHENRY85-3"
@@ -8240,8 +8240,8 @@
 "player": "Hunter Henry",
 "stat": "receptions",
 "line": 6,
-"bid": 0.1,
-"ask": 0.2,
+"bid": 0.09,
+"ask": 0.21,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11LVNE-NEHHENRY85-6"
@@ -8250,8 +8250,8 @@
 "player": "Hunter Henry",
 "stat": "receptions",
 "line": 7,
-"bid": 0.06,
-"ask": 0.1,
+"bid": 0.03,
+"ask": 0.11,
 "last": 0.07,
 "volume": 39.0,
 "ticker": "KXNFLREC-26OCT11LVNE-NEHHENRY85-7"
@@ -8281,7 +8281,7 @@
 "stat": "passing_tds",
 "line": 1,
 "bid": 0.77,
-"ask": 0.81,
+"ask": 0.82,
 "last": 0.82,
 "volume": 12.04,
 "ticker": "KXNFLPASSTDS-26OCT11LVNE-LVKCOUSINS8-1"
@@ -8290,10 +8290,10 @@
 "player": "Kirk Cousins",
 "stat": "passing_tds",
 "line": 2,
-"bid": 0.43,
-"ask": 0.44,
-"last": 0.43,
-"volume": 4560.8,
+"bid": 0.44,
+"ask": 0.45,
+"last": 0.44,
+"volume": 5654.29,
 "ticker": "KXNFLPASSTDS-26OCT11LVNE-LVKCOUSINS8-2"
 },
 {
@@ -8303,7 +8303,7 @@
 "bid": 0.16,
 "ask": 0.17,
 "last": 0.17,
-"volume": 1701.03,
+"volume": 1728.82,
 "ticker": "KXNFLPASSTDS-26OCT11LVNE-LVKCOUSINS8-3"
 },
 {
@@ -8332,8 +8332,8 @@
 "line": 175,
 "bid": 0.79,
 "ask": 0.81,
-"last": 0.8,
-"volume": 366.07,
+"last": 0.81,
+"volume": 378.25,
 "ticker": "KXNFLPASSYDS-26OCT11LVNE-LVKCOUSINS8-175"
 },
 {
@@ -8350,10 +8350,10 @@
 "player": "Kirk Cousins",
 "stat": "passing_yards",
 "line": 225,
-"bid": 0.52,
-"ask": 0.55,
+"bid": 0.53,
+"ask": 0.54,
 "last": 0.54,
-"volume": 3998.3,
+"volume": 4231.01,
 "ticker": "KXNFLPASSYDS-26OCT11LVNE-LVKCOUSINS8-225"
 },
 {
@@ -8363,7 +8363,7 @@
 "bid": 0.38,
 "ask": 0.39,
 "last": 0.39,
-"volume": 1847.07,
+"volume": 1858.04,
 "ticker": "KXNFLPASSYDS-26OCT11LVNE-LVKCOUSINS8-250"
 },
 {
@@ -8380,10 +8380,10 @@
 "player": "Kirk Cousins",
 "stat": "passing_yards",
 "line": 300,
-"bid": 0.16,
+"bid": 0.15,
 "ask": 0.17,
-"last": 0.17,
-"volume": 1732.38,
+"last": 0.16,
+"volume": 1742.84,
 "ticker": "KXNFLPASSYDS-26OCT11LVNE-LVKCOUSINS8-300"
 },
 {
@@ -8441,7 +8441,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.56,
-"ask": 0.59,
+"ask": 0.58,
 "last": 0.59,
 "volume": 43.5,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-LVMMAYER87-25"
@@ -8521,7 +8521,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.67,
-"ask": 0.7,
+"ask": 0.71,
 "last": 0.71,
 "volume": 12.32,
 "ticker": "KXNFLREC-26OCT11LVNE-LVMMAYER87-3"
@@ -8561,7 +8561,7 @@
 "stat": "receptions",
 "line": 7,
 "bid": 0.05,
-"ask": 0.12,
+"ask": 0.11,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11LVNE-LVMMAYER87-7"
@@ -8591,7 +8591,7 @@
 "stat": "rushing_yards",
 "line": 10,
 "bid": 0.72,
-"ask": 0.87,
+"ask": 0.86,
 "last": 0.88,
 "volume": 414.6,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVMWASHINGTON4-10"
@@ -8601,7 +8601,7 @@
 "stat": "rushing_yards",
 "line": 15,
 "bid": 0.63,
-"ask": 0.74,
+"ask": 0.75,
 "last": 0.76,
 "volume": 541.23,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVMWASHINGTON4-15"
@@ -8610,8 +8610,8 @@
 "player": "Mike Washington Jr.",
 "stat": "rushing_yards",
 "line": 20,
-"bid": 0.61,
-"ask": 0.67,
+"bid": 0.64,
+"ask": 0.68,
 "last": 0.78,
 "volume": 2902.74,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVMWASHINGTON4-20"
@@ -8620,60 +8620,60 @@
 "player": "Mike Washington Jr.",
 "stat": "rushing_yards",
 "line": 25,
-"bid": 0.57,
-"ask": 0.61,
-"last": 0.64,
-"volume": 6457.91,
+"bid": 0.52,
+"ask": 0.6,
+"last": 0.59,
+"volume": 6697.28,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVMWASHINGTON4-25"
 },
 {
 "player": "Mike Washington Jr.",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.34,
-"ask": 0.63,
-"last": 0.34,
-"volume": 4688.27,
+"bid": 0.57,
+"ask": 0.59,
+"last": 0.56,
+"volume": 4949.79,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVMWASHINGTON4-30"
 },
 {
 "player": "Mike Washington Jr.",
 "stat": "rushing_yards",
 "line": 40,
-"bid": 0.53,
-"ask": 0.65,
-"last": 0.62,
-"volume": 4340.54,
+"bid": 0.38,
+"ask": 0.52,
+"last": 0.46,
+"volume": 4492.08,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVMWASHINGTON4-40"
 },
 {
 "player": "Mike Washington Jr.",
 "stat": "rushing_yards",
 "line": 50,
-"bid": 0.5,
-"ask": 0.55,
-"last": 0.55,
-"volume": 7755.43,
+"bid": 0.36,
+"ask": 0.41,
+"last": 0.37,
+"volume": 7803.09,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVMWASHINGTON4-50"
 },
 {
 "player": "Mike Washington Jr.",
 "stat": "rushing_yards",
 "line": 60,
-"bid": 0.29,
-"ask": 0.55,
-"last": 0.32,
-"volume": 3595.75,
+"bid": 0.36,
+"ask": 0.41,
+"last": 0.41,
+"volume": 3604.75,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVMWASHINGTON4-60"
 },
 {
 "player": "Mike Washington Jr.",
 "stat": "rushing_yards",
 "line": 70,
-"bid": 0.21,
-"ask": 0.26,
-"last": 0.45,
-"volume": 2103.03,
+"bid": 0.09,
+"ask": 0.44,
+"last": 0.05,
+"volume": 2305.45,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-LVMWASHINGTON4-70"
 },
 {
@@ -8691,9 +8691,9 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.61,
-"ask": 0.64,
-"last": 0.64,
-"volume": 31.25,
+"ask": 0.63,
+"last": 0.61,
+"volume": 53.63,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-NERDOUBS87-40"
 },
 {
@@ -8751,7 +8751,7 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.09,
-"ask": 0.12,
+"ask": 0.13,
 "last": 0.14,
 "volume": 35.42,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-NERDOUBS87-100"
@@ -8760,7 +8760,7 @@
 "player": "Romeo Doubs",
 "stat": "receiving_yards",
 "line": 110,
-"bid": 0.06,
+"bid": 0.04,
 "ask": 0.1,
 "last": 0.0,
 "volume": 0.0,
@@ -8790,7 +8790,7 @@
 "player": "Romeo Doubs",
 "stat": "receptions",
 "line": 2,
-"bid": 0.87,
+"bid": 0.88,
 "ask": 0.91,
 "last": 0.93,
 "volume": 33.31,
@@ -8801,7 +8801,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.73,
-"ask": 0.75,
+"ask": 0.76,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11LVNE-NERDOUBS87-3"
@@ -8820,7 +8820,7 @@
 "player": "Romeo Doubs",
 "stat": "receptions",
 "line": 5,
-"bid": 0.36,
+"bid": 0.35,
 "ask": 0.37,
 "last": 0.37,
 "volume": 2.58,
@@ -8871,7 +8871,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.83,
-"ask": 0.86,
+"ask": 0.87,
 "last": 0.85,
 "volume": 17.66,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-LVTTUCKER1-15"
@@ -8893,7 +8893,7 @@
 "bid": 0.51,
 "ask": 0.52,
 "last": 0.52,
-"volume": 4147.45,
+"volume": 4249.47,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-LVTTUCKER1-40"
 },
 {
@@ -8903,14 +8903,14 @@
 "bid": 0.38,
 "ask": 0.39,
 "last": 0.39,
-"volume": 803.07,
+"volume": 919.07,
 "ticker": "KXNFLRECYDS-26OCT11LVNE-LVTTUCKER1-50"
 },
 {
 "player": "Tre Tucker",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.27,
+"bid": 0.28,
 "ask": 0.31,
 "last": 0.31,
 "volume": 2051.14,
@@ -9041,7 +9041,7 @@
 "stat": "carries",
 "line": 10,
 "bid": 0.69,
-"ask": 0.74,
+"ask": 0.73,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11LVNE-NETHENDERSON32-10"
@@ -9050,8 +9050,8 @@
 "player": "TreVeyon Henderson",
 "stat": "carries",
 "line": 13,
-"bid": 0.45,
-"ask": 0.5,
+"bid": 0.43,
+"ask": 0.47,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11LVNE-NETHENDERSON32-13"
@@ -9060,8 +9060,8 @@
 "player": "TreVeyon Henderson",
 "stat": "carries",
 "line": 16,
-"bid": 0.2,
-"ask": 0.26,
+"bid": 0.17,
+"ask": 0.23,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11LVNE-NETHENDERSON32-16"
@@ -9101,7 +9101,7 @@
 "stat": "rushing_yards",
 "line": 40,
 "bid": 0.51,
-"ask": 0.62,
+"ask": 0.6,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-NETHENDERSON32-40"
@@ -9110,8 +9110,8 @@
 "player": "TreVeyon Henderson",
 "stat": "rushing_yards",
 "line": 50,
-"bid": 0.45,
-"ask": 0.48,
+"bid": 0.42,
+"ask": 0.45,
 "last": 0.49,
 "volume": 430.7,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-NETHENDERSON32-50"
@@ -9120,8 +9120,8 @@
 "player": "TreVeyon Henderson",
 "stat": "rushing_yards",
 "line": 60,
-"bid": 0.32,
-"ask": 0.36,
+"bid": 0.29,
+"ask": 0.33,
 "last": 0.36,
 "volume": 52.46,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-NETHENDERSON32-60"
@@ -9130,8 +9130,8 @@
 "player": "TreVeyon Henderson",
 "stat": "rushing_yards",
 "line": 70,
-"bid": 0.22,
-"ask": 0.26,
+"bid": 0.19,
+"ask": 0.23,
 "last": 0.27,
 "volume": 45.1,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-NETHENDERSON32-70"
@@ -9140,8 +9140,8 @@
 "player": "TreVeyon Henderson",
 "stat": "rushing_yards",
 "line": 80,
-"bid": 0.14,
-"ask": 0.2,
+"bid": 0.12,
+"ask": 0.16,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-NETHENDERSON32-80"
@@ -9150,8 +9150,8 @@
 "player": "TreVeyon Henderson",
 "stat": "rushing_yards",
 "line": 90,
-"bid": 0.09,
-"ask": 0.15,
+"bid": 0.07,
+"ask": 0.11,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-NETHENDERSON32-90"
@@ -9161,7 +9161,7 @@
 "stat": "rushing_yards",
 "line": 100,
 "bid": 0.03,
-"ask": 0.11,
+"ask": 0.1,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-NETHENDERSON32-100"
@@ -9180,7 +9180,7 @@
 "player": "TreVeyon Henderson",
 "stat": "rushing_yards",
 "line": 120,
-"bid": 0.03,
+"bid": 0.02,
 "ask": 0.08,
 "last": 0.0,
 "volume": 0.0,
@@ -9191,7 +9191,7 @@
 "stat": "rushing_yards",
 "line": 130,
 "bid": 0.03,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.08,
 "volume": 85.24,
 "ticker": "KXNFLRSHYDS-26OCT11LVNE-NETHENDERSON32-130"
@@ -9215,7 +9215,7 @@
 "bid": 0.53,
 "ask": 0.54,
 "last": 0.54,
-"volume": 1636.03,
+"volume": 1907.37,
 "ticker": "KXNFLRSHATT-26OCT11PHIJAC-JACBTUTEN33-15"
 },
 {
@@ -9223,7 +9223,7 @@
 "stat": "carries",
 "line": 18,
 "bid": 0.26,
-"ask": 0.3,
+"ask": 0.29,
 "last": 0.3,
 "volume": 31.77,
 "ticker": "KXNFLRSHATT-26OCT11PHIJAC-JACBTUTEN33-18"
@@ -9235,7 +9235,7 @@
 "bid": 0.49,
 "ask": 0.5,
 "last": 0.5,
-"volume": 551.49,
+"volume": 660.18,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-JACBTUTEN33-10"
 },
 {
@@ -9285,7 +9285,7 @@
 "bid": 0.48,
 "ask": 0.49,
 "last": 0.49,
-"volume": 66.56,
+"volume": 213.59,
 "ticker": "KXNFLREC-26OCT11PHIJAC-JACBTUTEN33-2"
 },
 {
@@ -9335,7 +9335,7 @@
 "bid": 0.81,
 "ask": 0.82,
 "last": 0.82,
-"volume": 162.84,
+"volume": 187.16,
 "ticker": "KXNFLRSHYDS-26OCT11PHIJAC-JACBTUTEN33-40"
 },
 {
@@ -9345,7 +9345,7 @@
 "bid": 0.69,
 "ask": 0.7,
 "last": 0.7,
-"volume": 148.72,
+"volume": 155.71,
 "ticker": "KXNFLRSHYDS-26OCT11PHIJAC-JACBTUTEN33-50"
 },
 {
@@ -9355,7 +9355,7 @@
 "bid": 0.58,
 "ask": 0.59,
 "last": 0.59,
-"volume": 9696.24,
+"volume": 9710.24,
 "ticker": "KXNFLRSHYDS-26OCT11PHIJAC-JACBTUTEN33-60"
 },
 {
@@ -9365,7 +9365,7 @@
 "bid": 0.45,
 "ask": 0.46,
 "last": 0.46,
-"volume": 1969.71,
+"volume": 2022.07,
 "ticker": "KXNFLRSHYDS-26OCT11PHIJAC-JACBTUTEN33-70"
 },
 {
@@ -9454,8 +9454,8 @@
 "line": 40,
 "bid": 0.39,
 "ask": 0.4,
-"last": 0.4,
-"volume": 643.48,
+"last": 0.39,
+"volume": 646.67,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-JACBSTRANGE85-40"
 },
 {
@@ -9544,8 +9544,8 @@
 "line": 3,
 "bid": 0.6,
 "ask": 0.62,
-"last": 0.63,
-"volume": 664.78,
+"last": 0.62,
+"volume": 1308.78,
 "ticker": "KXNFLREC-26OCT11PHIJAC-JACBSTRANGE85-3"
 },
 {
@@ -9554,8 +9554,8 @@
 "line": 4,
 "bid": 0.41,
 "ask": 0.42,
-"last": 0.41,
-"volume": 2131.99,
+"last": 0.42,
+"volume": 2207.33,
 "ticker": "KXNFLREC-26OCT11PHIJAC-JACBSTRANGE85-4"
 },
 {
@@ -9613,9 +9613,9 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.5,
-"ask": 0.51,
+"ask": 0.52,
 "last": 0.51,
-"volume": 960.04,
+"volume": 1273.73,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-JACBTHOMAS7-25"
 },
 {
@@ -9623,7 +9623,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.29,
-"ask": 0.31,
+"ask": 0.3,
 "last": 0.31,
 "volume": 2304.38,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-JACBTHOMAS7-40"
@@ -9635,7 +9635,7 @@
 "bid": 0.19,
 "ask": 0.2,
 "last": 0.2,
-"volume": 2426.47,
+"volume": 3018.32,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-JACBTHOMAS7-50"
 },
 {
@@ -9663,7 +9663,7 @@
 "stat": "receiving_yards",
 "line": 80,
 "bid": 0.04,
-"ask": 0.07,
+"ask": 0.08,
 "last": 0.08,
 "volume": 58.71,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-JACBTHOMAS7-80"
@@ -9702,7 +9702,7 @@
 "player": "Brian Thomas Jr.",
 "stat": "receptions",
 "line": 5,
-"bid": 0.08,
+"bid": 0.06,
 "ask": 0.11,
 "last": 0.06,
 "volume": 2518.41,
@@ -9732,8 +9732,8 @@
 "player": "Chris Rodriguez Jr.",
 "stat": "carries",
 "line": 7,
-"bid": 0.5,
-"ask": 0.52,
+"bid": 0.49,
+"ask": 0.51,
 "last": 0.53,
 "volume": 1137.82,
 "ticker": "KXNFLRSHATT-26OCT11PHIJAC-JACCRODRIGUEZ24-7"
@@ -9843,7 +9843,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.81,
-"ask": 0.87,
+"ask": 0.86,
 "last": 0.89,
 "volume": 9.89,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-PHIDGOEDERT88-15"
@@ -9872,10 +9872,10 @@
 "player": "Dallas Goedert",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.31,
+"bid": 0.38,
 "ask": 0.41,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.41,
+"volume": 46.84,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-PHIDGOEDERT88-50"
 },
 {
@@ -9923,7 +9923,7 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.04,
-"ask": 0.07,
+"ask": 0.06,
 "last": 0.08,
 "volume": 58.71,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-PHIDGOEDERT88-100"
@@ -9942,8 +9942,8 @@
 "player": "Dallas Goedert",
 "stat": "receptions",
 "line": 2,
-"bid": 0.88,
-"ask": 0.94,
+"bid": 0.8,
+"ask": 0.95,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIDGOEDERT88-2"
@@ -9962,8 +9962,8 @@
 "player": "Dallas Goedert",
 "stat": "receptions",
 "line": 4,
-"bid": 0.55,
-"ask": 0.65,
+"bid": 0.6,
+"ask": 0.66,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIDGOEDERT88-4"
@@ -9983,7 +9983,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.19,
-"ask": 0.31,
+"ask": 0.32,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIDGOEDERT88-6"
@@ -10052,7 +10052,7 @@
 "player": "Dameon Pierce",
 "stat": "rushing_yards",
 "line": 15,
-"bid": 0.51,
+"bid": 0.53,
 "ask": 0.63,
 "last": 0.0,
 "volume": 0.0,
@@ -10082,7 +10082,7 @@
 "player": "Dameon Pierce",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.33,
+"bid": 0.32,
 "ask": 0.4,
 "last": 0.0,
 "volume": 0.0,
@@ -10102,8 +10102,8 @@
 "player": "Dameon Pierce",
 "stat": "rushing_yards",
 "line": 50,
-"bid": 0.17,
-"ask": 0.22,
+"bid": 0.18,
+"ask": 0.2,
 "last": 0.18,
 "volume": 2415.74,
 "ticker": "KXNFLRSHYDS-26OCT11PHIJAC-PHIDPIERCE39-50"
@@ -10142,7 +10142,7 @@
 "player": "Darius Cooper",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.6,
+"bid": 0.61,
 "ask": 0.63,
 "last": 0.63,
 "volume": 3.89,
@@ -10172,7 +10172,7 @@
 "player": "Darius Cooper",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.12,
+"bid": 0.13,
 "ask": 0.14,
 "last": 0.16,
 "volume": 82.69,
@@ -10203,7 +10203,7 @@
 "stat": "receiving_yards",
 "line": 80,
 "bid": 0.03,
-"ask": 0.04,
+"ask": 0.05,
 "last": 0.06,
 "volume": 11.25,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-PHIDCOOPER80-80"
@@ -10212,10 +10212,10 @@
 "player": "Darius Cooper",
 "stat": "receptions",
 "line": 2,
-"bid": 0.63,
-"ask": 0.64,
+"bid": 0.65,
+"ask": 0.66,
 "last": 0.64,
-"volume": 200.0,
+"volume": 201.52,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIDCOOPER80-2"
 },
 {
@@ -10302,8 +10302,8 @@
 "player": "Dontayvion Wicks",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.39,
-"ask": 0.43,
+"bid": 0.37,
+"ask": 0.44,
 "last": 0.39,
 "volume": 38.82,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-PHIDWICKS13-50"
@@ -10312,8 +10312,8 @@
 "player": "Dontayvion Wicks",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.29,
-"ask": 0.34,
+"bid": 0.27,
+"ask": 0.33,
 "last": 0.34,
 "volume": 29.79,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-PHIDWICKS13-60"
@@ -10323,7 +10323,7 @@
 "stat": "receiving_yards",
 "line": 70,
 "bid": 0.22,
-"ask": 0.24,
+"ask": 0.25,
 "last": 0.23,
 "volume": 323.85,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-PHIDWICKS13-70"
@@ -10332,7 +10332,7 @@
 "player": "Dontayvion Wicks",
 "stat": "receiving_yards",
 "line": 80,
-"bid": 0.16,
+"bid": 0.14,
 "ask": 0.19,
 "last": 0.17,
 "volume": 44.98,
@@ -10383,7 +10383,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.86,
-"ask": 0.87,
+"ask": 0.88,
 "last": 0.88,
 "volume": 141.81,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIDWICKS13-2"
@@ -10392,8 +10392,8 @@
 "player": "Dontayvion Wicks",
 "stat": "receptions",
 "line": 3,
-"bid": 0.66,
-"ask": 0.72,
+"bid": 0.67,
+"ask": 0.71,
 "last": 0.75,
 "volume": 56.86,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIDWICKS13-3"
@@ -10422,8 +10422,8 @@
 "player": "Dontayvion Wicks",
 "stat": "receptions",
 "line": 6,
-"bid": 0.12,
-"ask": 0.21,
+"bid": 0.11,
+"ask": 0.22,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIDWICKS13-6"
@@ -10463,7 +10463,7 @@
 "stat": "receptions",
 "line": 10,
 "bid": 0.02,
-"ask": 0.04,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIDWICKS13-10"
@@ -10495,7 +10495,7 @@
 "bid": 0.52,
 "ask": 0.53,
 "last": 0.53,
-"volume": 2679.38,
+"volume": 2679.56,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-JACJMEYERS3-40"
 },
 {
@@ -10553,7 +10553,7 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.04,
-"ask": 0.09,
+"ask": 0.08,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-JACJMEYERS3-100"
@@ -10573,9 +10573,9 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.85,
-"ask": 0.88,
-"last": 0.0,
-"volume": 0.0,
+"ask": 0.89,
+"last": 0.85,
+"volume": 34.16,
 "ticker": "KXNFLREC-26OCT11PHIJAC-JACJMEYERS3-2"
 },
 {
@@ -10592,10 +10592,10 @@
 "player": "Jakobi Meyers",
 "stat": "receptions",
 "line": 4,
-"bid": 0.5,
-"ask": 0.52,
+"bid": 0.49,
+"ask": 0.51,
 "last": 0.52,
-"volume": 37.03,
+"volume": 37.21,
 "ticker": "KXNFLREC-26OCT11PHIJAC-JACJMEYERS3-4"
 },
 {
@@ -10633,7 +10633,7 @@
 "stat": "receptions",
 "line": 8,
 "bid": 0.03,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11PHIJAC-JACJMEYERS3-8"
@@ -10673,7 +10673,7 @@
 "stat": "carries",
 "line": 10,
 "bid": 0.11,
-"ask": 0.14,
+"ask": 0.15,
 "last": 0.16,
 "volume": 8.08,
 "ticker": "KXNFLRSHATT-26OCT11PHIJAC-PHIJHURTS1-10"
@@ -10703,7 +10703,7 @@
 "stat": "passing_tds",
 "line": 3,
 "bid": 0.06,
-"ask": 0.07,
+"ask": 0.08,
 "last": 0.08,
 "volume": 4016.42,
 "ticker": "KXNFLPASSTDS-26OCT11PHIJAC-PHIJHURTS1-3"
@@ -10722,7 +10722,7 @@
 "player": "Jalen Hurts",
 "stat": "passing_yards",
 "line": 150,
-"bid": 0.7,
+"bid": 0.69,
 "ask": 0.73,
 "last": 0.74,
 "volume": 446.28,
@@ -10732,7 +10732,7 @@
 "player": "Jalen Hurts",
 "stat": "passing_yards",
 "line": 175,
-"bid": 0.57,
+"bid": 0.56,
 "ask": 0.58,
 "last": 0.59,
 "volume": 2604.22,
@@ -10753,7 +10753,7 @@
 "stat": "passing_yards",
 "line": 225,
 "bid": 0.26,
-"ask": 0.29,
+"ask": 0.28,
 "last": 0.27,
 "volume": 1694.77,
 "ticker": "KXNFLPASSYDS-26OCT11PHIJAC-PHIJHURTS1-225"
@@ -10762,10 +10762,10 @@
 "player": "Jalen Hurts",
 "stat": "passing_yards",
 "line": 250,
-"bid": 0.16,
+"bid": 0.15,
 "ask": 0.17,
-"last": 0.18,
-"volume": 1355.81,
+"last": 0.15,
+"volume": 1402.52,
 "ticker": "KXNFLPASSYDS-26OCT11PHIJAC-PHIJHURTS1-250"
 },
 {
@@ -10804,18 +10804,18 @@
 "line": 10,
 "bid": 0.82,
 "ask": 0.85,
-"last": 0.84,
-"volume": 4.3,
+"last": 0.85,
+"volume": 56.02,
 "ticker": "KXNFLRSHYDS-26OCT11PHIJAC-PHIJHURTS1-10"
 },
 {
 "player": "Jalen Hurts",
 "stat": "rushing_yards",
 "line": 15,
-"bid": 0.7,
+"bid": 0.73,
 "ask": 0.75,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.75,
+"volume": 133.0,
 "ticker": "KXNFLRSHYDS-26OCT11PHIJAC-PHIJHURTS1-15"
 },
 {
@@ -10832,7 +10832,7 @@
 "player": "Jalen Hurts",
 "stat": "rushing_yards",
 "line": 25,
-"bid": 0.54,
+"bid": 0.55,
 "ask": 0.56,
 "last": 0.56,
 "volume": 1496.5,
@@ -10862,8 +10862,8 @@
 "player": "Jalen Hurts",
 "stat": "rushing_yards",
 "line": 50,
-"bid": 0.14,
-"ask": 0.17,
+"bid": 0.11,
+"ask": 0.16,
 "last": 0.14,
 "volume": 440.88,
 "ticker": "KXNFLRSHYDS-26OCT11PHIJAC-PHIJHURTS1-50"
@@ -10872,7 +10872,7 @@
 "player": "Jalen Hurts",
 "stat": "rushing_yards",
 "line": 60,
-"bid": 0.08,
+"bid": 0.07,
 "ask": 0.09,
 "last": 0.09,
 "volume": 170.0,
@@ -10933,7 +10933,7 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.04,
-"ask": 0.09,
+"ask": 0.08,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-JACJCAMERON19-50"
@@ -10954,8 +10954,8 @@
 "line": 2,
 "bid": 0.38,
 "ask": 0.39,
-"last": 0.4,
-"volume": 655.56,
+"last": 0.39,
+"volume": 899.45,
 "ticker": "KXNFLREC-26OCT11PHIJAC-JACJCAMERON19-2"
 },
 {
@@ -10993,7 +10993,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.78,
-"ask": 0.82,
+"ask": 0.83,
 "last": 0.83,
 "volume": 5.95,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-PHIMLEMON9-15"
@@ -11032,7 +11032,7 @@
 "player": "Makai Lemon",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.19,
+"bid": 0.18,
 "ask": 0.22,
 "last": 0.22,
 "volume": 77.08,
@@ -11043,7 +11043,7 @@
 "stat": "receiving_yards",
 "line": 70,
 "bid": 0.12,
-"ask": 0.15,
+"ask": 0.14,
 "last": 0.13,
 "volume": 71.25,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-PHIMLEMON9-70"
@@ -11052,7 +11052,7 @@
 "player": "Makai Lemon",
 "stat": "receiving_yards",
 "line": 80,
-"bid": 0.06,
+"bid": 0.04,
 "ask": 0.1,
 "last": 0.1,
 "volume": 47.03,
@@ -11073,7 +11073,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.78,
-"ask": 0.87,
+"ask": 0.86,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIMLEMON9-2"
@@ -11083,7 +11083,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.66,
-"ask": 0.71,
+"ask": 0.69,
 "last": 0.66,
 "volume": 30.5,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIMLEMON9-3"
@@ -11095,7 +11095,7 @@
 "bid": 0.51,
 "ask": 0.52,
 "last": 0.52,
-"volume": 3733.71,
+"volume": 3739.29,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIMLEMON9-4"
 },
 {
@@ -11113,7 +11113,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.2,
-"ask": 0.21,
+"ask": 0.22,
 "last": 0.26,
 "volume": 501.0,
 "ticker": "KXNFLREC-26OCT11PHIJAC-PHIMLEMON9-6"
@@ -11185,7 +11185,7 @@
 "bid": 0.51,
 "ask": 0.52,
 "last": 0.52,
-"volume": 3483.38,
+"volume": 3583.36,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-JACPWASHINGTON11-60"
 },
 {
@@ -11243,7 +11243,7 @@
 "stat": "receiving_yards",
 "line": 120,
 "bid": 0.11,
-"ask": 0.12,
+"ask": 0.13,
 "last": 0.13,
 "volume": 676.72,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-JACPWASHINGTON11-120"
@@ -11275,7 +11275,7 @@
 "bid": 0.82,
 "ask": 0.85,
 "last": 0.85,
-"volume": 31.02,
+"volume": 104.73,
 "ticker": "KXNFLREC-26OCT11PHIJAC-JACPWASHINGTON11-3"
 },
 {
@@ -11363,7 +11363,7 @@
 "stat": "carries",
 "line": 1,
 "bid": 0.92,
-"ask": 0.94,
+"ask": 0.93,
 "last": 0.93,
 "volume": 65.0,
 "ticker": "KXNFLRSHATT-26OCT11PHIJAC-JACTLAWRENCE16-1"
@@ -11395,7 +11395,7 @@
 "bid": 0.82,
 "ask": 0.85,
 "last": 0.85,
-"volume": 11.04,
+"volume": 1034.25,
 "ticker": "KXNFLPASSTDS-26OCT11PHIJAC-JACTLAWRENCE16-1"
 },
 {
@@ -11455,7 +11455,7 @@
 "bid": 0.78,
 "ask": 0.79,
 "last": 0.79,
-"volume": 170.24,
+"volume": 198.01,
 "ticker": "KXNFLPASSYDS-26OCT11PHIJAC-JACTLAWRENCE16-175"
 },
 {
@@ -11465,7 +11465,7 @@
 "bid": 0.64,
 "ask": 0.65,
 "last": 0.65,
-"volume": 223.05,
+"volume": 233.61,
 "ticker": "KXNFLPASSYDS-26OCT11PHIJAC-JACTLAWRENCE16-200"
 },
 {
@@ -11475,7 +11475,7 @@
 "bid": 0.49,
 "ask": 0.5,
 "last": 0.5,
-"volume": 743.06,
+"volume": 762.38,
 "ticker": "KXNFLPASSYDS-26OCT11PHIJAC-JACTLAWRENCE16-225"
 },
 {
@@ -11494,8 +11494,8 @@
 "line": 275,
 "bid": 0.22,
 "ask": 0.23,
-"last": 0.22,
-"volume": 406.54,
+"last": 0.23,
+"volume": 806.5,
 "ticker": "KXNFLPASSYDS-26OCT11PHIJAC-JACTLAWRENCE16-275"
 },
 {
@@ -11523,7 +11523,7 @@
 "stat": "passing_yards",
 "line": 350,
 "bid": 0.05,
-"ask": 0.06,
+"ask": 0.07,
 "last": 0.06,
 "volume": 1563.77,
 "ticker": "KXNFLPASSYDS-26OCT11PHIJAC-JACTLAWRENCE16-350"
@@ -11543,7 +11543,7 @@
 "stat": "rushing_yards",
 "line": 15,
 "bid": 0.48,
-"ask": 0.51,
+"ask": 0.52,
 "last": 0.51,
 "volume": 15.5,
 "ticker": "KXNFLRSHYDS-26OCT11PHIJAC-JACTLAWRENCE16-15"
@@ -11602,7 +11602,7 @@
 "player": "Will Shipley",
 "stat": "carries",
 "line": 8,
-"bid": 0.74,
+"bid": 0.72,
 "ask": 0.75,
 "last": 0.75,
 "volume": 81.55,
@@ -11635,7 +11635,7 @@
 "bid": 0.51,
 "ask": 0.52,
 "last": 0.52,
-"volume": 3377.33,
+"volume": 3423.84,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-PHIWSHIPLEY28-15"
 },
 {
@@ -11652,8 +11652,8 @@
 "player": "Will Shipley",
 "stat": "receiving_yards",
 "line": 40,
-"bid": 0.1,
-"ask": 0.11,
+"bid": 0.11,
+"ask": 0.12,
 "last": 0.11,
 "volume": 1342.88,
 "ticker": "KXNFLRECYDS-26OCT11PHIJAC-PHIWSHIPLEY28-40"
@@ -11662,7 +11662,7 @@
 "player": "Will Shipley",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.05,
+"bid": 0.04,
 "ask": 0.06,
 "last": 0.08,
 "volume": 197.26,
@@ -11765,7 +11765,7 @@
 "bid": 0.41,
 "ask": 0.42,
 "last": 0.42,
-"volume": 4968.4,
+"volume": 4998.15,
 "ticker": "KXNFLRSHYDS-26OCT11PHIJAC-PHIWSHIPLEY28-40"
 },
 {
@@ -11785,7 +11785,7 @@
 "bid": 0.2,
 "ask": 0.21,
 "last": 0.21,
-"volume": 555.29,
+"volume": 717.29,
 "ticker": "KXNFLRSHYDS-26OCT11PHIJAC-PHIWSHIPLEY28-60"
 },
 {
@@ -11864,8 +11864,8 @@
 "player": "Aaron Rodgers",
 "stat": "passing_tds",
 "line": 3,
-"bid": 0.17,
-"ask": 0.2,
+"bid": 0.16,
+"ask": 0.19,
 "last": 0.21,
 "volume": 157.93,
 "ticker": "KXNFLPASSTDS-26OCT11INDPIT-PITARODGERS8-3"
@@ -11915,9 +11915,9 @@
 "stat": "passing_yards",
 "line": 225,
 "bid": 0.49,
-"ask": 0.51,
+"ask": 0.5,
 "last": 0.51,
-"volume": 1633.05,
+"volume": 1636.84,
 "ticker": "KXNFLPASSYDS-26OCT11INDPIT-PITARODGERS8-225"
 },
 {
@@ -11984,7 +11984,7 @@
 "player": "Aaron Rodgers",
 "stat": "rushing_yards",
 "line": 15,
-"bid": 0.1,
+"bid": 0.09,
 "ask": 0.12,
 "last": 0.1,
 "volume": 328.67,
@@ -12025,7 +12025,7 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.5,
-"ask": 0.54,
+"ask": 0.53,
 "last": 0.55,
 "volume": 2188.63,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITDMETCALF4-50"
@@ -12104,8 +12104,8 @@
 "player": "DK Metcalf",
 "stat": "receptions",
 "line": 2,
-"bid": 0.88,
-"ask": 0.91,
+"bid": 0.89,
+"ask": 0.92,
 "last": 0.93,
 "volume": 95.93,
 "ticker": "KXNFLREC-26OCT11INDPIT-PITDMETCALF4-2"
@@ -12114,7 +12114,7 @@
 "player": "DK Metcalf",
 "stat": "receptions",
 "line": 3,
-"bid": 0.72,
+"bid": 0.73,
 "ask": 0.79,
 "last": 0.0,
 "volume": 0.0,
@@ -12124,7 +12124,7 @@
 "player": "DK Metcalf",
 "stat": "receptions",
 "line": 4,
-"bid": 0.58,
+"bid": 0.57,
 "ask": 0.63,
 "last": 0.63,
 "volume": 309.44,
@@ -12134,7 +12134,7 @@
 "player": "DK Metcalf",
 "stat": "receptions",
 "line": 5,
-"bid": 0.41,
+"bid": 0.4,
 "ask": 0.42,
 "last": 0.41,
 "volume": 1318.03,
@@ -12144,8 +12144,8 @@
 "player": "DK Metcalf",
 "stat": "receptions",
 "line": 6,
-"bid": 0.14,
-"ask": 0.27,
+"bid": 0.16,
+"ask": 0.28,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-PITDMETCALF4-6"
@@ -12154,7 +12154,7 @@
 "player": "DK Metcalf",
 "stat": "receptions",
 "line": 7,
-"bid": 0.13,
+"bid": 0.06,
 "ask": 0.17,
 "last": 0.0,
 "volume": 0.0,
@@ -12164,7 +12164,7 @@
 "player": "DK Metcalf",
 "stat": "receptions",
 "line": 8,
-"bid": 0.07,
+"bid": 0.04,
 "ask": 0.1,
 "last": 0.06,
 "volume": 12.0,
@@ -12195,7 +12195,7 @@
 "stat": "passing_tds",
 "line": 1,
 "bid": 0.72,
-"ask": 0.75,
+"ask": 0.76,
 "last": 0.75,
 "volume": 29.69,
 "ticker": "KXNFLPASSTDS-26OCT11INDPIT-INDDJONES17-1"
@@ -12206,8 +12206,8 @@
 "line": 2,
 "bid": 0.34,
 "ask": 0.35,
-"last": 0.34,
-"volume": 65.14,
+"last": 0.35,
+"volume": 78.8,
 "ticker": "KXNFLPASSTDS-26OCT11INDPIT-INDDJONES17-2"
 },
 {
@@ -12264,10 +12264,10 @@
 "player": "Daniel Jones",
 "stat": "passing_yards",
 "line": 225,
-"bid": 0.41,
+"bid": 0.4,
 "ask": 0.43,
-"last": 0.41,
-"volume": 963.12,
+"last": 0.4,
+"volume": 983.44,
 "ticker": "KXNFLPASSYDS-26OCT11INDPIT-INDDJONES17-225"
 },
 {
@@ -12324,7 +12324,7 @@
 "player": "Daniel Jones",
 "stat": "rushing_yards",
 "line": 10,
-"bid": 0.45,
+"bid": 0.43,
 "ask": 0.46,
 "last": 0.46,
 "volume": 3692.06,
@@ -12375,7 +12375,7 @@
 "stat": "rushing_yards",
 "line": 40,
 "bid": 0.03,
-"ask": 0.05,
+"ask": 0.06,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11INDPIT-INDDJONES17-40"
@@ -12464,7 +12464,7 @@
 "player": "Darnell Washington",
 "stat": "receptions",
 "line": 3,
-"bid": 0.42,
+"bid": 0.41,
 "ask": 0.43,
 "last": 0.0,
 "volume": 0.0,
@@ -12475,7 +12475,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.12,
-"ask": 0.22,
+"ask": 0.23,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-PITDWASHINGTON80-4"
@@ -12484,7 +12484,7 @@
 "player": "Darnell Washington",
 "stat": "receptions",
 "line": 5,
-"bid": 0.05,
+"bid": 0.04,
 "ask": 0.11,
 "last": 0.07,
 "volume": 6.0,
@@ -12514,8 +12514,8 @@
 "player": "Germie Bernard",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.41,
-"ask": 0.42,
+"bid": 0.39,
+"ask": 0.4,
 "last": 0.41,
 "volume": 1896.58,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITGBERNARD17-25"
@@ -12525,9 +12525,9 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.19,
-"ask": 0.22,
-"last": 0.22,
-"volume": 3645.4,
+"ask": 0.21,
+"last": 0.2,
+"volume": 3646.4,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITGBERNARD17-40"
 },
 {
@@ -12556,16 +12556,16 @@
 "line": 2,
 "bid": 0.62,
 "ask": 0.65,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.62,
+"volume": 15.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-PITGBERNARD17-2"
 },
 {
 "player": "Germie Bernard",
 "stat": "receptions",
 "line": 3,
-"bid": 0.38,
-"ask": 0.41,
+"bid": 0.37,
+"ask": 0.39,
 "last": 0.39,
 "volume": 4955.73,
 "ticker": "KXNFLREC-26OCT11INDPIT-PITGBERNARD17-3"
@@ -12604,7 +12604,7 @@
 "player": "Jaylen Warren",
 "stat": "carries",
 "line": 13,
-"bid": 0.42,
+"bid": 0.09,
 "ask": 0.87,
 "last": 0.0,
 "volume": 0.0,
@@ -12637,7 +12637,7 @@
 "bid": 0.55,
 "ask": 0.6,
 "last": 0.6,
-"volume": 77.36,
+"volume": 81.71,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITJWARREN30-15"
 },
 {
@@ -12645,9 +12645,9 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.36,
-"ask": 0.39,
+"ask": 0.38,
 "last": 0.38,
-"volume": 468.07,
+"volume": 708.64,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITJWARREN30-25"
 },
 {
@@ -12685,7 +12685,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.7,
-"ask": 0.76,
+"ask": 0.75,
 "last": 0.77,
 "volume": 22.78,
 "ticker": "KXNFLREC-26OCT11INDPIT-PITJWARREN30-2"
@@ -12704,8 +12704,8 @@
 "player": "Jaylen Warren",
 "stat": "receptions",
 "line": 4,
-"bid": 0.32,
-"ask": 0.36,
+"bid": 0.31,
+"ask": 0.35,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-PITJWARREN30-4"
@@ -12764,8 +12764,8 @@
 "player": "Jaylen Warren",
 "stat": "rushing_yards",
 "line": 25,
-"bid": 0.8,
-"ask": 0.87,
+"bid": 0.82,
+"ask": 0.88,
 "last": 0.88,
 "volume": 28.44,
 "ticker": "KXNFLRSHYDS-26OCT11INDPIT-PITJWARREN30-25"
@@ -12774,10 +12774,10 @@
 "player": "Jaylen Warren",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.72,
+"bid": 0.78,
 "ask": 0.86,
-"last": 0.85,
-"volume": 1.49,
+"last": 0.86,
+"volume": 11.72,
 "ticker": "KXNFLRSHYDS-26OCT11INDPIT-PITJWARREN30-30"
 },
 {
@@ -12794,10 +12794,10 @@
 "player": "Jaylen Warren",
 "stat": "rushing_yards",
 "line": 50,
-"bid": 0.58,
+"bid": 0.6,
 "ask": 0.65,
-"last": 0.68,
-"volume": 21.28,
+"last": 0.64,
+"volume": 36.52,
 "ticker": "KXNFLRSHYDS-26OCT11INDPIT-PITJWARREN30-50"
 },
 {
@@ -12807,7 +12807,7 @@
 "bid": 0.5,
 "ask": 0.52,
 "last": 0.52,
-"volume": 1045.78,
+"volume": 1169.5,
 "ticker": "KXNFLRSHYDS-26OCT11INDPIT-PITJWARREN30-60"
 },
 {
@@ -12825,7 +12825,7 @@
 "stat": "rushing_yards",
 "line": 80,
 "bid": 0.3,
-"ask": 0.33,
+"ask": 0.32,
 "last": 0.34,
 "volume": 282.76,
 "ticker": "KXNFLRSHYDS-26OCT11INDPIT-PITJWARREN30-80"
@@ -12834,7 +12834,7 @@
 "player": "Jaylen Warren",
 "stat": "rushing_yards",
 "line": 90,
-"bid": 0.18,
+"bid": 0.21,
 "ask": 0.24,
 "last": 0.25,
 "volume": 135.01,
@@ -12875,7 +12875,7 @@
 "stat": "rushing_yards",
 "line": 130,
 "bid": 0.03,
-"ask": 0.1,
+"ask": 0.09,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11INDPIT-PITJWARREN30-130"
@@ -12915,7 +12915,7 @@
 "stat": "carries",
 "line": 17,
 "bid": 0.66,
-"ask": 0.71,
+"ask": 0.7,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11INDPIT-INDJTAYLOR28-17"
@@ -12925,7 +12925,7 @@
 "stat": "carries",
 "line": 20,
 "bid": 0.45,
-"ask": 0.48,
+"ask": 0.47,
 "last": 0.47,
 "volume": 55.95,
 "ticker": "KXNFLRSHATT-26OCT11INDPIT-INDJTAYLOR28-20"
@@ -12934,8 +12934,8 @@
 "player": "Jonathan Taylor",
 "stat": "carries",
 "line": 23,
-"bid": 0.27,
-"ask": 0.31,
+"bid": 0.26,
+"ask": 0.3,
 "last": 0.09,
 "volume": 5.46,
 "ticker": "KXNFLRSHATT-26OCT11INDPIT-INDJTAYLOR28-23"
@@ -12965,7 +12965,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.11,
-"ask": 0.14,
+"ask": 0.15,
 "last": 0.14,
 "volume": 760.0,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-INDJTAYLOR28-40"
@@ -12974,8 +12974,8 @@
 "player": "Jonathan Taylor",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.05,
-"ask": 0.08,
+"bid": 0.06,
+"ask": 0.09,
 "last": 0.09,
 "volume": 1760.0,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-INDJTAYLOR28-50"
@@ -12984,7 +12984,7 @@
 "player": "Jonathan Taylor",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.03,
+"bid": 0.02,
 "ask": 0.06,
 "last": 0.06,
 "volume": 2080.0,
@@ -13064,7 +13064,7 @@
 "player": "Jonathan Taylor",
 "stat": "rushing_yards",
 "line": 60,
-"bid": 0.74,
+"bid": 0.73,
 "ask": 0.76,
 "last": 0.75,
 "volume": 784.24,
@@ -13085,9 +13085,9 @@
 "stat": "rushing_yards",
 "line": 80,
 "bid": 0.54,
-"ask": 0.55,
-"last": 0.56,
-"volume": 566.57,
+"ask": 0.57,
+"last": 0.57,
+"volume": 583.68,
 "ticker": "KXNFLRSHYDS-26OCT11INDPIT-INDJTAYLOR28-80"
 },
 {
@@ -13114,8 +13114,8 @@
 "player": "Jonathan Taylor",
 "stat": "rushing_yards",
 "line": 110,
-"bid": 0.26,
-"ask": 0.29,
+"bid": 0.27,
+"ask": 0.3,
 "last": 0.29,
 "volume": 82.12,
 "ticker": "KXNFLRSHYDS-26OCT11INDPIT-INDJTAYLOR28-110"
@@ -13175,7 +13175,7 @@
 "stat": "rushing_yards",
 "line": 170,
 "bid": 0.03,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.06,
 "volume": 390.94,
 "ticker": "KXNFLRSHYDS-26OCT11INDPIT-INDJTAYLOR28-170"
@@ -13305,7 +13305,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.84,
-"ask": 0.87,
+"ask": 0.88,
 "last": 0.84,
 "volume": 4.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-INDJDOWNS2-3"
@@ -13385,7 +13385,7 @@
 "stat": "receptions",
 "line": 11,
 "bid": 0.02,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-INDJDOWNS2-11"
@@ -13405,7 +13405,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.52,
-"ask": 0.55,
+"ask": 0.54,
 "last": 0.54,
 "volume": 1148.23,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-INDLTREADWELL13-15"
@@ -13434,7 +13434,7 @@
 "player": "Laquon Treadwell",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.11,
+"bid": 0.1,
 "ask": 0.14,
 "last": 0.14,
 "volume": 4010.0,
@@ -13456,16 +13456,16 @@
 "line": 2,
 "bid": 0.46,
 "ask": 0.47,
-"last": 0.46,
-"volume": 2786.61,
+"last": 0.47,
+"volume": 3812.38,
 "ticker": "KXNFLREC-26OCT11INDPIT-INDLTREADWELL13-2"
 },
 {
 "player": "Laquon Treadwell",
 "stat": "receptions",
 "line": 3,
-"bid": 0.2,
-"ask": 0.24,
+"bid": 0.21,
+"ask": 0.25,
 "last": 0.24,
 "volume": 2371.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-INDLTREADWELL13-3"
@@ -13474,8 +13474,8 @@
 "player": "Laquon Treadwell",
 "stat": "receptions",
 "line": 4,
-"bid": 0.07,
-"ask": 0.15,
+"bid": 0.08,
+"ask": 0.14,
 "last": 0.14,
 "volume": 1787.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-INDLTREADWELL13-4"
@@ -13485,7 +13485,7 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.02,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.06,
 "volume": 4093.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-INDLTREADWELL13-5"
@@ -13574,7 +13574,7 @@
 "player": "Pat Freiermuth",
 "stat": "receptions",
 "line": 3,
-"bid": 0.58,
+"bid": 0.54,
 "ask": 0.63,
 "last": 0.0,
 "volume": 0.0,
@@ -13595,7 +13595,7 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.15,
-"ask": 0.24,
+"ask": 0.26,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-PITPFREIERMUTH88-5"
@@ -13634,7 +13634,7 @@
 "player": "Roman Wilson",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.82,
+"bid": 0.79,
 "ask": 0.86,
 "last": 0.83,
 "volume": 92.49,
@@ -13644,7 +13644,7 @@
 "player": "Roman Wilson",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.69,
+"bid": 0.67,
 "ask": 0.73,
 "last": 0.73,
 "volume": 5735.11,
@@ -13654,8 +13654,8 @@
 "player": "Roman Wilson",
 "stat": "receiving_yards",
 "line": 35,
-"bid": 0.58,
-"ask": 0.6,
+"bid": 0.57,
+"ask": 0.61,
 "last": 0.6,
 "volume": 26410.34,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITRWILSON14-35"
@@ -13667,7 +13667,7 @@
 "bid": 0.53,
 "ask": 0.54,
 "last": 0.54,
-"volume": 9663.29,
+"volume": 9846.27,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITRWILSON14-40"
 },
 {
@@ -13675,9 +13675,9 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.41,
-"ask": 0.42,
-"last": 0.42,
-"volume": 1783.53,
+"ask": 0.43,
+"last": 0.44,
+"volume": 24040.72,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITRWILSON14-50"
 },
 {
@@ -13687,7 +13687,7 @@
 "bid": 0.3,
 "ask": 0.31,
 "last": 0.31,
-"volume": 1860.84,
+"volume": 1891.61,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITRWILSON14-60"
 },
 {
@@ -13706,8 +13706,8 @@
 "line": 80,
 "bid": 0.13,
 "ask": 0.15,
-"last": 0.16,
-"volume": 1071.04,
+"last": 0.15,
+"volume": 1134.4,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITRWILSON14-80"
 },
 {
@@ -13716,8 +13716,8 @@
 "line": 90,
 "bid": 0.1,
 "ask": 0.11,
-"last": 0.12,
-"volume": 429.31,
+"last": 0.11,
+"volume": 514.88,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITRWILSON14-90"
 },
 {
@@ -13726,16 +13726,16 @@
 "line": 100,
 "bid": 0.07,
 "ask": 0.09,
-"last": 0.1,
-"volume": 3816.49,
+"last": 0.09,
+"volume": 3869.71,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-PITRWILSON14-100"
 },
 {
 "player": "Roman Wilson",
 "stat": "receptions",
 "line": 2,
-"bid": 0.8,
-"ask": 0.84,
+"bid": 0.78,
+"ask": 0.85,
 "last": 0.79,
 "volume": 102.8,
 "ticker": "KXNFLREC-26OCT11INDPIT-PITRWILSON14-2"
@@ -13765,7 +13765,7 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.22,
-"ask": 0.26,
+"ask": 0.27,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-PITRWILSON14-5"
@@ -13774,7 +13774,7 @@
 "player": "Roman Wilson",
 "stat": "receptions",
 "line": 6,
-"bid": 0.07,
+"bid": 0.04,
 "ask": 0.16,
 "last": 0.0,
 "volume": 0.0,
@@ -13795,7 +13795,7 @@
 "stat": "receptions",
 "line": 8,
 "bid": 0.02,
-"ask": 0.07,
+"ask": 0.06,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-PITRWILSON14-8"
@@ -13824,8 +13824,8 @@
 "player": "Tyler Warren",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.44,
-"ask": 0.45,
+"bid": 0.43,
+"ask": 0.44,
 "last": 0.43,
 "volume": 14172.98,
 "ticker": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50"
@@ -13955,7 +13955,7 @@
 "stat": "receptions",
 "line": 7,
 "bid": 0.25,
-"ask": 0.29,
+"ask": 0.3,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11INDPIT-INDTWARREN84-7"
@@ -14017,7 +14017,7 @@
 "stat": "carries",
 "line": 14,
 "bid": 0.71,
-"ask": 0.78,
+"ask": 0.77,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11MINNO-MINAJONES33-14"
@@ -14026,8 +14026,8 @@
 "player": "Aaron Jones Sr.",
 "stat": "carries",
 "line": 17,
-"bid": 0.54,
-"ask": 0.56,
+"bid": 0.51,
+"ask": 0.57,
 "last": 0.58,
 "volume": 308.79,
 "ticker": "KXNFLRSHATT-26OCT11MINNO-MINAJONES33-17"
@@ -14037,7 +14037,7 @@
 "stat": "carries",
 "line": 20,
 "bid": 0.33,
-"ask": 0.36,
+"ask": 0.35,
 "last": 0.36,
 "volume": 134.21,
 "ticker": "KXNFLRSHATT-26OCT11MINNO-MINAJONES33-20"
@@ -14106,8 +14106,8 @@
 "player": "Aaron Jones Sr.",
 "stat": "receptions",
 "line": 3,
-"bid": 0.56,
-"ask": 0.57,
+"bid": 0.54,
+"ask": 0.56,
 "last": 0.6,
 "volume": 24.31,
 "ticker": "KXNFLREC-26OCT11MINNO-MINAJONES33-3"
@@ -14126,8 +14126,8 @@
 "player": "Aaron Jones Sr.",
 "stat": "receptions",
 "line": 5,
-"bid": 0.1,
-"ask": 0.2,
+"bid": 0.08,
+"ask": 0.21,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11MINNO-MINAJONES33-5"
@@ -14136,8 +14136,8 @@
 "player": "Aaron Jones Sr.",
 "stat": "receptions",
 "line": 6,
-"bid": 0.07,
-"ask": 0.11,
+"bid": 0.03,
+"ask": 0.1,
 "last": 0.08,
 "volume": 22.0,
 "ticker": "KXNFLREC-26OCT11MINNO-MINAJONES33-6"
@@ -14166,10 +14166,10 @@
 "player": "Aaron Jones Sr.",
 "stat": "rushing_yards",
 "line": 40,
-"bid": 0.84,
+"bid": 0.83,
 "ask": 0.86,
 "last": 0.86,
-"volume": 169.78,
+"volume": 171.24,
 "ticker": "KXNFLRSHYDS-26OCT11MINNO-MINAJONES33-40"
 },
 {
@@ -14209,7 +14209,7 @@
 "bid": 0.4,
 "ask": 0.42,
 "last": 0.42,
-"volume": 283.39,
+"volume": 329.15,
 "ticker": "KXNFLRSHYDS-26OCT11MINNO-MINAJONES33-80"
 },
 {
@@ -14256,8 +14256,8 @@
 "player": "Aaron Jones Sr.",
 "stat": "rushing_yards",
 "line": 130,
-"bid": 0.05,
-"ask": 0.09,
+"bid": 0.04,
+"ask": 0.08,
 "last": 0.11,
 "volume": 42.78,
 "ticker": "KXNFLRSHYDS-26OCT11MINNO-MINAJONES33-130"
@@ -14469,7 +14469,7 @@
 "bid": 0.46,
 "ask": 0.47,
 "last": 0.47,
-"volume": 3358.76,
+"volume": 3399.78,
 "ticker": "KXNFLREC-26OCT11MINNO-NOCOLAVE12-7"
 },
 {
@@ -14506,8 +14506,8 @@
 "player": "Chris Olave",
 "stat": "receptions",
 "line": 11,
-"bid": 0.03,
-"ask": 0.09,
+"bid": 0.04,
+"ask": 0.08,
 "last": 0.06,
 "volume": 6.0,
 "ticker": "KXNFLREC-26OCT11MINNO-NOCOLAVE12-11"
@@ -14517,7 +14517,7 @@
 "stat": "receptions",
 "line": 12,
 "bid": 0.03,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11MINNO-NOCOLAVE12-12"
@@ -14526,7 +14526,7 @@
 "player": "Devaughn Vele",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.84,
+"bid": 0.83,
 "ask": 0.87,
 "last": 0.87,
 "volume": 45.37,
@@ -14649,7 +14649,7 @@
 "bid": 0.54,
 "ask": 0.55,
 "last": 0.55,
-"volume": 3509.86,
+"volume": 3597.99,
 "ticker": "KXNFLREC-26OCT11MINNO-NODVELE14-4"
 },
 {
@@ -14676,8 +14676,8 @@
 "player": "Devaughn Vele",
 "stat": "receptions",
 "line": 7,
-"bid": 0.1,
-"ask": 0.14,
+"bid": 0.09,
+"ask": 0.13,
 "last": 0.08,
 "volume": 22.0,
 "ticker": "KXNFLREC-26OCT11MINNO-NODVELE14-7"
@@ -14737,7 +14737,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.52,
-"ask": 0.55,
+"ask": 0.56,
 "last": 0.51,
 "volume": 88.12,
 "ticker": "KXNFLRECYDS-26OCT11MINNO-NOJJOHNSON83-40"
@@ -14827,9 +14827,9 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.89,
-"ask": 0.91,
-"last": 0.83,
-"volume": 9.08,
+"ask": 0.93,
+"last": 0.94,
+"volume": 55.05,
 "ticker": "KXNFLREC-26OCT11MINNO-NOJJOHNSON83-2"
 },
 {
@@ -14849,7 +14849,7 @@
 "bid": 0.6,
 "ask": 0.61,
 "last": 0.61,
-"volume": 911.0,
+"volume": 1074.0,
 "ticker": "KXNFLREC-26OCT11MINNO-NOJJOHNSON83-4"
 },
 {
@@ -14867,7 +14867,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.24,
-"ask": 0.28,
+"ask": 0.29,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11MINNO-NOJJOHNSON83-6"
@@ -14947,9 +14947,9 @@
 "stat": "carries",
 "line": 10,
 "bid": 0.23,
-"ask": 0.27,
+"ask": 0.26,
 "last": 0.23,
-"volume": 166.34,
+"volume": 317.4,
 "ticker": "KXNFLRSHATT-26OCT11MINNO-NOKMILLER5-10"
 },
 {
@@ -14957,7 +14957,7 @@
 "stat": "rushing_yards",
 "line": 10,
 "bid": 0.72,
-"ask": 0.76,
+"ask": 0.78,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11MINNO-NOKMILLER5-10"
@@ -14996,8 +14996,8 @@
 "player": "Kendre Miller",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.36,
-"ask": 0.39,
+"bid": 0.35,
+"ask": 0.38,
 "last": 0.37,
 "volume": 10073.24,
 "ticker": "KXNFLRSHYDS-26OCT11MINNO-NOKMILLER5-30"
@@ -15017,7 +15017,7 @@
 "stat": "rushing_yards",
 "line": 50,
 "bid": 0.12,
-"ask": 0.18,
+"ask": 0.17,
 "last": 0.18,
 "volume": 3011.44,
 "ticker": "KXNFLRSHYDS-26OCT11MINNO-NOKMILLER5-50"
@@ -15087,7 +15087,7 @@
 "stat": "passing_tds",
 "line": 4,
 "bid": 0.04,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.05,
 "volume": 32.0,
 "ticker": "KXNFLPASSTDS-26OCT11MINNO-MINKMURRAY1-4"
@@ -15117,7 +15117,7 @@
 "stat": "passing_yards",
 "line": 200,
 "bid": 0.57,
-"ask": 0.6,
+"ask": 0.59,
 "last": 0.59,
 "volume": 63.78,
 "ticker": "KXNFLPASSYDS-26OCT11MINNO-MINKMURRAY1-200"
@@ -15127,7 +15127,7 @@
 "stat": "passing_yards",
 "line": 225,
 "bid": 0.42,
-"ask": 0.44,
+"ask": 0.43,
 "last": 0.44,
 "volume": 2069.29,
 "ticker": "KXNFLPASSYDS-26OCT11MINNO-MINKMURRAY1-225"
@@ -15197,7 +15197,7 @@
 "stat": "rushing_yards",
 "line": 15,
 "bid": 0.58,
-"ask": 0.6,
+"ask": 0.59,
 "last": 0.6,
 "volume": 674.47,
 "ticker": "KXNFLRSHYDS-26OCT11MINNO-MINKMURRAY1-15"
@@ -15238,8 +15238,8 @@
 "line": 40,
 "bid": 0.11,
 "ask": 0.14,
-"last": 0.15,
-"volume": 13.0,
+"last": 0.14,
+"volume": 114.05,
 "ticker": "KXNFLRSHYDS-26OCT11MINNO-MINKMURRAY1-40"
 },
 {
@@ -15267,7 +15267,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.41,
-"ask": 0.47,
+"ask": 0.46,
 "last": 0.5,
 "volume": 3.46,
 "ticker": "KXNFLRECYDS-26OCT11MINNO-NONFANT87-15"
@@ -15326,7 +15326,7 @@
 "player": "Noah Fant",
 "stat": "receptions",
 "line": 3,
-"bid": 0.2,
+"bid": 0.22,
 "ask": 0.29,
 "last": 0.29,
 "volume": 23.32,
@@ -15336,8 +15336,8 @@
 "player": "Noah Fant",
 "stat": "receptions",
 "line": 4,
-"bid": 0.1,
-"ask": 0.14,
+"bid": 0.12,
+"ask": 0.15,
 "last": 0.15,
 "volume": 441.53,
 "ticker": "KXNFLREC-26OCT11MINNO-NONFANT87-4"
@@ -15388,8 +15388,8 @@
 "line": 40,
 "bid": 0.42,
 "ask": 0.45,
-"last": 0.44,
-"volume": 380.24,
+"last": 0.45,
+"volume": 423.03,
 "ticker": "KXNFLRECYDS-26OCT11MINNO-MINTHOCKENSON87-40"
 },
 {
@@ -15407,7 +15407,7 @@
 "stat": "receiving_yards",
 "line": 60,
 "bid": 0.19,
-"ask": 0.24,
+"ask": 0.23,
 "last": 0.23,
 "volume": 495.05,
 "ticker": "KXNFLRECYDS-26OCT11MINNO-MINTHOCKENSON87-60"
@@ -15437,7 +15437,7 @@
 "stat": "receiving_yards",
 "line": 90,
 "bid": 0.03,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11MINNO-MINTHOCKENSON87-90"
@@ -15477,7 +15477,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.74,
-"ask": 0.8,
+"ask": 0.79,
 "last": 0.81,
 "volume": 10.84,
 "ticker": "KXNFLREC-26OCT11MINNO-MINTHOCKENSON87-3"
@@ -15496,8 +15496,8 @@
 "player": "T.J. Hockenson",
 "stat": "receptions",
 "line": 5,
-"bid": 0.45,
-"ask": 0.46,
+"bid": 0.43,
+"ask": 0.45,
 "last": 0.47,
 "volume": 2127.36,
 "ticker": "KXNFLREC-26OCT11MINNO-MINTHOCKENSON87-5"
@@ -15547,7 +15547,7 @@
 "stat": "receptions",
 "line": 10,
 "bid": 0.02,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11MINNO-MINTHOCKENSON87-10"
@@ -15616,7 +15616,7 @@
 "player": "Tyler Shough",
 "stat": "passing_yards",
 "line": 175,
-"bid": 0.77,
+"bid": 0.79,
 "ask": 0.83,
 "last": 0.83,
 "volume": 57.13,
@@ -15636,10 +15636,10 @@
 "player": "Tyler Shough",
 "stat": "passing_yards",
 "line": 225,
-"bid": 0.51,
-"ask": 0.57,
-"last": 0.59,
-"volume": 54.16,
+"bid": 0.54,
+"ask": 0.58,
+"last": 0.58,
+"volume": 79.31,
 "ticker": "KXNFLPASSYDS-26OCT11MINNO-NOTSHOUGH6-225"
 },
 {
@@ -15719,7 +15719,7 @@
 "bid": 0.31,
 "ask": 0.32,
 "last": 0.32,
-"volume": 1932.53,
+"volume": 1962.36,
 "ticker": "KXNFLRSHYDS-26OCT11MINNO-NOTSHOUGH6-15"
 },
 {
@@ -15739,17 +15739,17 @@
 "bid": 0.15,
 "ask": 0.16,
 "last": 0.16,
-"volume": 8219.17,
+"volume": 8278.19,
 "ticker": "KXNFLRSHYDS-26OCT11MINNO-NOTSHOUGH6-25"
 },
 {
 "player": "Tyler Shough",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.04,
+"bid": 0.07,
 "ask": 0.09,
-"last": 0.09,
-"volume": 131.46,
+"last": 0.08,
+"volume": 137.46,
 "ticker": "KXNFLRSHYDS-26OCT11MINNO-NOTSHOUGH6-30"
 },
 {
@@ -15778,8 +15778,8 @@
 "player": "AJ Barner",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.47,
-"ask": 0.48,
+"bid": 0.46,
+"ask": 0.47,
 "last": 0.48,
 "volume": 188.84,
 "ticker": "KXNFLRECYDS-26OCT11SFSEA-SEAABARNER88-25"
@@ -15896,6 +15896,36 @@
 },
 {
 "player": "Brock Purdy",
+"stat": "carries",
+"line": 2,
+"bid": 0.85,
+"ask": 0.92,
+"last": 0.0,
+"volume": 0.0,
+"ticker": "KXNFLRSHATT-26OCT11SFSEA-SFBPURDY13-2"
+},
+{
+"player": "Brock Purdy",
+"stat": "carries",
+"line": 5,
+"bid": 0.37,
+"ask": 0.43,
+"last": 0.0,
+"volume": 0.0,
+"ticker": "KXNFLRSHATT-26OCT11SFSEA-SFBPURDY13-5"
+},
+{
+"player": "Brock Purdy",
+"stat": "carries",
+"line": 8,
+"bid": 0.05,
+"ask": 0.11,
+"last": 0.0,
+"volume": 0.0,
+"ticker": "KXNFLRSHATT-26OCT11SFSEA-SFBPURDY13-8"
+},
+{
+"player": "Brock Purdy",
 "stat": "passing_tds",
 "line": 1,
 "bid": 0.81,
@@ -15910,8 +15940,8 @@
 "line": 2,
 "bid": 0.45,
 "ask": 0.46,
-"last": 0.46,
-"volume": 725.4,
+"last": 0.45,
+"volume": 776.72,
 "ticker": "KXNFLPASSTDS-26OCT11SFSEA-SFBPURDY13-2"
 },
 {
@@ -15930,8 +15960,8 @@
 "line": 4,
 "bid": 0.05,
 "ask": 0.06,
-"last": 0.07,
-"volume": 152.12,
+"last": 0.06,
+"volume": 214.67,
 "ticker": "KXNFLPASSTDS-26OCT11SFSEA-SFBPURDY13-4"
 },
 {
@@ -15999,7 +16029,7 @@
 "stat": "passing_yards",
 "line": 300,
 "bid": 0.14,
-"ask": 0.15,
+"ask": 0.16,
 "last": 0.16,
 "volume": 326.76,
 "ticker": "KXNFLPASSYDS-26OCT11SFSEA-SFBPURDY13-300"
@@ -16040,8 +16070,8 @@
 "line": 15,
 "bid": 0.69,
 "ask": 0.7,
-"last": 0.71,
-"volume": 263.75,
+"last": 0.7,
+"volume": 301.27,
 "ticker": "KXNFLRSHYDS-26OCT11SFSEA-SFBPURDY13-15"
 },
 {
@@ -16051,7 +16081,7 @@
 "bid": 0.6,
 "ask": 0.61,
 "last": 0.61,
-"volume": 25665.81,
+"volume": 25670.59,
 "ticker": "KXNFLRSHYDS-26OCT11SFSEA-SFBPURDY13-20"
 },
 {
@@ -16061,7 +16091,7 @@
 "bid": 0.47,
 "ask": 0.48,
 "last": 0.48,
-"volume": 2922.96,
+"volume": 3146.08,
 "ticker": "KXNFLRSHYDS-26OCT11SFSEA-SFBPURDY13-25"
 },
 {
@@ -16099,7 +16129,7 @@
 "stat": "rushing_yards",
 "line": 60,
 "bid": 0.05,
-"ask": 0.09,
+"ask": 0.08,
 "last": 0.07,
 "volume": 715.38,
 "ticker": "KXNFLRSHYDS-26OCT11SFSEA-SFBPURDY13-60"
@@ -16108,7 +16138,7 @@
 "player": "Christian McCaffrey",
 "stat": "carries",
 "line": 12,
-"bid": 0.71,
+"bid": 0.72,
 "ask": 0.75,
 "last": 0.0,
 "volume": 0.0,
@@ -16129,7 +16159,7 @@
 "stat": "carries",
 "line": 18,
 "bid": 0.25,
-"ask": 0.28,
+"ask": 0.27,
 "last": 0.23,
 "volume": 125.0,
 "ticker": "KXNFLRSHATT-26OCT11SFSEA-SFCMCCAFFREY23-18"
@@ -16230,8 +16260,8 @@
 "line": 3,
 "bid": 0.82,
 "ask": 0.85,
-"last": 0.84,
-"volume": 56.24,
+"last": 0.85,
+"volume": 71.75,
 "ticker": "KXNFLREC-26OCT11SFSEA-SFCMCCAFFREY23-3"
 },
 {
@@ -16249,9 +16279,9 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.54,
-"ask": 0.56,
+"ask": 0.55,
 "last": 0.55,
-"volume": 7701.33,
+"volume": 7713.6,
 "ticker": "KXNFLREC-26OCT11SFSEA-SFCMCCAFFREY23-5"
 },
 {
@@ -16318,7 +16348,7 @@
 "player": "Christian McCaffrey",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.78,
+"bid": 0.77,
 "ask": 0.79,
 "last": 0.79,
 "volume": 59.98,
@@ -16329,7 +16359,7 @@
 "stat": "rushing_yards",
 "line": 40,
 "bid": 0.63,
-"ask": 0.66,
+"ask": 0.65,
 "last": 0.65,
 "volume": 106.25,
 "ticker": "KXNFLRSHYDS-26OCT11SFSEA-SFCMCCAFFREY23-40"
@@ -16350,8 +16380,8 @@
 "line": 60,
 "bid": 0.34,
 "ask": 0.36,
-"last": 0.36,
-"volume": 283.71,
+"last": 0.34,
+"volume": 310.29,
 "ticker": "KXNFLRSHYDS-26OCT11SFSEA-SFCMCCAFFREY23-60"
 },
 {
@@ -16648,7 +16678,7 @@
 "player": "Deebo Samuel Sr.",
 "stat": "receptions",
 "line": 4,
-"bid": 0.52,
+"bid": 0.51,
 "ask": 0.53,
 "last": 0.53,
 "volume": 22.12,
@@ -16669,7 +16699,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.16,
-"ask": 0.2,
+"ask": 0.21,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11SFSEA-SFDSAMUEL19-6"
@@ -16709,7 +16739,7 @@
 "stat": "rushing_yards",
 "line": 10,
 "bid": 0.45,
-"ask": 0.46,
+"ask": 0.47,
 "last": 0.46,
 "volume": 1712.34,
 "ticker": "KXNFLRSHYDS-26OCT11SFSEA-SFDSAMUEL19-10"
@@ -16719,7 +16749,7 @@
 "stat": "rushing_yards",
 "line": 15,
 "bid": 0.27,
-"ask": 0.33,
+"ask": 0.34,
 "last": 0.32,
 "volume": 60.25,
 "ticker": "KXNFLRSHYDS-26OCT11SFSEA-SFDSAMUEL19-15"
@@ -16728,7 +16758,7 @@
 "player": "Deebo Samuel Sr.",
 "stat": "rushing_yards",
 "line": 20,
-"bid": 0.15,
+"bid": 0.16,
 "ask": 0.23,
 "last": 0.25,
 "volume": 55.66,
@@ -16748,7 +16778,7 @@
 "player": "Deebo Samuel Sr.",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.05,
+"bid": 0.04,
 "ask": 0.13,
 "last": 0.13,
 "volume": 25.25,
@@ -16811,7 +16841,7 @@
 "bid": 0.23,
 "ask": 0.24,
 "last": 0.24,
-"volume": 7456.44,
+"volume": 7464.35,
 "ticker": "KXNFLRECYDS-26OCT11SFSEA-SEAEWILSON23-25"
 },
 {
@@ -16831,7 +16861,7 @@
 "bid": 0.56,
 "ask": 0.58,
 "last": 0.58,
-"volume": 304.24,
+"volume": 314.28,
 "ticker": "KXNFLREC-26OCT11SFSEA-SEAEWILSON23-2"
 },
 {
@@ -17009,7 +17039,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.64,
-"ask": 0.68,
+"ask": 0.67,
 "last": 0.68,
 "volume": 22.28,
 "ticker": "KXNFLRECYDS-26OCT11SFSEA-SFGKITTLE85-40"
@@ -17039,9 +17069,9 @@
 "stat": "receiving_yards",
 "line": 70,
 "bid": 0.31,
-"ask": 0.35,
+"ask": 0.34,
 "last": 0.35,
-"volume": 27.42,
+"volume": 54.74,
 "ticker": "KXNFLRECYDS-26OCT11SFSEA-SFGKITTLE85-70"
 },
 {
@@ -17140,8 +17170,8 @@
 "line": 5,
 "bid": 0.5,
 "ask": 0.51,
-"last": 0.5,
-"volume": 225.42,
+"last": 0.51,
+"volume": 414.99,
 "ticker": "KXNFLREC-26OCT11SFSEA-SFGKITTLE85-5"
 },
 {
@@ -17159,7 +17189,7 @@
 "stat": "receptions",
 "line": 7,
 "bid": 0.17,
-"ask": 0.21,
+"ask": 0.22,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11SFSEA-SFGKITTLE85-7"
@@ -17211,7 +17241,7 @@
 "bid": 0.76,
 "ask": 0.8,
 "last": 0.8,
-"volume": 51.6,
+"volume": 57.76,
 "ticker": "KXNFLRECYDS-26OCT11SFSEA-SEAJSMITHNJIGBA11-60"
 },
 {
@@ -17219,7 +17249,7 @@
 "stat": "receiving_yards",
 "line": 70,
 "bid": 0.69,
-"ask": 0.72,
+"ask": 0.73,
 "last": 0.73,
 "volume": 48.74,
 "ticker": "KXNFLRECYDS-26OCT11SFSEA-SEAJSMITHNJIGBA11-70"
@@ -17329,7 +17359,7 @@
 "stat": "receiving_yards",
 "line": 180,
 "bid": 0.04,
-"ask": 0.07,
+"ask": 0.08,
 "last": 0.07,
 "volume": 67.06,
 "ticker": "KXNFLRECYDS-26OCT11SFSEA-SEAJSMITHNJIGBA11-180"
@@ -17339,7 +17369,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.89,
-"ask": 0.92,
+"ask": 0.93,
 "last": 0.92,
 "volume": 401.18,
 "ticker": "KXNFLREC-26OCT11SFSEA-SEAJSMITHNJIGBA11-4"
@@ -17389,7 +17419,7 @@
 "stat": "receptions",
 "line": 9,
 "bid": 0.23,
-"ask": 0.27,
+"ask": 0.28,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11SFSEA-SEAJSMITHNJIGBA11-9"
@@ -17398,8 +17428,8 @@
 "player": "Jaxon Smith-Njigba",
 "stat": "receptions",
 "line": 10,
-"bid": 0.13,
-"ask": 0.18,
+"bid": 0.14,
+"ask": 0.16,
 "last": 0.18,
 "volume": 27.99,
 "ticker": "KXNFLREC-26OCT11SFSEA-SEAJSMITHNJIGBA11-10"
@@ -17409,7 +17439,7 @@
 "stat": "receptions",
 "line": 11,
 "bid": 0.05,
-"ask": 0.11,
+"ask": 0.1,
 "last": 0.12,
 "volume": 1.14,
 "ticker": "KXNFLREC-26OCT11SFSEA-SEAJSMITHNJIGBA11-11"
@@ -17460,8 +17490,8 @@
 "line": 20,
 "bid": 0.4,
 "ask": 0.43,
-"last": 0.36,
-"volume": 7.45,
+"last": 0.4,
+"volume": 29.81,
 "ticker": "KXNFLRSHYDS-26OCT11SFSEA-SFKBLACK26-20"
 },
 {
@@ -17520,8 +17550,8 @@
 "line": 40,
 "bid": 0.61,
 "ask": 0.64,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.61,
+"volume": 84.0,
 "ticker": "KXNFLRECYDS-26OCT11SFSEA-SFMEVANS5-40"
 },
 {
@@ -17531,7 +17561,7 @@
 "bid": 0.5,
 "ask": 0.51,
 "last": 0.51,
-"volume": 1002.98,
+"volume": 1031.41,
 "ticker": "KXNFLRECYDS-26OCT11SFSEA-SFMEVANS5-50"
 },
 {
@@ -17609,7 +17639,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.77,
-"ask": 0.92,
+"ask": 0.93,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11SFSEA-SFMEVANS5-2"
@@ -17619,7 +17649,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.65,
-"ask": 0.78,
+"ask": 0.79,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11SFSEA-SFMEVANS5-3"
@@ -17639,7 +17669,7 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.37,
-"ask": 0.41,
+"ask": 0.4,
 "last": 0.41,
 "volume": 46.84,
 "ticker": "KXNFLREC-26OCT11SFSEA-SFMEVANS5-5"
@@ -17649,7 +17679,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.12,
-"ask": 0.25,
+"ask": 0.26,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11SFSEA-SFMEVANS5-6"
@@ -17689,7 +17719,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.59,
-"ask": 0.61,
+"ask": 0.62,
 "last": 0.58,
 "volume": 364.89,
 "ticker": "KXNFLRECYDS-26OCT11SFSEA-SEARSHAHEED22-15"
@@ -17838,10 +17868,10 @@
 "player": "Sam Darnold",
 "stat": "passing_yards",
 "line": 150,
-"bid": 0.88,
-"ask": 0.89,
-"last": 0.87,
-"volume": 2.2,
+"bid": 0.89,
+"ask": 0.9,
+"last": 0.89,
+"volume": 2491.2,
 "ticker": "KXNFLPASSYDS-26OCT11SFSEA-SEASDARNOLD14-150"
 },
 {
@@ -17871,7 +17901,7 @@
 "bid": 0.54,
 "ask": 0.55,
 "last": 0.55,
-"volume": 1525.32,
+"volume": 1539.42,
 "ticker": "KXNFLPASSYDS-26OCT11SFSEA-SEASDARNOLD14-225"
 },
 {
@@ -17969,7 +17999,7 @@
 "stat": "rushing_yards",
 "line": 30,
 "bid": 0.03,
-"ask": 0.06,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11SFSEA-SEASDARNOLD14-30"
@@ -18061,7 +18091,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.83,
-"ask": 0.85,
+"ask": 0.87,
 "last": 0.87,
 "volume": 6.0,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-GBCWATSON9-25"
@@ -18093,7 +18123,7 @@
 "bid": 0.52,
 "ask": 0.53,
 "last": 0.53,
-"volume": 2781.4,
+"volume": 2880.73,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-GBCWATSON9-60"
 },
 {
@@ -18131,7 +18161,7 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.17,
-"ask": 0.2,
+"ask": 0.19,
 "last": 0.19,
 "volume": 520.56,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-GBCWATSON9-100"
@@ -18140,8 +18170,8 @@
 "player": "Christian Watson",
 "stat": "receiving_yards",
 "line": 110,
-"bid": 0.12,
-"ask": 0.14,
+"bid": 0.11,
+"ask": 0.13,
 "last": 0.16,
 "volume": 25.11,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-GBCWATSON9-110"
@@ -18280,8 +18310,8 @@
 "player": "Cole Kmet",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.3,
-"ask": 0.36,
+"bid": 0.31,
+"ask": 0.35,
 "last": 0.33,
 "volume": 35.78,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-CHICKMET85-15"
@@ -18300,7 +18330,7 @@
 "player": "Cole Kmet",
 "stat": "receiving_yards",
 "line": 40,
-"bid": 0.05,
+"bid": 0.04,
 "ask": 0.09,
 "last": 0.0,
 "volume": 0.0,
@@ -18320,7 +18350,7 @@
 "player": "Cole Kmet",
 "stat": "receptions",
 "line": 2,
-"bid": 0.38,
+"bid": 0.37,
 "ask": 0.42,
 "last": 0.0,
 "volume": 0.0,
@@ -18330,7 +18360,7 @@
 "player": "Cole Kmet",
 "stat": "receptions",
 "line": 3,
-"bid": 0.13,
+"bid": 0.05,
 "ask": 0.18,
 "last": 0.0,
 "volume": 0.0,
@@ -18451,7 +18481,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.88,
-"ask": 0.9,
+"ask": 0.93,
 "last": 0.94,
 "volume": 4.68,
 "ticker": "KXNFLREC-26OCT11CHIGB-CHICLOVELAND84-2"
@@ -18490,7 +18520,7 @@
 "player": "Colston Loveland",
 "stat": "receptions",
 "line": 6,
-"bid": 0.21,
+"bid": 0.22,
 "ask": 0.25,
 "last": 0.27,
 "volume": 25.0,
@@ -18501,7 +18531,7 @@
 "stat": "receptions",
 "line": 7,
 "bid": 0.11,
-"ask": 0.15,
+"ask": 0.16,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CHIGB-CHICLOVELAND84-7"
@@ -18511,7 +18541,7 @@
 "stat": "receptions",
 "line": 8,
 "bid": 0.04,
-"ask": 0.09,
+"ask": 0.1,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CHIGB-CHICLOVELAND84-8"
@@ -18573,7 +18603,7 @@
 "bid": 0.58,
 "ask": 0.59,
 "last": 0.59,
-"volume": 6801.49,
+"volume": 6802.49,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-CHIDSWIFT4-15"
 },
 {
@@ -18621,7 +18651,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.7,
-"ask": 0.74,
+"ask": 0.76,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CHIGB-CHIDSWIFT4-2"
@@ -18640,8 +18670,8 @@
 "player": "D'Andre Swift",
 "stat": "receptions",
 "line": 4,
-"bid": 0.2,
-"ask": 0.3,
+"bid": 0.18,
+"ask": 0.31,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CHIGB-CHIDSWIFT4-4"
@@ -18671,7 +18701,7 @@
 "stat": "receptions",
 "line": 7,
 "bid": 0.02,
-"ask": 0.05,
+"ask": 0.06,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CHIGB-CHIDSWIFT4-7"
@@ -18682,8 +18712,8 @@
 "line": 30,
 "bid": 0.89,
 "ask": 0.9,
-"last": 0.9,
-"volume": 4742.37,
+"last": 0.89,
+"volume": 4754.29,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-CHIDSWIFT4-30"
 },
 {
@@ -18700,10 +18730,10 @@
 "player": "D'Andre Swift",
 "stat": "rushing_yards",
 "line": 50,
-"bid": 0.81,
-"ask": 0.82,
-"last": 0.81,
-"volume": 1334.61,
+"bid": 0.82,
+"ask": 0.83,
+"last": 0.83,
+"volume": 1368.78,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-CHIDSWIFT4-50"
 },
 {
@@ -18713,7 +18743,7 @@
 "bid": 0.73,
 "ask": 0.76,
 "last": 0.76,
-"volume": 3950.72,
+"volume": 4028.49,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-CHIDSWIFT4-60"
 },
 {
@@ -18732,8 +18762,8 @@
 "line": 80,
 "bid": 0.54,
 "ask": 0.55,
-"last": 0.53,
-"volume": 2828.66,
+"last": 0.55,
+"volume": 2863.91,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-CHIDSWIFT4-80"
 },
 {
@@ -18751,7 +18781,7 @@
 "stat": "rushing_yards",
 "line": 100,
 "bid": 0.35,
-"ask": 0.37,
+"ask": 0.36,
 "last": 0.37,
 "volume": 1914.45,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-CHIDSWIFT4-100"
@@ -18771,7 +18801,7 @@
 "stat": "rushing_yards",
 "line": 120,
 "bid": 0.2,
-"ask": 0.22,
+"ask": 0.21,
 "last": 0.2,
 "volume": 678.55,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-CHIDSWIFT4-120"
@@ -18782,8 +18812,8 @@
 "line": 130,
 "bid": 0.15,
 "ask": 0.16,
-"last": 0.17,
-"volume": 281.71,
+"last": 0.16,
+"volume": 390.71,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-CHIDSWIFT4-130"
 },
 {
@@ -18791,16 +18821,16 @@
 "stat": "rushing_yards",
 "line": 140,
 "bid": 0.11,
-"ask": 0.14,
-"last": 0.14,
-"volume": 260.28,
+"ask": 0.13,
+"last": 0.12,
+"volume": 809.76,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-CHIDSWIFT4-140"
 },
 {
 "player": "Jonnu Smith",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.25,
+"bid": 0.24,
 "ask": 0.29,
 "last": 0.25,
 "volume": 9.64,
@@ -18870,17 +18900,17 @@
 "player": "Jordan Love",
 "stat": "passing_tds",
 "line": 2,
-"bid": 0.46,
-"ask": 0.47,
-"last": 0.47,
-"volume": 442.02,
+"bid": 0.45,
+"ask": 0.46,
+"last": 0.45,
+"volume": 452.27,
 "ticker": "KXNFLPASSTDS-26OCT11CHIGB-GBJLOVE10-2"
 },
 {
 "player": "Jordan Love",
 "stat": "passing_tds",
 "line": 3,
-"bid": 0.18,
+"bid": 0.17,
 "ask": 0.19,
 "last": 0.19,
 "volume": 406.12,
@@ -18900,8 +18930,8 @@
 "player": "Jordan Love",
 "stat": "passing_yards",
 "line": 150,
-"bid": 0.89,
-"ask": 0.91,
+"bid": 0.9,
+"ask": 0.92,
 "last": 0.91,
 "volume": 518.73,
 "ticker": "KXNFLPASSYDS-26OCT11CHIGB-GBJLOVE10-150"
@@ -18913,7 +18943,7 @@
 "bid": 0.81,
 "ask": 0.84,
 "last": 0.84,
-"volume": 531.63,
+"volume": 537.51,
 "ticker": "KXNFLPASSYDS-26OCT11CHIGB-GBJLOVE10-175"
 },
 {
@@ -18933,7 +18963,7 @@
 "bid": 0.55,
 "ask": 0.57,
 "last": 0.57,
-"volume": 328.66,
+"volume": 337.17,
 "ticker": "KXNFLPASSYDS-26OCT11CHIGB-GBJLOVE10-225"
 },
 {
@@ -19010,7 +19040,7 @@
 "player": "Jordan Love",
 "stat": "rushing_yards",
 "line": 15,
-"bid": 0.23,
+"bid": 0.21,
 "ask": 0.25,
 "last": 0.24,
 "volume": 4828.71,
@@ -19060,7 +19090,7 @@
 "player": "Kaleb Johnson",
 "stat": "carries",
 "line": 10,
-"bid": 0.49,
+"bid": 0.48,
 "ask": 0.53,
 "last": 0.0,
 "volume": 0.0,
@@ -19151,7 +19181,7 @@
 "stat": "rushing_yards",
 "line": 70,
 "bid": 0.11,
-"ask": 0.15,
+"ask": 0.14,
 "last": 0.14,
 "volume": 33.68,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-GBKJOHNSON26-70"
@@ -19241,7 +19271,7 @@
 "stat": "receiving_yards",
 "line": 80,
 "bid": 0.03,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-CHIKRAYMOND14-80"
@@ -19270,7 +19300,7 @@
 "player": "Kalif Raymond",
 "stat": "receptions",
 "line": 4,
-"bid": 0.37,
+"bid": 0.36,
 "ask": 0.38,
 "last": 0.38,
 "volume": 1060.22,
@@ -19281,7 +19311,7 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.2,
-"ask": 0.24,
+"ask": 0.25,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CHIGB-CHIKRAYMOND14-5"
@@ -19321,7 +19351,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.78,
-"ask": 0.8,
+"ask": 0.81,
 "last": 0.81,
 "volume": 16.71,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-CHILBURDEN10-25"
@@ -19401,7 +19431,7 @@
 "stat": "receiving_yards",
 "line": 110,
 "bid": 0.05,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-CHILBURDEN10-110"
@@ -19421,7 +19451,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.8,
-"ask": 0.83,
+"ask": 0.84,
 "last": 0.84,
 "volume": 26.39,
 "ticker": "KXNFLREC-26OCT11CHIGB-CHILBURDEN10-3"
@@ -19443,7 +19473,7 @@
 "bid": 0.46,
 "ask": 0.47,
 "last": 0.47,
-"volume": 4137.12,
+"volume": 4198.66,
 "ticker": "KXNFLREC-26OCT11CHIGB-CHILBURDEN10-5"
 },
 {
@@ -19471,7 +19501,7 @@
 "stat": "receptions",
 "line": 8,
 "bid": 0.07,
-"ask": 0.13,
+"ask": 0.12,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CHIGB-CHILBURDEN10-8"
@@ -19520,7 +19550,7 @@
 "player": "MarShawn Lloyd",
 "stat": "carries",
 "line": 9,
-"bid": 0.49,
+"bid": 0.5,
 "ask": 0.52,
 "last": 0.0,
 "volume": 0.0,
@@ -19530,8 +19560,8 @@
 "player": "MarShawn Lloyd",
 "stat": "carries",
 "line": 12,
-"bid": 0.19,
-"ask": 0.24,
+"bid": 0.2,
+"ask": 0.25,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11CHIGB-GBMLLOYD32-12"
@@ -19611,7 +19641,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.19,
-"ask": 0.22,
+"ask": 0.23,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CHIGB-GBMLLOYD32-4"
@@ -19681,7 +19711,7 @@
 "stat": "rushing_yards",
 "line": 30,
 "bid": 0.44,
-"ask": 0.45,
+"ask": 0.47,
 "last": 0.48,
 "volume": 50.56,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-GBMLLOYD32-30"
@@ -19710,7 +19740,7 @@
 "player": "MarShawn Lloyd",
 "stat": "rushing_yards",
 "line": 60,
-"bid": 0.1,
+"bid": 0.11,
 "ask": 0.12,
 "last": 0.13,
 "volume": 69.0,
@@ -19762,8 +19792,8 @@
 "line": 50,
 "bid": 0.56,
 "ask": 0.58,
-"last": 0.58,
-"volume": 252.18,
+"last": 0.59,
+"volume": 268.69,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-GBMGOLDEN0-50"
 },
 {
@@ -19782,8 +19812,8 @@
 "line": 70,
 "bid": 0.35,
 "ask": 0.37,
-"last": 0.36,
-"volume": 13.29,
+"last": 0.37,
+"volume": 18.46,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-GBMGOLDEN0-70"
 },
 {
@@ -19811,7 +19841,7 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.13,
-"ask": 0.16,
+"ask": 0.15,
 "last": 0.16,
 "volume": 76.72,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-GBMGOLDEN0-100"
@@ -19821,7 +19851,7 @@
 "stat": "receiving_yards",
 "line": 110,
 "bid": 0.09,
-"ask": 0.11,
+"ask": 0.1,
 "last": 0.12,
 "volume": 63.74,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-GBMGOLDEN0-110"
@@ -19851,7 +19881,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.91,
-"ask": 0.94,
+"ask": 0.95,
 "last": 0.9,
 "volume": 12.87,
 "ticker": "KXNFLREC-26OCT11CHIGB-GBMGOLDEN0-2"
@@ -19863,7 +19893,7 @@
 "bid": 0.81,
 "ask": 0.85,
 "last": 0.85,
-"volume": 92.05,
+"volume": 117.91,
 "ticker": "KXNFLREC-26OCT11CHIGB-GBMGOLDEN0-3"
 },
 {
@@ -19941,7 +19971,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.82,
-"ask": 0.84,
+"ask": 0.85,
 "last": 0.84,
 "volume": 8.33,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-CHIRODUNZE15-15"
@@ -19952,8 +19982,8 @@
 "line": 25,
 "bid": 0.7,
 "ask": 0.72,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.72,
+"volume": 5.1,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-CHIRODUNZE15-25"
 },
 {
@@ -19963,7 +19993,7 @@
 "bid": 0.51,
 "ask": 0.52,
 "last": 0.52,
-"volume": 5965.23,
+"volume": 5983.83,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-CHIRODUNZE15-40"
 },
 {
@@ -20021,7 +20051,7 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.05,
-"ask": 0.09,
+"ask": 0.08,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-CHIRODUNZE15-100"
@@ -20060,10 +20090,10 @@
 "player": "Rome Odunze",
 "stat": "receptions",
 "line": 4,
-"bid": 0.4,
+"bid": 0.37,
 "ask": 0.41,
-"last": 0.42,
-"volume": 617.68,
+"last": 0.41,
+"volume": 658.97,
 "ticker": "KXNFLREC-26OCT11CHIGB-CHIRODUNZE15-4"
 },
 {
@@ -20161,7 +20191,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.44,
-"ask": 0.46,
+"ask": 0.45,
 "last": 0.46,
 "volume": 4002.34,
 "ticker": "KXNFLREC-26OCT11CHIGB-GBSMOORE23-2"
@@ -20201,7 +20231,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.78,
-"ask": 0.8,
+"ask": 0.82,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-GBTKRAFT85-25"
@@ -20210,10 +20240,10 @@
 "player": "Tucker Kraft",
 "stat": "receiving_yards",
 "line": 40,
-"bid": 0.61,
-"ask": 0.63,
-"last": 0.64,
-"volume": 33.18,
+"bid": 0.6,
+"ask": 0.62,
+"last": 0.61,
+"volume": 83.18,
 "ticker": "KXNFLRECYDS-26OCT11CHIGB-GBTKRAFT85-40"
 },
 {
@@ -20321,7 +20351,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.63,
-"ask": 0.67,
+"ask": 0.66,
 "last": 0.67,
 "volume": 29.14,
 "ticker": "KXNFLREC-26OCT11CHIGB-GBTKRAFT85-4"
@@ -20361,7 +20391,7 @@
 "stat": "receptions",
 "line": 8,
 "bid": 0.08,
-"ask": 0.13,
+"ask": 0.12,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CHIGB-GBTKRAFT85-8"
@@ -20390,7 +20420,7 @@
 "player": "Tyson Bagent",
 "stat": "passing_tds",
 "line": 1,
-"bid": 0.77,
+"bid": 0.76,
 "ask": 0.8,
 "last": 0.75,
 "volume": 885.0,
@@ -20410,8 +20440,8 @@
 "player": "Tyson Bagent",
 "stat": "passing_tds",
 "line": 3,
-"bid": 0.12,
-"ask": 0.18,
+"bid": 0.13,
+"ask": 0.17,
 "last": 0.18,
 "volume": 9.92,
 "ticker": "KXNFLPASSTDS-26OCT11CHIGB-CHITBAGENT17-3"
@@ -20431,9 +20461,9 @@
 "stat": "passing_yards",
 "line": 150,
 "bid": 0.84,
-"ask": 0.85,
-"last": 0.86,
-"volume": 2053.67,
+"ask": 0.86,
+"last": 0.85,
+"volume": 2653.67,
 "ticker": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-150"
 },
 {
@@ -20441,17 +20471,17 @@
 "stat": "passing_yards",
 "line": 175,
 "bid": 0.73,
-"ask": 0.74,
-"last": 0.73,
-"volume": 1165.25,
+"ask": 0.75,
+"last": 0.74,
+"volume": 2265.25,
 "ticker": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-175"
 },
 {
 "player": "Tyson Bagent",
 "stat": "passing_yards",
 "line": 200,
-"bid": 0.56,
-"ask": 0.59,
+"bid": 0.55,
+"ask": 0.58,
 "last": 0.63,
 "volume": 224.27,
 "ticker": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-200"
@@ -20470,7 +20500,7 @@
 "player": "Tyson Bagent",
 "stat": "passing_yards",
 "line": 250,
-"bid": 0.32,
+"bid": 0.31,
 "ask": 0.33,
 "last": 0.32,
 "volume": 465.8,
@@ -20531,7 +20561,7 @@
 "stat": "rushing_yards",
 "line": 15,
 "bid": 0.32,
-"ask": 0.39,
+"ask": 0.38,
 "last": 0.38,
 "volume": 43.01,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-CHITBAGENT17-15"
@@ -20561,7 +20591,7 @@
 "stat": "rushing_yards",
 "line": 30,
 "bid": 0.04,
-"ask": 0.12,
+"ask": 0.11,
 "last": 0.13,
 "volume": 1.38,
 "ticker": "KXNFLRSHYDS-26OCT11CHIGB-CHITBAGENT17-30"
@@ -20582,8 +20612,8 @@
 "player": "Chase Brown",
 "stat": "carries",
 "line": 14,
-"bid": 0.7,
-"ask": 0.77,
+"bid": 0.74,
+"ask": 0.75,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11CINMIA-CINCBROWN30-14"
@@ -20594,15 +20624,15 @@
 "line": 17,
 "bid": 0.48,
 "ask": 0.5,
-"last": 0.49,
-"volume": 814.19,
+"last": 0.5,
+"volume": 910.8,
 "ticker": "KXNFLRSHATT-26OCT11CINMIA-CINCBROWN30-17"
 },
 {
 "player": "Chase Brown",
 "stat": "carries",
 "line": 20,
-"bid": 0.27,
+"bid": 0.25,
 "ask": 0.28,
 "last": 0.32,
 "volume": 75.18,
@@ -20662,8 +20692,8 @@
 "player": "Chase Brown",
 "stat": "rushing_yards",
 "line": 90,
-"bid": 0.22,
-"ask": 0.28,
+"bid": 0.24,
+"ask": 0.27,
 "last": 0.21,
 "volume": 187.24,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-CINCBROWN30-90"
@@ -20673,7 +20703,7 @@
 "stat": "rushing_yards",
 "line": 100,
 "bid": 0.16,
-"ask": 0.19,
+"ask": 0.21,
 "last": 0.2,
 "volume": 57.02,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-CINCBROWN30-100"
@@ -20693,7 +20723,7 @@
 "stat": "rushing_yards",
 "line": 120,
 "bid": 0.04,
-"ask": 0.09,
+"ask": 0.08,
 "last": 0.11,
 "volume": 25.67,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-CINCBROWN30-120"
@@ -20722,8 +20752,8 @@
 "player": "Chris Bell",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.74,
-"ask": 0.78,
+"bid": 0.68,
+"ask": 0.79,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11CINMIA-MIACBELL18-15"
@@ -20732,8 +20762,8 @@
 "player": "Chris Bell",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.58,
-"ask": 0.64,
+"bid": 0.59,
+"ask": 0.63,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11CINMIA-MIACBELL18-25"
@@ -20812,7 +20842,7 @@
 "player": "Chris Bell",
 "stat": "receiving_yards",
 "line": 100,
-"bid": 0.04,
+"bid": 0.05,
 "ask": 0.08,
 "last": 0.0,
 "volume": 0.0,
@@ -20843,7 +20873,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.47,
-"ask": 0.49,
+"ask": 0.48,
 "last": 0.47,
 "volume": 21.9,
 "ticker": "KXNFLREC-26OCT11CINMIA-MIACBELL18-3"
@@ -20853,7 +20883,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.23,
-"ask": 0.27,
+"ask": 0.28,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CINMIA-MIACBELL18-4"
@@ -20883,7 +20913,7 @@
 "stat": "receptions",
 "line": 7,
 "bid": 0.03,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CINMIA-MIACBELL18-7"
@@ -20905,7 +20935,7 @@
 "bid": 0.51,
 "ask": 0.52,
 "last": 0.52,
-"volume": 5132.17,
+"volume": 5150.77,
 "ticker": "KXNFLRECYDS-26OCT11CINMIA-MIAGDULCICH85-25"
 },
 {
@@ -20972,8 +21002,8 @@
 "player": "Greg Dulcich",
 "stat": "receptions",
 "line": 3,
-"bid": 0.52,
-"ask": 0.54,
+"bid": 0.51,
+"ask": 0.53,
 "last": 0.55,
 "volume": 613.86,
 "ticker": "KXNFLREC-26OCT11CINMIA-MIAGDULCICH85-3"
@@ -20992,7 +21022,7 @@
 "player": "Greg Dulcich",
 "stat": "receptions",
 "line": 5,
-"bid": 0.15,
+"bid": 0.14,
 "ask": 0.19,
 "last": 0.0,
 "volume": 0.0,
@@ -21002,7 +21032,7 @@
 "player": "Greg Dulcich",
 "stat": "receptions",
 "line": 6,
-"bid": 0.05,
+"bid": 0.07,
 "ask": 0.1,
 "last": 0.0,
 "volume": 0.0,
@@ -21032,8 +21062,8 @@
 "player": "Jaylen Wright",
 "stat": "rushing_yards",
 "line": 10,
-"bid": 0.73,
-"ask": 0.8,
+"bid": 0.72,
+"ask": 0.79,
 "last": 0.78,
 "volume": 310.56,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-MIAJWRIGHT5-10"
@@ -21052,8 +21082,8 @@
 "player": "Jaylen Wright",
 "stat": "rushing_yards",
 "line": 20,
-"bid": 0.52,
-"ask": 0.57,
+"bid": 0.56,
+"ask": 0.58,
 "last": 0.57,
 "volume": 797.69,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-MIAJWRIGHT5-20"
@@ -21063,7 +21093,7 @@
 "stat": "rushing_yards",
 "line": 25,
 "bid": 0.42,
-"ask": 0.46,
+"ask": 0.45,
 "last": 0.46,
 "volume": 767.13,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-MIAJWRIGHT5-25"
@@ -21072,8 +21102,8 @@
 "player": "Jaylen Wright",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.32,
-"ask": 0.38,
+"bid": 0.33,
+"ask": 0.36,
 "last": 0.36,
 "volume": 262.61,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-MIAJWRIGHT5-30"
@@ -21103,7 +21133,7 @@
 "stat": "rushing_yards",
 "line": 60,
 "bid": 0.04,
-"ask": 0.11,
+"ask": 0.1,
 "last": 0.12,
 "volume": 7.84,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-MIAJWRIGHT5-60"
@@ -21123,7 +21153,7 @@
 "stat": "rushing_yards",
 "line": 80,
 "bid": 0.03,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-MIAJWRIGHT5-80"
@@ -21192,8 +21222,8 @@
 "player": "Joe Burrow",
 "stat": "passing_yards",
 "line": 175,
-"bid": 0.83,
-"ask": 0.87,
+"bid": 0.84,
+"ask": 0.88,
 "last": 0.87,
 "volume": 20.49,
 "ticker": "KXNFLPASSYDS-26OCT11CINMIA-CINJBURROW9-175"
@@ -21203,7 +21233,7 @@
 "stat": "passing_yards",
 "line": 200,
 "bid": 0.77,
-"ask": 0.78,
+"ask": 0.79,
 "last": 0.79,
 "volume": 1694.68,
 "ticker": "KXNFLPASSYDS-26OCT11CINMIA-CINJBURROW9-200"
@@ -21212,7 +21242,7 @@
 "player": "Joe Burrow",
 "stat": "passing_yards",
 "line": 225,
-"bid": 0.66,
+"bid": 0.65,
 "ask": 0.68,
 "last": 0.67,
 "volume": 2061.19,
@@ -21225,7 +21255,7 @@
 "bid": 0.54,
 "ask": 0.55,
 "last": 0.55,
-"volume": 17880.34,
+"volume": 17884.72,
 "ticker": "KXNFLPASSYDS-26OCT11CINMIA-CINJBURROW9-250"
 },
 {
@@ -21252,8 +21282,8 @@
 "player": "Joe Burrow",
 "stat": "passing_yards",
 "line": 325,
-"bid": 0.17,
-"ask": 0.19,
+"bid": 0.16,
+"ask": 0.18,
 "last": 0.18,
 "volume": 555.48,
 "ticker": "KXNFLPASSYDS-26OCT11CINMIA-CINJBURROW9-325"
@@ -21273,7 +21303,7 @@
 "stat": "passing_yards",
 "line": 375,
 "bid": 0.04,
-"ask": 0.07,
+"ask": 0.08,
 "last": 0.08,
 "volume": 174.29,
 "ticker": "KXNFLPASSYDS-26OCT11CINMIA-CINJBURROW9-375"
@@ -21342,8 +21372,8 @@
 "player": "Kevin Coleman Jr.",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.35,
-"ask": 0.41,
+"bid": 0.36,
+"ask": 0.4,
 "last": 0.41,
 "volume": 35.13,
 "ticker": "KXNFLRECYDS-26OCT11CINMIA-MIAKCOLEMAN21-25"
@@ -21362,7 +21392,7 @@
 "player": "Kevin Coleman Jr.",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.1,
+"bid": 0.11,
 "ask": 0.14,
 "last": 0.0,
 "volume": 0.0,
@@ -21464,8 +21494,8 @@
 "line": 40,
 "bid": 0.59,
 "ask": 0.6,
-"last": 0.59,
-"volume": 4997.16,
+"last": 0.6,
+"volume": 5005.26,
 "ticker": "KXNFLRECYDS-26OCT11CINMIA-MIAMWASHINGTON6-40"
 },
 {
@@ -21474,8 +21504,8 @@
 "line": 50,
 "bid": 0.43,
 "ask": 0.44,
-"last": 0.45,
-"volume": 200.38,
+"last": 0.44,
+"volume": 200.55,
 "ticker": "KXNFLRECYDS-26OCT11CINMIA-MIAMWASHINGTON6-50"
 },
 {
@@ -21553,7 +21583,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.82,
-"ask": 0.85,
+"ask": 0.86,
 "last": 0.84,
 "volume": 10.34,
 "ticker": "KXNFLREC-26OCT11CINMIA-MIAMWASHINGTON6-3"
@@ -21572,10 +21602,10 @@
 "player": "Malik Washington",
 "stat": "receptions",
 "line": 5,
-"bid": 0.51,
+"bid": 0.5,
 "ask": 0.52,
-"last": 0.53,
-"volume": 7.03,
+"last": 0.52,
+"volume": 7.14,
 "ticker": "KXNFLREC-26OCT11CINMIA-MIAMWASHINGTON6-5"
 },
 {
@@ -21623,7 +21653,7 @@
 "stat": "receptions",
 "line": 10,
 "bid": 0.02,
-"ask": 0.07,
+"ask": 0.06,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CINMIA-MIAMWASHINGTON6-10"
@@ -21643,7 +21673,7 @@
 "stat": "carries",
 "line": 3,
 "bid": 0.73,
-"ask": 0.94,
+"ask": 0.93,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11CINMIA-MIAMWILLIS2-3"
@@ -21653,7 +21683,7 @@
 "stat": "carries",
 "line": 6,
 "bid": 0.5,
-"ask": 0.53,
+"ask": 0.54,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11CINMIA-MIAMWILLIS2-6"
@@ -21833,7 +21863,7 @@
 "stat": "rushing_yards",
 "line": 40,
 "bid": 0.36,
-"ask": 0.37,
+"ask": 0.38,
 "last": 0.39,
 "volume": 194.02,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-MIAMWILLIS2-40"
@@ -21843,7 +21873,7 @@
 "stat": "rushing_yards",
 "line": 50,
 "bid": 0.22,
-"ask": 0.25,
+"ask": 0.24,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-MIAMWILLIS2-50"
@@ -21853,7 +21883,7 @@
 "stat": "rushing_yards",
 "line": 60,
 "bid": 0.12,
-"ask": 0.14,
+"ask": 0.15,
 "last": 0.16,
 "volume": 59.02,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-MIAMWILLIS2-60"
@@ -21903,7 +21933,7 @@
 "stat": "carries",
 "line": 15,
 "bid": 0.2,
-"ask": 0.25,
+"ask": 0.24,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11CINMIA-MIAOGORDON0-15"
@@ -21925,7 +21955,7 @@
 "bid": 0.17,
 "ask": 0.2,
 "last": 0.2,
-"volume": 656.43,
+"volume": 664.9,
 "ticker": "KXNFLRECYDS-26OCT11CINMIA-MIAOGORDON0-25"
 },
 {
@@ -21943,7 +21973,7 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.03,
-"ask": 0.05,
+"ask": 0.06,
 "last": 0.06,
 "volume": 88.64,
 "ticker": "KXNFLRECYDS-26OCT11CINMIA-MIAOGORDON0-50"
@@ -21952,8 +21982,8 @@
 "player": "Ollie Gordon II",
 "stat": "receptions",
 "line": 2,
-"bid": 0.53,
-"ask": 0.54,
+"bid": 0.51,
+"ask": 0.53,
 "last": 0.56,
 "volume": 602.33,
 "ticker": "KXNFLREC-26OCT11CINMIA-MIAOGORDON0-2"
@@ -21963,7 +21993,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.25,
-"ask": 0.29,
+"ask": 0.3,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CINMIA-MIAOGORDON0-3"
@@ -22013,7 +22043,7 @@
 "stat": "rushing_yards",
 "line": 30,
 "bid": 0.71,
-"ask": 0.72,
+"ask": 0.73,
 "last": 0.72,
 "volume": 498.87,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-MIAOGORDON0-30"
@@ -22032,10 +22062,10 @@
 "player": "Ollie Gordon II",
 "stat": "rushing_yards",
 "line": 50,
-"bid": 0.4,
-"ask": 0.41,
+"bid": 0.41,
+"ask": 0.42,
 "last": 0.41,
-"volume": 409.04,
+"volume": 709.04,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-MIAOGORDON0-50"
 },
 {
@@ -22123,7 +22153,7 @@
 "stat": "rushing_yards",
 "line": 20,
 "bid": 0.3,
-"ask": 0.36,
+"ask": 0.35,
 "last": 0.38,
 "volume": 32.28,
 "ticker": "KXNFLRSHYDS-26OCT11CINMIA-CINSPERINE34-20"
@@ -22275,7 +22305,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.51,
-"ask": 0.57,
+"ask": 0.56,
 "last": 0.57,
 "volume": 5.1,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARCPARKINSON84-15"
@@ -22335,7 +22365,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.58,
-"ask": 0.61,
+"ask": 0.6,
 "last": 0.58,
 "volume": 26.14,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARCPARKINSON84-2"
@@ -22414,7 +22444,7 @@
 "player": "Dalton Kincaid",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.39,
+"bid": 0.38,
 "ask": 0.43,
 "last": 0.43,
 "volume": 72.13,
@@ -22435,7 +22465,7 @@
 "stat": "receiving_yards",
 "line": 80,
 "bid": 0.18,
-"ask": 0.26,
+"ask": 0.25,
 "last": 0.24,
 "volume": 35.6,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKINCAID86-80"
@@ -22445,7 +22475,7 @@
 "stat": "receiving_yards",
 "line": 90,
 "bid": 0.08,
-"ask": 0.2,
+"ask": 0.19,
 "last": 0.18,
 "volume": 3.0,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKINCAID86-90"
@@ -22516,8 +22546,8 @@
 "line": 4,
 "bid": 0.58,
 "ask": 0.63,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.63,
+"volume": 13.84,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFDKINCAID86-4"
 },
 {
@@ -22575,7 +22605,7 @@
 "stat": "receptions",
 "line": 10,
 "bid": 0.01,
-"ask": 0.1,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFDKINCAID86-10"
@@ -22614,10 +22644,10 @@
 "player": "Davante Adams",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.51,
-"ask": 0.55,
-"last": 0.55,
-"volume": 368.68,
+"bid": 0.52,
+"ask": 0.56,
+"last": 0.56,
+"volume": 498.87,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-60"
 },
 {
@@ -22845,7 +22875,7 @@
 "stat": "receiving_yards",
 "line": 60,
 "bid": 0.02,
-"ask": 0.07,
+"ask": 0.06,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKNOX88-60"
@@ -22934,8 +22964,8 @@
 "player": "James Cook III",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.24,
-"ask": 0.39,
+"bid": 0.26,
+"ask": 0.36,
 "last": 0.34,
 "volume": 26.24,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFJCOOK4-15"
@@ -22974,7 +23004,7 @@
 "player": "James Cook III",
 "stat": "receptions",
 "line": 2,
-"bid": 0.5,
+"bid": 0.51,
 "ask": 0.54,
 "last": 0.54,
 "volume": 32.14,
@@ -23034,10 +23064,10 @@
 "player": "James Cook III",
 "stat": "rushing_yards",
 "line": 50,
-"bid": 0.75,
-"ask": 0.8,
-"last": 0.0,
-"volume": 0.0,
+"bid": 0.76,
+"ask": 0.79,
+"last": 0.8,
+"volume": 5.48,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-50"
 },
 {
@@ -23065,7 +23095,7 @@
 "stat": "rushing_yards",
 "line": 80,
 "bid": 0.42,
-"ask": 0.44,
+"ask": 0.45,
 "last": 0.44,
 "volume": 1314.19,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-80"
@@ -23085,7 +23115,7 @@
 "stat": "rushing_yards",
 "line": 100,
 "bid": 0.24,
-"ask": 0.28,
+"ask": 0.29,
 "last": 0.29,
 "volume": 3.51,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-100"
@@ -23284,8 +23314,8 @@
 "player": "Josh Allen",
 "stat": "passing_yards",
 "line": 225,
-"bid": 0.6,
-"ask": 0.64,
+"bid": 0.61,
+"ask": 0.63,
 "last": 0.65,
 "volume": 35.62,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-225"
@@ -23296,8 +23326,8 @@
 "line": 250,
 "bid": 0.48,
 "ask": 0.49,
-"last": 0.48,
-"volume": 1099.22,
+"last": 0.49,
+"volume": 1138.62,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-250"
 },
 {
@@ -23315,7 +23345,7 @@
 "stat": "passing_yards",
 "line": 300,
 "bid": 0.2,
-"ask": 0.23,
+"ask": 0.24,
 "last": 0.24,
 "volume": 4.27,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-300"
@@ -23394,10 +23424,10 @@
 "player": "Josh Allen",
 "stat": "rushing_yards",
 "line": 40,
-"bid": 0.43,
-"ask": 0.46,
-"last": 0.45,
-"volume": 360.17,
+"bid": 0.44,
+"ask": 0.47,
+"last": 0.47,
+"volume": 391.63,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJALLEN17-40"
 },
 {
@@ -23594,10 +23624,10 @@
 "player": "Keon Coleman",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.68,
-"ask": 0.82,
-"last": 0.0,
-"volume": 0.0,
+"bid": 0.76,
+"ask": 0.83,
+"last": 0.84,
+"volume": 20.95,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-15"
 },
 {
@@ -23615,7 +23645,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.48,
-"ask": 0.5,
+"ask": 0.49,
 "last": 0.48,
 "volume": 4135.81,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-40"
@@ -23646,8 +23676,8 @@
 "line": 70,
 "bid": 0.21,
 "ask": 0.22,
-"last": 0.21,
-"volume": 225.0,
+"last": 0.22,
+"volume": 341.37,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-70"
 },
 {
@@ -23726,8 +23756,8 @@
 "line": 4,
 "bid": 0.39,
 "ask": 0.41,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.41,
+"volume": 41.86,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKCOLEMAN0-4"
 },
 {
@@ -23774,8 +23804,8 @@
 "player": "Khalil Shakir",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.75,
-"ask": 0.91,
+"bid": 0.77,
+"ask": 0.9,
 "last": 0.77,
 "volume": 3.0,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-15"
@@ -24025,7 +24055,7 @@
 "stat": "receptions",
 "line": 1,
 "bid": 0.57,
-"ask": 0.59,
+"ask": 0.6,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKMUMPFIELD4-1"
@@ -24097,7 +24127,7 @@
 "bid": 0.62,
 "ask": 0.64,
 "last": 0.64,
-"volume": 725.56,
+"volume": 765.18,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-15"
 },
 {
@@ -24107,7 +24137,7 @@
 "bid": 0.42,
 "ask": 0.43,
 "last": 0.43,
-"volume": 3264.13,
+"volume": 3307.26,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-25"
 },
 {
@@ -24117,7 +24147,7 @@
 "bid": 0.19,
 "ask": 0.2,
 "last": 0.2,
-"volume": 1353.62,
+"volume": 1391.49,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-40"
 },
 {
@@ -24137,7 +24167,7 @@
 "bid": 0.06,
 "ask": 0.08,
 "last": 0.08,
-"volume": 153.97,
+"volume": 173.93,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-60"
 },
 {
@@ -24155,7 +24185,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.75,
-"ask": 0.81,
+"ask": 0.8,
 "last": 0.81,
 "volume": 1.21,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKWILLIAMS23-2"
@@ -24164,7 +24194,7 @@
 "player": "Kyren Williams",
 "stat": "receptions",
 "line": 3,
-"bid": 0.56,
+"bid": 0.55,
 "ask": 0.58,
 "last": 0.0,
 "volume": 0.0,
@@ -24345,9 +24375,9 @@
 "stat": "passing_tds",
 "line": 1,
 "bid": 0.9,
-"ask": 0.95,
-"last": 0.0,
-"volume": 0.0,
+"ask": 0.94,
+"last": 0.95,
+"volume": 2.64,
 "ticker": "KXNFLPASSTDS-26OCT12BUFLAR-LARMSTAFFORD9-1"
 },
 {
@@ -24407,7 +24437,7 @@
 "bid": 0.76,
 "ask": 0.79,
 "last": 0.79,
-"volume": 5.55,
+"volume": 11.1,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-LARMSTAFFORD9-225"
 },
 {
@@ -24425,9 +24455,9 @@
 "stat": "passing_yards",
 "line": 275,
 "bid": 0.52,
-"ask": 0.53,
+"ask": 0.54,
 "last": 0.54,
-"volume": 611.28,
+"volume": 620.29,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-LARMSTAFFORD9-275"
 },
 {
@@ -24515,7 +24545,7 @@
 "stat": "receiving_yards",
 "line": 60,
 "bid": 0.75,
-"ask": 0.79,
+"ask": 0.8,
 "last": 0.8,
 "volume": 0.36,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-60"
@@ -24524,7 +24554,7 @@
 "player": "Puka Nacua",
 "stat": "receiving_yards",
 "line": 70,
-"bid": 0.67,
+"bid": 0.68,
 "ask": 0.72,
 "last": 0.72,
 "volume": 27.72,
@@ -24564,17 +24594,17 @@
 "player": "Puka Nacua",
 "stat": "receiving_yards",
 "line": 100,
-"bid": 0.42,
+"bid": 0.43,
 "ask": 0.45,
-"last": 0.46,
-"volume": 54.93,
+"last": 0.45,
+"volume": 161.92,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-100"
 },
 {
 "player": "Puka Nacua",
 "stat": "receiving_yards",
 "line": 110,
-"bid": 0.34,
+"bid": 0.32,
 "ask": 0.37,
 "last": 0.37,
 "volume": 39.94,
@@ -24765,7 +24795,7 @@
 "stat": "receptions",
 "line": 14,
 "bid": 0.02,
-"ask": 0.11,
+"ask": 0.06,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-14"
@@ -24775,7 +24805,7 @@
 "stat": "receptions",
 "line": 15,
 "bid": 0.01,
-"ask": 0.08,
+"ask": 0.06,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-15"
@@ -24786,8 +24816,8 @@
 "line": 15,
 "bid": 0.39,
 "ask": 0.43,
-"last": 0.44,
-"volume": 1.95,
+"last": 0.43,
+"volume": 21.95,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFTJOHNSON26-15"
 },
 {
@@ -24834,7 +24864,7 @@
 "player": "Ty Johnson",
 "stat": "receptions",
 "line": 2,
-"bid": 0.61,
+"bid": 0.62,
 "ask": 0.64,
 "last": 0.0,
 "volume": 0.0,
@@ -24895,7 +24925,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.66,
-"ask": 0.72,
+"ask": 0.71,
 "last": 0.73,
 "volume": 2.82,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARTHIGBEE89-15"
@@ -24976,8 +25006,8 @@
 "line": 3,
 "bid": 0.51,
 "ask": 0.53,
-"last": 0.49,
-"volume": 94.78,
+"last": 0.53,
+"volume": 149.58,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARTHIGBEE89-3"
 },
 {
@@ -25099,7 +25129,7 @@
 "bid": 0.59,
 "ask": 0.6,
 "last": 0.6,
-"volume": 219.92,
+"volume": 252.34,
 "ticker": "KXNFLPASSYDS-26OCT11HOUTEN-HOUCSTROUD7-225"
 },
 {
@@ -25109,7 +25139,7 @@
 "bid": 0.43,
 "ask": 0.44,
 "last": 0.44,
-"volume": 1049.76,
+"volume": 1060.69,
 "ticker": "KXNFLPASSYDS-26OCT11HOUTEN-HOUCSTROUD7-250"
 },
 {
@@ -25257,7 +25287,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.08,
-"ask": 0.12,
+"ask": 0.11,
 "last": 0.1,
 "volume": 66.0,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-TENCRIDLEY0-40"
@@ -25266,8 +25296,8 @@
 "player": "Calvin Ridley",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.04,
-"ask": 0.08,
+"bid": 0.03,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-TENCRIDLEY0-50"
@@ -25306,8 +25336,8 @@
 "player": "Calvin Ridley",
 "stat": "receptions",
 "line": 4,
-"bid": 0.02,
-"ask": 0.05,
+"bid": 0.03,
+"ask": 0.06,
 "last": 0.05,
 "volume": 128.57,
 "ticker": "KXNFLREC-26OCT11HOUTEN-TENCRIDLEY0-4"
@@ -25327,7 +25357,7 @@
 "stat": "passing_tds",
 "line": 2,
 "bid": 0.19,
-"ask": 0.22,
+"ask": 0.21,
 "last": 0.19,
 "volume": 64.76,
 "ticker": "KXNFLPASSTDS-26OCT11HOUTEN-TENCWARD1-2"
@@ -25357,7 +25387,7 @@
 "stat": "passing_yards",
 "line": 150,
 "bid": 0.74,
-"ask": 0.77,
+"ask": 0.76,
 "last": 0.76,
 "volume": 665.67,
 "ticker": "KXNFLPASSYDS-26OCT11HOUTEN-TENCWARD1-150"
@@ -25519,7 +25549,7 @@
 "bid": 0.45,
 "ask": 0.46,
 "last": 0.46,
-"volume": 6248.69,
+"volume": 6250.78,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-TENCTATE14-50"
 },
 {
@@ -25566,8 +25596,8 @@
 "player": "Carnell Tate",
 "stat": "receiving_yards",
 "line": 100,
-"bid": 0.08,
-"ask": 0.1,
+"bid": 0.07,
+"ask": 0.09,
 "last": 0.07,
 "volume": 965.15,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-TENCTATE14-100"
@@ -25597,7 +25627,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.78,
-"ask": 0.81,
+"ask": 0.82,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11HOUTEN-TENCTATE14-3"
@@ -25626,10 +25656,10 @@
 "player": "Carnell Tate",
 "stat": "receptions",
 "line": 6,
-"bid": 0.3,
+"bid": 0.26,
 "ask": 0.31,
-"last": 0.29,
-"volume": 40.0,
+"last": 0.31,
+"volume": 51.0,
 "ticker": "KXNFLREC-26OCT11HOUTEN-TENCTATE14-6"
 },
 {
@@ -25657,7 +25687,7 @@
 "stat": "receptions",
 "line": 9,
 "bid": 0.03,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11HOUTEN-TENCTATE14-9"
@@ -25687,7 +25717,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.8,
-"ask": 0.83,
+"ask": 0.84,
 "last": 0.84,
 "volume": 6.0,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUDSCHULTZ86-15"
@@ -25756,8 +25786,8 @@
 "player": "Dalton Schultz",
 "stat": "receiving_yards",
 "line": 90,
-"bid": 0.03,
-"ask": 0.07,
+"bid": 0.04,
+"ask": 0.06,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUDSCHULTZ86-90"
@@ -25767,7 +25797,7 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.02,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUDSCHULTZ86-100"
@@ -25796,7 +25826,7 @@
 "player": "Dalton Schultz",
 "stat": "receptions",
 "line": 3,
-"bid": 0.74,
+"bid": 0.75,
 "ask": 0.77,
 "last": 0.0,
 "volume": 0.0,
@@ -25806,10 +25836,10 @@
 "player": "Dalton Schultz",
 "stat": "receptions",
 "line": 4,
-"bid": 0.56,
-"ask": 0.57,
+"bid": 0.58,
+"ask": 0.59,
 "last": 0.57,
-"volume": 1351.52,
+"volume": 1693.52,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUDSCHULTZ86-4"
 },
 {
@@ -25826,8 +25856,8 @@
 "player": "Dalton Schultz",
 "stat": "receptions",
 "line": 6,
-"bid": 0.21,
-"ask": 0.25,
+"bid": 0.23,
+"ask": 0.27,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUDSCHULTZ86-6"
@@ -25847,7 +25877,7 @@
 "stat": "receptions",
 "line": 8,
 "bid": 0.04,
-"ask": 0.08,
+"ask": 0.09,
 "last": 0.05,
 "volume": 50.35,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUDSCHULTZ86-8"
@@ -25876,8 +25906,8 @@
 "player": "David Montgomery",
 "stat": "carries",
 "line": 13,
-"bid": 0.57,
-"ask": 0.71,
+"bid": 0.49,
+"ask": 0.8,
 "last": 0.6,
 "volume": 22.0,
 "ticker": "KXNFLRSHATT-26OCT11HOUTEN-HOUDMONTGOMERY32-13"
@@ -25886,7 +25916,7 @@
 "player": "David Montgomery",
 "stat": "carries",
 "line": 16,
-"bid": 0.32,
+"bid": 0.31,
 "ask": 0.34,
 "last": 0.35,
 "volume": 726.6,
@@ -25897,7 +25927,7 @@
 "stat": "carries",
 "line": 19,
 "bid": 0.06,
-"ask": 0.29,
+"ask": 0.28,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11HOUTEN-HOUDMONTGOMERY32-19"
@@ -25927,9 +25957,9 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.13,
-"ask": 0.15,
-"last": 0.15,
-"volume": 2395.87,
+"ask": 0.16,
+"last": 0.14,
+"volume": 2493.89,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUDMONTGOMERY32-25"
 },
 {
@@ -25967,7 +25997,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.18,
-"ask": 0.21,
+"ask": 0.22,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUDMONTGOMERY32-3"
@@ -26046,7 +26076,7 @@
 "player": "David Montgomery",
 "stat": "rushing_yards",
 "line": 70,
-"bid": 0.16,
+"bid": 0.17,
 "ask": 0.18,
 "last": 0.18,
 "volume": 384.77,
@@ -26076,8 +26106,8 @@
 "player": "David Montgomery",
 "stat": "rushing_yards",
 "line": 100,
-"bid": 0.04,
-"ask": 0.05,
+"bid": 0.05,
+"ask": 0.06,
 "last": 0.05,
 "volume": 112.9,
 "ticker": "KXNFLRSHYDS-26OCT11HOUTEN-HOUDMONTGOMERY32-100"
@@ -26307,7 +26337,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.57,
-"ask": 0.58,
+"ask": 0.6,
 "last": 0.58,
 "volume": 120.31,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUJNOEL13-15"
@@ -26317,9 +26347,9 @@
 "stat": "receiving_yards",
 "line": 20,
 "bid": 0.48,
-"ask": 0.5,
+"ask": 0.49,
 "last": 0.5,
-"volume": 6887.84,
+"volume": 6888.36,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUJNOEL13-20"
 },
 {
@@ -26327,7 +26357,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.39,
-"ask": 0.41,
+"ask": 0.42,
 "last": 0.41,
 "volume": 185.65,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUJNOEL13-25"
@@ -26347,7 +26377,7 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.12,
-"ask": 0.14,
+"ask": 0.16,
 "last": 0.14,
 "volume": 507.82,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUJNOEL13-50"
@@ -26397,16 +26427,16 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.26,
-"ask": 0.29,
-"last": 0.29,
-"volume": 42.57,
+"ask": 0.31,
+"last": 0.31,
+"volume": 42.87,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUJNOEL13-3"
 },
 {
 "player": "Jaylin Noel",
 "stat": "receptions",
 "line": 4,
-"bid": 0.11,
+"bid": 0.1,
 "ask": 0.14,
 "last": 0.15,
 "volume": 7.55,
@@ -26417,7 +26447,7 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.03,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUJNOEL13-5"
@@ -26486,8 +26516,8 @@
 "player": "Kayshon Boutte",
 "stat": "receiving_yards",
 "line": 70,
-"bid": 0.08,
-"ask": 0.1,
+"bid": 0.06,
+"ask": 0.11,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUKBOUTTE14-70"
@@ -26537,7 +26567,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.17,
-"ask": 0.21,
+"ask": 0.22,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUKBOUTTE14-4"
@@ -26577,7 +26607,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.82,
-"ask": 0.83,
+"ask": 0.84,
 "last": 0.84,
 "volume": 358.34,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUNCOLLINS12-40"
@@ -26617,9 +26647,9 @@
 "stat": "receiving_yards",
 "line": 80,
 "bid": 0.47,
-"ask": 0.48,
+"ask": 0.49,
 "last": 0.49,
-"volume": 1442.79,
+"volume": 1836.92,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUNCOLLINS12-80"
 },
 {
@@ -26657,7 +26687,7 @@
 "stat": "receiving_yards",
 "line": 120,
 "bid": 0.16,
-"ask": 0.18,
+"ask": 0.19,
 "last": 0.19,
 "volume": 49.8,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUNCOLLINS12-120"
@@ -26738,8 +26768,8 @@
 "line": 5,
 "bid": 0.64,
 "ask": 0.68,
-"last": 0.69,
-"volume": 12.67,
+"last": 0.68,
+"volume": 27.05,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUNCOLLINS12-5"
 },
 {
@@ -26767,7 +26797,7 @@
 "stat": "receptions",
 "line": 8,
 "bid": 0.2,
-"ask": 0.23,
+"ask": 0.24,
 "last": 0.24,
 "volume": 21.2,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUNCOLLINS12-8"
@@ -26846,7 +26876,7 @@
 "player": "Tony Pollard",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.22,
+"bid": 0.24,
 "ask": 0.33,
 "last": 0.33,
 "volume": 36.94,
@@ -26856,7 +26886,7 @@
 "player": "Tony Pollard",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.13,
+"bid": 0.14,
 "ask": 0.17,
 "last": 0.16,
 "volume": 947.1,
@@ -26877,7 +26907,7 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.02,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-TENTPOLLARD20-50"
@@ -26886,7 +26916,7 @@
 "player": "Tony Pollard",
 "stat": "receptions",
 "line": 2,
-"bid": 0.52,
+"bid": 0.51,
 "ask": 0.53,
 "last": 0.54,
 "volume": 76.27,
@@ -26897,7 +26927,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.21,
-"ask": 0.27,
+"ask": 0.26,
 "last": 0.23,
 "volume": 6.0,
 "ticker": "KXNFLREC-26OCT11HOUTEN-TENTPOLLARD20-3"
@@ -26906,7 +26936,7 @@
 "player": "Tony Pollard",
 "stat": "receptions",
 "line": 4,
-"bid": 0.09,
+"bid": 0.06,
 "ask": 0.12,
 "last": 0.09,
 "volume": 11.0,
@@ -26927,7 +26957,7 @@
 "stat": "rushing_yards",
 "line": 25,
 "bid": 0.84,
-"ask": 0.86,
+"ask": 0.87,
 "last": 0.87,
 "volume": 6.0,
 "ticker": "KXNFLRSHYDS-26OCT11HOUTEN-TENTPOLLARD20-25"
@@ -26936,8 +26966,8 @@
 "player": "Tony Pollard",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.75,
-"ask": 0.76,
+"bid": 0.77,
+"ask": 0.78,
 "last": 0.76,
 "volume": 553.1,
 "ticker": "KXNFLRSHYDS-26OCT11HOUTEN-TENTPOLLARD20-30"
@@ -27047,7 +27077,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.04,
-"ask": 0.09,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-TENTSPEARS2-40"
@@ -27078,8 +27108,8 @@
 "line": 3,
 "bid": 0.33,
 "ask": 0.35,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.35,
+"volume": 20.0,
 "ticker": "KXNFLREC-26OCT11HOUTEN-TENTSPEARS2-3"
 },
 {
@@ -27149,7 +27179,7 @@
 "bid": 0.38,
 "ask": 0.39,
 "last": 0.38,
-"volume": 1066.28,
+"volume": 1088.41,
 "ticker": "KXNFLRSHYDS-26OCT11HOUTEN-TENTSPEARS2-20"
 },
 {
@@ -27217,7 +27247,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.78,
-"ask": 0.8,
+"ask": 0.82,
 "last": 0.8,
 "volume": 5.0,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-TENWROBINSON4-15"
@@ -27237,7 +27267,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.39,
-"ask": 0.4,
+"ask": 0.41,
 "last": 0.4,
 "volume": 1199.57,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-TENWROBINSON4-40"
@@ -27337,7 +27367,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.18,
-"ask": 0.23,
+"ask": 0.24,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11HOUTEN-TENWROBINSON4-6"
@@ -27376,10 +27406,10 @@
 "player": "Woody Marks",
 "stat": "carries",
 "line": 6,
-"bid": 0.81,
-"ask": 0.82,
-"last": 0.78,
-"volume": 1598.36,
+"bid": 0.8,
+"ask": 0.81,
+"last": 0.79,
+"volume": 1798.84,
 "ticker": "KXNFLRSHATT-26OCT11HOUTEN-HOUWMARKS4-6"
 },
 {
@@ -27397,7 +27427,7 @@
 "stat": "carries",
 "line": 12,
 "bid": 0.21,
-"ask": 0.26,
+"ask": 0.25,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11HOUTEN-HOUWMARKS4-12"
@@ -27457,7 +27487,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.21,
-"ask": 0.24,
+"ask": 0.25,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUWMARKS4-3"
@@ -27569,7 +27599,7 @@
 "bid": 0.49,
 "ask": 0.5,
 "last": 0.5,
-"volume": 1104.9,
+"volume": 1115.28,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUXHUTCHINSON19-15"
 },
 {
@@ -27578,8 +27608,8 @@
 "line": 25,
 "bid": 0.31,
 "ask": 0.33,
-"last": 0.34,
-"volume": 747.14,
+"last": 0.33,
+"volume": 900.54,
 "ticker": "KXNFLRECYDS-26OCT11HOUTEN-HOUXHUTCHINSON19-25"
 },
 {
@@ -27626,10 +27656,10 @@
 "player": "Xavier Hutchinson",
 "stat": "receptions",
 "line": 2,
-"bid": 0.41,
-"ask": 0.42,
+"bid": 0.42,
+"ask": 0.43,
 "last": 0.42,
-"volume": 7262.65,
+"volume": 8005.89,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUXHUTCHINSON19-2"
 },
 {
@@ -27639,17 +27669,17 @@
 "bid": 0.15,
 "ask": 0.18,
 "last": 0.18,
-"volume": 571.35,
+"volume": 1622.11,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUXHUTCHINSON19-3"
 },
 {
 "player": "Xavier Hutchinson",
 "stat": "receptions",
 "line": 4,
-"bid": 0.04,
-"ask": 0.07,
-"last": 0.08,
-"volume": 58.71,
+"bid": 0.05,
+"ask": 0.09,
+"last": 0.09,
+"volume": 1337.84,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUXHUTCHINSON19-4"
 },
 {
@@ -27657,9 +27687,9 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.02,
-"ask": 0.03,
-"last": 0.05,
-"volume": 64.71,
+"ask": 0.04,
+"last": 0.04,
+"volume": 1734.37,
 "ticker": "KXNFLREC-26OCT11HOUTEN-HOUXHUTCHINSON19-5"
 }
 ],
@@ -27669,7 +27699,7 @@
 "stat": "carries",
 "line": 2,
 "bid": 0.88,
-"ask": 0.92,
+"ask": 0.91,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11DENLAC-DENBNIX10-2"
@@ -27698,7 +27728,7 @@
 "player": "Bo Nix",
 "stat": "passing_tds",
 "line": 1,
-"bid": 0.78,
+"bid": 0.79,
 "ask": 0.83,
 "last": 0.0,
 "volume": 0.0,
@@ -27809,7 +27839,7 @@
 "stat": "passing_yards",
 "line": 325,
 "bid": 0.05,
-"ask": 0.1,
+"ask": 0.09,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLPASSYDS-26OCT11DENLAC-DENBNIX10-325"
@@ -27899,7 +27929,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.65,
-"ask": 0.68,
+"ask": 0.67,
 "last": 0.68,
 "volume": 23.63,
 "ticker": "KXNFLRECYDS-26OCT11DENLAC-DENCSUTTON14-25"
@@ -27921,7 +27951,7 @@
 "bid": 0.34,
 "ask": 0.35,
 "last": 0.35,
-"volume": 569.28,
+"volume": 570.28,
 "ticker": "KXNFLRECYDS-26OCT11DENLAC-DENCSUTTON14-50"
 },
 {
@@ -27938,8 +27968,8 @@
 "player": "Courtland Sutton",
 "stat": "receiving_yards",
 "line": 70,
-"bid": 0.14,
-"ask": 0.18,
+"bid": 0.15,
+"ask": 0.17,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11DENLAC-DENCSUTTON14-70"
@@ -27958,7 +27988,7 @@
 "player": "Courtland Sutton",
 "stat": "receiving_yards",
 "line": 90,
-"bid": 0.07,
+"bid": 0.06,
 "ask": 0.1,
 "last": 0.0,
 "volume": 0.0,
@@ -28019,7 +28049,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.13,
-"ask": 0.14,
+"ask": 0.15,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11DENLAC-DENCSUTTON14-6"
@@ -28129,7 +28159,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.19,
-"ask": 0.23,
+"ask": 0.24,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11DENLAC-DENEENGRAM1-4"
@@ -28169,7 +28199,7 @@
 "stat": "carries",
 "line": 14,
 "bid": 0.5,
-"ask": 0.52,
+"ask": 0.51,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11DENLAC-DENJDOBBINS27-14"
@@ -28221,7 +28251,7 @@
 "bid": 0.53,
 "ask": 0.54,
 "last": 0.54,
-"volume": 1859.11,
+"volume": 1861.35,
 "ticker": "KXNFLRSHYDS-26OCT11DENLAC-DENJDOBBINS27-50"
 },
 {
@@ -28230,8 +28260,8 @@
 "line": 60,
 "bid": 0.38,
 "ask": 0.4,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.4,
+"volume": 45.0,
 "ticker": "KXNFLRSHYDS-26OCT11DENLAC-DENJDOBBINS27-60"
 },
 {
@@ -28279,7 +28309,7 @@
 "stat": "rushing_yards",
 "line": 110,
 "bid": 0.04,
-"ask": 0.09,
+"ask": 0.08,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT11DENLAC-DENJDOBBINS27-110"
@@ -28308,47 +28338,47 @@
 "player": "Jaylen Waddle",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.57,
-"ask": 0.58,
+"bid": 0.58,
+"ask": 0.59,
 "last": 0.58,
-"volume": 12156.26,
+"volume": 12159.26,
 "ticker": "KXNFLRECYDS-26OCT11DENLAC-DENJWADDLE17-50"
 },
 {
 "player": "Jaylen Waddle",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.45,
-"ask": 0.47,
+"bid": 0.47,
+"ask": 0.48,
 "last": 0.47,
-"volume": 400.03,
+"volume": 1163.03,
 "ticker": "KXNFLRECYDS-26OCT11DENLAC-DENJWADDLE17-60"
 },
 {
 "player": "Jaylen Waddle",
 "stat": "receiving_yards",
 "line": 70,
-"bid": 0.34,
-"ask": 0.36,
-"last": 0.37,
-"volume": 445.26,
+"bid": 0.36,
+"ask": 0.37,
+"last": 0.36,
+"volume": 1205.26,
 "ticker": "KXNFLRECYDS-26OCT11DENLAC-DENJWADDLE17-70"
 },
 {
 "player": "Jaylen Waddle",
 "stat": "receiving_yards",
 "line": 80,
-"bid": 0.25,
-"ask": 0.26,
-"last": 0.28,
-"volume": 311.4,
+"bid": 0.26,
+"ask": 0.27,
+"last": 0.26,
+"volume": 1662.4,
 "ticker": "KXNFLRECYDS-26OCT11DENLAC-DENJWADDLE17-80"
 },
 {
 "player": "Jaylen Waddle",
 "stat": "receiving_yards",
 "line": 90,
-"bid": 0.18,
+"bid": 0.2,
 "ask": 0.21,
 "last": 0.21,
 "volume": 252.99,
@@ -28358,10 +28388,10 @@
 "player": "Jaylen Waddle",
 "stat": "receiving_yards",
 "line": 100,
-"bid": 0.13,
-"ask": 0.14,
-"last": 0.16,
-"volume": 307.61,
+"bid": 0.14,
+"ask": 0.15,
+"last": 0.14,
+"volume": 1469.61,
 "ticker": "KXNFLRECYDS-26OCT11DENLAC-DENJWADDLE17-100"
 },
 {
@@ -28489,7 +28519,7 @@
 "stat": "carries",
 "line": 6,
 "bid": 0.43,
-"ask": 0.46,
+"ask": 0.45,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11DENLAC-LACJHERBERT10-6"
@@ -28580,8 +28610,8 @@
 "line": 200,
 "bid": 0.49,
 "ask": 0.51,
-"last": 0.52,
-"volume": 234.71,
+"last": 0.51,
+"volume": 244.18,
 "ticker": "KXNFLPASSYDS-26OCT11DENLAC-LACJHERBERT10-200"
 },
 {
@@ -28599,7 +28629,7 @@
 "stat": "passing_yards",
 "line": 250,
 "bid": 0.21,
-"ask": 0.23,
+"ask": 0.22,
 "last": 0.23,
 "volume": 105.05,
 "ticker": "KXNFLPASSYDS-26OCT11DENLAC-LACJHERBERT10-250"
@@ -28718,7 +28748,7 @@
 "player": "Keaton Mitchell",
 "stat": "rushing_yards",
 "line": 40,
-"bid": 0.32,
+"bid": 0.33,
 "ask": 0.37,
 "last": 0.39,
 "volume": 34.66,
@@ -28729,7 +28759,7 @@
 "stat": "rushing_yards",
 "line": 50,
 "bid": 0.19,
-"ask": 0.25,
+"ask": 0.24,
 "last": 0.27,
 "volume": 29.01,
 "ticker": "KXNFLRSHYDS-26OCT11DENLAC-LACKMITCHELL34-50"
@@ -28758,7 +28788,7 @@
 "player": "Keaton Mitchell",
 "stat": "rushing_yards",
 "line": 80,
-"bid": 0.03,
+"bid": 0.04,
 "ask": 0.07,
 "last": 0.08,
 "volume": 411.02,
@@ -28809,7 +28839,7 @@
 "stat": "receiving_yards",
 "line": 60,
 "bid": 0.04,
-"ask": 0.08,
+"ask": 0.09,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11DENLAC-DENMMIMS19-60"
@@ -28829,7 +28859,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.19,
-"ask": 0.2,
+"ask": 0.21,
 "last": 0.21,
 "volume": 4649.42,
 "ticker": "KXNFLREC-26OCT11DENLAC-DENMMIMS19-3"
@@ -28838,7 +28868,7 @@
 "player": "Marvin Mims Jr.",
 "stat": "receptions",
 "line": 4,
-"bid": 0.06,
+"bid": 0.05,
 "ask": 0.11,
 "last": 0.0,
 "volume": 0.0,
@@ -28858,8 +28888,8 @@
 "player": "Omarion Hampton",
 "stat": "carries",
 "line": 8,
-"bid": 0.77,
-"ask": 0.8,
+"bid": 0.76,
+"ask": 0.79,
 "last": 0.81,
 "volume": 6.08,
 "ticker": "KXNFLRSHATT-26OCT11DENLAC-LACOHAMPTON8-8"
@@ -28870,8 +28900,8 @@
 "line": 11,
 "bid": 0.48,
 "ask": 0.49,
-"last": 0.47,
-"volume": 77.13,
+"last": 0.49,
+"volume": 175.65,
 "ticker": "KXNFLRSHATT-26OCT11DENLAC-LACOHAMPTON8-11"
 },
 {
@@ -28879,7 +28909,7 @@
 "stat": "carries",
 "line": 14,
 "bid": 0.22,
-"ask": 0.26,
+"ask": 0.25,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11DENLAC-LACOHAMPTON8-14"
@@ -28920,8 +28950,8 @@
 "line": 40,
 "bid": 0.47,
 "ask": 0.5,
-"last": 0.49,
-"volume": 4261.78,
+"last": 0.5,
+"volume": 4267.51,
 "ticker": "KXNFLRSHYDS-26OCT11DENLAC-LACOHAMPTON8-40"
 },
 {
@@ -28941,7 +28971,7 @@
 "bid": 0.21,
 "ask": 0.24,
 "last": 0.24,
-"volume": 853.79,
+"volume": 952.69,
 "ticker": "KXNFLRSHYDS-26OCT11DENLAC-LACOHAMPTON8-60"
 },
 {
@@ -28961,7 +28991,7 @@
 "bid": 0.09,
 "ask": 0.12,
 "last": 0.12,
-"volume": 1077.57,
+"volume": 1352.3,
 "ticker": "KXNFLRSHYDS-26OCT11DENLAC-LACOHAMPTON8-80"
 },
 {
@@ -28988,7 +29018,7 @@
 "player": "RJ Harvey",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.74,
+"bid": 0.75,
 "ask": 0.76,
 "last": 0.74,
 "volume": 733.95,
@@ -28999,7 +29029,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.54,
-"ask": 0.56,
+"ask": 0.57,
 "last": 0.55,
 "volume": 1577.68,
 "ticker": "KXNFLRECYDS-26OCT11DENLAC-DENRHARVEY12-25"
@@ -29099,7 +29129,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.24,
-"ask": 0.27,
+"ask": 0.28,
 "last": 0.28,
 "volume": 3.4,
 "ticker": "KXNFLREC-26OCT11DENLAC-DENRHARVEY12-6"
@@ -29181,7 +29211,7 @@
 "bid": 0.54,
 "ask": 0.55,
 "last": 0.54,
-"volume": 30217.53,
+"volume": 31133.53,
 "ticker": "KXNFLRSHYDS-26OCT11DENLAC-DENRHARVEY12-25"
 },
 {
@@ -29229,7 +29259,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.58,
-"ask": 0.59,
+"ask": 0.6,
 "last": 0.6,
 "volume": 1343.21,
 "ticker": "KXNFLRECYDS-26OCT11DENLAC-DENTFRANKLIN11-15"
@@ -29298,7 +29328,7 @@
 "player": "Troy Franklin",
 "stat": "receptions",
 "line": 3,
-"bid": 0.23,
+"bid": 0.22,
 "ask": 0.27,
 "last": 0.0,
 "volume": 0.0,
@@ -29341,7 +29371,7 @@
 "stat": "carries",
 "line": 15,
 "bid": 0.68,
-"ask": 0.72,
+"ask": 0.71,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11CLENYJ-NYJBALLEN0-15"
@@ -29361,7 +29391,7 @@
 "stat": "carries",
 "line": 21,
 "bid": 0.24,
-"ask": 0.29,
+"ask": 0.28,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11CLENYJ-NYJBALLEN0-21"
@@ -29420,8 +29450,8 @@
 "player": "Braelon Allen",
 "stat": "receptions",
 "line": 2,
-"bid": 0.64,
-"ask": 0.72,
+"bid": 0.61,
+"ask": 0.73,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-NYJBALLEN0-2"
@@ -29432,8 +29462,8 @@
 "line": 3,
 "bid": 0.47,
 "ask": 0.48,
-"last": 0.48,
-"volume": 1692.88,
+"last": 0.47,
+"volume": 1705.66,
 "ticker": "KXNFLREC-26OCT11CLENYJ-NYJBALLEN0-3"
 },
 {
@@ -29441,7 +29471,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.25,
-"ask": 0.27,
+"ask": 0.29,
 "last": 0.28,
 "volume": 2926.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-NYJBALLEN0-4"
@@ -29512,8 +29542,8 @@
 "line": 70,
 "bid": 0.52,
 "ask": 0.53,
-"last": 0.52,
-"volume": 15614.66,
+"last": 0.53,
+"volume": 16162.66,
 "ticker": "KXNFLRSHYDS-26OCT11CLENYJ-NYJBALLEN0-70"
 },
 {
@@ -29700,7 +29730,7 @@
 "player": "Denzel Boston",
 "stat": "receiving_yards",
 "line": 120,
-"bid": 0.04,
+"bid": 0.03,
 "ask": 0.07,
 "last": 0.07,
 "volume": 40.14,
@@ -29730,7 +29760,7 @@
 "player": "Denzel Boston",
 "stat": "receptions",
 "line": 4,
-"bid": 0.43,
+"bid": 0.44,
 "ask": 0.45,
 "last": 0.46,
 "volume": 35.62,
@@ -29771,7 +29801,7 @@
 "stat": "receptions",
 "line": 8,
 "bid": 0.03,
-"ask": 0.07,
+"ask": 0.06,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEDBOSTON12-8"
@@ -29820,7 +29850,7 @@
 "player": "Deshaun Watson",
 "stat": "passing_tds",
 "line": 2,
-"bid": 0.35,
+"bid": 0.36,
 "ask": 0.37,
 "last": 0.34,
 "volume": 5.1,
@@ -29850,8 +29880,8 @@
 "player": "Deshaun Watson",
 "stat": "passing_yards",
 "line": 125,
-"bid": 0.84,
-"ask": 0.88,
+"bid": 0.85,
+"ask": 0.89,
 "last": 0.87,
 "volume": 10.89,
 "ticker": "KXNFLPASSYDS-26OCT11CLENYJ-CLEDWATSON4-125"
@@ -29902,8 +29932,8 @@
 "line": 250,
 "bid": 0.21,
 "ask": 0.22,
-"last": 0.21,
-"volume": 25.0,
+"last": 0.22,
+"volume": 26.0,
 "ticker": "KXNFLPASSYDS-26OCT11CLENYJ-CLEDWATSON4-250"
 },
 {
@@ -30032,8 +30062,8 @@
 "line": 40,
 "bid": 0.77,
 "ask": 0.78,
-"last": 0.78,
-"volume": 739.34,
+"last": 0.77,
+"volume": 747.32,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-NYJGWILSON5-40"
 },
 {
@@ -30043,7 +30073,7 @@
 "bid": 0.68,
 "ask": 0.71,
 "last": 0.71,
-"volume": 4.23,
+"volume": 11.13,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-NYJGWILSON5-50"
 },
 {
@@ -30052,8 +30082,8 @@
 "line": 60,
 "bid": 0.58,
 "ask": 0.61,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.58,
+"volume": 11.44,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-NYJGWILSON5-60"
 },
 {
@@ -30180,7 +30210,7 @@
 "player": "Garrett Wilson",
 "stat": "receptions",
 "line": 7,
-"bid": 0.38,
+"bid": 0.39,
 "ask": 0.4,
 "last": 0.39,
 "volume": 1121.67,
@@ -30191,7 +30221,7 @@
 "stat": "receptions",
 "line": 8,
 "bid": 0.24,
-"ask": 0.28,
+"ask": 0.29,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-NYJGWILSON5-8"
@@ -30241,7 +30271,7 @@
 "stat": "receptions",
 "line": 13,
 "bid": 0.02,
-"ask": 0.05,
+"ask": 0.08,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-NYJGWILSON5-13"
@@ -30290,7 +30320,7 @@
 "player": "Geno Smith",
 "stat": "passing_yards",
 "line": 125,
-"bid": 0.86,
+"bid": 0.84,
 "ask": 0.89,
 "last": 0.9,
 "volume": 5.0,
@@ -30323,7 +30353,7 @@
 "bid": 0.53,
 "ask": 0.54,
 "last": 0.54,
-"volume": 173.04,
+"volume": 174.04,
 "ticker": "KXNFLPASSYDS-26OCT11CLENYJ-NYJGSMITH7-200"
 },
 {
@@ -30441,7 +30471,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.81,
-"ask": 0.84,
+"ask": 0.85,
 "last": 0.84,
 "volume": 11.75,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-CLEHFANNIN44-15"
@@ -30511,7 +30541,7 @@
 "stat": "receiving_yards",
 "line": 90,
 "bid": 0.05,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-CLEHFANNIN44-90"
@@ -30551,7 +30581,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.6,
-"ask": 0.62,
+"ask": 0.63,
 "last": 0.63,
 "volume": 0.18,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEHFANNIN44-4"
@@ -30571,7 +30601,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.24,
-"ask": 0.28,
+"ask": 0.29,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEHFANNIN44-6"
@@ -30590,7 +30620,7 @@
 "player": "Harold Fannin Jr.",
 "stat": "receptions",
 "line": 8,
-"bid": 0.05,
+"bid": 0.04,
 "ask": 0.11,
 "last": 0.0,
 "volume": 0.0,
@@ -30672,8 +30702,8 @@
 "line": 40,
 "bid": 0.06,
 "ask": 0.11,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.11,
+"volume": 7.0,
 "ticker": "KXNFLRSHYDS-26OCT11CLENYJ-NYJIDAVIS32-40"
 },
 {
@@ -30690,8 +30720,8 @@
 "player": "Isaiah Williams",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.61,
-"ask": 0.65,
+"bid": 0.6,
+"ask": 0.66,
 "last": 0.66,
 "volume": 3.0,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-NYJIWILLIAMS18-15"
@@ -30760,7 +30790,7 @@
 "player": "Isaiah Williams",
 "stat": "receptions",
 "line": 2,
-"bid": 0.66,
+"bid": 0.64,
 "ask": 0.69,
 "last": 0.0,
 "volume": 0.0,
@@ -30781,7 +30811,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.19,
-"ask": 0.24,
+"ask": 0.25,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-NYJIWILLIAMS18-4"
@@ -30841,7 +30871,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.14,
-"ask": 0.16,
+"ask": 0.17,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-CLEJJEUDY3-40"
@@ -30850,7 +30880,7 @@
 "player": "Jerry Jeudy",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.08,
+"bid": 0.03,
 "ask": 0.09,
 "last": 0.07,
 "volume": 4.0,
@@ -30883,7 +30913,7 @@
 "bid": 0.45,
 "ask": 0.46,
 "last": 0.45,
-"volume": 100.0,
+"volume": 300.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEJJEUDY3-2"
 },
 {
@@ -30900,8 +30930,8 @@
 "player": "Jerry Jeudy",
 "stat": "receptions",
 "line": 4,
-"bid": 0.03,
-"ask": 0.11,
+"bid": 0.08,
+"ask": 0.1,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEJJEUDY3-4"
@@ -30920,8 +30950,8 @@
 "player": "KC Concepcion Jr.",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.83,
-"ask": 0.85,
+"bid": 0.84,
+"ask": 0.87,
 "last": 0.87,
 "volume": 7.14,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-CLEKCONCEPCION1-15"
@@ -30951,7 +30981,7 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.35,
-"ask": 0.37,
+"ask": 0.36,
 "last": 0.36,
 "volume": 74.57,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-CLEKCONCEPCION1-50"
@@ -31001,7 +31031,7 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.04,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-CLEKCONCEPCION1-100"
@@ -31010,8 +31040,8 @@
 "player": "KC Concepcion Jr.",
 "stat": "receptions",
 "line": 2,
-"bid": 0.89,
-"ask": 0.91,
+"bid": 0.9,
+"ask": 0.92,
 "last": 0.94,
 "volume": 9.38,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEKCONCEPCION1-2"
@@ -31020,8 +31050,8 @@
 "player": "KC Concepcion Jr.",
 "stat": "receptions",
 "line": 3,
-"bid": 0.75,
-"ask": 0.8,
+"bid": 0.78,
+"ask": 0.81,
 "last": 0.8,
 "volume": 53.97,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEKCONCEPCION1-3"
@@ -31031,7 +31061,7 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.59,
-"ask": 0.62,
+"ask": 0.63,
 "last": 0.62,
 "volume": 10.17,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEKCONCEPCION1-4"
@@ -31050,7 +31080,7 @@
 "player": "KC Concepcion Jr.",
 "stat": "receptions",
 "line": 6,
-"bid": 0.21,
+"bid": 0.26,
 "ask": 0.29,
 "last": 0.0,
 "volume": 0.0,
@@ -31060,7 +31090,7 @@
 "player": "KC Concepcion Jr.",
 "stat": "receptions",
 "line": 7,
-"bid": 0.1,
+"bid": 0.05,
 "ask": 0.18,
 "last": 0.0,
 "volume": 0.0,
@@ -31071,7 +31101,7 @@
 "stat": "receptions",
 "line": 8,
 "bid": 0.05,
-"ask": 0.1,
+"ask": 0.09,
 "last": 0.06,
 "volume": 5.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEKCONCEPCION1-8"
@@ -31081,7 +31111,7 @@
 "stat": "receptions",
 "line": 9,
 "bid": 0.03,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEKCONCEPCION1-9"
@@ -31101,7 +31131,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.78,
-"ask": 0.79,
+"ask": 0.81,
 "last": 0.78,
 "volume": 7.0,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-NYJKSADIQ16-15"
@@ -31110,7 +31140,7 @@
 "player": "Kenyon Sadiq",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.6,
+"bid": 0.59,
 "ask": 0.61,
 "last": 0.63,
 "volume": 131.94,
@@ -31130,7 +31160,7 @@
 "player": "Kenyon Sadiq",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.23,
+"bid": 0.24,
 "ask": 0.25,
 "last": 0.23,
 "volume": 37.47,
@@ -31140,7 +31170,7 @@
 "player": "Kenyon Sadiq",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.14,
+"bid": 0.12,
 "ask": 0.18,
 "last": 0.2,
 "volume": 14.2,
@@ -31180,8 +31210,8 @@
 "player": "Kenyon Sadiq",
 "stat": "receptions",
 "line": 2,
-"bid": 0.77,
-"ask": 0.86,
+"bid": 0.76,
+"ask": 0.87,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-NYJKSADIQ16-2"
@@ -31190,8 +31220,8 @@
 "player": "Kenyon Sadiq",
 "stat": "receptions",
 "line": 3,
-"bid": 0.62,
-"ask": 0.66,
+"bid": 0.63,
+"ask": 0.65,
 "last": 0.74,
 "volume": 33.42,
 "ticker": "KXNFLREC-26OCT11CLENYJ-NYJKSADIQ16-3"
@@ -31200,20 +31230,20 @@
 "player": "Kenyon Sadiq",
 "stat": "receptions",
 "line": 4,
-"bid": 0.43,
-"ask": 0.44,
-"last": 0.43,
-"volume": 2312.24,
+"bid": 0.44,
+"ask": 0.45,
+"last": 0.45,
+"volume": 3313.98,
 "ticker": "KXNFLREC-26OCT11CLENYJ-NYJKSADIQ16-4"
 },
 {
 "player": "Kenyon Sadiq",
 "stat": "receptions",
 "line": 5,
-"bid": 0.21,
-"ask": 0.26,
-"last": 0.34,
-"volume": 14.05,
+"bid": 0.28,
+"ask": 0.29,
+"last": 0.27,
+"volume": 737.05,
 "ticker": "KXNFLREC-26OCT11CLENYJ-NYJKSADIQ16-5"
 },
 {
@@ -31240,7 +31270,7 @@
 "player": "Kenyon Sadiq",
 "stat": "receptions",
 "line": 8,
-"bid": 0.02,
+"bid": 0.03,
 "ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
@@ -31321,7 +31351,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.27,
-"ask": 0.32,
+"ask": 0.33,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-NYJMTAYLOR85-3"
@@ -31330,7 +31360,7 @@
 "player": "Mason Taylor",
 "stat": "receptions",
 "line": 4,
-"bid": 0.09,
+"bid": 0.04,
 "ask": 0.15,
 "last": 0.0,
 "volume": 0.0,
@@ -31370,7 +31400,7 @@
 "player": "Quinshon Judkins",
 "stat": "carries",
 "line": 17,
-"bid": 0.44,
+"bid": 0.45,
 "ask": 0.47,
 "last": 0.48,
 "volume": 137.36,
@@ -31381,7 +31411,7 @@
 "stat": "carries",
 "line": 20,
 "bid": 0.24,
-"ask": 0.28,
+"ask": 0.29,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHATT-26OCT11CLENYJ-CLEQJUDKINS10-20"
@@ -31391,7 +31421,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.5,
-"ask": 0.53,
+"ask": 0.54,
 "last": 0.54,
 "volume": 1820.01,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-CLEQJUDKINS10-15"
@@ -31410,8 +31440,8 @@
 "player": "Quinshon Judkins",
 "stat": "receiving_yards",
 "line": 40,
-"bid": 0.1,
-"ask": 0.14,
+"bid": 0.09,
+"ask": 0.13,
 "last": 0.14,
 "volume": 960.0,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-CLEQJUDKINS10-40"
@@ -31421,7 +31451,7 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.06,
-"ask": 0.08,
+"ask": 0.09,
 "last": 0.09,
 "volume": 1545.0,
 "ticker": "KXNFLRECYDS-26OCT11CLENYJ-CLEQJUDKINS10-50"
@@ -31440,8 +31470,8 @@
 "player": "Quinshon Judkins",
 "stat": "receptions",
 "line": 2,
-"bid": 0.71,
-"ask": 0.76,
+"bid": 0.69,
+"ask": 0.77,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEQJUDKINS10-2"
@@ -31452,16 +31482,16 @@
 "line": 3,
 "bid": 0.51,
 "ask": 0.52,
-"last": 0.51,
-"volume": 2930.99,
+"last": 0.52,
+"volume": 2949.59,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEQJUDKINS10-3"
 },
 {
 "player": "Quinshon Judkins",
 "stat": "receptions",
 "line": 4,
-"bid": 0.24,
-"ask": 0.32,
+"bid": 0.26,
+"ask": 0.33,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLEQJUDKINS10-4"
@@ -31552,8 +31582,8 @@
 "line": 60,
 "bid": 0.49,
 "ask": 0.5,
-"last": 0.5,
-"volume": 314.91,
+"last": 0.49,
+"volume": 371.78,
 "ticker": "KXNFLRSHYDS-26OCT11CLENYJ-CLEQJUDKINS10-60"
 },
 {
@@ -31650,7 +31680,7 @@
 "player": "Raheim Sanders",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.23,
+"bid": 0.21,
 "ask": 0.26,
 "last": 0.21,
 "volume": 10.0,
@@ -31731,7 +31761,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.04,
-"ask": 0.06,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT11CLENYJ-CLERSANDERS23-6"
