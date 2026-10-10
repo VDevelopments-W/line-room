@@ -79,22 +79,22 @@ def am(o):
         return None
 
 
-def parse_event(d):
+def parse_event(d, home):
     out = {"spread": [], "total": [], "ml": {}, "props": []}
     for b in d.get("betOffers", []):
-        lab = b["criterion"]["label"]
+        lab = b["criterion"].get("englishLabel") or b["criterion"]["label"]
         main = "MAIN_LINE" in b.get("tags", []) or "MAIN" in b.get("tags", [])
         outs = [o for o in b["outcomes"] if o.get("status") == "OPEN"]
         if lab.startswith("Point Spread - Including"):
             for o in outs:
-                side = "home" if o.get("type") == "OT_TWO" else "away"
+                side = "home" if abbr(o.get("participant", "")) == home else "away"
                 out["spread"].append({"side": side, "line": o["line"] / 1000, "odds": am(o), "main": main})
         elif lab.startswith("Total Points - Including"):
             for o in outs:
                 out["total"].append({"side": "over" if o["type"] == "OT_OVER" else "under", "line": o["line"] / 1000, "odds": am(o), "main": main})
         elif lab.startswith("Moneyline - Including"):
             for o in outs:
-                out["ml"]["home" if o.get("type") == "OT_TWO" else "away"] = am(o)
+                out["ml"]["home" if abbr(o.get("participant", "")) == home else "away"] = am(o)
         elif lab.endswith("By The Player - Including Overtime"):
             m = re.match(r"(\d+)\+ (.+) By The Player", lab)
             stat = m and LADDER.get(m.group(2))
@@ -109,7 +109,6 @@ def parse_event(d):
                     if o.get("participant") and o.get("line") is not None:
                         out["props"].append({"player": o["participant"], "stat": stat, "line": math.ceil(o["line"] / 1000),
                                              "side": "over" if o.get("label") == "Over" else "under", "odds": am(o), "ou": o["line"] / 1000})
-    # Kambi's home team is OT_TWO in "AWAY @ HOME" names; spreads are per side already
     return out
 
 
@@ -132,7 +131,7 @@ def main():
             continue
         if start <= now:
             continue  # started: leave the pre-kickoff prices in place
-        g = parse_event(get(f"betoffer/event/{ev['id']}.json"))
+        g = parse_event(get(f"betoffer/event/{ev['id']}.json"), abbr(h))
         games[gid] = {"event": ev["id"], "start": ev["start"], **g}
         time.sleep(0.3)
     old = json.loads(OUT.read_text()).get("games", {}) if OUT.exists() else {}
