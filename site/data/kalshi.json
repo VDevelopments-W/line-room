@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-12T17:25:49Z",
+"generated": "2026-10-12T19:54:18Z",
 "series": {
 "KXNFLRSHYDS": "rushing_yards",
 "KXNFLRECYDS": "receiving_yards",
@@ -14,10 +14,10 @@
 "player": "Blake Corum",
 "stat": "carries",
 "line": 5,
-"bid": 0.79,
-"ask": 0.81,
-"last": 0.77,
-"volume": 38.0,
+"bid": 0.81,
+"ask": 0.82,
+"last": 0.82,
+"volume": 218.65,
 "ticker": "KXNFLRSHATT-26OCT12BUFLAR-LARBCORUM24-5"
 },
 {
@@ -26,8 +26,8 @@
 "line": 8,
 "bid": 0.46,
 "ask": 0.47,
-"last": 0.46,
-"volume": 2273.06,
+"last": 0.47,
+"volume": 2904.99,
 "ticker": "KXNFLRSHATT-26OCT12BUFLAR-LARBCORUM24-8"
 },
 {
@@ -35,29 +35,29 @@
 "stat": "carries",
 "line": 11,
 "bid": 0.18,
-"ask": 0.24,
-"last": 0.0,
-"volume": 0.0,
+"ask": 0.2,
+"last": 0.2,
+"volume": 58.04,
 "ticker": "KXNFLRSHATT-26OCT12BUFLAR-LARBCORUM24-11"
 },
 {
 "player": "Blake Corum",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.19,
-"ask": 0.2,
-"last": 0.21,
-"volume": 3464.41,
+"bid": 0.18,
+"ask": 0.19,
+"last": 0.19,
+"volume": 4094.49,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARBCORUM24-15"
 },
 {
 "player": "Blake Corum",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.08,
-"ask": 0.1,
-"last": 0.1,
-"volume": 167.6,
+"bid": 0.07,
+"ask": 0.09,
+"last": 0.11,
+"volume": 343.28,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARBCORUM24-25"
 },
 {
@@ -66,18 +66,18 @@
 "line": 40,
 "bid": 0.03,
 "ask": 0.05,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.06,
+"volume": 82.23,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARBCORUM24-40"
 },
 {
 "player": "Blake Corum",
 "stat": "receptions",
 "line": 1,
-"bid": 0.57,
-"ask": 0.58,
+"bid": 0.58,
+"ask": 0.59,
 "last": 0.58,
-"volume": 2192.89,
+"volume": 3530.97,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARBCORUM24-1"
 },
 {
@@ -85,7 +85,7 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.25,
-"ask": 0.27,
+"ask": 0.26,
 "last": 0.28,
 "volume": 227.2,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARBCORUM24-2"
@@ -95,7 +95,7 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.09,
-"ask": 0.12,
+"ask": 0.1,
 "last": 0.11,
 "volume": 470.63,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARBCORUM24-3"
@@ -105,29 +105,29 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.03,
-"ask": 0.05,
-"last": 0.0,
-"volume": 0.0,
+"ask": 0.04,
+"last": 0.04,
+"volume": 1906.32,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARBCORUM24-4"
 },
 {
 "player": "Blake Corum",
 "stat": "rushing_yards",
 "line": 15,
-"bid": 0.81,
-"ask": 0.82,
+"bid": 0.82,
+"ask": 0.83,
 "last": 0.83,
-"volume": 3416.28,
+"volume": 4027.79,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARBCORUM24-15"
 },
 {
 "player": "Blake Corum",
 "stat": "rushing_yards",
 "line": 20,
-"bid": 0.73,
-"ask": 0.74,
-"last": 0.74,
-"volume": 110.71,
+"bid": 0.72,
+"ask": 0.73,
+"last": 0.73,
+"volume": 122.18,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARBCORUM24-20"
 },
 {
@@ -137,7 +137,7 @@
 "bid": 0.64,
 "ask": 0.65,
 "last": 0.65,
-"volume": 94.21,
+"volume": 169.29,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARBCORUM24-25"
 },
 {
@@ -147,7 +147,7 @@
 "bid": 0.54,
 "ask": 0.55,
 "last": 0.55,
-"volume": 6097.63,
+"volume": 16697.81,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARBCORUM24-30"
 },
 {
@@ -156,8 +156,8 @@
 "line": 40,
 "bid": 0.4,
 "ask": 0.41,
-"last": 0.4,
-"volume": 2168.5,
+"last": 0.41,
+"volume": 2314.4,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARBCORUM24-40"
 },
 {
@@ -167,7 +167,7 @@
 "bid": 0.26,
 "ask": 0.27,
 "last": 0.27,
-"volume": 1542.67,
+"volume": 1831.12,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARBCORUM24-50"
 },
 {
@@ -176,8 +176,8 @@
 "line": 60,
 "bid": 0.18,
 "ask": 0.19,
-"last": 0.2,
-"volume": 880.68,
+"last": 0.19,
+"volume": 930.48,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARBCORUM24-60"
 },
 {
@@ -186,8 +186,8 @@
 "line": 70,
 "bid": 0.11,
 "ask": 0.12,
-"last": 0.16,
-"volume": 295.25,
+"last": 0.11,
+"volume": 335.6,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARBCORUM24-70"
 },
 {
@@ -195,9 +195,9 @@
 "stat": "rushing_yards",
 "line": 80,
 "bid": 0.07,
-"ask": 0.08,
-"last": 0.11,
-"volume": 213.9,
+"ask": 0.09,
+"last": 0.09,
+"volume": 287.04,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARBCORUM24-80"
 },
 {
@@ -206,18 +206,18 @@
 "line": 90,
 "bid": 0.05,
 "ask": 0.06,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.07,
+"volume": 37.07,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARBCORUM24-90"
 },
 {
 "player": "Colby Parkinson",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.55,
+"bid": 0.56,
 "ask": 0.57,
 "last": 0.57,
-"volume": 3743.21,
+"volume": 4654.06,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARCPARKINSON84-15"
 },
 {
@@ -225,37 +225,37 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.35,
-"ask": 0.37,
-"last": 0.37,
-"volume": 1350.79,
+"ask": 0.36,
+"last": 0.35,
+"volume": 5387.71,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARCPARKINSON84-25"
 },
 {
 "player": "Colby Parkinson",
 "stat": "receiving_yards",
 "line": 40,
-"bid": 0.17,
-"ask": 0.18,
-"last": 0.18,
-"volume": 1086.62,
+"bid": 0.18,
+"ask": 0.19,
+"last": 0.19,
+"volume": 8626.86,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARCPARKINSON84-40"
 },
 {
 "player": "Colby Parkinson",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.08,
+"bid": 0.09,
 "ask": 0.11,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.12,
+"volume": 3957.91,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARCPARKINSON84-50"
 },
 {
 "player": "Colby Parkinson",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.04,
-"ask": 0.08,
+"bid": 0.05,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARCPARKINSON84-60"
@@ -264,7 +264,7 @@
 "player": "Colby Parkinson",
 "stat": "receiving_yards",
 "line": 70,
-"bid": 0.02,
+"bid": 0.03,
 "ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
@@ -274,10 +274,10 @@
 "player": "Colby Parkinson",
 "stat": "receptions",
 "line": 2,
-"bid": 0.59,
-"ask": 0.6,
+"bid": 0.58,
+"ask": 0.59,
 "last": 0.6,
-"volume": 9006.06,
+"volume": 9091.17,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARCPARKINSON84-2"
 },
 {
@@ -287,7 +287,7 @@
 "bid": 0.35,
 "ask": 0.36,
 "last": 0.36,
-"volume": 1982.69,
+"volume": 2062.74,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARCPARKINSON84-3"
 },
 {
@@ -297,7 +297,7 @@
 "bid": 0.16,
 "ask": 0.17,
 "last": 0.17,
-"volume": 2152.57,
+"volume": 2208.16,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARCPARKINSON84-4"
 },
 {
@@ -305,7 +305,7 @@
 "stat": "receptions",
 "line": 5,
 "bid": 0.07,
-"ask": 0.09,
+"ask": 0.08,
 "last": 0.09,
 "volume": 765.13,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARCPARKINSON84-5"
@@ -315,7 +315,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.03,
-"ask": 0.05,
+"ask": 0.04,
 "last": 0.04,
 "volume": 19.73,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARCPARKINSON84-6"
@@ -326,8 +326,8 @@
 "line": 25,
 "bid": 0.8,
 "ask": 0.81,
-"last": 0.81,
-"volume": 4884.97,
+"last": 0.8,
+"volume": 5786.93,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKINCAID86-25"
 },
 {
@@ -336,8 +336,8 @@
 "line": 40,
 "bid": 0.65,
 "ask": 0.66,
-"last": 0.65,
-"volume": 559.31,
+"last": 0.66,
+"volume": 667.64,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKINCAID86-40"
 },
 {
@@ -347,17 +347,17 @@
 "bid": 0.55,
 "ask": 0.56,
 "last": 0.55,
-"volume": 20475.86,
+"volume": 21168.78,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKINCAID86-50"
 },
 {
 "player": "Dalton Kincaid",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.44,
-"ask": 0.45,
-"last": 0.44,
-"volume": 5658.56,
+"bid": 0.43,
+"ask": 0.44,
+"last": 0.43,
+"volume": 6423.51,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKINCAID86-60"
 },
 {
@@ -376,8 +376,8 @@
 "line": 80,
 "bid": 0.26,
 "ask": 0.27,
-"last": 0.28,
-"volume": 875.6,
+"last": 0.27,
+"volume": 893.21,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKINCAID86-80"
 },
 {
@@ -394,10 +394,10 @@
 "player": "Dalton Kincaid",
 "stat": "receiving_yards",
 "line": 100,
-"bid": 0.16,
-"ask": 0.17,
-"last": 0.16,
-"volume": 2931.92,
+"bid": 0.15,
+"ask": 0.16,
+"last": 0.15,
+"volume": 3476.48,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKINCAID86-100"
 },
 {
@@ -406,8 +406,8 @@
 "line": 110,
 "bid": 0.11,
 "ask": 0.12,
-"last": 0.12,
-"volume": 29.11,
+"last": 0.11,
+"volume": 186.32,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKINCAID86-110"
 },
 {
@@ -415,7 +415,7 @@
 "stat": "receiving_yards",
 "line": 120,
 "bid": 0.08,
-"ask": 0.11,
+"ask": 0.1,
 "last": 0.08,
 "volume": 2000.65,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKINCAID86-120"
@@ -436,8 +436,8 @@
 "line": 2,
 "bid": 0.9,
 "ask": 0.91,
-"last": 0.89,
-"volume": 1227.74,
+"last": 0.91,
+"volume": 1233.2,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFDKINCAID86-2"
 },
 {
@@ -446,8 +446,8 @@
 "line": 3,
 "bid": 0.79,
 "ask": 0.8,
-"last": 0.79,
-"volume": 432.86,
+"last": 0.82,
+"volume": 1040.06,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFDKINCAID86-3"
 },
 {
@@ -456,8 +456,8 @@
 "line": 4,
 "bid": 0.63,
 "ask": 0.64,
-"last": 0.63,
-"volume": 487.27,
+"last": 0.64,
+"volume": 630.28,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFDKINCAID86-4"
 },
 {
@@ -466,8 +466,8 @@
 "line": 5,
 "bid": 0.47,
 "ask": 0.48,
-"last": 0.47,
-"volume": 31580.37,
+"last": 0.48,
+"volume": 32038.76,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFDKINCAID86-5"
 },
 {
@@ -515,7 +515,7 @@
 "stat": "receptions",
 "line": 10,
 "bid": 0.02,
-"ask": 0.05,
+"ask": 0.04,
 "last": 0.06,
 "volume": 100.06,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFDKINCAID86-10"
@@ -524,20 +524,20 @@
 "player": "Davante Adams",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.87,
-"ask": 0.88,
-"last": 0.88,
-"volume": 3550.23,
+"bid": 0.86,
+"ask": 0.87,
+"last": 0.87,
+"volume": 3577.18,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-25"
 },
 {
 "player": "Davante Adams",
 "stat": "receiving_yards",
 "line": 40,
-"bid": 0.72,
-"ask": 0.73,
-"last": 0.73,
-"volume": 329.4,
+"bid": 0.71,
+"ask": 0.72,
+"last": 0.72,
+"volume": 444.73,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-40"
 },
 {
@@ -547,17 +547,17 @@
 "bid": 0.63,
 "ask": 0.64,
 "last": 0.64,
-"volume": 7194.05,
+"volume": 7523.62,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-50"
 },
 {
 "player": "Davante Adams",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.53,
-"ask": 0.54,
-"last": 0.54,
-"volume": 5553.94,
+"bid": 0.52,
+"ask": 0.53,
+"last": 0.53,
+"volume": 7671.85,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-60"
 },
 {
@@ -567,17 +567,17 @@
 "bid": 0.42,
 "ask": 0.43,
 "last": 0.44,
-"volume": 1453.17,
+"volume": 1932.86,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-70"
 },
 {
 "player": "Davante Adams",
 "stat": "receiving_yards",
 "line": 80,
-"bid": 0.33,
-"ask": 0.34,
-"last": 0.34,
-"volume": 810.3,
+"bid": 0.32,
+"ask": 0.33,
+"last": 0.33,
+"volume": 1014.79,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-80"
 },
 {
@@ -586,8 +586,8 @@
 "line": 90,
 "bid": 0.25,
 "ask": 0.26,
-"last": 0.27,
-"volume": 481.1,
+"last": 0.26,
+"volume": 573.23,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-90"
 },
 {
@@ -597,7 +597,7 @@
 "bid": 0.19,
 "ask": 0.2,
 "last": 0.2,
-"volume": 583.37,
+"volume": 1766.48,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-100"
 },
 {
@@ -607,7 +607,7 @@
 "bid": 0.14,
 "ask": 0.15,
 "last": 0.15,
-"volume": 269.39,
+"volume": 323.39,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-110"
 },
 {
@@ -617,7 +617,7 @@
 "bid": 0.1,
 "ask": 0.11,
 "last": 0.11,
-"volume": 139.42,
+"volume": 182.2,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-120"
 },
 {
@@ -625,9 +625,9 @@
 "stat": "receiving_yards",
 "line": 130,
 "bid": 0.07,
-"ask": 0.09,
-"last": 0.07,
-"volume": 4.73,
+"ask": 0.08,
+"last": 0.08,
+"volume": 1193.01,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-130"
 },
 {
@@ -635,9 +635,9 @@
 "stat": "receiving_yards",
 "line": 140,
 "bid": 0.05,
-"ask": 0.07,
+"ask": 0.06,
 "last": 0.07,
-"volume": 201.18,
+"volume": 1542.43,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-140"
 },
 {
@@ -645,7 +645,7 @@
 "stat": "receiving_yards",
 "line": 150,
 "bid": 0.04,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.05,
 "volume": 307.52,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDADAMS17-150"
@@ -657,7 +657,7 @@
 "bid": 0.91,
 "ask": 0.92,
 "last": 0.92,
-"volume": 2.16,
+"volume": 57.1,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARDADAMS17-2"
 },
 {
@@ -667,7 +667,7 @@
 "bid": 0.79,
 "ask": 0.8,
 "last": 0.8,
-"volume": 556.17,
+"volume": 572.62,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARDADAMS17-3"
 },
 {
@@ -677,17 +677,17 @@
 "bid": 0.64,
 "ask": 0.65,
 "last": 0.65,
-"volume": 2696.64,
+"volume": 2987.02,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARDADAMS17-4"
 },
 {
 "player": "Davante Adams",
 "stat": "receptions",
 "line": 5,
-"bid": 0.45,
-"ask": 0.46,
-"last": 0.46,
-"volume": 19382.87,
+"bid": 0.44,
+"ask": 0.45,
+"last": 0.45,
+"volume": 21354.74,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARDADAMS17-5"
 },
 {
@@ -697,7 +697,7 @@
 "bid": 0.28,
 "ask": 0.29,
 "last": 0.29,
-"volume": 430.11,
+"volume": 644.25,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARDADAMS17-6"
 },
 {
@@ -707,7 +707,7 @@
 "bid": 0.16,
 "ask": 0.17,
 "last": 0.17,
-"volume": 651.52,
+"volume": 1037.75,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARDADAMS17-7"
 },
 {
@@ -717,7 +717,7 @@
 "bid": 0.09,
 "ask": 0.11,
 "last": 0.11,
-"volume": 171.29,
+"volume": 205.52,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARDADAMS17-8"
 },
 {
@@ -765,16 +765,16 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.04,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.05,
-"volume": 1292.17,
+"volume": 1763.14,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARDALLEN87-40"
 },
 {
 "player": "Davis Allen",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.02,
+"bid": 0.03,
 "ask": 0.04,
 "last": 0.02,
 "volume": 310.0,
@@ -786,38 +786,38 @@
 "line": 1,
 "bid": 0.58,
 "ask": 0.59,
-"last": 0.59,
-"volume": 48.58,
+"last": 0.58,
+"volume": 756.58,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARDALLEN87-1"
 },
 {
 "player": "Davis Allen",
 "stat": "receptions",
 "line": 2,
-"bid": 0.25,
-"ask": 0.26,
-"last": 0.0,
-"volume": 0.0,
+"bid": 0.27,
+"ask": 0.28,
+"last": 0.26,
+"volume": 2861.0,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARDALLEN87-2"
 },
 {
 "player": "Davis Allen",
 "stat": "receptions",
 "line": 3,
-"bid": 0.07,
+"bid": 0.08,
 "ask": 0.1,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.11,
+"volume": 2313.0,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARDALLEN87-3"
 },
 {
 "player": "Davis Allen",
 "stat": "receptions",
 "line": 4,
-"bid": 0.02,
-"ask": 0.05,
-"last": 0.0,
-"volume": 0.0,
+"bid": 0.03,
+"ask": 0.04,
+"last": 0.05,
+"volume": 1421.0,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARDALLEN87-4"
 },
 {
@@ -825,9 +825,9 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.42,
-"ask": 0.44,
-"last": 0.44,
-"volume": 4427.26,
+"ask": 0.43,
+"last": 0.42,
+"volume": 5068.69,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKNOX88-15"
 },
 {
@@ -837,7 +837,7 @@
 "bid": 0.25,
 "ask": 0.26,
 "last": 0.26,
-"volume": 132.06,
+"volume": 260.03,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKNOX88-25"
 },
 {
@@ -847,7 +847,7 @@
 "bid": 0.09,
 "ask": 0.1,
 "last": 0.1,
-"volume": 854.54,
+"volume": 948.61,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKNOX88-40"
 },
 {
@@ -864,8 +864,8 @@
 "player": "Dawson Knox",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.04,
-"ask": 0.06,
+"bid": 0.03,
+"ask": 0.05,
 "last": 0.07,
 "volume": 119.18,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFDKNOX88-60"
@@ -875,9 +875,9 @@
 "stat": "receptions",
 "line": 2,
 "bid": 0.44,
-"ask": 0.45,
-"last": 0.45,
-"volume": 3187.51,
+"ask": 0.46,
+"last": 0.46,
+"volume": 8174.97,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFDKNOX88-2"
 },
 {
@@ -886,8 +886,8 @@
 "line": 3,
 "bid": 0.2,
 "ask": 0.21,
-"last": 0.23,
-"volume": 279.74,
+"last": 0.21,
+"volume": 362.59,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFDKNOX88-3"
 },
 {
@@ -895,9 +895,9 @@
 "stat": "receptions",
 "line": 4,
 "bid": 0.08,
-"ask": 0.1,
-"last": 0.1,
-"volume": 151.74,
+"ask": 0.09,
+"last": 0.09,
+"volume": 256.19,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFDKNOX88-4"
 },
 {
@@ -906,18 +906,18 @@
 "line": 5,
 "bid": 0.03,
 "ask": 0.04,
-"last": 0.06,
-"volume": 234.56,
+"last": 0.04,
+"volume": 468.81,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFDKNOX88-5"
 },
 {
 "player": "James Cook III",
 "stat": "carries",
 "line": 15,
-"bid": 0.64,
-"ask": 0.67,
-"last": 0.67,
-"volume": 107.61,
+"bid": 0.63,
+"ask": 0.65,
+"last": 0.64,
+"volume": 201.83,
 "ticker": "KXNFLRSHATT-26OCT12BUFLAR-BUFJCOOK4-15"
 },
 {
@@ -927,7 +927,7 @@
 "bid": 0.4,
 "ask": 0.41,
 "last": 0.41,
-"volume": 485.89,
+"volume": 2186.0,
 "ticker": "KXNFLRSHATT-26OCT12BUFLAR-BUFJCOOK4-18"
 },
 {
@@ -935,9 +935,9 @@
 "stat": "carries",
 "line": 21,
 "bid": 0.23,
-"ask": 0.25,
-"last": 0.25,
-"volume": 190.75,
+"ask": 0.24,
+"last": 0.24,
+"volume": 286.86,
 "ticker": "KXNFLRSHATT-26OCT12BUFLAR-BUFJCOOK4-21"
 },
 {
@@ -947,7 +947,7 @@
 "bid": 0.52,
 "ask": 0.53,
 "last": 0.53,
-"volume": 17515.61,
+"volume": 22504.65,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFJCOOK4-10"
 },
 {
@@ -956,8 +956,8 @@
 "line": 15,
 "bid": 0.38,
 "ask": 0.39,
-"last": 0.39,
-"volume": 446.75,
+"last": 0.38,
+"volume": 602.03,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFJCOOK4-15"
 },
 {
@@ -967,7 +967,7 @@
 "bid": 0.2,
 "ask": 0.21,
 "last": 0.21,
-"volume": 1018.87,
+"volume": 1137.23,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFJCOOK4-25"
 },
 {
@@ -975,9 +975,9 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.08,
-"ask": 0.09,
-"last": 0.09,
-"volume": 1484.84,
+"ask": 0.1,
+"last": 0.1,
+"volume": 3348.8,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFJCOOK4-40"
 },
 {
@@ -997,7 +997,7 @@
 "bid": 0.52,
 "ask": 0.53,
 "last": 0.53,
-"volume": 2933.58,
+"volume": 3665.06,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFJCOOK4-2"
 },
 {
@@ -1006,8 +1006,8 @@
 "line": 3,
 "bid": 0.26,
 "ask": 0.27,
-"last": 0.28,
-"volume": 642.86,
+"last": 0.27,
+"volume": 874.08,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFJCOOK4-3"
 },
 {
@@ -1017,7 +1017,7 @@
 "bid": 0.11,
 "ask": 0.13,
 "last": 0.13,
-"volume": 200.0,
+"volume": 207.23,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFJCOOK4-4"
 },
 {
@@ -1036,8 +1036,8 @@
 "line": 6,
 "bid": 0.03,
 "ask": 0.04,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.03,
+"volume": 5.79,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFJCOOK4-6"
 },
 {
@@ -1047,7 +1047,7 @@
 "bid": 0.86,
 "ask": 0.87,
 "last": 0.87,
-"volume": 4039.71,
+"volume": 4119.42,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-40"
 },
 {
@@ -1057,7 +1057,7 @@
 "bid": 0.75,
 "ask": 0.76,
 "last": 0.76,
-"volume": 1568.48,
+"volume": 1766.53,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-50"
 },
 {
@@ -1066,8 +1066,8 @@
 "line": 60,
 "bid": 0.64,
 "ask": 0.65,
-"last": 0.65,
-"volume": 3198.31,
+"last": 0.64,
+"volume": 4609.74,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-60"
 },
 {
@@ -1077,7 +1077,7 @@
 "bid": 0.55,
 "ask": 0.56,
 "last": 0.56,
-"volume": 5590.93,
+"volume": 7087.23,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-70"
 },
 {
@@ -1087,7 +1087,7 @@
 "bid": 0.46,
 "ask": 0.47,
 "last": 0.47,
-"volume": 9426.26,
+"volume": 11723.75,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-80"
 },
 {
@@ -1097,7 +1097,7 @@
 "bid": 0.34,
 "ask": 0.35,
 "last": 0.35,
-"volume": 1311.92,
+"volume": 1626.66,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-90"
 },
 {
@@ -1107,25 +1107,25 @@
 "bid": 0.26,
 "ask": 0.27,
 "last": 0.27,
-"volume": 1881.07,
+"volume": 3547.54,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-100"
 },
 {
 "player": "James Cook III",
 "stat": "rushing_yards",
 "line": 110,
-"bid": 0.2,
-"ask": 0.21,
-"last": 0.21,
-"volume": 620.08,
+"bid": 0.21,
+"ask": 0.22,
+"last": 0.22,
+"volume": 624.13,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-110"
 },
 {
 "player": "James Cook III",
 "stat": "rushing_yards",
 "line": 120,
-"bid": 0.14,
-"ask": 0.15,
+"bid": 0.15,
+"ask": 0.17,
 "last": 0.15,
 "volume": 205.56,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-120"
@@ -1134,8 +1134,8 @@
 "player": "James Cook III",
 "stat": "rushing_yards",
 "line": 130,
-"bid": 0.09,
-"ask": 0.1,
+"bid": 0.1,
+"ask": 0.11,
 "last": 0.1,
 "volume": 256.12,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-130"
@@ -1147,7 +1147,7 @@
 "bid": 0.07,
 "ask": 0.08,
 "last": 0.08,
-"volume": 236.74,
+"volume": 296.07,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-140"
 },
 {
@@ -1157,7 +1157,7 @@
 "bid": 0.05,
 "ask": 0.06,
 "last": 0.06,
-"volume": 113.45,
+"volume": 459.02,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJCOOK4-150"
 },
 {
@@ -1167,7 +1167,7 @@
 "bid": 0.27,
 "ask": 0.28,
 "last": 0.28,
-"volume": 3755.97,
+"volume": 3756.78,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARJWHITTINGTON88-15"
 },
 {
@@ -1176,8 +1176,8 @@
 "line": 25,
 "bid": 0.14,
 "ask": 0.15,
-"last": 0.14,
-"volume": 32.01,
+"last": 0.15,
+"volume": 975.85,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARJWHITTINGTON88-25"
 },
 {
@@ -1197,7 +1197,7 @@
 "bid": 0.03,
 "ask": 0.04,
 "last": 0.05,
-"volume": 68.0,
+"volume": 133.57,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARJWHITTINGTON88-50"
 },
 {
@@ -1207,7 +1207,7 @@
 "bid": 0.58,
 "ask": 0.59,
 "last": 0.59,
-"volume": 1386.43,
+"volume": 1692.05,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARJWHITTINGTON88-1"
 },
 {
@@ -1216,8 +1216,8 @@
 "line": 2,
 "bid": 0.24,
 "ask": 0.25,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.25,
+"volume": 1.0,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARJWHITTINGTON88-2"
 },
 {
@@ -1257,7 +1257,7 @@
 "bid": 0.5,
 "ask": 0.51,
 "last": 0.5,
-"volume": 6321.24,
+"volume": 7125.99,
 "ticker": "KXNFLRSHATT-26OCT12BUFLAR-BUFJALLEN17-8"
 },
 {
@@ -1266,8 +1266,8 @@
 "line": 11,
 "bid": 0.18,
 "ask": 0.19,
-"last": 0.19,
-"volume": 103.31,
+"last": 0.18,
+"volume": 161.35,
 "ticker": "KXNFLRSHATT-26OCT12BUFLAR-BUFJALLEN17-11"
 },
 {
@@ -1277,7 +1277,7 @@
 "bid": 0.49,
 "ask": 0.5,
 "last": 0.5,
-"volume": 9558.09,
+"volume": 11787.28,
 "ticker": "KXNFLPASSTDS-26OCT12BUFLAR-BUFJALLEN17-2"
 },
 {
@@ -1286,8 +1286,8 @@
 "line": 175,
 "bid": 0.86,
 "ask": 0.87,
-"last": 0.86,
-"volume": 5857.91,
+"last": 0.87,
+"volume": 8094.78,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-175"
 },
 {
@@ -1296,8 +1296,8 @@
 "line": 200,
 "bid": 0.75,
 "ask": 0.76,
-"last": 0.76,
-"volume": 4462.43,
+"last": 0.75,
+"volume": 5542.49,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-200"
 },
 {
@@ -1306,8 +1306,8 @@
 "line": 225,
 "bid": 0.62,
 "ask": 0.63,
-"last": 0.64,
-"volume": 4324.67,
+"last": 0.63,
+"volume": 4960.49,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-225"
 },
 {
@@ -1317,7 +1317,7 @@
 "bid": 0.47,
 "ask": 0.48,
 "last": 0.48,
-"volume": 25623.55,
+"volume": 33705.68,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-250"
 },
 {
@@ -1327,7 +1327,7 @@
 "bid": 0.34,
 "ask": 0.35,
 "last": 0.35,
-"volume": 6744.01,
+"volume": 6957.18,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-275"
 },
 {
@@ -1336,8 +1336,8 @@
 "line": 300,
 "bid": 0.22,
 "ask": 0.23,
-"last": 0.22,
-"volume": 3249.62,
+"last": 0.23,
+"volume": 3418.73,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-300"
 },
 {
@@ -1347,7 +1347,7 @@
 "bid": 0.13,
 "ask": 0.14,
 "last": 0.14,
-"volume": 974.01,
+"volume": 1512.34,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-325"
 },
 {
@@ -1357,7 +1357,7 @@
 "bid": 0.07,
 "ask": 0.08,
 "last": 0.08,
-"volume": 520.34,
+"volume": 805.33,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-350"
 },
 {
@@ -1367,7 +1367,7 @@
 "bid": 0.05,
 "ask": 0.06,
 "last": 0.06,
-"volume": 175.2,
+"volume": 644.32,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-BUFJALLEN17-375"
 },
 {
@@ -1377,7 +1377,7 @@
 "bid": 0.86,
 "ask": 0.87,
 "last": 0.87,
-"volume": 3656.34,
+"volume": 3816.64,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJALLEN17-15"
 },
 {
@@ -1387,7 +1387,7 @@
 "bid": 0.79,
 "ask": 0.8,
 "last": 0.8,
-"volume": 123.56,
+"volume": 356.67,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJALLEN17-20"
 },
 {
@@ -1397,7 +1397,7 @@
 "bid": 0.7,
 "ask": 0.71,
 "last": 0.71,
-"volume": 254.53,
+"volume": 357.29,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJALLEN17-25"
 },
 {
@@ -1407,7 +1407,7 @@
 "bid": 0.61,
 "ask": 0.62,
 "last": 0.62,
-"volume": 3099.8,
+"volume": 3648.82,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJALLEN17-30"
 },
 {
@@ -1416,8 +1416,8 @@
 "line": 40,
 "bid": 0.44,
 "ask": 0.45,
-"last": 0.45,
-"volume": 7079.8,
+"last": 0.44,
+"volume": 9313.55,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJALLEN17-40"
 },
 {
@@ -1427,7 +1427,7 @@
 "bid": 0.3,
 "ask": 0.31,
 "last": 0.31,
-"volume": 343.96,
+"volume": 467.04,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJALLEN17-50"
 },
 {
@@ -1445,7 +1445,7 @@
 "stat": "rushing_yards",
 "line": 70,
 "bid": 0.11,
-"ask": 0.13,
+"ask": 0.12,
 "last": 0.12,
 "volume": 131.88,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJALLEN17-70"
@@ -1455,7 +1455,7 @@
 "stat": "rushing_yards",
 "line": 80,
 "bid": 0.07,
-"ask": 0.09,
+"ask": 0.08,
 "last": 0.09,
 "volume": 129.14,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJALLEN17-80"
@@ -1465,7 +1465,7 @@
 "stat": "rushing_yards",
 "line": 90,
 "bid": 0.04,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJALLEN17-90"
@@ -1474,8 +1474,8 @@
 "player": "Josh Allen",
 "stat": "rushing_yards",
 "line": 100,
-"bid": 0.03,
-"ask": 0.05,
+"bid": 0.02,
+"ask": 0.04,
 "last": 0.05,
 "volume": 14.37,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFJALLEN17-100"
@@ -1487,7 +1487,7 @@
 "bid": 0.79,
 "ask": 0.8,
 "last": 0.8,
-"volume": 3468.39,
+"volume": 3490.71,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-15"
 },
 {
@@ -1497,7 +1497,7 @@
 "bid": 0.65,
 "ask": 0.66,
 "last": 0.66,
-"volume": 564.26,
+"volume": 1170.97,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-25"
 },
 {
@@ -1507,7 +1507,7 @@
 "bid": 0.49,
 "ask": 0.5,
 "last": 0.5,
-"volume": 15554.93,
+"volume": 18550.03,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-40"
 },
 {
@@ -1516,18 +1516,18 @@
 "line": 50,
 "bid": 0.38,
 "ask": 0.39,
-"last": 0.37,
-"volume": 964.78,
+"last": 0.39,
+"volume": 1120.34,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-50"
 },
 {
 "player": "Keon Coleman",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.28,
-"ask": 0.29,
-"last": 0.29,
-"volume": 2527.59,
+"bid": 0.29,
+"ask": 0.3,
+"last": 0.3,
+"volume": 6392.4,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-60"
 },
 {
@@ -1537,7 +1537,7 @@
 "bid": 0.23,
 "ask": 0.24,
 "last": 0.24,
-"volume": 3111.13,
+"volume": 3138.78,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-70"
 },
 {
@@ -1547,7 +1547,7 @@
 "bid": 0.15,
 "ask": 0.16,
 "last": 0.16,
-"volume": 2030.0,
+"volume": 2323.12,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-80"
 },
 {
@@ -1557,7 +1557,7 @@
 "bid": 0.11,
 "ask": 0.12,
 "last": 0.12,
-"volume": 1312.86,
+"volume": 1328.52,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-90"
 },
 {
@@ -1567,7 +1567,7 @@
 "bid": 0.08,
 "ask": 0.09,
 "last": 0.09,
-"volume": 2611.98,
+"volume": 3863.22,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKCOLEMAN0-100"
 },
 {
@@ -1596,8 +1596,8 @@
 "line": 2,
 "bid": 0.77,
 "ask": 0.78,
-"last": 0.75,
-"volume": 471.25,
+"last": 0.78,
+"volume": 2002.82,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKCOLEMAN0-2"
 },
 {
@@ -1606,8 +1606,8 @@
 "line": 3,
 "bid": 0.59,
 "ask": 0.6,
-"last": 0.6,
-"volume": 11882.12,
+"last": 0.59,
+"volume": 13163.77,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKCOLEMAN0-3"
 },
 {
@@ -1616,18 +1616,18 @@
 "line": 4,
 "bid": 0.41,
 "ask": 0.42,
-"last": 0.41,
-"volume": 7414.73,
+"last": 0.42,
+"volume": 8400.03,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKCOLEMAN0-4"
 },
 {
 "player": "Keon Coleman",
 "stat": "receptions",
 "line": 5,
-"bid": 0.24,
-"ask": 0.25,
-"last": 0.25,
-"volume": 691.44,
+"bid": 0.23,
+"ask": 0.24,
+"last": 0.24,
+"volume": 1348.37,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKCOLEMAN0-5"
 },
 {
@@ -1637,7 +1637,7 @@
 "bid": 0.13,
 "ask": 0.14,
 "last": 0.14,
-"volume": 1319.13,
+"volume": 1626.68,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKCOLEMAN0-6"
 },
 {
@@ -1647,17 +1647,17 @@
 "bid": 0.07,
 "ask": 0.08,
 "last": 0.08,
-"volume": 453.5,
+"volume": 1555.99,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKCOLEMAN0-7"
 },
 {
 "player": "Keon Coleman",
 "stat": "receptions",
 "line": 8,
-"bid": 0.03,
+"bid": 0.04,
 "ask": 0.05,
 "last": 0.04,
-"volume": 3496.19,
+"volume": 12739.5,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKCOLEMAN0-8"
 },
 {
@@ -1667,7 +1667,7 @@
 "bid": 0.85,
 "ask": 0.86,
 "last": 0.86,
-"volume": 3571.7,
+"volume": 3581.7,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-15"
 },
 {
@@ -1676,8 +1676,8 @@
 "line": 25,
 "bid": 0.76,
 "ask": 0.77,
-"last": 0.79,
-"volume": 63.81,
+"last": 0.77,
+"volume": 65.08,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-25"
 },
 {
@@ -1687,7 +1687,7 @@
 "bid": 0.57,
 "ask": 0.58,
 "last": 0.58,
-"volume": 1555.61,
+"volume": 1980.03,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-40"
 },
 {
@@ -1697,17 +1697,17 @@
 "bid": 0.44,
 "ask": 0.45,
 "last": 0.45,
-"volume": 4764.45,
+"volume": 5728.25,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-50"
 },
 {
 "player": "Khalil Shakir",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.33,
-"ask": 0.34,
-"last": 0.34,
-"volume": 357.02,
+"bid": 0.34,
+"ask": 0.35,
+"last": 0.35,
+"volume": 2894.79,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-60"
 },
 {
@@ -1717,7 +1717,7 @@
 "bid": 0.24,
 "ask": 0.25,
 "last": 0.25,
-"volume": 335.13,
+"volume": 1032.14,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-70"
 },
 {
@@ -1726,8 +1726,8 @@
 "line": 80,
 "bid": 0.18,
 "ask": 0.19,
-"last": 0.19,
-"volume": 267.22,
+"last": 0.18,
+"volume": 964.69,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-80"
 },
 {
@@ -1736,8 +1736,8 @@
 "line": 90,
 "bid": 0.11,
 "ask": 0.12,
-"last": 0.11,
-"volume": 66.0,
+"last": 0.12,
+"volume": 800.14,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-90"
 },
 {
@@ -1745,9 +1745,9 @@
 "stat": "receiving_yards",
 "line": 100,
 "bid": 0.08,
-"ask": 0.09,
-"last": 0.09,
-"volume": 204.45,
+"ask": 0.1,
+"last": 0.1,
+"volume": 1820.21,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-100"
 },
 {
@@ -1756,8 +1756,8 @@
 "line": 110,
 "bid": 0.06,
 "ask": 0.07,
-"last": 0.07,
-"volume": 49.41,
+"last": 0.06,
+"volume": 1368.17,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-110"
 },
 {
@@ -1767,7 +1767,7 @@
 "bid": 0.05,
 "ask": 0.06,
 "last": 0.05,
-"volume": 25.0,
+"volume": 2002.28,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFKSHAKIR10-120"
 },
 {
@@ -1777,7 +1777,7 @@
 "bid": 0.91,
 "ask": 0.92,
 "last": 0.92,
-"volume": 73.21,
+"volume": 78.61,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKSHAKIR10-2"
 },
 {
@@ -1787,7 +1787,7 @@
 "bid": 0.8,
 "ask": 0.81,
 "last": 0.81,
-"volume": 41.22,
+"volume": 384.95,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKSHAKIR10-3"
 },
 {
@@ -1797,7 +1797,7 @@
 "bid": 0.64,
 "ask": 0.65,
 "last": 0.65,
-"volume": 204.86,
+"volume": 478.41,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKSHAKIR10-4"
 },
 {
@@ -1807,7 +1807,7 @@
 "bid": 0.48,
 "ask": 0.49,
 "last": 0.49,
-"volume": 8962.01,
+"volume": 15944.5,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKSHAKIR10-5"
 },
 {
@@ -1817,7 +1817,7 @@
 "bid": 0.31,
 "ask": 0.33,
 "last": 0.33,
-"volume": 1329.38,
+"volume": 1473.23,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKSHAKIR10-6"
 },
 {
@@ -1827,7 +1827,7 @@
 "bid": 0.2,
 "ask": 0.21,
 "last": 0.21,
-"volume": 1790.26,
+"volume": 1935.55,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKSHAKIR10-7"
 },
 {
@@ -1837,7 +1837,7 @@
 "bid": 0.11,
 "ask": 0.13,
 "last": 0.13,
-"volume": 875.92,
+"volume": 1217.37,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKSHAKIR10-8"
 },
 {
@@ -1845,17 +1845,17 @@
 "stat": "receptions",
 "line": 9,
 "bid": 0.06,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.07,
-"volume": 340.57,
+"volume": 649.05,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKSHAKIR10-9"
 },
 {
 "player": "Khalil Shakir",
 "stat": "receptions",
 "line": 10,
-"bid": 0.04,
-"ask": 0.06,
+"bid": 0.03,
+"ask": 0.05,
 "last": 0.06,
 "volume": 194.4,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFKSHAKIR10-10"
@@ -1867,7 +1867,7 @@
 "bid": 0.33,
 "ask": 0.34,
 "last": 0.34,
-"volume": 4409.16,
+"volume": 6867.03,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKMUMPFIELD4-15"
 },
 {
@@ -1877,7 +1877,7 @@
 "bid": 0.19,
 "ask": 0.2,
 "last": 0.2,
-"volume": 1712.28,
+"volume": 2008.2,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKMUMPFIELD4-25"
 },
 {
@@ -1887,7 +1887,7 @@
 "bid": 0.09,
 "ask": 0.1,
 "last": 0.1,
-"volume": 1272.08,
+"volume": 1577.81,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKMUMPFIELD4-40"
 },
 {
@@ -1897,7 +1897,7 @@
 "bid": 0.06,
 "ask": 0.07,
 "last": 0.07,
-"volume": 469.42,
+"volume": 1197.32,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKMUMPFIELD4-50"
 },
 {
@@ -1907,7 +1907,7 @@
 "bid": 0.03,
 "ask": 0.04,
 "last": 0.04,
-"volume": 4004.54,
+"volume": 4180.23,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKMUMPFIELD4-60"
 },
 {
@@ -1916,8 +1916,8 @@
 "line": 1,
 "bid": 0.58,
 "ask": 0.59,
-"last": 0.58,
-"volume": 2506.13,
+"last": 0.59,
+"volume": 2769.74,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKMUMPFIELD4-1"
 },
 {
@@ -1927,7 +1927,7 @@
 "bid": 0.24,
 "ask": 0.25,
 "last": 0.25,
-"volume": 2009.52,
+"volume": 2085.52,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKMUMPFIELD4-2"
 },
 {
@@ -1935,9 +1935,9 @@
 "stat": "receptions",
 "line": 3,
 "bid": 0.07,
-"ask": 0.09,
-"last": 0.09,
-"volume": 950.75,
+"ask": 0.08,
+"last": 0.08,
+"volume": 1244.25,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKMUMPFIELD4-3"
 },
 {
@@ -1946,8 +1946,8 @@
 "line": 4,
 "bid": 0.03,
 "ask": 0.04,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.04,
+"volume": 351.37,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKMUMPFIELD4-4"
 },
 {
@@ -1955,19 +1955,19 @@
 "stat": "carries",
 "line": 12,
 "bid": 0.73,
-"ask": 0.75,
-"last": 0.75,
-"volume": 74.81,
+"ask": 0.74,
+"last": 0.73,
+"volume": 539.92,
 "ticker": "KXNFLRSHATT-26OCT12BUFLAR-LARKWILLIAMS23-12"
 },
 {
 "player": "Kyren Williams",
 "stat": "carries",
 "line": 15,
-"bid": 0.49,
-"ask": 0.5,
-"last": 0.5,
-"volume": 372.77,
+"bid": 0.5,
+"ask": 0.51,
+"last": 0.51,
+"volume": 2536.26,
 "ticker": "KXNFLRSHATT-26OCT12BUFLAR-LARKWILLIAMS23-15"
 },
 {
@@ -1975,9 +1975,9 @@
 "stat": "carries",
 "line": 18,
 "bid": 0.27,
-"ask": 0.28,
-"last": 0.29,
-"volume": 207.55,
+"ask": 0.29,
+"last": 0.3,
+"volume": 368.66,
 "ticker": "KXNFLRSHATT-26OCT12BUFLAR-LARKWILLIAMS23-18"
 },
 {
@@ -1987,7 +1987,7 @@
 "bid": 0.65,
 "ask": 0.66,
 "last": 0.66,
-"volume": 7782.42,
+"volume": 14986.57,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-15"
 },
 {
@@ -1997,7 +1997,7 @@
 "bid": 0.46,
 "ask": 0.47,
 "last": 0.47,
-"volume": 23413.52,
+"volume": 32639.28,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-25"
 },
 {
@@ -2007,7 +2007,7 @@
 "bid": 0.22,
 "ask": 0.23,
 "last": 0.23,
-"volume": 7868.89,
+"volume": 9104.76,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-40"
 },
 {
@@ -2016,8 +2016,8 @@
 "line": 50,
 "bid": 0.14,
 "ask": 0.15,
-"last": 0.14,
-"volume": 8020.79,
+"last": 0.15,
+"volume": 9455.31,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-50"
 },
 {
@@ -2027,7 +2027,7 @@
 "bid": 0.08,
 "ask": 0.09,
 "last": 0.09,
-"volume": 12774.55,
+"volume": 13539.52,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-60"
 },
 {
@@ -2037,7 +2037,7 @@
 "bid": 0.04,
 "ask": 0.05,
 "last": 0.05,
-"volume": 23137.87,
+"volume": 24128.87,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-70"
 },
 {
@@ -2047,7 +2047,7 @@
 "bid": 0.8,
 "ask": 0.81,
 "last": 0.81,
-"volume": 3339.77,
+"volume": 3486.62,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKWILLIAMS23-2"
 },
 {
@@ -2057,17 +2057,17 @@
 "bid": 0.6,
 "ask": 0.61,
 "last": 0.61,
-"volume": 10385.66,
+"volume": 13247.99,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKWILLIAMS23-3"
 },
 {
 "player": "Kyren Williams",
 "stat": "receptions",
 "line": 4,
-"bid": 0.39,
-"ask": 0.4,
-"last": 0.4,
-"volume": 5277.95,
+"bid": 0.4,
+"ask": 0.41,
+"last": 0.41,
+"volume": 8104.91,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKWILLIAMS23-4"
 },
 {
@@ -2076,18 +2076,18 @@
 "line": 5,
 "bid": 0.23,
 "ask": 0.24,
-"last": 0.23,
-"volume": 2212.46,
+"last": 0.24,
+"volume": 3506.6,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKWILLIAMS23-5"
 },
 {
 "player": "Kyren Williams",
 "stat": "receptions",
 "line": 6,
-"bid": 0.12,
-"ask": 0.13,
-"last": 0.13,
-"volume": 7107.42,
+"bid": 0.13,
+"ask": 0.14,
+"last": 0.14,
+"volume": 8540.39,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKWILLIAMS23-6"
 },
 {
@@ -2097,7 +2097,7 @@
 "bid": 0.06,
 "ask": 0.07,
 "last": 0.07,
-"volume": 3167.04,
+"volume": 4608.02,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKWILLIAMS23-7"
 },
 {
@@ -2107,7 +2107,7 @@
 "bid": 0.03,
 "ask": 0.04,
 "last": 0.04,
-"volume": 11409.54,
+"volume": 11760.91,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARKWILLIAMS23-8"
 },
 {
@@ -2116,8 +2116,8 @@
 "line": 40,
 "bid": 0.82,
 "ask": 0.83,
-"last": 0.83,
-"volume": 5946.67,
+"last": 0.82,
+"volume": 6691.24,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARKWILLIAMS23-40"
 },
 {
@@ -2127,17 +2127,17 @@
 "bid": 0.72,
 "ask": 0.73,
 "last": 0.73,
-"volume": 2429.23,
+"volume": 2512.17,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARKWILLIAMS23-50"
 },
 {
 "player": "Kyren Williams",
 "stat": "rushing_yards",
 "line": 60,
-"bid": 0.6,
-"ask": 0.61,
-"last": 0.61,
-"volume": 3709.53,
+"bid": 0.59,
+"ask": 0.6,
+"last": 0.6,
+"volume": 6798.85,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARKWILLIAMS23-60"
 },
 {
@@ -2147,17 +2147,17 @@
 "bid": 0.49,
 "ask": 0.5,
 "last": 0.5,
-"volume": 14946.81,
+"volume": 17097.49,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARKWILLIAMS23-70"
 },
 {
 "player": "Kyren Williams",
 "stat": "rushing_yards",
 "line": 80,
-"bid": 0.38,
-"ask": 0.39,
+"bid": 0.37,
+"ask": 0.38,
 "last": 0.38,
-"volume": 1492.26,
+"volume": 2273.72,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARKWILLIAMS23-80"
 },
 {
@@ -2167,7 +2167,7 @@
 "bid": 0.29,
 "ask": 0.3,
 "last": 0.3,
-"volume": 609.88,
+"volume": 673.42,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARKWILLIAMS23-90"
 },
 {
@@ -2176,8 +2176,8 @@
 "line": 100,
 "bid": 0.22,
 "ask": 0.23,
-"last": 0.23,
-"volume": 601.75,
+"last": 0.22,
+"volume": 720.0,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARKWILLIAMS23-100"
 },
 {
@@ -2205,7 +2205,7 @@
 "stat": "rushing_yards",
 "line": 130,
 "bid": 0.07,
-"ask": 0.09,
+"ask": 0.08,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARKWILLIAMS23-130"
@@ -2215,17 +2215,17 @@
 "stat": "rushing_yards",
 "line": 140,
 "bid": 0.04,
-"ask": 0.07,
-"last": 0.0,
-"volume": 0.0,
+"ask": 0.06,
+"last": 0.06,
+"volume": 156.37,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARKWILLIAMS23-140"
 },
 {
 "player": "Kyren Williams",
 "stat": "rushing_yards",
 "line": 150,
-"bid": 0.03,
-"ask": 0.04,
+"bid": 0.04,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARKWILLIAMS23-150"
@@ -2237,7 +2237,7 @@
 "bid": 0.9,
 "ask": 0.91,
 "last": 0.91,
-"volume": 137.84,
+"volume": 229.36,
 "ticker": "KXNFLPASSTDS-26OCT12BUFLAR-LARMSTAFFORD9-1"
 },
 {
@@ -2247,7 +2247,7 @@
 "bid": 0.69,
 "ask": 0.7,
 "last": 0.7,
-"volume": 3350.6,
+"volume": 3754.09,
 "ticker": "KXNFLPASSTDS-26OCT12BUFLAR-LARMSTAFFORD9-2"
 },
 {
@@ -2257,7 +2257,7 @@
 "bid": 0.39,
 "ask": 0.4,
 "last": 0.4,
-"volume": 7803.89,
+"volume": 8423.24,
 "ticker": "KXNFLPASSTDS-26OCT12BUFLAR-LARMSTAFFORD9-3"
 },
 {
@@ -2277,7 +2277,7 @@
 "bid": 0.05,
 "ask": 0.06,
 "last": 0.06,
-"volume": 1445.96,
+"volume": 1680.52,
 "ticker": "KXNFLPASSTDS-26OCT12BUFLAR-LARMSTAFFORD9-5"
 },
 {
@@ -2287,7 +2287,7 @@
 "bid": 0.88,
 "ask": 0.89,
 "last": 0.89,
-"volume": 11695.62,
+"volume": 19658.92,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-LARMSTAFFORD9-200"
 },
 {
@@ -2297,7 +2297,7 @@
 "bid": 0.81,
 "ask": 0.82,
 "last": 0.82,
-"volume": 31837.01,
+"volume": 52475.43,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-LARMSTAFFORD9-225"
 },
 {
@@ -2307,17 +2307,17 @@
 "bid": 0.68,
 "ask": 0.69,
 "last": 0.69,
-"volume": 8992.68,
+"volume": 16079.39,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-LARMSTAFFORD9-250"
 },
 {
 "player": "Matthew Stafford",
 "stat": "passing_yards",
 "line": 275,
-"bid": 0.54,
-"ask": 0.55,
-"last": 0.55,
-"volume": 8147.19,
+"bid": 0.55,
+"ask": 0.56,
+"last": 0.56,
+"volume": 21638.65,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-LARMSTAFFORD9-275"
 },
 {
@@ -2327,7 +2327,7 @@
 "bid": 0.4,
 "ask": 0.41,
 "last": 0.41,
-"volume": 6417.94,
+"volume": 9970.29,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-LARMSTAFFORD9-300"
 },
 {
@@ -2337,7 +2337,7 @@
 "bid": 0.28,
 "ask": 0.29,
 "last": 0.29,
-"volume": 2322.73,
+"volume": 2463.23,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-LARMSTAFFORD9-325"
 },
 {
@@ -2347,7 +2347,7 @@
 "bid": 0.17,
 "ask": 0.18,
 "last": 0.18,
-"volume": 1390.91,
+"volume": 1868.45,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-LARMSTAFFORD9-350"
 },
 {
@@ -2357,7 +2357,7 @@
 "bid": 0.12,
 "ask": 0.13,
 "last": 0.13,
-"volume": 481.61,
+"volume": 503.35,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-LARMSTAFFORD9-375"
 },
 {
@@ -2367,7 +2367,7 @@
 "bid": 0.05,
 "ask": 0.07,
 "last": 0.07,
-"volume": 422.01,
+"volume": 572.89,
 "ticker": "KXNFLPASSYDS-26OCT12BUFLAR-LARMSTAFFORD9-400"
 },
 {
@@ -2377,7 +2377,7 @@
 "bid": 0.2,
 "ask": 0.21,
 "last": 0.21,
-"volume": 8482.04,
+"volume": 9570.21,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARMSTAFFORD9-10"
 },
 {
@@ -2387,7 +2387,7 @@
 "bid": 0.11,
 "ask": 0.12,
 "last": 0.12,
-"volume": 11532.47,
+"volume": 11999.76,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARMSTAFFORD9-15"
 },
 {
@@ -2396,8 +2396,8 @@
 "line": 50,
 "bid": 0.85,
 "ask": 0.86,
-"last": 0.84,
-"volume": 3926.76,
+"last": 0.85,
+"volume": 4262.56,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-50"
 },
 {
@@ -2406,8 +2406,8 @@
 "line": 60,
 "bid": 0.79,
 "ask": 0.8,
-"last": 0.8,
-"volume": 3749.29,
+"last": 0.79,
+"volume": 3858.53,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-60"
 },
 {
@@ -2416,28 +2416,28 @@
 "line": 70,
 "bid": 0.69,
 "ask": 0.7,
-"last": 0.7,
-"volume": 2320.58,
+"last": 0.69,
+"volume": 3186.88,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-70"
 },
 {
 "player": "Puka Nacua",
 "stat": "receiving_yards",
 "line": 80,
-"bid": 0.6,
-"ask": 0.61,
+"bid": 0.61,
+"ask": 0.62,
 "last": 0.61,
-"volume": 2688.77,
+"volume": 5205.35,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-80"
 },
 {
 "player": "Puka Nacua",
 "stat": "receiving_yards",
 "line": 90,
-"bid": 0.53,
-"ask": 0.54,
-"last": 0.54,
-"volume": 6060.68,
+"bid": 0.54,
+"ask": 0.55,
+"last": 0.55,
+"volume": 13352.39,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-90"
 },
 {
@@ -2447,7 +2447,7 @@
 "bid": 0.48,
 "ask": 0.49,
 "last": 0.49,
-"volume": 9123.44,
+"volume": 12211.45,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-95"
 },
 {
@@ -2457,17 +2457,17 @@
 "bid": 0.45,
 "ask": 0.46,
 "last": 0.46,
-"volume": 3577.01,
+"volume": 5084.05,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-100"
 },
 {
 "player": "Puka Nacua",
 "stat": "receiving_yards",
 "line": 110,
-"bid": 0.35,
-"ask": 0.36,
+"bid": 0.36,
+"ask": 0.37,
 "last": 0.37,
-"volume": 2267.23,
+"volume": 3253.04,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-110"
 },
 {
@@ -2477,7 +2477,7 @@
 "bid": 0.3,
 "ask": 0.31,
 "last": 0.31,
-"volume": 1149.83,
+"volume": 2067.08,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-120"
 },
 {
@@ -2487,7 +2487,7 @@
 "bid": 0.23,
 "ask": 0.24,
 "last": 0.24,
-"volume": 363.43,
+"volume": 939.16,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-130"
 },
 {
@@ -2497,17 +2497,17 @@
 "bid": 0.18,
 "ask": 0.19,
 "last": 0.19,
-"volume": 672.79,
+"volume": 1045.52,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-140"
 },
 {
 "player": "Puka Nacua",
 "stat": "receiving_yards",
 "line": 150,
-"bid": 0.14,
+"bid": 0.13,
 "ask": 0.15,
 "last": 0.15,
-"volume": 3675.97,
+"volume": 4533.74,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-150"
 },
 {
@@ -2517,17 +2517,17 @@
 "bid": 0.11,
 "ask": 0.12,
 "last": 0.12,
-"volume": 954.36,
+"volume": 1325.59,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-160"
 },
 {
 "player": "Puka Nacua",
 "stat": "receiving_yards",
 "line": 170,
-"bid": 0.07,
-"ask": 0.09,
-"last": 0.0,
-"volume": 0.0,
+"bid": 0.08,
+"ask": 0.1,
+"last": 0.1,
+"volume": 1780.68,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-170"
 },
 {
@@ -2544,10 +2544,10 @@
 "player": "Puka Nacua",
 "stat": "receiving_yards",
 "line": 190,
-"bid": 0.02,
+"bid": 0.03,
 "ask": 0.05,
 "last": 0.05,
-"volume": 20.0,
+"volume": 27.0,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARPNACUA12-190"
 },
 {
@@ -2557,7 +2557,7 @@
 "bid": 0.89,
 "ask": 0.9,
 "last": 0.9,
-"volume": 260.48,
+"volume": 321.62,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-4"
 },
 {
@@ -2567,7 +2567,7 @@
 "bid": 0.83,
 "ask": 0.84,
 "last": 0.84,
-"volume": 351.85,
+"volume": 516.61,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-5"
 },
 {
@@ -2577,7 +2577,7 @@
 "bid": 0.7,
 "ask": 0.71,
 "last": 0.71,
-"volume": 340.95,
+"volume": 382.35,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-6"
 },
 {
@@ -2587,7 +2587,7 @@
 "bid": 0.59,
 "ask": 0.6,
 "last": 0.6,
-"volume": 5387.27,
+"volume": 5854.91,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-7"
 },
 {
@@ -2597,17 +2597,17 @@
 "bid": 0.45,
 "ask": 0.46,
 "last": 0.46,
-"volume": 13877.71,
+"volume": 17005.88,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-8"
 },
 {
 "player": "Puka Nacua",
 "stat": "receptions",
 "line": 9,
-"bid": 0.32,
-"ask": 0.33,
-"last": 0.33,
-"volume": 2527.51,
+"bid": 0.31,
+"ask": 0.32,
+"last": 0.32,
+"volume": 2533.47,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-9"
 },
 {
@@ -2617,17 +2617,17 @@
 "bid": 0.21,
 "ask": 0.22,
 "last": 0.22,
-"volume": 1661.18,
+"volume": 2691.84,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-10"
 },
 {
 "player": "Puka Nacua",
 "stat": "receptions",
 "line": 11,
-"bid": 0.12,
+"bid": 0.13,
 "ask": 0.14,
 "last": 0.14,
-"volume": 357.96,
+"volume": 370.56,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-11"
 },
 {
@@ -2636,15 +2636,15 @@
 "line": 12,
 "bid": 0.08,
 "ask": 0.1,
-"last": 0.09,
-"volume": 193.33,
+"last": 0.1,
+"volume": 1609.71,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-12"
 },
 {
 "player": "Puka Nacua",
 "stat": "receptions",
 "line": 13,
-"bid": 0.04,
+"bid": 0.05,
 "ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
@@ -2666,18 +2666,18 @@
 "line": 15,
 "bid": 0.02,
 "ask": 0.04,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.02,
+"volume": 50.0,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARPNACUA12-15"
 },
 {
 "player": "Puka Nacua",
 "stat": "rushing_yards",
 "line": 10,
-"bid": 0.22,
-"ask": 0.23,
+"bid": 0.21,
+"ask": 0.22,
 "last": 0.22,
-"volume": 327.51,
+"volume": 594.92,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARPNACUA12-10"
 },
 {
@@ -2686,8 +2686,8 @@
 "line": 15,
 "bid": 0.12,
 "ask": 0.13,
-"last": 0.12,
-"volume": 669.17,
+"last": 0.11,
+"volume": 696.17,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARPNACUA12-15"
 },
 {
@@ -2696,16 +2696,16 @@
 "line": 20,
 "bid": 0.08,
 "ask": 0.09,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.09,
+"volume": 52.22,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARPNACUA12-20"
 },
 {
 "player": "Puka Nacua",
 "stat": "rushing_yards",
 "line": 25,
-"bid": 0.05,
-"ask": 0.08,
+"bid": 0.03,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARPNACUA12-25"
@@ -2715,7 +2715,7 @@
 "stat": "rushing_yards",
 "line": 30,
 "bid": 0.03,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-LARPNACUA12-30"
@@ -2724,60 +2724,60 @@
 "player": "Ty Johnson",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.46,
-"ask": 0.47,
-"last": 0.47,
-"volume": 24706.99,
+"bid": 0.48,
+"ask": 0.49,
+"last": 0.49,
+"volume": 29072.0,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFTJOHNSON26-15"
 },
 {
 "player": "Ty Johnson",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.27,
-"ask": 0.28,
-"last": 0.28,
-"volume": 890.16,
+"bid": 0.29,
+"ask": 0.3,
+"last": 0.3,
+"volume": 2338.58,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFTJOHNSON26-25"
 },
 {
 "player": "Ty Johnson",
 "stat": "receiving_yards",
 "line": 40,
-"bid": 0.12,
-"ask": 0.13,
-"last": 0.13,
-"volume": 1611.33,
+"bid": 0.14,
+"ask": 0.15,
+"last": 0.15,
+"volume": 3445.76,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFTJOHNSON26-40"
 },
 {
 "player": "Ty Johnson",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.06,
-"ask": 0.07,
-"last": 0.07,
-"volume": 2376.28,
+"bid": 0.07,
+"ask": 0.08,
+"last": 0.08,
+"volume": 2481.97,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFTJOHNSON26-50"
 },
 {
 "player": "Ty Johnson",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.02,
-"ask": 0.05,
+"bid": 0.04,
+"ask": 0.06,
 "last": 0.05,
-"volume": 18.75,
+"volume": 1987.8,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-BUFTJOHNSON26-60"
 },
 {
 "player": "Ty Johnson",
 "stat": "receptions",
 "line": 2,
-"bid": 0.57,
-"ask": 0.59,
-"last": 0.59,
-"volume": 10420.29,
+"bid": 0.59,
+"ask": 0.6,
+"last": 0.6,
+"volume": 14794.92,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFTJOHNSON26-2"
 },
 {
@@ -2787,27 +2787,27 @@
 "bid": 0.34,
 "ask": 0.35,
 "last": 0.35,
-"volume": 1041.8,
+"volume": 1235.27,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFTJOHNSON26-3"
 },
 {
 "player": "Ty Johnson",
 "stat": "receptions",
 "line": 4,
-"bid": 0.15,
+"bid": 0.17,
 "ask": 0.18,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.18,
+"volume": 186.55,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFTJOHNSON26-4"
 },
 {
 "player": "Ty Johnson",
 "stat": "receptions",
 "line": 5,
-"bid": 0.07,
+"bid": 0.08,
 "ask": 0.09,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.09,
+"volume": 104.44,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFTJOHNSON26-5"
 },
 {
@@ -2815,7 +2815,7 @@
 "stat": "receptions",
 "line": 6,
 "bid": 0.03,
-"ask": 0.06,
+"ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLREC-26OCT12BUFLAR-BUFTJOHNSON26-6"
@@ -2824,7 +2824,7 @@
 "player": "Ty Johnson",
 "stat": "receptions",
 "line": 7,
-"bid": 0.01,
+"bid": 0.02,
 "ask": 0.03,
 "last": 0.03,
 "volume": 5156.06,
@@ -2834,10 +2834,10 @@
 "player": "Ty Johnson",
 "stat": "rushing_yards",
 "line": 10,
-"bid": 0.33,
-"ask": 0.34,
-"last": 0.35,
-"volume": 4563.08,
+"bid": 0.34,
+"ask": 0.35,
+"last": 0.36,
+"volume": 5270.12,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFTJOHNSON26-10"
 },
 {
@@ -2854,18 +2854,18 @@
 "player": "Ty Johnson",
 "stat": "rushing_yards",
 "line": 20,
-"bid": 0.13,
-"ask": 0.14,
+"bid": 0.14,
+"ask": 0.15,
 "last": 0.14,
-"volume": 14.4,
+"volume": 69.57,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFTJOHNSON26-20"
 },
 {
 "player": "Ty Johnson",
 "stat": "rushing_yards",
 "line": 25,
-"bid": 0.08,
-"ask": 0.1,
+"bid": 0.06,
+"ask": 0.09,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT12BUFLAR-BUFTJOHNSON26-25"
@@ -2874,10 +2874,10 @@
 "player": "Tyler Higbee",
 "stat": "receiving_yards",
 "line": 15,
-"bid": 0.71,
-"ask": 0.72,
-"last": 0.72,
-"volume": 3953.56,
+"bid": 0.7,
+"ask": 0.71,
+"last": 0.71,
+"volume": 3971.9,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARTHIGBEE89-15"
 },
 {
@@ -2887,7 +2887,7 @@
 "bid": 0.53,
 "ask": 0.54,
 "last": 0.54,
-"volume": 40051.7,
+"volume": 42832.37,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARTHIGBEE89-25"
 },
 {
@@ -2897,37 +2897,37 @@
 "bid": 0.3,
 "ask": 0.31,
 "last": 0.31,
-"volume": 1397.65,
+"volume": 1736.41,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARTHIGBEE89-40"
 },
 {
 "player": "Tyler Higbee",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.18,
-"ask": 0.2,
-"last": 0.18,
-"volume": 878.18,
+"bid": 0.2,
+"ask": 0.21,
+"last": 0.21,
+"volume": 1643.27,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARTHIGBEE89-50"
 },
 {
 "player": "Tyler Higbee",
 "stat": "receiving_yards",
 "line": 60,
-"bid": 0.11,
-"ask": 0.12,
-"last": 0.12,
-"volume": 1260.06,
+"bid": 0.12,
+"ask": 0.13,
+"last": 0.13,
+"volume": 1820.98,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARTHIGBEE89-60"
 },
 {
 "player": "Tyler Higbee",
 "stat": "receiving_yards",
 "line": 70,
-"bid": 0.08,
+"bid": 0.07,
 "ask": 0.09,
-"last": 0.08,
-"volume": 1216.61,
+"last": 0.09,
+"volume": 1947.81,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARTHIGBEE89-70"
 },
 {
@@ -2935,7 +2935,7 @@
 "stat": "receiving_yards",
 "line": 80,
 "bid": 0.05,
-"ask": 0.07,
+"ask": 0.06,
 "last": 0.03,
 "volume": 44.41,
 "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARTHIGBEE89-80"
@@ -2946,8 +2946,8 @@
 "line": 2,
 "bid": 0.73,
 "ask": 0.74,
-"last": 0.72,
-"volume": 188.82,
+"last": 0.74,
+"volume": 210.04,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARTHIGBEE89-2"
 },
 {
@@ -2957,7 +2957,7 @@
 "bid": 0.51,
 "ask": 0.52,
 "last": 0.52,
-"volume": 15762.79,
+"volume": 18461.36,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARTHIGBEE89-3"
 },
 {
@@ -2967,7 +2967,7 @@
 "bid": 0.31,
 "ask": 0.32,
 "last": 0.32,
-"volume": 1195.44,
+"volume": 1196.18,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARTHIGBEE89-4"
 },
 {
@@ -2984,7 +2984,7 @@
 "player": "Tyler Higbee",
 "stat": "receptions",
 "line": 6,
-"bid": 0.07,
+"bid": 0.08,
 "ask": 0.09,
 "last": 0.0,
 "volume": 0.0,
@@ -2995,9 +2995,9 @@
 "stat": "receptions",
 "line": 7,
 "bid": 0.04,
-"ask": 0.06,
-"last": 0.0,
-"volume": 0.0,
+"ask": 0.05,
+"last": 0.05,
+"volume": 37.5,
 "ticker": "KXNFLREC-26OCT12BUFLAR-LARTHIGBEE89-7"
 }
 ],
@@ -3007,7 +3007,7 @@
 "stat": "receiving_yards",
 "line": 15,
 "bid": 0.62,
-"ask": 0.63,
+"ask": 0.64,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-SEAABARNER88-15"
@@ -3047,7 +3047,7 @@
 "stat": "receiving_yards",
 "line": 60,
 "bid": 0.05,
-"ask": 0.09,
+"ask": 0.1,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-SEAABARNER88-60"
@@ -3087,7 +3087,7 @@
 "stat": "passing_tds",
 "line": 2,
 "bid": 0.32,
-"ask": 0.33,
+"ask": 0.34,
 "last": 0.34,
 "volume": 6.25,
 "ticker": "KXNFLPASSTDS-26OCT15SEADEN-DENBNIX10-2"
@@ -3097,9 +3097,9 @@
 "stat": "passing_tds",
 "line": 3,
 "bid": 0.09,
-"ask": 0.11,
-"last": 0.0,
-"volume": 0.0,
+"ask": 0.12,
+"last": 0.11,
+"volume": 66.92,
 "ticker": "KXNFLPASSTDS-26OCT15SEADEN-DENBNIX10-3"
 },
 {
@@ -3127,7 +3127,7 @@
 "stat": "passing_yards",
 "line": 175,
 "bid": 0.67,
-"ask": 0.71,
+"ask": 0.7,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLPASSYDS-26OCT15SEADEN-DENBNIX10-175"
@@ -3136,10 +3136,10 @@
 "player": "Bo Nix",
 "stat": "passing_yards",
 "line": 200,
-"bid": 0.51,
+"bid": 0.52,
 "ask": 0.54,
 "last": 0.51,
-"volume": 38.5,
+"volume": 48.35,
 "ticker": "KXNFLPASSYDS-26OCT15SEADEN-DENBNIX10-200"
 },
 {
@@ -3186,17 +3186,17 @@
 "player": "Bo Nix",
 "stat": "passing_yards",
 "line": 325,
-"bid": 0.02,
-"ask": 0.05,
-"last": 0.05,
-"volume": 50.0,
+"bid": 0.03,
+"ask": 0.06,
+"last": 0.07,
+"volume": 327.74,
 "ticker": "KXNFLPASSYDS-26OCT15SEADEN-DENBNIX10-325"
 },
 {
 "player": "Bo Nix",
 "stat": "rushing_yards",
 "line": 10,
-"bid": 0.62,
+"bid": 0.61,
 "ask": 0.66,
 "last": 0.0,
 "volume": 0.0,
@@ -3206,8 +3206,8 @@
 "player": "Bo Nix",
 "stat": "rushing_yards",
 "line": 15,
-"bid": 0.47,
-"ask": 0.49,
+"bid": 0.46,
+"ask": 0.5,
 "last": 0.49,
 "volume": 101.19,
 "ticker": "KXNFLRSHYDS-26OCT15SEADEN-DENBNIX10-15"
@@ -3237,7 +3237,7 @@
 "stat": "rushing_yards",
 "line": 30,
 "bid": 0.16,
-"ask": 0.18,
+"ask": 0.19,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT15SEADEN-DENBNIX10-30"
@@ -3357,7 +3357,7 @@
 "stat": "receiving_yards",
 "line": 35,
 "bid": 0.46,
-"ask": 0.49,
+"ask": 0.48,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-DENCSUTTON14-35"
@@ -3387,7 +3387,7 @@
 "stat": "receiving_yards",
 "line": 60,
 "bid": 0.18,
-"ask": 0.21,
+"ask": 0.2,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-DENCSUTTON14-60"
@@ -3496,7 +3496,7 @@
 "player": "Emanuel Wilson",
 "stat": "rushing_yards",
 "line": 60,
-"bid": 0.55,
+"bid": 0.56,
 "ask": 0.58,
 "last": 0.0,
 "volume": 0.0,
@@ -3716,7 +3716,7 @@
 "player": "George Holani",
 "stat": "rushing_yards",
 "line": 20,
-"bid": 0.36,
+"bid": 0.35,
 "ask": 0.38,
 "last": 0.35,
 "volume": 33.49,
@@ -3736,7 +3736,7 @@
 "player": "George Holani",
 "stat": "rushing_yards",
 "line": 30,
-"bid": 0.19,
+"bid": 0.18,
 "ask": 0.2,
 "last": 0.0,
 "volume": 0.0,
@@ -3867,7 +3867,7 @@
 "stat": "rushing_yards",
 "line": 120,
 "bid": 0.02,
-"ask": 0.05,
+"ask": 0.06,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT15SEADEN-DENJDOBBINS27-120"
@@ -3877,7 +3877,7 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.82,
-"ask": 0.85,
+"ask": 0.86,
 "last": 0.87,
 "volume": 28.47,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-SEAJSMITHNJIGBA11-50"
@@ -3896,7 +3896,7 @@
 "player": "Jaxon Smith-Njigba",
 "stat": "receiving_yards",
 "line": 70,
-"bid": 0.66,
+"bid": 0.67,
 "ask": 0.7,
 "last": 0.7,
 "volume": 6.09,
@@ -3906,20 +3906,20 @@
 "player": "Jaxon Smith-Njigba",
 "stat": "receiving_yards",
 "line": 80,
-"bid": 0.57,
+"bid": 0.58,
 "ask": 0.61,
 "last": 0.61,
-"volume": 22.19,
+"volume": 25.38,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-SEAJSMITHNJIGBA11-80"
 },
 {
 "player": "Jaxon Smith-Njigba",
 "stat": "receiving_yards",
 "line": 90,
-"bid": 0.48,
+"bid": 0.49,
 "ask": 0.52,
 "last": 0.52,
-"volume": 212.8,
+"volume": 222.1,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-SEAJSMITHNJIGBA11-90"
 },
 {
@@ -3929,7 +3929,7 @@
 "bid": 0.4,
 "ask": 0.43,
 "last": 0.43,
-"volume": 42.21,
+"volume": 122.2,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-SEAJSMITHNJIGBA11-100"
 },
 {
@@ -3956,7 +3956,7 @@
 "player": "Jaxon Smith-Njigba",
 "stat": "receiving_yards",
 "line": 130,
-"bid": 0.09,
+"bid": 0.1,
 "ask": 0.23,
 "last": 0.0,
 "volume": 0.0,
@@ -3976,7 +3976,7 @@
 "player": "Jaxon Smith-Njigba",
 "stat": "receiving_yards",
 "line": 150,
-"bid": 0.06,
+"bid": 0.09,
 "ask": 0.14,
 "last": 0.14,
 "volume": 251.03,
@@ -3986,7 +3986,7 @@
 "player": "Jaxon Smith-Njigba",
 "stat": "receiving_yards",
 "line": 160,
-"bid": 0.03,
+"bid": 0.04,
 "ask": 0.1,
 "last": 0.0,
 "volume": 0.0,
@@ -4017,7 +4017,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.79,
-"ask": 0.84,
+"ask": 0.83,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-DENJWADDLE17-25"
@@ -4086,8 +4086,8 @@
 "player": "Jaylen Waddle",
 "stat": "receiving_yards",
 "line": 100,
-"bid": 0.08,
-"ask": 0.11,
+"bid": 0.07,
+"ask": 0.12,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-DENJWADDLE17-100"
@@ -4126,8 +4126,8 @@
 "player": "Marvin Mims Jr.",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.3,
-"ask": 0.33,
+"bid": 0.31,
+"ask": 0.34,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-DENMMIMS19-25"
@@ -4147,7 +4147,7 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.09,
-"ask": 0.11,
+"ask": 0.12,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-DENMMIMS19-50"
@@ -4166,7 +4166,7 @@
 "player": "RJ Harvey",
 "stat": "receiving_yards",
 "line": 25,
-"bid": 0.39,
+"bid": 0.38,
 "ask": 0.42,
 "last": 0.0,
 "volume": 0.0,
@@ -4176,7 +4176,7 @@
 "player": "RJ Harvey",
 "stat": "receiving_yards",
 "line": 40,
-"bid": 0.14,
+"bid": 0.13,
 "ask": 0.18,
 "last": 0.0,
 "volume": 0.0,
@@ -4186,10 +4186,10 @@
 "player": "RJ Harvey",
 "stat": "receiving_yards",
 "line": 50,
-"bid": 0.07,
-"ask": 0.11,
-"last": 0.0,
-"volume": 0.0,
+"bid": 0.06,
+"ask": 0.1,
+"last": 0.11,
+"volume": 42.78,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-DENRHARVEY12-50"
 },
 {
@@ -4257,7 +4257,7 @@
 "stat": "rushing_yards",
 "line": 25,
 "bid": 0.27,
-"ask": 0.29,
+"ask": 0.3,
 "last": 0.28,
 "volume": 45.9,
 "ticker": "KXNFLRSHYDS-26OCT15SEADEN-DENRHARVEY12-25"
@@ -4267,7 +4267,7 @@
 "stat": "rushing_yards",
 "line": 30,
 "bid": 0.2,
-"ask": 0.21,
+"ask": 0.22,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT15SEADEN-DENRHARVEY12-30"
@@ -4287,7 +4287,7 @@
 "stat": "rushing_yards",
 "line": 50,
 "bid": 0.03,
-"ask": 0.08,
+"ask": 0.07,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRSHYDS-26OCT15SEADEN-DENRHARVEY12-50"
@@ -4296,7 +4296,7 @@
 "player": "RJ Harvey",
 "stat": "rushing_yards",
 "line": 60,
-"bid": 0.02,
+"bid": 0.01,
 "ask": 0.05,
 "last": 0.0,
 "volume": 0.0,
@@ -4327,7 +4327,7 @@
 "stat": "receiving_yards",
 "line": 25,
 "bid": 0.45,
-"ask": 0.49,
+"ask": 0.48,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-SEARSHAHEED22-25"
@@ -4347,7 +4347,7 @@
 "stat": "receiving_yards",
 "line": 50,
 "bid": 0.16,
-"ask": 0.19,
+"ask": 0.2,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-SEARSHAHEED22-50"
@@ -4427,9 +4427,9 @@
 "stat": "passing_yards",
 "line": 175,
 "bid": 0.74,
-"ask": 0.79,
-"last": 0.0,
-"volume": 0.0,
+"ask": 0.78,
+"last": 0.79,
+"volume": 6.23,
 "ticker": "KXNFLPASSYDS-26OCT15SEADEN-SEASDARNOLD14-175"
 },
 {
@@ -4446,17 +4446,17 @@
 "player": "Sam Darnold",
 "stat": "passing_yards",
 "line": 225,
-"bid": 0.46,
-"ask": 0.48,
+"bid": 0.45,
+"ask": 0.47,
 "last": 0.48,
-"volume": 36.3,
+"volume": 56.4,
 "ticker": "KXNFLPASSYDS-26OCT15SEADEN-SEASDARNOLD14-225"
 },
 {
 "player": "Sam Darnold",
 "stat": "passing_yards",
 "line": 250,
-"bid": 0.3,
+"bid": 0.31,
 "ask": 0.34,
 "last": 0.0,
 "volume": 0.0,
@@ -4558,8 +4558,8 @@
 "line": 15,
 "bid": 0.29,
 "ask": 0.32,
-"last": 0.0,
-"volume": 0.0,
+"last": 0.32,
+"volume": 1.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-SEATHORTON15-15"
 },
 {
@@ -4577,7 +4577,7 @@
 "stat": "receiving_yards",
 "line": 40,
 "bid": 0.03,
-"ask": 0.08,
+"ask": 0.09,
 "last": 0.0,
 "volume": 0.0,
 "ticker": "KXNFLRECYDS-26OCT15SEADEN-SEATHORTON15-40"
