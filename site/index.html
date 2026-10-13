@@ -326,6 +326,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
 
   <nav class="tabs" role="tablist" aria-label="Sections">
     <button role="tab" id="tab-week" aria-controls="p-week" aria-selected="true">This week</button>
+    <button role="tab" id="tab-card" aria-controls="p-card" aria-selected="false">The card</button>
     <button role="tab" id="tab-parlays" aria-controls="p-parlays" aria-selected="false">Parlays</button>
     <button role="tab" id="tab-ilani" aria-controls="p-ilani" aria-selected="false">ilani value</button>
     <button role="tab" id="tab-props" aria-controls="p-props" aria-selected="false">Player props</button>
@@ -335,6 +336,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
   </nav>
 
   <section id="p-week" role="tabpanel" aria-labelledby="tab-week"></section>
+  <section id="p-card" role="tabpanel" aria-labelledby="tab-card" hidden></section>
   <section id="p-parlays" role="tabpanel" aria-labelledby="tab-parlays" hidden></section>
   <section id="p-ilani" role="tabpanel" aria-labelledby="tab-ilani" hidden></section>
   <section id="p-props" role="tabpanel" aria-labelledby="tab-props" hidden></section>
@@ -444,7 +446,7 @@ function renderHeader() {
 }
 
 // ---------- tabs
-const TABS = ["week", "parlays", "ilani", "props", "fade", "bets", "research"];
+const TABS = ["week", "card", "parlays", "ilani", "props", "fade", "bets", "research"];
 const RESEARCH = ["ratings", "trends", "people"];
 function showResearch(sub) {
   RESEARCH.forEach(r => { $("#p-" + r).hidden = r !== sub; document.querySelector(`[data-rt="${r}"]`).setAttribute("aria-pressed", String(r === sub)) });
@@ -1442,16 +1444,17 @@ function oneGameEach(list, n = 3) {
 }
 
 // ---------- SAVED SLIPS: frozen legs, live prices. Personal drafts in data/users/<me>/, shared board in slips/
-const legId = l => l.kind === "prop" ? `p|${l.gid}|${l.player}|${l.stat}|${l.line}` : `g|${l.gid}|${l.kind}|${l.side}`;
+const legId = l => l.kind === "prop" ? `p|${l.gid}|${l.player}|${l.stat}|${l.line}${l.side === "under" ? "|under" : ""}` : `g|${l.gid}|${l.kind}|${l.side}`;
 function addBtn(l) {
-  if (!S.db || !S.me || !l || (l.kind === "prop" && l.stat == null) || l.side === "under" && l.kind === "prop") return "";   // slips track overs only
+  if (!S.db || !S.me || !l || (l.kind === "prop" && l.stat == null)) return "";
   const id = legId(l); S.legPool[id] = l;
   const act = activeSlip(), inIt = act?.legs.some(x => legId(x) === id);
   return `<button class="addleg${inIt ? " on" : ""}" data-add="${esc(id)}" title="${inIt ? "In your open slip" : act ? `Add to "${esc(act.name)}"` : "Start a new slip with this leg"}" aria-label="Add to slip">${inIt ? "✓" : "+"}</button>`;
 }
 function freezeLeg(l) {
   const base = { kind: l.kind, gid: l.gid, label: l.label, p0: Math.round(l.p * 1e4) / 1e4, price0: Math.round(l.price * 1e4) / 1e4, at: new Date().toISOString() };
-  return l.kind === "prop" ? { ...base, player: l.player, team: l.team || null, stat: l.stat, line: l.line } : { ...base, side: l.side, line: l.line };
+  const book = l.odds != null ? { book: "ilani", odds0: l.odds } : {};
+  return l.kind === "prop" ? { ...base, ...book, player: l.player, team: l.team || null, stat: l.stat, line: l.line, side: l.side || "over" } : { ...base, ...book, side: l.side, line: l.line };
 }
 const gameOf = gid => (S.data?.season_games || []).find(x => x.game_id === gid) || (S.data?.week_games || []).find(x => x.game_id === gid);
 function kickMs(g) {   // nflverse times are US Eastern
@@ -1465,7 +1468,9 @@ function legResult(leg) {
   if (leg.kind === "prop") {
     const box = S.box?.[leg.gid]; if (!box) return null;
     const v = box[leg.player]?.[leg.stat];
-    return v == null ? "DNP" : v >= leg.line ? "W" : "L";
+    if (v == null) return "DNP";
+    const over = v >= leg.line;
+    return (leg.side === "under" ? !over : over) ? "W" : "L";
   }
   let d = leg.kind === "total" ? g.home_score + g.away_score - leg.line : (leg.side === "home" ? g.home_score - g.away_score : g.away_score - g.home_score) + leg.line;
   if (leg.kind === "total" && leg.side === "under") d = -d;
@@ -1479,12 +1484,19 @@ function liveLeg(leg) {
   if (leg.kind === "prop") {
     const x = (S.kalshi[leg.gid] || []).find(r => r.player === leg.player && r.stat === leg.stat && r.line === leg.line);
     const pm = modelProb(leg.player, leg.stat, leg.line, leg.gid);
-    if (x && x.ask != null) {
-      const mid = x.bid != null ? (x.bid + x.ask) / 2 : x.ask;
-      out.p = pm != null ? (pm + mid) / 2 : mid; out.price = x.ask; out.edge = out.p - x.ask;
-      if (pm != null && pm - x.ask > 0.15) out.flags.push(["warn", "Model 15+ pts above Kalshi: check news"]);
-      if (x.bid != null && x.ask - x.bid > 0.06) out.flags.push(["", "Thin market"]);
-    } else { out.p = pm; out.flags.push(["", "No Kalshi price right now"]) }
+    const under = leg.side === "under";
+    const k = kalshiMid(leg.gid, leg.player, leg.stat, leg.line);
+    const over = pm != null && k ? (pm + k.p) / 2 : k ? k.p : pm;
+    out.p = over == null ? null : under ? 1 - over : over;
+    if (pm != null && k && Math.abs(pm - k.p) > 0.15) out.flags.push(["warn", "Model and Kalshi 15+ pts apart: check news"]);
+    // price: ilani's current odds if the leg came from ilani, else Kalshi (an under is Kalshi's "no", priced 1 - bid)
+    const il = leg.book === "ilani" ? (S.ilani[leg.gid]?.props || []).find(r => r.player === leg.player && r.stat === leg.stat && r.line === leg.line && r.side === (leg.side || "over")) : null;
+    if (il && il.odds != null) { out.price = amImp(il.odds); out.odds = il.odds }
+    else if (x && x.ask != null && !under) out.price = x.ask;
+    else if (x && x.bid != null && under) out.price = 1 - x.bid;
+    else if (leg.book === "ilani") out.flags.push(["", "Off ilani's board right now"]);
+    else out.flags.push(["", "No Kalshi price right now"]);
+    if (out.p != null && out.price != null) out.edge = out.p - out.price;
     const st = injStatus(leg.team, leg.player);
     if (st) out.flags.push([st === "Questionable" ? "" : "warn", st]);
   } else {
@@ -1512,7 +1524,7 @@ function slipCard(sl, scope) {
     const d = l.p != null && !l.res ? l.p - l.p0 : null;
     return `<div class="leg"><span class="legn">${i + 1}</span><div style="min-width:0"><div class="pk" style="font-size:18px">${esc(l.label)} ${resChip(l.res)}</div>
       <div class="bs">${esc(gameOf(l.gid) ? `${gameOf(l.gid).away} @ ${gameOf(l.gid).home}` : "")}${l.flags.map(([c, t]) => ` <span class="chip ${c === "warn" ? "warn" : "noedge"}">${esc(t)}</span>`).join("")}</div></div>
-      <div class="legnums">${l.res ? "" : `<b>${l.p != null ? Math.round(l.p * 100) + "%" : "–"}</b><span class="why">${l.kind === "prop" ? (l.price != null ? Math.round(l.price * 100) + "¢ now" : "") : "−110"}${d != null && Math.abs(d) >= 0.01 ? ` · ${d > 0 ? "▲" : "▼"}${Math.abs(Math.round(d * 100))} since saved` : ""}</span>
+      <div class="legnums">${l.res ? "" : `<b>${l.p != null ? Math.round(l.p * 100) + "%" : "–"}</b><span class="why">${l.kind === "prop" ? (l.odds != null ? "ilani " + fmtA(l.odds) : l.price != null ? Math.round(l.price * 100) + "¢ " + (l.side === "under" ? "(no) " : "") + "now" : "") : l.odds0 != null ? "ilani " + fmtA(l.odds0) : "−110"}${d != null && Math.abs(d) >= 0.01 ? ` · ${d > 0 ? "▲" : "▼"}${Math.abs(Math.round(d * 100))} since saved` : ""}</span>
         ${l.edge != null ? `<span class="${l.edge >= 0 ? "pos" : "neg"}">${l.edge >= 0 ? "+" : "−"}${Math.abs(Math.round(l.edge * 100))} pts value</span>` : ""}`}
         ${canEdit && !l.res && !l.started ? `<button class="btn-mini ghost" data-rmleg="${i}" aria-label="Remove leg">Remove</button>` : ""}</div></div>`;
   }).join("");
@@ -1658,7 +1670,7 @@ function ilaniCard(legs, title, why) {
   const ci = S.cardLegs.push({ title, legs }) - 1;
   const rows = legs.map((l, i) => `<div class="leg"><span class="legn">${i + 1}</span><div style="min-width:0"><div class="pk" style="font-size:19px">${esc(l.label)} ${addBtn(l)}</div><div class="bs">${esc(l.kind === "prop" ? legWhy({ ...l, key: l.key }) : l.sub)}</div></div>
     <div class="legnums"><b>${Math.round(l.p * 100)}%</b><span class="why">ilani ${fmtA(l.odds)} (${Math.round(l.price * 100)}%)</span><span class="${l.edge >= 0 ? "pos" : "neg"}">${l.edge >= 0 ? "+" : "−"}${Math.abs(Math.round(l.edge * 100))} pts value</span></div></div>`).join("");
-  return `<div class="pcard"><div class="plays-head"><h3 style="margin:0">${esc(title)}</h3><span class="label">${legs.length} legs${S.db && S.me && !legs.some(l => l.kind === "prop" && l.side === "under") ? ` <button class="btn-mini" data-savecard="${ci}">Save as my slip</button>` : ""}</span></div>
+  return `<div class="pcard"><div class="plays-head"><h3 style="margin:0">${esc(title)}</h3><span class="label">${legs.length} legs${S.db && S.me ? ` <button class="btn-mini" data-savecard="${ci}">Save as my slip</button>` : ""}</span></div>
     <p class="note" style="margin:0">${why}</p>${rows}
     <div class="pfoot"><div><b>${fmtA(pays)}</b><span>ilani pays</span></div><div><b>${Math.round(pc * 100)}%</b><span>our chance all hit</span></div><div><b>${fmtAm(fair)}</b><span>fair odds</span></div><div><b class="${ev >= 0 ? "pos" : "neg"}">${ev >= 0 ? "+" : "−"}${Math.abs(Math.round(ev * 100))}%</b><span>expected return</span></div><div><b>$${Math.round(20 * (dec - 1))}</b><span>to win on $20</span></div></div></div>`;
 }
@@ -1692,6 +1704,82 @@ function renderIlani() {
   el.querySelectorAll("[data-ilf]").forEach(b => b.onclick = () => { S.ilf = b.dataset.ilf; renderIlani() });
   const cb = el.querySelector("[data-ilmodel]"); if (cb) cb.onchange = () => { S.ilModel = cb.checked; renderIlani() };
   wireSlips(el);
+}
+
+// ---------- THE CARD: one weekly list of straight bets with flat stakes (fades by the rules + best-value props)
+const CARD = { propStake: 10, maxProps: 4, minP: 0.45, minEdge: 0.04, parlayStake: 5 };
+function kalshiPropLegs() {
+  const out = [];
+  for (const g of S.data?.week_games || []) {
+    if (Date.now() > kickMs(g)) continue;
+    for (const x of S.kalshi[g.game_id] || []) {
+      if (x.bid == null || x.ask == null || x.ask - x.bid > 0.06 || (x.volume ?? 0) < 50 || S.skip.has(x.player)) continue;
+      const pm = modelProb(x.player, x.stat, x.line, g.game_id); if (pm == null) continue;
+      const mid = (x.bid + x.ask) / 2, over = (pm + mid) / 2, news = Math.abs(pm - mid) > 0.15;
+      const team = S.pm.players[x.player]?.team, st = injStatus(team, x.player);
+      if (st === "Out" || st === "Doubtful") continue;
+      const base = { kind: "prop", gid: g.game_id, g, team, player: x.player, stat: x.stat, line: x.line, news, st, book: "Kalshi", key: `${x.player}|${x.stat}`, sub: `${team || ""} · ${g.away} @ ${g.home}` };
+      out.push({ ...base, side: "over", label: `${x.player} ${x.line}+ ${STAT_SHORT[x.stat] || x.stat}`, p: over, price: x.ask, edge: over - x.ask, where: `Kalshi Yes ${Math.round(x.ask * 100)}¢` });
+      out.push({ ...base, side: "under", label: `${x.player} under ${x.line} ${STAT_SHORT[x.stat] || x.stat}`, p: 1 - over, price: 1 - x.bid, edge: (1 - over) - (1 - x.bid), where: `Kalshi No ${Math.round((1 - x.bid) * 100)}¢` });
+    }
+  }
+  return out;
+}
+function cardBets() {
+  const fades = [];
+  for (const g of S.data?.week_games || []) {
+    if (Date.now() > kickMs(g)) continue;
+    for (const market of ["spread", "total"]) {
+      const f = fadeSignal(g, market); if (!f || S.skip.has(`${g.game_id}|${market}`)) continue;
+      const il = S.ilani[g.game_id], arr = il ? (market === "total" ? il.total : il.spread) || [] : [];
+      const m = arr.find(o => o.side === f.side && o.line === f.line) || arr.find(o => o.side === f.side && o.main);
+      const rows = (S.splits[g.game_id]?.rows || []).filter(r => r.market === market);
+      const pub = { home: "away", away: "home", over: "under", under: "over" }[f.side];
+      const dk = rows.find(r => r.source === "dk" && r.side === pub)?.bets ?? 0, sao = rows.find(r => r.source === "sao" && r.side === pub)?.bets ?? 0;
+      fades.push({ g, f, stake: f.units * 20, src: dk >= 80 && sao >= 80 ? "both" : dk >= 80 ? "DraftKings" : "Scores and Odds",
+        ilani: m ? `${market === "total" ? (f.side === "over" ? "Over" : "Under") + " " + m.line : g[f.side] + " " + fmtLine(m.line)} at ilani ${fmtA(m.odds)}` : "",
+        leg: { kind: market, gid: g.game_id, g, side: f.side, line: f.line, label: f.pick, p: f.both ? 0.57 : 0.545, price: BE110, odds: m?.odds } });
+    }
+  }
+  // props: best price per player-stat-line-side across ilani and Kalshi, then the top few by value
+  const all = [...ilaniLegs().filter(l => l.kind === "prop").map(l => ({ ...l, book: "ilani", where: `ilani ${fmtA(l.odds)}` })), ...kalshiPropLegs()];
+  const best = {};
+  for (const l of all) {
+    if (l.news || l.noK || l.p < CARD.minP || l.edge < CARD.minEdge) continue;
+    const k = `${l.player}|${l.stat}|${l.line}|${l.side}`;
+    if (!best[k] || l.edge > best[k].edge) best[k] = l;
+  }
+  const props = [], players = new Set(), perGame = {};
+  for (const l of Object.values(best).sort((a, b) => b.edge - a.edge)) {
+    if (players.has(l.player) || (perGame[l.gid] || 0) >= 2) continue;
+    players.add(l.player); perGame[l.gid] = (perGame[l.gid] || 0) + 1; props.push(l);
+    if (props.length === CARD.maxProps) break;
+  }
+  return { fades, props };
+}
+function renderCard() {
+  const el = $("#p-card"); if (!el || !S.data) return;
+  if (!S.pm || !Object.keys(S.kalshi).length) { el.innerHTML = '<h2>The card</h2><div class="empty">Loading prices and the prop model.</div>'; return }
+  const { fades, props } = cardBets();
+  const fadeTotal = fades.reduce((a, x) => a + x.stake, 0), propTotal = props.length * CARD.propStake;
+  const fun = props.length >= 2 ? props.slice().sort((a, b) => b.p - a.p).filter((l, i, a) => a.findIndex(x => x.gid === l.gid) === i).slice(0, 2) : [];
+  const funDec = fun.reduce((a, l) => a * (l.odds != null ? amDec(l.odds) : 1 / l.price), 1), funP = fun.reduce((a, l) => a * l.p, 1);
+  const row = (title, sub, right, leg, stake) => `<div class="leg"><div style="min-width:0"><div class="pk" style="font-size:18px">${esc(title)}</div><div class="bs">${sub}</div></div>
+    <div class="legnums"><b>$${stake}</b><span class="why">${right}</span>${S.db && S.me ? `<button class="btn-mini" data-track="${esc(legId(leg))}">Track</button>` : ""}</div></div>`;
+  fades.forEach(x => S.legPool[legId(x.leg)] = x.leg); props.forEach(l => S.legPool[legId(l)] = l);
+  el.innerHTML = `<h2>The card</h2>
+    <p class="lede">This week's bets in one place, all straight bets with flat stakes. Fades follow the rules ($20 for a full unit, $10 for a half). Props are the ${CARD.maxProps} best-value legs at ${CARD.minP * 100}%+ odds of hitting, one per player, at whichever book pays more, $${CARD.propStake} each. It updates as prices and public numbers move: check it Saturday night, and the pregame checks confirm the fades before kickoff.</p>
+    <div class="pfoot" style="margin-bottom:14px"><div><b>${fades.length + props.length}</b><span>bets</span></div><div><b>$${fadeTotal + propTotal}</b><span>total stake</span></div><div><b>$${fadeTotal}</b><span>on fades</span></div><div><b>$${propTotal}</b><span>on props</span></div></div>
+    <div class="pcard"><div class="plays-head"><h3 style="margin:0">Fade plays</h3><span class="label">${fades.length || "none yet"}</span></div>
+      ${fades.map(x => row(x.f.pick, `${esc(x.g.away)} @ ${esc(x.g.home)} · ${esc(kickoff(x.g))} · ${esc(x.f.basis)} (triggered by ${x.src})`, x.ilani ? esc(x.ilani) : "−110", x.leg, x.stake)).join("") || '<div class="why">No side has 80%+ of bets yet. Early-week numbers move a lot; most fades show up Thursday to Sunday.</div>'}</div>
+    <div class="pcard"><div class="plays-head"><h3 style="margin:0">Player props (straight bets)</h3><span class="label">${props.length}</span></div>
+      ${props.map(l => row(l.label, `${esc(l.sub)} · our ${Math.round(l.p * 100)}% vs ${Math.round(l.price * 100)}% priced, +${Math.round(l.edge * 100)} value${l.st ? " · " + esc(l.st) : ""}`, esc(l.where), l, CARD.propStake)).join("") || '<div class="why">No props clear the bar yet. Kalshi and ilani post most props Wednesday to Friday.</div>'}</div>
+    ${fun.length === 2 ? `<div class="pcard"><div class="plays-head"><h3 style="margin:0">Optional fun parlay: $${CARD.parlayStake}</h3><span class="label">2 legs</span></div>
+      <p class="note" style="margin:0">The two most likely props on the card, from different games. Pays about ${fmtA(Math.round(funDec >= 2 ? (funDec - 1) * 100 : -100 / (funDec - 1)))}, hits about ${Math.round(funP * 100)}% of the time. Skip it if you'd rather keep the card clean.</p>
+      ${fun.map(l => `<div class="bs" style="margin-top:6px"><b>${esc(l.label)}</b> · ${esc(l.where)}</div>`).join("")}</div>` : ""}
+    <p class="note">"Track" saves a bet as its own slip so it reprices and grades itself. Mark it placed with the odds you got.</p>`;
+  el.querySelectorAll("[data-track]").forEach(b => b.onclick = async () => { const l = S.legPool[b.dataset.track]; if (!l) return; b.disabled = true;
+    try { const id = await saveSlip(l.label, [l]); S.active = null; b.textContent = "Tracked" } catch (e) { b.textContent = "Failed" } });
 }
 function renderParlays() {
   const el = $("#p-parlays"); if (!S.data) return;
@@ -1742,7 +1830,7 @@ function renderParlays() {
 function renderAll() {
   if (!S.data) return;
   if (S.gameView) renderGame();
-  renderHeader(); renderTicker(); renderParlays(); renderIlani();
+  renderHeader(); renderTicker(); renderParlays(); renderIlani(); renderCard();
   renderWeek(); renderTrends(); renderProps(); renderRatings(); renderPeople(); renderFade(); renderBets();
 }
 
@@ -1757,7 +1845,7 @@ function renderAll() {
     renderAll();
     fetch("data/props.json").then(r => r.json()).then(p => { S.props = p; renderProps(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/signals.json").then(r => r.json()).then(x => { S.signals = x; renderFade() }).catch(() => {});
-    fetch("data/propmodel.json").then(r => r.json()).then(x => { S.pm = x; renderWeek(); renderProps(); renderParlays(); renderIlani(); if (S.gameView) renderGame() }).catch(() => {});
+    fetch("data/propmodel.json").then(r => r.json()).then(x => { S.pm = x; renderWeek(); renderProps(); renderParlays(); renderIlani(); renderCard(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/model.json").then(r => r.json()).then(m => { S.model = m; renderRatings(); renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
     fetch("data/boxscores.json").then(r => r.json()).then(x => { S.box = x.games || {}; renderParlays() }).catch(() => {});
     fetch("data/weather.json").then(r => r.json()).then(x => { S.wx = x.games || {}; renderWeek(); if (S.gameView) renderGame() }).catch(() => {});
@@ -1767,35 +1855,35 @@ function renderAll() {
     $("#p-week").innerHTML = '<div class="empty">The trend data didn\'t load. Refresh the page to try again.</div>';
   }
   // Self-hosted copy: splits come from a JSON file written by splits.py
-  try { const r = await fetch("data/ilani.json"); if (r.ok) { const k = await r.json(); S.ilani = k.games || {}; S.ilaniAt = k.generated; renderIlani() } } catch (e) {}
-  try { const r = await fetch("data/kalshi.json"); if (r.ok) { const k = await r.json(); S.kalshi = k.games || {}; S.kalshiAt = k.generated; renderProps(); renderParlays(); renderIlani(); if (S.gameView) renderGame() } } catch (e) {}
+  try { const r = await fetch("data/ilani.json"); if (r.ok) { const k = await r.json(); S.ilani = k.games || {}; S.ilaniAt = k.generated; renderIlani(); renderCard() } } catch (e) {}
+  try { const r = await fetch("data/kalshi.json"); if (r.ok) { const k = await r.json(); S.kalshi = k.games || {}; S.kalshiAt = k.generated; renderProps(); renderParlays(); renderIlani(); renderCard(); if (S.gameView) renderGame() } } catch (e) {}
   try { const r = await fetch("data/propsplits.json"); if (r.ok) { S.propsplits = await r.json(); renderProps() } } catch (e) {}
-  try { const r = await fetch("data/splits.json"); if (r.ok) { S.splits = await r.json(); renderWeek(); renderTicker(); renderParlays(); renderIlani() } } catch (e) {}
+  try { const r = await fetch("data/splits.json"); if (r.ok) { S.splits = await r.json(); renderWeek(); renderTicker(); renderParlays(); renderIlani(); renderCard() } } catch (e) {}
   if (!window.claude?.use) return;
   const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
   S.db = db; S.user = user; S.owner = user ? await user.canEdit() : false;
   S.me = user ? await user.id() : null; S.isOwnerReal = user ? await user.isOwner() : false;
   if (!db) { renderAll(); return }
   db.collection("splits").onSnapshot(snap => {
-    S.splits = {}; snap.docs.forEach(d => S.splits[d.id] = d.data()); renderWeek(); renderTicker(); renderParlays(); renderIlani(); if (S.gameView) renderGame();
+    S.splits = {}; snap.docs.forEach(d => S.splits[d.id] = d.data()); renderWeek(); renderTicker(); renderParlays(); renderIlani(); renderCard(); if (S.gameView) renderGame();
   }, () => {});
   db.collection("splitshist").onSnapshot(snap => {
     S.hist = {}; snap.docs.forEach(d => { S.hist[d.id] = d.data().snaps || [] }); renderWeek(); if (S.gameView) renderGame();
   }, () => {});
   db.collection("kalshi").onSnapshot(snap => {
     if (!snap.docs.length) return;
-    S.kalshi = {}; snap.docs.forEach(d => { const x = d.data(); S.kalshi[d.id] = x.rows || []; S.kalshiAt = x.updated || S.kalshiAt }); renderParlays(); renderIlani();
+    S.kalshi = {}; snap.docs.forEach(d => { const x = d.data(); S.kalshi[d.id] = x.rows || []; S.kalshiAt = x.updated || S.kalshiAt }); renderParlays(); renderIlani(); renderCard();
     renderProps(); if (S.gameView) renderGame();
   }, () => {});
   db.collection("ilani").onSnapshot(snap => {
     if (!snap.docs.length) return;
-    S.ilani = {}; snap.docs.forEach(d => { const x = d.data(); S.ilani[d.id] = x; S.ilaniAt = x.updated || S.ilaniAt }); renderIlani();
+    S.ilani = {}; snap.docs.forEach(d => { const x = d.data(); S.ilani[d.id] = x; S.ilaniAt = x.updated || S.ilaniAt }); renderIlani(); renderCard();
   }, () => {});
   db.collection("propsplits").onSnapshot(snap => {
     S.propsplits = {}; snap.docs.forEach(d => S.propsplits[d.id] = d.data()); renderProps(); if (S.gameView) renderGame();
   }, () => {});
   db.collection("settings").onSnapshot(snap => {
-    const d = snap.docs.find(x => x.id === "parlays"); S.skip = new Set(d ? d.data().skip || [] : []); renderParlays(); renderIlani();
+    const d = snap.docs.find(x => x.id === "parlays"); S.skip = new Set(d ? d.data().skip || [] : []); renderParlays(); renderIlani(); renderCard();
   }, () => {});
   db.collection("slips").onSnapshot(snap => {
     S.groupSlips = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(x => Array.isArray(x.legs)); renderParlays(); renderProps();

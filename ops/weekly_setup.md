@@ -8,4 +8,4 @@
      "Line Room pre-kickoff check. Follow ops/pregame.md in https://github.com/VDevelopments-W/line-room
       for these games: <game_ids, comma separated>."
 4. Message Jake one line: the windows scheduled and any game already showing 80%+ public at either source
-   (from site/data/splits.json), so he can plan.
+   (from site/data/splits.json), so he can plan. Point him to "The card" tab for the week's straight bets.

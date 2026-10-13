@@ -21,6 +21,15 @@ Input: the game ids named in the task prompt.
    Skip props where the model alone is 15+ points above the ask (almost always injury or role news the model can't see), ask-bid spread <= 6 cents and volume >= 50.
    (Model chance = prop_model.prob(model, player, stat, line, opp, home, implied) in python.)
    Also WebSearch "dknetwork player prop bet splits <team> <team>" and list any prop with 80%+ of bets on one side.
-6. Send Jake (SendUserMessage + PushNotification): each play with line, % bets / % money at each source,
-   size, injury notes; watch-tier sides; the prop list. Mobile-short, no em dashes.
-7. Follow publish.md, database part only.
+6. Jake's bets: ArtifactData `list` on the site url for collection `data/users/me` (Jake's private slips; docs
+   with type "slip") and collection `slips` (group slips). For every leg in these games (match `gid`), using the
+   injury search from step 4 plus the latest news for that player:
+   - player inactive or ruled out: say so (most books void the leg; a parlay drops to fewer legs)
+   - questionable but active, a reduced role, or a teammate out who changes his role (for an under on catches or
+     carries, a teammate out usually means MORE work for him): flag it as a risk
+   - a game leg whose fade signal has dropped under 80%: say the signal is gone (the bet stands, but note it)
+   Also check the bets on "The card" tab the same way: the fades from step 2 and the top props from step 5.
+7. Send Jake (SendUserMessage + PushNotification): each play with line, % bets / % money at each source,
+   size, injury notes; watch-tier sides; the prop list; then one line per flagged leg from step 6 ("Your bets:
+   all clear" if nothing). Mobile-short, no em dashes.
+8. Follow publish.md, database part only.
