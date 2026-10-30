@@ -979,14 +979,1636 @@ if(t === '1'){ document.documentElement.classList.add('darkmode'); }
             <!-- 2/3 Content -->
             <!-- min-w-0 so the table's own overflow-x areas cannot widen the grid track. -->
             <article class="col-span-12 min-w-0 lg:col-span-8">
-                    <div class="tb-maintenance border border-neutral-400 bg-neutral-300 px-4 py-8 text-center dark:border-neutral-550 dark:bg-neutral-700"
-        data-tb-surface="table">
-        <p class="m-0 font-bold text-neutral-900 dark:text-neutral-100">
-            Betting splits are temporarily unavailable        </p>
-                    <p class="mx-auto mb-0 mt-2 max-w-prose text-sm text-neutral-900 dark:text-neutral-100">
-                We are working on it. Please check back shortly.            </p>
+                    <div class="tb-tfilter">
+        <form action="https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?tb_eg=88808&#038;itm_content=NFL&#038;tb_edate=n7days" method="GET" class="tb-tform flex flex-wrap items-center justify-center gap-4 m-0">
+            <div class="sl-wrap dkcc-btn-secondary relative w-full md:w-auto overflow-hidden">
+                <select name="tb_eg" class="dkcc-select-chevron bg-transparent w-full h-full text-center outline-none focus:outline-none" id="sid-list">
+                                            <option value="0"
+                            >
+                            Sports                        </option>
+                                            <option value="88808"
+                             selected='selected'>
+                            NFL                        </option>
+                                            <option value="42648"
+                            >
+                            NBA                        </option>
+                                            <option value="42133"
+                            >
+                            NHL                        </option>
+                                            <option value="84240"
+                            >
+                            MLB                        </option>
+                                            <option value="94682"
+                            >
+                            WNBA                        </option>
+                                            <option value="9034"
+                            >
+                            UFC                        </option>
+                                            <option value="212333"
+                            >
+                            UFL                        </option>
+                                            <option value="87637"
+                            >
+                            NCAA Football                        </option>
+                                            <option value="92483"
+                            >
+                            NCAA Basketball                        </option>
+                                            <option value="36647"
+                            >
+                            NCAA Womens Basketball                        </option>
+                                            <option value="41151"
+                            >
+                            NCAA Baseball                        </option>
+                                            <option value="84813"
+                            >
+                            NCAA Ice Hockey                        </option>
+                                            <option value="40253"
+                            >
+                            England Premier League                        </option>
+                                            <option value="40685"
+                            >
+                            Champions League                        </option>
+                                            <option value="41410"
+                            >
+                            Europa League                        </option>
+                                            <option value="89345"
+                            >
+                            MLS                        </option>
+                                    </select>
             </div>
 
+            <div class="sl-wrap dkcc-btn-secondary relative w-full md:w-auto overflow-hidden flex-1 md:flex-none">
+                <select name="tb_edate" class="dkcc-select-chevron bg-transparent w-full h-full text-center outline-none focus:outline-none">
+                                            <option value="today"
+                            >
+                            Today                        </option>
+                                            <option value="tomorrow"
+                            >
+                            Tomorrow                        </option>
+                                            <option value="n7days"
+                             selected='selected'>
+                            Next 7 Days                        </option>
+                                            <option value="n30days"
+                            >
+                            Next 30 Days                        </option>
+                                    </select>
+            </div>
+
+            <input type="hidden" name="tb_emt" value="0" />
+
+                            <input type="hidden" name="itm_content" id="sid-label" value="NFL" />
+            
+            <button type="submit" class="dkcc-btn-primary w-full md:w-auto max-w-[40%]">Search</button>
+        </form>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                var sportSelect = document.getElementById('sid-list');
+                var hiddenLabel = document.getElementById('sid-label');
+
+                if (sportSelect && hiddenLabel) {
+                    sportSelect.addEventListener('change', function() {
+                        // The option value is the event group ID now; itm_content
+                        // wants the league name.
+                        var chosen = this.options[this.selectedIndex];
+                        hiddenLabel.value = chosen ? chosen.text.trim() : this.value;
+                    });
+                }
+            });
+        </script>
+
+        <div class="tb-marFilters flex flex-wrap items-center justify-center gap-3 my-4">
+                            <a
+                    href="https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?tb_eg=88808&#038;itm_content=NFL&#038;tb_edate=n7days&#038;tb_emt=0"
+                    class="dkcc-btn-secondary dkcc-btn-secondary--sm dkcc-btn-secondary--active">
+                    All                </a>
+                            <a
+                    href="https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?tb_eg=88808&#038;itm_content=NFL&#038;tb_edate=n7days&#038;tb_emt=Moneyline"
+                    class="dkcc-btn-secondary dkcc-btn-secondary--sm ">
+                    Moneyline                </a>
+                            <a
+                    href="https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?tb_eg=88808&#038;itm_content=NFL&#038;tb_edate=n7days&#038;tb_emt=Spread"
+                    class="dkcc-btn-secondary dkcc-btn-secondary--sm ">
+                    Spread                </a>
+                            <a
+                    href="https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?tb_eg=88808&#038;itm_content=NFL&#038;tb_edate=n7days&#038;tb_emt=Total"
+                    class="dkcc-btn-secondary dkcc-btn-secondary--sm ">
+                    Total                </a>
+                    </div>
+    </div>
+
+    <!-- <div style="width:0;height:0;overflow:hidden;"> -->
+
+    <div class="tbtw" id="tbsedid">
+        <div class="wrap-for-export">
+            <!-- <div class="tb-head flex bg-neutral-900 p-4 font-bold text-on-dark-strong">
+                <div class="flex-1">Matchup</div>
+                <div class="flex-1">Odds</div>
+                <div class="flex-1">% Handle</div>
+                <div class="flex-1">% Bets</div>
+            </div> -->
+            <div class="border-t border-neutral-400 dark:border-neutral-550">
+                                        <div class="tb-se border-b border-neutral-400 dark:border-neutral-550 px-2 py-4">
+                                                                                        <div class="tb-se-title flex justify-between">
+                                    <h5 class="tb-se-title-new mt-0 mb-2 font-bold text-neutral-900 dark:text-neutral-100">
+                                        <a target="_blank" href="https://sportsbook.draftkings.com/event/34118214?dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+                                            class="flex items-center no-underline outline-none focus:outline-none">
+                                            <img class='mr-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/BAL.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/> BAL Ravens @ <img class='ml-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/BUF.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/>BUF Bills                                        </a>
+                                    </h5>
+                                    <span class="text-neutral-900 dark:text-neutral-100">11/1, 01:00PM                                    </span>
+                                </div>
+                                                        <div class="tb-market-wrap">
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Moneyline</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">BUF Bills</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118214?outcomes=0ML84695647_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −175                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">67%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 67%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">83%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 83%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">BAL Ravens</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118214?outcomes=0ML84695647_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +145                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">33%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 33%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">17%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 17%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Spread</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">BUF Bills -3</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118214?outcomes=0HC84695647N300_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −115                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">70%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 70%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">75%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 75%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">BAL Ravens +3</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118214?outcomes=0HC84695647P300_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −105                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">30%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 30%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">25%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 25%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Total</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Over 54.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118214?outcomes=0OU84695647O5450_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">98%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 98%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">82%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 82%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Under 54.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118214?outcomes=0OU84695647U5450_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">2%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 2%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">18%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 18%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+
+                                                                                                                        <ul class="tb-se-articles mt-3 list-none divide-y divide-[var(--color-neutral-400)]/70 p-0 dark:divide-neutral-700">
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/29/will-lamar-jackson-play-vs-the-bills-in-week-8/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                Will Lamar Jackson play vs. the Bills in Week 8?                                            </a>
+                                        </li>
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/26/is-derrick-henry-a-buy-low-target-for-fantasy-football-week-8/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                Is Derrick Henry a buy-low target for fantasy football Week 8?                                            </a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                                            <div class="tb-se border-b border-neutral-400 dark:border-neutral-550 px-2 py-4">
+                                                                                        <div class="tb-se-title flex justify-between">
+                                    <h5 class="tb-se-title-new mt-0 mb-2 font-bold text-neutral-900 dark:text-neutral-100">
+                                        <a target="_blank" href="https://sportsbook.draftkings.com/event/34118246?dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+                                            class="flex items-center no-underline outline-none focus:outline-none">
+                                            <img class='mr-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/IND.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/> IND Colts @ <img class='ml-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/JAX.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/>JAX Jaguars                                        </a>
+                                    </h5>
+                                    <span class="text-neutral-900 dark:text-neutral-100">11/1, 01:00PM                                    </span>
+                                </div>
+                                                        <div class="tb-market-wrap">
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Moneyline</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">JAX Jaguars</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118246?outcomes=0ML84695689_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −500                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">89%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 89%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">92%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 92%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">IND Colts</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118246?outcomes=0ML84695689_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +380                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">11%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 11%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">8%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 8%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Spread</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">JAX Jaguars -10</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118246?outcomes=0HC84695689N1000_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −105                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">80%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 80%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">57%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 57%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">IND Colts +10</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118246?outcomes=0HC84695689P1000_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −115                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">20%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 20%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">43%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 43%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Total</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Over 46.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118246?outcomes=0OU84695689O4650_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">89%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 89%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">55%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 55%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Under 46.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118246?outcomes=0OU84695689U4650_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">11%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 11%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">45%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 45%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+
+                                                                                                                        <ul class="tb-se-articles mt-3 list-none divide-y divide-[var(--color-neutral-400)]/70 p-0 dark:divide-neutral-700">
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/26/is-brenton-strange-a-waiver-pickup-you-can-start-in-week-8/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                Is Brenton Strange a waiver pickup you can start in Week 8?                                            </a>
+                                        </li>
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/21/should-you-hold-trevor-lawrence-through-his-week-7-fantasy-football-bye/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                Should you hold Trevor Lawrence through his Week 7 fantasy football bye?                                            </a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                                            <div class="tb-se border-b border-neutral-400 dark:border-neutral-550 px-2 py-4">
+                                                                                        <div class="tb-se-title flex justify-between">
+                                    <h5 class="tb-se-title-new mt-0 mb-2 font-bold text-neutral-900 dark:text-neutral-100">
+                                        <a target="_blank" href="https://sportsbook.draftkings.com/event/34118130?dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+                                            class="flex items-center no-underline outline-none focus:outline-none">
+                                            <img class='mr-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/TEN.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/> TEN Titans @ <img class='ml-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/CIN.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/>CIN Bengals                                        </a>
+                                    </h5>
+                                    <span class="text-neutral-900 dark:text-neutral-100">11/1, 01:00PM                                    </span>
+                                </div>
+                                                        <div class="tb-market-wrap">
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Moneyline</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">CIN Bengals</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118130?outcomes=0ML84695563_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −675                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">91%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 91%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">93%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 93%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">TEN Titans</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118130?outcomes=0ML84695563_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +490                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">9%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 9%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">7%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 7%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Spread</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">CIN Bengals -12.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118130?outcomes=0HC84695563N1250_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −108                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">45%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 45%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">60%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 60%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">TEN Titans +12.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118130?outcomes=0HC84695563P1250_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −112                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">55%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 55%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">40%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 40%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Total</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Over 46.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118130?outcomes=0OU84695563O4650_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">70%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 70%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">71%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 71%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Under 46.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118130?outcomes=0OU84695563U4650_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">30%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 30%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">29%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 29%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+
+                                                                                                                        <ul class="tb-se-articles mt-3 list-none divide-y divide-[var(--color-neutral-400)]/70 p-0 dark:divide-neutral-700">
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/28/with-tony-pollard-trade-rumors-should-you-stash-nick-singleton-before-week-8/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                With Tony Pollard trade rumors, should you stash Nick Singleton before Week 8?                                            </a>
+                                        </li>
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/28/can-chase-brown-bounce-back-in-week-8-fantasy-against-the-titans/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                Can Chase Brown bounce back in Week 8 fantasy against the Titans?                                            </a>
+                                        </li>
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/26/is-tee-higgins-a-wr1-for-fantasy-football-week-8/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                Is Tee Higgins a WR1 for fantasy football Week 8?                                            </a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                                            <div class="tb-se border-b border-neutral-400 dark:border-neutral-550 px-2 py-4">
+                                                                                        <div class="tb-se-title flex justify-between">
+                                    <h5 class="tb-se-title-new mt-0 mb-2 font-bold text-neutral-900 dark:text-neutral-100">
+                                        <a target="_blank" href="https://sportsbook.draftkings.com/event/34118206?dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+                                            class="flex items-center no-underline outline-none focus:outline-none">
+                                            <img class='mr-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/MIN.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/> MIN Vikings @ <img class='ml-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/DET.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/>DET Lions                                        </a>
+                                    </h5>
+                                    <span class="text-neutral-900 dark:text-neutral-100">11/1, 01:00PM                                    </span>
+                                </div>
+                                                        <div class="tb-market-wrap">
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Moneyline</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">DET Lions</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118206?outcomes=0ML84695639_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −170                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">60%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 60%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">60%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 60%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">MIN Vikings</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118206?outcomes=0ML84695639_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +142                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">40%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 40%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">40%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 40%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Spread</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">DET Lions -3</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118206?outcomes=0HC84695639N300_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −120                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">74%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 74%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">62%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 62%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">MIN Vikings +3</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118206?outcomes=0HC84695639P300_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +100                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">26%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 26%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">38%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 38%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Total</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Over 46.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118206?outcomes=0OU84695639O4650_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +100                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">69%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 69%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">65%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 65%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Under 46.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118206?outcomes=0OU84695639U4650_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −120                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">31%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 31%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">35%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 35%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+
+                                                                                                                        <ul class="tb-se-articles mt-3 list-none divide-y divide-[var(--color-neutral-400)]/70 p-0 dark:divide-neutral-700">
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/29/is-sione-vaki-a-must-add-in-fantasy-with-jahmyr-gibbs-banged-up-heading-into-week-8/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                Is Sione Vaki a must-add in fantasy with Jahmyr Gibbs banged up heading into Week 8?                                            </a>
+                                        </li>
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/28/if-aaron-jones-is-injured-how-much-fantasy-value-does-jordan-mason-have-in-week-8/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                If Aaron Jones is injured, how much fantasy value does Jordan Mason have in Week 8?                                            </a>
+                                        </li>
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/27/should-you-start-jameson-williams-vs-the-vikings-in-week-8/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                Should you start Jameson Williams vs. the Vikings in Week 8?                                            </a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                                            <div class="tb-se border-b border-neutral-400 dark:border-neutral-550 px-2 py-4">
+                                                                                        <div class="tb-se-title flex justify-between">
+                                    <h5 class="tb-se-title-new mt-0 mb-2 font-bold text-neutral-900 dark:text-neutral-100">
+                                        <a target="_blank" href="https://sportsbook.draftkings.com/event/34118131?dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+                                            class="flex items-center no-underline outline-none focus:outline-none">
+                                            <img class='mr-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/ARI.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/> ARI Cardinals @ <img class='ml-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/DAL.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/>DAL Cowboys                                        </a>
+                                    </h5>
+                                    <span class="text-neutral-900 dark:text-neutral-100">11/1, 01:00PM                                    </span>
+                                </div>
+                                                        <div class="tb-market-wrap">
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Moneyline</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">DAL Cowboys</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118131?outcomes=0ML84695564_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −305                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">69%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 69%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">84%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 84%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">ARI Cardinals</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118131?outcomes=0ML84695564_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +245                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">31%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 31%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">16%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 16%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Spread</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">DAL Cowboys -7</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118131?outcomes=0HC84695564N700_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −108                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">85%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 85%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">45%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 45%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">ARI Cardinals +7</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118131?outcomes=0HC84695564P700_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −112                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">15%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 15%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">55%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 55%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Total</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Over 54.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118131?outcomes=0OU84695564O5450_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −112                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">73%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 73%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">68%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 68%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Under 54.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118131?outcomes=0OU84695564U5450_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −108                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">27%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 27%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">32%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 32%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+
+                                                                                </div>
+                                            <div class="tb-se border-b border-neutral-400 dark:border-neutral-550 px-2 py-4">
+                                                                                        <div class="tb-se-title flex justify-between">
+                                    <h5 class="tb-se-title-new mt-0 mb-2 font-bold text-neutral-900 dark:text-neutral-100">
+                                        <a target="_blank" href="https://sportsbook.draftkings.com/event/34118052?dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+                                            class="flex items-center no-underline outline-none focus:outline-none">
+                                            <img class='mr-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/CLE.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/> CLE Browns @ <img class='ml-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/PIT.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/>PIT Steelers                                        </a>
+                                    </h5>
+                                    <span class="text-neutral-900 dark:text-neutral-100">11/1, 01:00PM                                    </span>
+                                </div>
+                                                        <div class="tb-market-wrap">
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Moneyline</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">PIT Steelers</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118052?outcomes=0ML84695485_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −192                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">62%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 62%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">65%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 65%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">CLE Browns</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118052?outcomes=0ML84695485_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +160                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">38%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 38%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">35%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 35%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Spread</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">PIT Steelers -3.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118052?outcomes=0HC84695485N350_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">42%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 42%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">41%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 41%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">CLE Browns +3.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118052?outcomes=0HC84695485P350_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">58%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 58%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">59%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 59%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Total</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Over 39.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118052?outcomes=0OU84695485O3950_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −105                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">20%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 20%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">47%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 47%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Under 39.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118052?outcomes=0OU84695485U3950_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −115                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">80%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 80%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">53%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 53%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+
+                                                                                </div>
+                                            <div class="tb-se border-b border-neutral-400 dark:border-neutral-550 px-2 py-4">
+                                                                                        <div class="tb-se-title flex justify-between">
+                                    <h5 class="tb-se-title-new mt-0 mb-2 font-bold text-neutral-900 dark:text-neutral-100">
+                                        <a target="_blank" href="https://sportsbook.draftkings.com/event/34118199?dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+                                            class="flex items-center no-underline outline-none focus:outline-none">
+                                            <img class='mr-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/LV.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/> LV Raiders @ <img class='ml-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/NYJ.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/>NY Jets                                        </a>
+                                    </h5>
+                                    <span class="text-neutral-900 dark:text-neutral-100">11/1, 01:00PM                                    </span>
+                                </div>
+                                                        <div class="tb-market-wrap">
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Moneyline</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">NY Jets</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118199?outcomes=0ML84695632_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −122                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">35%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 35%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">20%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 20%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">LV Raiders</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118199?outcomes=0ML84695632_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +102                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">65%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 65%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">80%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 80%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Spread</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">NY Jets -1.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118199?outcomes=0HC84695632N150_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">41%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 41%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">25%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 25%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">LV Raiders +1.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118199?outcomes=0HC84695632P150_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">59%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 59%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">75%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 75%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Total</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Over 45.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118199?outcomes=0OU84695632O4550_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">68%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 68%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">66%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 66%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Under 45.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118199?outcomes=0OU84695632U4550_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">32%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 32%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">34%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 34%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+
+                                                                                                                        <ul class="tb-se-articles mt-3 list-none divide-y divide-[var(--color-neutral-400)]/70 p-0 dark:divide-neutral-700">
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/28/will-breece-hall-or-braelon-allen-be-the-jets-rb1-vs-the-raiders/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                Will Breece Hall or Braelon Allen be the Jets&#8217; RB1 vs. the Raiders?                                            </a>
+                                        </li>
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/27/is-omar-cooper-jr-a-must-start-for-fantasy-football-week-8/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                Is Omar Cooper Jr. a must-start for fantasy football Week 8?                                            </a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                                            <div class="tb-se border-b border-neutral-400 dark:border-neutral-550 px-2 py-4">
+                                                                                        <div class="tb-se-title flex justify-between">
+                                    <h5 class="tb-se-title-new mt-0 mb-2 font-bold text-neutral-900 dark:text-neutral-100">
+                                        <a target="_blank" href="https://sportsbook.draftkings.com/event/34118133?dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+                                            class="flex items-center no-underline outline-none focus:outline-none">
+                                            <img class='mr-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/ATL.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/> ATL Falcons @ <img class='ml-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/TB.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/>TB Buccaneers                                        </a>
+                                    </h5>
+                                    <span class="text-neutral-900 dark:text-neutral-100">11/1, 01:00PM                                    </span>
+                                </div>
+                                                        <div class="tb-market-wrap">
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Moneyline</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">TB Buccaneers</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118133?outcomes=0ML84695566_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −135                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">34%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 34%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">42%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 42%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">ATL Falcons</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118133?outcomes=0ML84695566_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +114                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">66%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 66%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">58%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 58%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Spread</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">TB Buccaneers -2.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118133?outcomes=0HC84695566N250_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">65%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 65%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">53%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 53%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">ATL Falcons +2.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118133?outcomes=0HC84695566P250_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −110                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">35%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 35%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">47%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 47%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Total</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Over 43.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118133?outcomes=0OU84695566O4350_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −108                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">83%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 83%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">82%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 82%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Under 43.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118133?outcomes=0OU84695566U4350_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −112                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">17%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 17%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">18%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 18%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+
+                                                                                </div>
+                                            <div class="tb-se border-b border-neutral-400 dark:border-neutral-550 px-2 py-4">
+                                                                                        <div class="tb-se-title flex justify-between">
+                                    <h5 class="tb-se-title-new mt-0 mb-2 font-bold text-neutral-900 dark:text-neutral-100">
+                                        <a target="_blank" href="https://sportsbook.draftkings.com/event/34118097?dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+                                            class="flex items-center no-underline outline-none focus:outline-none">
+                                            LA Chargers @ <img class='ml-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/LAR.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/>LA Rams                                        </a>
+                                    </h5>
+                                    <span class="text-neutral-900 dark:text-neutral-100">11/1, 04:05PM                                    </span>
+                                </div>
+                                                        <div class="tb-market-wrap">
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Moneyline</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">LA Rams</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118097?outcomes=0ML84695530_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −270                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">51%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 51%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">91%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 91%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">LA Chargers</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118097?outcomes=0ML84695530_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +220                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">49%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 49%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">9%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 9%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Spread</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">LA Rams -6.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118097?outcomes=0HC84695530N650_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −118                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">82%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 82%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">76%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 76%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">LA Chargers +6.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118097?outcomes=0HC84695530P650_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −102                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">18%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 18%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">24%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 24%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Total</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Over 45.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118097?outcomes=0OU84695530O4550_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −105                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">34%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 34%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">65%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 65%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Under 45.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118097?outcomes=0OU84695530U4550_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −115                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">66%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 66%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">35%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 35%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+
+                                                                                </div>
+                                            <div class="tb-se border-b border-neutral-400 dark:border-neutral-550 px-2 py-4">
+                                                                                        <div class="tb-se-title flex justify-between">
+                                    <h5 class="tb-se-title-new mt-0 mb-2 font-bold text-neutral-900 dark:text-neutral-100">
+                                        <a target="_blank" href="https://sportsbook.draftkings.com/event/34118184?dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+                                            class="flex items-center no-underline outline-none focus:outline-none">
+                                            <img class='mr-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/NE.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/> NE Patriots @ <img class='ml-2 inline-block' src='https://sportsbook.draftkings.com/static/logos/teams/nfl/MIA.png' alt='' width='30' onerror='this.onerror=null;this.style.display="none"'/>MIA Dolphins                                        </a>
+                                    </h5>
+                                    <span class="text-neutral-900 dark:text-neutral-100">11/1, 04:25PM                                    </span>
+                                </div>
+                                                        <div class="tb-market-wrap">
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Moneyline</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">MIA Dolphins</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118184?outcomes=0ML84695617_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            +260                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">12%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 12%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">5%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 5%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">NE Patriots</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118184?outcomes=0ML84695617_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −325                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">88%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 88%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">95%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 95%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Spread</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">NE Patriots -7</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118184?outcomes=0HC84695617N700_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −105                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">91%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 91%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">83%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 83%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">MIA Dolphins +7</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118184?outcomes=0HC84695617P700_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −115                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">9%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 9%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">17%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 17%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                                    <div>
+                                        <div class="tb-se-head flex font-medium text-neutral-900 dark:text-neutral-100">
+                                            <div class="flex-1">Total</div>
+                                            <div class="flex-1">Odds</div>
+                                            <div class="flex-1">% Handle</div>
+                                            <div class="flex-1">% Bets</div>
+                                        </div>
+                                        <div class="tb-sm bg-neutral-300 dark:bg-neutral-700 mb-2 py-2 px-4">
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Over 43.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118184?outcomes=0OU84695617O4350_1&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −108                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">68%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 68%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">71%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 71%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="tb-sodd flex justify-between items-center text-sm py-1 text-neutral-900 dark:text-neutral-100">
+                                                    <div class="tb-slipline flex-1 font-medium">Under 43.5</div>
+                                                    <div class="flex-1">
+                                                        <a target="_blank" class="tb-odd-s bg-neutral-900 text-on-dark-strong font-bold px-1.5 py-1 rounded hover:text-brand-green" href="https://sportsbook.draftkings.com/event/34118184?outcomes=0OU84695617U4350_3&#038;dkinternal_referrer_source=dknetwork&#038;dkinternal_referrer_article_id=115891">
+                                                            −112                                                        </a>
+                                                    </div>
+                                                    <div class="flex-1">32%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 32%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1">29%                                                        <div class="tb-progress w-17.5 h-2 bg-neutral-400 dark:bg-neutral-550 rounded-full overflow-hidden">
+                                                            <div class="h-2 bg-brand-green rounded-full" style="width: 29%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+
+                                                                                                                        <ul class="tb-se-articles mt-3 list-none divide-y divide-[var(--color-neutral-400)]/70 p-0 dark:divide-neutral-700">
+                                                                            <li
+                                            class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0
+                                                   before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0
+                                                   before:rounded-[2px] before:bg-brand-orange before:content-['']">
+                                            <a
+                                                href="https://dknetwork.draftkings.com/2026/10/29/if-a-j-brown-is-injured-is-demario-douglas-or-efton-chism-the-better-start-in-week-8/"
+                                                class="block text-sm lg:text-[15px] font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                                                If A.J. Brown is injured, is DeMario Douglas or Efton Chism the better start in Week 8?                                            </a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                                </div>
+                    </div>
+    </div>
+            <div class="tb_pagination flex justify-center gap-1 px-4 py-3 bg-transparent">
+                            <a
+                    href="#"
+                    class="no-underline pointer-events-none opacity-90 cursor-default"
+                    aria-disabled="true" tabindex="-1">
+
+                    <div class="flex items-center justify-center h-7 border text-sm w-12.5 bg-neutral-400 dark:bg-neutral-600 text-neutral-550 dark:text-neutral-500 border-neutral-400 dark:border-neutral-600 ">
+                        Prev                    </div>
+
+                </a>
+                            <a
+                    href="https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?tb_eg=88808&#038;itm_content=NFL&#038;tb_edate=n7days&#038;tb_page=1"
+                    class="no-underline "
+                    >
+
+                    <div class="flex items-center justify-center h-7 border text-sm w-7 bg-brand-green text-neutral-900 border-brand-green ">
+                        1                    </div>
+
+                </a>
+                            <a
+                    href="https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?tb_eg=88808&#038;itm_content=NFL&#038;tb_edate=n7days&#038;tb_page=2"
+                    class="no-underline "
+                    >
+
+                    <div class="flex items-center justify-center h-7 border text-sm w-7 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-100 border-neutral-400 dark:border-neutral-550 ">
+                        2                    </div>
+
+                </a>
+                            <a
+                    href="https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?tb_eg=88808&#038;itm_content=NFL&#038;tb_edate=n7days&#038;tb_page=2"
+                    class="no-underline "
+                    >
+
+                    <div class="flex items-center justify-center h-7 border text-sm w-12.5 bg-neutral-700 dark:bg-neutral-600 text-neutral-100 border-neutral-700 dark:border-neutral-600 ">
+                        Next                    </div>
+
+                </a>
+                    </div>
+        <!-- </div> -->
+    
 <input id="daextamp-post-id" type="hidden" value="115891">            </article>
 
             <!-- 1/3 Sidebar -->
@@ -1106,6 +2728,42 @@ if(t === '1'){ document.documentElement.classList.add('darkmode'); }
             <ul class="m-0 list-none divide-y divide-[var(--color-neutral-400)]/70 p-0 dark:divide-neutral-700">
                                     <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
                         <a
+                            href="https://dknetwork.draftkings.com/2026/10/30/denver-nuggets-vs-phoenix-suns-nba-cup-prediction-pick-for-friday-10-30-26/"
+                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                            Denver Nuggets vs. Phoenix Suns NBA Cup prediction, pick for Friday, 10/30/26                        </a>
+                    </li>
+                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
+                        <a
+                            href="https://dknetwork.draftkings.com/2026/10/30/draftkings-ufc-vegas-123-pick6-fantasy-picks-top-plays-for-moicano-vs-nolan/"
+                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                            DraftKings UFC Vegas 123 Pick6 Fantasy Picks: Top Plays for Moicano vs. Nolan                        </a>
+                    </li>
+                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
+                        <a
+                            href="https://dknetwork.draftkings.com/2026/10/30/baylor-vs-ucf-public-betting-trends-week-9/"
+                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                            How the Public Is Betting Baylor vs. UCF in College Football Week 9                        </a>
+                    </li>
+                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
+                        <a
+                            href="https://dknetwork.draftkings.com/2026/10/30/la-clippers-at-minnesota-timberwolves-prediction-pick-for-friday-10-30-26/"
+                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                            LA Clippers at Minnesota Timberwolves prediction, pick for Friday 10/30/26                        </a>
+                    </li>
+                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
+                        <a
+                            href="https://dknetwork.draftkings.com/2026/10/30/top-five-streamer-plays-for-fantasy-football-week-8/"
+                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                            Top five streamer plays for fantasy football Week 8                        </a>
+                    </li>
+                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
+                        <a
+                            href="https://dknetwork.draftkings.com/2026/10/30/how-much-are-canelo-alvarez-and-christian-mbilli-getting-paid-for-saturdays-boxing-match/"
+                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
+                            How much are Canelo Alvarez and Christian Mbilli getting paid for Saturday’s boxing match?                        </a>
+                    </li>
+                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
+                        <a
                             href="https://dknetwork.draftkings.com/2026/10/30/top-nba-dfs-stacks-for-friday-10-30-26/"
                             class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
                             Top NBA DFS Stacks for Friday 10/30/26                        </a>
@@ -1115,42 +2773,6 @@ if(t === '1'){ document.documentElement.classList.add('darkmode'); }
                             href="https://dknetwork.draftkings.com/2026/10/30/nxt-halloween-havoc-2026-match-card-start-time-and-how-to-watch/"
                             class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
                             NXT Halloween Havoc 2026: Match Card, Start Time and How to Watch                        </a>
-                    </li>
-                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
-                        <a
-                            href="https://dknetwork.draftkings.com/2026/10/30/fantasy-football-sleepers-for-week-8/"
-                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
-                            Fantasy Football Sleepers For Week 8                        </a>
-                    </li>
-                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
-                        <a
-                            href="https://dknetwork.draftkings.com/2026/10/30/nba-injury-update-ja-morant-to-miss-at-least-four-weeks/"
-                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
-                            NBA Injury Update: Ja Morant to miss at least four weeks                        </a>
-                    </li>
-                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
-                        <a
-                            href="https://dknetwork.draftkings.com/2026/10/30/sacramento-state-hornets-vs-kent-state-golden-flashes-prediction-pick-for-college-football-on-friday-10-30-26/"
-                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
-                            Sacramento State Hornets vs. Kent State Golden Flashes prediction, pick for College Football on Friday 10/30/26                        </a>
-                    </li>
-                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
-                        <a
-                            href="https://dknetwork.draftkings.com/2026/10/30/nba-best-bets-top-knicks-vs-76ers-prop-bets-for-friday-10-30-26/"
-                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
-                            NBA Best Bets: Top Knicks vs. 76ers prop bets for Friday 10/30/26                        </a>
-                    </li>
-                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
-                        <a
-                            href="https://dknetwork.draftkings.com/2026/10/30/canelo-alvarez-vs-christian-mbilli-full-card-odds-start-time-how-to-watch/"
-                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
-                            Canelo Alvarez vs. Christian Mbilli: Full Card, Odds, Start Time &amp; How to Watch                        </a>
-                    </li>
-                                    <li class="m-0 flex items-start gap-2.5 py-2 first:pt-0 last:pb-0 before:mt-[0.45em] before:h-[7px] before:w-[7px] before:shrink-0 before:rounded-[2px] before:bg-brand-orange before:content-[&#039;&#039;]">
-                        <a
-                            href="https://dknetwork.draftkings.com/2026/10/30/start-or-sit-ted-hurst-iii-with-emeka-egbuka-out-in-fantasy-football-week-8/"
-                            class="block text-sm font-semibold leading-snug text-title decoration-brand-green decoration-2 underline-offset-2 hover:underline">
-                            Start or Sit Ted Hurst III with Emeka Egbuka Out in Fantasy Football Week 8?                        </a>
                     </li>
                             </ul>
         </section>
@@ -1812,7 +3434,7 @@ _stq.push([ "clickTrackerInit", "232642300", "115891" ]);
 //# sourceURL=jetpack-stats-js-before
 </script>
 <script data-wp-strategy="defer" defer fetchpriority="low" id="jetpack-stats-js" src="https://stats.wp.com/e-202644.js"></script>
-<script id="wp-emoji-settings" type="application/json">
+<script type="text/javascript" src="https://dknetwork.draftkings.com/wp-content/plugins/dkn-trending-bets-main/public/js/canvas.js?m=1790953900g" ></script><script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://dknetwork.draftkings.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1.4"}}
 </script>
 <script type="module">
