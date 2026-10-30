@@ -7,7 +7,6 @@ Prepare the Claude-hosted site's database writes from the repo's latest data.
   kalshi/<game_id>      Kalshi prop prices
   ilani/<game_id>       ilani sportsbook odds (spreads, totals, player props)
   edges/current         open ilani edges and the trip list (edges.py)
-  edges/report          edge alert report card (grade_edges.py)
 
 Usage: python3 sync_site.py [versions.json]
   versions.json (optional) maps "collection/doc_id" -> current version, from an ArtifactData list.
@@ -50,8 +49,10 @@ def main():
     for gid, g in il.get("games", {}).items():
         if gid in ids:
             docs[("ilani", gid)] = {"updated": il.get("generated"), **g}
-    for doc, name in (("current", "edges.json"), ("report", "edges_report.json")):
-        if (D / name).exists():
+    for doc, name in (("current", "edges.json"),):  # the report card ships as a daily data file
+        # only when the caller listed the edges collection: the doc exists, and a write without its
+        # version would be refused and take the whole batch down with it
+        if (D / name).exists() and f"edges/{doc}" in versions:
             docs[("edges", doc)] = json.loads((D / name).read_text())
     writes = []
     for (coll, gid), data in sorted(docs.items()):
