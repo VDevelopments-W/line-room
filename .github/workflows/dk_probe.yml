@@ -1,5 +1,7 @@
 name: DK probe (one-off)
 on: { workflow_dispatch: {} }
+permissions:
+  contents: write
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -9,6 +11,5 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install requests
-      - run: python debug/dk_probe.py
-      - uses: actions/upload-artifact@v4
-        with: { name: dk_probe, path: debug/dk_probe }
+      - run: python debug/dk_probe.py || true
+      - run: bash commit.sh "DK probe output" debug/dk_probe
