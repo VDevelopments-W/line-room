@@ -1858,7 +1858,7 @@ function renderEdges() {
     <p class="lede">ilani player props priced better than they should be. Kalshi's price is the true price (it beat our own model in testing); when ilani's odds imply a chance at least ${Math.round((e.threshold || .03) * 100)} points lower than Kalshi's, the ilani bet has an edge. Checked every 15 minutes Friday to Sunday. As of ${esc(eWhen(e.generated))}, ${e.checked || 0} ilani props had a Kalshi price to compare.</p>
     ${(e.stale || []).length ? `<div class="empty">Prices are out of date (${esc(e.stale.join(", "))}), so edges are paused until the next update.</div>` : ""}
     <h3>Trip list: games in the next 40 hours</h3>
-    <p class="why" style="font-size:14px">Take a bet only if ilani's odds are at least the "still good to" number when you get there. Edges in testing usually lasted about 5 hours and most were still there just before kickoff, but recheck on your phone before betting.</p>
+    <p class="why" style="font-size:14px">An alert stays here while it is still worth 2+ points. Take a bet only if ilani's odds are at least the "still good to" number when you get there. Edges in testing usually lasted about 5 hours and most were still there just before kickoff, but recheck on your phone before betting.</p>
     ${trip.length ? `<div class="tablewrap"><table>${head}<tbody>${trip.map(edgeRow).join("")}</tbody></table></div>` : '<div class="empty">No edges right now for games in the next 40 hours.</div>'}
     ${later.length ? `<h3>Later games</h3><div class="tablewrap"><table>${head}<tbody>${later.map(edgeRow).join("")}</tbody></table></div>` : ""}`;
   if (R && R.all) {

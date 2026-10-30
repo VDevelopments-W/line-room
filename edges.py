@@ -35,6 +35,7 @@ LOGDIR = HERE / "data" / "edges"
 THRESH = 0.03          # alert when ilani is at least 3 points cheaper than Kalshi's fair chance
 MAX_SPREAD = 0.06
 UNIT = 20              # paper stake per alert, dollars
+SHOW = 0.02            # keep showing an alert as a bet while its current edge is still 2+ points
 
 
 def implied(odds):
@@ -173,7 +174,7 @@ def main():
     live = []
     for log in logs.values():
         for k, a in log.items():
-            if not a.get("open") or k not in cur:
+            if not a.get("open") or k not in cur or cur[k]["edge"] < SHOW:
                 continue
             x = cur[k]
             live.append({**{c: a[c] for c in ("gid", "start", "player", "stat", "line", "side", "first")},
