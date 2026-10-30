@@ -325,6 +325,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
   </header>
 
   <nav class="tabs" role="tablist" aria-label="Sections">
+    <button role="tab" id="tab-edges" aria-controls="p-edges" aria-selected="false">Edges</button>
     <button role="tab" id="tab-week" aria-controls="p-week" aria-selected="true">This week</button>
     <button role="tab" id="tab-card" aria-controls="p-card" aria-selected="false">The card</button>
     <button role="tab" id="tab-parlays" aria-controls="p-parlays" aria-selected="false">Parlays</button>
@@ -335,6 +336,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
     <button role="tab" id="tab-research" aria-controls="p-research" aria-selected="false">Research</button>
   </nav>
 
+  <section id="p-edges" role="tabpanel" aria-labelledby="tab-edges" hidden></section>
   <section id="p-week" role="tabpanel" aria-labelledby="tab-week"></section>
   <section id="p-card" role="tabpanel" aria-labelledby="tab-card" hidden></section>
   <section id="p-parlays" role="tabpanel" aria-labelledby="tab-parlays" hidden></section>
@@ -365,7 +367,7 @@ footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; border-top: 1
 
 <script>
 const UNIT = 20;
-const S = { ilani: {}, ilaniAt: null, ilf: "all", ilModel: false, skip: new Set(), par: { mode: "sgp", game: null, picks: [], style: "value" }, mySlips: [], groupSlips: [], active: null, legPool: {}, cardLegs: [], box: null, hist: {}, signals: null, pm: null, kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
+const S = { edges: null, edgeRep: null, edgeShow: 25, ilani: {}, ilaniAt: null, ilf: "all", ilModel: false, skip: new Set(), par: { mode: "sgp", game: null, picks: [], style: "value" }, mySlips: [], groupSlips: [], active: null, legPool: {}, cardLegs: [], box: null, hist: {}, signals: null, pm: null, kalshi: {}, kalshiAt: null, propsplits: {}, pview: "list", pgame: "All", inj: null, model: null, people: null, props: null, pf: { stat: "All", type: "All", team: "All", q: "" }, data: null, splits: {}, bets: [], db: null, user: null, owner: false, trendFilter: "Lean+", trendCat: "All", open: null };
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const pct = x => x == null ? "–" : (x * 100).toFixed(1) + "%";
@@ -446,7 +448,7 @@ function renderHeader() {
 }
 
 // ---------- tabs
-const TABS = ["week", "card", "parlays", "ilani", "props", "fade", "bets", "research"];
+const TABS = ["edges", "week", "card", "parlays", "ilani", "props", "fade", "bets", "research"];
 const RESEARCH = ["ratings", "trends", "people"];
 function showResearch(sub) {
   RESEARCH.forEach(r => { $("#p-" + r).hidden = r !== sub; document.querySelector(`[data-rt="${r}"]`).setAttribute("aria-pressed", String(r === sub)) });
@@ -460,12 +462,12 @@ function showTab(name) {
     $("#tab-" + t).setAttribute("aria-selected", String(t === name));
     $("#p-" + t).hidden = t !== name;
   });
-  try { localStorage.setItem("lr-tab", name) } catch (e) {}
+  try { localStorage.setItem("lr-tab2", name) } catch (e) {}
 }
 TABS.forEach(t => $("#tab-" + t).addEventListener("click", () => showTab(t)));
 {
   let start = (location.hash || "").slice(1);
-  if (!TABS.includes(start) && !RESEARCH.includes(start)) { try { start = localStorage.getItem("lr-tab") || "week" } catch (e) { start = "week" } }
+  if (!TABS.includes(start) && !RESEARCH.includes(start)) { try { start = localStorage.getItem("lr-tab2") || "edges" } catch (e) { start = "edges" } }
   if (TABS.includes(start) || RESEARCH.includes(start)) showTab(start);
 }
 
@@ -1827,10 +1829,59 @@ function renderParlays() {
   wireSlips(el);
 }
 
+// ---------- EDGES: ilani props priced below Kalshi's fair price (edges.py), paper-graded by grade_edges.py
+const EDGE_STAT = { passing_yards: "Pass yds", passing_tds: "Pass TDs", rushing_yards: "Rush yds", receiving_yards: "Rec yds", receptions: "Receptions", carries: "Rush att" };
+const eOdds = o => o == null ? "" : (o > 0 ? "+" + o : "−" + Math.abs(o));
+const ePct = (x, d = 0) => x == null ? "–" : (x * 100).toFixed(d) + "%";
+const ePts = x => x == null ? "–" : (x >= 0 ? "+" : "−") + Math.abs(x * 100).toFixed(1);
+const eWhen = t => t ? new Date(t).toLocaleString("en-US", { weekday: "short", hour: "numeric", minute: "2-digit" }) : "";
+const eMoney = x => (x >= 0 ? "+$" : "−$") + Math.abs(x).toFixed(0);
+function edgeGame(gid) { const p = gid.split("_"); return p[2] + " @ " + p[3] }
+function edgeRow(r) {
+  const st = r.status ? ` <span class="chip warn" title="Injury report status">${esc(r.status)}</span>` : "";
+  return `<tr><td><div class="pl">${esc(r.label)}${st}</div><div class="tcat">${esc(edgeGame(r.gid))} · ${esc(eWhen(r.start))} · first seen ${esc(eWhen(r.first.t))}</div></td>
+    <td class="r"><b>${eOdds(r.odds)}</b></td><td class="r">${eOdds(r.fair_odds)}</td><td class="r">${eOdds(r.good_to)}</td><td class="r pos">${ePts(r.edge)}</td></tr>`;
+}
+function edgeSummary(x, title, sub) {
+  if (!x || !x.bets) return `<div class="stat"><b>0</b><small>${esc(title)}: no graded bets yet</small></div>`;
+  return `<div class="stat"><b class="${x.profit >= 0 ? "pos" : "neg"}">${eMoney(x.profit)}</b><small>${esc(title)}: ${x.wins}-${x.bets - x.wins}, ROI ${ePct(x.roi, 1)} at $${S.edgeRep.unit} a bet${sub ? ". " + esc(sub) : ""}</small></div>
+    <div class="stat"><b>${ePct(x.beat_close)}</b><small>${esc(title)}: beat Kalshi's closing price (avg ${ePts(x.avg_clv)} pts)</small></div>
+    <div class="stat"><b>${x.p_profit == null ? "–" : ePct(x.p_profit)}</b><small>${esc(title)}: chance the edge is real, not luck (${x.games} games)</small></div>`;
+}
+function renderEdges() {
+  const el = $("#p-edges"); if (!el) return;
+  const e = S.edges, R = S.edgeRep;
+  if (!e) { el.innerHTML = '<h2>Edges</h2><div class="empty">Edge data is loading.</div>'; return }
+  const trip = e.trip_list || [], tk = new Set(trip.map(r => r.gid + r.label)), later = (e.live || []).filter(r => !tk.has(r.gid + r.label));
+  const head = `<thead><tr><th>Bet at ilani</th><th class="r">ilani odds</th><th class="r">Fair odds</th><th class="r">Still good to</th><th class="r">Edge</th></tr></thead>`;
+  let h = `<h2>Edges</h2>
+    <p class="lede">ilani player props priced better than they should be. Kalshi's price is the true price (it beat our own model in testing); when ilani's odds imply a chance at least ${Math.round((e.threshold || .03) * 100)} points lower than Kalshi's, the ilani bet has an edge. Checked every 15 minutes Friday to Sunday. As of ${esc(eWhen(e.generated))}, ${e.checked || 0} ilani props had a Kalshi price to compare.</p>
+    ${(e.stale || []).length ? `<div class="empty">Prices are out of date (${esc(e.stale.join(", "))}), so edges are paused until the next update.</div>` : ""}
+    <h3>Trip list: games in the next 40 hours</h3>
+    <p class="why" style="font-size:14px">Take a bet only if ilani's odds are at least the "still good to" number when you get there. Edges in testing usually lasted about 5 hours and most were still there just before kickoff, but recheck on your phone before betting.</p>
+    ${trip.length ? `<div class="tablewrap"><table>${head}<tbody>${trip.map(edgeRow).join("")}</tbody></table></div>` : '<div class="empty">No edges right now for games in the next 40 hours.</div>'}
+    ${later.length ? `<h3>Later games</h3><div class="tablewrap"><table>${head}<tbody>${later.map(edgeRow).join("")}</tbody></table></div>` : ""}`;
+  if (R && R.all) {
+    const grp = (o, name) => Object.entries(o || {}).filter(([, v]) => v.bets).map(([k, v]) => `<tr><td>${esc(name(k))}</td><td class="r">${v.bets}</td><td class="r">${v.wins}-${v.bets - v.wins}</td><td class="r ${v.profit >= 0 ? "pos" : "neg"}">${eMoney(v.profit)}</td><td class="r">${ePct(v.roi, 1)}</td><td class="r">${ePct(v.beat_close)}</td></tr>`).join("");
+    const gh = `<thead><tr><th></th><th class="r">Bets</th><th class="r">W-L</th><th class="r">Profit</th><th class="r">ROI</th><th class="r">Beat close</th></tr></thead>`;
+    const done = (R.bets || []).filter(b => b.result !== "pending").slice(0, S.edgeShow);
+    h += `<h3>Report card: every alert as a $${R.unit} paper bet</h3>
+    <p class="why" style="font-size:14px">Each alert is graded at the ilani odds when it was first found. "Beat close" means Kalshi's closing price later agreed ilani was too cheap: that settles in a few weeks, long before win-loss does. "Backtest" is Weeks 5-8 rebuilt from saved prices; "live" is everything found by the running job from Oct 30 on.</p>
+    <div class="strip">${edgeSummary(R.live, "Live")}</div>
+    <div class="strip">${edgeSummary(R.backtest, "Backtest")}</div>
+    <div class="tablewrap"><table>${gh}<tbody>${grp(R.by_week, k => "Week " + k)}${grp(R.by_timing, k => "Found " + k + " before kickoff")}${grp(R.by_side, k => k === "over" ? "Overs" : "Unders")}${grp(R.by_stat, k => EDGE_STAT[k] || k)}</tbody></table></div>
+    <h3>Graded alerts</h3>
+    <div class="tablewrap"><table><thead><tr><th>Bet</th><th class="r">Odds</th><th class="r">Edge</th><th class="r">Actual</th><th class="r">Result</th><th class="r">Close</th></tr></thead><tbody>${done.map(b => `<tr><td><div class="pl">${esc(b.label)}${b.source === "backtest" ? ' <span class="chip noedge">backtest</span>' : ""}</div><div class="tcat">Week ${b.week} · ${esc(edgeGame(b.gid))} · found ${b.hrs_before}h before kickoff</div></td><td class="r">${eOdds(b.odds)}</td><td class="r">${ePts(b.edge)}</td><td class="r">${b.actual == null ? "–" : b.actual}</td><td class="r ${b.result === "win" ? "pos" : b.result === "loss" ? "neg" : ""}">${b.result === "void" ? "void (did not play)" : (b.pnl >= 0 ? "Won " : "Lost ") + eMoney(b.pnl).replace("−", "")}</td><td class="r ${b.clv > 0 ? "pos" : b.clv < 0 ? "neg" : ""}">${ePts(b.clv)}</td></tr>`).join("")}</tbody></table></div>
+    ${(R.bets || []).filter(b => b.result !== "pending").length > S.edgeShow ? '<p><button data-edgemore>Show more</button></p>' : ""}`;
+  }
+  el.innerHTML = h;
+  const more = el.querySelector("[data-edgemore]"); if (more) more.addEventListener("click", () => { S.edgeShow += 50; renderEdges() });
+}
+
 function renderAll() {
   if (!S.data) return;
   if (S.gameView) renderGame();
-  renderHeader(); renderTicker(); renderParlays(); renderIlani(); renderCard();
+  renderEdges(); renderHeader(); renderTicker(); renderParlays(); renderIlani(); renderCard();
   renderWeek(); renderTrends(); renderProps(); renderRatings(); renderPeople(); renderFade(); renderBets();
 }
 
@@ -1855,6 +1906,8 @@ function renderAll() {
     $("#p-week").innerHTML = '<div class="empty">The trend data didn\'t load. Refresh the page to try again.</div>';
   }
   // Self-hosted copy: splits come from a JSON file written by splits.py
+  try { const r = await fetch("data/edges.json"); if (r.ok) { S.edges = await r.json(); renderEdges() } } catch (e) {}
+  try { const r = await fetch("data/edges_report.json"); if (r.ok) { S.edgeRep = await r.json(); renderEdges() } } catch (e) {}
   try { const r = await fetch("data/ilani.json"); if (r.ok) { const k = await r.json(); S.ilani = k.games || {}; S.ilaniAt = k.generated; renderIlani(); renderCard() } } catch (e) {}
   try { const r = await fetch("data/kalshi.json"); if (r.ok) { const k = await r.json(); S.kalshi = k.games || {}; S.kalshiAt = k.generated; renderProps(); renderParlays(); renderIlani(); renderCard(); if (S.gameView) renderGame() } } catch (e) {}
   try { const r = await fetch("data/propsplits.json"); if (r.ok) { S.propsplits = await r.json(); renderProps() } } catch (e) {}
@@ -1878,6 +1931,9 @@ function renderAll() {
   db.collection("ilani").onSnapshot(snap => {
     if (!snap.docs.length) return;
     S.ilani = {}; snap.docs.forEach(d => { const x = d.data(); S.ilani[d.id] = x; S.ilaniAt = x.updated || S.ilaniAt }); renderIlani(); renderCard();
+  }, () => {});
+  db.collection("edges").onSnapshot(snap => {
+    snap.docs.forEach(d => { if (d.id === "current") S.edges = d.data(); if (d.id === "report") S.edgeRep = d.data() }); renderEdges();
   }, () => {});
   db.collection("propsplits").onSnapshot(snap => {
     S.propsplits = {}; snap.docs.forEach(d => S.propsplits[d.id] = d.data()); renderProps(); if (S.gameView) renderGame();

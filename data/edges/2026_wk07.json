@@ -1,0 +1,1394 @@
+{
+"2026_07_CIN_BAL|Ja'Kobi Lane|receptions|4|over": {
+"best": {
+"edge": 0.0309,
+"fair": 0.235,
+"odds": 390,
+"t": "2026-10-25T16:26:31Z"
+},
+"first": {
+"edge": 0.0309,
+"fair": 0.235,
+"odds": 390,
+"t": "2026-10-25T16:26:31Z"
+},
+"gid": "2026_07_CIN_BAL",
+"hrs_before": 0.6,
+"last": {
+"edge": 0.0309,
+"fair": 0.235,
+"odds": 390,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 4,
+"open": false,
+"player": "Ja'Kobi Lane",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "receptions"
+},
+"2026_07_CIN_BAL|Joe Burrow|passing_yards|275|over": {
+"best": {
+"edge": 0.0318,
+"fair": 0.435,
+"odds": 148,
+"t": "2026-10-24T23:26:32Z"
+},
+"first": {
+"edge": 0.0318,
+"fair": 0.435,
+"odds": 148,
+"t": "2026-10-24T23:26:32Z"
+},
+"gid": "2026_07_CIN_BAL",
+"hrs_before": 17.6,
+"last": {
+"edge": 0.0118,
+"fair": 0.42,
+"odds": 145,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 275,
+"open": false,
+"player": "Joe Burrow",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "passing_yards"
+},
+"2026_07_CIN_BAL|Mike Gesicki|receptions|3|under": {
+"best": {
+"edge": 0.0304,
+"fair": 0.545,
+"odds": -106,
+"t": "2026-10-25T00:24:56Z"
+},
+"first": {
+"edge": 0.0304,
+"fair": 0.545,
+"odds": -106,
+"t": "2026-10-25T00:24:56Z"
+},
+"gid": "2026_07_CIN_BAL",
+"hrs_before": 16.6,
+"last": {
+"edge": -0.0266,
+"fair": 0.555,
+"odds": -139,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 3,
+"open": false,
+"player": "Mike Gesicki",
+"side": "under",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "receptions"
+},
+"2026_07_CIN_BAL|Samaje Perine|receptions|2|under": {
+"best": {
+"edge": 0.0333,
+"fair": 0.505,
+"odds": 112,
+"t": "2026-10-25T14:25:55Z"
+},
+"first": {
+"edge": 0.0333,
+"fair": 0.505,
+"odds": 112,
+"t": "2026-10-25T14:25:55Z"
+},
+"gid": "2026_07_CIN_BAL",
+"hrs_before": 2.6,
+"last": {
+"edge": -0.0133,
+"fair": 0.515,
+"odds": -112,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 2,
+"open": false,
+"player": "Samaje Perine",
+"side": "under",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "receptions"
+},
+"2026_07_CLE_TEN|Deshaun Watson|passing_yards|200|over": {
+"best": {
+"edge": 0.0435,
+"fair": 0.565,
+"odds": -109,
+"t": "2026-10-24T23:26:32Z"
+},
+"first": {
+"edge": 0.0435,
+"fair": 0.565,
+"odds": -109,
+"t": "2026-10-24T23:26:32Z"
+},
+"gid": "2026_07_CLE_TEN",
+"hrs_before": 17.6,
+"last": {
+"edge": -0.0559,
+"fair": 0.555,
+"odds": -157,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 200,
+"open": false,
+"player": "Deshaun Watson",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "passing_yards"
+},
+"2026_07_CLE_TEN|Tony Pollard|carries|17|over": {
+"best": {
+"edge": 0.0304,
+"fair": 0.545,
+"odds": -106,
+"t": "2026-10-25T14:07:05Z"
+},
+"first": {
+"edge": 0.0304,
+"fair": 0.545,
+"odds": -106,
+"t": "2026-10-25T14:07:05Z"
+},
+"gid": "2026_07_CLE_TEN",
+"hrs_before": 2.9,
+"last": {
+"edge": -0.0083,
+"fair": 0.555,
+"odds": -129,
+"t": "2026-10-25T15:26:35Z"
+},
+"line": 17,
+"open": false,
+"player": "Tony Pollard",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "carries"
+},
+"2026_07_DAL_PHI|Dak Prescott|passing_yards|275|over": {
+"best": {
+"edge": 0.0364,
+"fair": 0.475,
+"odds": 128,
+"t": "2026-10-25T23:25:37Z"
+},
+"first": {
+"edge": 0.0364,
+"fair": 0.475,
+"odds": 128,
+"t": "2026-10-25T23:25:37Z"
+},
+"gid": "2026_07_DAL_PHI",
+"hrs_before": 24.8,
+"last": {
+"edge": -0.0036,
+"fair": 0.435,
+"odds": 128,
+"t": "2026-10-26T23:26:16Z"
+},
+"line": 275,
+"open": false,
+"player": "Dak Prescott",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-27T00:15:00Z",
+"stat": "passing_yards"
+},
+"2026_07_DAL_PHI|DeVonta Smith|receiving_yards|70|under": {
+"best": {
+"edge": 0.0595,
+"fair": 0.59,
+"odds": -113,
+"t": "2026-10-23T15:16:36Z"
+},
+"first": {
+"edge": 0.0595,
+"fair": 0.59,
+"odds": -113,
+"t": "2026-10-23T15:16:36Z"
+},
+"gid": "2026_07_DAL_PHI",
+"hrs_before": 81.0,
+"last": {
+"edge": 0.0295,
+"fair": 0.56,
+"odds": -113,
+"t": "2026-10-23T17:26:17Z"
+},
+"line": 70,
+"open": false,
+"player": "DeVonta Smith",
+"side": "under",
+"source": "backtest",
+"start": "2026-10-27T00:15:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_DAL_PHI|Saquon Barkley|carries|16|under": {
+"best": {
+"edge": 0.0308,
+"fair": 0.57,
+"odds": -117,
+"t": "2026-10-26T23:26:16Z"
+},
+"first": {
+"edge": 0.0308,
+"fair": 0.57,
+"odds": -117,
+"t": "2026-10-26T23:26:16Z"
+},
+"gid": "2026_07_DAL_PHI",
+"hrs_before": 0.8,
+"last": {
+"edge": 0.0308,
+"fair": 0.57,
+"odds": -117,
+"t": "2026-10-26T23:26:16Z"
+},
+"line": 16,
+"open": false,
+"player": "Saquon Barkley",
+"side": "under",
+"source": "backtest",
+"start": "2026-10-27T00:15:00Z",
+"stat": "carries"
+},
+"2026_07_DEN_ARI|Jacoby Brissett|rushing_yards|10|under": {
+"best": {
+"edge": 0.0317,
+"fair": 0.595,
+"odds": -129,
+"t": "2026-10-23T19:23:34Z"
+},
+"first": {
+"edge": 0.0317,
+"fair": 0.595,
+"odds": -129,
+"t": "2026-10-23T19:23:34Z"
+},
+"gid": "2026_07_DEN_ARI",
+"hrs_before": 48.7,
+"last": {
+"edge": 0.0224,
+"fair": 0.595,
+"odds": -134,
+"t": "2026-10-25T14:25:55Z"
+},
+"line": 10,
+"open": false,
+"player": "Jacoby Brissett",
+"side": "under",
+"source": "backtest",
+"start": "2026-10-25T20:05:00Z",
+"stat": "rushing_yards"
+},
+"2026_07_DEN_ARI|Jaylen Waddle|receptions|5|under": {
+"best": {
+"edge": 0.0333,
+"fair": 0.505,
+"odds": 112,
+"t": "2026-10-25T19:25:59Z"
+},
+"first": {
+"edge": 0.0333,
+"fair": 0.505,
+"odds": 112,
+"t": "2026-10-25T19:25:59Z"
+},
+"gid": "2026_07_DEN_ARI",
+"hrs_before": 0.7,
+"last": {
+"edge": 0.0333,
+"fair": 0.505,
+"odds": 112,
+"t": "2026-10-25T19:25:59Z"
+},
+"line": 5,
+"open": false,
+"player": "Jaylen Waddle",
+"side": "under",
+"source": "backtest",
+"start": "2026-10-25T20:05:00Z",
+"stat": "receptions"
+},
+"2026_07_DEN_ARI|Michael Wilson|receptions|5|under": {
+"best": {
+"edge": 0.035,
+"fair": 0.535,
+"odds": 100,
+"t": "2026-10-23T22:26:43Z"
+},
+"first": {
+"edge": 0.035,
+"fair": 0.535,
+"odds": 100,
+"t": "2026-10-23T22:26:43Z"
+},
+"gid": "2026_07_DEN_ARI",
+"hrs_before": 45.6,
+"last": {
+"edge": -0.005,
+"fair": 0.495,
+"odds": 100,
+"t": "2026-10-25T19:25:59Z"
+},
+"line": 5,
+"open": false,
+"player": "Michael Wilson",
+"side": "under",
+"source": "backtest",
+"start": "2026-10-25T20:05:00Z",
+"stat": "receptions"
+},
+"2026_07_DEN_ARI|Trey McBride|receptions|8|under": {
+"best": {
+"edge": 0.0473,
+"fair": 0.58,
+"odds": -114,
+"t": "2026-10-23T00:16:40Z"
+},
+"first": {
+"edge": 0.0417,
+"fair": 0.57,
+"odds": -112,
+"t": "2026-10-22T21:48:14Z"
+},
+"gid": "2026_07_DEN_ARI",
+"hrs_before": 70.3,
+"last": {
+"edge": 0.0337,
+"fair": 0.575,
+"odds": -118,
+"t": "2026-10-25T19:25:59Z"
+},
+"line": 8,
+"open": false,
+"player": "Trey McBride",
+"side": "under",
+"source": "backtest",
+"start": "2026-10-25T20:05:00Z",
+"stat": "receptions"
+},
+"2026_07_GB_DET|Josh Jacobs|carries|13|over": {
+"best": {
+"edge": 0.0372,
+"fair": 0.525,
+"odds": 105,
+"t": "2026-10-25T20:11:44Z"
+},
+"first": {
+"edge": 0.03,
+"fair": 0.525,
+"odds": 102,
+"t": "2026-10-25T19:25:59Z"
+},
+"gid": "2026_07_GB_DET",
+"hrs_before": 1.0,
+"last": {
+"edge": 0.0372,
+"fair": 0.525,
+"odds": 105,
+"t": "2026-10-25T20:11:44Z"
+},
+"line": 13,
+"open": false,
+"player": "Josh Jacobs",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T20:25:00Z",
+"stat": "carries"
+},
+"2026_07_GB_DET|Josh Jacobs|carries|16|over": {
+"best": {
+"edge": 0.0511,
+"fair": 0.295,
+"odds": 310,
+"t": "2026-10-25T20:11:44Z"
+},
+"first": {
+"edge": 0.035,
+"fair": 0.285,
+"odds": 300,
+"t": "2026-10-25T17:43:52Z"
+},
+"gid": "2026_07_GB_DET",
+"hrs_before": 2.7,
+"last": {
+"edge": 0.0511,
+"fair": 0.295,
+"odds": 310,
+"t": "2026-10-25T20:11:44Z"
+},
+"line": 16,
+"open": false,
+"player": "Josh Jacobs",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T20:25:00Z",
+"stat": "carries"
+},
+"2026_07_GB_DET|Josh Jacobs|receiving_yards|20|over": {
+"best": {
+"edge": 0.035,
+"fair": 0.285,
+"odds": 300,
+"t": "2026-10-25T20:11:44Z"
+},
+"first": {
+"edge": 0.035,
+"fair": 0.285,
+"odds": 300,
+"t": "2026-10-25T20:11:44Z"
+},
+"gid": "2026_07_GB_DET",
+"hrs_before": 0.2,
+"last": {
+"edge": 0.035,
+"fair": 0.285,
+"odds": 300,
+"t": "2026-10-25T20:11:44Z"
+},
+"line": 20,
+"open": false,
+"player": "Josh Jacobs",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T20:25:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_GB_DET|MarShawn Lloyd|rushing_yards|20|over": {
+"best": {
+"edge": 0.0411,
+"fair": 0.285,
+"odds": 310,
+"t": "2026-10-25T05:01:21Z"
+},
+"first": {
+"edge": 0.0411,
+"fair": 0.285,
+"odds": 310,
+"t": "2026-10-25T05:01:21Z"
+},
+"gid": "2026_07_GB_DET",
+"hrs_before": 15.4,
+"last": {
+"edge": 0.0168,
+"fair": 0.28,
+"odds": 280,
+"t": "2026-10-25T20:11:44Z"
+},
+"line": 20,
+"open": false,
+"player": "MarShawn Lloyd",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T20:25:00Z",
+"stat": "rushing_yards"
+},
+"2026_07_GB_DET|Pierre Strong Jr.|rushing_yards|20|over": {
+"best": {
+"edge": 0.0309,
+"fair": 0.235,
+"odds": 390,
+"t": "2026-10-22T18:19:22Z"
+},
+"first": {
+"edge": 0.0309,
+"fair": 0.235,
+"odds": 390,
+"t": "2026-10-22T18:19:22Z"
+},
+"gid": "2026_07_GB_DET",
+"hrs_before": 74.1,
+"last": {
+"edge": 0.0095,
+"fair": 0.22,
+"odds": 375,
+"t": "2026-10-25T20:11:44Z"
+},
+"line": 20,
+"open": false,
+"player": "Pierre Strong Jr.",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T20:25:00Z",
+"stat": "rushing_yards"
+},
+"2026_07_IND_MIN|Jauan Jennings|receiving_yards|20|over": {
+"best": {
+"edge": 0.0397,
+"fair": 0.275,
+"odds": 325,
+"t": "2026-10-24T17:07:20Z"
+},
+"first": {
+"edge": 0.0397,
+"fair": 0.275,
+"odds": 325,
+"t": "2026-10-24T17:07:20Z"
+},
+"gid": "2026_07_IND_MIN",
+"hrs_before": 23.9,
+"last": {
+"edge": 0.0269,
+"fair": 0.265,
+"odds": 320,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 20,
+"open": false,
+"player": "Jauan Jennings",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_KC_SEA|Kenneth Walker III|receiving_yards|40|over": {
+"best": {
+"edge": 0.0327,
+"fair": 0.225,
+"odds": 420,
+"t": "2026-10-25T19:25:59Z"
+},
+"first": {
+"edge": 0.0327,
+"fair": 0.225,
+"odds": 420,
+"t": "2026-10-25T19:25:59Z"
+},
+"gid": "2026_07_KC_SEA",
+"hrs_before": 4.9,
+"last": {
+"edge": 0.0209,
+"fair": 0.225,
+"odds": 390,
+"t": "2026-10-25T23:25:37Z"
+},
+"line": 40,
+"open": false,
+"player": "Kenneth Walker III",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-26T00:20:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_LA_LV|Ashton Jeanty|carries|14|over": {
+"best": {
+"edge": 0.0455,
+"fair": 0.595,
+"odds": -122,
+"t": "2026-10-22T23:26:13Z"
+},
+"first": {
+"edge": 0.0455,
+"fair": 0.595,
+"odds": -122,
+"t": "2026-10-22T23:26:13Z"
+},
+"gid": "2026_07_LA_LV",
+"hrs_before": 69.0,
+"last": {
+"edge": -0.1175,
+"fair": 0.565,
+"odds": -215,
+"t": "2026-10-25T20:11:44Z"
+},
+"line": 14,
+"open": false,
+"player": "Ashton Jeanty",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T20:25:00Z",
+"stat": "carries"
+},
+"2026_07_LA_LV|Blake Corum|rushing_yards|60|over": {
+"best": {
+"edge": 0.0313,
+"fair": 0.22,
+"odds": 430,
+"t": "2026-10-25T09:57:45Z"
+},
+"first": {
+"edge": 0.0313,
+"fair": 0.22,
+"odds": 430,
+"t": "2026-10-25T09:57:45Z"
+},
+"gid": "2026_07_LA_LV",
+"hrs_before": 10.5,
+"last": {
+"edge": 0.015,
+"fair": 0.215,
+"odds": 400,
+"t": "2026-10-25T20:11:44Z"
+},
+"line": 60,
+"open": false,
+"player": "Blake Corum",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T20:25:00Z",
+"stat": "rushing_yards"
+},
+"2026_07_LA_LV|Brock Bowers|receptions|10|over": {
+"best": {
+"edge": 0.0339,
+"fair": 0.145,
+"odds": 800,
+"t": "2026-10-25T20:11:44Z"
+},
+"first": {
+"edge": 0.0339,
+"fair": 0.145,
+"odds": 800,
+"t": "2026-10-25T20:11:44Z"
+},
+"gid": "2026_07_LA_LV",
+"hrs_before": 0.2,
+"last": {
+"edge": 0.0339,
+"fair": 0.145,
+"odds": 800,
+"t": "2026-10-25T20:11:44Z"
+},
+"line": 10,
+"open": false,
+"player": "Brock Bowers",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T20:25:00Z",
+"stat": "receptions"
+},
+"2026_07_LA_LV|Konata Mumpfield|receiving_yards|40|over": {
+"best": {
+"edge": 0.0351,
+"fair": 0.265,
+"odds": 335,
+"t": "2026-10-25T19:25:59Z"
+},
+"first": {
+"edge": 0.0351,
+"fair": 0.265,
+"odds": 335,
+"t": "2026-10-25T19:25:59Z"
+},
+"gid": "2026_07_LA_LV",
+"hrs_before": 1.0,
+"last": {
+"edge": 0.0351,
+"fair": 0.265,
+"odds": 335,
+"t": "2026-10-25T20:11:44Z"
+},
+"line": 40,
+"open": false,
+"player": "Konata Mumpfield",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T20:25:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_MIA_NYJ|Chris Bell|receiving_yards|15|under": {
+"best": {
+"edge": 0.0514,
+"fair": 0.415,
+"odds": 175,
+"t": "2026-10-25T14:25:55Z"
+},
+"first": {
+"edge": 0.0446,
+"fair": 0.415,
+"odds": 170,
+"t": "2026-10-25T14:07:05Z"
+},
+"gid": "2026_07_MIA_NYJ",
+"hrs_before": 2.9,
+"last": {
+"edge": 0.0514,
+"fair": 0.415,
+"odds": 175,
+"t": "2026-10-25T14:25:55Z"
+},
+"line": 15,
+"open": false,
+"player": "Chris Bell",
+"side": "under",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_MIA_NYJ|Geno Smith|passing_tds|2|over": {
+"best": {
+"edge": 0.0435,
+"fair": 0.455,
+"odds": 143,
+"t": "2026-10-22T08:09:27Z"
+},
+"first": {
+"edge": 0.0435,
+"fair": 0.455,
+"odds": 143,
+"t": "2026-10-22T08:09:27Z"
+},
+"gid": "2026_07_MIA_NYJ",
+"hrs_before": 80.8,
+"last": {
+"edge": -0.0201,
+"fair": 0.445,
+"odds": 115,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 2,
+"open": false,
+"player": "Geno Smith",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "passing_tds"
+},
+"2026_07_NE_CHI|A.J. Brown|receptions|6|over": {
+"best": {
+"edge": 0.034,
+"fair": 0.465,
+"odds": 132,
+"t": "2026-10-22T08:09:27Z"
+},
+"first": {
+"edge": 0.034,
+"fair": 0.465,
+"odds": 132,
+"t": "2026-10-22T08:09:27Z"
+},
+"gid": "2026_07_NE_CHI",
+"hrs_before": 16.1,
+"last": {
+"edge": 0.0006,
+"fair": 0.445,
+"odds": 125,
+"t": "2026-10-22T23:26:13Z"
+},
+"line": 6,
+"open": false,
+"player": "A.J. Brown",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-23T00:15:00Z",
+"stat": "receptions"
+},
+"2026_07_NE_CHI|A.J. Brown|receptions|8|over": {
+"best": {
+"edge": 0.0348,
+"fair": 0.22,
+"odds": 440,
+"t": "2026-10-22T08:09:27Z"
+},
+"first": {
+"edge": 0.0348,
+"fair": 0.22,
+"odds": 440,
+"t": "2026-10-22T08:09:27Z"
+},
+"gid": "2026_07_NE_CHI",
+"hrs_before": 16.1,
+"last": {
+"edge": -0.0023,
+"fair": 0.19,
+"odds": 420,
+"t": "2026-10-22T23:26:13Z"
+},
+"line": 8,
+"open": false,
+"player": "A.J. Brown",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-23T00:15:00Z",
+"stat": "receptions"
+},
+"2026_07_NE_CHI|D'Andre Swift|receiving_yards|40|over": {
+"best": {
+"edge": 0.0345,
+"fair": 0.225,
+"odds": 425,
+"t": "2026-10-22T21:48:14Z"
+},
+"first": {
+"edge": 0.0345,
+"fair": 0.225,
+"odds": 425,
+"t": "2026-10-22T21:48:14Z"
+},
+"gid": "2026_07_NE_CHI",
+"hrs_before": 2.4,
+"last": {
+"edge": 0.0295,
+"fair": 0.22,
+"odds": 425,
+"t": "2026-10-22T23:26:13Z"
+},
+"line": 40,
+"open": false,
+"player": "D'Andre Swift",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-23T00:15:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_NE_CHI|Roschon Johnson|carries|10|over": {
+"best": {
+"edge": 0.0328,
+"fair": 0.255,
+"odds": 350,
+"t": "2026-10-22T21:48:14Z"
+},
+"first": {
+"edge": 0.0328,
+"fair": 0.255,
+"odds": 350,
+"t": "2026-10-22T21:48:14Z"
+},
+"gid": "2026_07_NE_CHI",
+"hrs_before": 2.4,
+"last": {
+"edge": 0.0128,
+"fair": 0.235,
+"odds": 350,
+"t": "2026-10-22T23:26:13Z"
+},
+"line": 10,
+"open": false,
+"player": "Roschon Johnson",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-23T00:15:00Z",
+"stat": "carries"
+},
+"2026_07_NE_CHI|TreVeyon Henderson|rushing_yards|40|over": {
+"best": {
+"edge": 0.0351,
+"fair": 0.265,
+"odds": 335,
+"t": "2026-10-21T16:57:32Z"
+},
+"first": {
+"edge": 0.0351,
+"fair": 0.265,
+"odds": 335,
+"t": "2026-10-21T16:57:32Z"
+},
+"gid": "2026_07_NE_CHI",
+"hrs_before": 31.3,
+"last": {
+"edge": 0.0086,
+"fair": 0.265,
+"odds": 290,
+"t": "2026-10-22T23:26:13Z"
+},
+"line": 40,
+"open": false,
+"player": "TreVeyon Henderson",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-23T00:15:00Z",
+"stat": "rushing_yards"
+},
+"2026_07_NYG_HOU|C.J. Stroud|passing_yards|275|over": {
+"best": {
+"edge": 0.0364,
+"fair": 0.4,
+"odds": 175,
+"t": "2026-10-25T14:07:05Z"
+},
+"first": {
+"edge": 0.0364,
+"fair": 0.4,
+"odds": 175,
+"t": "2026-10-25T14:07:05Z"
+},
+"gid": "2026_07_NYG_HOU",
+"hrs_before": 2.9,
+"last": {
+"edge": 0.0198,
+"fair": 0.4,
+"odds": 163,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 275,
+"open": false,
+"player": "C.J. Stroud",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "passing_yards"
+},
+"2026_07_NYG_HOU|C.J. Stroud|passing_yards|300|over": {
+"best": {
+"edge": 0.0369,
+"fair": 0.275,
+"odds": 320,
+"t": "2026-10-23T15:16:36Z"
+},
+"first": {
+"edge": 0.0369,
+"fair": 0.275,
+"odds": 320,
+"t": "2026-10-23T15:16:36Z"
+},
+"gid": "2026_07_NYG_HOU",
+"hrs_before": 49.7,
+"last": {
+"edge": 0.025,
+"fair": 0.275,
+"odds": 300,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 300,
+"open": false,
+"player": "C.J. Stroud",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "passing_yards"
+},
+"2026_07_NYG_HOU|Foster Moreau|receiving_yards|20|over": {
+"best": {
+"edge": 0.0376,
+"fair": 0.255,
+"odds": 360,
+"t": "2026-10-25T09:57:45Z"
+},
+"first": {
+"edge": 0.0376,
+"fair": 0.255,
+"odds": 360,
+"t": "2026-10-25T09:57:45Z"
+},
+"gid": "2026_07_NYG_HOU",
+"hrs_before": 7.0,
+"last": {
+"edge": 0.0169,
+"fair": 0.255,
+"odds": 320,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 20,
+"open": false,
+"player": "Foster Moreau",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_NYG_HOU|J.J. McCarthy|passing_yards|200|over": {
+"best": {
+"edge": 0.04,
+"fair": 0.535,
+"odds": 102,
+"t": "2026-10-24T13:44:39Z"
+},
+"first": {
+"edge": 0.04,
+"fair": 0.535,
+"odds": 102,
+"t": "2026-10-24T13:44:39Z"
+},
+"gid": "2026_07_NYG_HOU",
+"hrs_before": 27.3,
+"last": {
+"edge": -0.0077,
+"fair": 0.525,
+"odds": -114,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 200,
+"open": false,
+"player": "J.J. McCarthy",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "passing_yards"
+},
+"2026_07_NYG_HOU|J.J. McCarthy|passing_yards|225|over": {
+"best": {
+"edge": 0.0352,
+"fair": 0.38,
+"odds": 190,
+"t": "2026-10-24T13:44:39Z"
+},
+"first": {
+"edge": 0.0352,
+"fair": 0.38,
+"odds": 190,
+"t": "2026-10-24T13:44:39Z"
+},
+"gid": "2026_07_NYG_HOU",
+"hrs_before": 27.3,
+"last": {
+"edge": 0.0176,
+"fair": 0.395,
+"odds": 165,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 225,
+"open": false,
+"player": "J.J. McCarthy",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "passing_yards"
+},
+"2026_07_NYG_HOU|Tyrone Tracy Jr.|rushing_yards|30|over": {
+"best": {
+"edge": 0.0329,
+"fair": 0.39,
+"odds": 180,
+"t": "2026-10-22T23:26:13Z"
+},
+"first": {
+"edge": 0.0329,
+"fair": 0.39,
+"odds": 180,
+"t": "2026-10-22T23:26:13Z"
+},
+"gid": "2026_07_NYG_HOU",
+"hrs_before": 65.6,
+"last": {
+"edge": 0.0014,
+"fair": 0.365,
+"odds": 175,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 30,
+"open": false,
+"player": "Tyrone Tracy Jr.",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "rushing_yards"
+},
+"2026_07_NYG_HOU|Tyrone Tracy Jr.|rushing_yards|40|over": {
+"best": {
+"edge": 0.0417,
+"fair": 0.25,
+"odds": 380,
+"t": "2026-10-22T21:48:14Z"
+},
+"first": {
+"edge": 0.0376,
+"fair": 0.255,
+"odds": 360,
+"t": "2026-10-22T18:19:22Z"
+},
+"gid": "2026_07_NYG_HOU",
+"hrs_before": 70.7,
+"last": {
+"edge": 0.0072,
+"fair": 0.22,
+"odds": 370,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 40,
+"open": false,
+"player": "Tyrone Tracy Jr.",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "rushing_yards"
+},
+"2026_07_NYG_HOU|Woody Marks|carries|18|over": {
+"best": {
+"edge": 0.046,
+"fair": 0.385,
+"odds": 195,
+"t": "2026-10-23T05:07:28Z"
+},
+"first": {
+"edge": 0.031,
+"fair": 0.37,
+"odds": 195,
+"t": "2026-10-22T21:48:14Z"
+},
+"gid": "2026_07_NYG_HOU",
+"hrs_before": 67.2,
+"last": {
+"edge": 0.0135,
+"fair": 0.425,
+"odds": 143,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 18,
+"open": false,
+"player": "Woody Marks",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "carries"
+},
+"2026_07_NYG_HOU|Woody Marks|rushing_yards|90|over": {
+"best": {
+"edge": 0.0417,
+"fair": 0.25,
+"odds": 380,
+"t": "2026-10-24T00:54:52Z"
+},
+"first": {
+"edge": 0.0367,
+"fair": 0.245,
+"odds": 380,
+"t": "2026-10-23T23:26:01Z"
+},
+"gid": "2026_07_NYG_HOU",
+"hrs_before": 41.6,
+"last": {
+"edge": 0.0151,
+"fair": 0.245,
+"odds": 335,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 90,
+"open": false,
+"player": "Woody Marks",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "rushing_yards"
+},
+"2026_07_NYG_HOU|Xavier Hutchinson|receiving_yards|10|over": {
+"best": {
+"edge": 0.0531,
+"fair": 0.57,
+"odds": -107,
+"t": "2026-10-22T13:57:58Z"
+},
+"first": {
+"edge": 0.0531,
+"fair": 0.57,
+"odds": -107,
+"t": "2026-10-22T13:57:58Z"
+},
+"gid": "2026_07_NYG_HOU",
+"hrs_before": 75.0,
+"last": {
+"edge": -0.015,
+"fair": 0.585,
+"odds": -150,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 10,
+"open": false,
+"player": "Xavier Hutchinson",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_NYG_HOU|Xavier Hutchinson|receiving_yards|20|over": {
+"best": {
+"edge": 0.0665,
+"fair": 0.365,
+"odds": 235,
+"t": "2026-10-22T13:57:58Z"
+},
+"first": {
+"edge": 0.0471,
+"fair": 0.375,
+"odds": 205,
+"t": "2026-10-22T08:09:27Z"
+},
+"gid": "2026_07_NYG_HOU",
+"hrs_before": 80.8,
+"last": {
+"edge": -0.0122,
+"fair": 0.38,
+"odds": 155,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 20,
+"open": false,
+"player": "Xavier Hutchinson",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_PIT_NO|Devaughn Vele|receiving_yards|40|over": {
+"best": {
+"edge": 0.0367,
+"fair": 0.565,
+"odds": -112,
+"t": "2026-10-25T09:57:45Z"
+},
+"first": {
+"edge": 0.0367,
+"fair": 0.565,
+"odds": -112,
+"t": "2026-10-25T09:57:45Z"
+},
+"gid": "2026_07_PIT_NO",
+"hrs_before": 3.5,
+"last": {
+"edge": 0.0367,
+"fair": 0.565,
+"odds": -112,
+"t": "2026-10-25T09:57:45Z"
+},
+"line": 40,
+"open": false,
+"player": "Devaughn Vele",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T13:30:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_PIT_NO|Jaylen Warren|carries|14|over": {
+"best": {
+"edge": 0.0344,
+"fair": 0.59,
+"odds": -125,
+"t": "2026-10-23T15:16:36Z"
+},
+"first": {
+"edge": 0.0344,
+"fair": 0.59,
+"odds": -125,
+"t": "2026-10-23T15:16:36Z"
+},
+"gid": "2026_07_PIT_NO",
+"hrs_before": 46.2,
+"last": {
+"edge": 0.0344,
+"fair": 0.59,
+"odds": -125,
+"t": "2026-10-25T09:57:45Z"
+},
+"line": 14,
+"open": false,
+"player": "Jaylen Warren",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T13:30:00Z",
+"stat": "carries"
+},
+"2026_07_PIT_NO|Kendre Miller|rushing_yards|40|under": {
+"best": {
+"edge": 0.0323,
+"fair": 0.565,
+"odds": -114,
+"t": "2026-10-23T15:16:36Z"
+},
+"first": {
+"edge": 0.0323,
+"fair": 0.565,
+"odds": -114,
+"t": "2026-10-23T15:16:36Z"
+},
+"gid": "2026_07_PIT_NO",
+"hrs_before": 46.2,
+"last": {
+"edge": 0.0173,
+"fair": 0.55,
+"odds": -114,
+"t": "2026-10-25T09:57:45Z"
+},
+"line": 40,
+"open": false,
+"player": "Kendre Miller",
+"side": "under",
+"source": "backtest",
+"start": "2026-10-25T13:30:00Z",
+"stat": "rushing_yards"
+},
+"2026_07_SF_ATL|Christian McCaffrey|carries|16|over": {
+"best": {
+"edge": 0.0316,
+"fair": 0.48,
+"odds": 123,
+"t": "2026-10-23T15:16:36Z"
+},
+"first": {
+"edge": 0.0316,
+"fair": 0.48,
+"odds": 123,
+"t": "2026-10-23T15:16:36Z"
+},
+"gid": "2026_07_SF_ATL",
+"hrs_before": 49.7,
+"last": {
+"edge": -0.0265,
+"fair": 0.385,
+"odds": 143,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 16,
+"open": false,
+"player": "Christian McCaffrey",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "carries"
+},
+"2026_07_SF_ATL|Kyle Juszczyk|receiving_yards|20|over": {
+"best": {
+"edge": 0.0365,
+"fair": 0.335,
+"odds": 235,
+"t": "2026-10-24T19:36:37Z"
+},
+"first": {
+"edge": 0.0315,
+"fair": 0.33,
+"odds": 235,
+"t": "2026-10-24T17:07:20Z"
+},
+"gid": "2026_07_SF_ATL",
+"hrs_before": 23.9,
+"last": {
+"edge": -0.0372,
+"fair": 0.31,
+"odds": 188,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 20,
+"open": false,
+"player": "Kyle Juszczyk",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "receiving_yards"
+},
+"2026_07_TB_CAR|Chuba Hubbard|carries|18|over": {
+"best": {
+"edge": 0.0342,
+"fair": 0.515,
+"odds": 108,
+"t": "2026-10-25T05:01:21Z"
+},
+"first": {
+"edge": 0.0342,
+"fair": 0.515,
+"odds": 108,
+"t": "2026-10-25T05:01:21Z"
+},
+"gid": "2026_07_TB_CAR",
+"hrs_before": 12.0,
+"last": {
+"edge": -0.0096,
+"fair": 0.505,
+"odds": -106,
+"t": "2026-10-25T16:26:31Z"
+},
+"line": 18,
+"open": false,
+"player": "Chuba Hubbard",
+"side": "over",
+"source": "backtest",
+"start": "2026-10-25T17:00:00Z",
+"stat": "carries"
+}
+}

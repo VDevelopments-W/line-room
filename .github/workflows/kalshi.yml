@@ -1,14 +1,18 @@
-# Kalshi NFL player prop prices (and ilani sportsbook odds, ilani.py) every 30 minutes Thu-Mon (every 6 hours Tue-Wed).
-# Saves site/data/kalshi.json, plus data/kalshi_close/<game_id>.json frozen at kickoff for grading.
+# Kalshi NFL player prop prices and ilani sportsbook odds (ilani.py), then the edge finder (edges.py).
+# Every 15 minutes Fri-Sun, every 30 minutes Mon/Thu, every 6 hours Tue-Wed.
+# Saves site/data/kalshi.json, data/kalshi_close/<game_id>.json frozen at kickoff, ilani.json,
+# data/edges/ (alert log) and site/data/edges.json; new alerts go to the phone through ntfy
+# when the repo variable NTFY_TOPIC is set.
 name: Kalshi prop prices
 on:
   schedule:
-    - cron: "*/30 * * * 0,1,2,4,5,6"
+    - cron: "*/15 * * * 0,5,6"
+    - cron: "*/30 * * * 1,2,4"
     - cron: "0 */6 * * 3"
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths: ["kalshi.py", "ilani.py", ".github/workflows/kalshi.yml"]
+    paths: ["kalshi.py", "ilani.py", "edges.py", ".github/workflows/kalshi.yml"]
 permissions:
   contents: write
 concurrency:
@@ -32,4 +36,17 @@ jobs:
         run: |
           out=$(python ilani.py --print 2>&1) || { echo "::warning::ilani.py failed: $(echo "$out" | tail -3 | tr '\n' ' ')"; exit 1; }
           echo "$out"; echo "::notice::$(echo "$out" | head -1)"
-      - run: bash commit.sh "Kalshi + ilani prices $(date -u +%FT%H:%MZ)" site/data/kalshi.json site/data/ilani.json data/kalshi_close
+      - name: Edge finder (ilani vs Kalshi)
+        continue-on-error: true
+        run: |
+          out=$(python edges.py --print 2>&1) || { echo "::warning::edges.py failed: $(echo "$out" | tail -3 | tr '\n' ' ')"; exit 1; }
+          echo "$out"; echo "::notice::$(echo "$out" | head -1)"
+      - name: Phone alert for new edges
+        if: ${{ vars.NTFY_TOPIC != '' && hashFiles('edges_push.txt') != '' }}
+        continue-on-error: true
+        run: |
+          n=$(wc -l < edges_push.txt); n=$((n + 1))
+          curl -sS -m 20 -H "Title: Line Room: $n new ilani edge(s)" -H "Tags: football" \
+            -H "Click: https://claude.ai/artifact/ADCCQBgq9bnZpS4WseTm2z" \
+            --data-binary @edges_push.txt "https://ntfy.sh/${{ vars.NTFY_TOPIC }}" > /dev/null
+      - run: bash commit.sh "Kalshi + ilani prices $(date -u +%FT%H:%MZ)" site/data/kalshi.json site/data/ilani.json data/kalshi_close data/edges site/data/edges.json
