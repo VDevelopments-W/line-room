@@ -15,10 +15,10 @@
 "gid": "2026_08_ARI_DAL",
 "hrs_before": 43.0,
 "last": {
-"edge": 0.0067,
-"fair": 0.535,
-"odds": -112,
-"t": "2026-10-31T19:23:10Z"
+"edge": 0.0131,
+"fair": 0.53,
+"odds": -107,
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 10,
 "open": true,
@@ -47,7 +47,7 @@
 "edge": -0.055,
 "fair": 0.445,
 "odds": 100,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 20,
 "open": false,
@@ -73,10 +73,10 @@
 "gid": "2026_08_BAL_BUF",
 "hrs_before": 24.6,
 "last": {
-"edge": 0.0326,
-"fair": 0.25,
+"edge": 0.0226,
+"fair": 0.24,
 "odds": 360,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 110,
 "open": true,
@@ -102,10 +102,10 @@
 "gid": "2026_08_BAL_BUF",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.0,
-"fair": 0.495,
+"edge": -0.01,
+"fair": 0.485,
 "odds": 102,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 3,
 "open": false,
@@ -140,6 +140,35 @@
 "open": false,
 "player": "Khalil Shakir",
 "side": "under",
+"source": "live",
+"start": "2026-11-01T18:00:00Z",
+"stat": "receptions"
+},
+"2026_08_BAL_BUF|Zay Flowers|receptions|10|over": {
+"best": {
+"edge": 0.0339,
+"fair": 0.145,
+"odds": 800,
+"t": "2026-10-31T22:44:35Z"
+},
+"first": {
+"edge": 0.0339,
+"fair": 0.145,
+"odds": 800,
+"t": "2026-10-31T22:44:35Z"
+},
+"gid": "2026_08_BAL_BUF",
+"hrs_before": 19.3,
+"last": {
+"edge": 0.0339,
+"fair": 0.145,
+"odds": 800,
+"t": "2026-10-31T22:44:35Z"
+},
+"line": 10,
+"open": true,
+"player": "Zay Flowers",
+"side": "over",
 "source": "live",
 "start": "2026-11-01T18:00:00Z",
 "stat": "receptions"
@@ -218,13 +247,13 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 79.8,
 "last": {
-"edge": 0.0045,
-"fair": 0.43,
+"edge": -0.0005,
+"fair": 0.425,
 "odds": 135,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 250,
-"open": true,
+"open": false,
 "player": "Sam Darnold",
 "side": "over",
 "source": "live",
@@ -247,10 +276,10 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 64.4,
 "last": {
-"edge": 0.0183,
-"fair": 0.3,
+"edge": 0.0083,
+"fair": 0.29,
 "odds": 255,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 275,
 "open": true,
@@ -279,7 +308,7 @@
 "edge": 0.0174,
 "fair": 0.25,
 "odds": 330,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 70,
 "open": true,
@@ -308,7 +337,7 @@
 "edge": -0.045,
 "fair": 0.455,
 "odds": 100,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 8,
 "open": false,
@@ -334,10 +363,10 @@
 "gid": "2026_08_CLE_PIT",
 "hrs_before": 26.8,
 "last": {
-"edge": 0.03,
-"fair": 0.525,
-"odds": 102,
-"t": "2026-10-31T19:23:10Z"
+"edge": 0.0017,
+"fair": 0.53,
+"odds": -112,
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 3,
 "open": true,
@@ -366,7 +395,7 @@
 "edge": -0.0406,
 "fair": 0.515,
 "odds": -125,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 30,
 "open": false,
@@ -392,10 +421,10 @@
 "gid": "2026_08_CLE_PIT",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.0224,
-"fair": 0.355,
+"edge": -0.0174,
+"fair": 0.36,
 "odds": 165,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 40,
 "open": false,
@@ -424,7 +453,7 @@
 "edge": -0.0042,
 "fair": 0.515,
 "odds": -108,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 2,
 "open": false,
@@ -453,7 +482,7 @@
 "edge": -0.0272,
 "fair": 0.365,
 "odds": 155,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 40,
 "open": false,
@@ -479,10 +508,10 @@
 "gid": "2026_08_IND_JAX",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.01,
-"fair": 0.24,
+"edge": -0.015,
+"fair": 0.235,
 "odds": 300,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 50,
 "open": false,
@@ -491,6 +520,64 @@
 "source": "live",
 "start": "2026-11-01T18:00:00Z",
 "stat": "rushing_yards"
+},
+"2026_08_IND_JAX|Travis Hunter|receptions|3|over": {
+"best": {
+"edge": 0.0323,
+"fair": 0.34,
+"odds": 225,
+"t": "2026-10-31T22:44:35Z"
+},
+"first": {
+"edge": 0.0323,
+"fair": 0.34,
+"odds": 225,
+"t": "2026-10-31T22:44:35Z"
+},
+"gid": "2026_08_IND_JAX",
+"hrs_before": 19.3,
+"last": {
+"edge": 0.0323,
+"fair": 0.34,
+"odds": 225,
+"t": "2026-10-31T22:44:35Z"
+},
+"line": 3,
+"open": true,
+"player": "Travis Hunter",
+"side": "over",
+"source": "live",
+"start": "2026-11-01T18:00:00Z",
+"stat": "receptions"
+},
+"2026_08_IND_JAX|Travis Hunter|receptions|4|over": {
+"best": {
+"edge": 0.0321,
+"fair": 0.175,
+"odds": 600,
+"t": "2026-10-31T22:44:35Z"
+},
+"first": {
+"edge": 0.0321,
+"fair": 0.175,
+"odds": 600,
+"t": "2026-10-31T22:44:35Z"
+},
+"gid": "2026_08_IND_JAX",
+"hrs_before": 19.3,
+"last": {
+"edge": 0.0321,
+"fair": 0.175,
+"odds": 600,
+"t": "2026-10-31T22:44:35Z"
+},
+"line": 4,
+"open": true,
+"player": "Travis Hunter",
+"side": "over",
+"source": "live",
+"start": "2026-11-01T18:00:00Z",
+"stat": "receptions"
 },
 "2026_08_KC_DEN|Jonah Coleman|receiving_yards|20|over": {
 "best": {
@@ -508,10 +595,10 @@
 "gid": "2026_08_KC_DEN",
 "hrs_before": 89.7,
 "last": {
-"edge": -0.0535,
-"fair": 0.535,
+"edge": -0.0335,
+"fair": 0.555,
 "odds": -143,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 20,
 "open": false,
@@ -566,10 +653,10 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 36.3,
 "last": {
-"edge": -0.0059,
-"fair": 0.345,
-"odds": 185,
-"t": "2026-10-31T19:23:10Z"
+"edge": -0.0048,
+"fair": 0.34,
+"odds": 190,
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 60,
 "open": false,
@@ -595,10 +682,10 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 46.1,
 "last": {
-"edge": -0.0203,
-"fair": 0.215,
-"odds": 325,
-"t": "2026-10-31T19:23:10Z"
+"edge": -0.0323,
+"fair": 0.195,
+"odds": 340,
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 70,
 "open": false,
@@ -627,7 +714,7 @@
 "edge": 0.0015,
 "fair": 0.59,
 "odds": -143,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 3,
 "open": true,
@@ -653,10 +740,10 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 27.6,
 "last": {
-"edge": 0.0318,
-"fair": 0.285,
-"odds": 295,
-"t": "2026-10-31T19:23:10Z"
+"edge": 0.006,
+"fair": 0.28,
+"odds": 265,
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 80,
 "open": true,
@@ -682,10 +769,10 @@
 "gid": "2026_08_LV_NYJ",
 "hrs_before": 24.6,
 "last": {
-"edge": 0.0417,
-"fair": 0.175,
+"edge": 0.0117,
+"fair": 0.145,
 "odds": 650,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 6,
 "open": true,
@@ -711,10 +798,10 @@
 "gid": "2026_08_MIN_DET",
 "hrs_before": 112.1,
 "last": {
-"edge": -0.0283,
-"fair": 0.5,
+"edge": -0.0333,
+"fair": 0.495,
 "odds": -112,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 225,
 "open": false,
@@ -723,6 +810,35 @@
 "source": "live",
 "start": "2026-11-01T18:00:00Z",
 "stat": "passing_yards"
+},
+"2026_08_NE_MIA|Chris Bell|receiving_yards|10|over": {
+"best": {
+"edge": 0.1367,
+"fair": 0.665,
+"odds": -112,
+"t": "2026-10-31T22:44:35Z"
+},
+"first": {
+"edge": 0.1367,
+"fair": 0.665,
+"odds": -112,
+"t": "2026-10-31T22:44:35Z"
+},
+"gid": "2026_08_NE_MIA",
+"hrs_before": 22.7,
+"last": {
+"edge": 0.1367,
+"fair": 0.665,
+"odds": -112,
+"t": "2026-10-31T22:44:35Z"
+},
+"line": 10,
+"open": true,
+"player": "Chris Bell",
+"side": "over",
+"source": "live",
+"start": "2026-11-01T21:25:00Z",
+"stat": "receiving_yards"
 },
 "2026_08_PHI_WAS|Jeremy McNichols|rushing_yards|30|over": {
 "best": {
@@ -743,7 +859,7 @@
 "edge": 0.0021,
 "fair": 0.33,
 "odds": 205,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 30,
 "open": true,
@@ -827,10 +943,10 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 29.9,
 "last": {
-"edge": 0.0331,
-"fair": 0.11,
+"edge": 0.0281,
+"fair": 0.105,
 "odds": 1200,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 8,
 "open": true,
@@ -856,10 +972,10 @@
 "gid": "2026_08_TEN_CIN",
 "hrs_before": 64.5,
 "last": {
-"edge": -0.0402,
+"edge": -0.0865,
 "fair": 0.615,
-"odds": -190,
-"t": "2026-10-31T19:23:10Z"
+"odds": -235,
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 14,
 "open": false,
@@ -885,13 +1001,13 @@
 "gid": "2026_08_TEN_CIN",
 "hrs_before": 66.6,
 "last": {
-"edge": 0.0076,
+"edge": -0.0232,
 "fair": 0.385,
-"odds": 165,
-"t": "2026-10-31T19:23:10Z"
+"odds": 145,
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 70,
-"open": true,
+"open": false,
 "player": "Chase Brown",
 "side": "over",
 "source": "live",
@@ -914,10 +1030,10 @@
 "gid": "2026_08_TEN_CIN",
 "hrs_before": 43.0,
 "last": {
-"edge": 0.0,
-"fair": 0.25,
+"edge": -0.005,
+"fair": 0.245,
 "odds": 300,
-"t": "2026-10-31T19:23:10Z"
+"t": "2026-10-31T22:44:35Z"
 },
 "line": 20,
 "open": false,
