@@ -21,7 +21,7 @@
 "t": "2026-10-31T08:48:03Z"
 },
 "line": 10,
-"open": true,
+"open": false,
 "player": "Jeremiyah Love",
 "side": "over",
 "source": "live",
@@ -44,10 +44,10 @@
 "gid": "2026_08_ATL_TB",
 "hrs_before": 79.4,
 "last": {
-"edge": -0.055,
+"edge": -0.0648,
 "fair": 0.445,
-"odds": 100,
-"t": "2026-10-31T08:48:03Z"
+"odds": -104,
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 20,
 "open": false,
@@ -73,10 +73,10 @@
 "gid": "2026_08_BAL_BUF",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.01,
-"fair": 0.49,
+"edge": -0.005,
+"fair": 0.495,
 "odds": 100,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 3,
 "open": false,
@@ -189,10 +189,10 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 79.8,
 "last": {
-"edge": 0.0318,
-"fair": 0.435,
+"edge": 0.0218,
+"fair": 0.425,
 "odds": 148,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 250,
 "open": true,
@@ -221,7 +221,7 @@
 "edge": 0.0318,
 "fair": 0.295,
 "odds": 280,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 275,
 "open": true,
@@ -247,10 +247,10 @@
 "gid": "2026_08_CLE_PIT",
 "hrs_before": 68.1,
 "last": {
-"edge": 0.0074,
-"fair": 0.24,
+"edge": 0.0174,
+"fair": 0.25,
 "odds": 330,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 70,
 "open": true,
@@ -279,7 +279,7 @@
 "edge": -0.045,
 "fair": 0.455,
 "odds": 100,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 8,
 "open": false,
@@ -288,6 +288,35 @@
 "source": "live",
 "start": "2026-11-01T18:00:00Z",
 "stat": "carries"
+},
+"2026_08_CLE_PIT|Rico Dowdle|receptions|3|under": {
+"best": {
+"edge": 0.03,
+"fair": 0.525,
+"odds": 102,
+"t": "2026-10-31T15:14:37Z"
+},
+"first": {
+"edge": 0.03,
+"fair": 0.525,
+"odds": 102,
+"t": "2026-10-31T15:14:37Z"
+},
+"gid": "2026_08_CLE_PIT",
+"hrs_before": 26.8,
+"last": {
+"edge": 0.03,
+"fair": 0.525,
+"odds": 102,
+"t": "2026-10-31T15:14:37Z"
+},
+"line": 3,
+"open": true,
+"player": "Rico Dowdle",
+"side": "under",
+"source": "live",
+"start": "2026-11-01T18:00:00Z",
+"stat": "receptions"
 },
 "2026_08_CLE_PIT|Rico Dowdle|rushing_yards|30|over": {
 "best": {
@@ -305,13 +334,13 @@
 "gid": "2026_08_CLE_PIT",
 "hrs_before": 68.1,
 "last": {
-"edge": 0.0002,
-"fair": 0.51,
+"edge": -0.0048,
+"fair": 0.505,
 "odds": -104,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 30,
-"open": true,
+"open": false,
 "player": "Rico Dowdle",
 "side": "over",
 "source": "live",
@@ -337,7 +366,7 @@
 "edge": 0.0117,
 "fair": 0.345,
 "odds": 200,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 40,
 "open": true,
@@ -363,13 +392,13 @@
 "gid": "2026_08_IND_JAX",
 "hrs_before": 39.5,
 "last": {
-"edge": 0.0277,
+"edge": -0.0148,
 "fair": 0.495,
-"odds": 114,
-"t": "2026-10-31T08:48:03Z"
+"odds": -104,
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 2,
-"open": true,
+"open": false,
 "player": "Brian Thomas Jr.",
 "side": "under",
 "source": "live",
@@ -395,7 +424,7 @@
 "edge": -0.0272,
 "fair": 0.365,
 "odds": 155,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 40,
 "open": false,
@@ -421,10 +450,10 @@
 "gid": "2026_08_IND_JAX",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.015,
-"fair": 0.235,
+"edge": -0.01,
+"fair": 0.24,
 "odds": 300,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 50,
 "open": false,
@@ -450,10 +479,10 @@
 "gid": "2026_08_KC_DEN",
 "hrs_before": 89.7,
 "last": {
-"edge": -0.0331,
-"fair": 0.545,
+"edge": -0.0431,
+"fair": 0.535,
 "odds": -137,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 20,
 "open": false,
@@ -494,10 +523,10 @@
 },
 "2026_08_LAC_LA|Blake Corum|rushing_yards|60|over": {
 "best": {
-"edge": 0.037,
-"fair": 0.34,
+"edge": 0.042,
+"fair": 0.345,
 "odds": 230,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "first": {
 "edge": 0.037,
@@ -508,10 +537,10 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 36.3,
 "last": {
-"edge": 0.037,
-"fair": 0.34,
+"edge": 0.042,
+"fair": 0.345,
 "odds": 230,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 60,
 "open": true,
@@ -537,10 +566,10 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 46.1,
 "last": {
-"edge": 0.0439,
-"fair": 0.24,
+"edge": 0.0189,
+"fair": 0.215,
 "odds": 410,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 70,
 "open": true,
@@ -566,13 +595,13 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 61.5,
 "last": {
-"edge": -0.0035,
-"fair": 0.585,
+"edge": 0.0015,
+"fair": 0.59,
 "odds": -143,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 3,
-"open": false,
+"open": true,
 "player": "Charlie Kolar",
 "side": "under",
 "source": "live",
@@ -598,7 +627,7 @@
 "edge": -0.0148,
 "fair": 0.495,
 "odds": -104,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 225,
 "open": false,
@@ -624,13 +653,13 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 73.9,
 "last": {
-"edge": -0.0033,
+"edge": 0.0021,
 "fair": 0.33,
-"odds": 200,
-"t": "2026-10-31T08:48:03Z"
+"odds": 205,
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 30,
-"open": false,
+"open": true,
 "player": "Jeremy McNichols",
 "side": "over",
 "source": "live",
@@ -659,7 +688,7 @@
 "t": "2026-10-31T08:48:03Z"
 },
 "line": 40,
-"open": true,
+"open": false,
 "player": "Jeremy McNichols",
 "side": "over",
 "source": "live",
@@ -682,13 +711,13 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 50.3,
 "last": {
-"edge": 0.0304,
-"fair": 0.545,
-"odds": -106,
-"t": "2026-10-31T08:48:03Z"
+"edge": -0.0083,
+"fair": 0.555,
+"odds": -129,
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 13,
-"open": true,
+"open": false,
 "player": "Rachaad White",
 "side": "under",
 "source": "live",
@@ -714,7 +743,7 @@
 "edge": -0.046,
 "fair": 0.615,
 "odds": -195,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 14,
 "open": false,
@@ -743,7 +772,7 @@
 "edge": -0.0074,
 "fair": 0.37,
 "odds": 165,
-"t": "2026-10-31T08:48:03Z"
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 70,
 "open": false,
@@ -769,10 +798,10 @@
 "gid": "2026_08_TEN_CIN",
 "hrs_before": 43.0,
 "last": {
-"edge": 0.0251,
-"fair": 0.255,
-"odds": 335,
-"t": "2026-10-31T08:48:03Z"
+"edge": 0.0177,
+"fair": 0.245,
+"odds": 340,
+"t": "2026-10-31T15:14:37Z"
 },
 "line": 20,
 "open": true,
