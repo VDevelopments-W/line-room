@@ -363,10 +363,10 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 79.8,
 "last": {
-"edge": 0.0095,
-"fair": 0.435,
+"edge": 0.0145,
+"fair": 0.44,
 "odds": 135,
-"t": "2026-11-01T20:26:10Z"
+"t": "2026-11-01T21:25:42Z"
 },
 "line": 250,
 "open": true,
@@ -392,10 +392,10 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 64.4,
 "last": {
-"edge": 0.0133,
-"fair": 0.295,
+"edge": 0.0183,
+"fair": 0.3,
 "odds": 255,
-"t": "2026-11-01T20:26:10Z"
+"t": "2026-11-01T21:25:42Z"
 },
 "line": 275,
 "open": true,
@@ -798,10 +798,10 @@
 "gid": "2026_08_KC_DEN",
 "hrs_before": 22.0,
 "last": {
-"edge": 0.0124,
+"edge": 0.0087,
 "fair": 0.585,
-"odds": -134,
-"t": "2026-11-01T20:26:10Z"
+"odds": -136,
+"t": "2026-11-01T21:25:42Z"
 },
 "line": 4,
 "open": true,
@@ -827,10 +827,10 @@
 "gid": "2026_08_KC_DEN",
 "hrs_before": 89.7,
 "last": {
-"edge": -0.0613,
+"edge": -0.0666,
 "fair": 0.515,
-"odds": -136,
-"t": "2026-11-01T20:26:10Z"
+"odds": -139,
+"t": "2026-11-01T21:25:42Z"
 },
 "line": 20,
 "open": false,
@@ -867,6 +867,35 @@
 "side": "under",
 "source": "live",
 "start": "2026-11-01T21:25:00Z",
+"stat": "receptions"
+},
+"2026_08_KC_DEN|Rashee Rice|receptions|5|under": {
+"best": {
+"edge": 0.0635,
+"fair": 0.585,
+"odds": -109,
+"t": "2026-11-01T21:25:42Z"
+},
+"first": {
+"edge": 0.0635,
+"fair": 0.585,
+"odds": -109,
+"t": "2026-11-01T21:25:42Z"
+},
+"gid": "2026_08_KC_DEN",
+"hrs_before": 0.1,
+"last": {
+"edge": 0.0635,
+"fair": 0.585,
+"odds": -109,
+"t": "2026-11-01T21:25:42Z"
+},
+"line": 5,
+"open": true,
+"player": "Rashee Rice",
+"side": "under",
+"source": "live",
+"start": "2026-11-01T21:30:00Z",
 "stat": "receptions"
 },
 "2026_08_LAC_LA|Blake Corum|rushing_yards|60|over": {
@@ -1091,7 +1120,7 @@
 "edge": 0.0212,
 "fair": 0.175,
 "odds": 550,
-"t": "2026-11-01T20:26:10Z"
+"t": "2026-11-01T21:25:42Z"
 },
 "line": 8,
 "open": true,
@@ -1120,7 +1149,7 @@
 "edge": 0.0024,
 "fair": 0.325,
 "odds": 210,
-"t": "2026-11-01T20:26:10Z"
+"t": "2026-11-01T21:25:42Z"
 },
 "line": 30,
 "open": true,
@@ -1204,10 +1233,10 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 7.9,
 "last": {
-"edge": 0.0353,
-"fair": 0.295,
+"edge": 0.0253,
+"fair": 0.285,
 "odds": 285,
-"t": "2026-11-01T20:26:10Z"
+"t": "2026-11-01T21:25:42Z"
 },
 "line": 60,
 "open": true,
@@ -1236,7 +1265,7 @@
 "edge": 0.0345,
 "fair": 0.565,
 "odds": -113,
-"t": "2026-11-01T20:26:10Z"
+"t": "2026-11-01T21:25:42Z"
 },
 "line": 50,
 "open": true,
@@ -1262,13 +1291,13 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 29.9,
 "last": {
-"edge": 0.0036,
-"fair": 0.075,
-"odds": 1300,
-"t": "2026-11-01T20:26:10Z"
+"edge": 0.0,
+"fair": 0.08,
+"odds": 1150,
+"t": "2026-11-01T21:25:42Z"
 },
 "line": 8,
-"open": true,
+"open": false,
 "player": "Stefon Diggs",
 "side": "over",
 "source": "live",
