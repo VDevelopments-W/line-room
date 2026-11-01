@@ -366,7 +366,7 @@
 "edge": 0.0095,
 "fair": 0.435,
 "odds": 135,
-"t": "2026-11-01T18:26:24Z"
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 250,
 "open": true,
@@ -392,10 +392,10 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 64.4,
 "last": {
-"edge": 0.0033,
-"fair": 0.285,
+"edge": 0.0083,
+"fair": 0.29,
 "odds": 255,
-"t": "2026-11-01T18:26:24Z"
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 275,
 "open": true,
@@ -798,10 +798,10 @@
 "gid": "2026_08_KC_DEN",
 "hrs_before": 22.0,
 "last": {
-"edge": -0.0266,
+"edge": -0.0176,
 "fair": 0.555,
-"odds": -139,
-"t": "2026-11-01T18:26:24Z"
+"odds": -134,
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 4,
 "open": false,
@@ -827,10 +827,10 @@
 "gid": "2026_08_KC_DEN",
 "hrs_before": 89.7,
 "last": {
-"edge": -0.0376,
+"edge": -0.0413,
 "fair": 0.535,
-"odds": -134,
-"t": "2026-11-01T18:26:24Z"
+"odds": -136,
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 20,
 "open": false,
@@ -888,7 +888,7 @@
 "edge": 0.006,
 "fair": 0.345,
 "odds": 195,
-"t": "2026-11-01T18:26:24Z"
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 60,
 "open": true,
@@ -917,7 +917,7 @@
 "edge": 0.0128,
 "fair": 0.235,
 "odds": 350,
-"t": "2026-11-01T18:26:24Z"
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 70,
 "open": true,
@@ -946,7 +946,7 @@
 "edge": -0.0233,
 "fair": 0.595,
 "odds": -162,
-"t": "2026-11-01T18:26:24Z"
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 3,
 "open": false,
@@ -975,7 +975,7 @@
 "edge": 0.0183,
 "fair": 0.285,
 "odds": 275,
-"t": "2026-11-01T18:26:24Z"
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 80,
 "open": true,
@@ -1091,7 +1091,7 @@
 "edge": 0.0312,
 "fair": 0.185,
 "odds": 550,
-"t": "2026-11-01T18:26:24Z"
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 8,
 "open": true,
@@ -1117,13 +1117,13 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 73.9,
 "last": {
-"edge": -0.0083,
+"edge": 0.0024,
 "fair": 0.325,
-"odds": 200,
-"t": "2026-11-01T18:26:24Z"
+"odds": 210,
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 30,
-"open": false,
+"open": true,
 "player": "Jeremy McNichols",
 "side": "over",
 "source": "live",
@@ -1204,15 +1204,44 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 7.9,
 "last": {
-"edge": 0.0511,
+"edge": 0.0353,
 "fair": 0.295,
-"odds": 310,
-"t": "2026-11-01T18:26:24Z"
+"odds": 285,
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 60,
 "open": true,
 "player": "Rachaad White",
 "side": "over",
+"source": "live",
+"start": "2026-11-02T01:20:00Z",
+"stat": "rushing_yards"
+},
+"2026_08_PHI_WAS|Saquon Barkley|rushing_yards|50|under": {
+"best": {
+"edge": 0.0351,
+"fair": 0.57,
+"odds": -115,
+"t": "2026-11-01T19:26:28Z"
+},
+"first": {
+"edge": 0.0351,
+"fair": 0.57,
+"odds": -115,
+"t": "2026-11-01T19:26:28Z"
+},
+"gid": "2026_08_PHI_WAS",
+"hrs_before": 5.9,
+"last": {
+"edge": 0.0351,
+"fair": 0.57,
+"odds": -115,
+"t": "2026-11-01T19:26:28Z"
+},
+"line": 50,
+"open": true,
+"player": "Saquon Barkley",
+"side": "under",
 "source": "live",
 "start": "2026-11-02T01:20:00Z",
 "stat": "rushing_yards"
@@ -1233,13 +1262,13 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 29.9,
 "last": {
-"edge": -0.0014,
-"fair": 0.07,
+"edge": 0.0036,
+"fair": 0.075,
 "odds": 1300,
-"t": "2026-11-01T18:26:24Z"
+"t": "2026-11-01T19:26:28Z"
 },
 "line": 8,
-"open": false,
+"open": true,
 "player": "Stefon Diggs",
 "side": "over",
 "source": "live",
