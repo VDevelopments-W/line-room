@@ -1,10 +1,10 @@
 {
 "2026_08_ARI_DAL|Jeremiyah Love|carries|10|over": {
 "best": {
-"edge": 0.0372,
-"fair": 0.525,
-"odds": 105,
-"t": "2026-10-30T23:00:21Z"
+"edge": 0.0795,
+"fair": 0.61,
+"odds": -113,
+"t": "2026-11-01T16:25:49Z"
 },
 "first": {
 "edge": 0.0372,
@@ -15,10 +15,10 @@
 "gid": "2026_08_ARI_DAL",
 "hrs_before": 43.0,
 "last": {
-"edge": 0.0075,
-"fair": 0.555,
-"odds": -121,
-"t": "2026-11-01T15:26:30Z"
+"edge": 0.0795,
+"fair": 0.61,
+"odds": -113,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 10,
 "open": true,
@@ -44,10 +44,10 @@
 "gid": "2026_08_ATL_TB",
 "hrs_before": 79.4,
 "last": {
-"edge": -0.0674,
-"fair": 0.44,
-"odds": -103,
-"t": "2026-11-01T15:26:30Z"
+"edge": -0.0646,
+"fair": 0.45,
+"odds": -106,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 20,
 "open": false,
@@ -76,7 +76,7 @@
 "edge": 0.0076,
 "fair": 0.225,
 "odds": 360,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 110,
 "open": true,
@@ -102,10 +102,10 @@
 "gid": "2026_08_BAL_BUF",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.01,
-"fair": 0.485,
-"odds": 102,
-"t": "2026-11-01T15:26:30Z"
+"edge": -0.005,
+"fair": 0.495,
+"odds": 100,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 3,
 "open": false,
@@ -131,10 +131,10 @@
 "gid": "2026_08_BAL_BUF",
 "hrs_before": 2.6,
 "last": {
-"edge": 0.03,
-"fair": 0.23,
-"odds": 400,
-"t": "2026-11-01T15:26:30Z"
+"edge": 0.0122,
+"fair": 0.225,
+"odds": 370,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 70,
 "open": true,
@@ -189,13 +189,13 @@
 "gid": "2026_08_BAL_BUF",
 "hrs_before": 9.8,
 "last": {
-"edge": -0.011,
+"edge": 0.0168,
 "fair": 0.42,
-"odds": 132,
-"t": "2026-11-01T15:26:30Z"
+"odds": 148,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 30,
-"open": false,
+"open": true,
 "player": "Rashod Bateman",
 "side": "over",
 "source": "live",
@@ -218,13 +218,13 @@
 "gid": "2026_08_BAL_BUF",
 "hrs_before": 9.8,
 "last": {
-"edge": -0.0049,
+"edge": 0.0183,
 "fair": 0.285,
-"odds": 245,
-"t": "2026-11-01T15:26:30Z"
+"odds": 275,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 40,
-"open": false,
+"open": true,
 "player": "Rashod Bateman",
 "side": "over",
 "source": "live",
@@ -247,10 +247,10 @@
 "gid": "2026_08_BAL_BUF",
 "hrs_before": 9.8,
 "last": {
-"edge": 0.015,
+"edge": 0.0118,
 "fair": 0.265,
-"odds": 300,
-"t": "2026-11-01T15:26:30Z"
+"odds": 295,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 120,
 "open": true,
@@ -279,7 +279,7 @@
 "edge": 0.0,
 "fair": 0.125,
 "odds": 700,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 10,
 "open": false,
@@ -366,7 +366,7 @@
 "edge": 0.0045,
 "fair": 0.43,
 "odds": 135,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 250,
 "open": true,
@@ -392,10 +392,10 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 64.4,
 "last": {
-"edge": 0.0083,
-"fair": 0.29,
+"edge": 0.0033,
+"fair": 0.285,
 "odds": 255,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 275,
 "open": true,
@@ -421,13 +421,13 @@
 "gid": "2026_08_CLE_PIT",
 "hrs_before": 68.1,
 "last": {
-"edge": -0.0026,
-"fair": 0.23,
+"edge": 0.0024,
+"fair": 0.235,
 "odds": 330,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 70,
-"open": false,
+"open": true,
 "player": "Quinshon Judkins",
 "side": "over",
 "source": "live",
@@ -453,7 +453,7 @@
 "edge": -0.0788,
 "fair": 0.445,
 "odds": -110,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 8,
 "open": false,
@@ -479,13 +479,13 @@
 "gid": "2026_08_CLE_PIT",
 "hrs_before": 26.8,
 "last": {
-"edge": 0.0176,
+"edge": -0.0245,
 "fair": 0.525,
-"odds": -103,
-"t": "2026-11-01T15:26:30Z"
+"odds": -122,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 3,
-"open": true,
+"open": false,
 "player": "Rico Dowdle",
 "side": "under",
 "source": "live",
@@ -508,10 +508,10 @@
 "gid": "2026_08_CLE_PIT",
 "hrs_before": 68.1,
 "last": {
-"edge": -0.064,
-"fair": 0.505,
+"edge": -0.084,
+"fair": 0.485,
 "odds": -132,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 30,
 "open": false,
@@ -537,10 +537,10 @@
 "gid": "2026_08_CLE_PIT",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.0222,
-"fair": 0.37,
+"edge": -0.0172,
+"fair": 0.375,
 "odds": 155,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 40,
 "open": false,
@@ -569,7 +569,7 @@
 "edge": -0.0473,
 "fair": 0.645,
 "odds": -225,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 2,
 "open": false,
@@ -595,10 +595,10 @@
 "gid": "2026_08_IND_JAX",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.04,
-"fair": 0.36,
+"edge": -0.035,
+"fair": 0.365,
 "odds": 150,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 40,
 "open": false,
@@ -624,10 +624,10 @@
 "gid": "2026_08_IND_JAX",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.005,
+"edge": -0.0082,
 "fair": 0.245,
-"odds": 300,
-"t": "2026-11-01T15:26:30Z"
+"odds": 295,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 50,
 "open": false,
@@ -656,7 +656,7 @@
 "edge": 0.0033,
 "fair": 0.285,
 "odds": 255,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 3,
 "open": true,
@@ -682,10 +682,10 @@
 "gid": "2026_08_IND_JAX",
 "hrs_before": 19.3,
 "last": {
-"edge": 0.02,
-"fair": 0.145,
+"edge": 0.03,
+"fair": 0.155,
 "odds": 700,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 4,
 "open": true,
@@ -714,7 +714,7 @@
 "edge": -0.0006,
 "fair": 0.555,
 "odds": -125,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 4,
 "open": false,
@@ -743,7 +743,7 @@
 "edge": -0.0613,
 "fair": 0.515,
 "odds": -136,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 20,
 "open": false,
@@ -798,10 +798,10 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 36.3,
 "last": {
-"edge": 0.0002,
+"edge": 0.006,
 "fair": 0.345,
-"odds": 190,
-"t": "2026-11-01T15:26:30Z"
+"odds": 195,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 60,
 "open": true,
@@ -827,10 +827,10 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 46.1,
 "last": {
-"edge": 0.0077,
+"edge": 0.0128,
 "fair": 0.235,
-"odds": 340,
-"t": "2026-11-01T15:26:30Z"
+"odds": 350,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 70,
 "open": true,
@@ -856,13 +856,13 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 61.5,
 "last": {
-"edge": -0.0018,
+"edge": 0.0065,
 "fair": 0.595,
-"odds": -148,
-"t": "2026-11-01T15:26:30Z"
+"odds": -143,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 3,
-"open": false,
+"open": true,
 "player": "Charlie Kolar",
 "side": "under",
 "source": "live",
@@ -885,10 +885,10 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 27.6,
 "last": {
-"edge": 0.011,
+"edge": 0.0183,
 "fair": 0.285,
-"odds": 265,
-"t": "2026-11-01T15:26:30Z"
+"odds": 275,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 80,
 "open": true,
@@ -914,13 +914,13 @@
 "gid": "2026_08_LV_NYJ",
 "hrs_before": 24.6,
 "last": {
-"edge": 0.0121,
+"edge": -0.0089,
 "fair": 0.155,
-"odds": 600,
-"t": "2026-11-01T15:26:30Z"
+"odds": 510,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 6,
-"open": true,
+"open": false,
 "player": "Omar Cooper Jr.",
 "side": "over",
 "source": "live",
@@ -943,10 +943,10 @@
 "gid": "2026_08_MIN_DET",
 "hrs_before": 112.1,
 "last": {
-"edge": -0.0096,
+"edge": -0.0072,
 "fair": 0.505,
-"odds": -106,
-"t": "2026-11-01T15:26:30Z"
+"odds": -105,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 225,
 "open": false,
@@ -1001,10 +1001,10 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 10.1,
 "last": {
-"edge": 0.0321,
-"fair": 0.175,
-"odds": 600,
-"t": "2026-11-01T15:26:30Z"
+"edge": 0.0312,
+"fair": 0.185,
+"odds": 550,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 8,
 "open": true,
@@ -1030,13 +1030,13 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 73.9,
 "last": {
-"edge": -0.014,
+"edge": 0.0024,
 "fair": 0.325,
-"odds": 195,
-"t": "2026-11-01T15:26:30Z"
+"odds": 210,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 30,
-"open": false,
+"open": true,
 "player": "Jeremy McNichols",
 "side": "over",
 "source": "live",
@@ -1065,7 +1065,7 @@
 "t": "2026-11-01T15:26:30Z"
 },
 "line": 40,
-"open": true,
+"open": false,
 "player": "Jeremy McNichols",
 "side": "over",
 "source": "live",
@@ -1117,13 +1117,13 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 29.9,
 "last": {
-"edge": -0.0014,
-"fair": 0.07,
+"edge": 0.0086,
+"fair": 0.08,
 "odds": 1300,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 8,
-"open": false,
+"open": true,
 "player": "Stefon Diggs",
 "side": "over",
 "source": "live",
@@ -1146,10 +1146,10 @@
 "gid": "2026_08_TEN_CIN",
 "hrs_before": 64.5,
 "last": {
-"edge": -0.1004,
+"edge": -0.1059,
 "fair": 0.635,
-"odds": -278,
-"t": "2026-11-01T15:26:30Z"
+"odds": -286,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 14,
 "open": false,
@@ -1175,10 +1175,10 @@
 "gid": "2026_08_TEN_CIN",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.036,
+"edge": -0.0436,
 "fair": 0.395,
-"odds": 132,
-"t": "2026-11-01T15:26:30Z"
+"odds": 128,
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 70,
 "open": false,
@@ -1207,7 +1207,7 @@
 "edge": -0.005,
 "fair": 0.245,
 "odds": 300,
-"t": "2026-11-01T15:26:30Z"
+"t": "2026-11-01T16:25:49Z"
 },
 "line": 20,
 "open": false,
