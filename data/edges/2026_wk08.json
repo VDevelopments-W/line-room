@@ -15,13 +15,13 @@
 "gid": "2026_08_ARI_DAL",
 "hrs_before": 43.0,
 "last": {
-"edge": 0.0031,
-"fair": 0.52,
-"odds": -107,
-"t": "2026-11-01T01:32:23Z"
+"edge": -0.0077,
+"fair": 0.525,
+"odds": -114,
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 10,
-"open": true,
+"open": false,
 "player": "Jeremiyah Love",
 "side": "over",
 "source": "live",
@@ -44,10 +44,10 @@
 "gid": "2026_08_ATL_TB",
 "hrs_before": 79.4,
 "last": {
-"edge": -0.075,
-"fair": 0.425,
+"edge": -0.065,
+"fair": 0.435,
 "odds": 100,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 20,
 "open": false,
@@ -73,10 +73,10 @@
 "gid": "2026_08_BAL_BUF",
 "hrs_before": 24.6,
 "last": {
-"edge": 0.0226,
-"fair": 0.24,
+"edge": 0.0276,
+"fair": 0.245,
 "odds": 360,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 110,
 "open": true,
@@ -102,10 +102,10 @@
 "gid": "2026_08_BAL_BUF",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.01,
-"fair": 0.485,
+"edge": -0.0,
+"fair": 0.495,
 "odds": 102,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 3,
 "open": false,
@@ -144,6 +144,93 @@
 "start": "2026-11-01T18:00:00Z",
 "stat": "receptions"
 },
+"2026_08_BAL_BUF|Rashod Bateman|receiving_yards|30|over": {
+"best": {
+"edge": 0.0328,
+"fair": 0.425,
+"odds": 155,
+"t": "2026-11-01T08:12:35Z"
+},
+"first": {
+"edge": 0.0328,
+"fair": 0.425,
+"odds": 155,
+"t": "2026-11-01T08:12:35Z"
+},
+"gid": "2026_08_BAL_BUF",
+"hrs_before": 9.8,
+"last": {
+"edge": 0.0328,
+"fair": 0.425,
+"odds": 155,
+"t": "2026-11-01T08:12:35Z"
+},
+"line": 30,
+"open": true,
+"player": "Rashod Bateman",
+"side": "over",
+"source": "live",
+"start": "2026-11-01T18:00:00Z",
+"stat": "receiving_yards"
+},
+"2026_08_BAL_BUF|Rashod Bateman|receiving_yards|40|over": {
+"best": {
+"edge": 0.0386,
+"fair": 0.295,
+"odds": 290,
+"t": "2026-11-01T08:12:35Z"
+},
+"first": {
+"edge": 0.0386,
+"fair": 0.295,
+"odds": 290,
+"t": "2026-11-01T08:12:35Z"
+},
+"gid": "2026_08_BAL_BUF",
+"hrs_before": 9.8,
+"last": {
+"edge": 0.0386,
+"fair": 0.295,
+"odds": 290,
+"t": "2026-11-01T08:12:35Z"
+},
+"line": 40,
+"open": true,
+"player": "Rashod Bateman",
+"side": "over",
+"source": "live",
+"start": "2026-11-01T18:00:00Z",
+"stat": "receiving_yards"
+},
+"2026_08_BAL_BUF|Zay Flowers|receiving_yards|120|over": {
+"best": {
+"edge": 0.0372,
+"fair": 0.25,
+"odds": 370,
+"t": "2026-11-01T08:12:35Z"
+},
+"first": {
+"edge": 0.0372,
+"fair": 0.25,
+"odds": 370,
+"t": "2026-11-01T08:12:35Z"
+},
+"gid": "2026_08_BAL_BUF",
+"hrs_before": 9.8,
+"last": {
+"edge": 0.0372,
+"fair": 0.25,
+"odds": 370,
+"t": "2026-11-01T08:12:35Z"
+},
+"line": 120,
+"open": true,
+"player": "Zay Flowers",
+"side": "over",
+"source": "live",
+"start": "2026-11-01T18:00:00Z",
+"stat": "receiving_yards"
+},
 "2026_08_BAL_BUF|Zay Flowers|receptions|10|over": {
 "best": {
 "edge": 0.0339,
@@ -160,10 +247,10 @@
 "gid": "2026_08_BAL_BUF",
 "hrs_before": 19.3,
 "last": {
-"edge": 0.0139,
+"edge": 0.0197,
 "fair": 0.125,
-"odds": 800,
-"t": "2026-11-01T01:32:23Z"
+"odds": 850,
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 10,
 "open": true,
@@ -247,10 +334,10 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 79.8,
 "last": {
-"edge": -0.0005,
-"fair": 0.425,
+"edge": -0.0055,
+"fair": 0.42,
 "odds": 135,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 250,
 "open": false,
@@ -276,10 +363,10 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 64.4,
 "last": {
-"edge": 0.0133,
-"fair": 0.295,
+"edge": 0.0033,
+"fair": 0.285,
 "odds": 255,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 275,
 "open": true,
@@ -305,10 +392,10 @@
 "gid": "2026_08_CLE_PIT",
 "hrs_before": 68.1,
 "last": {
-"edge": 0.0174,
-"fair": 0.25,
+"edge": 0.0124,
+"fair": 0.245,
 "odds": 330,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 70,
 "open": true,
@@ -337,7 +424,7 @@
 "edge": -0.045,
 "fair": 0.455,
 "odds": 100,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 8,
 "open": false,
@@ -366,7 +453,7 @@
 "edge": -0.0033,
 "fair": 0.525,
 "odds": -112,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 3,
 "open": false,
@@ -392,10 +479,10 @@
 "gid": "2026_08_CLE_PIT",
 "hrs_before": 68.1,
 "last": {
-"edge": -0.0406,
-"fair": 0.515,
+"edge": -0.0256,
+"fair": 0.53,
 "odds": -125,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 30,
 "open": false,
@@ -424,7 +511,7 @@
 "edge": -0.0174,
 "fair": 0.36,
 "odds": 165,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 40,
 "open": false,
@@ -450,10 +537,10 @@
 "gid": "2026_08_IND_JAX",
 "hrs_before": 39.5,
 "last": {
-"edge": -0.0042,
+"edge": -0.0065,
 "fair": 0.515,
-"odds": -108,
-"t": "2026-11-01T01:32:23Z"
+"odds": -109,
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 2,
 "open": false,
@@ -479,10 +566,10 @@
 "gid": "2026_08_IND_JAX",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.0272,
-"fair": 0.365,
+"edge": -0.0372,
+"fair": 0.355,
 "odds": 155,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 40,
 "open": false,
@@ -511,7 +598,7 @@
 "edge": -0.015,
 "fair": 0.235,
 "odds": 300,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 50,
 "open": false,
@@ -537,10 +624,10 @@
 "gid": "2026_08_IND_JAX",
 "hrs_before": 19.3,
 "last": {
-"edge": 0.0223,
-"fair": 0.33,
-"odds": 225,
-"t": "2026-11-01T01:32:23Z"
+"edge": 0.017,
+"fair": 0.32,
+"odds": 230,
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 3,
 "open": true,
@@ -566,10 +653,10 @@
 "gid": "2026_08_IND_JAX",
 "hrs_before": 19.3,
 "last": {
-"edge": 0.0371,
-"fair": 0.18,
+"edge": 0.0271,
+"fair": 0.17,
 "odds": 600,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 4,
 "open": true,
@@ -595,10 +682,10 @@
 "gid": "2026_08_KC_DEN",
 "hrs_before": 22.0,
 "last": {
-"edge": 0.0419,
-"fair": 0.525,
-"odds": 107,
-"t": "2026-11-01T01:32:23Z"
+"edge": 0.0135,
+"fair": 0.535,
+"odds": -109,
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 4,
 "open": true,
@@ -624,10 +711,10 @@
 "gid": "2026_08_KC_DEN",
 "hrs_before": 89.7,
 "last": {
-"edge": -0.0435,
-"fair": 0.545,
-"odds": -143,
-"t": "2026-11-01T01:32:23Z"
+"edge": -0.0918,
+"fair": 0.505,
+"odds": -148,
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 20,
 "open": false,
@@ -685,7 +772,7 @@
 "edge": -0.0048,
 "fair": 0.34,
 "odds": 190,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 60,
 "open": false,
@@ -711,13 +798,13 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 46.1,
 "last": {
-"edge": -0.0323,
-"fair": 0.195,
+"edge": 0.0077,
+"fair": 0.235,
 "odds": 340,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 70,
-"open": false,
+"open": true,
 "player": "Blake Corum",
 "side": "over",
 "source": "live",
@@ -740,10 +827,10 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 61.5,
 "last": {
-"edge": -0.0035,
+"edge": -0.0118,
 "fair": 0.585,
-"odds": -143,
-"t": "2026-11-01T01:32:23Z"
+"odds": -148,
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 3,
 "open": false,
@@ -769,13 +856,13 @@
 "gid": "2026_08_LAC_LA",
 "hrs_before": 27.6,
 "last": {
-"edge": 0.006,
-"fair": 0.28,
+"edge": -0.004,
+"fair": 0.27,
 "odds": 265,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 80,
-"open": true,
+"open": false,
 "player": "Kyren Williams",
 "side": "over",
 "source": "live",
@@ -798,10 +885,10 @@
 "gid": "2026_08_LV_NYJ",
 "hrs_before": 24.6,
 "last": {
-"edge": 0.0117,
-"fair": 0.145,
+"edge": 0.0167,
+"fair": 0.15,
 "odds": 650,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 6,
 "open": true,
@@ -830,7 +917,7 @@
 "edge": -0.0233,
 "fair": 0.505,
 "odds": -112,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 225,
 "open": false,
@@ -885,13 +972,13 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 73.9,
 "last": {
-"edge": -0.0029,
-"fair": 0.325,
+"edge": 0.0021,
+"fair": 0.33,
 "odds": 205,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 30,
-"open": false,
+"open": true,
 "player": "Jeremy McNichols",
 "side": "over",
 "source": "live",
@@ -972,10 +1059,10 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 29.9,
 "last": {
-"edge": 0.0081,
-"fair": 0.085,
+"edge": 0.0031,
+"fair": 0.08,
 "odds": 1200,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 8,
 "open": true,
@@ -1001,10 +1088,10 @@
 "gid": "2026_08_TEN_CIN",
 "hrs_before": 64.5,
 "last": {
-"edge": -0.0565,
-"fair": 0.645,
+"edge": -0.0765,
+"fair": 0.625,
 "odds": -235,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 14,
 "open": false,
@@ -1030,10 +1117,10 @@
 "gid": "2026_08_TEN_CIN",
 "hrs_before": 66.6,
 "last": {
-"edge": -0.0232,
-"fair": 0.385,
+"edge": -0.0132,
+"fair": 0.395,
 "odds": 145,
-"t": "2026-11-01T01:32:23Z"
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 70,
 "open": false,
@@ -1059,10 +1146,10 @@
 "gid": "2026_08_TEN_CIN",
 "hrs_before": 43.0,
 "last": {
-"edge": -0.005,
-"fair": 0.245,
-"odds": 300,
-"t": "2026-11-01T01:32:23Z"
+"edge": -0.0182,
+"fair": 0.235,
+"odds": 295,
+"t": "2026-11-01T08:12:35Z"
 },
 "line": 20,
 "open": false,
