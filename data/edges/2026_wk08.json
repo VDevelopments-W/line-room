@@ -363,13 +363,13 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 79.8,
 "last": {
-"edge": 0.0145,
+"edge": -0.0084,
 "fair": 0.44,
-"odds": 135,
-"t": "2026-11-01T21:25:42Z"
+"odds": 123,
+"t": "2026-11-01T22:25:53Z"
 },
 "line": 250,
-"open": true,
+"open": false,
 "player": "Sam Darnold",
 "side": "over",
 "source": "live",
@@ -392,13 +392,13 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 64.4,
 "last": {
-"edge": 0.0183,
+"edge": -0.0077,
 "fair": 0.3,
-"odds": 255,
-"t": "2026-11-01T21:25:42Z"
+"odds": 225,
+"t": "2026-11-01T22:25:53Z"
 },
 "line": 275,
-"open": true,
+"open": false,
 "player": "Sam Darnold",
 "side": "over",
 "source": "live",
@@ -1120,7 +1120,7 @@
 "edge": 0.0212,
 "fair": 0.175,
 "odds": 550,
-"t": "2026-11-01T21:25:42Z"
+"t": "2026-11-01T22:25:53Z"
 },
 "line": 8,
 "open": true,
@@ -1149,7 +1149,7 @@
 "edge": 0.0024,
 "fair": 0.325,
 "odds": 210,
-"t": "2026-11-01T21:25:42Z"
+"t": "2026-11-01T22:25:53Z"
 },
 "line": 30,
 "open": true,
@@ -1236,7 +1236,7 @@
 "edge": 0.0253,
 "fair": 0.285,
 "odds": 285,
-"t": "2026-11-01T21:25:42Z"
+"t": "2026-11-01T22:25:53Z"
 },
 "line": 60,
 "open": true,
@@ -1268,7 +1268,7 @@
 "t": "2026-11-01T21:25:42Z"
 },
 "line": 50,
-"open": true,
+"open": false,
 "player": "Saquon Barkley",
 "side": "under",
 "source": "live",
@@ -1291,10 +1291,10 @@
 "gid": "2026_08_PHI_WAS",
 "hrs_before": 29.9,
 "last": {
-"edge": 0.0,
-"fair": 0.08,
+"edge": -0.005,
+"fair": 0.075,
 "odds": 1150,
-"t": "2026-11-01T21:25:42Z"
+"t": "2026-11-01T22:25:53Z"
 },
 "line": 8,
 "open": false,
