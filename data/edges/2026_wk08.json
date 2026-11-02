@@ -363,13 +363,13 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 79.8,
 "last": {
-"edge": 0.0058,
+"edge": -0.0036,
 "fair": 0.435,
-"odds": 133,
-"t": "2026-11-02T18:26:54Z"
+"odds": 128,
+"t": "2026-11-02T20:51:37Z"
 },
 "line": 250,
-"open": true,
+"open": false,
 "player": "Sam Darnold",
 "side": "over",
 "source": "live",
@@ -392,10 +392,10 @@
 "gid": "2026_08_CHI_SEA",
 "hrs_before": 64.4,
 "last": {
-"edge": 0.0193,
+"edge": 0.0109,
 "fair": 0.305,
-"odds": 250,
-"t": "2026-11-02T18:26:54Z"
+"odds": 240,
+"t": "2026-11-02T20:51:37Z"
 },
 "line": 275,
 "open": true,
