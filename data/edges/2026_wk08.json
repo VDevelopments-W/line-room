@@ -366,7 +366,7 @@
 "edge": -0.0036,
 "fair": 0.435,
 "odds": 128,
-"t": "2026-11-02T20:51:37Z"
+"t": "2026-11-03T00:25:57Z"
 },
 "line": 250,
 "open": false,
@@ -395,7 +395,7 @@
 "edge": 0.0109,
 "fair": 0.305,
 "odds": 240,
-"t": "2026-11-02T20:51:37Z"
+"t": "2026-11-03T00:25:57Z"
 },
 "line": 275,
 "open": true,
@@ -404,6 +404,35 @@
 "source": "live",
 "start": "2026-11-03T01:15:00Z",
 "stat": "passing_yards"
+},
+"2026_08_CHI_SEA|Zach Charbonnet|receptions|3|over": {
+"best": {
+"edge": 0.0311,
+"fair": 0.205,
+"odds": 475,
+"t": "2026-11-03T00:25:57Z"
+},
+"first": {
+"edge": 0.0311,
+"fair": 0.205,
+"odds": 475,
+"t": "2026-11-03T00:25:57Z"
+},
+"gid": "2026_08_CHI_SEA",
+"hrs_before": 0.8,
+"last": {
+"edge": 0.0311,
+"fair": 0.205,
+"odds": 475,
+"t": "2026-11-03T00:25:57Z"
+},
+"line": 3,
+"open": true,
+"player": "Zach Charbonnet",
+"side": "over",
+"source": "live",
+"start": "2026-11-03T01:15:00Z",
+"stat": "receptions"
 },
 "2026_08_CLE_PIT|Quinshon Judkins|rushing_yards|70|over": {
 "best": {
