@@ -1,10 +1,10 @@
 {
 "2026_09_JAX_BAL|Justice Hill|receiving_yards|20|over": {
 "best": {
-"edge": 0.0302,
-"fair": 0.375,
-"odds": 190,
-"t": "2026-11-04T14:07:31Z"
+"edge": 0.031,
+"fair": 0.37,
+"odds": 195,
+"t": "2026-11-04T18:25:53Z"
 },
 "first": {
 "edge": 0.0302,
@@ -15,10 +15,10 @@
 "gid": "2026_09_JAX_BAL",
 "hrs_before": 35.1,
 "last": {
-"edge": 0.0302,
-"fair": 0.375,
-"odds": 190,
-"t": "2026-11-04T14:07:31Z"
+"edge": 0.031,
+"fair": 0.37,
+"odds": 195,
+"t": "2026-11-04T18:25:53Z"
 },
 "line": 20,
 "open": true,
