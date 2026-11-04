@@ -1,4 +1,120 @@
 {
+"2026_09_GB_NE|Drake Maye|passing_yards|225|over": {
+"best": {
+"edge": 0.0376,
+"fair": 0.545,
+"odds": -103,
+"t": "2026-11-04T23:27:53Z"
+},
+"first": {
+"edge": 0.0376,
+"fair": 0.545,
+"odds": -103,
+"t": "2026-11-04T23:27:53Z"
+},
+"gid": "2026_09_GB_NE",
+"hrs_before": 94.0,
+"last": {
+"edge": 0.0376,
+"fair": 0.545,
+"odds": -103,
+"t": "2026-11-04T23:27:53Z"
+},
+"line": 225,
+"open": true,
+"player": "Drake Maye",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T21:25:00Z",
+"stat": "passing_yards"
+},
+"2026_09_GB_NE|Drake Maye|passing_yards|250|over": {
+"best": {
+"edge": 0.0478,
+"fair": 0.395,
+"odds": 188,
+"t": "2026-11-04T23:27:53Z"
+},
+"first": {
+"edge": 0.0478,
+"fair": 0.395,
+"odds": 188,
+"t": "2026-11-04T23:27:53Z"
+},
+"gid": "2026_09_GB_NE",
+"hrs_before": 94.0,
+"last": {
+"edge": 0.0478,
+"fair": 0.395,
+"odds": 188,
+"t": "2026-11-04T23:27:53Z"
+},
+"line": 250,
+"open": true,
+"player": "Drake Maye",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T21:25:00Z",
+"stat": "passing_yards"
+},
+"2026_09_GB_NE|Jordan Love|passing_yards|275|over": {
+"best": {
+"edge": 0.0383,
+"fair": 0.51,
+"odds": 112,
+"t": "2026-11-04T23:27:53Z"
+},
+"first": {
+"edge": 0.0383,
+"fair": 0.51,
+"odds": 112,
+"t": "2026-11-04T23:27:53Z"
+},
+"gid": "2026_09_GB_NE",
+"hrs_before": 94.0,
+"last": {
+"edge": 0.0383,
+"fair": 0.51,
+"odds": 112,
+"t": "2026-11-04T23:27:53Z"
+},
+"line": 275,
+"open": true,
+"player": "Jordan Love",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T21:25:00Z",
+"stat": "passing_yards"
+},
+"2026_09_GB_NE|Jordan Love|passing_yards|300|over": {
+"best": {
+"edge": 0.0367,
+"fair": 0.37,
+"odds": 200,
+"t": "2026-11-04T23:27:53Z"
+},
+"first": {
+"edge": 0.0367,
+"fair": 0.37,
+"odds": 200,
+"t": "2026-11-04T23:27:53Z"
+},
+"gid": "2026_09_GB_NE",
+"hrs_before": 94.0,
+"last": {
+"edge": 0.0367,
+"fair": 0.37,
+"odds": 200,
+"t": "2026-11-04T23:27:53Z"
+},
+"line": 300,
+"open": true,
+"player": "Jordan Love",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T21:25:00Z",
+"stat": "passing_yards"
+},
 "2026_09_JAX_BAL|Justice Hill|receiving_yards|20|over": {
 "best": {
 "edge": 0.031,
@@ -15,10 +131,10 @@
 "gid": "2026_09_JAX_BAL",
 "hrs_before": 35.1,
 "last": {
-"edge": 0.031,
+"edge": 0.0129,
 "fair": 0.37,
-"odds": 195,
-"t": "2026-11-04T18:25:53Z"
+"odds": 180,
+"t": "2026-11-04T23:27:53Z"
 },
 "line": 20,
 "open": true,
@@ -27,5 +143,34 @@
 "source": "live",
 "start": "2026-11-06T01:15:00Z",
 "stat": "receiving_yards"
+},
+"2026_09_JAX_BAL|Trevor Lawrence|passing_yards|275|over": {
+"best": {
+"edge": 0.0368,
+"fair": 0.29,
+"odds": 295,
+"t": "2026-11-04T23:27:53Z"
+},
+"first": {
+"edge": 0.0368,
+"fair": 0.29,
+"odds": 295,
+"t": "2026-11-04T23:27:53Z"
+},
+"gid": "2026_09_JAX_BAL",
+"hrs_before": 25.8,
+"last": {
+"edge": 0.0368,
+"fair": 0.29,
+"odds": 295,
+"t": "2026-11-04T23:27:53Z"
+},
+"line": 275,
+"open": true,
+"player": "Trevor Lawrence",
+"side": "over",
+"source": "live",
+"start": "2026-11-06T01:15:00Z",
+"stat": "passing_yards"
 }
 }
