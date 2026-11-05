@@ -15,13 +15,13 @@
 "gid": "2026_09_CLE_NO",
 "hrs_before": 86.0,
 "last": {
-"edge": 0.0316,
+"edge": -0.0078,
 "fair": 0.48,
-"odds": 123,
-"t": "2026-11-05T12:35:36Z"
+"odds": 105,
+"t": "2026-11-05T18:26:14Z"
 },
 "line": 2,
-"open": true,
+"open": false,
 "player": "Tyler Shough",
 "side": "over",
 "source": "live",
@@ -44,10 +44,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0376,
-"fair": 0.545,
-"odds": -103,
-"t": "2026-11-05T12:35:36Z"
+"edge": 0.035,
+"fair": 0.53,
+"odds": 102,
+"t": "2026-11-05T18:26:14Z"
 },
 "line": 225,
 "open": true,
@@ -73,10 +73,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0378,
-"fair": 0.385,
-"odds": 188,
-"t": "2026-11-05T12:35:36Z"
+"edge": 0.021,
+"fair": 0.36,
+"odds": 195,
+"t": "2026-11-05T18:26:14Z"
 },
 "line": 250,
 "open": true,
@@ -108,7 +108,7 @@
 "t": "2026-11-05T12:35:36Z"
 },
 "line": 275,
-"open": true,
+"open": false,
 "player": "Drake Maye",
 "side": "over",
 "source": "live",
@@ -131,13 +131,13 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0033,
+"edge": -0.0152,
 "fair": 0.475,
-"odds": 112,
-"t": "2026-11-05T12:35:36Z"
+"odds": 104,
+"t": "2026-11-05T18:26:14Z"
 },
 "line": 275,
-"open": true,
+"open": false,
 "player": "Jordan Love",
 "side": "over",
 "source": "live",
@@ -160,10 +160,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0217,
-"fair": 0.355,
-"odds": 200,
-"t": "2026-11-05T12:35:36Z"
+"edge": 0.0091,
+"fair": 0.36,
+"odds": 185,
+"t": "2026-11-05T18:26:14Z"
 },
 "line": 300,
 "open": true,
@@ -172,6 +172,35 @@
 "source": "live",
 "start": "2026-11-08T21:25:00Z",
 "stat": "passing_yards"
+},
+"2026_09_JAX_BAL|Derrick Henry|carries|18|under": {
+"best": {
+"edge": 0.0412,
+"fair": 0.565,
+"odds": -110,
+"t": "2026-11-05T18:26:14Z"
+},
+"first": {
+"edge": 0.0412,
+"fair": 0.565,
+"odds": -110,
+"t": "2026-11-05T18:26:14Z"
+},
+"gid": "2026_09_JAX_BAL",
+"hrs_before": 6.8,
+"last": {
+"edge": 0.0412,
+"fair": 0.565,
+"odds": -110,
+"t": "2026-11-05T18:26:14Z"
+},
+"line": 18,
+"open": true,
+"player": "Derrick Henry",
+"side": "under",
+"source": "live",
+"start": "2026-11-06T01:15:00Z",
+"stat": "carries"
 },
 "2026_09_JAX_BAL|Derrick Henry|receptions|2|under": {
 "best": {
@@ -189,25 +218,54 @@
 "gid": "2026_09_JAX_BAL",
 "hrs_before": 12.7,
 "last": {
-"edge": 0.0601,
-"fair": 0.595,
-"odds": -115,
-"t": "2026-11-05T12:35:36Z"
+"edge": -0.0614,
+"fair": 0.575,
+"odds": -175,
+"t": "2026-11-05T18:26:14Z"
 },
 "line": 2,
-"open": true,
+"open": false,
 "player": "Derrick Henry",
 "side": "under",
 "source": "live",
 "start": "2026-11-06T01:15:00Z",
 "stat": "receptions"
 },
+"2026_09_JAX_BAL|Joe Fagnano|passing_yards|175|over": {
+"best": {
+"edge": 0.0428,
+"fair": 0.435,
+"odds": 155,
+"t": "2026-11-05T18:26:14Z"
+},
+"first": {
+"edge": 0.0428,
+"fair": 0.435,
+"odds": 155,
+"t": "2026-11-05T18:26:14Z"
+},
+"gid": "2026_09_JAX_BAL",
+"hrs_before": 6.8,
+"last": {
+"edge": 0.0428,
+"fair": 0.435,
+"odds": 155,
+"t": "2026-11-05T18:26:14Z"
+},
+"line": 175,
+"open": true,
+"player": "Joe Fagnano",
+"side": "over",
+"source": "live",
+"start": "2026-11-06T01:15:00Z",
+"stat": "passing_yards"
+},
 "2026_09_JAX_BAL|Joe Fagnano|passing_yards|200|over": {
 "best": {
-"edge": 0.0411,
-"fair": 0.285,
-"odds": 310,
-"t": "2026-11-05T12:35:36Z"
+"edge": 0.045,
+"fair": 0.295,
+"odds": 300,
+"t": "2026-11-05T18:26:14Z"
 },
 "first": {
 "edge": 0.0411,
@@ -218,10 +276,10 @@
 "gid": "2026_09_JAX_BAL",
 "hrs_before": 12.7,
 "last": {
-"edge": 0.0411,
-"fair": 0.285,
-"odds": 310,
-"t": "2026-11-05T12:35:36Z"
+"edge": 0.045,
+"fair": 0.295,
+"odds": 300,
+"t": "2026-11-05T18:26:14Z"
 },
 "line": 200,
 "open": true,
@@ -247,13 +305,13 @@
 "gid": "2026_09_JAX_BAL",
 "hrs_before": 35.1,
 "last": {
-"edge": 0.0441,
+"edge": -0.0252,
 "fair": 0.395,
-"odds": 185,
-"t": "2026-11-05T12:35:36Z"
+"odds": 138,
+"t": "2026-11-05T18:26:14Z"
 },
 "line": 20,
-"open": true,
+"open": false,
 "player": "Justice Hill",
 "side": "over",
 "source": "live",
@@ -276,13 +334,13 @@
 "gid": "2026_09_JAX_BAL",
 "hrs_before": 12.7,
 "last": {
-"edge": 0.0413,
+"edge": -0.02,
 "fair": 0.23,
-"odds": 430,
-"t": "2026-11-05T12:35:36Z"
+"odds": 300,
+"t": "2026-11-05T18:26:14Z"
 },
 "line": 30,
-"open": true,
+"open": false,
 "player": "Justice Hill",
 "side": "over",
 "source": "live",
@@ -305,10 +363,10 @@
 "gid": "2026_09_JAX_BAL",
 "hrs_before": 12.7,
 "last": {
-"edge": 0.0333,
-"fair": 0.505,
-"odds": 112,
-"t": "2026-11-05T12:35:36Z"
+"edge": 0.0199,
+"fair": 0.485,
+"odds": 115,
+"t": "2026-11-05T18:26:14Z"
 },
 "line": 20,
 "open": true,
@@ -334,10 +392,10 @@
 "gid": "2026_09_JAX_BAL",
 "hrs_before": 25.8,
 "last": {
-"edge": 0.0118,
-"fair": 0.275,
+"edge": 0.0168,
+"fair": 0.28,
 "odds": 280,
-"t": "2026-11-05T12:35:36Z"
+"t": "2026-11-05T18:26:14Z"
 },
 "line": 275,
 "open": true,
@@ -345,6 +403,93 @@
 "side": "over",
 "source": "live",
 "start": "2026-11-06T01:15:00Z",
+"stat": "passing_yards"
+},
+"2026_09_LV_SF|Ashton Jeanty|rushing_yards|30|over": {
+"best": {
+"edge": 0.0388,
+"fair": 0.515,
+"odds": 110,
+"t": "2026-11-05T18:26:14Z"
+},
+"first": {
+"edge": 0.0388,
+"fair": 0.515,
+"odds": 110,
+"t": "2026-11-05T18:26:14Z"
+},
+"gid": "2026_09_LV_SF",
+"hrs_before": 75.0,
+"last": {
+"edge": 0.0388,
+"fair": 0.515,
+"odds": 110,
+"t": "2026-11-05T18:26:14Z"
+},
+"line": 30,
+"open": true,
+"player": "Ashton Jeanty",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T21:25:00Z",
+"stat": "rushing_yards"
+},
+"2026_09_LV_SF|Ashton Jeanty|rushing_yards|40|over": {
+"best": {
+"edge": 0.0325,
+"fair": 0.345,
+"odds": 220,
+"t": "2026-11-05T18:26:14Z"
+},
+"first": {
+"edge": 0.0325,
+"fair": 0.345,
+"odds": 220,
+"t": "2026-11-05T18:26:14Z"
+},
+"gid": "2026_09_LV_SF",
+"hrs_before": 75.0,
+"last": {
+"edge": 0.0325,
+"fair": 0.345,
+"odds": 220,
+"t": "2026-11-05T18:26:14Z"
+},
+"line": 40,
+"open": true,
+"player": "Ashton Jeanty",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T21:25:00Z",
+"stat": "rushing_yards"
+},
+"2026_09_LV_SF|Brock Purdy|passing_yards|250|over": {
+"best": {
+"edge": 0.0388,
+"fair": 0.515,
+"odds": 110,
+"t": "2026-11-05T18:26:14Z"
+},
+"first": {
+"edge": 0.0388,
+"fair": 0.515,
+"odds": 110,
+"t": "2026-11-05T18:26:14Z"
+},
+"gid": "2026_09_LV_SF",
+"hrs_before": 75.0,
+"last": {
+"edge": 0.0388,
+"fair": 0.515,
+"odds": 110,
+"t": "2026-11-05T18:26:14Z"
+},
+"line": 250,
+"open": true,
+"player": "Brock Purdy",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T21:25:00Z",
 "stat": "passing_yards"
 }
 }
