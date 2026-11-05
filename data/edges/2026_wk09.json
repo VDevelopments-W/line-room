@@ -1,10 +1,39 @@
 {
+"2026_09_CLE_NO|Tyler Shough|passing_tds|2|over": {
+"best": {
+"edge": 0.0316,
+"fair": 0.48,
+"odds": 123,
+"t": "2026-11-05T04:00:53Z"
+},
+"first": {
+"edge": 0.0316,
+"fair": 0.48,
+"odds": 123,
+"t": "2026-11-05T04:00:53Z"
+},
+"gid": "2026_09_CLE_NO",
+"hrs_before": 86.0,
+"last": {
+"edge": 0.0316,
+"fair": 0.48,
+"odds": 123,
+"t": "2026-11-05T04:00:53Z"
+},
+"line": 2,
+"open": true,
+"player": "Tyler Shough",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T18:00:00Z",
+"stat": "passing_tds"
+},
 "2026_09_GB_NE|Drake Maye|passing_yards|225|over": {
 "best": {
-"edge": 0.0376,
-"fair": 0.545,
+"edge": 0.0426,
+"fair": 0.55,
 "odds": -103,
-"t": "2026-11-04T23:27:53Z"
+"t": "2026-11-05T04:00:53Z"
 },
 "first": {
 "edge": 0.0376,
@@ -15,10 +44,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0376,
-"fair": 0.545,
+"edge": 0.0426,
+"fair": 0.55,
 "odds": -103,
-"t": "2026-11-05T00:26:36Z"
+"t": "2026-11-05T04:00:53Z"
 },
 "line": 225,
 "open": true,
@@ -44,10 +73,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0328,
-"fair": 0.38,
+"edge": 0.0278,
+"fair": 0.375,
 "odds": 188,
-"t": "2026-11-05T00:26:36Z"
+"t": "2026-11-05T04:00:53Z"
 },
 "line": 250,
 "open": true,
@@ -73,10 +102,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0383,
-"fair": 0.51,
+"edge": 0.0283,
+"fair": 0.5,
 "odds": 112,
-"t": "2026-11-05T00:26:36Z"
+"t": "2026-11-05T04:00:53Z"
 },
 "line": 275,
 "open": true,
@@ -102,10 +131,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0367,
-"fair": 0.37,
+"edge": 0.0317,
+"fair": 0.365,
 "odds": 200,
-"t": "2026-11-05T00:26:36Z"
+"t": "2026-11-05T04:00:53Z"
 },
 "line": 300,
 "open": true,
@@ -131,10 +160,10 @@
 "gid": "2026_09_JAX_BAL",
 "hrs_before": 35.1,
 "last": {
-"edge": 0.0129,
-"fair": 0.37,
+"edge": 0.0279,
+"fair": 0.385,
 "odds": 180,
-"t": "2026-11-05T00:26:36Z"
+"t": "2026-11-05T04:00:53Z"
 },
 "line": 20,
 "open": true,
@@ -160,10 +189,10 @@
 "gid": "2026_09_JAX_BAL",
 "hrs_before": 25.8,
 "last": {
-"edge": 0.0368,
+"edge": 0.0336,
 "fair": 0.29,
-"odds": 295,
-"t": "2026-11-05T00:26:36Z"
+"odds": 290,
+"t": "2026-11-05T04:00:53Z"
 },
 "line": 275,
 "open": true,
