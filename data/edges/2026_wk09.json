@@ -18,7 +18,7 @@
 "edge": 0.0328,
 "fair": 0.425,
 "odds": 155,
-"t": "2026-11-06T18:26:40Z"
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 225,
 "open": true,
@@ -30,10 +30,10 @@
 },
 "2026_09_BUF_MIN|Carson Wentz|passing_yards|250|over": {
 "best": {
-"edge": 0.04,
-"fair": 0.29,
+"edge": 0.045,
+"fair": 0.295,
 "odds": 300,
-"t": "2026-11-06T18:26:40Z"
+"t": "2026-11-06T20:37:27Z"
 },
 "first": {
 "edge": 0.04,
@@ -44,14 +44,43 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 78.8,
 "last": {
-"edge": 0.04,
-"fair": 0.29,
+"edge": 0.045,
+"fair": 0.295,
 "odds": 300,
-"t": "2026-11-06T18:26:40Z"
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 250,
 "open": true,
 "player": "Carson Wentz",
+"side": "over",
+"source": "live",
+"start": "2026-11-10T01:15:00Z",
+"stat": "passing_yards"
+},
+"2026_09_BUF_MIN|Josh Allen|passing_yards|275|over": {
+"best": {
+"edge": 0.0561,
+"fair": 0.3,
+"odds": 310,
+"t": "2026-11-06T20:37:27Z"
+},
+"first": {
+"edge": 0.0561,
+"fair": 0.3,
+"odds": 310,
+"t": "2026-11-06T20:37:27Z"
+},
+"gid": "2026_09_BUF_MIN",
+"hrs_before": 76.6,
+"last": {
+"edge": 0.0561,
+"fair": 0.3,
+"odds": 310,
+"t": "2026-11-06T20:37:27Z"
+},
+"line": 275,
+"open": true,
+"player": "Josh Allen",
 "side": "over",
 "source": "live",
 "start": "2026-11-10T01:15:00Z",
@@ -73,10 +102,10 @@
 "gid": "2026_09_CLE_NO",
 "hrs_before": 86.0,
 "last": {
-"edge": -0.0078,
-"fair": 0.48,
+"edge": -0.0228,
+"fair": 0.465,
 "odds": 105,
-"t": "2026-11-06T18:26:40Z"
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 2,
 "open": false,
@@ -102,10 +131,10 @@
 "gid": "2026_09_DAL_IND",
 "hrs_before": 47.6,
 "last": {
-"edge": 0.0314,
-"fair": 0.585,
+"edge": 0.0264,
+"fair": 0.58,
 "odds": -124,
-"t": "2026-11-06T18:26:40Z"
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 30,
 "open": true,
@@ -160,10 +189,10 @@
 "gid": "2026_09_DET_MIA",
 "hrs_before": 65.6,
 "last": {
-"edge": 0.0181,
+"edge": 0.0228,
 "fair": 0.535,
-"odds": -107,
-"t": "2026-11-06T18:26:40Z"
+"odds": -105,
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 17,
 "open": true,
@@ -189,10 +218,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": -0.0077,
-"fair": 0.525,
+"edge": -0.0027,
+"fair": 0.53,
 "odds": -114,
-"t": "2026-11-06T18:26:40Z"
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 225,
 "open": false,
@@ -218,10 +247,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0096,
-"fair": 0.38,
+"edge": 0.0246,
+"fair": 0.395,
 "odds": 170,
-"t": "2026-11-06T18:26:40Z"
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 250,
 "open": true,
@@ -250,7 +279,7 @@
 "edge": 0.0169,
 "fair": 0.255,
 "odds": 320,
-"t": "2026-11-06T18:26:40Z"
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 275,
 "open": true,
@@ -279,7 +308,7 @@
 "edge": 0.005,
 "fair": 0.5,
 "odds": 102,
-"t": "2026-11-06T18:26:40Z"
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 275,
 "open": true,
@@ -305,10 +334,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0141,
-"fair": 0.365,
+"edge": 0.0191,
+"fair": 0.37,
 "odds": 185,
-"t": "2026-11-06T18:26:40Z"
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 300,
 "open": true,
@@ -579,6 +608,35 @@
 "start": "2026-11-06T01:15:00Z",
 "stat": "passing_yards"
 },
+"2026_09_LA_WAS|Kyren Williams|rushing_yards|60|over": {
+"best": {
+"edge": 0.0322,
+"fair": 0.52,
+"odds": 105,
+"t": "2026-11-06T20:37:27Z"
+},
+"first": {
+"edge": 0.0322,
+"fair": 0.52,
+"odds": 105,
+"t": "2026-11-06T20:37:27Z"
+},
+"gid": "2026_09_LA_WAS",
+"hrs_before": 45.4,
+"last": {
+"edge": 0.0322,
+"fair": 0.52,
+"odds": 105,
+"t": "2026-11-06T20:37:27Z"
+},
+"line": 60,
+"open": true,
+"player": "Kyren Williams",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T18:00:00Z",
+"stat": "rushing_yards"
+},
 "2026_09_LA_WAS|Kyren Williams|rushing_yards|70|over": {
 "best": {
 "edge": 0.0329,
@@ -595,10 +653,10 @@
 "gid": "2026_09_LA_WAS",
 "hrs_before": 47.6,
 "last": {
-"edge": 0.0329,
-"fair": 0.39,
+"edge": 0.0279,
+"fair": 0.385,
 "odds": 180,
-"t": "2026-11-06T18:26:40Z"
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 70,
 "open": true,
@@ -610,10 +668,10 @@
 },
 "2026_09_LA_WAS|Kyren Williams|rushing_yards|80|over": {
 "best": {
-"edge": 0.04,
+"edge": 0.0461,
 "fair": 0.29,
-"odds": 300,
-"t": "2026-11-06T18:26:40Z"
+"odds": 310,
+"t": "2026-11-06T20:37:27Z"
 },
 "first": {
 "edge": 0.04,
@@ -624,10 +682,10 @@
 "gid": "2026_09_LA_WAS",
 "hrs_before": 47.6,
 "last": {
-"edge": 0.04,
+"edge": 0.0461,
 "fair": 0.29,
-"odds": 300,
-"t": "2026-11-06T18:26:40Z"
+"odds": 310,
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 80,
 "open": true,
@@ -653,10 +711,10 @@
 "gid": "2026_09_LV_SF",
 "hrs_before": 69.0,
 "last": {
-"edge": -0.0002,
-"fair": 0.42,
-"odds": 138,
-"t": "2026-11-06T18:26:40Z"
+"edge": -0.0094,
+"fair": 0.435,
+"odds": 125,
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 10,
 "open": false,
@@ -665,6 +723,35 @@
 "source": "live",
 "start": "2026-11-08T21:25:00Z",
 "stat": "carries"
+},
+"2026_09_LV_SF|Ashton Jeanty|receiving_yards|30|over": {
+"best": {
+"edge": 0.035,
+"fair": 0.635,
+"odds": -150,
+"t": "2026-11-06T20:37:27Z"
+},
+"first": {
+"edge": 0.035,
+"fair": 0.635,
+"odds": -150,
+"t": "2026-11-06T20:37:27Z"
+},
+"gid": "2026_09_LV_SF",
+"hrs_before": 48.8,
+"last": {
+"edge": 0.035,
+"fair": 0.635,
+"odds": -150,
+"t": "2026-11-06T20:37:27Z"
+},
+"line": 30,
+"open": true,
+"player": "Ashton Jeanty",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T21:25:00Z",
+"stat": "receiving_yards"
 },
 "2026_09_LV_SF|Ashton Jeanty|rushing_yards|30|over": {
 "best": {
@@ -682,10 +769,10 @@
 "gid": "2026_09_LV_SF",
 "hrs_before": 75.0,
 "last": {
-"edge": -0.0683,
-"fair": 0.495,
-"odds": -129,
-"t": "2026-11-06T18:26:40Z"
+"edge": -0.0851,
+"fair": 0.5,
+"odds": -141,
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 30,
 "open": false,
@@ -711,10 +798,10 @@
 "gid": "2026_09_LV_SF",
 "hrs_before": 75.0,
 "last": {
-"edge": -0.0546,
+"edge": -0.0782,
 "fair": 0.33,
-"odds": 160,
-"t": "2026-11-06T18:26:40Z"
+"odds": 145,
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 40,
 "open": false,
@@ -740,17 +827,75 @@
 "gid": "2026_09_LV_SF",
 "hrs_before": 75.0,
 "last": {
-"edge": 0.0277,
+"edge": -0.0172,
 "fair": 0.495,
-"odds": 114,
-"t": "2026-11-06T18:26:40Z"
+"odds": -105,
+"t": "2026-11-06T20:37:27Z"
 },
 "line": 250,
-"open": true,
+"open": false,
 "player": "Brock Purdy",
 "side": "over",
 "source": "live",
 "start": "2026-11-08T21:25:00Z",
 "stat": "passing_yards"
+},
+"2026_09_NYJ_KC|Patrick Mahomes|carries|4|under": {
+"best": {
+"edge": 0.0376,
+"fair": 0.545,
+"odds": -103,
+"t": "2026-11-06T20:37:27Z"
+},
+"first": {
+"edge": 0.0376,
+"fair": 0.545,
+"odds": -103,
+"t": "2026-11-06T20:37:27Z"
+},
+"gid": "2026_09_NYJ_KC",
+"hrs_before": 45.4,
+"last": {
+"edge": 0.0376,
+"fair": 0.545,
+"odds": -103,
+"t": "2026-11-06T20:37:27Z"
+},
+"line": 4,
+"open": true,
+"player": "Patrick Mahomes",
+"side": "under",
+"source": "live",
+"start": "2026-11-08T18:00:00Z",
+"stat": "carries"
+},
+"2026_09_TB_CHI|D'Andre Swift|carries|17|under": {
+"best": {
+"edge": 0.0508,
+"fair": 0.57,
+"odds": -108,
+"t": "2026-11-06T20:37:27Z"
+},
+"first": {
+"edge": 0.0508,
+"fair": 0.57,
+"odds": -108,
+"t": "2026-11-06T20:37:27Z"
+},
+"gid": "2026_09_TB_CHI",
+"hrs_before": 52.7,
+"last": {
+"edge": 0.0508,
+"fair": 0.57,
+"odds": -108,
+"t": "2026-11-06T20:37:27Z"
+},
+"line": 17,
+"open": true,
+"player": "D'Andre Swift",
+"side": "under",
+"source": "live",
+"start": "2026-11-09T01:20:00Z",
+"stat": "carries"
 }
 }
