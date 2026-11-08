@@ -1,4 +1,33 @@
 {
+"2026_09_ARI_SEA|Jadarian Price|receiving_yards|20|over": {
+"best": {
+"edge": 0.0311,
+"fair": 0.275,
+"odds": 310,
+"t": "2026-11-08T08:00:17Z"
+},
+"first": {
+"edge": 0.0311,
+"fair": 0.275,
+"odds": 310,
+"t": "2026-11-08T08:00:17Z"
+},
+"gid": "2026_09_ARI_SEA",
+"hrs_before": 13.4,
+"last": {
+"edge": 0.0311,
+"fair": 0.275,
+"odds": 310,
+"t": "2026-11-08T08:00:17Z"
+},
+"line": 20,
+"open": true,
+"player": "Jadarian Price",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T21:25:00Z",
+"stat": "receiving_yards"
+},
 "2026_09_BUF_MIN|Carson Wentz|passing_yards|225|over": {
 "best": {
 "edge": 0.0328,
@@ -15,10 +44,10 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 78.8,
 "last": {
-"edge": 0.005,
-"fair": 0.405,
+"edge": 0.015,
+"fair": 0.415,
 "odds": 150,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 225,
 "open": true,
@@ -47,7 +76,7 @@
 "edge": 0.0286,
 "fair": 0.285,
 "odds": 290,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 250,
 "open": true,
@@ -76,7 +105,7 @@
 "edge": -0.0301,
 "fair": 0.555,
 "odds": -141,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 4,
 "open": false,
@@ -105,7 +134,7 @@
 "edge": 0.0303,
 "fair": 0.29,
 "odds": 285,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 275,
 "open": true,
@@ -131,13 +160,13 @@
 "gid": "2026_09_CIN_ATL",
 "hrs_before": 32.0,
 "last": {
-"edge": 0.005,
-"fair": 0.405,
+"edge": -0.005,
+"fair": 0.395,
 "odds": 150,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 10,
-"open": true,
+"open": false,
 "player": "Austin Hooper",
 "side": "over",
 "source": "live",
@@ -171,6 +200,35 @@
 "side": "under",
 "source": "live",
 "start": "2026-11-08T14:30:00Z",
+"stat": "receptions"
+},
+"2026_09_CLE_NO|Chris Olave|receptions|7|under": {
+"best": {
+"edge": 0.0311,
+"fair": 0.645,
+"odds": -159,
+"t": "2026-11-08T08:00:17Z"
+},
+"first": {
+"edge": 0.0311,
+"fair": 0.645,
+"odds": -159,
+"t": "2026-11-08T08:00:17Z"
+},
+"gid": "2026_09_CLE_NO",
+"hrs_before": 10.0,
+"last": {
+"edge": 0.0311,
+"fair": 0.645,
+"odds": -159,
+"t": "2026-11-08T08:00:17Z"
+},
+"line": 7,
+"open": true,
+"player": "Chris Olave",
+"side": "under",
+"source": "live",
+"start": "2026-11-08T18:00:00Z",
 "stat": "receptions"
 },
 "2026_09_CLE_NO|Kendre Miller|carries|12|over": {
@@ -224,7 +282,7 @@
 "t": "2026-11-08T01:30:54Z"
 },
 "line": 20,
-"open": true,
+"open": false,
 "player": "Shedeur Sanders",
 "side": "under",
 "source": "live",
@@ -247,10 +305,10 @@
 "gid": "2026_09_CLE_NO",
 "hrs_before": 86.0,
 "last": {
-"edge": -0.025,
-"fair": 0.475,
-"odds": 100,
-"t": "2026-11-08T01:30:54Z"
+"edge": -0.0202,
+"fair": 0.47,
+"odds": 104,
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 2,
 "open": false,
@@ -276,10 +334,10 @@
 "gid": "2026_09_DAL_IND",
 "hrs_before": 23.7,
 "last": {
-"edge": -0.022,
-"fair": 0.675,
+"edge": -0.072,
+"fair": 0.625,
 "odds": -230,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 40,
 "open": false,
@@ -305,10 +363,10 @@
 "gid": "2026_09_DAL_IND",
 "hrs_before": 23.7,
 "last": {
-"edge": -0.0416,
+"edge": -0.0381,
 "fair": 0.54,
-"odds": -139,
-"t": "2026-11-08T01:30:54Z"
+"odds": -137,
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 50,
 "open": false,
@@ -334,10 +392,10 @@
 "gid": "2026_09_DAL_IND",
 "hrs_before": 23.7,
 "last": {
-"edge": -0.0062,
-"fair": 0.47,
+"edge": -0.0112,
+"fair": 0.465,
 "odds": 110,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 60,
 "open": false,
@@ -421,10 +479,10 @@
 "gid": "2026_09_DET_MIA",
 "hrs_before": 65.6,
 "last": {
-"edge": -0.0149,
-"fair": 0.52,
-"odds": -115,
-"t": "2026-11-08T01:30:54Z"
+"edge": -0.0142,
+"fair": 0.525,
+"odds": -117,
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 17,
 "open": false,
@@ -433,6 +491,35 @@
 "source": "live",
 "start": "2026-11-08T18:00:00Z",
 "stat": "carries"
+},
+"2026_09_DET_MIA|Sam LaPorta|receiving_yards|60|over": {
+"best": {
+"edge": 0.0314,
+"fair": 0.395,
+"odds": 175,
+"t": "2026-11-08T08:00:17Z"
+},
+"first": {
+"edge": 0.0314,
+"fair": 0.395,
+"odds": 175,
+"t": "2026-11-08T08:00:17Z"
+},
+"gid": "2026_09_DET_MIA",
+"hrs_before": 10.0,
+"last": {
+"edge": 0.0314,
+"fair": 0.395,
+"odds": 175,
+"t": "2026-11-08T08:00:17Z"
+},
+"line": 60,
+"open": true,
+"player": "Sam LaPorta",
+"side": "over",
+"source": "live",
+"start": "2026-11-08T18:00:00Z",
+"stat": "receiving_yards"
 },
 "2026_09_DET_MIA|Sione Vaki|rushing_yards|20|under": {
 "best": {
@@ -479,10 +566,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0112,
-"fair": 0.535,
+"edge": 0.0062,
+"fair": 0.53,
 "odds": -110,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 225,
 "open": true,
@@ -508,10 +595,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 94.0,
 "last": {
-"edge": 0.0264,
-"fair": 0.39,
+"edge": 0.0164,
+"fair": 0.38,
 "odds": 175,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 250,
 "open": true,
@@ -537,10 +624,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 80.8,
 "last": {
-"edge": 0.0247,
-"fair": 0.26,
+"edge": 0.0297,
+"fair": 0.265,
 "odds": 325,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 275,
 "open": true,
@@ -569,7 +656,7 @@
 "edge": 0.0188,
 "fair": 0.495,
 "odds": 110,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 275,
 "open": true,
@@ -598,7 +685,7 @@
 "edge": 0.0317,
 "fair": 0.365,
 "odds": 200,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 300,
 "open": true,
@@ -624,10 +711,10 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 21.0,
 "last": {
-"edge": 0.0326,
-"fair": 0.25,
+"edge": 0.0276,
+"fair": 0.245,
 "odds": 360,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 325,
 "open": true,
@@ -653,13 +740,13 @@
 "gid": "2026_09_GB_NE",
 "hrs_before": 21.0,
 "last": {
-"edge": 0.0349,
-"fair": 0.62,
-"odds": -141,
-"t": "2026-11-08T01:30:54Z"
+"edge": -0.0033,
+"fair": 0.615,
+"odds": -162,
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 2,
-"open": true,
+"open": false,
 "player": "Kyle Williams",
 "side": "under",
 "source": "live",
@@ -943,10 +1030,10 @@
 "gid": "2026_09_LA_WAS",
 "hrs_before": 45.4,
 "last": {
-"edge": -0.0249,
-"fair": 0.51,
+"edge": -0.0299,
+"fair": 0.505,
 "odds": -115,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 60,
 "open": false,
@@ -972,10 +1059,10 @@
 "gid": "2026_09_LA_WAS",
 "hrs_before": 47.6,
 "last": {
-"edge": 0.0,
-"fair": 0.4,
+"edge": -0.005,
+"fair": 0.395,
 "odds": 150,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 70,
 "open": false,
@@ -1001,10 +1088,10 @@
 "gid": "2026_09_LA_WAS",
 "hrs_before": 47.6,
 "last": {
-"edge": 0.0183,
-"fair": 0.3,
+"edge": 0.0133,
+"fair": 0.295,
 "odds": 255,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 80,
 "open": true,
@@ -1033,7 +1120,7 @@
 "edge": 0.0277,
 "fair": 0.22,
 "odds": 420,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 90,
 "open": true,
@@ -1059,10 +1146,10 @@
 "gid": "2026_09_LV_SF",
 "hrs_before": 69.0,
 "last": {
-"edge": -0.0117,
-"fair": 0.405,
+"edge": -0.0017,
+"fair": 0.415,
 "odds": 140,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 10,
 "open": false,
@@ -1088,13 +1175,13 @@
 "gid": "2026_09_LV_SF",
 "hrs_before": 48.8,
 "last": {
-"edge": 0.0111,
-"fair": 0.625,
+"edge": -0.0189,
+"fair": 0.595,
 "odds": -159,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 30,
-"open": true,
+"open": false,
 "player": "Ashton Jeanty",
 "side": "over",
 "source": "live",
@@ -1117,10 +1204,10 @@
 "gid": "2026_09_LV_SF",
 "hrs_before": 75.0,
 "last": {
-"edge": -0.0596,
-"fair": 0.455,
+"edge": -0.0696,
+"fair": 0.445,
 "odds": -106,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 30,
 "open": false,
@@ -1146,10 +1233,10 @@
 "gid": "2026_09_LV_SF",
 "hrs_before": 75.0,
 "last": {
-"edge": -0.034,
-"fair": 0.305,
+"edge": -0.024,
+"fair": 0.315,
 "odds": 195,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 40,
 "open": false,
@@ -1175,10 +1262,10 @@
 "gid": "2026_09_LV_SF",
 "hrs_before": 75.0,
 "last": {
-"edge": -0.0372,
-"fair": 0.475,
+"edge": -0.0472,
+"fair": 0.465,
 "odds": -105,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 250,
 "open": false,
@@ -1207,7 +1294,7 @@
 "edge": 0.0219,
 "fair": 0.17,
 "odds": 575,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 4,
 "open": true,
@@ -1233,13 +1320,13 @@
 "gid": "2026_09_NYJ_KC",
 "hrs_before": 45.4,
 "last": {
-"edge": -0.0206,
-"fair": 0.535,
-"odds": -125,
-"t": "2026-11-08T01:30:54Z"
+"edge": 0.0005,
+"fair": 0.55,
+"odds": -122,
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 4,
-"open": false,
+"open": true,
 "player": "Patrick Mahomes",
 "side": "under",
 "source": "live",
@@ -1262,10 +1349,10 @@
 "gid": "2026_09_NYJ_KC",
 "hrs_before": 23.7,
 "last": {
-"edge": -0.0185,
-"fair": 0.57,
+"edge": -0.0085,
+"fair": 0.58,
 "odds": -143,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 10,
 "open": false,
@@ -1320,10 +1407,10 @@
 "gid": "2026_09_TB_CHI",
 "hrs_before": 48.9,
 "last": {
-"edge": 0.0145,
-"fair": 0.205,
+"edge": 0.0195,
+"fair": 0.21,
 "odds": 425,
-"t": "2026-11-08T01:30:54Z"
+"t": "2026-11-08T08:00:17Z"
 },
 "line": 40,
 "open": true,
