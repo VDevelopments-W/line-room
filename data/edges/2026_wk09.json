@@ -47,7 +47,7 @@
 "edge": 0.015,
 "fair": 0.415,
 "odds": 150,
-"t": "2026-11-08T22:26:16Z"
+"t": "2026-11-08T23:25:58Z"
 },
 "line": 225,
 "open": true,
@@ -73,10 +73,10 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 78.8,
 "last": {
-"edge": 0.0236,
-"fair": 0.28,
+"edge": 0.0136,
+"fair": 0.27,
 "odds": 290,
-"t": "2026-11-08T22:26:16Z"
+"t": "2026-11-08T23:25:58Z"
 },
 "line": 250,
 "open": true,
@@ -105,7 +105,7 @@
 "edge": -0.0401,
 "fair": 0.545,
 "odds": -141,
-"t": "2026-11-08T22:26:16Z"
+"t": "2026-11-08T23:25:58Z"
 },
 "line": 4,
 "open": false,
@@ -134,7 +134,7 @@
 "edge": 0.035,
 "fair": 0.435,
 "odds": 150,
-"t": "2026-11-08T22:26:16Z"
+"t": "2026-11-08T23:25:58Z"
 },
 "line": 250,
 "open": true,
@@ -163,7 +163,7 @@
 "edge": 0.0303,
 "fair": 0.29,
 "odds": 285,
-"t": "2026-11-08T22:26:16Z"
+"t": "2026-11-08T23:25:58Z"
 },
 "line": 275,
 "open": true,
@@ -1671,7 +1671,7 @@
 "edge": 0.0099,
 "fair": 0.475,
 "odds": 115,
-"t": "2026-11-08T22:26:16Z"
+"t": "2026-11-08T23:25:58Z"
 },
 "line": 4,
 "open": true,
@@ -1697,14 +1697,43 @@
 "gid": "2026_09_TB_CHI",
 "hrs_before": 48.9,
 "last": {
-"edge": 0.0077,
-"fair": 0.2,
-"odds": 420,
-"t": "2026-11-08T22:26:16Z"
+"edge": 0.0163,
+"fair": 0.205,
+"odds": 430,
+"t": "2026-11-08T23:25:58Z"
 },
 "line": 40,
 "open": true,
 "player": "Kenny Gainwell",
+"side": "over",
+"source": "live",
+"start": "2026-11-09T01:20:00Z",
+"stat": "rushing_yards"
+},
+"2026_09_TB_CHI|Roschon Johnson|rushing_yards|30|over": {
+"best": {
+"edge": 0.0376,
+"fair": 0.255,
+"odds": 360,
+"t": "2026-11-08T23:25:58Z"
+},
+"first": {
+"edge": 0.0376,
+"fair": 0.255,
+"odds": 360,
+"t": "2026-11-08T23:25:58Z"
+},
+"gid": "2026_09_TB_CHI",
+"hrs_before": 1.9,
+"last": {
+"edge": 0.0376,
+"fair": 0.255,
+"odds": 360,
+"t": "2026-11-08T23:25:58Z"
+},
+"line": 30,
+"open": true,
+"player": "Roschon Johnson",
 "side": "over",
 "source": "live",
 "start": "2026-11-09T01:20:00Z",
