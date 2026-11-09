@@ -44,10 +44,10 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 78.8,
 "last": {
-"edge": 0.0235,
+"edge": 0.0002,
 "fair": 0.435,
-"odds": 143,
-"t": "2026-11-09T18:26:16Z"
+"odds": 130,
+"t": "2026-11-09T21:47:02Z"
 },
 "line": 225,
 "open": true,
@@ -73,10 +73,10 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 78.8,
 "last": {
-"edge": 0.0247,
+"edge": 0.0051,
 "fair": 0.295,
-"odds": 270,
-"t": "2026-11-09T18:26:16Z"
+"odds": 245,
+"t": "2026-11-09T21:47:02Z"
 },
 "line": 250,
 "open": true,
@@ -102,10 +102,10 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 55.0,
 "last": {
-"edge": -0.0106,
-"fair": 0.545,
-"odds": -125,
-"t": "2026-11-09T18:26:16Z"
+"edge": -0.0245,
+"fair": 0.535,
+"odds": -127,
+"t": "2026-11-09T21:47:02Z"
 },
 "line": 4,
 "open": false,
@@ -131,13 +131,13 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 33.9,
 "last": {
-"edge": 0.0028,
-"fair": 0.395,
-"odds": 155,
-"t": "2026-11-09T18:26:16Z"
+"edge": -0.0182,
+"fair": 0.385,
+"odds": 148,
+"t": "2026-11-09T21:47:02Z"
 },
 "line": 250,
-"open": true,
+"open": false,
 "player": "Josh Allen",
 "side": "over",
 "source": "live",
@@ -160,13 +160,13 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 76.6,
 "last": {
-"edge": 0.0018,
+"edge": -0.0082,
 "fair": 0.255,
-"odds": 295,
-"t": "2026-11-09T18:26:16Z"
+"odds": 280,
+"t": "2026-11-09T21:47:02Z"
 },
 "line": 275,
-"open": true,
+"open": false,
 "player": "Josh Allen",
 "side": "over",
 "source": "live",
