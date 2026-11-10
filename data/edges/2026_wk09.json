@@ -44,13 +44,13 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 78.8,
 "last": {
-"edge": 0.0002,
+"edge": -0.0094,
 "fair": 0.435,
-"odds": 130,
-"t": "2026-11-09T21:47:02Z"
+"odds": 125,
+"t": "2026-11-10T00:26:48Z"
 },
 "line": 225,
-"open": true,
+"open": false,
 "player": "Carson Wentz",
 "side": "over",
 "source": "live",
@@ -73,10 +73,10 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 78.8,
 "last": {
-"edge": 0.0051,
-"fair": 0.295,
-"odds": 245,
-"t": "2026-11-09T21:47:02Z"
+"edge": 0.0065,
+"fair": 0.305,
+"odds": 235,
+"t": "2026-11-10T00:26:48Z"
 },
 "line": 250,
 "open": true,
@@ -102,10 +102,10 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 55.0,
 "last": {
-"edge": -0.0245,
-"fair": 0.535,
-"odds": -127,
-"t": "2026-11-09T21:47:02Z"
+"edge": -0.0136,
+"fair": 0.54,
+"odds": -124,
+"t": "2026-11-10T00:26:48Z"
 },
 "line": 4,
 "open": false,
@@ -131,10 +131,10 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 33.9,
 "last": {
-"edge": -0.0182,
-"fair": 0.385,
-"odds": 148,
-"t": "2026-11-09T21:47:02Z"
+"edge": -0.0132,
+"fair": 0.395,
+"odds": 145,
+"t": "2026-11-10T00:26:48Z"
 },
 "line": 250,
 "open": false,
@@ -160,10 +160,10 @@
 "gid": "2026_09_BUF_MIN",
 "hrs_before": 76.6,
 "last": {
-"edge": -0.0082,
+"edge": -0.0117,
 "fair": 0.255,
-"odds": 280,
-"t": "2026-11-09T21:47:02Z"
+"odds": 275,
+"t": "2026-11-10T00:26:48Z"
 },
 "line": 275,
 "open": false,
