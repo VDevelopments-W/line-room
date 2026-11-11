@@ -1,4 +1,33 @@
 {
+"2026_10_MIN_GB|Jordan Love|passing_yards|275|over": {
+"best": {
+"edge": 0.03,
+"fair": 0.43,
+"odds": 150,
+"t": "2026-11-11T18:26:08Z"
+},
+"first": {
+"edge": 0.03,
+"fair": 0.43,
+"odds": 150,
+"t": "2026-11-11T18:26:08Z"
+},
+"gid": "2026_10_MIN_GB",
+"hrs_before": 95.6,
+"last": {
+"edge": 0.03,
+"fair": 0.43,
+"odds": 150,
+"t": "2026-11-11T18:26:08Z"
+},
+"line": 275,
+"open": true,
+"player": "Jordan Love",
+"side": "over",
+"source": "live",
+"start": "2026-11-15T18:00:00Z",
+"stat": "passing_yards"
+},
 "2026_10_SF_DAL|Christian McCaffrey|receiving_yards|50|over": {
 "best": {
 "edge": 0.0318,
@@ -15,10 +44,10 @@
 "gid": "2026_10_SF_DAL",
 "hrs_before": 117.3,
 "last": {
-"edge": 0.0318,
-"fair": 0.285,
+"edge": 0.0018,
+"fair": 0.255,
 "odds": 295,
-"t": "2026-11-11T13:54:49Z"
+"t": "2026-11-11T18:26:08Z"
 },
 "line": 50,
 "open": true,
@@ -44,10 +73,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 35.3,
 "last": {
-"edge": 0.0378,
-"fair": 0.43,
-"odds": 155,
-"t": "2026-11-11T13:54:49Z"
+"edge": 0.0083,
+"fair": 0.425,
+"odds": 140,
+"t": "2026-11-11T18:26:08Z"
 },
 "line": 225,
 "open": true,
@@ -73,10 +102,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 35.3,
 "last": {
-"edge": 0.0368,
-"fair": 0.29,
-"odds": 295,
-"t": "2026-11-11T13:54:49Z"
+"edge": 0.011,
+"fair": 0.285,
+"odds": 265,
+"t": "2026-11-11T18:26:08Z"
 },
 "line": 250,
 "open": true,
@@ -105,7 +134,7 @@
 "edge": 0.0328,
 "fair": 0.255,
 "odds": 350,
-"t": "2026-11-11T13:54:49Z"
+"t": "2026-11-11T18:26:08Z"
 },
 "line": 250,
 "open": true,
@@ -131,10 +160,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 35.3,
 "last": {
-"edge": 0.0325,
+"edge": 0.0171,
 "fair": 0.345,
-"odds": 220,
-"t": "2026-11-11T13:54:49Z"
+"odds": 205,
+"t": "2026-11-11T18:26:08Z"
 },
 "line": 50,
 "open": true,
@@ -160,13 +189,13 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 49.1,
 "last": {
-"edge": 0.01,
-"fair": 0.21,
-"odds": 400,
-"t": "2026-11-11T13:54:49Z"
+"edge": -0.0055,
+"fair": 0.205,
+"odds": 375,
+"t": "2026-11-11T18:26:08Z"
 },
 "line": 60,
-"open": true,
+"open": false,
 "player": "Rachaad White",
 "side": "over",
 "source": "live",
@@ -195,7 +224,7 @@
 "t": "2026-11-11T13:54:49Z"
 },
 "line": 30,
-"open": true,
+"open": false,
 "player": "Van Jefferson",
 "side": "over",
 "source": "live",
