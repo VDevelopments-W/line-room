@@ -18,7 +18,7 @@
 "edge": 0.0318,
 "fair": 0.285,
 "odds": 295,
-"t": "2026-11-11T05:37:47Z"
+"t": "2026-11-11T13:54:49Z"
 },
 "line": 50,
 "open": true,
@@ -27,6 +27,122 @@
 "source": "live",
 "start": "2026-11-15T21:25:00Z",
 "stat": "receiving_yards"
+},
+"2026_10_WAS_NYG|J.J. McCarthy|passing_yards|225|over": {
+"best": {
+"edge": 0.0378,
+"fair": 0.43,
+"odds": 155,
+"t": "2026-11-11T13:54:49Z"
+},
+"first": {
+"edge": 0.0378,
+"fair": 0.43,
+"odds": 155,
+"t": "2026-11-11T13:54:49Z"
+},
+"gid": "2026_10_WAS_NYG",
+"hrs_before": 35.3,
+"last": {
+"edge": 0.0378,
+"fair": 0.43,
+"odds": 155,
+"t": "2026-11-11T13:54:49Z"
+},
+"line": 225,
+"open": true,
+"player": "J.J. McCarthy",
+"side": "over",
+"source": "live",
+"start": "2026-11-13T01:15:00Z",
+"stat": "passing_yards"
+},
+"2026_10_WAS_NYG|J.J. McCarthy|passing_yards|250|over": {
+"best": {
+"edge": 0.0368,
+"fair": 0.29,
+"odds": 295,
+"t": "2026-11-11T13:54:49Z"
+},
+"first": {
+"edge": 0.0368,
+"fair": 0.29,
+"odds": 295,
+"t": "2026-11-11T13:54:49Z"
+},
+"gid": "2026_10_WAS_NYG",
+"hrs_before": 35.3,
+"last": {
+"edge": 0.0368,
+"fair": 0.29,
+"odds": 295,
+"t": "2026-11-11T13:54:49Z"
+},
+"line": 250,
+"open": true,
+"player": "J.J. McCarthy",
+"side": "over",
+"source": "live",
+"start": "2026-11-13T01:15:00Z",
+"stat": "passing_yards"
+},
+"2026_10_WAS_NYG|Jayden Daniels|passing_yards|250|over": {
+"best": {
+"edge": 0.0328,
+"fair": 0.255,
+"odds": 350,
+"t": "2026-11-11T13:54:49Z"
+},
+"first": {
+"edge": 0.0328,
+"fair": 0.255,
+"odds": 350,
+"t": "2026-11-11T13:54:49Z"
+},
+"gid": "2026_10_WAS_NYG",
+"hrs_before": 35.3,
+"last": {
+"edge": 0.0328,
+"fair": 0.255,
+"odds": 350,
+"t": "2026-11-11T13:54:49Z"
+},
+"line": 250,
+"open": true,
+"player": "Jayden Daniels",
+"side": "over",
+"source": "live",
+"start": "2026-11-13T01:15:00Z",
+"stat": "passing_yards"
+},
+"2026_10_WAS_NYG|Rachaad White|rushing_yards|50|over": {
+"best": {
+"edge": 0.0325,
+"fair": 0.345,
+"odds": 220,
+"t": "2026-11-11T13:54:49Z"
+},
+"first": {
+"edge": 0.0325,
+"fair": 0.345,
+"odds": 220,
+"t": "2026-11-11T13:54:49Z"
+},
+"gid": "2026_10_WAS_NYG",
+"hrs_before": 35.3,
+"last": {
+"edge": 0.0325,
+"fair": 0.345,
+"odds": 220,
+"t": "2026-11-11T13:54:49Z"
+},
+"line": 50,
+"open": true,
+"player": "Rachaad White",
+"side": "over",
+"source": "live",
+"start": "2026-11-13T01:15:00Z",
+"stat": "rushing_yards"
 },
 "2026_10_WAS_NYG|Rachaad White|rushing_yards|60|over": {
 "best": {
@@ -44,10 +160,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 49.1,
 "last": {
-"edge": 0.045,
-"fair": 0.245,
+"edge": 0.01,
+"fair": 0.21,
 "odds": 400,
-"t": "2026-11-11T05:37:47Z"
+"t": "2026-11-11T13:54:49Z"
 },
 "line": 60,
 "open": true,
@@ -73,10 +189,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 49.1,
 "last": {
-"edge": 0.0261,
-"fair": 0.27,
+"edge": 0.0161,
+"fair": 0.26,
 "odds": 310,
-"t": "2026-11-11T05:37:47Z"
+"t": "2026-11-11T13:54:49Z"
 },
 "line": 30,
 "open": true,
