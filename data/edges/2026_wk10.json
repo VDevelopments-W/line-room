@@ -1,0 +1,89 @@
+{
+"2026_10_SF_DAL|Christian McCaffrey|receiving_yards|50|over": {
+"best": {
+"edge": 0.0318,
+"fair": 0.285,
+"odds": 295,
+"t": "2026-11-11T00:07:16Z"
+},
+"first": {
+"edge": 0.0318,
+"fair": 0.285,
+"odds": 295,
+"t": "2026-11-11T00:07:16Z"
+},
+"gid": "2026_10_SF_DAL",
+"hrs_before": 117.3,
+"last": {
+"edge": 0.0318,
+"fair": 0.285,
+"odds": 295,
+"t": "2026-11-11T00:07:16Z"
+},
+"line": 50,
+"open": true,
+"player": "Christian McCaffrey",
+"side": "over",
+"source": "live",
+"start": "2026-11-15T21:25:00Z",
+"stat": "receiving_yards"
+},
+"2026_10_WAS_NYG|Rachaad White|rushing_yards|60|over": {
+"best": {
+"edge": 0.045,
+"fair": 0.245,
+"odds": 400,
+"t": "2026-11-11T00:07:16Z"
+},
+"first": {
+"edge": 0.045,
+"fair": 0.245,
+"odds": 400,
+"t": "2026-11-11T00:07:16Z"
+},
+"gid": "2026_10_WAS_NYG",
+"hrs_before": 49.1,
+"last": {
+"edge": 0.045,
+"fair": 0.245,
+"odds": 400,
+"t": "2026-11-11T00:07:16Z"
+},
+"line": 60,
+"open": true,
+"player": "Rachaad White",
+"side": "over",
+"source": "live",
+"start": "2026-11-13T01:15:00Z",
+"stat": "rushing_yards"
+},
+"2026_10_WAS_NYG|Van Jefferson|receiving_yards|30|over": {
+"best": {
+"edge": 0.0361,
+"fair": 0.28,
+"odds": 310,
+"t": "2026-11-11T00:07:16Z"
+},
+"first": {
+"edge": 0.0361,
+"fair": 0.28,
+"odds": 310,
+"t": "2026-11-11T00:07:16Z"
+},
+"gid": "2026_10_WAS_NYG",
+"hrs_before": 49.1,
+"last": {
+"edge": 0.0361,
+"fair": 0.28,
+"odds": 310,
+"t": "2026-11-11T00:07:16Z"
+},
+"line": 30,
+"open": true,
+"player": "Van Jefferson",
+"side": "over",
+"source": "live",
+"start": "2026-11-13T01:15:00Z",
+"stat": "receiving_yards"
+}
+}
