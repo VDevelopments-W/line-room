@@ -15,10 +15,10 @@
 "gid": "2026_10_HOU_CLE",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.0462,
-"fair": 0.57,
+"edge": 0.0412,
+"fair": 0.565,
 "odds": -110,
-"t": "2026-11-12T18:26:03Z"
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 200,
 "open": true,
@@ -47,7 +47,7 @@
 "edge": 0.0414,
 "fair": 0.405,
 "odds": 175,
-"t": "2026-11-12T18:26:03Z"
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 225,
 "open": true,
@@ -73,10 +73,10 @@
 "gid": "2026_10_JAX_TEN",
 "hrs_before": 89.7,
 "last": {
-"edge": 0.0226,
+"edge": 0.0178,
 "fair": 0.53,
-"odds": -103,
-"t": "2026-11-12T18:26:03Z"
+"odds": -105,
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 20,
 "open": true,
@@ -85,6 +85,64 @@
 "source": "live",
 "start": "2026-11-15T18:00:00Z",
 "stat": "receiving_yards"
+},
+"2026_10_JAX_TEN|Parker Washington|receptions|5|under": {
+"best": {
+"edge": 0.0445,
+"fair": 0.575,
+"odds": -113,
+"t": "2026-11-12T20:58:35Z"
+},
+"first": {
+"edge": 0.0445,
+"fair": 0.575,
+"odds": -113,
+"t": "2026-11-12T20:58:35Z"
+},
+"gid": "2026_10_JAX_TEN",
+"hrs_before": 69.0,
+"last": {
+"edge": 0.0445,
+"fair": 0.575,
+"odds": -113,
+"t": "2026-11-12T20:58:35Z"
+},
+"line": 5,
+"open": true,
+"player": "Parker Washington",
+"side": "under",
+"source": "live",
+"start": "2026-11-15T18:00:00Z",
+"stat": "receptions"
+},
+"2026_10_MIA_IND|Malik Washington|receptions|4|under": {
+"best": {
+"edge": 0.0326,
+"fair": 0.54,
+"odds": -103,
+"t": "2026-11-12T20:58:35Z"
+},
+"first": {
+"edge": 0.0326,
+"fair": 0.54,
+"odds": -103,
+"t": "2026-11-12T20:58:35Z"
+},
+"gid": "2026_10_MIA_IND",
+"hrs_before": 69.0,
+"last": {
+"edge": 0.0326,
+"fair": 0.54,
+"odds": -103,
+"t": "2026-11-12T20:58:35Z"
+},
+"line": 4,
+"open": true,
+"player": "Malik Washington",
+"side": "under",
+"source": "live",
+"start": "2026-11-15T18:00:00Z",
+"stat": "receptions"
 },
 "2026_10_MIN_GB|Jordan Love|passing_yards|275|over": {
 "best": {
@@ -105,7 +163,7 @@
 "edge": -0.0165,
 "fair": 0.395,
 "odds": 143,
-"t": "2026-11-12T18:26:03Z"
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 275,
 "open": false,
@@ -131,10 +189,10 @@
 "gid": "2026_10_PIT_CIN",
 "hrs_before": 97.0,
 "last": {
-"edge": 0.0255,
-"fair": 0.575,
+"edge": 0.0305,
+"fair": 0.58,
 "odds": -122,
-"t": "2026-11-12T18:26:03Z"
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 60,
 "open": true,
@@ -160,10 +218,10 @@
 "gid": "2026_10_SEA_LV",
 "hrs_before": 92.7,
 "last": {
-"edge": 0.0319,
+"edge": 0.02,
 "fair": 0.27,
-"odds": 320,
-"t": "2026-11-12T18:26:03Z"
+"odds": 300,
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 225,
 "open": true,
@@ -189,10 +247,10 @@
 "gid": "2026_10_SF_DAL",
 "hrs_before": 117.3,
 "last": {
-"edge": -0.0107,
+"edge": -0.0149,
 "fair": 0.275,
-"odds": 250,
-"t": "2026-11-12T18:26:03Z"
+"odds": 245,
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 50,
 "open": false,
@@ -218,10 +276,10 @@
 "gid": "2026_10_SF_DAL",
 "hrs_before": 80.0,
 "last": {
-"edge": 0.0324,
+"edge": 0.0375,
 "fair": 0.355,
-"odds": 210,
-"t": "2026-11-12T18:26:03Z"
+"odds": 215,
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 20,
 "open": true,
@@ -230,6 +288,35 @@
 "source": "live",
 "start": "2026-11-15T21:25:00Z",
 "stat": "receiving_yards"
+},
+"2026_10_SF_DAL|Kaelon Black|rushing_yards|40|over": {
+"best": {
+"edge": 0.0318,
+"fair": 0.435,
+"odds": 148,
+"t": "2026-11-12T20:58:35Z"
+},
+"first": {
+"edge": 0.0318,
+"fair": 0.435,
+"odds": 148,
+"t": "2026-11-12T20:58:35Z"
+},
+"gid": "2026_10_SF_DAL",
+"hrs_before": 72.4,
+"last": {
+"edge": 0.0318,
+"fair": 0.435,
+"odds": 148,
+"t": "2026-11-12T20:58:35Z"
+},
+"line": 40,
+"open": true,
+"player": "Kaelon Black",
+"side": "over",
+"source": "live",
+"start": "2026-11-15T21:25:00Z",
+"stat": "rushing_yards"
 },
 "2026_10_SF_DAL|Kaelon Black|rushing_yards|50|over": {
 "best": {
@@ -250,7 +337,7 @@
 "edge": 0.04,
 "fair": 0.29,
 "odds": 300,
-"t": "2026-11-12T18:26:03Z"
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 50,
 "open": true,
@@ -276,13 +363,13 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 20.5,
 "last": {
-"edge": 0.0064,
-"fair": 0.445,
+"edge": -0.0136,
+"fair": 0.425,
 "odds": 128,
-"t": "2026-11-12T18:26:03Z"
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 8,
-"open": true,
+"open": false,
 "player": "Devin Singletary",
 "side": "over",
 "source": "live",
@@ -305,13 +392,13 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 35.3,
 "last": {
-"edge": -0.005,
+"edge": 0.0028,
 "fair": 0.395,
-"odds": 150,
-"t": "2026-11-12T18:26:03Z"
+"odds": 155,
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 225,
-"open": false,
+"open": true,
 "player": "J.J. McCarthy",
 "side": "over",
 "source": "live",
@@ -334,10 +421,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 35.3,
 "last": {
-"edge": 0.0253,
-"fair": 0.285,
-"odds": 285,
-"t": "2026-11-12T18:26:03Z"
+"edge": 0.025,
+"fair": 0.275,
+"odds": 300,
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 250,
 "open": true,
@@ -366,7 +453,7 @@
 "edge": 0.0276,
 "fair": 0.245,
 "odds": 360,
-"t": "2026-11-12T18:26:03Z"
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 250,
 "open": true,
@@ -392,13 +479,13 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 35.3,
 "last": {
-"edge": 0.0021,
-"fair": 0.33,
+"edge": -0.0029,
+"fair": 0.325,
 "odds": 205,
-"t": "2026-11-12T18:26:03Z"
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 50,
-"open": true,
+"open": false,
 "player": "Rachaad White",
 "side": "over",
 "source": "live",
@@ -421,10 +508,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 49.1,
 "last": {
-"edge": 0.0167,
-"fair": 0.225,
+"edge": 0.0267,
+"fair": 0.235,
 "odds": 380,
-"t": "2026-11-12T18:26:03Z"
+"t": "2026-11-12T20:58:35Z"
 },
 "line": 60,
 "open": true,
@@ -433,6 +520,35 @@
 "source": "live",
 "start": "2026-11-13T01:15:00Z",
 "stat": "rushing_yards"
+},
+"2026_10_WAS_NYG|Theo Johnson|receptions|1|under": {
+"best": {
+"edge": 0.0368,
+"fair": 0.445,
+"odds": 145,
+"t": "2026-11-12T20:58:35Z"
+},
+"first": {
+"edge": 0.0368,
+"fair": 0.445,
+"odds": 145,
+"t": "2026-11-12T20:58:35Z"
+},
+"gid": "2026_10_WAS_NYG",
+"hrs_before": 4.3,
+"last": {
+"edge": 0.0368,
+"fair": 0.445,
+"odds": 145,
+"t": "2026-11-12T20:58:35Z"
+},
+"line": 1,
+"open": true,
+"player": "Theo Johnson",
+"side": "under",
+"source": "live",
+"start": "2026-11-13T01:15:00Z",
+"stat": "receptions"
 },
 "2026_10_WAS_NYG|Van Jefferson|receiving_yards|30|over": {
 "best": {
