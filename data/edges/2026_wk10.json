@@ -1,4 +1,62 @@
 {
+"2026_10_HOU_CLE|Deshaun Watson|passing_yards|200|over": {
+"best": {
+"edge": 0.0462,
+"fair": 0.57,
+"odds": -110,
+"t": "2026-11-12T18:26:03Z"
+},
+"first": {
+"edge": 0.0462,
+"fair": 0.57,
+"odds": -110,
+"t": "2026-11-12T18:26:03Z"
+},
+"gid": "2026_10_HOU_CLE",
+"hrs_before": 71.6,
+"last": {
+"edge": 0.0462,
+"fair": 0.57,
+"odds": -110,
+"t": "2026-11-12T18:26:03Z"
+},
+"line": 200,
+"open": true,
+"player": "Deshaun Watson",
+"side": "over",
+"source": "live",
+"start": "2026-11-15T18:00:00Z",
+"stat": "passing_yards"
+},
+"2026_10_HOU_CLE|Deshaun Watson|passing_yards|225|over": {
+"best": {
+"edge": 0.0414,
+"fair": 0.405,
+"odds": 175,
+"t": "2026-11-12T18:26:03Z"
+},
+"first": {
+"edge": 0.0414,
+"fair": 0.405,
+"odds": 175,
+"t": "2026-11-12T18:26:03Z"
+},
+"gid": "2026_10_HOU_CLE",
+"hrs_before": 71.6,
+"last": {
+"edge": 0.0414,
+"fair": 0.405,
+"odds": 175,
+"t": "2026-11-12T18:26:03Z"
+},
+"line": 225,
+"open": true,
+"player": "Deshaun Watson",
+"side": "over",
+"source": "live",
+"start": "2026-11-15T18:00:00Z",
+"stat": "passing_yards"
+},
 "2026_10_JAX_TEN|Gunnar Helm|receiving_yards|20|over": {
 "best": {
 "edge": 0.04,
@@ -15,10 +73,10 @@
 "gid": "2026_10_JAX_TEN",
 "hrs_before": 89.7,
 "last": {
-"edge": 0.04,
-"fair": 0.535,
-"odds": 102,
-"t": "2026-11-12T13:25:28Z"
+"edge": 0.0226,
+"fair": 0.53,
+"odds": -103,
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 20,
 "open": true,
@@ -44,10 +102,10 @@
 "gid": "2026_10_MIN_GB",
 "hrs_before": 95.6,
 "last": {
-"edge": -0.0215,
-"fair": 0.39,
+"edge": -0.0165,
+"fair": 0.395,
 "odds": 143,
-"t": "2026-11-12T13:25:28Z"
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 275,
 "open": false,
@@ -73,10 +131,10 @@
 "gid": "2026_10_PIT_CIN",
 "hrs_before": 97.0,
 "last": {
-"edge": 0.0205,
-"fair": 0.57,
+"edge": 0.0255,
+"fair": 0.575,
 "odds": -122,
-"t": "2026-11-12T13:25:28Z"
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 60,
 "open": true,
@@ -102,10 +160,10 @@
 "gid": "2026_10_SEA_LV",
 "hrs_before": 92.7,
 "last": {
-"edge": 0.0419,
-"fair": 0.28,
+"edge": 0.0319,
+"fair": 0.27,
 "odds": 320,
-"t": "2026-11-12T13:25:28Z"
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 225,
 "open": true,
@@ -131,13 +189,13 @@
 "gid": "2026_10_SF_DAL",
 "hrs_before": 117.3,
 "last": {
-"edge": 0.0118,
-"fair": 0.265,
-"odds": 295,
-"t": "2026-11-12T13:25:28Z"
+"edge": -0.0107,
+"fair": 0.275,
+"odds": 250,
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 50,
-"open": true,
+"open": false,
 "player": "Christian McCaffrey",
 "side": "over",
 "source": "live",
@@ -160,10 +218,10 @@
 "gid": "2026_10_SF_DAL",
 "hrs_before": 80.0,
 "last": {
-"edge": 0.0375,
-"fair": 0.35,
-"odds": 220,
-"t": "2026-11-12T13:25:28Z"
+"edge": 0.0324,
+"fair": 0.355,
+"odds": 210,
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 20,
 "open": true,
@@ -175,10 +233,10 @@
 },
 "2026_10_SF_DAL|Kaelon Black|rushing_yards|50|over": {
 "best": {
-"edge": 0.035,
-"fair": 0.285,
+"edge": 0.04,
+"fair": 0.29,
 "odds": 300,
-"t": "2026-11-12T04:43:25Z"
+"t": "2026-11-12T18:26:03Z"
 },
 "first": {
 "edge": 0.03,
@@ -189,10 +247,10 @@
 "gid": "2026_10_SF_DAL",
 "hrs_before": 93.1,
 "last": {
-"edge": 0.03,
-"fair": 0.28,
+"edge": 0.04,
+"fair": 0.29,
 "odds": 300,
-"t": "2026-11-12T13:25:28Z"
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 50,
 "open": true,
@@ -218,10 +276,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 20.5,
 "last": {
-"edge": 0.0014,
-"fair": 0.44,
+"edge": 0.0064,
+"fair": 0.445,
 "odds": 128,
-"t": "2026-11-12T13:25:28Z"
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 8,
 "open": true,
@@ -247,10 +305,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 35.3,
 "last": {
-"edge": -0.0082,
+"edge": -0.005,
 "fair": 0.395,
-"odds": 148,
-"t": "2026-11-12T13:25:28Z"
+"odds": 150,
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 225,
 "open": false,
@@ -276,10 +334,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 35.3,
 "last": {
-"edge": 0.0083,
-"fair": 0.275,
-"odds": 275,
-"t": "2026-11-12T13:25:28Z"
+"edge": 0.0253,
+"fair": 0.285,
+"odds": 285,
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 250,
 "open": true,
@@ -305,10 +363,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 35.3,
 "last": {
-"edge": 0.0267,
-"fair": 0.235,
-"odds": 380,
-"t": "2026-11-12T13:25:28Z"
+"edge": 0.0276,
+"fair": 0.245,
+"odds": 360,
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 250,
 "open": true,
@@ -334,10 +392,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 35.3,
 "last": {
-"edge": 0.042,
-"fair": 0.345,
-"odds": 230,
-"t": "2026-11-12T13:25:28Z"
+"edge": 0.0021,
+"fair": 0.33,
+"odds": 205,
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 50,
 "open": true,
@@ -363,10 +421,10 @@
 "gid": "2026_10_WAS_NYG",
 "hrs_before": 49.1,
 "last": {
-"edge": 0.0363,
+"edge": 0.0167,
 "fair": 0.225,
-"odds": 430,
-"t": "2026-11-12T13:25:28Z"
+"odds": 380,
+"t": "2026-11-12T18:26:03Z"
 },
 "line": 60,
 "open": true,
