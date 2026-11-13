@@ -15,10 +15,10 @@
 "gid": "2026_10_HOU_CLE",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.0301,
+"edge": 0.0195,
 "fair": 0.565,
-"odds": -115,
-"t": "2026-11-13T18:26:14Z"
+"odds": -120,
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 200,
 "open": true,
@@ -44,10 +44,10 @@
 "gid": "2026_10_HOU_CLE",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.0326,
+"edge": 0.0254,
 "fair": 0.41,
-"odds": 165,
-"t": "2026-11-13T18:26:14Z"
+"odds": 160,
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 225,
 "open": true,
@@ -73,10 +73,10 @@
 "gid": "2026_10_JAX_TEN",
 "hrs_before": 89.7,
 "last": {
-"edge": -0.0424,
+"edge": -0.0317,
 "fair": 0.635,
-"odds": -210,
-"t": "2026-11-13T18:26:14Z"
+"odds": -200,
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 20,
 "open": false,
@@ -102,10 +102,10 @@
 "gid": "2026_10_JAX_TEN",
 "hrs_before": 69.0,
 "last": {
-"edge": -0.03,
-"fair": 0.57,
-"odds": -150,
-"t": "2026-11-13T18:26:14Z"
+"edge": -0.0278,
+"fair": 0.58,
+"odds": -155,
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 5,
 "open": false,
@@ -160,13 +160,13 @@
 "gid": "2026_10_MIA_IND",
 "hrs_before": 69.0,
 "last": {
-"edge": 0.0104,
+"edge": -0.0033,
 "fair": 0.525,
-"odds": -106,
-"t": "2026-11-13T18:26:14Z"
+"odds": -112,
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 4,
-"open": true,
+"open": false,
 "player": "Malik Washington",
 "side": "under",
 "source": "live",
@@ -189,10 +189,10 @@
 "gid": "2026_10_MIN_GB",
 "hrs_before": 95.6,
 "last": {
-"edge": -0.0265,
+"edge": -0.0182,
 "fair": 0.385,
-"odds": 143,
-"t": "2026-11-13T18:26:14Z"
+"odds": 148,
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 275,
 "open": false,
@@ -201,6 +201,35 @@
 "source": "live",
 "start": "2026-11-15T18:00:00Z",
 "stat": "passing_yards"
+},
+"2026_10_MIN_GB|MarShawn Lloyd|rushing_yards|30|over": {
+"best": {
+"edge": 0.0313,
+"fair": 0.22,
+"odds": 430,
+"t": "2026-11-13T21:21:59Z"
+},
+"first": {
+"edge": 0.0313,
+"fair": 0.22,
+"odds": 430,
+"t": "2026-11-13T21:21:59Z"
+},
+"gid": "2026_10_MIN_GB",
+"hrs_before": 44.6,
+"last": {
+"edge": 0.0313,
+"fair": 0.22,
+"odds": 430,
+"t": "2026-11-13T21:21:59Z"
+},
+"line": 30,
+"open": true,
+"player": "MarShawn Lloyd",
+"side": "over",
+"source": "live",
+"start": "2026-11-15T18:00:00Z",
+"stat": "rushing_yards"
 },
 "2026_10_PIT_CIN|Ja'Marr Chase|receptions|9|under": {
 "best": {
@@ -224,7 +253,7 @@
 "t": "2026-11-13T18:26:14Z"
 },
 "line": 9,
-"open": true,
+"open": false,
 "player": "Ja'Marr Chase",
 "side": "under",
 "source": "live",
@@ -250,7 +279,7 @@
 "edge": -0.0085,
 "fair": 0.58,
 "odds": -143,
-"t": "2026-11-13T18:26:14Z"
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 60,
 "open": false,
@@ -276,10 +305,10 @@
 "gid": "2026_10_SEA_LV",
 "hrs_before": 92.7,
 "last": {
-"edge": 0.0211,
-"fair": 0.265,
+"edge": 0.0161,
+"fair": 0.26,
 "odds": 310,
-"t": "2026-11-13T18:26:14Z"
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 225,
 "open": true,
@@ -308,7 +337,7 @@
 "edge": -0.0199,
 "fair": 0.27,
 "odds": 245,
-"t": "2026-11-13T18:26:14Z"
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 50,
 "open": false,
@@ -334,10 +363,10 @@
 "gid": "2026_10_SF_DAL",
 "hrs_before": 80.0,
 "last": {
-"edge": 0.0309,
-"fair": 0.325,
-"odds": 240,
-"t": "2026-11-13T18:26:14Z"
+"edge": 0.0225,
+"fair": 0.335,
+"odds": 220,
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 20,
 "open": true,
@@ -363,10 +392,10 @@
 "gid": "2026_10_SF_DAL",
 "hrs_before": 72.4,
 "last": {
-"edge": 0.0168,
-"fair": 0.42,
+"edge": 0.0218,
+"fair": 0.425,
 "odds": 148,
-"t": "2026-11-13T18:26:14Z"
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 40,
 "open": true,
@@ -395,7 +424,7 @@
 "edge": 0.045,
 "fair": 0.295,
 "odds": 300,
-"t": "2026-11-13T18:26:14Z"
+"t": "2026-11-13T21:21:59Z"
 },
 "line": 50,
 "open": true,
