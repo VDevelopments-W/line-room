@@ -260,6 +260,35 @@
 "start": "2026-11-15T18:00:00Z",
 "stat": "receptions"
 },
+"2026_10_LAC_BAL|David Njoku|receptions|4|over": {
+"best": {
+"edge": 0.0348,
+"fair": 0.13,
+"odds": 950,
+"t": "2026-11-17T00:26:31Z"
+},
+"first": {
+"edge": 0.0348,
+"fair": 0.13,
+"odds": 950,
+"t": "2026-11-17T00:26:31Z"
+},
+"gid": "2026_10_LAC_BAL",
+"hrs_before": 0.8,
+"last": {
+"edge": 0.0348,
+"fair": 0.13,
+"odds": 950,
+"t": "2026-11-17T00:26:31Z"
+},
+"line": 4,
+"open": true,
+"player": "David Njoku",
+"side": "over",
+"source": "live",
+"start": "2026-11-17T01:15:00Z",
+"stat": "receptions"
+},
 "2026_10_LA_ARI|Matthew Stafford|passing_tds|2|over": {
 "best": {
 "edge": 0.0316,
