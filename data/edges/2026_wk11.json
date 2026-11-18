@@ -1,4 +1,33 @@
 {
+"2026_11_IND_HOU|David Montgomery|rushing_yards|80|over": {
+"best": {
+"edge": 0.0327,
+"fair": 0.225,
+"odds": 420,
+"t": "2026-11-18T18:25:53Z"
+},
+"first": {
+"edge": 0.0327,
+"fair": 0.225,
+"odds": 420,
+"t": "2026-11-18T18:25:53Z"
+},
+"gid": "2026_11_IND_HOU",
+"hrs_before": 30.8,
+"last": {
+"edge": 0.0327,
+"fair": 0.225,
+"odds": 420,
+"t": "2026-11-18T18:25:53Z"
+},
+"line": 80,
+"open": true,
+"player": "David Montgomery",
+"side": "over",
+"source": "live",
+"start": "2026-11-20T01:15:00Z",
+"stat": "rushing_yards"
+},
 "2026_11_IND_HOU|Seth McGowan|rushing_yards|50|over": {
 "best": {
 "edge": 0.03,
@@ -21,7 +50,7 @@
 "t": "2026-11-18T06:50:25Z"
 },
 "line": 50,
-"open": true,
+"open": false,
 "player": "Seth McGowan",
 "side": "over",
 "source": "live",
@@ -44,10 +73,10 @@
 "gid": "2026_11_TEN_DAL",
 "hrs_before": 110.7,
 "last": {
-"edge": 0.0338,
+"edge": 0.0002,
 "fair": 0.51,
-"odds": 110,
-"t": "2026-11-18T06:50:25Z"
+"odds": -104,
+"t": "2026-11-18T18:25:53Z"
 },
 "line": 3,
 "open": true,
