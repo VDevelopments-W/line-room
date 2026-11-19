@@ -18,7 +18,7 @@
 "edge": 0.0177,
 "fair": 0.245,
 "odds": 340,
-"t": "2026-11-19T04:52:45Z"
+"t": "2026-11-19T13:59:47Z"
 },
 "line": 80,
 "open": true,
@@ -47,7 +47,7 @@
 "edge": 0.0223,
 "fair": 0.555,
 "odds": -114,
-"t": "2026-11-19T04:52:45Z"
+"t": "2026-11-19T13:59:47Z"
 },
 "line": 20,
 "open": true,
@@ -73,10 +73,10 @@
 "gid": "2026_11_IND_HOU",
 "hrs_before": 24.8,
 "last": {
-"edge": 0.037,
-"fair": 0.34,
+"edge": 0.042,
+"fair": 0.345,
 "odds": 230,
-"t": "2026-11-19T04:52:45Z"
+"t": "2026-11-19T13:59:47Z"
 },
 "line": 30,
 "open": true,
@@ -85,6 +85,35 @@
 "source": "live",
 "start": "2026-11-20T01:15:00Z",
 "stat": "rushing_yards"
+},
+"2026_11_IND_HOU|Foster Moreau|receptions|1|under": {
+"best": {
+"edge": 0.03,
+"fair": 0.43,
+"odds": 150,
+"t": "2026-11-19T13:59:47Z"
+},
+"first": {
+"edge": 0.03,
+"fair": 0.43,
+"odds": 150,
+"t": "2026-11-19T13:59:47Z"
+},
+"gid": "2026_11_IND_HOU",
+"hrs_before": 11.3,
+"last": {
+"edge": 0.03,
+"fair": 0.43,
+"odds": 150,
+"t": "2026-11-19T13:59:47Z"
+},
+"line": 1,
+"open": true,
+"player": "Foster Moreau",
+"side": "under",
+"source": "live",
+"start": "2026-11-20T01:15:00Z",
+"stat": "receptions"
 },
 "2026_11_IND_HOU|Seth McGowan|rushing_yards|50|over": {
 "best": {
@@ -131,10 +160,10 @@
 "gid": "2026_11_TEN_DAL",
 "hrs_before": 110.7,
 "last": {
-"edge": 0.0399,
-"fair": 0.505,
-"odds": 115,
-"t": "2026-11-19T04:52:45Z"
+"edge": 0.0383,
+"fair": 0.51,
+"odds": 112,
+"t": "2026-11-19T13:59:47Z"
 },
 "line": 3,
 "open": true,
