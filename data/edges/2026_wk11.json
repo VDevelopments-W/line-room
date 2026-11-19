@@ -1,4 +1,33 @@
 {
+"2026_11_ARI_KC|Reggie Virgil|receptions|2|under": {
+"best": {
+"edge": 0.03,
+"fair": 0.525,
+"odds": 102,
+"t": "2026-11-19T18:26:08Z"
+},
+"first": {
+"edge": 0.03,
+"fair": 0.525,
+"odds": 102,
+"t": "2026-11-19T18:26:08Z"
+},
+"gid": "2026_11_ARI_KC",
+"hrs_before": 71.6,
+"last": {
+"edge": 0.03,
+"fair": 0.525,
+"odds": 102,
+"t": "2026-11-19T18:26:08Z"
+},
+"line": 2,
+"open": true,
+"player": "Reggie Virgil",
+"side": "under",
+"source": "live",
+"start": "2026-11-22T18:00:00Z",
+"stat": "receptions"
+},
 "2026_11_IND_HOU|David Montgomery|rushing_yards|80|over": {
 "best": {
 "edge": 0.0327,
@@ -15,10 +44,10 @@
 "gid": "2026_11_IND_HOU",
 "hrs_before": 30.8,
 "last": {
-"edge": 0.0177,
-"fair": 0.245,
-"odds": 340,
-"t": "2026-11-19T13:59:47Z"
+"edge": 0.0086,
+"fair": 0.265,
+"odds": 290,
+"t": "2026-11-19T18:26:08Z"
 },
 "line": 80,
 "open": true,
@@ -44,13 +73,13 @@
 "gid": "2026_11_IND_HOU",
 "hrs_before": 24.8,
 "last": {
-"edge": 0.0223,
-"fair": 0.555,
-"odds": -114,
-"t": "2026-11-19T13:59:47Z"
+"edge": -0.0759,
+"fair": 0.535,
+"odds": -157,
+"t": "2026-11-19T18:26:08Z"
 },
 "line": 20,
-"open": true,
+"open": false,
 "player": "Emari Demercado",
 "side": "over",
 "source": "live",
@@ -73,13 +102,13 @@
 "gid": "2026_11_IND_HOU",
 "hrs_before": 24.8,
 "last": {
-"edge": 0.042,
+"edge": -0.0254,
 "fair": 0.345,
-"odds": 230,
-"t": "2026-11-19T13:59:47Z"
+"odds": 170,
+"t": "2026-11-19T18:26:08Z"
 },
 "line": 30,
-"open": true,
+"open": false,
 "player": "Emari Demercado",
 "side": "over",
 "source": "live",
@@ -108,7 +137,7 @@
 "t": "2026-11-19T13:59:47Z"
 },
 "line": 1,
-"open": true,
+"open": false,
 "player": "Foster Moreau",
 "side": "under",
 "source": "live",
@@ -144,6 +173,64 @@
 "start": "2026-11-20T01:15:00Z",
 "stat": "rushing_yards"
 },
+"2026_11_MIN_SF|George Kittle|receiving_yards|60|under": {
+"best": {
+"edge": 0.0545,
+"fair": 0.585,
+"odds": -113,
+"t": "2026-11-19T18:26:08Z"
+},
+"first": {
+"edge": 0.0545,
+"fair": 0.585,
+"odds": -113,
+"t": "2026-11-19T18:26:08Z"
+},
+"gid": "2026_11_MIN_SF",
+"hrs_before": 78.9,
+"last": {
+"edge": 0.0545,
+"fair": 0.585,
+"odds": -113,
+"t": "2026-11-19T18:26:08Z"
+},
+"line": 60,
+"open": true,
+"player": "George Kittle",
+"side": "under",
+"source": "live",
+"start": "2026-11-23T01:20:00Z",
+"stat": "receiving_yards"
+},
+"2026_11_PIT_PHI|Aaron Rodgers|passing_yards|225|over": {
+"best": {
+"edge": 0.0448,
+"fair": 0.425,
+"odds": 163,
+"t": "2026-11-19T18:26:08Z"
+},
+"first": {
+"edge": 0.0448,
+"fair": 0.425,
+"odds": 163,
+"t": "2026-11-19T18:26:08Z"
+},
+"gid": "2026_11_PIT_PHI",
+"hrs_before": 71.6,
+"last": {
+"edge": 0.0448,
+"fair": 0.425,
+"odds": 163,
+"t": "2026-11-19T18:26:08Z"
+},
+"line": 225,
+"open": true,
+"player": "Aaron Rodgers",
+"side": "over",
+"source": "live",
+"start": "2026-11-22T18:00:00Z",
+"stat": "passing_yards"
+},
 "2026_11_TEN_DAL|Dak Prescott|passing_tds|3|over": {
 "best": {
 "edge": 0.0399,
@@ -160,10 +247,10 @@
 "gid": "2026_11_TEN_DAL",
 "hrs_before": 110.7,
 "last": {
-"edge": 0.0383,
-"fair": 0.51,
-"odds": 112,
-"t": "2026-11-19T13:59:47Z"
+"edge": 0.0392,
+"fair": 0.5,
+"odds": 117,
+"t": "2026-11-19T18:26:08Z"
 },
 "line": 3,
 "open": true,
