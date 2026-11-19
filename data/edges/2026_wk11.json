@@ -1,10 +1,10 @@
 {
 "2026_11_ARI_KC|Reggie Virgil|receptions|2|under": {
 "best": {
-"edge": 0.03,
-"fair": 0.525,
+"edge": 0.045,
+"fair": 0.54,
 "odds": 102,
-"t": "2026-11-19T18:26:08Z"
+"t": "2026-11-19T21:59:24Z"
 },
 "first": {
 "edge": 0.03,
@@ -15,10 +15,10 @@
 "gid": "2026_11_ARI_KC",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.03,
-"fair": 0.525,
+"edge": 0.045,
+"fair": 0.54,
 "odds": 102,
-"t": "2026-11-19T18:26:08Z"
+"t": "2026-11-19T21:59:24Z"
 },
 "line": 2,
 "open": true,
@@ -44,10 +44,10 @@
 "gid": "2026_11_IND_HOU",
 "hrs_before": 30.8,
 "last": {
-"edge": 0.0086,
+"edge": 0.0118,
 "fair": 0.265,
-"odds": 290,
-"t": "2026-11-19T18:26:08Z"
+"odds": 295,
+"t": "2026-11-19T21:59:24Z"
 },
 "line": 80,
 "open": true,
@@ -73,10 +73,10 @@
 "gid": "2026_11_IND_HOU",
 "hrs_before": 24.8,
 "last": {
-"edge": -0.0759,
-"fair": 0.535,
-"odds": -157,
-"t": "2026-11-19T18:26:08Z"
+"edge": -0.049,
+"fair": 0.52,
+"odds": -132,
+"t": "2026-11-19T21:59:24Z"
 },
 "line": 20,
 "open": false,
@@ -102,13 +102,13 @@
 "gid": "2026_11_IND_HOU",
 "hrs_before": 24.8,
 "last": {
-"edge": -0.0254,
-"fair": 0.345,
-"odds": 170,
-"t": "2026-11-19T18:26:08Z"
+"edge": 0.0217,
+"fair": 0.355,
+"odds": 200,
+"t": "2026-11-19T21:59:24Z"
 },
 "line": 30,
-"open": false,
+"open": true,
 "player": "Emari Demercado",
 "side": "over",
 "source": "live",
@@ -189,10 +189,10 @@
 "gid": "2026_11_MIN_SF",
 "hrs_before": 78.9,
 "last": {
-"edge": 0.0545,
-"fair": 0.585,
+"edge": 0.0495,
+"fair": 0.58,
 "odds": -113,
-"t": "2026-11-19T18:26:08Z"
+"t": "2026-11-19T21:59:24Z"
 },
 "line": 60,
 "open": true,
@@ -218,14 +218,101 @@
 "gid": "2026_11_PIT_PHI",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.0448,
-"fair": 0.425,
-"odds": 163,
-"t": "2026-11-19T18:26:08Z"
+"edge": 0.01,
+"fair": 0.41,
+"odds": 150,
+"t": "2026-11-19T21:59:24Z"
 },
 "line": 225,
 "open": true,
 "player": "Aaron Rodgers",
+"side": "over",
+"source": "live",
+"start": "2026-11-22T18:00:00Z",
+"stat": "passing_yards"
+},
+"2026_11_PIT_PHI|Dallas Goedert|receptions|4|under": {
+"best": {
+"edge": 0.05,
+"fair": 0.545,
+"odds": 102,
+"t": "2026-11-19T21:59:24Z"
+},
+"first": {
+"edge": 0.05,
+"fair": 0.545,
+"odds": 102,
+"t": "2026-11-19T21:59:24Z"
+},
+"gid": "2026_11_PIT_PHI",
+"hrs_before": 68.0,
+"last": {
+"edge": 0.05,
+"fair": 0.545,
+"odds": 102,
+"t": "2026-11-19T21:59:24Z"
+},
+"line": 4,
+"open": true,
+"player": "Dallas Goedert",
+"side": "under",
+"source": "live",
+"start": "2026-11-22T18:00:00Z",
+"stat": "receptions"
+},
+"2026_11_PIT_PHI|Saquon Barkley|carries|16|under": {
+"best": {
+"edge": 0.0302,
+"fair": 0.54,
+"odds": -104,
+"t": "2026-11-19T21:59:24Z"
+},
+"first": {
+"edge": 0.0302,
+"fair": 0.54,
+"odds": -104,
+"t": "2026-11-19T21:59:24Z"
+},
+"gid": "2026_11_PIT_PHI",
+"hrs_before": 68.0,
+"last": {
+"edge": 0.0302,
+"fair": 0.54,
+"odds": -104,
+"t": "2026-11-19T21:59:24Z"
+},
+"line": 16,
+"open": true,
+"player": "Saquon Barkley",
+"side": "under",
+"source": "live",
+"start": "2026-11-22T18:00:00Z",
+"stat": "carries"
+},
+"2026_11_TB_DET|Jared Goff|passing_yards|275|over": {
+"best": {
+"edge": 0.0317,
+"fair": 0.365,
+"odds": 200,
+"t": "2026-11-19T21:59:24Z"
+},
+"first": {
+"edge": 0.0317,
+"fair": 0.365,
+"odds": 200,
+"t": "2026-11-19T21:59:24Z"
+},
+"gid": "2026_11_TB_DET",
+"hrs_before": 68.0,
+"last": {
+"edge": 0.0317,
+"fair": 0.365,
+"odds": 200,
+"t": "2026-11-19T21:59:24Z"
+},
+"line": 275,
+"open": true,
+"player": "Jared Goff",
 "side": "over",
 "source": "live",
 "start": "2026-11-22T18:00:00Z",
@@ -247,10 +334,10 @@
 "gid": "2026_11_TEN_DAL",
 "hrs_before": 110.7,
 "last": {
-"edge": 0.0392,
-"fair": 0.5,
-"odds": 117,
-"t": "2026-11-19T18:26:08Z"
+"edge": 0.0333,
+"fair": 0.505,
+"odds": 112,
+"t": "2026-11-19T21:59:24Z"
 },
 "line": 3,
 "open": true,
