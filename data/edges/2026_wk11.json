@@ -15,14 +15,72 @@
 "gid": "2026_11_IND_HOU",
 "hrs_before": 30.8,
 "last": {
-"edge": 0.0117,
-"fair": 0.22,
-"odds": 380,
-"t": "2026-11-18T20:16:21Z"
+"edge": 0.0077,
+"fair": 0.235,
+"odds": 340,
+"t": "2026-11-19T00:25:48Z"
 },
 "line": 80,
 "open": true,
 "player": "David Montgomery",
+"side": "over",
+"source": "live",
+"start": "2026-11-20T01:15:00Z",
+"stat": "rushing_yards"
+},
+"2026_11_IND_HOU|Emari Demercado|rushing_yards|20|over": {
+"best": {
+"edge": 0.0323,
+"fair": 0.565,
+"odds": -114,
+"t": "2026-11-19T00:25:48Z"
+},
+"first": {
+"edge": 0.0323,
+"fair": 0.565,
+"odds": -114,
+"t": "2026-11-19T00:25:48Z"
+},
+"gid": "2026_11_IND_HOU",
+"hrs_before": 24.8,
+"last": {
+"edge": 0.0323,
+"fair": 0.565,
+"odds": -114,
+"t": "2026-11-19T00:25:48Z"
+},
+"line": 20,
+"open": true,
+"player": "Emari Demercado",
+"side": "over",
+"source": "live",
+"start": "2026-11-20T01:15:00Z",
+"stat": "rushing_yards"
+},
+"2026_11_IND_HOU|Emari Demercado|rushing_yards|30|over": {
+"best": {
+"edge": 0.052,
+"fair": 0.355,
+"odds": 230,
+"t": "2026-11-19T00:25:48Z"
+},
+"first": {
+"edge": 0.052,
+"fair": 0.355,
+"odds": 230,
+"t": "2026-11-19T00:25:48Z"
+},
+"gid": "2026_11_IND_HOU",
+"hrs_before": 24.8,
+"last": {
+"edge": 0.052,
+"fair": 0.355,
+"odds": 230,
+"t": "2026-11-19T00:25:48Z"
+},
+"line": 30,
+"open": true,
+"player": "Emari Demercado",
 "side": "over",
 "source": "live",
 "start": "2026-11-20T01:15:00Z",
@@ -59,10 +117,10 @@
 },
 "2026_11_TEN_DAL|Dak Prescott|passing_tds|3|over": {
 "best": {
-"edge": 0.0338,
-"fair": 0.51,
-"odds": 110,
-"t": "2026-11-18T03:18:36Z"
+"edge": 0.0399,
+"fair": 0.505,
+"odds": 115,
+"t": "2026-11-19T00:25:48Z"
 },
 "first": {
 "edge": 0.0338,
@@ -73,10 +131,10 @@
 "gid": "2026_11_TEN_DAL",
 "hrs_before": 110.7,
 "last": {
-"edge": 0.01,
-"fair": 0.51,
-"odds": 100,
-"t": "2026-11-18T20:16:21Z"
+"edge": 0.0399,
+"fair": 0.505,
+"odds": 115,
+"t": "2026-11-19T00:25:48Z"
 },
 "line": 3,
 "open": true,
