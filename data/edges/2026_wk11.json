@@ -15,18 +15,76 @@
 "gid": "2026_11_ARI_KC",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.05,
-"fair": 0.545,
-"odds": 102,
-"t": "2026-11-20T06:55:03Z"
+"edge": -0.0186,
+"fair": 0.535,
+"odds": -124,
+"t": "2026-11-20T16:00:52Z"
 },
 "line": 2,
-"open": true,
+"open": false,
 "player": "Reggie Virgil",
 "side": "under",
 "source": "live",
 "start": "2026-11-22T18:00:00Z",
 "stat": "receptions"
+},
+"2026_11_BAL_CAR|Ja'Kobi Lane|receptions|4|under": {
+"best": {
+"edge": 0.0347,
+"fair": 0.685,
+"odds": -186,
+"t": "2026-11-20T16:00:52Z"
+},
+"first": {
+"edge": 0.0347,
+"fair": 0.685,
+"odds": -186,
+"t": "2026-11-20T16:00:52Z"
+},
+"gid": "2026_11_BAL_CAR",
+"hrs_before": 50.0,
+"last": {
+"edge": 0.0347,
+"fair": 0.685,
+"odds": -186,
+"t": "2026-11-20T16:00:52Z"
+},
+"line": 4,
+"open": true,
+"player": "Ja'Kobi Lane",
+"side": "under",
+"source": "live",
+"start": "2026-11-22T18:00:00Z",
+"stat": "receptions"
+},
+"2026_11_CIN_WAS|Ja'Marr Chase|receiving_yards|130|over": {
+"best": {
+"edge": 0.0324,
+"fair": 0.265,
+"odds": 330,
+"t": "2026-11-20T16:00:52Z"
+},
+"first": {
+"edge": 0.0324,
+"fair": 0.265,
+"odds": 330,
+"t": "2026-11-20T16:00:52Z"
+},
+"gid": "2026_11_CIN_WAS",
+"hrs_before": 81.2,
+"last": {
+"edge": 0.0324,
+"fair": 0.265,
+"odds": 330,
+"t": "2026-11-20T16:00:52Z"
+},
+"line": 130,
+"open": true,
+"player": "Ja'Marr Chase",
+"side": "over",
+"source": "live",
+"start": "2026-11-24T01:15:00Z",
+"stat": "receiving_yards"
 },
 "2026_11_IND_HOU|David Montgomery|rushing_yards|80|over": {
 "best": {
@@ -173,6 +231,35 @@
 "start": "2026-11-20T01:15:00Z",
 "stat": "rushing_yards"
 },
+"2026_11_LV_DEN|Jonah Coleman|carries|17|under": {
+"best": {
+"edge": 0.0304,
+"fair": 0.545,
+"odds": -106,
+"t": "2026-11-20T16:00:52Z"
+},
+"first": {
+"edge": 0.0304,
+"fair": 0.545,
+"odds": -106,
+"t": "2026-11-20T16:00:52Z"
+},
+"gid": "2026_11_LV_DEN",
+"hrs_before": 53.4,
+"last": {
+"edge": 0.0304,
+"fair": 0.545,
+"odds": -106,
+"t": "2026-11-20T16:00:52Z"
+},
+"line": 17,
+"open": true,
+"player": "Jonah Coleman",
+"side": "under",
+"source": "live",
+"start": "2026-11-22T21:25:00Z",
+"stat": "carries"
+},
 "2026_11_MIN_SF|George Kittle|receiving_yards|60|under": {
 "best": {
 "edge": 0.0945,
@@ -192,7 +279,7 @@
 "edge": 0.0945,
 "fair": 0.625,
 "odds": -113,
-"t": "2026-11-20T06:55:03Z"
+"t": "2026-11-20T16:00:52Z"
 },
 "line": 60,
 "open": true,
@@ -204,10 +291,10 @@
 },
 "2026_11_MIN_SF|George Kittle|receptions|5|under": {
 "best": {
-"edge": 0.1116,
-"fair": 0.56,
+"edge": 0.1366,
+"fair": 0.585,
 "odds": 123,
-"t": "2026-11-20T06:55:03Z"
+"t": "2026-11-20T16:00:52Z"
 },
 "first": {
 "edge": 0.1116,
@@ -218,10 +305,10 @@
 "gid": "2026_11_MIN_SF",
 "hrs_before": 66.4,
 "last": {
-"edge": 0.1116,
-"fair": 0.56,
+"edge": 0.1366,
+"fair": 0.585,
 "odds": 123,
-"t": "2026-11-20T06:55:03Z"
+"t": "2026-11-20T16:00:52Z"
 },
 "line": 5,
 "open": true,
@@ -250,7 +337,7 @@
 "edge": 0.0332,
 "fair": 0.215,
 "odds": 450,
-"t": "2026-11-20T06:55:03Z"
+"t": "2026-11-20T16:00:52Z"
 },
 "line": 70,
 "open": true,
@@ -279,7 +366,7 @@
 "edge": 0.02,
 "fair": 0.42,
 "odds": 150,
-"t": "2026-11-20T06:55:03Z"
+"t": "2026-11-20T16:00:52Z"
 },
 "line": 225,
 "open": true,
@@ -305,10 +392,10 @@
 "gid": "2026_11_PIT_PHI",
 "hrs_before": 68.0,
 "last": {
-"edge": 0.0448,
-"fair": 0.535,
-"odds": 104,
-"t": "2026-11-20T06:55:03Z"
+"edge": 0.0051,
+"fair": 0.54,
+"odds": -115,
+"t": "2026-11-20T16:00:52Z"
 },
 "line": 4,
 "open": true,
@@ -334,13 +421,13 @@
 "gid": "2026_11_PIT_PHI",
 "hrs_before": 68.0,
 "last": {
-"edge": 0.0452,
+"edge": -0.014,
 "fair": 0.555,
-"odds": -104,
-"t": "2026-11-20T06:55:03Z"
+"odds": -132,
+"t": "2026-11-20T16:00:52Z"
 },
 "line": 16,
-"open": true,
+"open": false,
 "player": "Saquon Barkley",
 "side": "under",
 "source": "live",
@@ -363,13 +450,13 @@
 "gid": "2026_11_TB_DET",
 "hrs_before": 68.0,
 "last": {
-"edge": 0.0064,
+"edge": -0.0074,
 "fair": 0.37,
-"odds": 175,
-"t": "2026-11-20T06:55:03Z"
+"odds": 165,
+"t": "2026-11-20T16:00:52Z"
 },
 "line": 275,
-"open": true,
+"open": false,
 "player": "Jared Goff",
 "side": "over",
 "source": "live",
@@ -392,10 +479,10 @@
 "gid": "2026_11_TEN_DAL",
 "hrs_before": 110.7,
 "last": {
-"edge": 0.0092,
+"edge": 0.0138,
 "fair": 0.49,
-"odds": 108,
-"t": "2026-11-20T06:55:03Z"
+"odds": 110,
+"t": "2026-11-20T16:00:52Z"
 },
 "line": 3,
 "open": true,
