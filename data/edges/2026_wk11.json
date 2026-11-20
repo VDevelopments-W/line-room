@@ -18,7 +18,7 @@
 "edge": 0.05,
 "fair": 0.545,
 "odds": 102,
-"t": "2026-11-20T02:51:34Z"
+"t": "2026-11-20T06:55:03Z"
 },
 "line": 2,
 "open": true,
@@ -192,7 +192,7 @@
 "edge": 0.0945,
 "fair": 0.625,
 "odds": -113,
-"t": "2026-11-20T02:51:34Z"
+"t": "2026-11-20T06:55:03Z"
 },
 "line": 60,
 "open": true,
@@ -201,6 +201,64 @@
 "source": "live",
 "start": "2026-11-23T01:20:00Z",
 "stat": "receiving_yards"
+},
+"2026_11_MIN_SF|George Kittle|receptions|5|under": {
+"best": {
+"edge": 0.1116,
+"fair": 0.56,
+"odds": 123,
+"t": "2026-11-20T06:55:03Z"
+},
+"first": {
+"edge": 0.1116,
+"fair": 0.56,
+"odds": 123,
+"t": "2026-11-20T06:55:03Z"
+},
+"gid": "2026_11_MIN_SF",
+"hrs_before": 66.4,
+"last": {
+"edge": 0.1116,
+"fair": 0.56,
+"odds": 123,
+"t": "2026-11-20T06:55:03Z"
+},
+"line": 5,
+"open": true,
+"player": "George Kittle",
+"side": "under",
+"source": "live",
+"start": "2026-11-23T01:20:00Z",
+"stat": "receptions"
+},
+"2026_11_NO_CHI|Kyle Monangai|rushing_yards|70|over": {
+"best": {
+"edge": 0.0332,
+"fair": 0.215,
+"odds": 450,
+"t": "2026-11-20T06:55:03Z"
+},
+"first": {
+"edge": 0.0332,
+"fair": 0.215,
+"odds": 450,
+"t": "2026-11-20T06:55:03Z"
+},
+"gid": "2026_11_NO_CHI",
+"hrs_before": 59.1,
+"last": {
+"edge": 0.0332,
+"fair": 0.215,
+"odds": 450,
+"t": "2026-11-20T06:55:03Z"
+},
+"line": 70,
+"open": true,
+"player": "Kyle Monangai",
+"side": "over",
+"source": "live",
+"start": "2026-11-22T18:00:00Z",
+"stat": "rushing_yards"
 },
 "2026_11_PIT_PHI|Aaron Rodgers|passing_yards|225|over": {
 "best": {
@@ -221,7 +279,7 @@
 "edge": 0.02,
 "fair": 0.42,
 "odds": 150,
-"t": "2026-11-20T02:51:34Z"
+"t": "2026-11-20T06:55:03Z"
 },
 "line": 225,
 "open": true,
@@ -247,10 +305,10 @@
 "gid": "2026_11_PIT_PHI",
 "hrs_before": 68.0,
 "last": {
-"edge": 0.0498,
-"fair": 0.54,
+"edge": 0.0448,
+"fair": 0.535,
 "odds": 104,
-"t": "2026-11-20T02:51:34Z"
+"t": "2026-11-20T06:55:03Z"
 },
 "line": 4,
 "open": true,
@@ -262,10 +320,10 @@
 },
 "2026_11_PIT_PHI|Saquon Barkley|carries|16|under": {
 "best": {
-"edge": 0.0352,
-"fair": 0.545,
+"edge": 0.0452,
+"fair": 0.555,
 "odds": -104,
-"t": "2026-11-20T00:26:30Z"
+"t": "2026-11-20T06:55:03Z"
 },
 "first": {
 "edge": 0.0302,
@@ -276,10 +334,10 @@
 "gid": "2026_11_PIT_PHI",
 "hrs_before": 68.0,
 "last": {
-"edge": 0.0352,
-"fair": 0.545,
+"edge": 0.0452,
+"fair": 0.555,
 "odds": -104,
-"t": "2026-11-20T02:51:34Z"
+"t": "2026-11-20T06:55:03Z"
 },
 "line": 16,
 "open": true,
@@ -308,7 +366,7 @@
 "edge": 0.0064,
 "fair": 0.37,
 "odds": 175,
-"t": "2026-11-20T02:51:34Z"
+"t": "2026-11-20T06:55:03Z"
 },
 "line": 275,
 "open": true,
@@ -337,7 +395,7 @@
 "edge": 0.0092,
 "fair": 0.49,
 "odds": 108,
-"t": "2026-11-20T02:51:34Z"
+"t": "2026-11-20T06:55:03Z"
 },
 "line": 3,
 "open": true,
