@@ -15,10 +15,10 @@
 "gid": "2026_11_ARI_KC",
 "hrs_before": 71.6,
 "last": {
-"edge": -0.0156,
-"fair": 0.54,
+"edge": -0.0106,
+"fair": 0.545,
 "odds": -125,
-"t": "2026-11-21T11:49:54Z"
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 2,
 "open": false,
@@ -73,13 +73,13 @@
 "gid": "2026_11_CIN_WAS",
 "hrs_before": 81.2,
 "last": {
-"edge": -0.0026,
-"fair": 0.23,
-"odds": 330,
-"t": "2026-11-21T11:49:54Z"
+"edge": 0.0051,
+"fair": 0.235,
+"odds": 335,
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 130,
-"open": false,
+"open": true,
 "player": "Ja'Marr Chase",
 "side": "over",
 "source": "live",
@@ -250,7 +250,7 @@
 "edge": 0.0226,
 "fair": 0.24,
 "odds": 360,
-"t": "2026-11-21T11:49:54Z"
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 30,
 "open": true,
@@ -279,7 +279,7 @@
 "edge": -0.0624,
 "fair": 0.315,
 "odds": 165,
-"t": "2026-11-21T11:49:54Z"
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 2,
 "open": false,
@@ -305,10 +305,10 @@
 "gid": "2026_11_LV_DEN",
 "hrs_before": 51.0,
 "last": {
-"edge": 0.0569,
+"edge": 0.0008,
 "fair": 0.54,
-"odds": 107,
-"t": "2026-11-21T11:49:54Z"
+"odds": -117,
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 5,
 "open": true,
@@ -340,12 +340,41 @@
 "t": "2026-11-21T11:49:54Z"
 },
 "line": 17,
-"open": true,
+"open": false,
 "player": "Jonah Coleman",
 "side": "under",
 "source": "live",
 "start": "2026-11-22T21:25:00Z",
 "stat": "carries"
+},
+"2026_11_LV_DEN|Pat Bryant|receptions|3|under": {
+"best": {
+"edge": 0.0438,
+"fair": 0.52,
+"odds": 110,
+"t": "2026-11-21T18:26:31Z"
+},
+"first": {
+"edge": 0.0438,
+"fair": 0.52,
+"odds": 110,
+"t": "2026-11-21T18:26:31Z"
+},
+"gid": "2026_11_LV_DEN",
+"hrs_before": 27.0,
+"last": {
+"edge": 0.0438,
+"fair": 0.52,
+"odds": 110,
+"t": "2026-11-21T18:26:31Z"
+},
+"line": 3,
+"open": true,
+"player": "Pat Bryant",
+"side": "under",
+"source": "live",
+"start": "2026-11-22T21:25:00Z",
+"stat": "receptions"
 },
 "2026_11_MIA_BUF|Caleb Douglas|receptions|5|under": {
 "best": {
@@ -363,10 +392,10 @@
 "gid": "2026_11_MIA_BUF",
 "hrs_before": 43.3,
 "last": {
-"edge": 0.0565,
-"fair": 0.645,
-"odds": -143,
-"t": "2026-11-21T11:49:54Z"
+"edge": 0.0261,
+"fair": 0.64,
+"odds": -159,
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 5,
 "open": true,
@@ -398,7 +427,7 @@
 "t": "2026-11-21T11:49:54Z"
 },
 "line": 7,
-"open": true,
+"open": false,
 "player": "Josh Allen",
 "side": "under",
 "source": "live",
@@ -407,10 +436,10 @@
 },
 "2026_11_MIN_SF|George Kittle|receiving_yards|60|under": {
 "best": {
-"edge": 0.0945,
-"fair": 0.625,
+"edge": 0.1045,
+"fair": 0.635,
 "odds": -113,
-"t": "2026-11-20T02:51:34Z"
+"t": "2026-11-21T18:26:31Z"
 },
 "first": {
 "edge": 0.0545,
@@ -421,10 +450,10 @@
 "gid": "2026_11_MIN_SF",
 "hrs_before": 78.9,
 "last": {
-"edge": 0.0945,
-"fair": 0.625,
+"edge": 0.1045,
+"fair": 0.635,
 "odds": -113,
-"t": "2026-11-21T11:49:54Z"
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 60,
 "open": true,
@@ -453,7 +482,7 @@
 "edge": 0.1366,
 "fair": 0.585,
 "odds": 123,
-"t": "2026-11-21T11:49:54Z"
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 5,
 "open": true,
@@ -482,7 +511,7 @@
 "edge": 0.0301,
 "fair": 0.32,
 "odds": 245,
-"t": "2026-11-21T11:49:54Z"
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 40,
 "open": true,
@@ -508,10 +537,10 @@
 "gid": "2026_11_NO_CHI",
 "hrs_before": 47.6,
 "last": {
-"edge": -0.0083,
-"fair": 0.325,
+"edge": -0.0133,
+"fair": 0.32,
 "odds": 200,
-"t": "2026-11-21T11:49:54Z"
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 60,
 "open": false,
@@ -537,10 +566,10 @@
 "gid": "2026_11_NO_CHI",
 "hrs_before": 59.1,
 "last": {
-"edge": 0.0026,
-"fair": 0.22,
+"edge": 0.0076,
+"fair": 0.225,
 "odds": 360,
-"t": "2026-11-21T11:49:54Z"
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 70,
 "open": true,
@@ -569,7 +598,7 @@
 "edge": -0.0062,
 "fair": 0.47,
 "odds": 110,
-"t": "2026-11-21T11:49:54Z"
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 3,
 "open": false,
@@ -595,10 +624,10 @@
 "gid": "2026_11_PIT_PHI",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.0018,
-"fair": 0.41,
-"odds": 145,
-"t": "2026-11-21T11:49:54Z"
+"edge": 0.0228,
+"fair": 0.415,
+"odds": 155,
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 225,
 "open": true,
@@ -624,10 +653,10 @@
 "gid": "2026_11_PIT_PHI",
 "hrs_before": 68.0,
 "last": {
-"edge": -0.0149,
+"edge": -0.0127,
 "fair": 0.52,
-"odds": -115,
-"t": "2026-11-21T11:49:54Z"
+"odds": -114,
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 4,
 "open": false,
@@ -636,6 +665,35 @@
 "source": "live",
 "start": "2026-11-22T18:00:00Z",
 "stat": "receptions"
+},
+"2026_11_PIT_PHI|Darius Cooper|receiving_yards|20|over": {
+"best": {
+"edge": 0.0435,
+"fair": 0.455,
+"odds": 143,
+"t": "2026-11-21T18:26:31Z"
+},
+"first": {
+"edge": 0.0435,
+"fair": 0.455,
+"odds": 143,
+"t": "2026-11-21T18:26:31Z"
+},
+"gid": "2026_11_PIT_PHI",
+"hrs_before": 23.6,
+"last": {
+"edge": 0.0435,
+"fair": 0.455,
+"odds": 143,
+"t": "2026-11-21T18:26:31Z"
+},
+"line": 20,
+"open": true,
+"player": "Darius Cooper",
+"side": "over",
+"source": "live",
+"start": "2026-11-22T18:00:00Z",
+"stat": "receiving_yards"
 },
 "2026_11_PIT_PHI|Saquon Barkley|carries|16|under": {
 "best": {
@@ -682,10 +740,10 @@
 "gid": "2026_11_TB_DET",
 "hrs_before": 68.0,
 "last": {
-"edge": 0.0046,
-"fair": 0.375,
-"odds": 170,
-"t": "2026-11-21T11:49:54Z"
+"edge": 0.0064,
+"fair": 0.37,
+"odds": 175,
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 275,
 "open": true,
@@ -711,10 +769,10 @@
 "gid": "2026_11_TEN_DAL",
 "hrs_before": 47.6,
 "last": {
-"edge": 0.0228,
-"fair": 0.535,
-"odds": -105,
-"t": "2026-11-21T11:49:54Z"
+"edge": 0.0231,
+"fair": 0.54,
+"odds": -107,
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 8,
 "open": true,
@@ -743,7 +801,7 @@
 "edge": 0.0088,
 "fair": 0.485,
 "odds": 110,
-"t": "2026-11-21T11:49:54Z"
+"t": "2026-11-21T18:26:31Z"
 },
 "line": 3,
 "open": true,
