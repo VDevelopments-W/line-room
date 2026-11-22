@@ -15,10 +15,10 @@
 "gid": "2026_11_ARI_KC",
 "hrs_before": 71.6,
 "last": {
-"edge": -0.0266,
-"fair": 0.555,
-"odds": -139,
-"t": "2026-11-22T06:23:59Z"
+"edge": -0.0113,
+"fair": 0.565,
+"odds": -136,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 2,
 "open": false,
@@ -73,10 +73,10 @@
 "gid": "2026_11_CIN_WAS",
 "hrs_before": 81.2,
 "last": {
-"edge": 0.0101,
+"edge": 0.0019,
 "fair": 0.24,
-"odds": 335,
-"t": "2026-11-22T06:23:59Z"
+"odds": 320,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 130,
 "open": true,
@@ -247,10 +247,10 @@
 "gid": "2026_11_JAX_NYG",
 "hrs_before": 46.7,
 "last": {
-"edge": 0.0295,
-"fair": 0.24,
-"odds": 375,
-"t": "2026-11-22T06:23:59Z"
+"edge": 0.0367,
+"fair": 0.245,
+"odds": 380,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 30,
 "open": true,
@@ -276,10 +276,10 @@
 "gid": "2026_11_JAX_NYG",
 "hrs_before": 51.0,
 "last": {
-"edge": -0.0874,
-"fair": 0.29,
+"edge": -0.0924,
+"fair": 0.285,
 "odds": 165,
-"t": "2026-11-22T06:23:59Z"
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 2,
 "open": false,
@@ -288,6 +288,35 @@
 "source": "live",
 "start": "2026-11-22T21:25:00Z",
 "stat": "receptions"
+},
+"2026_11_JAX_NYG|Trevor Lawrence|rushing_yards|10|over": {
+"best": {
+"edge": 0.0367,
+"fair": 0.565,
+"odds": -112,
+"t": "2026-11-22T14:50:16Z"
+},
+"first": {
+"edge": 0.0367,
+"fair": 0.565,
+"odds": -112,
+"t": "2026-11-22T14:50:16Z"
+},
+"gid": "2026_11_JAX_NYG",
+"hrs_before": 6.6,
+"last": {
+"edge": 0.0367,
+"fair": 0.565,
+"odds": -112,
+"t": "2026-11-22T14:50:16Z"
+},
+"line": 10,
+"open": true,
+"player": "Trevor Lawrence",
+"side": "over",
+"source": "live",
+"start": "2026-11-22T21:25:00Z",
+"stat": "rushing_yards"
 },
 "2026_11_LV_DEN|Fernando Mendoza|carries|5|under": {
 "best": {
@@ -305,10 +334,10 @@
 "gid": "2026_11_LV_DEN",
 "hrs_before": 51.0,
 "last": {
-"edge": -0.0045,
+"edge": -0.0025,
 "fair": 0.545,
-"odds": -122,
-"t": "2026-11-22T06:23:59Z"
+"odds": -121,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 5,
 "open": false,
@@ -363,10 +392,10 @@
 "gid": "2026_11_LV_DEN",
 "hrs_before": 27.0,
 "last": {
-"edge": -0.0206,
+"edge": -0.0186,
 "fair": 0.535,
-"odds": -125,
-"t": "2026-11-22T06:23:59Z"
+"odds": -124,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 3,
 "open": false,
@@ -392,10 +421,10 @@
 "gid": "2026_11_MIA_BUF",
 "hrs_before": 43.3,
 "last": {
-"edge": 0.0291,
-"fair": 0.64,
-"odds": -157,
-"t": "2026-11-22T06:23:59Z"
+"edge": 0.0295,
+"fair": 0.655,
+"odds": -167,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 5,
 "open": true,
@@ -407,10 +436,10 @@
 },
 "2026_11_MIA_BUF|Josh Allen|carries|7|under": {
 "best": {
-"edge": 0.0867,
-"fair": 0.615,
+"edge": 0.0917,
+"fair": 0.62,
 "odds": -112,
-"t": "2026-11-22T06:23:59Z"
+"t": "2026-11-22T14:50:16Z"
 },
 "first": {
 "edge": 0.0526,
@@ -421,10 +450,10 @@
 "gid": "2026_11_MIA_BUF",
 "hrs_before": 38.5,
 "last": {
-"edge": 0.0867,
-"fair": 0.615,
+"edge": 0.0917,
+"fair": 0.62,
 "odds": -112,
-"t": "2026-11-22T06:23:59Z"
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 7,
 "open": true,
@@ -453,7 +482,7 @@
 "edge": 0.0945,
 "fair": 0.625,
 "odds": -113,
-"t": "2026-11-22T06:23:59Z"
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 60,
 "open": true,
@@ -482,7 +511,7 @@
 "edge": 0.1266,
 "fair": 0.575,
 "odds": 123,
-"t": "2026-11-22T06:23:59Z"
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 5,
 "open": true,
@@ -511,7 +540,7 @@
 "edge": 0.0399,
 "fair": 0.505,
 "odds": 115,
-"t": "2026-11-22T06:23:59Z"
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 30,
 "open": true,
@@ -523,10 +552,10 @@
 },
 "2026_11_MIN_SF|Kaelon Black|rushing_yards|40|over": {
 "best": {
-"edge": 0.0351,
-"fair": 0.325,
+"edge": 0.0401,
+"fair": 0.33,
 "odds": 245,
-"t": "2026-11-20T22:41:57Z"
+"t": "2026-11-22T14:50:16Z"
 },
 "first": {
 "edge": 0.0351,
@@ -537,10 +566,10 @@
 "gid": "2026_11_MIN_SF",
 "hrs_before": 50.6,
 "last": {
-"edge": 0.0351,
-"fair": 0.325,
+"edge": 0.0401,
+"fair": 0.33,
 "odds": 245,
-"t": "2026-11-22T06:23:59Z"
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 40,
 "open": true,
@@ -566,10 +595,10 @@
 "gid": "2026_11_NO_CHI",
 "hrs_before": 47.6,
 "last": {
-"edge": 0.0171,
-"fair": 0.345,
-"odds": 205,
-"t": "2026-11-22T06:23:59Z"
+"edge": 0.0124,
+"fair": 0.335,
+"odds": 210,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 60,
 "open": true,
@@ -581,10 +610,10 @@
 },
 "2026_11_NO_CHI|Kyle Monangai|rushing_yards|70|over": {
 "best": {
-"edge": 0.0382,
-"fair": 0.22,
-"odds": 450,
-"t": "2026-11-20T18:26:09Z"
+"edge": 0.0422,
+"fair": 0.255,
+"odds": 370,
+"t": "2026-11-22T14:50:16Z"
 },
 "first": {
 "edge": 0.0332,
@@ -595,10 +624,10 @@
 "gid": "2026_11_NO_CHI",
 "hrs_before": 59.1,
 "last": {
-"edge": 0.0376,
+"edge": 0.0422,
 "fair": 0.255,
-"odds": 360,
-"t": "2026-11-22T06:23:59Z"
+"odds": 370,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 70,
 "open": true,
@@ -627,7 +656,7 @@
 "edge": 0.0049,
 "fair": 0.47,
 "odds": 115,
-"t": "2026-11-22T06:23:59Z"
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 3,
 "open": true,
@@ -653,12 +682,41 @@
 "gid": "2026_11_PIT_PHI",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.0304,
-"fair": 0.415,
-"odds": 160,
-"t": "2026-11-22T06:23:59Z"
+"edge": 0.0314,
+"fair": 0.395,
+"odds": 175,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 225,
+"open": true,
+"player": "Aaron Rodgers",
+"side": "over",
+"source": "live",
+"start": "2026-11-22T18:00:00Z",
+"stat": "passing_yards"
+},
+"2026_11_PIT_PHI|Aaron Rodgers|passing_yards|250|over": {
+"best": {
+"edge": 0.0324,
+"fair": 0.265,
+"odds": 330,
+"t": "2026-11-22T14:50:16Z"
+},
+"first": {
+"edge": 0.0324,
+"fair": 0.265,
+"odds": 330,
+"t": "2026-11-22T14:50:16Z"
+},
+"gid": "2026_11_PIT_PHI",
+"hrs_before": 3.2,
+"last": {
+"edge": 0.0324,
+"fair": 0.265,
+"odds": 330,
+"t": "2026-11-22T14:50:16Z"
+},
+"line": 250,
 "open": true,
 "player": "Aaron Rodgers",
 "side": "over",
@@ -682,10 +740,10 @@
 "gid": "2026_11_PIT_PHI",
 "hrs_before": 68.0,
 "last": {
-"edge": -0.0205,
-"fair": 0.51,
+"edge": -0.0155,
+"fair": 0.515,
 "odds": -113,
-"t": "2026-11-22T06:23:59Z"
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 4,
 "open": false,
@@ -714,7 +772,7 @@
 "edge": -0.0158,
 "fair": 0.445,
 "odds": 117,
-"t": "2026-11-22T06:23:59Z"
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 20,
 "open": false,
@@ -769,13 +827,13 @@
 "gid": "2026_11_TB_DET",
 "hrs_before": 68.0,
 "last": {
-"edge": 0.0214,
+"edge": -0.0072,
 "fair": 0.385,
-"odds": 175,
-"t": "2026-11-22T06:23:59Z"
+"odds": 155,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 275,
-"open": true,
+"open": false,
 "player": "Jared Goff",
 "side": "over",
 "source": "live",
@@ -798,13 +856,13 @@
 "gid": "2026_11_TEN_DAL",
 "hrs_before": 47.6,
 "last": {
-"edge": -0.0033,
-"fair": 0.525,
-"odds": -112,
-"t": "2026-11-22T06:23:59Z"
+"edge": 0.0258,
+"fair": 0.545,
+"odds": -108,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 8,
-"open": false,
+"open": true,
 "player": "CeeDee Lamb",
 "side": "under",
 "source": "live",
@@ -827,10 +885,10 @@
 "gid": "2026_11_TEN_DAL",
 "hrs_before": 110.7,
 "last": {
-"edge": 0.0088,
+"edge": 0.0177,
 "fair": 0.485,
-"odds": 110,
-"t": "2026-11-22T06:23:59Z"
+"odds": 114,
+"t": "2026-11-22T14:50:16Z"
 },
 "line": 3,
 "open": true,
