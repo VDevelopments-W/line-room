@@ -76,7 +76,7 @@
 "edge": 0.0019,
 "fair": 0.24,
 "odds": 320,
-"t": "2026-11-22T20:26:22Z"
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 130,
 "open": true,
@@ -247,10 +247,10 @@
 "gid": "2026_11_JAX_NYG",
 "hrs_before": 46.7,
 "last": {
-"edge": 0.0276,
+"edge": 0.0345,
 "fair": 0.245,
-"odds": 360,
-"t": "2026-11-22T20:26:22Z"
+"odds": 375,
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 30,
 "open": true,
@@ -259,6 +259,35 @@
 "source": "live",
 "start": "2026-11-22T21:25:00Z",
 "stat": "receiving_yards"
+},
+"2026_11_JAX_NYG|Chris Rodriguez Jr.|rushing_yards|30|over": {
+"best": {
+"edge": 0.032,
+"fair": 0.335,
+"odds": 230,
+"t": "2026-11-22T20:59:00Z"
+},
+"first": {
+"edge": 0.032,
+"fair": 0.335,
+"odds": 230,
+"t": "2026-11-22T20:59:00Z"
+},
+"gid": "2026_11_JAX_NYG",
+"hrs_before": 0.4,
+"last": {
+"edge": 0.032,
+"fair": 0.335,
+"odds": 230,
+"t": "2026-11-22T20:59:00Z"
+},
+"line": 30,
+"open": true,
+"player": "Chris Rodriguez Jr.",
+"side": "over",
+"source": "live",
+"start": "2026-11-22T21:25:00Z",
+"stat": "rushing_yards"
 },
 "2026_11_JAX_NYG|Theo Johnson|receptions|2|over": {
 "best": {
@@ -276,10 +305,10 @@
 "gid": "2026_11_JAX_NYG",
 "hrs_before": 51.0,
 "last": {
-"edge": -0.0759,
+"edge": -0.0722,
 "fair": 0.275,
-"odds": 185,
-"t": "2026-11-22T20:26:22Z"
+"odds": 188,
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 2,
 "open": false,
@@ -288,6 +317,35 @@
 "source": "live",
 "start": "2026-11-22T21:25:00Z",
 "stat": "receptions"
+},
+"2026_11_JAX_NYG|Trevor Lawrence|passing_yards|275|over": {
+"best": {
+"edge": 0.0518,
+"fair": 0.305,
+"odds": 295,
+"t": "2026-11-22T20:59:00Z"
+},
+"first": {
+"edge": 0.0518,
+"fair": 0.305,
+"odds": 295,
+"t": "2026-11-22T20:59:00Z"
+},
+"gid": "2026_11_JAX_NYG",
+"hrs_before": 0.4,
+"last": {
+"edge": 0.0518,
+"fair": 0.305,
+"odds": 295,
+"t": "2026-11-22T20:59:00Z"
+},
+"line": 275,
+"open": true,
+"player": "Trevor Lawrence",
+"side": "over",
+"source": "live",
+"start": "2026-11-22T21:25:00Z",
+"stat": "passing_yards"
 },
 "2026_11_JAX_NYG|Trevor Lawrence|rushing_yards|10|over": {
 "best": {
@@ -305,10 +363,10 @@
 "gid": "2026_11_JAX_NYG",
 "hrs_before": 6.6,
 "last": {
-"edge": 0.0267,
+"edge": 0.0335,
 "fair": 0.555,
-"odds": -112,
-"t": "2026-11-22T20:26:22Z"
+"odds": -109,
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 10,
 "open": true,
@@ -337,7 +395,7 @@
 "edge": -0.0206,
 "fair": 0.535,
 "odds": -125,
-"t": "2026-11-22T20:26:22Z"
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 5,
 "open": false,
@@ -392,10 +450,10 @@
 "gid": "2026_11_LV_DEN",
 "hrs_before": 27.0,
 "last": {
-"edge": 0.0117,
-"fair": 0.54,
+"edge": 0.0067,
+"fair": 0.535,
 "odds": -112,
-"t": "2026-11-22T20:26:22Z"
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 3,
 "open": true,
@@ -482,7 +540,7 @@
 "edge": 0.0945,
 "fair": 0.625,
 "odds": -113,
-"t": "2026-11-22T20:26:22Z"
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 60,
 "open": true,
@@ -511,7 +569,7 @@
 "edge": 0.1366,
 "fair": 0.585,
 "odds": 123,
-"t": "2026-11-22T20:26:22Z"
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 5,
 "open": true,
@@ -540,7 +598,7 @@
 "edge": 0.0398,
 "fair": 0.605,
 "odds": -130,
-"t": "2026-11-22T20:26:22Z"
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 13,
 "open": true,
@@ -569,7 +627,7 @@
 "edge": 0.0399,
 "fair": 0.505,
 "odds": 115,
-"t": "2026-11-22T20:26:22Z"
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 30,
 "open": true,
@@ -598,7 +656,7 @@
 "edge": 0.0351,
 "fair": 0.325,
 "odds": 245,
-"t": "2026-11-22T20:26:22Z"
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 40,
 "open": true,
@@ -714,7 +772,7 @@
 "edge": 0.0206,
 "fair": 0.465,
 "odds": 125,
-"t": "2026-11-22T20:26:22Z"
+"t": "2026-11-22T20:59:00Z"
 },
 "line": 3,
 "open": true,
