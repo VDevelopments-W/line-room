@@ -73,13 +73,13 @@
 "gid": "2026_11_CIN_WAS",
 "hrs_before": 81.2,
 "last": {
-"edge": -0.0091,
-"fair": 0.285,
+"edge": 0.0109,
+"fair": 0.305,
 "odds": 240,
-"t": "2026-11-23T18:26:06Z"
+"t": "2026-11-24T00:26:16Z"
 },
 "line": 130,
-"open": false,
+"open": true,
 "player": "Ja'Marr Chase",
 "side": "over",
 "source": "live",
