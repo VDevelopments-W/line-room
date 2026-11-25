@@ -1,1 +1,31 @@
-{}
+{
+"2026_12_KC_BUF|Patrick Mahomes|rushing_yards|10|over": {
+"best": {
+"edge": 0.0372,
+"fair": 0.645,
+"odds": -155,
+"t": "2026-11-25T05:08:17Z"
+},
+"first": {
+"edge": 0.0372,
+"fair": 0.645,
+"odds": -155,
+"t": "2026-11-25T05:08:17Z"
+},
+"gid": "2026_12_KC_BUF",
+"hrs_before": 44.2,
+"last": {
+"edge": 0.0372,
+"fair": 0.645,
+"odds": -155,
+"t": "2026-11-25T05:08:17Z"
+},
+"line": 10,
+"open": true,
+"player": "Patrick Mahomes",
+"side": "over",
+"source": "live",
+"start": "2026-11-27T01:20:00Z",
+"stat": "rushing_yards"
+}
+}

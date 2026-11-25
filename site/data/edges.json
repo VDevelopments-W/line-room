@@ -1,1 +1,1 @@
-{"generated":"2026-11-24T22:49:49Z","stale":[],"threshold":0.03,"unit":20,"live":[],"trip_list":[],"checked":763}
+{"generated":"2026-11-25T05:08:17Z","stale":[],"threshold":0.03,"unit":20,"live":[{"gid":"2026_12_KC_BUF","start":"2026-11-27T01:20:00Z","player":"Patrick Mahomes","stat":"rushing_yards","line":10,"side":"over","first":{"t":"2026-11-25T05:08:17Z","odds":-155,"fair":0.645,"edge":0.0372},"label":"Patrick Mahomes 10+ Rush Yds","odds":-155,"fair":0.645,"edge":0.0372,"fair_odds":-182,"good_to":-174,"status":null}],"trip_list":[],"checked":718}
