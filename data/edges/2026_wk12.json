@@ -1,4 +1,33 @@
 {
+"2026_12_DEN_PIT|Jonah Coleman|receptions|4|under": {
+"best": {
+"edge": 0.0669,
+"fair": 0.55,
+"odds": 107,
+"t": "2026-11-25T18:26:11Z"
+},
+"first": {
+"edge": 0.0669,
+"fair": 0.55,
+"odds": 107,
+"t": "2026-11-25T18:26:11Z"
+},
+"gid": "2026_12_DEN_PIT",
+"hrs_before": 49.6,
+"last": {
+"edge": 0.0669,
+"fair": 0.55,
+"odds": 107,
+"t": "2026-11-25T18:26:11Z"
+},
+"line": 4,
+"open": true,
+"player": "Jonah Coleman",
+"side": "under",
+"source": "live",
+"start": "2026-11-27T20:00:00Z",
+"stat": "receptions"
+},
 "2026_12_GB_LA|Blake Corum|receiving_yards|20|over": {
 "best": {
 "edge": 0.041,
@@ -15,10 +44,10 @@
 "gid": "2026_12_GB_LA",
 "hrs_before": 17.1,
 "last": {
-"edge": 0.041,
-"fair": 0.315,
-"odds": 265,
-"t": "2026-11-25T07:53:46Z"
+"edge": 0.0124,
+"fair": 0.335,
+"odds": 210,
+"t": "2026-11-25T18:26:11Z"
 },
 "line": 20,
 "open": true,
@@ -27,6 +56,64 @@
 "source": "live",
 "start": "2026-11-26T01:00:00Z",
 "stat": "receiving_yards"
+},
+"2026_12_GB_LA|Matthew Stafford|passing_yards|275|over": {
+"best": {
+"edge": 0.0311,
+"fair": 0.275,
+"odds": 310,
+"t": "2026-11-25T18:26:11Z"
+},
+"first": {
+"edge": 0.0311,
+"fair": 0.275,
+"odds": 310,
+"t": "2026-11-25T18:26:11Z"
+},
+"gid": "2026_12_GB_LA",
+"hrs_before": 6.6,
+"last": {
+"edge": 0.0311,
+"fair": 0.275,
+"odds": 310,
+"t": "2026-11-25T18:26:11Z"
+},
+"line": 275,
+"open": true,
+"player": "Matthew Stafford",
+"side": "over",
+"source": "live",
+"start": "2026-11-26T01:00:00Z",
+"stat": "passing_yards"
+},
+"2026_12_KC_BUF|Josh Downs|receptions|4|under": {
+"best": {
+"edge": 0.0508,
+"fair": 0.57,
+"odds": -108,
+"t": "2026-11-25T18:26:11Z"
+},
+"first": {
+"edge": 0.0508,
+"fair": 0.57,
+"odds": -108,
+"t": "2026-11-25T18:26:11Z"
+},
+"gid": "2026_12_KC_BUF",
+"hrs_before": 30.9,
+"last": {
+"edge": 0.0508,
+"fair": 0.57,
+"odds": -108,
+"t": "2026-11-25T18:26:11Z"
+},
+"line": 4,
+"open": true,
+"player": "Josh Downs",
+"side": "under",
+"source": "live",
+"start": "2026-11-27T01:20:00Z",
+"stat": "receptions"
 },
 "2026_12_KC_BUF|Patrick Mahomes|rushing_yards|10|over": {
 "best": {
@@ -44,10 +131,10 @@
 "gid": "2026_12_KC_BUF",
 "hrs_before": 44.2,
 "last": {
-"edge": 0.0372,
+"edge": -0.0102,
 "fair": 0.645,
-"odds": -155,
-"t": "2026-11-25T05:08:17Z"
+"odds": -190,
+"t": "2026-11-25T18:26:11Z"
 },
 "line": 10,
 "open": false,
@@ -56,5 +143,34 @@
 "source": "live",
 "start": "2026-11-27T01:20:00Z",
 "stat": "rushing_yards"
+},
+"2026_12_PHI_DAL|Saquon Barkley|receiving_yards|20|over": {
+"best": {
+"edge": 0.0309,
+"fair": 0.235,
+"odds": 390,
+"t": "2026-11-25T18:26:11Z"
+},
+"first": {
+"edge": 0.0309,
+"fair": 0.235,
+"odds": 390,
+"t": "2026-11-25T18:26:11Z"
+},
+"gid": "2026_12_PHI_DAL",
+"hrs_before": 27.1,
+"last": {
+"edge": 0.0309,
+"fair": 0.235,
+"odds": 390,
+"t": "2026-11-25T18:26:11Z"
+},
+"line": 20,
+"open": true,
+"player": "Saquon Barkley",
+"side": "over",
+"source": "live",
+"start": "2026-11-26T21:30:00Z",
+"stat": "receiving_yards"
 }
 }
