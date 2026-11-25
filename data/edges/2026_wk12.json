@@ -1,4 +1,33 @@
 {
+"2026_12_GB_LA|Blake Corum|receiving_yards|20|over": {
+"best": {
+"edge": 0.041,
+"fair": 0.315,
+"odds": 265,
+"t": "2026-11-25T07:53:46Z"
+},
+"first": {
+"edge": 0.041,
+"fair": 0.315,
+"odds": 265,
+"t": "2026-11-25T07:53:46Z"
+},
+"gid": "2026_12_GB_LA",
+"hrs_before": 17.1,
+"last": {
+"edge": 0.041,
+"fair": 0.315,
+"odds": 265,
+"t": "2026-11-25T07:53:46Z"
+},
+"line": 20,
+"open": true,
+"player": "Blake Corum",
+"side": "over",
+"source": "live",
+"start": "2026-11-26T01:00:00Z",
+"stat": "receiving_yards"
+},
 "2026_12_KC_BUF|Patrick Mahomes|rushing_yards|10|over": {
 "best": {
 "edge": 0.0372,
@@ -21,7 +50,7 @@
 "t": "2026-11-25T05:08:17Z"
 },
 "line": 10,
-"open": true,
+"open": false,
 "player": "Patrick Mahomes",
 "side": "over",
 "source": "live",
