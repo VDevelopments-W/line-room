@@ -15,10 +15,10 @@
 "gid": "2026_12_DEN_PIT",
 "hrs_before": 49.6,
 "last": {
-"edge": -0.0025,
-"fair": 0.545,
+"edge": -0.0125,
+"fair": 0.535,
 "odds": -121,
-"t": "2026-11-26T05:48:30Z"
+"t": "2026-11-26T15:57:05Z"
 },
 "line": 4,
 "open": false,
@@ -250,7 +250,7 @@
 "edge": -0.005,
 "fair": 0.595,
 "odds": -150,
-"t": "2026-11-26T05:48:30Z"
+"t": "2026-11-26T15:57:05Z"
 },
 "line": 4,
 "open": false,
@@ -276,10 +276,10 @@
 "gid": "2026_12_KC_BUF",
 "hrs_before": 44.2,
 "last": {
-"edge": 0.0099,
+"edge": 0.0134,
 "fair": 0.595,
-"odds": -141,
-"t": "2026-11-26T05:48:30Z"
+"odds": -139,
+"t": "2026-11-26T15:57:05Z"
 },
 "line": 10,
 "open": true,
@@ -308,7 +308,7 @@
 "edge": 0.0396,
 "fair": 0.525,
 "odds": 106,
-"t": "2026-11-26T05:48:30Z"
+"t": "2026-11-26T15:57:05Z"
 },
 "line": 225,
 "open": true,
@@ -337,9 +337,38 @@
 "edge": 0.0417,
 "fair": 0.375,
 "odds": 200,
-"t": "2026-11-26T05:48:30Z"
+"t": "2026-11-26T15:57:05Z"
 },
 "line": 250,
+"open": true,
+"player": "Deshaun Watson",
+"side": "over",
+"source": "live",
+"start": "2026-11-30T01:20:00Z",
+"stat": "passing_yards"
+},
+"2026_12_LV_CLE|Deshaun Watson|passing_yards|275|over": {
+"best": {
+"edge": 0.0367,
+"fair": 0.245,
+"odds": 380,
+"t": "2026-11-26T15:57:05Z"
+},
+"first": {
+"edge": 0.0367,
+"fair": 0.245,
+"odds": 380,
+"t": "2026-11-26T15:57:05Z"
+},
+"gid": "2026_12_LV_CLE",
+"hrs_before": 81.4,
+"last": {
+"edge": 0.0367,
+"fair": 0.245,
+"odds": 380,
+"t": "2026-11-26T15:57:05Z"
+},
+"line": 275,
 "open": true,
 "player": "Deshaun Watson",
 "side": "over",
@@ -363,10 +392,10 @@
 "gid": "2026_12_PHI_DAL",
 "hrs_before": 27.1,
 "last": {
-"edge": 0.02,
-"fair": 0.22,
-"odds": 400,
-"t": "2026-11-26T05:48:30Z"
+"edge": 0.0332,
+"fair": 0.215,
+"odds": 450,
+"t": "2026-11-26T15:57:05Z"
 },
 "line": 20,
 "open": true,
@@ -378,10 +407,10 @@
 },
 "2026_12_SEA_SF|Kaelon Black|rushing_yards|30|over": {
 "best": {
-"edge": 0.0347,
-"fair": 0.305,
-"odds": 270,
-"t": "2026-11-26T00:26:06Z"
+"edge": 0.0483,
+"fair": 0.315,
+"odds": 275,
+"t": "2026-11-26T15:57:05Z"
 },
 "first": {
 "edge": 0.0347,
@@ -392,10 +421,10 @@
 "gid": "2026_12_SEA_SF",
 "hrs_before": 93.0,
 "last": {
-"edge": 0.0347,
-"fair": 0.305,
-"odds": 270,
-"t": "2026-11-26T05:48:30Z"
+"edge": 0.0483,
+"fair": 0.315,
+"odds": 275,
+"t": "2026-11-26T15:57:05Z"
 },
 "line": 30,
 "open": true,
