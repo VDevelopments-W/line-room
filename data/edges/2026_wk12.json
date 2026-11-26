@@ -18,7 +18,7 @@
 "edge": -0.0125,
 "fair": 0.535,
 "odds": -121,
-"t": "2026-11-26T15:57:05Z"
+"t": "2026-11-26T18:26:00Z"
 },
 "line": 4,
 "open": false,
@@ -247,13 +247,13 @@
 "gid": "2026_12_KC_BUF",
 "hrs_before": 30.9,
 "last": {
-"edge": -0.005,
-"fair": 0.595,
+"edge": 0.015,
+"fair": 0.615,
 "odds": -150,
-"t": "2026-11-26T15:57:05Z"
+"t": "2026-11-26T18:26:00Z"
 },
 "line": 4,
-"open": false,
+"open": true,
 "player": "Josh Downs",
 "side": "under",
 "source": "live",
@@ -279,7 +279,7 @@
 "edge": 0.0134,
 "fair": 0.595,
 "odds": -139,
-"t": "2026-11-26T15:57:05Z"
+"t": "2026-11-26T18:26:00Z"
 },
 "line": 10,
 "open": true,
@@ -305,10 +305,10 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 91.5,
 "last": {
-"edge": 0.0396,
-"fair": 0.525,
+"edge": 0.0346,
+"fair": 0.52,
 "odds": 106,
-"t": "2026-11-26T15:57:05Z"
+"t": "2026-11-26T18:26:00Z"
 },
 "line": 225,
 "open": true,
@@ -337,7 +337,7 @@
 "edge": 0.0417,
 "fair": 0.375,
 "odds": 200,
-"t": "2026-11-26T15:57:05Z"
+"t": "2026-11-26T18:26:00Z"
 },
 "line": 250,
 "open": true,
@@ -366,7 +366,7 @@
 "edge": 0.0367,
 "fair": 0.245,
 "odds": 380,
-"t": "2026-11-26T15:57:05Z"
+"t": "2026-11-26T18:26:00Z"
 },
 "line": 275,
 "open": true,
@@ -375,6 +375,93 @@
 "source": "live",
 "start": "2026-11-30T01:20:00Z",
 "stat": "passing_yards"
+},
+"2026_12_NYG_IND|Laquon Treadwell|receptions|2|under": {
+"best": {
+"edge": 0.0518,
+"fair": 0.46,
+"odds": 145,
+"t": "2026-11-26T18:26:00Z"
+},
+"first": {
+"edge": 0.0518,
+"fair": 0.46,
+"odds": 145,
+"t": "2026-11-26T18:26:00Z"
+},
+"gid": "2026_12_NYG_IND",
+"hrs_before": 71.6,
+"last": {
+"edge": 0.0518,
+"fair": 0.46,
+"odds": 145,
+"t": "2026-11-26T18:26:00Z"
+},
+"line": 2,
+"open": true,
+"player": "Laquon Treadwell",
+"side": "under",
+"source": "live",
+"start": "2026-11-29T18:00:00Z",
+"stat": "receptions"
+},
+"2026_12_NYJ_MIA|Ollie Gordon II|carries|16|under": {
+"best": {
+"edge": 0.03,
+"fair": 0.53,
+"odds": 100,
+"t": "2026-11-26T18:26:00Z"
+},
+"first": {
+"edge": 0.03,
+"fair": 0.53,
+"odds": 100,
+"t": "2026-11-26T18:26:00Z"
+},
+"gid": "2026_12_NYJ_MIA",
+"hrs_before": 71.6,
+"last": {
+"edge": 0.03,
+"fair": 0.53,
+"odds": 100,
+"t": "2026-11-26T18:26:00Z"
+},
+"line": 16,
+"open": true,
+"player": "Ollie Gordon II",
+"side": "under",
+"source": "live",
+"start": "2026-11-29T18:00:00Z",
+"stat": "carries"
+},
+"2026_12_PHI_DAL|Javonte Williams|receptions|3|over": {
+"best": {
+"edge": 0.0351,
+"fair": 0.325,
+"odds": 245,
+"t": "2026-11-26T18:26:00Z"
+},
+"first": {
+"edge": 0.0351,
+"fair": 0.325,
+"odds": 245,
+"t": "2026-11-26T18:26:00Z"
+},
+"gid": "2026_12_PHI_DAL",
+"hrs_before": 3.1,
+"last": {
+"edge": 0.0351,
+"fair": 0.325,
+"odds": 245,
+"t": "2026-11-26T18:26:00Z"
+},
+"line": 3,
+"open": true,
+"player": "Javonte Williams",
+"side": "over",
+"source": "live",
+"start": "2026-11-26T21:30:00Z",
+"stat": "receptions"
 },
 "2026_12_PHI_DAL|Saquon Barkley|receiving_yards|20|over": {
 "best": {
@@ -398,7 +485,7 @@
 "t": "2026-11-26T15:57:05Z"
 },
 "line": 20,
-"open": true,
+"open": false,
 "player": "Saquon Barkley",
 "side": "over",
 "source": "live",
@@ -421,10 +508,10 @@
 "gid": "2026_12_SEA_SF",
 "hrs_before": 93.0,
 "last": {
-"edge": 0.0483,
-"fair": 0.315,
+"edge": 0.0433,
+"fair": 0.31,
 "odds": 275,
-"t": "2026-11-26T15:57:05Z"
+"t": "2026-11-26T18:26:00Z"
 },
 "line": 30,
 "open": true,
