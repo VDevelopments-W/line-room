@@ -18,7 +18,7 @@
 "edge": -0.0025,
 "fair": 0.545,
 "odds": -121,
-"t": "2026-11-26T00:26:06Z"
+"t": "2026-11-26T05:48:30Z"
 },
 "line": 4,
 "open": false,
@@ -250,7 +250,7 @@
 "edge": -0.005,
 "fair": 0.595,
 "odds": -150,
-"t": "2026-11-26T00:26:06Z"
+"t": "2026-11-26T05:48:30Z"
 },
 "line": 4,
 "open": false,
@@ -279,7 +279,7 @@
 "edge": 0.0099,
 "fair": 0.595,
 "odds": -141,
-"t": "2026-11-26T00:26:06Z"
+"t": "2026-11-26T05:48:30Z"
 },
 "line": 10,
 "open": true,
@@ -288,6 +288,64 @@
 "source": "live",
 "start": "2026-11-27T01:20:00Z",
 "stat": "rushing_yards"
+},
+"2026_12_LV_CLE|Deshaun Watson|passing_yards|225|over": {
+"best": {
+"edge": 0.0396,
+"fair": 0.525,
+"odds": 106,
+"t": "2026-11-26T05:48:30Z"
+},
+"first": {
+"edge": 0.0396,
+"fair": 0.525,
+"odds": 106,
+"t": "2026-11-26T05:48:30Z"
+},
+"gid": "2026_12_LV_CLE",
+"hrs_before": 91.5,
+"last": {
+"edge": 0.0396,
+"fair": 0.525,
+"odds": 106,
+"t": "2026-11-26T05:48:30Z"
+},
+"line": 225,
+"open": true,
+"player": "Deshaun Watson",
+"side": "over",
+"source": "live",
+"start": "2026-11-30T01:20:00Z",
+"stat": "passing_yards"
+},
+"2026_12_LV_CLE|Deshaun Watson|passing_yards|250|over": {
+"best": {
+"edge": 0.0417,
+"fair": 0.375,
+"odds": 200,
+"t": "2026-11-26T05:48:30Z"
+},
+"first": {
+"edge": 0.0417,
+"fair": 0.375,
+"odds": 200,
+"t": "2026-11-26T05:48:30Z"
+},
+"gid": "2026_12_LV_CLE",
+"hrs_before": 91.5,
+"last": {
+"edge": 0.0417,
+"fair": 0.375,
+"odds": 200,
+"t": "2026-11-26T05:48:30Z"
+},
+"line": 250,
+"open": true,
+"player": "Deshaun Watson",
+"side": "over",
+"source": "live",
+"start": "2026-11-30T01:20:00Z",
+"stat": "passing_yards"
 },
 "2026_12_PHI_DAL|Saquon Barkley|receiving_yards|20|over": {
 "best": {
@@ -305,10 +363,10 @@
 "gid": "2026_12_PHI_DAL",
 "hrs_before": 27.1,
 "last": {
-"edge": 0.025,
-"fair": 0.225,
+"edge": 0.02,
+"fair": 0.22,
 "odds": 400,
-"t": "2026-11-26T00:26:06Z"
+"t": "2026-11-26T05:48:30Z"
 },
 "line": 20,
 "open": true,
@@ -337,7 +395,7 @@
 "edge": 0.0347,
 "fair": 0.305,
 "odds": 270,
-"t": "2026-11-26T00:26:06Z"
+"t": "2026-11-26T05:48:30Z"
 },
 "line": 30,
 "open": true,
