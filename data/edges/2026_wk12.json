@@ -15,10 +15,10 @@
 "gid": "2026_12_DEN_PIT",
 "hrs_before": 49.6,
 "last": {
-"edge": -0.0125,
+"edge": -0.0145,
 "fair": 0.535,
-"odds": -121,
-"t": "2026-11-26T18:26:00Z"
+"odds": -122,
+"t": "2026-11-27T00:14:44Z"
 },
 "line": 4,
 "open": false,
@@ -250,7 +250,7 @@
 "edge": 0.015,
 "fair": 0.615,
 "odds": -150,
-"t": "2026-11-26T18:26:00Z"
+"t": "2026-11-27T00:14:44Z"
 },
 "line": 4,
 "open": true,
@@ -276,13 +276,13 @@
 "gid": "2026_12_KC_BUF",
 "hrs_before": 44.2,
 "last": {
-"edge": 0.0134,
-"fair": 0.595,
+"edge": -0.0066,
+"fair": 0.575,
 "odds": -139,
-"t": "2026-11-26T18:26:00Z"
+"t": "2026-11-27T00:14:44Z"
 },
 "line": 10,
-"open": true,
+"open": false,
 "player": "Patrick Mahomes",
 "side": "over",
 "source": "live",
@@ -308,7 +308,7 @@
 "edge": 0.0346,
 "fair": 0.52,
 "odds": 106,
-"t": "2026-11-26T18:26:00Z"
+"t": "2026-11-27T00:14:44Z"
 },
 "line": 225,
 "open": true,
@@ -320,10 +320,10 @@
 },
 "2026_12_LV_CLE|Deshaun Watson|passing_yards|250|over": {
 "best": {
-"edge": 0.0417,
-"fair": 0.375,
+"edge": 0.0467,
+"fair": 0.38,
 "odds": 200,
-"t": "2026-11-26T05:48:30Z"
+"t": "2026-11-27T00:14:44Z"
 },
 "first": {
 "edge": 0.0417,
@@ -334,10 +334,10 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 91.5,
 "last": {
-"edge": 0.0417,
-"fair": 0.375,
+"edge": 0.0467,
+"fair": 0.38,
 "odds": 200,
-"t": "2026-11-26T18:26:00Z"
+"t": "2026-11-27T00:14:44Z"
 },
 "line": 250,
 "open": true,
@@ -369,8 +369,66 @@
 "t": "2026-11-26T18:26:00Z"
 },
 "line": 275,
-"open": true,
+"open": false,
 "player": "Deshaun Watson",
+"side": "over",
+"source": "live",
+"start": "2026-11-30T01:20:00Z",
+"stat": "passing_yards"
+},
+"2026_12_LV_CLE|Dylan Sampson|receiving_yards|30|over": {
+"best": {
+"edge": 0.0323,
+"fair": 0.34,
+"odds": 225,
+"t": "2026-11-27T00:14:44Z"
+},
+"first": {
+"edge": 0.0323,
+"fair": 0.34,
+"odds": 225,
+"t": "2026-11-27T00:14:44Z"
+},
+"gid": "2026_12_LV_CLE",
+"hrs_before": 73.1,
+"last": {
+"edge": 0.0323,
+"fair": 0.34,
+"odds": 225,
+"t": "2026-11-27T00:14:44Z"
+},
+"line": 30,
+"open": true,
+"player": "Dylan Sampson",
+"side": "over",
+"source": "live",
+"start": "2026-11-30T01:20:00Z",
+"stat": "receiving_yards"
+},
+"2026_12_LV_CLE|Fernando Mendoza|passing_yards|225|over": {
+"best": {
+"edge": 0.0341,
+"fair": 0.385,
+"odds": 185,
+"t": "2026-11-27T00:14:44Z"
+},
+"first": {
+"edge": 0.0341,
+"fair": 0.385,
+"odds": 185,
+"t": "2026-11-27T00:14:44Z"
+},
+"gid": "2026_12_LV_CLE",
+"hrs_before": 73.1,
+"last": {
+"edge": 0.0341,
+"fair": 0.385,
+"odds": 185,
+"t": "2026-11-27T00:14:44Z"
+},
+"line": 225,
+"open": true,
+"player": "Fernando Mendoza",
 "side": "over",
 "source": "live",
 "start": "2026-11-30T01:20:00Z",
@@ -392,10 +450,10 @@
 "gid": "2026_12_NYG_IND",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.0518,
-"fair": 0.46,
-"odds": 145,
-"t": "2026-11-26T18:26:00Z"
+"edge": 0.0385,
+"fair": 0.45,
+"odds": 143,
+"t": "2026-11-27T00:14:44Z"
 },
 "line": 2,
 "open": true,
@@ -421,13 +479,13 @@
 "gid": "2026_12_NYJ_MIA",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.03,
-"fair": 0.53,
+"edge": -0.005,
+"fair": 0.495,
 "odds": 100,
-"t": "2026-11-26T18:26:00Z"
+"t": "2026-11-27T00:14:44Z"
 },
 "line": 16,
-"open": true,
+"open": false,
 "player": "Ollie Gordon II",
 "side": "under",
 "source": "live",
@@ -514,11 +572,69 @@
 "t": "2026-11-26T18:26:00Z"
 },
 "line": 30,
-"open": true,
+"open": false,
 "player": "Kaelon Black",
 "side": "over",
 "source": "live",
 "start": "2026-11-29T21:25:00Z",
 "stat": "rushing_yards"
+},
+"2026_12_TEN_JAX|Carnell Tate|receptions|6|under": {
+"best": {
+"edge": 0.0541,
+"fair": 0.665,
+"odds": -157,
+"t": "2026-11-27T00:14:44Z"
+},
+"first": {
+"edge": 0.0541,
+"fair": 0.665,
+"odds": -157,
+"t": "2026-11-27T00:14:44Z"
+},
+"gid": "2026_12_TEN_JAX",
+"hrs_before": 65.8,
+"last": {
+"edge": 0.0541,
+"fair": 0.665,
+"odds": -157,
+"t": "2026-11-27T00:14:44Z"
+},
+"line": 6,
+"open": true,
+"player": "Carnell Tate",
+"side": "under",
+"source": "live",
+"start": "2026-11-29T18:00:00Z",
+"stat": "receptions"
+},
+"2026_12_TEN_JAX|Gunnar Helm|receptions|4|under": {
+"best": {
+"edge": 0.0365,
+"fair": 0.625,
+"odds": -143,
+"t": "2026-11-27T00:14:44Z"
+},
+"first": {
+"edge": 0.0365,
+"fair": 0.625,
+"odds": -143,
+"t": "2026-11-27T00:14:44Z"
+},
+"gid": "2026_12_TEN_JAX",
+"hrs_before": 65.8,
+"last": {
+"edge": 0.0365,
+"fair": 0.625,
+"odds": -143,
+"t": "2026-11-27T00:14:44Z"
+},
+"line": 4,
+"open": true,
+"player": "Gunnar Helm",
+"side": "under",
+"source": "live",
+"start": "2026-11-29T18:00:00Z",
+"stat": "receptions"
 }
 }
