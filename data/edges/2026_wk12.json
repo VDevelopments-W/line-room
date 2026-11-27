@@ -15,10 +15,10 @@
 "gid": "2026_12_DEN_PIT",
 "hrs_before": 49.6,
 "last": {
-"edge": -0.0245,
+"edge": -0.0206,
 "fair": 0.535,
-"odds": -127,
-"t": "2026-11-27T07:59:02Z"
+"odds": -125,
+"t": "2026-11-27T18:06:00Z"
 },
 "line": 4,
 "open": false,
@@ -44,13 +44,13 @@
 "gid": "2026_12_DEN_PIT",
 "hrs_before": 12.0,
 "last": {
-"edge": 0.0373,
-"fair": 0.345,
-"odds": 225,
-"t": "2026-11-27T07:59:02Z"
+"edge": -0.004,
+"fair": 0.335,
+"odds": 195,
+"t": "2026-11-27T18:06:00Z"
 },
 "line": 200,
-"open": true,
+"open": false,
 "player": "Mason Rudolph",
 "side": "over",
 "source": "live",
@@ -334,13 +334,13 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 91.5,
 "last": {
-"edge": 0.0496,
-"fair": 0.535,
-"odds": 106,
-"t": "2026-11-27T07:59:02Z"
+"edge": -0.0662,
+"fair": 0.41,
+"odds": 110,
+"t": "2026-11-27T18:06:00Z"
 },
 "line": 225,
-"open": true,
+"open": false,
 "player": "Deshaun Watson",
 "side": "over",
 "source": "live",
@@ -363,13 +363,13 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 91.5,
 "last": {
-"edge": 0.0417,
-"fair": 0.375,
-"odds": 200,
-"t": "2026-11-27T07:59:02Z"
+"edge": -0.0326,
+"fair": 0.29,
+"odds": 210,
+"t": "2026-11-27T18:06:00Z"
 },
 "line": 250,
-"open": true,
+"open": false,
 "player": "Deshaun Watson",
 "side": "over",
 "source": "live",
@@ -392,13 +392,13 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 81.4,
 "last": {
-"edge": 0.0417,
-"fair": 0.25,
-"odds": 380,
-"t": "2026-11-27T07:59:02Z"
+"edge": -0.025,
+"fair": 0.175,
+"odds": 400,
+"t": "2026-11-27T18:06:00Z"
 },
 "line": 275,
-"open": true,
+"open": false,
 "player": "Deshaun Watson",
 "side": "over",
 "source": "live",
@@ -407,10 +407,10 @@
 },
 "2026_12_LV_CLE|Dylan Sampson|receiving_yards|30|over": {
 "best": {
-"edge": 0.0323,
-"fair": 0.34,
-"odds": 225,
-"t": "2026-11-27T00:14:44Z"
+"edge": 0.0325,
+"fair": 0.345,
+"odds": 220,
+"t": "2026-11-27T18:06:00Z"
 },
 "first": {
 "edge": 0.0323,
@@ -421,10 +421,10 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 73.1,
 "last": {
-"edge": 0.0273,
-"fair": 0.335,
-"odds": 225,
-"t": "2026-11-27T07:59:02Z"
+"edge": 0.0325,
+"fair": 0.345,
+"odds": 220,
+"t": "2026-11-27T18:06:00Z"
 },
 "line": 30,
 "open": true,
@@ -450,13 +450,13 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 73.1,
 "last": {
-"edge": 0.0241,
-"fair": 0.375,
-"odds": 185,
-"t": "2026-11-27T07:59:02Z"
+"edge": -0.0129,
+"fair": 0.315,
+"odds": 205,
+"t": "2026-11-27T18:06:00Z"
 },
 "line": 225,
-"open": true,
+"open": false,
 "player": "Fernando Mendoza",
 "side": "over",
 "source": "live",
@@ -479,18 +479,134 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 65.3,
 "last": {
-"edge": 0.0378,
-"fair": 0.26,
-"odds": 350,
-"t": "2026-11-27T07:59:02Z"
+"edge": -0.0141,
+"fair": 0.19,
+"odds": 390,
+"t": "2026-11-27T18:06:00Z"
 },
 "line": 250,
-"open": true,
+"open": false,
 "player": "Fernando Mendoza",
 "side": "over",
 "source": "live",
 "start": "2026-11-30T01:20:00Z",
 "stat": "passing_yards"
+},
+"2026_12_LV_CLE|Quinshon Judkins|rushing_yards|60|over": {
+"best": {
+"edge": 0.0305,
+"fair": 0.485,
+"odds": 120,
+"t": "2026-11-27T18:06:00Z"
+},
+"first": {
+"edge": 0.0305,
+"fair": 0.485,
+"odds": 120,
+"t": "2026-11-27T18:06:00Z"
+},
+"gid": "2026_12_LV_CLE",
+"hrs_before": 55.2,
+"last": {
+"edge": 0.0305,
+"fair": 0.485,
+"odds": 120,
+"t": "2026-11-27T18:06:00Z"
+},
+"line": 60,
+"open": true,
+"player": "Quinshon Judkins",
+"side": "over",
+"source": "live",
+"start": "2026-11-30T01:20:00Z",
+"stat": "rushing_yards"
+},
+"2026_12_LV_CLE|Quinshon Judkins|rushing_yards|70|over": {
+"best": {
+"edge": 0.0317,
+"fair": 0.365,
+"odds": 200,
+"t": "2026-11-27T18:06:00Z"
+},
+"first": {
+"edge": 0.0317,
+"fair": 0.365,
+"odds": 200,
+"t": "2026-11-27T18:06:00Z"
+},
+"gid": "2026_12_LV_CLE",
+"hrs_before": 55.2,
+"last": {
+"edge": 0.0317,
+"fair": 0.365,
+"odds": 200,
+"t": "2026-11-27T18:06:00Z"
+},
+"line": 70,
+"open": true,
+"player": "Quinshon Judkins",
+"side": "over",
+"source": "live",
+"start": "2026-11-30T01:20:00Z",
+"stat": "rushing_yards"
+},
+"2026_12_LV_CLE|Quinshon Judkins|rushing_yards|80|over": {
+"best": {
+"edge": 0.0374,
+"fair": 0.27,
+"odds": 330,
+"t": "2026-11-27T18:06:00Z"
+},
+"first": {
+"edge": 0.0374,
+"fair": 0.27,
+"odds": 330,
+"t": "2026-11-27T18:06:00Z"
+},
+"gid": "2026_12_LV_CLE",
+"hrs_before": 55.2,
+"last": {
+"edge": 0.0374,
+"fair": 0.27,
+"odds": 330,
+"t": "2026-11-27T18:06:00Z"
+},
+"line": 80,
+"open": true,
+"player": "Quinshon Judkins",
+"side": "over",
+"source": "live",
+"start": "2026-11-30T01:20:00Z",
+"stat": "rushing_yards"
+},
+"2026_12_NE_LAC|Hunter Henry|receptions|3|under": {
+"best": {
+"edge": 0.0366,
+"fair": 0.485,
+"odds": 123,
+"t": "2026-11-27T18:06:00Z"
+},
+"first": {
+"edge": 0.0366,
+"fair": 0.485,
+"odds": 123,
+"t": "2026-11-27T18:06:00Z"
+},
+"gid": "2026_12_NE_LAC",
+"hrs_before": 51.0,
+"last": {
+"edge": 0.0366,
+"fair": 0.485,
+"odds": 123,
+"t": "2026-11-27T18:06:00Z"
+},
+"line": 3,
+"open": true,
+"player": "Hunter Henry",
+"side": "under",
+"source": "live",
+"start": "2026-11-29T21:05:00Z",
+"stat": "receptions"
 },
 "2026_12_NYG_IND|Laquon Treadwell|receptions|2|under": {
 "best": {
@@ -508,10 +624,10 @@
 "gid": "2026_12_NYG_IND",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.0285,
-"fair": 0.44,
-"odds": 143,
-"t": "2026-11-27T07:59:02Z"
+"edge": 0.0283,
+"fair": 0.445,
+"odds": 140,
+"t": "2026-11-27T18:06:00Z"
 },
 "line": 2,
 "open": true,
@@ -608,6 +724,64 @@
 "start": "2026-11-26T21:30:00Z",
 "stat": "receiving_yards"
 },
+"2026_12_SEA_SF|Brock Purdy|passing_yards|225|over": {
+"best": {
+"edge": 0.0345,
+"fair": 0.565,
+"odds": -113,
+"t": "2026-11-27T18:06:00Z"
+},
+"first": {
+"edge": 0.0345,
+"fair": 0.565,
+"odds": -113,
+"t": "2026-11-27T18:06:00Z"
+},
+"gid": "2026_12_SEA_SF",
+"hrs_before": 51.3,
+"last": {
+"edge": 0.0345,
+"fair": 0.565,
+"odds": -113,
+"t": "2026-11-27T18:06:00Z"
+},
+"line": 225,
+"open": true,
+"player": "Brock Purdy",
+"side": "over",
+"source": "live",
+"start": "2026-11-29T21:25:00Z",
+"stat": "passing_yards"
+},
+"2026_12_SEA_SF|Brock Purdy|passing_yards|250|over": {
+"best": {
+"edge": 0.0446,
+"fair": 0.415,
+"odds": 170,
+"t": "2026-11-27T18:06:00Z"
+},
+"first": {
+"edge": 0.0446,
+"fair": 0.415,
+"odds": 170,
+"t": "2026-11-27T18:06:00Z"
+},
+"gid": "2026_12_SEA_SF",
+"hrs_before": 51.3,
+"last": {
+"edge": 0.0446,
+"fair": 0.415,
+"odds": 170,
+"t": "2026-11-27T18:06:00Z"
+},
+"line": 250,
+"open": true,
+"player": "Brock Purdy",
+"side": "over",
+"source": "live",
+"start": "2026-11-29T21:25:00Z",
+"stat": "passing_yards"
+},
 "2026_12_SEA_SF|Kaelon Black|rushing_yards|30|over": {
 "best": {
 "edge": 0.0483,
@@ -624,13 +798,13 @@
 "gid": "2026_12_SEA_SF",
 "hrs_before": 93.0,
 "last": {
-"edge": 0.0433,
-"fair": 0.31,
-"odds": 275,
-"t": "2026-11-26T18:26:00Z"
+"edge": 0.0297,
+"fair": 0.3,
+"odds": 270,
+"t": "2026-11-27T18:06:00Z"
 },
 "line": 30,
-"open": false,
+"open": true,
 "player": "Kaelon Black",
 "side": "over",
 "source": "live",
@@ -659,9 +833,38 @@
 "t": "2026-11-27T07:59:02Z"
 },
 "line": 3,
-"open": true,
+"open": false,
 "player": "Brian Thomas Jr.",
 "side": "over",
+"source": "live",
+"start": "2026-11-29T18:00:00Z",
+"stat": "receptions"
+},
+"2026_12_TEN_JAX|Carnell Tate|receptions|5|under": {
+"best": {
+"edge": 0.0338,
+"fair": 0.51,
+"odds": 110,
+"t": "2026-11-27T18:06:00Z"
+},
+"first": {
+"edge": 0.0338,
+"fair": 0.51,
+"odds": 110,
+"t": "2026-11-27T18:06:00Z"
+},
+"gid": "2026_12_TEN_JAX",
+"hrs_before": 47.9,
+"last": {
+"edge": 0.0338,
+"fair": 0.51,
+"odds": 110,
+"t": "2026-11-27T18:06:00Z"
+},
+"line": 5,
+"open": true,
+"player": "Carnell Tate",
+"side": "under",
 "source": "live",
 "start": "2026-11-29T18:00:00Z",
 "stat": "receptions"
@@ -688,7 +891,7 @@
 "t": "2026-11-27T07:59:02Z"
 },
 "line": 6,
-"open": true,
+"open": false,
 "player": "Carnell Tate",
 "side": "under",
 "source": "live",
@@ -717,7 +920,7 @@
 "t": "2026-11-27T07:59:02Z"
 },
 "line": 4,
-"open": true,
+"open": false,
 "player": "Gunnar Helm",
 "side": "under",
 "source": "live",
@@ -740,14 +943,43 @@
 "gid": "2026_12_WAS_ARI",
 "hrs_before": 61.4,
 "last": {
-"edge": 0.0371,
-"fair": 0.68,
+"edge": -0.0079,
+"fair": 0.635,
 "odds": -180,
-"t": "2026-11-27T07:59:02Z"
+"t": "2026-11-27T18:06:00Z"
 },
 "line": 3,
-"open": true,
+"open": false,
 "player": "Simi Fehoko",
+"side": "under",
+"source": "live",
+"start": "2026-11-29T21:25:00Z",
+"stat": "receptions"
+},
+"2026_12_WAS_ARI|Trey McBride|receptions|8|under": {
+"best": {
+"edge": 0.0319,
+"fair": 0.61,
+"odds": -137,
+"t": "2026-11-27T18:06:00Z"
+},
+"first": {
+"edge": 0.0319,
+"fair": 0.61,
+"odds": -137,
+"t": "2026-11-27T18:06:00Z"
+},
+"gid": "2026_12_WAS_ARI",
+"hrs_before": 51.3,
+"last": {
+"edge": 0.0319,
+"fair": 0.61,
+"odds": -137,
+"t": "2026-11-27T18:06:00Z"
+},
+"line": 8,
+"open": true,
+"player": "Trey McBride",
 "side": "under",
 "source": "live",
 "start": "2026-11-29T21:25:00Z",
