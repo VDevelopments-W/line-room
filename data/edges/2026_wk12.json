@@ -15,10 +15,10 @@
 "gid": "2026_12_BAL_HOU",
 "hrs_before": 47.6,
 "last": {
-"edge": 0.0552,
-"fair": 0.4,
-"odds": 190,
-"t": "2026-11-27T18:26:18Z"
+"edge": 0.0329,
+"fair": 0.39,
+"odds": 180,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 2,
 "open": true,
@@ -27,6 +27,64 @@
 "source": "live",
 "start": "2026-11-29T18:00:00Z",
 "stat": "receptions"
+},
+"2026_12_BAL_HOU|Nico Collins|receptions|5|under": {
+"best": {
+"edge": 0.032,
+"fair": 0.495,
+"odds": 116,
+"t": "2026-11-28T00:26:14Z"
+},
+"first": {
+"edge": 0.032,
+"fair": 0.495,
+"odds": 116,
+"t": "2026-11-28T00:26:14Z"
+},
+"gid": "2026_12_BAL_HOU",
+"hrs_before": 41.6,
+"last": {
+"edge": 0.032,
+"fair": 0.495,
+"odds": 116,
+"t": "2026-11-28T00:26:14Z"
+},
+"line": 5,
+"open": true,
+"player": "Nico Collins",
+"side": "under",
+"source": "live",
+"start": "2026-11-29T18:00:00Z",
+"stat": "receptions"
+},
+"2026_12_CAR_TB|Tez Johnson|receiving_yards|15|under": {
+"best": {
+"edge": 0.0337,
+"fair": 0.575,
+"odds": -118,
+"t": "2026-11-28T00:26:14Z"
+},
+"first": {
+"edge": 0.0337,
+"fair": 0.575,
+"odds": -118,
+"t": "2026-11-28T00:26:14Z"
+},
+"gid": "2026_12_CAR_TB",
+"hrs_before": 72.8,
+"last": {
+"edge": 0.0337,
+"fair": 0.575,
+"odds": -118,
+"t": "2026-11-28T00:26:14Z"
+},
+"line": 15,
+"open": true,
+"player": "Tez Johnson",
+"side": "under",
+"source": "live",
+"start": "2026-12-01T01:15:00Z",
+"stat": "receiving_yards"
 },
 "2026_12_DEN_PIT|Jonah Coleman|receptions|4|under": {
 "best": {
@@ -363,10 +421,10 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 91.5,
 "last": {
-"edge": -0.0662,
+"edge": -0.0344,
 "fair": 0.41,
-"odds": 110,
-"t": "2026-11-27T18:26:18Z"
+"odds": 125,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 225,
 "open": false,
@@ -392,10 +450,10 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 91.5,
 "last": {
-"edge": -0.0326,
-"fair": 0.29,
-"odds": 210,
-"t": "2026-11-27T18:26:18Z"
+"edge": -0.0135,
+"fair": 0.285,
+"odds": 235,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 250,
 "open": false,
@@ -434,12 +492,41 @@
 "start": "2026-11-30T01:20:00Z",
 "stat": "passing_yards"
 },
+"2026_12_LV_CLE|Dylan Sampson|receiving_yards|20|over": {
+"best": {
+"edge": 0.0462,
+"fair": 0.57,
+"odds": -110,
+"t": "2026-11-28T00:26:14Z"
+},
+"first": {
+"edge": 0.0462,
+"fair": 0.57,
+"odds": -110,
+"t": "2026-11-28T00:26:14Z"
+},
+"gid": "2026_12_LV_CLE",
+"hrs_before": 48.9,
+"last": {
+"edge": 0.0462,
+"fair": 0.57,
+"odds": -110,
+"t": "2026-11-28T00:26:14Z"
+},
+"line": 20,
+"open": true,
+"player": "Dylan Sampson",
+"side": "over",
+"source": "live",
+"start": "2026-11-30T01:20:00Z",
+"stat": "receiving_yards"
+},
 "2026_12_LV_CLE|Dylan Sampson|receiving_yards|30|over": {
 "best": {
-"edge": 0.0325,
-"fair": 0.345,
+"edge": 0.0675,
+"fair": 0.38,
 "odds": 220,
-"t": "2026-11-27T18:06:00Z"
+"t": "2026-11-28T00:26:14Z"
 },
 "first": {
 "edge": 0.0323,
@@ -450,13 +537,13 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 73.1,
 "last": {
-"edge": 0.0325,
-"fair": 0.345,
+"edge": 0.0675,
+"fair": 0.38,
 "odds": 220,
-"t": "2026-11-27T18:06:00Z"
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 30,
-"open": false,
+"open": true,
 "player": "Dylan Sampson",
 "side": "over",
 "source": "live",
@@ -482,7 +569,7 @@
 "edge": -0.0129,
 "fair": 0.315,
 "odds": 205,
-"t": "2026-11-27T18:26:18Z"
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 225,
 "open": false,
@@ -508,10 +595,10 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 65.3,
 "last": {
-"edge": -0.0141,
-"fair": 0.19,
+"edge": -0.0091,
+"fair": 0.195,
 "odds": 390,
-"t": "2026-11-27T18:26:18Z"
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 250,
 "open": false,
@@ -537,10 +624,10 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 55.2,
 "last": {
-"edge": 0.0305,
-"fair": 0.485,
-"odds": 120,
-"t": "2026-11-27T18:26:18Z"
+"edge": 0.0176,
+"fair": 0.525,
+"odds": -103,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 60,
 "open": true,
@@ -566,10 +653,10 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 55.2,
 "last": {
-"edge": 0.0317,
-"fair": 0.365,
-"odds": 200,
-"t": "2026-11-27T18:26:18Z"
+"edge": 0.0176,
+"fair": 0.395,
+"odds": 165,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 70,
 "open": true,
@@ -595,10 +682,10 @@
 "gid": "2026_12_LV_CLE",
 "hrs_before": 55.2,
 "last": {
-"edge": 0.0374,
-"fair": 0.27,
-"odds": 330,
-"t": "2026-11-27T18:26:18Z"
+"edge": 0.0097,
+"fair": 0.28,
+"odds": 270,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 80,
 "open": true,
@@ -624,10 +711,10 @@
 "gid": "2026_12_NE_LAC",
 "hrs_before": 51.0,
 "last": {
-"edge": 0.0266,
+"edge": 0.0306,
 "fair": 0.475,
-"odds": 123,
-"t": "2026-11-27T18:26:18Z"
+"odds": 125,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 3,
 "open": true,
@@ -653,10 +740,10 @@
 "gid": "2026_12_NYG_IND",
 "hrs_before": 71.6,
 "last": {
-"edge": 0.0233,
-"fair": 0.44,
+"edge": 0.0283,
+"fair": 0.445,
 "odds": 140,
-"t": "2026-11-27T18:26:18Z"
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 2,
 "open": true,
@@ -775,7 +862,7 @@
 "t": "2026-11-27T18:26:18Z"
 },
 "line": 225,
-"open": true,
+"open": false,
 "player": "Brock Purdy",
 "side": "over",
 "source": "live",
@@ -804,7 +891,7 @@
 "t": "2026-11-27T18:26:18Z"
 },
 "line": 250,
-"open": true,
+"open": false,
 "player": "Brock Purdy",
 "side": "over",
 "source": "live",
@@ -827,13 +914,13 @@
 "gid": "2026_12_SEA_SF",
 "hrs_before": 93.0,
 "last": {
-"edge": 0.0297,
-"fair": 0.3,
-"odds": 270,
-"t": "2026-11-27T18:26:18Z"
+"edge": -0.0098,
+"fair": 0.335,
+"odds": 190,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 30,
-"open": true,
+"open": false,
 "player": "Kaelon Black",
 "side": "over",
 "source": "live",
@@ -891,7 +978,7 @@
 "t": "2026-11-27T18:26:18Z"
 },
 "line": 5,
-"open": true,
+"open": false,
 "player": "Carnell Tate",
 "side": "under",
 "source": "live",
@@ -914,13 +1001,13 @@
 "gid": "2026_12_TEN_JAX",
 "hrs_before": 65.8,
 "last": {
-"edge": 0.0591,
-"fair": 0.67,
-"odds": -157,
-"t": "2026-11-27T07:59:02Z"
+"edge": 0.0486,
+"fair": 0.685,
+"odds": -175,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 6,
-"open": false,
+"open": true,
 "player": "Carnell Tate",
 "side": "under",
 "source": "live",
@@ -943,13 +1030,13 @@
 "gid": "2026_12_TEN_JAX",
 "hrs_before": 65.8,
 "last": {
-"edge": 0.0365,
-"fair": 0.625,
-"odds": -143,
-"t": "2026-11-27T07:59:02Z"
+"edge": 0.0222,
+"fair": 0.63,
+"odds": -155,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 4,
-"open": false,
+"open": true,
 "player": "Gunnar Helm",
 "side": "under",
 "source": "live",
@@ -972,10 +1059,10 @@
 "gid": "2026_12_WAS_ARI",
 "hrs_before": 61.4,
 "last": {
-"edge": -0.0179,
-"fair": 0.625,
-"odds": -180,
-"t": "2026-11-27T18:26:18Z"
+"edge": -0.0104,
+"fair": 0.635,
+"odds": -182,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 3,
 "open": false,
@@ -1001,13 +1088,13 @@
 "gid": "2026_12_WAS_ARI",
 "hrs_before": 51.3,
 "last": {
-"edge": 0.0319,
-"fair": 0.61,
-"odds": -137,
-"t": "2026-11-27T18:06:00Z"
+"edge": 0.026,
+"fair": 0.595,
+"odds": -132,
+"t": "2026-11-28T00:26:14Z"
 },
 "line": 8,
-"open": false,
+"open": true,
 "player": "Trey McBride",
 "side": "under",
 "source": "live",
